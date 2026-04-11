@@ -3,6 +3,7 @@
 .obsidian/
 __pycache__/
 *.pyc
+*.swp
 .wiki_html_watcher.pid
 .wiki_html_server.pid
 .render_watcher.log

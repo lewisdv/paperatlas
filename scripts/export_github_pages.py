@@ -93,6 +93,7 @@ def export_site(output_dir: Path, include_pdfs: bool) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     shutil.copy2(PROJECT_ROOT / "index.html", output_dir / "index.html")
+    copy_tree(PROJECT_ROOT / "assets", output_dir / "assets")
 
     for workspace in list_collection_workspaces():
         if workspace.wiki_html_dir.exists():

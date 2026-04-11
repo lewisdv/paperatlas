@@ -3,6 +3,7 @@
 import argparse
 import atexit
 import os
+import re
 import signal
 import subprocess
 import sys
@@ -72,21 +73,166 @@ def git_current_branch() -> str:
     return result.stdout.strip()
 
 
-def build_git_commit_message(pathspecs: List[str]) -> str:
+STOPWORDS = {
+    "a",
+    "an",
+    "and",
+    "comparison",
+    "concept",
+    "concepts",
+    "corpus",
+    "generation",
+    "log",
+    "note",
+    "notes",
+    "of",
+    "organoid",
+    "organoids",
+    "overview",
+    "page",
+    "pages",
+    "paper",
+    "protocol",
+    "protocols",
+    "query",
+    "sources",
+    "study",
+    "summary",
+    "synthesis",
+    "the",
+    "update",
+    "wiki",
+}
+
+
+def collection_key_from_path(path: str) -> str:
+    parts = Path(path).parts
+    if len(parts) >= 2 and parts[0] == "collections":
+        return parts[1]
+    return ""
+
+
+def section_from_path(path: str) -> str:
+    parts = Path(path).parts
+    if "wiki" in parts:
+        wiki_index = parts.index("wiki")
+        if len(parts) > wiki_index + 1:
+            return parts[wiki_index + 1]
+    return ""
+
+
+def slug_to_words(value: str) -> List[str]:
+    return [part for part in re.split(r"[^a-z0-9]+", value.lower()) if part]
+
+
+def clean_topic_words(words: Iterable[str]) -> List[str]:
+    cleaned: List[str] = []
+    for word in words:
+        if word.isdigit():
+            continue
+        if re.fullmatch(r"(19|20)\d{2}", word):
+            continue
+        if word in STOPWORDS:
+            continue
+        if len(word) <= 2:
+            continue
+        cleaned.append(word)
+    return cleaned
+
+
+def title_from_markdown(path: Path) -> str:
+    try:
+        text = path.read_text(encoding="utf-8")
+    except OSError:
+        return path.stem.replace("-", " ").replace("_", " ")
+
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("title:"):
+            return stripped.split(":", 1)[1].strip().strip('"').strip("'")
+    for line in text.splitlines():
+        stripped = line.strip()
+        if stripped.startswith("# "):
+            return stripped[2:].strip()
+    return path.stem.replace("-", " ").replace("_", " ")
+
+
+def summarize_topic_from_files(files: List[str]) -> str:
+    if not files:
+        return ""
+
+    markdown_files = [Path(file) for file in files if file.endswith(".md")]
+    if len(markdown_files) == 1:
+        title = title_from_markdown(PROJECT_ROOT / markdown_files[0]).strip()
+        title = re.sub(r"\s+", " ", title)
+        if title:
+            return title[:72]
+
+    word_counts: Dict[str, int] = {}
+    for file in files:
+        words = clean_topic_words(slug_to_words(Path(file).stem))
+        for word in words:
+            word_counts[word] = word_counts.get(word, 0) + 1
+
+    if not word_counts:
+        return ""
+
+    ranked_words = [
+        word
+        for word, _count in sorted(word_counts.items(), key=lambda item: (-item[1], item[0]))
+    ][:4]
+    if not ranked_words:
+        return ""
+    return " ".join(ranked_words)
+
+
+def describe_collection_change(collection_key: str, files: List[str]) -> str:
+    if not files:
+        return f"{collection_key}: sync updates"
+
+    sections = {section_from_path(file) for file in files if section_from_path(file)}
+    topic = summarize_topic_from_files(files)
+    if topic:
+        return f"{collection_key}: update {topic}"
+    if len(sections) == 1:
+        only_section = next(iter(sections))
+        if only_section == "queries":
+            return f"{collection_key}: update query notes"
+        if only_section == "syntheses":
+            return f"{collection_key}: update synthesis notes"
+        if only_section == "concepts":
+            return f"{collection_key}: update concept pages"
+        if only_section == "sources":
+            return f"{collection_key}: update source pages"
+    return f"{collection_key}: sync wiki updates"
+
+
+def build_git_commit_message(staged_files: List[str], pathspecs: List[str]) -> str:
     collection_keys: List[str] = []
     for pathspec in pathspecs:
-        parts = Path(pathspec).parts
-        if len(parts) >= 2 and parts[0] == "collections":
-            collection_keys.append(parts[1])
+        key = collection_key_from_path(pathspec)
+        if key:
+            collection_keys.append(key)
 
     collection_keys = unique_preserving_order(collection_keys)
     if not collection_keys:
         return "Auto-sync wiki updates"
+
+    staged_by_collection: Dict[str, List[str]] = {}
+    for file in staged_files:
+        key = collection_key_from_path(file)
+        if not key:
+            continue
+        staged_by_collection.setdefault(key, []).append(file)
+
     if len(collection_keys) == 1:
-        return f"Auto-sync wiki updates: {collection_keys[0]}"
+        key = collection_keys[0]
+        return describe_collection_change(key, staged_by_collection.get(key, []))
+
     if len(collection_keys) <= 3:
-        return "Auto-sync wiki updates: " + ", ".join(collection_keys)
-    return f"Auto-sync wiki updates: {', '.join(collection_keys[:3])} +{len(collection_keys) - 3} more"
+        summaries = [describe_collection_change(key, staged_by_collection.get(key, [])) for key in collection_keys]
+        return " | ".join(summaries)
+    return f"collections: sync {', '.join(collection_keys[:3])} +{len(collection_keys) - 3} more"
 
 
 def git_auto_sync(pathspecs: List[str]) -> int:
@@ -135,7 +281,7 @@ def git_auto_sync(pathspecs: List[str]) -> int:
         log("Git auto-sync skipped: nothing remained staged after filtering to collection paths.")
         return 0
 
-    commit_message = build_git_commit_message(pathspecs)
+    commit_message = build_git_commit_message(staged_files, pathspecs)
     log(
         "Git auto-sync committing %d file(s) from %d path scope(s): %s"
         % (len(staged_files), len(pathspecs), commit_message)

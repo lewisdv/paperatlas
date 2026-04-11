@@ -21,6 +21,9 @@ WIKI_DIR = ROOT / "wiki"
 OUTPUT_DIR = ROOT / "wiki_html"
 ASSETS_DIR = OUTPUT_DIR / "assets"
 STYLE_PATH = ASSETS_DIR / "style.css"
+SOURCE_ASSETS_DIR = PROJECT_ROOT / "assets"
+LOGO_FILENAME = "paper_atlas_logo.svg"
+LOGO_SOURCE_PATH = SOURCE_ASSETS_DIR / LOGO_FILENAME
 WORKSPACE_TITLE = "Research Collection"
 WORKSPACE_DESCRIPTION = "Static HTML view of the Markdown research wiki."
 SITE_BRAND = "paper_atlas"
@@ -169,11 +172,16 @@ UI_TRANSLATIONS = {
         "open_page": "Open Page",
         "open": "Open",
         "open_pdf": "Open PDF",
+        "open_article": "Journal Page",
         "no_relationship_tags": "No inferred relationship tags yet",
         "related_papers": "Related Papers",
         "no_related_papers": "No paper-to-paper relationships are visible for this paper under the current filters.",
         "no_papers_graph": "No papers match the current search and tags.",
         "direct_wiki_link": "Direct Wiki Link",
+        "graph_theme_legend": "Theme Legend",
+        "graph_metric_theme": "Theme",
+        "graph_metric_relations": "Visible Relations",
+        "graph_metric_year": "Year",
     },
     "ko": {
         "language": "언어",
@@ -260,11 +268,16 @@ UI_TRANSLATIONS = {
         "open_page": "페이지 열기",
         "open": "열기",
         "open_pdf": "PDF 열기",
+        "open_article": "저널 페이지",
         "no_relationship_tags": "아직 추론된 관계 태그가 없습니다",
         "related_papers": "연관 논문",
         "no_related_papers": "현재 필터 기준으로 이 논문과 연결된 다른 논문이 보이지 않습니다.",
         "no_papers_graph": "현재 검색어와 태그에 맞는 논문이 없습니다.",
         "direct_wiki_link": "직접 위키 링크",
+        "graph_theme_legend": "주제 범례",
+        "graph_metric_theme": "주제",
+        "graph_metric_relations": "보이는 관계",
+        "graph_metric_year": "연도",
     },
 }
 
@@ -355,10 +368,8 @@ PAGE_TEMPLATE = Template(
               data-http-href="{{ home_http_href }}"
               data-i18n-title="home"
             >
-              <svg class="home-logo-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4.5 10.5 12 4.5l7.5 6v8.25a.75.75 0 0 1-.75.75h-4.5v-5.25h-4.5v5.25h-4.5a.75.75 0 0 1-.75-.75Z"></path>
-              </svg>
-              <span class="home-logo-text" data-i18n-key="home">Home</span>
+              <img class="home-logo-mark" src="{{ logo_href }}" alt="">
+              <span class="home-logo-text">{{ site_brand }}</span>
             </a>
             <p class="eyebrow">{{ site_brand }}</p>
           </div>
@@ -583,10 +594,8 @@ DASHBOARD_TEMPLATE = Template(
               data-http-href="{{ home_http_href }}"
               data-i18n-title="home"
             >
-              <svg class="home-logo-icon" viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4.5 10.5 12 4.5l7.5 6v8.25a.75.75 0 0 1-.75.75h-4.5v-5.25h-4.5v5.25h-4.5a.75.75 0 0 1-.75-.75Z"></path>
-              </svg>
-              <span class="home-logo-text" data-i18n-key="home">Home</span>
+              <img class="home-logo-mark" src="{{ logo_href }}" alt="">
+              <span class="home-logo-text">{{ site_brand }}</span>
             </a>
             <p class="eyebrow">{{ site_brand }}</p>
           </div>
@@ -801,6 +810,20 @@ DASHBOARD_TEMPLATE = Template(
           </div>
           <div class="graph-layout">
             <div class="graph-stage">
+              <div class="graph-stage-header">
+                <div class="graph-stage-copy">
+                  <span class="graph-stage-pill" data-i18n-key="graph_theme_legend">Theme Legend</span>
+                  <div class="graph-legend">
+                    {% for group in graph_groups %}
+                    <span class="graph-legend-chip">
+                      <span class="graph-legend-dot" style="background: {{ group.color }}"></span>
+                      <span data-i18n-label="{{ group.label }}">{{ group.label }}</span>
+                      <small>{{ group.count }}</small>
+                    </span>
+                    {% endfor %}
+                  </div>
+                </div>
+              </div>
               <canvas id="graph-canvas" class="graph-canvas" aria-hidden="true"></canvas>
               <svg id="graph-svg" class="graph-svg" viewBox="0 0 1080 720" role="img" aria-label="Paper relationship graph">{{ initial_graph_svg_html | safe }}</svg>
             </div>
@@ -974,6 +997,11 @@ DASHBOARD_TEMPLATE = Template(
           const safeFileHref = fileHref ? ` data-file-href="${escapeHtml(fileHref)}"` : "";
           const safeHttpHref = httpHref ? ` data-http-href="${escapeHtml(httpHref)}"` : "";
           return `href="${safeHref}"${safeFileHref}${safeHttpHref}`;
+        }
+
+        function renderExternalHrefAttributes(href) {
+          const safeHref = escapeHtml(href || "#");
+          return `href="${safeHref}" target="_blank" rel="noreferrer"`;
         }
 
         document.addEventListener("click", async (event) => {
@@ -1248,6 +1276,9 @@ DASHBOARD_TEMPLATE = Template(
               const pdfLink = paper.pdf_href
                 ? `<a class="card-link secondary" ${renderHrefAttributes(paper.pdf_href, paper.pdf_file_href, paper.pdf_http_href)}>${escapeHtml(t("open_pdf"))}</a>`
                 : "";
+              const articleLink = paper.article_href
+                ? `<a class="card-link tertiary" ${renderExternalHrefAttributes(paper.article_href)}>${escapeHtml(t("open_article"))}</a>`
+                : "";
 
               return `
                 <article class="paper-card">
@@ -1260,6 +1291,7 @@ DASHBOARD_TEMPLATE = Template(
                   <div class="card-tags">${tagHtml}</div>
                   <div class="card-actions">
                     <a class="card-link" ${renderHrefAttributes(paper.href, paper.file_href, paper.http_href)}>${escapeHtml(t("open_page"))}</a>
+                    ${articleLink}
                     ${pdfLink}
                   </div>
                 </article>
@@ -1340,6 +1372,9 @@ DASHBOARD_TEMPLATE = Template(
               const pdfLink = page.pdf_href
                 ? `<a class="table-action secondary" ${renderHrefAttributes(page.pdf_href, page.pdf_file_href, page.pdf_http_href)}>${escapeHtml(t("open_pdf"))}</a>`
                 : "";
+              const articleLink = page.article_href
+                ? `<a class="table-action tertiary" ${renderExternalHrefAttributes(page.article_href)}>${escapeHtml(t("open_article"))}</a>`
+                : "";
               return `
                 <tr>
                   <td class="database-title-cell">
@@ -1355,6 +1390,7 @@ DASHBOARD_TEMPLATE = Template(
                   <td>
                     <div class="database-actions">
                       <a class="table-action" ${renderHrefAttributes(page.href, page.file_href, page.http_href)}>${escapeHtml(t("open"))}</a>
+                      ${articleLink}
                       ${pdfLink}
                     </div>
                   </td>
@@ -1535,6 +1571,57 @@ DASHBOARD_TEMPLATE = Template(
           return edge.baseIdealLength * state.graphSettings.linkDistanceScale;
         }
 
+        function colorWithAlpha(color, alpha) {
+          if (!color) {
+            return `rgba(122, 53, 32, ${alpha})`;
+          }
+          const normalized = color.replace("#", "");
+          if (normalized.length !== 6) {
+            return color;
+          }
+          const red = parseInt(normalized.slice(0, 2), 16);
+          const green = parseInt(normalized.slice(2, 4), 16);
+          const blue = parseInt(normalized.slice(4, 6), 16);
+          return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+        }
+
+        function drawRoundedRect(context, x, y, width, height, radius) {
+          const safeRadius = Math.min(radius, width / 2, height / 2);
+          context.beginPath();
+          context.moveTo(x + safeRadius, y);
+          context.lineTo(x + width - safeRadius, y);
+          context.quadraticCurveTo(x + width, y, x + width, y + safeRadius);
+          context.lineTo(x + width, y + height - safeRadius);
+          context.quadraticCurveTo(x + width, y + height, x + width - safeRadius, y + height);
+          context.lineTo(x + safeRadius, y + height);
+          context.quadraticCurveTo(x, y + height, x, y + height - safeRadius);
+          context.lineTo(x, y + safeRadius);
+          context.quadraticCurveTo(x, y, x + safeRadius, y);
+          context.closePath();
+        }
+
+        function drawGraphLabel(context, text, x, y) {
+          context.font = "10.5px Arial, 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif";
+          const metrics = context.measureText(text);
+          const paddingX = 8;
+          const width = metrics.width + paddingX * 2;
+          const height = 22;
+          const left = x - width / 2;
+          const top = y;
+          context.save();
+          drawRoundedRect(context, left, top, width, height, 11);
+          context.fillStyle = "rgba(255, 252, 247, 0.92)";
+          context.fill();
+          context.strokeStyle = "rgba(77, 60, 44, 0.1)";
+          context.lineWidth = 1;
+          context.stroke();
+          context.fillStyle = "#3b3028";
+          context.textAlign = "center";
+          context.textBaseline = "middle";
+          context.fillText(text, x, top + height / 2 + 0.5);
+          context.restore();
+        }
+
         function stopGraphAnimation(clearScene = false) {
           if (graphRuntime && graphRuntime.rafId) {
             cancelAnimationFrame(graphRuntime.rafId);
@@ -1563,11 +1650,17 @@ DASHBOARD_TEMPLATE = Template(
             return anchors;
           }
 
+          const columns = Math.max(2, Math.ceil(Math.sqrt(labels.length)));
+          const rows = Math.max(1, Math.ceil(labels.length / columns));
+          const xSpacing = GRAPH_WIDTH / (columns + 1);
+          const ySpacing = GRAPH_HEIGHT / (rows + 1);
           labels.forEach((label, index) => {
-            const angle = (Math.PI * 2 * index) / labels.length - Math.PI / 2;
+            const row = Math.floor(index / columns);
+            const column = index % columns;
+            const rowOffset = row % 2 === 0 ? 0 : xSpacing * 0.18;
             anchors.set(label, {
-              x: GRAPH_WIDTH / 2 + Math.cos(angle) * 255,
-              y: GRAPH_HEIGHT / 2 + Math.sin(angle) * 210,
+              x: clamp(xSpacing * (column + 1) + rowOffset, 140, GRAPH_WIDTH - 140),
+              y: clamp(ySpacing * (row + 1), 120, GRAPH_HEIGHT - 120),
             });
           });
           return anchors;
@@ -1876,11 +1969,14 @@ DASHBOARD_TEMPLATE = Template(
           edgesToDraw.forEach((edge) => {
             const related = selectedId && (edge.source === selectedId || edge.target === selectedId);
             const dimmed = selectedId && !related;
+            const edgeColor = related
+              ? colorWithAlpha(edge.sourceNode.page.graph_color || "#8e3c27", 0.44)
+              : colorWithAlpha(edge.sourceNode.page.graph_color || "#8e3c27", 0.18);
             context.beginPath();
             context.moveTo(edge.sourceNode.x, edge.sourceNode.y);
             context.lineTo(edge.targetNode.x, edge.targetNode.y);
             context.lineWidth = currentGraphEdgeWidth(edge);
-            context.strokeStyle = related ? "rgba(122, 53, 32, 0.5)" : "rgba(77, 60, 44, 0.26)";
+            context.strokeStyle = edgeColor;
             context.globalAlpha = dimmed ? 0.12 : Math.min(0.22 + (edge.strength || 1) * 0.08, 0.82);
             context.stroke();
           });
@@ -1889,25 +1985,32 @@ DASHBOARD_TEMPLATE = Template(
             const radius = currentGraphNodeRadius(node);
             const selected = selectedId === node.id;
             const dimmed = selectedId && !relatedIds.has(node.id);
+            const nodeColor = node.page.graph_color || "#8e3c27";
             context.globalAlpha = dimmed ? 0.28 : 1;
+            context.shadowColor = colorWithAlpha(nodeColor, selected ? 0.34 : 0.16);
+            context.shadowBlur = selected ? 18 : 10;
+            context.shadowOffsetX = 0;
+            context.shadowOffsetY = selected ? 6 : 3;
             context.beginPath();
             context.arc(node.x, node.y, radius, 0, Math.PI * 2);
-            context.fillStyle = node.page.graph_color || "#8e3c27";
+            context.fillStyle = nodeColor;
             context.fill();
+            context.shadowBlur = 0;
+            context.shadowOffsetX = 0;
+            context.shadowOffsetY = 0;
             context.lineWidth = selected ? 3 : 2;
             context.strokeStyle = "rgba(255, 255, 255, 0.82)";
             context.stroke();
+            if (selected) {
+              context.beginPath();
+              context.arc(node.x, node.y, radius + 6, 0, Math.PI * 2);
+              context.lineWidth = 1.6;
+              context.strokeStyle = colorWithAlpha(nodeColor, 0.36);
+              context.stroke();
+            }
 
             if (state.graphSettings.showLabels && (labelIds.has(node.id) || selected) && !isInteractionActive) {
-              context.font = "10px Arial, 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif";
-              context.textAlign = "center";
-              context.textBaseline = "top";
-              context.lineJoin = "round";
-              context.strokeStyle = "rgba(255, 252, 245, 0.96)";
-              context.lineWidth = 4;
-              context.strokeText(node.page.short_title, node.x, node.y + radius + 8);
-              context.fillStyle = "#443930";
-              context.fillText(node.page.short_title, node.x, node.y + radius + 8);
+              drawGraphLabel(context, node.page.short_title, node.x, node.y + radius + 8);
             }
           });
 
@@ -2175,6 +2278,9 @@ DASHBOARD_TEMPLATE = Template(
           const pdfLink = page.pdf_href
             ? `<a class="card-link secondary" ${renderHrefAttributes(page.pdf_href, page.pdf_file_href, page.pdf_http_href)}>${escapeHtml(t("open_pdf"))}</a>`
             : "";
+          const articleLink = page.article_href
+            ? `<a class="card-link tertiary" ${renderExternalHrefAttributes(page.article_href)}>${escapeHtml(t("open_article"))}</a>`
+            : "";
 
           const availableEdges = graphRuntime ? graphRuntime.edges : data.paper_edges;
           const linkedTitles = availableEdges
@@ -2208,9 +2314,24 @@ DASHBOARD_TEMPLATE = Template(
             <p class="eyebrow">${escapeHtml(translateLabel(page.graph_group || page.section_label))}</p>
             <h2>${escapeHtml(page.title)}</h2>
             <p class="graph-excerpt">${escapeHtml(page.excerpt)}</p>
+            <div class="graph-detail-metrics">
+              <div class="graph-metric-chip">
+                <span>${escapeHtml(t("graph_metric_theme"))}</span>
+                <strong>${escapeHtml(translateLabel(page.graph_group || page.section_label))}</strong>
+              </div>
+              <div class="graph-metric-chip">
+                <span>${escapeHtml(t("graph_metric_relations"))}</span>
+                <strong>${linkedTitles.length}</strong>
+              </div>
+              <div class="graph-metric-chip">
+                <span>${escapeHtml(t("graph_metric_year"))}</span>
+                <strong>${escapeHtml(page.year ? String(page.year) : "—")}</strong>
+              </div>
+            </div>
             <div class="card-tags">${tagHtml}</div>
             <div class="card-actions">
               <a class="card-link" ${renderHrefAttributes(page.href, page.file_href, page.http_href)}>${escapeHtml(t("open_page"))}</a>
+              ${articleLink}
               ${pdfLink}
             </div>
             <h3>${escapeHtml(t("related_papers"))}</h3>
@@ -2543,31 +2664,34 @@ pre code {
 .home-logo-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.42rem;
-  padding: 0.42rem 0.62rem;
+  gap: 0.58rem;
+  padding: 0.42rem 0.68rem 0.42rem 0.48rem;
   border-radius: 999px;
   border: 1px solid rgba(122, 53, 32, 0.16);
-  background: rgba(255, 255, 255, 0.82);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 240, 229, 0.92) 100%);
   color: #5d2618;
   font-size: 0.84rem;
   font-weight: 700;
   line-height: 1;
+  box-shadow: 0 12px 24px rgba(75, 45, 24, 0.08);
 }
 
 .home-logo-link:hover {
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.96);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(249, 242, 232, 0.96) 100%);
 }
 
-.home-logo-icon {
-  width: 1rem;
-  height: 1rem;
-  fill: currentColor;
+.home-logo-mark {
+  width: 1.65rem;
+  height: 1.65rem;
   flex: 0 0 auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 
 .home-logo-text {
   font-family: var(--font-sans);
+  letter-spacing: 0.03em;
 }
 
 .brand h1,
@@ -3179,6 +3303,11 @@ pre code {
   color: var(--ink);
 }
 
+.card-link.tertiary {
+  background: rgba(122, 53, 32, 0.08);
+  color: #6e2e1d;
+}
+
 .page-list {
   display: grid;
   gap: 0.85rem;
@@ -3394,6 +3523,11 @@ pre code {
   color: var(--ink);
 }
 
+.table-action.tertiary {
+  background: rgba(122, 53, 32, 0.08);
+  color: #6e2e1d;
+}
+
 .page-row {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
@@ -3419,17 +3553,24 @@ pre code {
 
 .graph-toolbar {
   display: grid;
-  gap: 0.8rem;
-  margin-bottom: 0.8rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .graph-toolbar-copy {
-  max-width: 76ch;
+  max-width: 82ch;
+  font-size: 0.96rem;
 }
 
 .graph-controls-panel {
   display: grid;
-  gap: 0.55rem;
+  gap: 0.7rem;
+  padding: 1rem 1.05rem;
+  border-radius: 1.15rem;
+  border: 1px solid rgba(77, 60, 44, 0.12);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 249, 0.92) 0%, rgba(249, 240, 229, 0.88) 100%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .graph-controls-heading {
@@ -3448,7 +3589,7 @@ pre code {
   padding: 0.8rem 0.9rem;
   border: 1px solid var(--line);
   border-radius: 1rem;
-  background: var(--panel-strong);
+  background: rgba(255, 255, 255, 0.82);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
 }
 
@@ -3497,8 +3638,8 @@ pre code {
 
 .graph-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.55fr);
-  gap: 1rem;
+  grid-template-columns: minmax(0, 1.28fr) minmax(320px, 0.62fr);
+  gap: 1.15rem;
   align-items: start;
 }
 
@@ -3506,10 +3647,106 @@ pre code {
   position: relative;
   height: clamp(420px, 68vh, 720px);
   background:
-    radial-gradient(circle at center, rgba(255, 255, 255, 0.92) 0%, rgba(250, 245, 238, 0.9) 56%, rgba(242, 234, 223, 0.92) 100%);
-  border: 1px solid var(--line);
-  border-radius: 1.15rem;
+    radial-gradient(circle at 18% 18%, rgba(250, 209, 174, 0.42), transparent 26%),
+    radial-gradient(circle at 82% 20%, rgba(214, 155, 120, 0.24), transparent 22%),
+    radial-gradient(circle at 50% 82%, rgba(255, 255, 255, 0.68), transparent 28%),
+    linear-gradient(180deg, rgba(255, 251, 246, 0.98) 0%, rgba(245, 236, 224, 0.94) 100%);
+  border: 1px solid rgba(77, 60, 44, 0.15);
+  border-radius: 1.35rem;
   overflow: hidden;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.72),
+    0 18px 40px rgba(58, 37, 20, 0.08);
+}
+
+.graph-stage::before,
+.graph-stage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.graph-stage::before {
+  background-image:
+    linear-gradient(rgba(122, 53, 32, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(122, 53, 32, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 92%);
+}
+
+.graph-stage::after {
+  inset: auto 1.1rem 1rem 1.1rem;
+  height: 22%;
+  border-radius: 999px;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.72), transparent 72%);
+  filter: blur(30px);
+  opacity: 0.7;
+}
+
+.graph-stage-header {
+  position: absolute;
+  top: 0.95rem;
+  left: 1rem;
+  right: 1rem;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  pointer-events: none;
+}
+
+.graph-stage-copy {
+  display: grid;
+  gap: 0.55rem;
+  max-width: min(100%, 840px);
+}
+
+.graph-stage-pill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.34rem 0.65rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid rgba(77, 60, 44, 0.14);
+  color: #73412c;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 10px 20px rgba(55, 33, 18, 0.08);
+}
+
+.graph-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.graph-legend-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.48rem;
+  padding: 0.42rem 0.66rem;
+  border-radius: 999px;
+  border: 1px solid rgba(77, 60, 44, 0.14);
+  background: rgba(255, 255, 255, 0.78);
+  color: #4e433b;
+  font-size: 0.82rem;
+  box-shadow: 0 10px 18px rgba(55, 33, 18, 0.05);
+}
+
+.graph-legend-dot {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.graph-legend-chip small {
+  color: var(--muted);
+  font-size: 0.76rem;
 }
 
 .graph-canvas,
@@ -3559,8 +3796,8 @@ pre code {
 
 .graph-node circle {
   transition: stroke-width 120ms ease, opacity 120ms ease;
-  stroke: rgba(255, 255, 255, 0.82);
-  stroke-width: 2;
+  stroke: rgba(255, 255, 255, 0.92);
+  stroke-width: 2.2;
 }
 
 .graph-node.dimmed {
@@ -3570,17 +3807,17 @@ pre code {
 .graph-node:hover circle,
 .graph-node.selected circle {
   transform: scale(1.12);
-  stroke-width: 3;
+  stroke-width: 3.4;
 }
 
 .graph-label {
-  fill: #443930;
-  font-size: 10px;
+  fill: #3b3028;
+  font-size: 10.5px;
   text-anchor: middle;
   font-family: var(--font-sans);
   paint-order: stroke fill;
-  stroke: rgba(255, 252, 245, 0.96);
-  stroke-width: 4px;
+  stroke: rgba(255, 252, 245, 0.98);
+  stroke-width: 4.5px;
   stroke-linejoin: round;
   opacity: 0.94;
 }
@@ -3601,7 +3838,13 @@ pre code {
 }
 
 .graph-detail {
-  padding: 1rem 1rem 1.1rem;
+  padding: 1.15rem 1.15rem 1.2rem;
+  border-radius: 1.35rem;
+  background:
+    linear-gradient(180deg, rgba(255, 254, 250, 0.96) 0%, rgba(248, 240, 228, 0.92) 100%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.75),
+    0 18px 40px rgba(58, 37, 20, 0.08);
 }
 
 .graph-detail h2,
@@ -3609,13 +3852,57 @@ pre code {
   margin-top: 0;
 }
 
+.graph-detail h3 {
+  font-size: 1rem;
+}
+
+.graph-detail-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  margin: 0.95rem 0 0.8rem;
+}
+
+.graph-metric-chip {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.72rem 0.78rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(77, 60, 44, 0.12);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.graph-metric-chip span {
+  color: var(--muted);
+  font-size: 0.74rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.graph-metric-chip strong {
+  font-size: 0.98rem;
+  line-height: 1.2;
+  color: #30261f;
+}
+
 .detail-links {
-  margin: 0.7rem 0 0;
-  padding-left: 1.1rem;
+  margin: 0.75rem 0 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.72rem;
+}
+
+.detail-links li {
+  padding: 0.82rem 0.88rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(77, 60, 44, 0.1);
+  background: rgba(255, 255, 255, 0.76);
 }
 
 .detail-link-title {
   font-weight: 700;
+  color: #342b24;
 }
 
 .detail-link-reasons {
@@ -3628,11 +3915,11 @@ pre code {
 .relation-chip {
   display: inline-flex;
   align-items: center;
-  padding: 0.18rem 0.48rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 999px;
-  background: rgba(122, 53, 32, 0.1);
+  background: rgba(122, 53, 32, 0.08);
   color: var(--ink);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-family: var(--font-sans);
 }
 
@@ -3646,6 +3933,10 @@ pre code {
   .dashboard-hero,
   .graph-layout {
     grid-template-columns: 1fr;
+  }
+
+  .graph-detail-metrics {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -3678,6 +3969,16 @@ pre code {
 @media (max-width: 720px) {
   .graph-stage {
     height: clamp(360px, 56vh, 560px);
+  }
+
+  .graph-stage-header {
+    top: 0.85rem;
+    left: 0.85rem;
+    right: 0.85rem;
+  }
+
+  .graph-detail-metrics {
+    grid-template-columns: 1fr;
   }
 
   .database-table {
@@ -4299,6 +4600,22 @@ def extract_year(rel_source: Path, metadata: Optional[Dict[str, str]] = None) ->
     return None
 
 
+def resolve_article_href(metadata: Dict[str, str]) -> str:
+    doi_url = metadata.get("doi_url", "").strip()
+    if doi_url:
+        return doi_url
+
+    doi = metadata.get("doi", "").strip()
+    if doi:
+        return f"https://doi.org/{doi}"
+
+    article_url = metadata.get("article_url", "").strip()
+    if article_url:
+        return article_url
+
+    return ""
+
+
 def build_page(path: Path) -> Page:
     rel_source = path.relative_to(WIKI_DIR)
     rel_output = output_rel_for_source(rel_source)
@@ -4409,6 +4726,7 @@ def build_navigation(pages: List[Page], current_page: Page):
 
 def serialize_page(page: Page) -> Dict[str, object]:
     raw_source = page.meta_dict.get("raw_source", "")
+    article_href = resolve_article_href(page.meta_dict)
     pdf_href = ""
     pdf_file_href = ""
     pdf_http_href = ""
@@ -4455,6 +4773,7 @@ def serialize_page(page: Page) -> Dict[str, object]:
         "pdf_href": pdf_href,
         "pdf_file_href": pdf_file_href,
         "pdf_http_href": pdf_http_href,
+        "article_href": article_href,
         "search_text": search_blob,
         "year": page.year,
         "sort_timestamp": int(page.source_path.stat().st_mtime),
@@ -4470,6 +4789,11 @@ def render_dashboard_link_attrs(href: str, file_href: str = "", http_href: str =
     if http_href:
         attrs.append(f'data-http-href="{html.escape(http_href, quote=True)}"')
     return " ".join(attrs)
+
+
+def render_external_link_attrs(href: str) -> str:
+    safe_href = html.escape(href or "#", quote=True)
+    return f'href="{safe_href}" target="_blank" rel="noreferrer"'
 
 
 def dashboard_year_label(page: Dict[str, object]) -> str:
@@ -4503,6 +4827,13 @@ def render_initial_paper_grid(paper_pages: List[Dict[str, object]]) -> str:
                 f'{render_dashboard_link_attrs(str(paper.get("pdf_href", "")), str(paper.get("pdf_file_href", "")), str(paper.get("pdf_http_href", "")))}>'
                 f'Open PDF</a>'
             )
+        article_link = ""
+        if paper.get("article_href"):
+            article_link = (
+                f'<a class="card-link tertiary" '
+                f'{render_external_link_attrs(str(paper.get("article_href", "")))}>'
+                f'Journal Page</a>'
+            )
         cards.append(
             "\n".join(
                 [
@@ -4516,6 +4847,7 @@ def render_initial_paper_grid(paper_pages: List[Dict[str, object]]) -> str:
                     f'  <div class="card-tags">{tag_html}</div>',
                     '  <div class="card-actions">',
                     f'    <a class="card-link" {render_dashboard_link_attrs(str(paper.get("href", "")), str(paper.get("file_href", "")), str(paper.get("http_href", "")))}>Open Page</a>',
+                    f"    {article_link}",
                     f"    {pdf_link}",
                     "  </div>",
                     "</article>",
@@ -4585,6 +4917,13 @@ def render_initial_database(serialized_pages: List[Dict[str, object]]) -> Tuple[
                 f'{render_dashboard_link_attrs(str(page.get("pdf_href", "")), str(page.get("pdf_file_href", "")), str(page.get("pdf_http_href", "")))}>'
                 f'Open PDF</a>'
             )
+        article_link = ""
+        if page.get("article_href"):
+            article_link = (
+                f'<a class="table-action tertiary" '
+                f'{render_external_link_attrs(str(page.get("article_href", "")))}>'
+                f'Journal Page</a>'
+            )
         row_html.append(
             "\n".join(
                 [
@@ -4601,6 +4940,7 @@ def render_initial_database(serialized_pages: List[Dict[str, object]]) -> Tuple[
                     f'  <td><div class="database-tag-cell">{tags_html}</div></td>',
                     '  <td><div class="database-actions">',
                     f'    <a class="table-action" {render_dashboard_link_attrs(str(page.get("href", "")), str(page.get("file_href", "")), str(page.get("http_href", "")))}>Open</a>',
+                    f"    {article_link}",
                     f"    {pdf_link}",
                     "  </div></td>",
                     "</tr>",
@@ -4867,6 +5207,7 @@ def build_dashboard_context(pages: List[Page]) -> Dict[str, object]:
     return {
         "counts": counts,
         "section_legend": section_legend,
+        "graph_groups": dashboard_data["graph_groups"],
         "dashboard_data_json": json.dumps(dashboard_data, ensure_ascii=False),
         "quick_links": quick_links,
         "graph_copy": build_graph_copy(paper_pages),
@@ -4902,6 +5243,7 @@ def render_dashboard(pages: List[Page], generated_at: str):
     html_text = DASHBOARD_TEMPLATE.render(
         counts=context["counts"],
         section_legend=context["section_legend"],
+        graph_groups=context["graph_groups"],
         dashboard_data_json=context["dashboard_data_json"],
         quick_links=context["quick_links"],
         initial_paper_grid_html=context["initial_paper_grid_html"],
@@ -4921,6 +5263,7 @@ def render_dashboard(pages: List[Page], generated_at: str):
         dashboard_http_href=http_href_for_path(dashboard_path),
         generated_at=generated_at,
         site_brand=SITE_BRAND,
+        logo_href=f"assets/{LOGO_FILENAME}",
     )
     dashboard_path.write_text(html_text, encoding="utf-8")
 
@@ -4928,6 +5271,7 @@ def render_dashboard(pages: List[Page], generated_at: str):
 def render_page(page: Page, pages: List[Page], generated_at: str):
     page.output_path.parent.mkdir(parents=True, exist_ok=True)
     stylesheet_href = Path(os.path.relpath(STYLE_PATH, page.output_path.parent)).as_posix()
+    logo_href = Path(os.path.relpath(ASSETS_DIR / LOGO_FILENAME, page.output_path.parent)).as_posix()
     dashboard_href = Path(os.path.relpath(OUTPUT_DIR / "index.html", page.output_path.parent)).as_posix()
     dashboard_file_href = (OUTPUT_DIR / "index.html").resolve().as_uri()
     dashboard_http_href = http_href_for_path(OUTPUT_DIR / "index.html")
@@ -4950,6 +5294,7 @@ def render_page(page: Page, pages: List[Page], generated_at: str):
         i18n_data_json=build_i18n_data_json(),
         generated_at=generated_at,
         site_brand=SITE_BRAND,
+        logo_href=logo_href,
     )
     page.output_path.write_text(html_text, encoding="utf-8")
 
@@ -4960,6 +5305,8 @@ def render_site(pages: List[Page]):
 
     ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     STYLE_PATH.write_text(STYLE_TEXT.strip() + "\n", encoding="utf-8")
+    if LOGO_SOURCE_PATH.exists():
+        shutil.copy2(LOGO_SOURCE_PATH, ASSETS_DIR / LOGO_FILENAME)
     generated_at = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M %Z")
 
     for page in pages:
@@ -5060,6 +5407,50 @@ ROOT_HUB_TEMPLATE = Template(
       grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
       gap: 1.25rem;
       padding: 1.65rem 1.8rem;
+    }
+
+    .hero-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.78rem;
+      margin-bottom: 0.9rem;
+      padding: 0.42rem 0.62rem 0.42rem 0.46rem;
+      width: fit-content;
+      border-radius: 999px;
+      border: 1px solid rgba(77, 60, 44, 0.14);
+      background: rgba(255, 255, 255, 0.78);
+      box-shadow: 0 14px 28px rgba(53, 34, 19, 0.08);
+      color: inherit;
+    }
+
+    .hero-brand:hover {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.9);
+    }
+
+    .hero-brand img {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.7rem;
+      flex: 0 0 auto;
+    }
+
+    .hero-brand-copy {
+      display: grid;
+      gap: 0.08rem;
+      line-height: 1.1;
+    }
+
+    .hero-brand-copy strong {
+      font-size: 0.92rem;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-brand-copy span {
+      color: var(--muted);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
     }
 
     .hero h1 {
@@ -5340,6 +5731,13 @@ ROOT_HUB_TEMPLATE = Template(
     <main class="hub">
       <section class="panel hero">
         <div>
+          <a class="hero-brand" href="index.html">
+            <img src="assets/paper_atlas_logo.svg" alt="">
+            <span class="hero-brand-copy">
+              <strong>{{ site_brand }}</strong>
+              <span>research atlas</span>
+            </span>
+          </a>
           <p class="eyebrow">{{ site_brand }}</p>
           <h1>Research Collection Hub</h1>
           <p class="lede">
