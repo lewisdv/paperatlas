@@ -129,6 +129,7 @@ def write_generated_plists(bind_host: str, port: int, interval: float, settle_se
                 "--workspace",
                 str(PROJECT_ROOT.resolve()),
                 "watch",
+                "--git-auto-sync",
                 "--interval",
                 str(interval),
                 "--settle-seconds",

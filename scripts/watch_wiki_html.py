@@ -23,6 +23,140 @@ PROJECT_MODE = False
 _STOP_REQUESTED = False
 
 
+def run_git_command(args: List[str]) -> subprocess.CompletedProcess[str]:
+    return subprocess.run(
+        ["git", *args],
+        cwd=PROJECT_ROOT,
+        capture_output=True,
+        text=True,
+    )
+
+
+def log_subprocess_output(result: subprocess.CompletedProcess[str]) -> None:
+    if result.stdout.strip():
+        print(result.stdout.strip(), flush=True)
+    if result.stderr.strip():
+        print(result.stderr.strip(), file=sys.stderr, flush=True)
+
+
+def unique_preserving_order(items: Iterable[str]) -> List[str]:
+    seen: Set[str] = set()
+    ordered: List[str] = []
+    for item in items:
+        if item in seen:
+            continue
+        seen.add(item)
+        ordered.append(item)
+    return ordered
+
+
+def project_sync_pathspecs(paths: List[str]) -> List[str]:
+    collection_specs = [f"collections/{key}" for key in sorted(changed_collections(paths))]
+    return unique_preserving_order(collection_specs)
+
+
+def workspace_sync_pathspecs() -> List[str]:
+    try:
+        relative_root = ROOT.resolve().relative_to(PROJECT_ROOT.resolve())
+    except ValueError:
+        return []
+    if str(relative_root) == ".":
+        return []
+    return [relative_root.as_posix()]
+
+
+def git_current_branch() -> str:
+    result = run_git_command(["branch", "--show-current"])
+    if result.returncode != 0:
+        return ""
+    return result.stdout.strip()
+
+
+def build_git_commit_message(pathspecs: List[str]) -> str:
+    collection_keys: List[str] = []
+    for pathspec in pathspecs:
+        parts = Path(pathspec).parts
+        if len(parts) >= 2 and parts[0] == "collections":
+            collection_keys.append(parts[1])
+
+    collection_keys = unique_preserving_order(collection_keys)
+    if not collection_keys:
+        return "Auto-sync wiki updates"
+    if len(collection_keys) == 1:
+        return f"Auto-sync wiki updates: {collection_keys[0]}"
+    if len(collection_keys) <= 3:
+        return "Auto-sync wiki updates: " + ", ".join(collection_keys)
+    return f"Auto-sync wiki updates: {', '.join(collection_keys[:3])} +{len(collection_keys) - 3} more"
+
+
+def git_auto_sync(pathspecs: List[str]) -> int:
+    pathspecs = unique_preserving_order(pathspecs)
+    if not pathspecs:
+        log("Git auto-sync skipped: no collection paths were eligible.")
+        return 0
+
+    repo_check = run_git_command(["rev-parse", "--is-inside-work-tree"])
+    if repo_check.returncode != 0 or repo_check.stdout.strip() != "true":
+        log("Git auto-sync skipped: project root is not a git repository.")
+        return 0
+
+    remote_check = run_git_command(["remote", "get-url", "origin"])
+    if remote_check.returncode != 0 or not remote_check.stdout.strip():
+        log("Git auto-sync skipped: origin remote is not configured.")
+        return 0
+
+    branch = git_current_branch()
+    if not branch:
+        log("Git auto-sync skipped: could not determine the current branch.")
+        return 0
+
+    status_before = run_git_command(["status", "--porcelain", "--untracked-files=all", "--", *pathspecs])
+    if status_before.returncode != 0:
+        log("Git auto-sync failed while checking repository status.")
+        log_subprocess_output(status_before)
+        return 1
+    if not status_before.stdout.strip():
+        log("Git auto-sync skipped: no Git changes were found in the updated collection paths.")
+        return 0
+
+    add_result = run_git_command(["add", "-A", "--", *pathspecs])
+    if add_result.returncode != 0:
+        log("Git auto-sync failed while staging collection changes.")
+        log_subprocess_output(add_result)
+        return 1
+
+    staged_result = run_git_command(["diff", "--cached", "--name-only", "--", *pathspecs])
+    if staged_result.returncode != 0:
+        log("Git auto-sync failed while checking staged collection changes.")
+        log_subprocess_output(staged_result)
+        return 1
+    staged_files = [line.strip() for line in staged_result.stdout.splitlines() if line.strip()]
+    if not staged_files:
+        log("Git auto-sync skipped: nothing remained staged after filtering to collection paths.")
+        return 0
+
+    commit_message = build_git_commit_message(pathspecs)
+    log(
+        "Git auto-sync committing %d file(s) from %d path scope(s): %s"
+        % (len(staged_files), len(pathspecs), commit_message)
+    )
+    commit_result = run_git_command(["commit", "-m", commit_message, "--", *pathspecs])
+    if commit_result.returncode != 0:
+        log("Git auto-sync failed while creating the commit.")
+        log_subprocess_output(commit_result)
+        return 1
+    log_subprocess_output(commit_result)
+
+    push_result = run_git_command(["push", "origin", branch])
+    if push_result.returncode != 0:
+        log("Git auto-sync created the commit but failed to push it.")
+        log_subprocess_output(push_result)
+        return 1
+    log_subprocess_output(push_result)
+    log(f"Git auto-sync pushed the latest wiki commit to origin/{branch}.")
+    return 0
+
+
 def configure_workspace(root: Path) -> None:
     global ROOT, WIKI_DIR, PID_FILE, LOG_FILE, PROJECT_MODE
     ROOT = root
@@ -251,7 +385,7 @@ def request_stop(_signum: int, _frame: object) -> None:
     _STOP_REQUESTED = True
 
 
-def watch_loop(interval: float, settle_seconds: float) -> int:
+def watch_loop(interval: float, settle_seconds: float, git_auto_sync_enabled: bool) -> int:
     global _STOP_REQUESTED
     _STOP_REQUESTED = False
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -267,6 +401,8 @@ def watch_loop(interval: float, settle_seconds: float) -> int:
         )
     else:
         log(f"Watching {WIKI_DIR} every {interval:.1f}s with {settle_seconds:.1f}s settle time.")
+    if git_auto_sync_enabled:
+        log("Git auto-sync is enabled for collection changes.")
     baseline = build_snapshot()
     render_once()
 
@@ -280,27 +416,35 @@ def watch_loop(interval: float, settle_seconds: float) -> int:
         paths = changed_paths(baseline, stabilized)
         baseline = stabilized
         if PROJECT_MODE:
+            sync_pathspecs = project_sync_pathspecs(paths)
             if needs_full_project_render(paths):
-                render_project_site()
+                render_result = render_project_site()
+                if git_auto_sync_enabled and render_result == 0:
+                    git_auto_sync(sync_pathspecs)
                 continue
 
             touched_collections = changed_collections(paths)
             existing_workspaces = {workspace.key: workspace for workspace in list_collection_workspaces()}
+            collection_failures = 0
             for key in sorted(touched_collections):
                 workspace = existing_workspaces.get(key)
                 if workspace is None:
                     continue
-                render_collection_workspace(workspace.root)
-            render_root_hub()
+                collection_failures += int(render_collection_workspace(workspace.root) != 0)
+            hub_result = render_root_hub()
+            if git_auto_sync_enabled and collection_failures == 0 and hub_result == 0:
+                git_auto_sync(sync_pathspecs)
             continue
 
-        render_once()
+        render_result = render_once()
+        if git_auto_sync_enabled and render_result == 0:
+            git_auto_sync(workspace_sync_pathspecs())
 
     log("Watcher stopped.")
     return 0
 
 
-def start_watcher(interval: float, settle_seconds: float) -> int:
+def start_watcher(interval: float, settle_seconds: float, git_auto_sync_enabled: bool) -> int:
     running, pid, command = watcher_running()
     if running and pid is not None:
         print(f"Watcher already running with pid {pid}.")
@@ -321,6 +465,7 @@ def start_watcher(interval: float, settle_seconds: float) -> int:
                 "--workspace",
                 str(ROOT),
                 "watch",
+                *(["--git-auto-sync"] if git_auto_sync_enabled else []),
                 "--interval",
                 str(interval),
                 "--settle-seconds",
@@ -402,6 +547,11 @@ def parse_args() -> argparse.Namespace:
             default=1.0,
             help="How long a change burst must stay quiet before rebuilding.",
         )
+        subparser.add_argument(
+            "--git-auto-sync",
+            action="store_true",
+            help="After a successful render, automatically git add/commit/push changed collection files.",
+        )
 
     subparsers.add_parser("stop")
     subparsers.add_parser("status")
@@ -421,9 +571,9 @@ def main() -> int:
     else:
         configure_workspace(PROJECT_ROOT)
     if args.command == "watch":
-        return watch_loop(args.interval, args.settle_seconds)
+        return watch_loop(args.interval, args.settle_seconds, args.git_auto_sync)
     if args.command == "start":
-        return start_watcher(args.interval, args.settle_seconds)
+        return start_watcher(args.interval, args.settle_seconds, args.git_auto_sync)
     if args.command == "stop":
         return stop_watcher()
     if args.command == "status":

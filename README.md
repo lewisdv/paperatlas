@@ -113,7 +113,7 @@ python3 scripts/site_runtime.py url
 python3 scripts/site_runtime.py stop
 ```
 
-This starts both the localhost site server and the root watcher, so the top-level `index.html` stays available at the same URL while collections rerender in the background.
+This starts both the localhost site server and the root watcher, so the top-level `index.html` stays available at the same URL while collections rerender in the background. The bundled watcher start also enables automatic git sync for changed collection files.
 
 For a macOS login-time setup with a friendly local hostname such as `http://paperatlas.local:8765`, use:
 
@@ -123,7 +123,7 @@ python3 scripts/macos_local_site.py install
 python3 scripts/macos_local_site.py status
 ```
 
-This generates LaunchAgent plists, installs them into `~/Library/LaunchAgents`, loads them with `launchctl`, and adds `paperatlas.local` to `/etc/hosts`.
+This generates LaunchAgent plists, installs them into `~/Library/LaunchAgents`, loads them with `launchctl`, and adds `paperatlas.local` to `/etc/hosts`. The watcher LaunchAgent also starts with git auto-sync enabled.
 
 ## GitHub Pages
 
@@ -167,6 +167,14 @@ python3 scripts/watch_wiki_html.py stop
 ```
 
 The root watcher polls `collections/` every 2 seconds, rerenders only the collection(s) that changed, and also regenerates the top-level `index.html`. It also catches newly added collections.
+
+If you also want each successful wiki update to be committed and pushed to GitHub automatically, start the watcher with git auto-sync:
+
+```bash
+python3 scripts/watch_wiki_html.py start --git-auto-sync
+```
+
+This stages only the changed collection files, creates an automatic commit, and pushes it to the current branch's `origin` remote after a successful rerender.
 
 If you want a collection-scoped watcher instead:
 

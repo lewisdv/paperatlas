@@ -31,7 +31,7 @@ def start_site() -> int:
     serve_result = run_script(SERVE_SCRIPT, "start")
     print_result(serve_result)
 
-    watch_result = run_script(WATCH_SCRIPT, "start")
+    watch_result = run_script(WATCH_SCRIPT, "start", "--git-auto-sync")
     print_result(watch_result)
 
     url_result = run_script(SERVE_SCRIPT, "url")
@@ -83,7 +83,7 @@ def restart_site() -> int:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Manage the paper_collect local website and automatic HTML updates."
+        description="Manage the paper_collect local website, automatic HTML updates, and git sync."
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
     subparsers.add_parser("start", help="Start the localhost site server and the root watcher.")
