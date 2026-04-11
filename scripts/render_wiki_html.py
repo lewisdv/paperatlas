@@ -23,6 +23,7 @@ ASSETS_DIR = OUTPUT_DIR / "assets"
 STYLE_PATH = ASSETS_DIR / "style.css"
 WORKSPACE_TITLE = "Research Collection"
 WORKSPACE_DESCRIPTION = "Static HTML view of the Markdown research wiki."
+SITE_BRAND = "paper_atlas"
 LOCAL_VIEWER_HOST = "127.0.0.1"
 LOCAL_VIEWER_PORT = 8765
 LOCAL_VIEWER_BASE = f"http://{LOCAL_VIEWER_HOST}:{LOCAL_VIEWER_PORT}"
@@ -339,7 +340,7 @@ PAGE_TEMPLATE = Template(
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | {{ workspace_title }} wiki</title>
+    <title>{{ page.title }} | {{ workspace_title }} wiki | {{ site_brand }}</title>
     <link rel="stylesheet" href="{{ stylesheet_href }}">
   </head>
   <body>
@@ -359,7 +360,7 @@ PAGE_TEMPLATE = Template(
               </svg>
               <span class="home-logo-text" data-i18n-key="home">Home</span>
             </a>
-            <p class="eyebrow">paper_collect</p>
+            <p class="eyebrow">{{ site_brand }}</p>
           </div>
           <a class="brand-link" href="{{ dashboard_href }}" data-file-href="{{ dashboard_file_href }}" data-http-href="{{ dashboard_http_href }}">
             <h1><span>{{ workspace_title }}</span><span data-i18n-key="wiki_suffix"> Wiki</span></h1>
@@ -427,7 +428,7 @@ PAGE_TEMPLATE = Template(
       (() => {
         const i18nData = JSON.parse(document.getElementById("page-i18n-data").textContent);
         const state = {
-          language: localStorage.getItem("paper_collect_lang") || "en",
+          language: localStorage.getItem("paper_atlas_lang") || "en",
         };
         const langButtons = Array.from(document.querySelectorAll(".lang-button"));
 
@@ -543,7 +544,7 @@ PAGE_TEMPLATE = Template(
         langButtons.forEach((button) => {
           button.addEventListener("click", () => {
             state.language = button.dataset.lang;
-            localStorage.setItem("paper_collect_lang", state.language);
+            localStorage.setItem("paper_atlas_lang", state.language);
             applyLanguage();
           });
         });
@@ -563,7 +564,7 @@ DASHBOARD_TEMPLATE = Template(
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ workspace_title }} Dashboard | paper_collect</title>
+    <title>{{ workspace_title }} Dashboard | {{ site_brand }}</title>
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
@@ -587,7 +588,7 @@ DASHBOARD_TEMPLATE = Template(
               </svg>
               <span class="home-logo-text" data-i18n-key="home">Home</span>
             </a>
-            <p class="eyebrow">paper_collect</p>
+            <p class="eyebrow">{{ site_brand }}</p>
           </div>
           <h1><span>{{ workspace_title }}</span><span data-i18n-key="wiki_suffix"> Wiki</span></h1>
           <p class="subtle" data-i18n-key="workspace_description">{{ workspace_description }}</p>
@@ -865,7 +866,7 @@ DASHBOARD_TEMPLATE = Template(
         const GRAPH_MAX_PIXEL_RATIO = 1.75;
         const GRAPH_TARGET_FPS = 36;
         const GRAPH_ACTIVE_EDGE_BUDGET = 180;
-        const GRAPH_SETTINGS_STORAGE_KEY = "paper_collect_graph_settings_v1";
+        const GRAPH_SETTINGS_STORAGE_KEY = "paper_atlas_graph_settings_v1";
         const DEFAULT_GRAPH_SETTINGS = Object.freeze({
           nodeScale: 0.72,
           edgeScale: 0.95,
@@ -874,7 +875,7 @@ DASHBOARD_TEMPLATE = Template(
           linkDistanceScale: 1,
           showLabels: true,
         });
-        const DATABASE_SETTINGS_STORAGE_KEY = "paper_collect_database_settings_v1";
+        const DATABASE_SETTINGS_STORAGE_KEY = "paper_atlas_database_settings_v1";
         const DEFAULT_DATABASE_SETTINGS = Object.freeze({
           sortKey: "recent",
           sortDirection: "desc",
@@ -886,7 +887,7 @@ DASHBOARD_TEMPLATE = Template(
           tags: new Set(),
           view: "papers",
           selectedNodeId: null,
-          language: localStorage.getItem("paper_collect_lang") || "en",
+          language: localStorage.getItem("paper_atlas_lang") || "en",
           graphSettings: loadGraphSettings(),
           databaseSettings: loadDatabaseSettings(),
         };
@@ -2409,7 +2410,7 @@ DASHBOARD_TEMPLATE = Template(
         langButtons.forEach((button) => {
           button.addEventListener("click", () => {
             state.language = button.dataset.lang;
-            localStorage.setItem("paper_collect_lang", state.language);
+            localStorage.setItem("paper_atlas_lang", state.language);
             applyLanguage();
             renderAll();
           });
@@ -4919,6 +4920,7 @@ def render_dashboard(pages: List[Page], generated_at: str):
         graph_detail_help_default=context["graph_copy"]["en"]["graph_detail_help"],
         dashboard_http_href=http_href_for_path(dashboard_path),
         generated_at=generated_at,
+        site_brand=SITE_BRAND,
     )
     dashboard_path.write_text(html_text, encoding="utf-8")
 
@@ -4947,6 +4949,7 @@ def render_page(page: Page, pages: List[Page], generated_at: str):
         show_local_viewer_link=not PUBLIC_SITE_MODE,
         i18n_data_json=build_i18n_data_json(),
         generated_at=generated_at,
+        site_brand=SITE_BRAND,
     )
     page.output_path.write_text(html_text, encoding="utf-8")
 
@@ -4970,7 +4973,7 @@ ROOT_HUB_TEMPLATE = Template(
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>paper_collect | Research Collection Hub</title>
+  <title>{{ site_brand }} | Research Collection Hub</title>
   <style>
     :root {
       --paper: #f7f2e7;
@@ -5337,7 +5340,7 @@ ROOT_HUB_TEMPLATE = Template(
     <main class="hub">
       <section class="panel hero">
         <div>
-          <p class="eyebrow">paper_collect</p>
+          <p class="eyebrow">{{ site_brand }}</p>
           <h1>Research Collection Hub</h1>
           <p class="lede">
             Karpathy <code>LLM wiki</code> 패턴을 바탕으로 만든 연구용 지식 허브입니다.
@@ -5575,7 +5578,7 @@ def build_root_hub_context() -> Dict[str, object]:
 def render_root_hub() -> Path:
     context = build_root_hub_context()
     output_path = PROJECT_ROOT / "index.html"
-    output_path.write_text(ROOT_HUB_TEMPLATE.render(**context), encoding="utf-8")
+    output_path.write_text(ROOT_HUB_TEMPLATE.render(site_brand=SITE_BRAND, **context), encoding="utf-8")
     return output_path
 
 
