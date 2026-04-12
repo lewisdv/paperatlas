@@ -303,3 +303,15 @@
 - Parsed raw/sources/cattaneo_2019_tumor_organoid-t-cell_coculture_systems.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/cattaneo_2019_tumor_organoid-t-cell_coculture_systems.
 - Updated source page wiki/sources/cattaneo_2019_tumor_organoid-t-cell_coculture_systems.md.
+
+## [2026-04-12 12:40 KST] source parsed | chen_2023_protocol_for_generating_reproducible_miniaturized.pdf
+
+- Parsed raw/sources/chen_2023_protocol_for_generating_reproducible_miniaturized.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized.
+- Updated source page wiki/sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md.
+
+## [2026-04-12 12:40 KST] source parsed | co_2021_controlling_the_polarity_of_human.pdf
+
+- Parsed raw/sources/co_2021_controlling_the_polarity_of_human.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/co_2021_controlling_the_polarity_of_human.
+- Updated source page wiki/sources/co_2021_controlling_the_polarity_of_human.md.

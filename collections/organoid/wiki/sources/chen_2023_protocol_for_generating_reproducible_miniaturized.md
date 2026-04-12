@@ -68,3 +68,24 @@ deep_ingested: 2026-04-10
 
 - Which steps in this midbrain workflow drive the most variability across lines or batches?
 - What extra maturation or assay layer is usually needed after the baseline derivation works?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:40:44+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/chen_2023_protocol_for_generating_reproducible_miniaturized.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized -f json,markdown`
+- Manifest: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/opendataloader-run.json](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized.json](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized.json)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized.md](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized.md)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile1.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile2.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile3.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile4.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile5.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile5.png)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile6.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile6.png)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile7.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile7.png)
+- Output: [raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile8.png](../../raw/derived/opendataloader/chen_2023_protocol_for_generating_reproducible_miniaturized/chen_2023_protocol_for_generating_reproducible_miniaturized_images/imageFile8.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->
