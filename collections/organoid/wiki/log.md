@@ -387,3 +387,15 @@
 - Parsed raw/sources/kanton_2019_organoid_single-cell_genomic_atlas.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/kanton_2019_organoid_single-cell_genomic_atlas.
 - Updated source page wiki/sources/kanton_2019_organoid_single-cell_genomic_atlas.md.
+
+## [2026-04-12 12:43 KST] source parsed | kelley_2024_host_circuit_engagement_of_human.pdf
+
+- Parsed raw/sources/kelley_2024_host_circuit_engagement_of_human.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/kelley_2024_host_circuit_engagement_of_human.
+- Updated source page wiki/sources/kelley_2024_host_circuit_engagement_of_human.md.
+
+## [2026-04-12 12:43 KST] source parsed | koehler_2017_generation_of_inner_ear_organoids.pdf
+
+- Parsed raw/sources/koehler_2017_generation_of_inner_ear_organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids.
+- Updated source page wiki/sources/koehler_2017_generation_of_inner_ear_organoids.md.

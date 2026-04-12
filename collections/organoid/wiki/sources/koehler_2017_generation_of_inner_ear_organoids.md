@@ -74,3 +74,32 @@ deep_ingested: 2026-04-09
 - Can cochlear (not just vestibular) hair cells be generated from this approach?
 - How do the electrophysiological properties compare to native human (not mouse) hair cells?
 - What is the maximum useful in vitro lifespan?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:43:08+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/koehler_2017_generation_of_inner_ear_organoids.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids -f json,markdown`
+- Manifest: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/opendataloader-run.json](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids.json](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids.json)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids.md](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids.md)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile1.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile10.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile10.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile11.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile11.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile12.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile12.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile13.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile13.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile14.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile14.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile15.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile15.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile16.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile16.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile2.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile3.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile4.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile5.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile5.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile6.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile6.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile7.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile7.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile8.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile8.png)
+- Output: [raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile9.png](../../raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids/koehler_2017_generation_of_inner_ear_organoids_images/imageFile9.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->
