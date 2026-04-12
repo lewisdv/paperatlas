@@ -273,3 +273,9 @@
 - Parsed raw/sources/balboa_2022_functional_metabolic_and_transcriptional.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/balboa_2022_functional_metabolic_and_transcriptional.
 - Updated source page wiki/sources/balboa_2022_functional_metabolic_and_transcriptional.md.
+
+## [2026-04-12 12:40 KST] source parsed | bhaduri_2020_cell_stress_in_cortical.pdf
+
+- Parsed raw/sources/bhaduri_2020_cell_stress_in_cortical.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/bhaduri_2020_cell_stress_in_cortical.
+- Updated source page wiki/sources/bhaduri_2020_cell_stress_in_cortical.md.
