@@ -453,3 +453,9 @@
 - Parsed raw/sources/morizane_2016_generation_of_nephron_progenitor_cells.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells.
 - Updated source page wiki/sources/morizane_2016_generation_of_nephron_progenitor_cells.md.
+
+## [2026-04-12 12:44 KST] source parsed | olijnik_2024_generating_human_bone_marrow_organoids.pdf
+
+- Parsed raw/sources/olijnik_2024_generating_human_bone_marrow_organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/olijnik_2024_generating_human_bone_marrow_organoids.
+- Updated source page wiki/sources/olijnik_2024_generating_human_bone_marrow_organoids.md.
