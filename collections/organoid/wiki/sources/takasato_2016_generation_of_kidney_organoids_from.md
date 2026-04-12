@@ -66,3 +66,19 @@ deep_ingested: 2026-04-08
 
 - Which steps in this kidney workflow drive the most variability across lines or batches?
 - What extra maturation or assay layer is usually needed after the baseline derivation works?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:45:26+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/takasato_2016_generation_of_kidney_organoids_from.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from -f json,markdown`
+- Manifest: [raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/opendataloader-run.json](../../raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from.json](../../raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from.json)
+- Output: [raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from.md](../../raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from.md)
+- Output: [raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from_images/imageFile1.png](../../raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from_images/imageFile2.png](../../raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from_images/imageFile3.png](../../raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from/takasato_2016_generation_of_kidney_organoids_from_images/imageFile3.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->

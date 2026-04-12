@@ -471,3 +471,33 @@
 - Parsed raw/sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.
 - Updated source page wiki/sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.md.
+
+## [2026-04-12 12:45 KST] source parsed | puschhof_2021_intestinal_organoid_cocultures_with_microbes.pdf
+
+- Parsed raw/sources/puschhof_2021_intestinal_organoid_cocultures_with_microbes.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/puschhof_2021_intestinal_organoid_cocultures_with_microbes.
+- Updated source page wiki/sources/puschhof_2021_intestinal_organoid_cocultures_with_microbes.md.
+
+## [2026-04-12 12:45 KST] source parsed | sloan_2018_generation_and_assembly_of_human.pdf
+
+- Parsed raw/sources/sloan_2018_generation_and_assembly_of_human.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/sloan_2018_generation_and_assembly_of_human.
+- Updated source page wiki/sources/sloan_2018_generation_and_assembly_of_human.md.
+
+## [2026-04-12 12:45 KST] source parsed | takasato_2016_generation_of_kidney_organoids_from.pdf
+
+- Parsed raw/sources/takasato_2016_generation_of_kidney_organoids_from.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/takasato_2016_generation_of_kidney_organoids_from.
+- Updated source page wiki/sources/takasato_2016_generation_of_kidney_organoids_from.md.
+
+## [2026-04-12 12:45 KST] source parsed | ullah_2025_generating_and_characterizing_human_telencephalic.pdf
+
+- Parsed raw/sources/ullah_2025_generating_and_characterizing_human_telencephalic.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/ullah_2025_generating_and_characterizing_human_telencephalic.
+- Updated source page wiki/sources/ullah_2025_generating_and_characterizing_human_telencephalic.md.
+
+## [2026-04-12 12:45 KST] source parsed | valiulahi_2021_generation_of_caudal-type_serotonin_neurons.pdf
+
+- Parsed raw/sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.
+- Updated source page wiki/sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md.
