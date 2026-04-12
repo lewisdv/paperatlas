@@ -459,3 +459,15 @@
 - Parsed raw/sources/olijnik_2024_generating_human_bone_marrow_organoids.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/olijnik_2024_generating_human_bone_marrow_organoids.
 - Updated source page wiki/sources/olijnik_2024_generating_human_bone_marrow_organoids.md.
+
+## [2026-04-12 12:44 KST] source parsed | pereira_2021_human_sensorimotor_organoids_derived.pdf
+
+- Parsed raw/sources/pereira_2021_human_sensorimotor_organoids_derived.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/pereira_2021_human_sensorimotor_organoids_derived.
+- Updated source page wiki/sources/pereira_2021_human_sensorimotor_organoids_derived.md.
+
+## [2026-04-12 12:45 KST] source parsed | pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.pdf
+
+- Parsed raw/sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.
+- Updated source page wiki/sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.md.
