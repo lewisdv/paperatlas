@@ -70,3 +70,31 @@ deep_ingested: 2026-04-09
 - How do the 10% failure cases fail — which step is most fragile?
 - Does hCS reliability translate to functional (electrophysiological) reproducibility in MEA / patch clamp?
 - How does hCS compare to Velasco's dorsal forebrain protocol on fidelity (subtype-level) rather than just reliability?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:46:58+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/yoon_2019_reliability_of_human_cortical.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical -f json,markdown`
+- Manifest: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/opendataloader-run.json](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical.json](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical.json)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical.md](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical.md)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile1.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile10.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile10.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile11.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile11.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile12.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile12.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile13.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile13.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile14.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile14.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile15.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile15.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile2.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile3.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile4.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile5.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile5.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile6.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile6.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile7.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile7.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile8.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile8.png)
+- Output: [raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile9.png](../../raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical/yoon_2019_reliability_of_human_cortical_images/imageFile9.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->

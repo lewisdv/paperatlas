@@ -531,3 +531,21 @@
 - Parsed raw/sources/wimmer_2019_generation_of_blood_vessel_organoids.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/wimmer_2019_generation_of_blood_vessel_organoids.
 - Updated source page wiki/sources/wimmer_2019_generation_of_blood_vessel_organoids.md.
+
+## [2026-04-12 12:46 KST] source parsed | worsdorfer_2019_generation_of_complex_human_organoid.pdf
+
+- Parsed raw/sources/worsdorfer_2019_generation_of_complex_human_organoid.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid.
+- Updated source page wiki/sources/worsdorfer_2019_generation_of_complex_human_organoid.md.
+
+## [2026-04-12 12:46 KST] source parsed | xia_2014_the_generation_of_kidney_organoids.pdf
+
+- Parsed raw/sources/xia_2014_the_generation_of_kidney_organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/xia_2014_the_generation_of_kidney_organoids.
+- Updated source page wiki/sources/xia_2014_the_generation_of_kidney_organoids.md.
+
+## [2026-04-12 12:46 KST] source parsed | yoon_2019_reliability_of_human_cortical.pdf
+
+- Parsed raw/sources/yoon_2019_reliability_of_human_cortical.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical.
+- Updated source page wiki/sources/yoon_2019_reliability_of_human_cortical.md.

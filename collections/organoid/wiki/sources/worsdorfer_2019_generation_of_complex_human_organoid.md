@@ -76,3 +76,25 @@ deep_ingested: 2026-04-09
 - Is the microglia-like cell yield reproducible?
 - Can MPCs deliver other tissue-resident immune cells (T cells, macrophages)?
 - What is the upper limit of organoid size achievable with MPC-mediated vascularization?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:46:44+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/worsdorfer_2019_generation_of_complex_human_organoid.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid -f json,markdown`
+- Manifest: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/opendataloader-run.json](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid.json](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid.json)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid.md](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid.md)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile1.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile2.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile3.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile4.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile5.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile5.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile6.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile6.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile7.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile7.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile8.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile8.png)
+- Output: [raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile9.png](../../raw/derived/opendataloader/worsdorfer_2019_generation_of_complex_human_organoid/worsdorfer_2019_generation_of_complex_human_organoid_images/imageFile9.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->
