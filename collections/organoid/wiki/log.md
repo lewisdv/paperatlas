@@ -513,3 +513,21 @@
 - Parsed raw/sources/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.
 - Updated source page wiki/sources/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.md.
+
+## [2026-04-12 12:46 KST] source parsed | velasco_2019_individual_brain_organoids_reproducibly.pdf
+
+- Parsed raw/sources/velasco_2019_individual_brain_organoids_reproducibly.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/velasco_2019_individual_brain_organoids_reproducibly.
+- Updated source page wiki/sources/velasco_2019_individual_brain_organoids_reproducibly.md.
+
+## [2026-04-12 12:46 KST] source parsed | watanabe_2022_transplantation_of_intestinal_organoids_into.pdf
+
+- Parsed raw/sources/watanabe_2022_transplantation_of_intestinal_organoids_into.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/watanabe_2022_transplantation_of_intestinal_organoids_into.
+- Updated source page wiki/sources/watanabe_2022_transplantation_of_intestinal_organoids_into.md.
+
+## [2026-04-12 12:46 KST] source parsed | wimmer_2019_generation_of_blood_vessel_organoids.pdf
+
+- Parsed raw/sources/wimmer_2019_generation_of_blood_vessel_organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/wimmer_2019_generation_of_blood_vessel_organoids.
+- Updated source page wiki/sources/wimmer_2019_generation_of_blood_vessel_organoids.md.
