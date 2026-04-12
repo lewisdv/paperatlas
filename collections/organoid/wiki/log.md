@@ -255,3 +255,9 @@
 - Deep-ingested six previously queued organoid sources covering brainstem, hippocampus, midbrain, hindbrain, and cerebellum.
 - Added concept page wiki/concepts/brain-subregion-specific-organoid-protocols.md.
 - Refreshed brain-focused concept pages so subregion-specific protocols show up in the organoid knowledge base.
+
+## [2026-04-12 12:37 KST] source parsed | eura_2020_brainstem_organoids_from_human_pluripotent.pdf
+
+- Parsed raw/sources/eura_2020_brainstem_organoids_from_human_pluripotent.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/eura_2020_brainstem_organoids_from_human_pluripotent.
+- Updated source page wiki/sources/eura_2020_brainstem_organoids_from_human_pluripotent.md.
