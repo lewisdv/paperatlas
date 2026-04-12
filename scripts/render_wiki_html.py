@@ -354,6 +354,10 @@ PAGE_TEMPLATE = Template(
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | {{ workspace_title }} wiki | {{ site_brand }}</title>
+    <meta name="theme-color" content="#7a3520">
+    <link rel="icon" href="{{ logo_href }}" type="image/svg+xml" sizes="any">
+    <link rel="shortcut icon" href="{{ logo_href }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ logo_href }}">
     <link rel="stylesheet" href="{{ stylesheet_href }}">
   </head>
   <body>
@@ -576,6 +580,10 @@ DASHBOARD_TEMPLATE = Template(
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ workspace_title }} Dashboard | {{ site_brand }}</title>
+    <meta name="theme-color" content="#7a3520">
+    <link rel="icon" href="{{ logo_href }}" type="image/svg+xml" sizes="any">
+    <link rel="shortcut icon" href="{{ logo_href }}" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="{{ logo_href }}">
     <link rel="stylesheet" href="assets/style.css">
   </head>
   <body>
@@ -5321,6 +5329,10 @@ ROOT_HUB_TEMPLATE = Template(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site_brand }} | Research Collection Hub</title>
+  <meta name="theme-color" content="#7a3520">
+  <link rel="icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml" sizes="any">
+  <link rel="shortcut icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/paper_atlas_logo.svg">
   <style>
     :root {
       --paper: #f7f2e7;
