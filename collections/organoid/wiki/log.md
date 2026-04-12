@@ -411,3 +411,15 @@
 - Parsed raw/sources/kuwahara_2015_generation_of_a_ciliary.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary.
 - Updated source page wiki/sources/kuwahara_2015_generation_of_a_ciliary.md.
+
+## [2026-04-12 12:43 KST] source parsed | lancaster_2014_generation_of_cerebral_organoids_from.pdf
+
+- Parsed raw/sources/lancaster_2014_generation_of_cerebral_organoids_from.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/lancaster_2014_generation_of_cerebral_organoids_from.
+- Updated source page wiki/sources/lancaster_2014_generation_of_cerebral_organoids_from.md.
+
+## [2026-04-12 12:43 KST] source parsed | lee_2022_generation_and_characterization_of_hair-bearing.pdf
+
+- Parsed raw/sources/lee_2022_generation_and_characterization_of_hair-bearing.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/lee_2022_generation_and_characterization_of_hair-bearing.
+- Updated source page wiki/sources/lee_2022_generation_and_characterization_of_hair-bearing.md.
