@@ -279,3 +279,15 @@
 - Parsed raw/sources/bhaduri_2020_cell_stress_in_cortical.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/bhaduri_2020_cell_stress_in_cortical.
 - Updated source page wiki/sources/bhaduri_2020_cell_stress_in_cortical.md.
+
+## [2026-04-12 12:40 KST] source parsed | broda_2018_generation_of_human_antral_and.pdf
+
+- Parsed raw/sources/broda_2018_generation_of_human_antral_and.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/broda_2018_generation_of_human_antral_and.
+- Updated source page wiki/sources/broda_2018_generation_of_human_antral_and.md.
+
+## [2026-04-12 12:40 KST] source parsed | broutier_2016_culture_and_establishment_of_self-renewing.pdf
+
+- Parsed raw/sources/broutier_2016_culture_and_establishment_of_self-renewing.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/broutier_2016_culture_and_establishment_of_self-renewing.
+- Updated source page wiki/sources/broutier_2016_culture_and_establishment_of_self-renewing.md.
