@@ -172,7 +172,7 @@ The repo also includes a GitHub Actions workflow at `.github/workflows/deploy-pa
 
 Recommended setup:
 
-1. Create a GitHub repository such as `paper_atlas` and push this workspace.
+1. Create a GitHub repository such as `paperatlas` and push this workspace.
 2. In the repository settings, use **Pages** with **GitHub Actions** as the source.
 3. Push to `main` or `master`, or run the workflow manually.
 
@@ -180,8 +180,8 @@ For a user site, GitHub's quickstart currently uses a repository named `<usernam
 
 Example project-site URL:
 
-- Repo: `https://github.com/<username>/paper_atlas`
-- Pages: `https://<username>.github.io/paper_atlas/`
+- Repo: `https://github.com/<username>/paperatlas`
+- Pages: `https://<username>.github.io/paperatlas/`
 
 Keep every collection HTML site and the top-level hub updated automatically:
 

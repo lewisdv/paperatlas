@@ -26,7 +26,7 @@ LOGO_FILENAME = "paper_atlas_logo.svg"
 LOGO_SOURCE_PATH = SOURCE_ASSETS_DIR / LOGO_FILENAME
 WORKSPACE_TITLE = "Research Collection"
 WORKSPACE_DESCRIPTION = "Static HTML view of the Markdown research wiki."
-SITE_BRAND = "paper_atlas"
+SITE_BRAND = "paperatlas"
 LOCAL_VIEWER_HOST = "127.0.0.1"
 LOCAL_VIEWER_PORT = 8765
 LOCAL_VIEWER_BASE = f"http://{LOCAL_VIEWER_HOST}:{LOCAL_VIEWER_PORT}"
@@ -439,7 +439,7 @@ PAGE_TEMPLATE = Template(
       (() => {
         const i18nData = JSON.parse(document.getElementById("page-i18n-data").textContent);
         const state = {
-          language: localStorage.getItem("paper_atlas_lang") || "en",
+          language: localStorage.getItem("paperatlas_lang") || "en",
         };
         const langButtons = Array.from(document.querySelectorAll(".lang-button"));
 
@@ -555,7 +555,7 @@ PAGE_TEMPLATE = Template(
         langButtons.forEach((button) => {
           button.addEventListener("click", () => {
             state.language = button.dataset.lang;
-            localStorage.setItem("paper_atlas_lang", state.language);
+            localStorage.setItem("paperatlas_lang", state.language);
             applyLanguage();
           });
         });
@@ -889,7 +889,7 @@ DASHBOARD_TEMPLATE = Template(
         const GRAPH_MAX_PIXEL_RATIO = 1.75;
         const GRAPH_TARGET_FPS = 36;
         const GRAPH_ACTIVE_EDGE_BUDGET = 180;
-        const GRAPH_SETTINGS_STORAGE_KEY = "paper_atlas_graph_settings_v1";
+        const GRAPH_SETTINGS_STORAGE_KEY = "paperatlas_graph_settings_v1";
         const DEFAULT_GRAPH_SETTINGS = Object.freeze({
           nodeScale: 0.72,
           edgeScale: 0.95,
@@ -898,7 +898,7 @@ DASHBOARD_TEMPLATE = Template(
           linkDistanceScale: 1,
           showLabels: true,
         });
-        const DATABASE_SETTINGS_STORAGE_KEY = "paper_atlas_database_settings_v1";
+        const DATABASE_SETTINGS_STORAGE_KEY = "paperatlas_database_settings_v1";
         const DEFAULT_DATABASE_SETTINGS = Object.freeze({
           sortKey: "recent",
           sortDirection: "desc",
@@ -910,7 +910,7 @@ DASHBOARD_TEMPLATE = Template(
           tags: new Set(),
           view: "papers",
           selectedNodeId: null,
-          language: localStorage.getItem("paper_atlas_lang") || "en",
+          language: localStorage.getItem("paperatlas_lang") || "en",
           graphSettings: loadGraphSettings(),
           databaseSettings: loadDatabaseSettings(),
         };
@@ -2531,7 +2531,7 @@ DASHBOARD_TEMPLATE = Template(
         langButtons.forEach((button) => {
           button.addEventListener("click", () => {
             state.language = button.dataset.lang;
-            localStorage.setItem("paper_atlas_lang", state.language);
+            localStorage.setItem("paperatlas_lang", state.language);
             applyLanguage();
             renderAll();
           });

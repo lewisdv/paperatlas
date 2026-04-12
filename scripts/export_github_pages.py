@@ -115,7 +115,7 @@ def export_site(output_dir: Path, include_pdfs: bool) -> None:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Export a GitHub Pages-friendly static site from the paper_atlas workspace."
+        description="Export a GitHub Pages-friendly static site from the paperatlas workspace."
     )
     parser.add_argument(
         "--output-dir",
