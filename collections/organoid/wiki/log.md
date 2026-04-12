@@ -339,3 +339,15 @@
 - Parsed raw/sources/driehuis_2020_establishment_of_patient-derived_cancer_organoids.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/driehuis_2020_establishment_of_patient-derived_cancer_organoids.
 - Updated source page wiki/sources/driehuis_2020_establishment_of_patient-derived_cancer_organoids.md.
+
+## [2026-04-12 12:41 KST] source parsed | drost_2016_organoid_culture_systems_for_prostate.pdf
+
+- Parsed raw/sources/drost_2016_organoid_culture_systems_for_prostate.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/drost_2016_organoid_culture_systems_for_prostate.
+- Updated source page wiki/sources/drost_2016_organoid_culture_systems_for_prostate.md.
+
+## [2026-04-12 12:41 KST] source parsed | fitzgerald_2024_generation_of_semi-guided_cortical_organoids.pdf
+
+- Parsed raw/sources/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.
+- Updated source page wiki/sources/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.md.
