@@ -441,3 +441,15 @@
 - Parsed raw/sources/meng_2025_crispr_screens_in_human_neural.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/meng_2025_crispr_screens_in_human_neural.
 - Updated source page wiki/sources/meng_2025_crispr_screens_in_human_neural.md.
+
+## [2026-04-12 12:44 KST] source parsed | miller_2019_generation_of_lung_organoids_from.pdf
+
+- Parsed raw/sources/miller_2019_generation_of_lung_organoids_from.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from.
+- Updated source page wiki/sources/miller_2019_generation_of_lung_organoids_from.md.
+
+## [2026-04-12 12:44 KST] source parsed | morizane_2016_generation_of_nephron_progenitor_cells.pdf
+
+- Parsed raw/sources/morizane_2016_generation_of_nephron_progenitor_cells.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells.
+- Updated source page wiki/sources/morizane_2016_generation_of_nephron_progenitor_cells.md.

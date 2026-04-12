@@ -66,3 +66,21 @@ deep_ingested: 2026-04-08
 
 - Which steps in this kidney workflow drive the most variability across lines or batches?
 - What extra maturation or assay layer is usually needed after the baseline derivation works?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:44:24+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/morizane_2016_generation_of_nephron_progenitor_cells.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells -f json,markdown`
+- Manifest: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/opendataloader-run.json](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells.json](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells.json)
+- Output: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells.md](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells.md)
+- Output: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile1.png](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile2.png](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile3.png](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile4.png](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile5.png](../../raw/derived/opendataloader/morizane_2016_generation_of_nephron_progenitor_cells/morizane_2016_generation_of_nephron_progenitor_cells_images/imageFile5.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->

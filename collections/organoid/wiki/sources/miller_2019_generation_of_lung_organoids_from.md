@@ -66,3 +66,23 @@ deep_ingested: 2026-04-08
 
 - Which steps in this lung workflow drive the most variability across lines or batches?
 - What extra maturation or assay layer is usually needed after the baseline derivation works?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:44:19+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/miller_2019_generation_of_lung_organoids_from.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from -f json,markdown`
+- Manifest: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/opendataloader-run.json](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from.json](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from.json)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from.md](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from.md)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile1.png](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile2.png](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile3.png](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile4.png](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile5.png](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile5.png)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile6.png](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile6.png)
+- Output: [raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile7.png](../../raw/derived/opendataloader/miller_2019_generation_of_lung_organoids_from/miller_2019_generation_of_lung_organoids_from_images/imageFile7.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->
