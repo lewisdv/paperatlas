@@ -381,3 +381,9 @@
 - Parsed raw/sources/homan_2019_flow-enhanced_vascularization_and_maturation.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/homan_2019_flow-enhanced_vascularization_and_maturation.
 - Updated source page wiki/sources/homan_2019_flow-enhanced_vascularization_and_maturation.md.
+
+## [2026-04-12 12:42 KST] source parsed | kanton_2019_organoid_single-cell_genomic_atlas.pdf
+
+- Parsed raw/sources/kanton_2019_organoid_single-cell_genomic_atlas.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/kanton_2019_organoid_single-cell_genomic_atlas.
+- Updated source page wiki/sources/kanton_2019_organoid_single-cell_genomic_atlas.md.
