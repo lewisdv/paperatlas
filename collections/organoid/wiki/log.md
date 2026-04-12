@@ -327,3 +327,15 @@
 - Parsed raw/sources/dekkers_2021_long-term_culture_genetic_manipulation_and.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/dekkers_2021_long-term_culture_genetic_manipulation_and.
 - Updated source page wiki/sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md.
+
+## [2026-04-12 12:41 KST] source parsed | drakhlis_2021_generation_of_heart-forming_organoids_from.pdf
+
+- Parsed raw/sources/drakhlis_2021_generation_of_heart-forming_organoids_from.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/drakhlis_2021_generation_of_heart-forming_organoids_from.
+- Updated source page wiki/sources/drakhlis_2021_generation_of_heart-forming_organoids_from.md.
+
+## [2026-04-12 12:41 KST] source parsed | driehuis_2020_establishment_of_patient-derived_cancer_organoids.pdf
+
+- Parsed raw/sources/driehuis_2020_establishment_of_patient-derived_cancer_organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/driehuis_2020_establishment_of_patient-derived_cancer_organoids.
+- Updated source page wiki/sources/driehuis_2020_establishment_of_patient-derived_cancer_organoids.md.
