@@ -357,3 +357,15 @@
 - Parsed raw/sources/giandomenico_2021_generation_and_long-term_culture_of.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/giandomenico_2021_generation_and_long-term_culture_of.
 - Updated source page wiki/sources/giandomenico_2021_generation_and_long-term_culture_of.md.
+
+## [2026-04-12 12:41 KST] source parsed | he_2024_an_integrated_transcriptomic_cell_atlas.pdf
+
+- Parsed raw/sources/he_2024_an_integrated_transcriptomic_cell_atlas.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/he_2024_an_integrated_transcriptomic_cell_atlas.
+- Updated source page wiki/sources/he_2024_an_integrated_transcriptomic_cell_atlas.md.
+
+## [2026-04-12 12:42 KST] source parsed | hendriks_2020_establishment_of_human_fetal_hepatocyte.pdf
+
+- Parsed raw/sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/hendriks_2020_establishment_of_human_fetal_hepatocyte.
+- Updated source page wiki/sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.md.
