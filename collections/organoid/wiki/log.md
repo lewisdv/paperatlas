@@ -369,3 +369,15 @@
 - Parsed raw/sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/hendriks_2020_establishment_of_human_fetal_hepatocyte.
 - Updated source page wiki/sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.md.
+
+## [2026-04-12 12:42 KST] source parsed | hogrebe_2021_generation_of_insulin-producing_pancreatic.pdf
+
+- Parsed raw/sources/hogrebe_2021_generation_of_insulin-producing_pancreatic.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/hogrebe_2021_generation_of_insulin-producing_pancreatic.
+- Updated source page wiki/sources/hogrebe_2021_generation_of_insulin-producing_pancreatic.md.
+
+## [2026-04-12 12:42 KST] source parsed | homan_2019_flow-enhanced_vascularization_and_maturation.pdf
+
+- Parsed raw/sources/homan_2019_flow-enhanced_vascularization_and_maturation.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/homan_2019_flow-enhanced_vascularization_and_maturation.
+- Updated source page wiki/sources/homan_2019_flow-enhanced_vascularization_and_maturation.md.
