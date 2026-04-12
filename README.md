@@ -35,6 +35,7 @@ paper_collect/
 │   └── <collection>/
 │       ├── raw/
 │       │   ├── assets/
+│       │   ├── derived/
 │       │   └── sources/
 │       ├── wiki/
 │       │   ├── concepts/
@@ -58,6 +59,30 @@ Add a source file into the immutable raw collection:
 
 ```bash
 python3 scripts/wiki.py --collection organoid add-source /absolute/path/to/paper.pdf --title "Paper Title" --kind paper
+```
+
+Add a source and immediately create OpenDataLoader helper artifacts:
+
+```bash
+python3 scripts/wiki.py --collection organoid add-source /absolute/path/to/paper.pdf \
+  --title "Paper Title" \
+  --kind paper \
+  --parse-with-opendataloader \
+  --parse-format json,markdown
+```
+
+Parse an existing raw source later:
+
+```bash
+python3 scripts/wiki.py --collection organoid parse-source \
+  collections/organoid/raw/sources/example.pdf \
+  --parse-format json,markdown
+```
+
+Parse every source in a collection and skip ones that are already done:
+
+```bash
+python3 scripts/wiki.py --collection organoid parse-all-sources --only-missing
 ```
 
 Create a query page for a research question:
@@ -199,10 +224,39 @@ python3 scripts/wiki.py --collection single-cell-ai-models init
 ## Suggested Workflow
 
 1. Drop papers, articles, notes, or exports into `raw/sources/` with `add-source`.
-2. Ask Codex to ingest one source at a time.
-3. Let Codex update `wiki/sources/`, `wiki/entities/`, `wiki/concepts/`, `wiki/index.md`, and `wiki/log.md`.
-4. Ask questions against the wiki and save good answers in `wiki/queries/` or `wiki/syntheses/`.
-5. Occasionally ask Codex to lint the wiki for stale claims, missing cross-links, and contradictions.
+2. If a PDF has difficult layout, run OpenDataLoader parsing to generate helper artifacts under `raw/derived/opendataloader/`.
+3. Ask Codex to ingest one source at a time.
+4. Let Codex update `wiki/sources/`, `wiki/entities/`, `wiki/concepts/`, `wiki/index.md`, and `wiki/log.md`.
+5. Ask questions against the wiki and save good answers in `wiki/queries/` or `wiki/syntheses/`.
+6. Occasionally ask Codex to lint the wiki for stale claims, missing cross-links, and contradictions.
+
+## OpenDataLoader Integration
+
+`opendataloader-pdf` is now treated as an optional preprocessing layer for layout-sensitive PDFs.
+
+- It is useful when `pdftotext`-style extraction is too lossy.
+- It does not replace the original source PDF.
+- It does not replace the wiki workflow.
+
+Generated files are written under:
+
+```text
+collections/<collection>/raw/derived/opendataloader/<source-stem>/
+```
+
+Typical contents include Markdown, JSON, and an `opendataloader-run.json` manifest. When a source page exists, `wiki/sources/*.md` gets a `Parsed Artifacts` section with links to those files.
+
+Prerequisites for using the parser:
+
+```bash
+./scripts/setup_opendataloader_pdf.sh
+```
+
+For OCR or scanned-PDF workflows:
+
+```bash
+./scripts/setup_opendataloader_pdf.sh --with-hybrid
+```
 
 ## Knowledge-Base-First Usage
 

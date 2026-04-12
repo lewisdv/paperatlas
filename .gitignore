@@ -1,6 +1,7 @@
 .DS_Store
 .claude/
 .obsidian/
+.venv-opendataloader/
 __pycache__/
 *.pyc
 *.swp
@@ -14,6 +15,7 @@ collections/*/wiki_html/render_watcher.log
 index.html
 collections/*/wiki_html/
 collections/*/raw/sources/
+collections/*/raw/derived/
 collections/*/raw/ingest_cache*/
 site/
 .launchagent_*.log

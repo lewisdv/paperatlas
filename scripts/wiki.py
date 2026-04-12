@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
 import argparse
+import json
+import os
 import re
 import shutil
+import subprocess
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -15,6 +18,8 @@ RAW_DIR = ROOT / "raw"
 WIKI_DIR = ROOT / "wiki"
 SOURCE_DIR = RAW_DIR / "sources"
 ASSET_DIR = RAW_DIR / "assets"
+DERIVED_DIR = RAW_DIR / "derived"
+OPENDATALOADER_DIR = DERIVED_DIR / "opendataloader"
 SOURCE_PAGES_DIR = WIKI_DIR / "sources"
 ENTITY_DIR = WIKI_DIR / "entities"
 CONCEPT_DIR = WIKI_DIR / "concepts"
@@ -27,6 +32,8 @@ OVERVIEW_PATH = WIKI_DIR / "overview.md"
 REQUIRED_DIRS = [
     SOURCE_DIR,
     ASSET_DIR,
+    DERIVED_DIR,
+    OPENDATALOADER_DIR,
     SOURCE_PAGES_DIR,
     ENTITY_DIR,
     CONCEPT_DIR,
@@ -37,6 +44,7 @@ REQUIRED_DIRS = [
 
 def configure_workspace(root: Path):
     global ROOT, RAW_DIR, WIKI_DIR, SOURCE_DIR, ASSET_DIR
+    global DERIVED_DIR, OPENDATALOADER_DIR
     global SOURCE_PAGES_DIR, ENTITY_DIR, CONCEPT_DIR, QUERY_DIR, SYNTHESIS_DIR
     global INDEX_PATH, LOG_PATH, OVERVIEW_PATH, REQUIRED_DIRS
 
@@ -45,6 +53,8 @@ def configure_workspace(root: Path):
     WIKI_DIR = ROOT / "wiki"
     SOURCE_DIR = RAW_DIR / "sources"
     ASSET_DIR = RAW_DIR / "assets"
+    DERIVED_DIR = RAW_DIR / "derived"
+    OPENDATALOADER_DIR = DERIVED_DIR / "opendataloader"
     SOURCE_PAGES_DIR = WIKI_DIR / "sources"
     ENTITY_DIR = WIKI_DIR / "entities"
     CONCEPT_DIR = WIKI_DIR / "concepts"
@@ -56,6 +66,8 @@ def configure_workspace(root: Path):
     REQUIRED_DIRS = [
         SOURCE_DIR,
         ASSET_DIR,
+        DERIVED_DIR,
+        OPENDATALOADER_DIR,
         SOURCE_PAGES_DIR,
         ENTITY_DIR,
         CONCEPT_DIR,
@@ -170,6 +182,319 @@ def unique_path(path):
         counter += 1
 
 
+def opendataloader_bin_candidates():
+    candidates = []
+    env_bin = os.environ.get("OPENDATALOADER_PDF_BIN")
+    if env_bin:
+        candidates.append(Path(env_bin).expanduser())
+
+    candidates.extend(
+        [
+            PROJECT_ROOT / ".venv-opendataloader" / "bin" / "opendataloader-pdf",
+            ROOT / ".venv-opendataloader" / "bin" / "opendataloader-pdf",
+        ]
+    )
+    return candidates
+
+
+def find_opendataloader_executable():
+    executable = shutil.which("opendataloader-pdf")
+    if executable:
+        return Path(executable)
+
+    for candidate in opendataloader_bin_candidates():
+        if candidate.exists() and candidate.is_file():
+            return candidate
+    return None
+
+
+def build_opendataloader_env():
+    env = os.environ.copy()
+    path_parts = []
+    java_homes = []
+
+    for candidate in opendataloader_bin_candidates():
+        if candidate.exists():
+            path_parts.append(str(candidate.parent))
+
+    java_roots = [
+        Path("/usr/local/opt/openjdk@21"),
+        Path("/usr/local/opt/openjdk"),
+        Path("/opt/homebrew/opt/openjdk@21"),
+        Path("/opt/homebrew/opt/openjdk"),
+    ]
+    for root in java_roots:
+        bin_dir = root / "bin"
+        java_home = root / "libexec" / "openjdk.jdk" / "Contents" / "Home"
+        if bin_dir.exists():
+            path_parts.append(str(bin_dir))
+        if java_home.exists():
+            java_homes.append(java_home)
+
+    if path_parts:
+        env["PATH"] = ":".join(path_parts + [env.get("PATH", "")]).strip(":")
+    if "JAVA_HOME" not in env and java_homes:
+        env["JAVA_HOME"] = str(java_homes[0])
+    return env
+
+
+def ensure_source_inside_workspace(source_path):
+    try:
+        source_path.relative_to(SOURCE_DIR.resolve())
+    except ValueError:
+        print(
+            "Source file must already be inside %s" % SOURCE_DIR.resolve(),
+            file=sys.stderr,
+        )
+        return False
+    return True
+
+
+def humanize_title_from_path(path):
+    return path.stem.replace("_", " ").replace("-", " ").strip()
+
+
+def source_page_marker_block(source_file, generated_files, manifest_path, command_text):
+    lines = [
+        "<!-- opendataloader:begin -->",
+        "## Parsed Artifacts",
+        "",
+        "- Parser: OpenDataLoader PDF",
+        "- Generated: %s" % now().isoformat(timespec="seconds"),
+        "- Command: `%s`" % command_text,
+        "- Manifest: [%s](%s)"
+        % (
+            repo_rel(manifest_path),
+            (Path("../../") / repo_rel(manifest_path)).as_posix(),
+        ),
+    ]
+
+    for generated_path in generated_files:
+        lines.append(
+            "- Output: [%s](%s)"
+            % (
+                repo_rel(generated_path),
+                (Path("../../") / repo_rel(generated_path)).as_posix(),
+            )
+        )
+
+    lines.extend(
+        [
+            "",
+            "These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.",
+            "<!-- opendataloader:end -->",
+        ]
+    )
+    return "\n".join(lines)
+
+
+def find_source_page_for_file(source_file):
+    expected_rel = repo_rel(source_file).as_posix()
+    direct_match = SOURCE_PAGES_DIR / ("%s.md" % source_file.stem)
+    if direct_match.exists():
+        text = direct_match.read_text(encoding="utf-8")
+        if ("raw_source: %s" % expected_rel) in text:
+            return direct_match
+
+    for path in SOURCE_PAGES_DIR.glob("*.md"):
+        text = path.read_text(encoding="utf-8")
+        if ("raw_source: %s" % expected_rel) in text:
+            return path
+    return None
+
+
+def update_source_page_parsed_artifacts(source_page, source_file, generated_files, manifest_path, command_text):
+    block = source_page_marker_block(
+        source_file=source_file,
+        generated_files=generated_files,
+        manifest_path=manifest_path,
+        command_text=command_text,
+    )
+    text = source_page.read_text(encoding="utf-8")
+    start_marker = "<!-- opendataloader:begin -->"
+    end_marker = "<!-- opendataloader:end -->"
+
+    if start_marker in text and end_marker in text:
+        start_index = text.index(start_marker)
+        end_index = text.index(end_marker) + len(end_marker)
+        updated = (text[:start_index].rstrip() + "\n\n" + block + "\n").rstrip() + "\n"
+    else:
+        updated = text.rstrip() + "\n\n" + block + "\n"
+
+    source_page.write_text(updated, encoding="utf-8")
+
+
+def run_opendataloader_parse(source_path, format_value, use_struct_tree=False, hybrid_backend=None):
+    executable = find_opendataloader_executable()
+    if executable is None:
+        print(
+            "OpenDataLoader PDF CLI not found. Install with `./scripts/setup_opendataloader_pdf.sh` or `pip install -U opendataloader-pdf`.",
+            file=sys.stderr,
+        )
+        return None
+
+    output_dir = OPENDATALOADER_DIR / source_path.stem
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    command = [
+        str(executable),
+        str(source_path),
+        "-o",
+        str(output_dir),
+        "-f",
+        format_value,
+    ]
+    if use_struct_tree:
+        command.append("--use-struct-tree")
+    if hybrid_backend:
+        command.extend(["--hybrid", hybrid_backend])
+
+    result = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        env=build_opendataloader_env(),
+    )
+    if result.returncode != 0:
+        print("OpenDataLoader parse failed for %s" % source_path, file=sys.stderr)
+        if result.stderr.strip():
+            print(result.stderr.strip(), file=sys.stderr)
+        elif result.stdout.strip():
+            print(result.stdout.strip(), file=sys.stderr)
+        return None
+
+    generated_files = sorted(
+        path
+        for path in output_dir.rglob("*")
+        if path.is_file() and path.name != "opendataloader-run.json"
+    )
+    manifest_path = output_dir / "opendataloader-run.json"
+    manifest = {
+        "source": repo_rel(source_path).as_posix(),
+        "generated_at": now().isoformat(timespec="seconds"),
+        "parser": "opendataloader-pdf",
+        "formats": [token.strip() for token in format_value.split(",") if token.strip()],
+        "use_struct_tree": bool(use_struct_tree),
+        "hybrid_backend": hybrid_backend or "",
+        "command": command,
+        "outputs": [repo_rel(path).as_posix() for path in generated_files],
+        "stdout": result.stdout.strip(),
+    }
+    manifest_path.write_text(
+        json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
+
+    return {
+        "output_dir": output_dir,
+        "manifest_path": manifest_path,
+        "generated_files": generated_files,
+        "command_text": " ".join(command),
+    }
+
+
+def parse_source_with_opendataloader(source_path, *, format_value, use_struct_tree=False, hybrid_backend=None):
+    if not ensure_source_inside_workspace(source_path):
+        return 1
+
+    parse_result = run_opendataloader_parse(
+        source_path=source_path,
+        format_value=format_value,
+        use_struct_tree=use_struct_tree,
+        hybrid_backend=hybrid_backend,
+    )
+    if parse_result is None:
+        return 1
+
+    source_page = find_source_page_for_file(source_path)
+    if source_page is not None:
+        update_source_page_parsed_artifacts(
+            source_page=source_page,
+            source_file=source_path,
+            generated_files=parse_result["generated_files"],
+            manifest_path=parse_result["manifest_path"],
+            command_text=parse_result["command_text"],
+        )
+        append_log(
+            "source parsed",
+            source_path.name,
+            [
+                "Parsed %s with OpenDataLoader PDF." % repo_rel(source_path),
+                "Saved helper artifacts under %s." % repo_rel(parse_result["output_dir"]),
+                "Updated source page %s." % repo_rel(source_page),
+            ],
+        )
+    else:
+        print(
+            "No source page found for %s. Parsed artifacts were still generated."
+            % repo_rel(source_path),
+            file=sys.stderr,
+        )
+
+    print("Parsed source with OpenDataLoader: %s" % repo_rel(source_path))
+    print("output dir: %s" % repo_rel(parse_result["output_dir"]))
+    print("manifest: %s" % repo_rel(parse_result["manifest_path"]))
+    if parse_result["generated_files"]:
+        image_files = []
+        primary_files = []
+        for path in parse_result["generated_files"]:
+            if path.suffix.lower() in {".png", ".jpg", ".jpeg", ".webp"}:
+                image_files.append(path)
+            else:
+                primary_files.append(path)
+        print("outputs:")
+        for path in primary_files:
+            print("- %s" % repo_rel(path))
+        if image_files:
+            print("- %d image files" % len(image_files))
+    return 0
+
+
+def command_parse_all_sources(args):
+    ensure_layout()
+
+    source_files = sorted(path for path in SOURCE_DIR.iterdir() if path.is_file())
+    if args.limit:
+        source_files = source_files[: args.limit]
+
+    total = len(source_files)
+    if total == 0:
+        print("No source files found under %s" % repo_rel(SOURCE_DIR))
+        return 0
+
+    parsed = 0
+    skipped = 0
+    failed = 0
+
+    for index, source_path in enumerate(source_files, 1):
+        output_dir = OPENDATALOADER_DIR / source_path.stem
+        manifest_path = output_dir / "opendataloader-run.json"
+        if args.only_missing and manifest_path.exists() and not args.force:
+            print("[%d/%d] Skip: %s (already parsed)" % (index, total, source_path.name))
+            skipped += 1
+            continue
+
+        print("[%d/%d] Parsing: %s" % (index, total, source_path.name))
+        exit_code = parse_source_with_opendataloader(
+            source_path,
+            format_value=args.parse_format,
+            use_struct_tree=args.use_struct_tree,
+            hybrid_backend=args.hybrid_backend,
+        )
+        if exit_code == 0:
+            parsed += 1
+        else:
+            failed += 1
+
+    print("")
+    print("OpenDataLoader batch parse summary")
+    print("- parsed: %d" % parsed)
+    print("- skipped: %d" % skipped)
+    print("- failed: %d" % failed)
+
+    return 0 if failed == 0 else 1
+
+
 def build_source_page(title, kind, copied_source, source_page):
     link_to_raw = Path("../../") / repo_rel(copied_source)
     created = now().isoformat(timespec="seconds")
@@ -239,6 +564,7 @@ def command_status(_args):
     ensure_layout()
 
     raw_count = count_files(SOURCE_DIR)
+    parsed_dir_count = sum(1 for path in OPENDATALOADER_DIR.glob("*") if path.is_dir())
     source_page_count = count_files(SOURCE_PAGES_DIR, "*.md")
     entity_count = count_files(ENTITY_DIR, "*.md")
     concept_count = count_files(CONCEPT_DIR, "*.md")
@@ -252,6 +578,7 @@ def command_status(_args):
     print("")
     print("root: %s" % ROOT)
     print("raw sources: %d" % raw_count)
+    print("parsed sources (OpenDataLoader): %d" % parsed_dir_count)
     print("source pages: %d" % source_page_count)
     print("entity pages: %d" % entity_count)
     print("concept pages: %d" % concept_count)
@@ -280,7 +607,7 @@ def command_add_source(args):
         print("Source file not found: %s" % source_path, file=sys.stderr)
         return 1
 
-    title = args.title or source_path.stem.replace("_", " ").replace("-", " ").strip()
+    title = args.title or humanize_title_from_path(source_path)
     source_slug = slugify(title)
     timestamp = now().strftime("%Y%m%d_%H%M%S")
     copied_source = unique_path(SOURCE_DIR / ("%s_%s%s" % (timestamp, source_slug, source_path.suffix)))
@@ -288,16 +615,27 @@ def command_add_source(args):
 
     source_page = create_source_page_for_file(copied_source, title, args.kind)
 
+    parse_exit = 0
+    if args.parse_with_opendataloader:
+        parse_exit = parse_source_with_opendataloader(
+            copied_source,
+            format_value=args.parse_format,
+            use_struct_tree=args.use_struct_tree,
+            hybrid_backend=args.hybrid_backend,
+        )
+
     print("Queued source: %s" % title)
     print("raw file: %s" % repo_rel(copied_source))
     print("wiki page: %s" % repo_rel(source_page))
+    if args.parse_with_opendataloader and parse_exit == 0:
+        print("parsed helper artifacts: %s" % repo_rel(OPENDATALOADER_DIR / copied_source.stem))
     print("")
     print("Next step:")
     print(
         "Ask Codex to ingest %s and update the wiki according to AGENTS.md."
         % repo_rel(copied_source)
     )
-    return 0
+    return parse_exit
 
 
 def command_register_source(args):
@@ -308,22 +646,43 @@ def command_register_source(args):
         print("Source file not found: %s" % source_path, file=sys.stderr)
         return 1
 
-    try:
-        source_path.relative_to(SOURCE_DIR.resolve())
-    except ValueError:
-        print(
-            "Source file must already be inside %s" % SOURCE_DIR.resolve(),
-            file=sys.stderr,
-        )
+    if not ensure_source_inside_workspace(source_path):
         return 1
 
-    title = args.title or source_path.stem.replace("_", " ").replace("-", " ").strip()
+    title = args.title or humanize_title_from_path(source_path)
     source_page = create_source_page_for_file(source_path, title, args.kind)
+
+    parse_exit = 0
+    if args.parse_with_opendataloader:
+        parse_exit = parse_source_with_opendataloader(
+            source_path,
+            format_value=args.parse_format,
+            use_struct_tree=args.use_struct_tree,
+            hybrid_backend=args.hybrid_backend,
+        )
 
     print("Registered source: %s" % title)
     print("raw file: %s" % repo_rel(source_path))
     print("wiki page: %s" % repo_rel(source_page))
-    return 0
+    if args.parse_with_opendataloader and parse_exit == 0:
+        print("parsed helper artifacts: %s" % repo_rel(OPENDATALOADER_DIR / source_path.stem))
+    return parse_exit
+
+
+def command_parse_source(args):
+    ensure_layout()
+
+    source_path = Path(args.path).expanduser().resolve()
+    if not source_path.exists() or not source_path.is_file():
+        print("Source file not found: %s" % source_path, file=sys.stderr)
+        return 1
+
+    return parse_source_with_opendataloader(
+        source_path,
+        format_value=args.parse_format,
+        use_struct_tree=args.use_struct_tree,
+        hybrid_backend=args.hybrid_backend,
+    )
 
 
 def command_new_query(args):
@@ -397,6 +756,25 @@ def build_parser():
         choices=["paper", "article", "book", "note", "dataset", "other"],
         help="Source type label for the wiki page.",
     )
+    add_source_parser.add_argument(
+        "--parse-with-opendataloader",
+        action="store_true",
+        help="Also parse the copied source with OpenDataLoader PDF and save helper artifacts under raw/derived/opendataloader/.",
+    )
+    add_source_parser.add_argument(
+        "--parse-format",
+        default="json,markdown",
+        help="OpenDataLoader output formats, for example json,markdown or markdown.",
+    )
+    add_source_parser.add_argument(
+        "--use-struct-tree",
+        action="store_true",
+        help="Prefer the PDF structure tree when the source is tagged.",
+    )
+    add_source_parser.add_argument(
+        "--hybrid-backend",
+        help="Optional OpenDataLoader hybrid backend name, for example docling-fast.",
+    )
     add_source_parser.set_defaults(func=command_add_source)
 
     register_source_parser = subparsers.add_parser(
@@ -411,7 +789,82 @@ def build_parser():
         choices=["paper", "article", "book", "note", "dataset", "other"],
         help="Source type label for the wiki page.",
     )
+    register_source_parser.add_argument(
+        "--parse-with-opendataloader",
+        action="store_true",
+        help="Also parse the registered source with OpenDataLoader PDF and save helper artifacts under raw/derived/opendataloader/.",
+    )
+    register_source_parser.add_argument(
+        "--parse-format",
+        default="json,markdown",
+        help="OpenDataLoader output formats, for example json,markdown or markdown.",
+    )
+    register_source_parser.add_argument(
+        "--use-struct-tree",
+        action="store_true",
+        help="Prefer the PDF structure tree when the source is tagged.",
+    )
+    register_source_parser.add_argument(
+        "--hybrid-backend",
+        help="Optional OpenDataLoader hybrid backend name, for example docling-fast.",
+    )
     register_source_parser.set_defaults(func=command_register_source)
+
+    parse_source_parser = subparsers.add_parser(
+        "parse-source",
+        help="Parse an existing raw/sources PDF with OpenDataLoader PDF and save helper artifacts.",
+    )
+    parse_source_parser.add_argument("path", help="Path to a local file inside raw/sources.")
+    parse_source_parser.add_argument(
+        "--parse-format",
+        default="json,markdown",
+        help="OpenDataLoader output formats, for example json,markdown or markdown.",
+    )
+    parse_source_parser.add_argument(
+        "--use-struct-tree",
+        action="store_true",
+        help="Prefer the PDF structure tree when the source is tagged.",
+    )
+    parse_source_parser.add_argument(
+        "--hybrid-backend",
+        help="Optional OpenDataLoader hybrid backend name, for example docling-fast.",
+    )
+    parse_source_parser.set_defaults(func=command_parse_source)
+
+    parse_all_parser = subparsers.add_parser(
+        "parse-all-sources",
+        help="Parse collection raw/sources files with OpenDataLoader PDF and save helper artifacts.",
+    )
+    parse_all_parser.add_argument(
+        "--parse-format",
+        default="json,markdown",
+        help="OpenDataLoader output formats, for example json,markdown or markdown.",
+    )
+    parse_all_parser.add_argument(
+        "--use-struct-tree",
+        action="store_true",
+        help="Prefer the PDF structure tree when the source is tagged.",
+    )
+    parse_all_parser.add_argument(
+        "--hybrid-backend",
+        help="Optional OpenDataLoader hybrid backend name, for example docling-fast.",
+    )
+    parse_all_parser.add_argument(
+        "--only-missing",
+        action="store_true",
+        help="Skip files that already have an opendataloader-run.json manifest.",
+    )
+    parse_all_parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Reparse files even if helper artifacts already exist.",
+    )
+    parse_all_parser.add_argument(
+        "--limit",
+        type=int,
+        help="Optional maximum number of source files to parse.",
+    )
+    parse_all_parser.set_defaults(func=command_parse_all_sources)
 
     new_query_parser = subparsers.add_parser("new-query", help="Create a saved query page.")
     new_query_parser.add_argument("title", help="Short title for the query.")
