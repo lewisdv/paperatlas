@@ -429,3 +429,15 @@
 - Parsed raw/sources/matkovicleko_2023_a_distal_lung_organoid_model.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/matkovicleko_2023_a_distal_lung_organoid_model.
 - Updated source page wiki/sources/matkovicleko_2023_a_distal_lung_organoid_model.md.
+
+## [2026-04-12 12:44 KST] source parsed | mccracken_2011_generating_human_intestinal_tissue_from.pdf
+
+- Parsed raw/sources/mccracken_2011_generating_human_intestinal_tissue_from.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/mccracken_2011_generating_human_intestinal_tissue_from.
+- Updated source page wiki/sources/mccracken_2011_generating_human_intestinal_tissue_from.md.
+
+## [2026-04-12 12:44 KST] source parsed | meng_2025_crispr_screens_in_human_neural.pdf
+
+- Parsed raw/sources/meng_2025_crispr_screens_in_human_neural.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/meng_2025_crispr_screens_in_human_neural.
+- Updated source page wiki/sources/meng_2025_crispr_screens_in_human_neural.md.
