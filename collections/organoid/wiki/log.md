@@ -351,3 +351,9 @@
 - Parsed raw/sources/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.
 - Updated source page wiki/sources/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.md.
+
+## [2026-04-12 12:41 KST] source parsed | giandomenico_2021_generation_and_long-term_culture_of.pdf
+
+- Parsed raw/sources/giandomenico_2021_generation_and_long-term_culture_of.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/giandomenico_2021_generation_and_long-term_culture_of.
+- Updated source page wiki/sources/giandomenico_2021_generation_and_long-term_culture_of.md.
