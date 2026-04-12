@@ -291,3 +291,15 @@
 - Parsed raw/sources/broutier_2016_culture_and_establishment_of_self-renewing.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/broutier_2016_culture_and_establishment_of_self-renewing.
 - Updated source page wiki/sources/broutier_2016_culture_and_establishment_of_self-renewing.md.
+
+## [2026-04-12 12:40 KST] source parsed | cakir_2019_engineering_of_human_brain.pdf
+
+- Parsed raw/sources/cakir_2019_engineering_of_human_brain.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/cakir_2019_engineering_of_human_brain.
+- Updated source page wiki/sources/cakir_2019_engineering_of_human_brain.md.
+
+## [2026-04-12 12:40 KST] source parsed | cattaneo_2019_tumor_organoid-t-cell_coculture_systems.pdf
+
+- Parsed raw/sources/cattaneo_2019_tumor_organoid-t-cell_coculture_systems.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/cattaneo_2019_tumor_organoid-t-cell_coculture_systems.
+- Updated source page wiki/sources/cattaneo_2019_tumor_organoid-t-cell_coculture_systems.md.
