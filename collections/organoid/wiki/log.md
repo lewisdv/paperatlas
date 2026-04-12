@@ -399,3 +399,15 @@
 - Parsed raw/sources/koehler_2017_generation_of_inner_ear_organoids.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/koehler_2017_generation_of_inner_ear_organoids.
 - Updated source page wiki/sources/koehler_2017_generation_of_inner_ear_organoids.md.
+
+## [2026-04-12 12:43 KST] source parsed | koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.pdf
+
+- Parsed raw/sources/koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.
+- Updated source page wiki/sources/koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.md.
+
+## [2026-04-12 12:43 KST] source parsed | kuwahara_2015_generation_of_a_ciliary.pdf
+
+- Parsed raw/sources/kuwahara_2015_generation_of_a_ciliary.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary.
+- Updated source page wiki/sources/kuwahara_2015_generation_of_a_ciliary.md.

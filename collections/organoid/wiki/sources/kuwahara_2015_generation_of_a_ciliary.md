@@ -69,3 +69,33 @@ deep_ingested: 2026-04-09
 - Can this method be integrated with current photoreceptor maturation protocols?
 - Does Matrigel-free culture reduce batch variability quantitatively?
 - (Corpus gap: need downstream retinal protocols — Cowan 2020, Capowski 2019, Sharma 2019 still blocked for download.)
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:43:24+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/kuwahara_2015_generation_of_a_ciliary.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary -f json,markdown`
+- Manifest: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/opendataloader-run.json](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary.json](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary.json)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary.md](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary.md)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile1.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile10.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile10.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile11.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile11.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile12.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile12.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile13.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile13.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile14.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile14.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile15.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile15.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile16.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile16.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile17.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile17.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile2.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile3.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile4.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile5.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile5.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile6.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile6.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile7.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile7.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile8.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile8.png)
+- Output: [raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile9.png](../../raw/derived/opendataloader/kuwahara_2015_generation_of_a_ciliary/kuwahara_2015_generation_of_a_ciliary_images/imageFile9.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->
