@@ -315,3 +315,15 @@
 - Parsed raw/sources/co_2021_controlling_the_polarity_of_human.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/co_2021_controlling_the_polarity_of_human.
 - Updated source page wiki/sources/co_2021_controlling_the_polarity_of_human.md.
+
+## [2026-04-12 12:40 KST] source parsed | dardano_2025_production_of_human_blood-generating_heart-forming.pdf
+
+- Parsed raw/sources/dardano_2025_production_of_human_blood-generating_heart-forming.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/dardano_2025_production_of_human_blood-generating_heart-forming.
+- Updated source page wiki/sources/dardano_2025_production_of_human_blood-generating_heart-forming.md.
+
+## [2026-04-12 12:41 KST] source parsed | dekkers_2021_long-term_culture_genetic_manipulation_and.pdf
+
+- Parsed raw/sources/dekkers_2021_long-term_culture_genetic_manipulation_and.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/dekkers_2021_long-term_culture_genetic_manipulation_and.
+- Updated source page wiki/sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md.
