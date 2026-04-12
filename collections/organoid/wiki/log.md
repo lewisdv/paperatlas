@@ -423,3 +423,9 @@
 - Parsed raw/sources/lee_2022_generation_and_characterization_of_hair-bearing.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/lee_2022_generation_and_characterization_of_hair-bearing.
 - Updated source page wiki/sources/lee_2022_generation_and_characterization_of_hair-bearing.md.
+
+## [2026-04-12 12:43 KST] source parsed | matkovicleko_2023_a_distal_lung_organoid_model.pdf
+
+- Parsed raw/sources/matkovicleko_2023_a_distal_lung_organoid_model.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/matkovicleko_2023_a_distal_lung_organoid_model.
+- Updated source page wiki/sources/matkovicleko_2023_a_distal_lung_organoid_model.md.
