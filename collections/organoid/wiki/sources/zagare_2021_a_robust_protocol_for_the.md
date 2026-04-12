@@ -67,3 +67,27 @@ deep_ingested: 2026-04-10
 
 - Which steps in this midbrain workflow drive the most variability across lines or batches?
 - What extra maturation or assay layer is usually needed after the baseline derivation works?
+
+<!-- opendataloader:begin -->
+## Parsed Artifacts
+
+- Parser: OpenDataLoader PDF
+- Generated: 2026-04-12T12:47:06+09:00
+- Command: `/Users/davin/paper_collect/.venv-opendataloader/bin/opendataloader-pdf /Users/davin/paper_collect/collections/organoid/raw/sources/zagare_2021_a_robust_protocol_for_the.pdf -o /Users/davin/paper_collect/collections/organoid/raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the -f json,markdown`
+- Manifest: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/opendataloader-run.json](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the.json](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the.json)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the.md](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the.md)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile1.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile1.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile10.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile10.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile11.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile11.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile2.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile2.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile3.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile3.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile4.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile4.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile5.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile5.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile6.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile6.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile7.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile7.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile8.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile8.png)
+- Output: [raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile9.png](../../raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the/zagare_2021_a_robust_protocol_for_the_images/imageFile9.png)
+
+These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
+<!-- opendataloader:end -->

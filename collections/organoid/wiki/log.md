@@ -549,3 +549,9 @@
 - Parsed raw/sources/yoon_2019_reliability_of_human_cortical.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/yoon_2019_reliability_of_human_cortical.
 - Updated source page wiki/sources/yoon_2019_reliability_of_human_cortical.md.
+
+## [2026-04-12 12:47 KST] source parsed | zagare_2021_a_robust_protocol_for_the.pdf
+
+- Parsed raw/sources/zagare_2021_a_robust_protocol_for_the.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the.
+- Updated source page wiki/sources/zagare_2021_a_robust_protocol_for_the.md.
