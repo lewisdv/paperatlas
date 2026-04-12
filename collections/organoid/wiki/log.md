@@ -501,3 +501,15 @@
 - Parsed raw/sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.
 - Updated source page wiki/sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md.
+
+## [2026-04-12 12:45 KST] source parsed | vandervalk_2025_generation_and_characterization_of_vestibular.pdf
+
+- Parsed raw/sources/vandervalk_2025_generation_and_characterization_of_vestibular.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/vandervalk_2025_generation_and_characterization_of_vestibular.
+- Updated source page wiki/sources/vandervalk_2025_generation_and_characterization_of_vestibular.md.
+
+## [2026-04-12 12:46 KST] source parsed | vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.pdf
+
+- Parsed raw/sources/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.
+- Updated source page wiki/sources/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.md.
