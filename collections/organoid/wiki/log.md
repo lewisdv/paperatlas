@@ -267,3 +267,9 @@
 - Parsed raw/sources/atamian_2024_generation_and_long-term_culture_of.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/atamian_2024_generation_and_long-term_culture_of.
 - Updated source page wiki/sources/atamian_2024_generation_and_long-term_culture_of.md.
+
+## [2026-04-12 12:39 KST] source parsed | balboa_2022_functional_metabolic_and_transcriptional.pdf
+
+- Parsed raw/sources/balboa_2022_functional_metabolic_and_transcriptional.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/balboa_2022_functional_metabolic_and_transcriptional.
+- Updated source page wiki/sources/balboa_2022_functional_metabolic_and_transcriptional.md.
