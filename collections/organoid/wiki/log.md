@@ -261,3 +261,9 @@
 - Parsed raw/sources/eura_2020_brainstem_organoids_from_human_pluripotent.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/eura_2020_brainstem_organoids_from_human_pluripotent.
 - Updated source page wiki/sources/eura_2020_brainstem_organoids_from_human_pluripotent.md.
+
+## [2026-04-12 12:39 KST] source parsed | atamian_2024_generation_and_long-term_culture_of.pdf
+
+- Parsed raw/sources/atamian_2024_generation_and_long-term_culture_of.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/atamian_2024_generation_and_long-term_culture_of.
+- Updated source page wiki/sources/atamian_2024_generation_and_long-term_culture_of.md.
