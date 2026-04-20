@@ -103,6 +103,9 @@
 - [Immune, vascular, niche 보완 중 무엇을 먼저 붙여야 하나](queries/20260420_190409_immune-vascular-vs-niche-compensation-priority.md) - access, interaction, tissue-support, niche dependence 기준으로 support-compartment 보완 우선순위 정리.
 - [언제 organoid에서 animal로 escalation해야 하나](queries/20260420_190410_organoid-to-animal-escalation-rule.md) - host-only claim과 in vitro 대체 가능성을 기준으로 animal validation 진입 시점 정리.
 - [Organoid assay가 실패할 때 무엇부터 의심해야 하나](queries/20260420_190411_organoid-assay-failure-mode-triage.md) - access, baseline stability, missing partner, vascular bottleneck, readout-layer 문제를 구분하는 triage 규칙 정리.
+- [언제 coculture로 충분하고 언제 host validation이 필요한가](queries/20260420_191749_coculture-vs-host-validation-for-interaction-questions.md) - interaction 질문에서 access, defined partner, tissue-support, host-only endpoint의 순서 정리.
+- [Organ마다 assay가 약할 때 recovery move를 어떻게 다르게 잡아야 하나](queries/20260420_191750_organ-specific-assay-recovery-playbook.md) - brain, pancreas, kidney, intestine, patient-derived cancer 기준으로 organ-specific recovery ladder 정리.
+- [질병 종류별로 organoid escalation ladder를 어떻게 짜야 하나](queries/20260420_191751_disease-specific-organoid-escalation-ladders.md) - cancer, developmental neuro, infection/barrier, regenerative, niche disease별 complexity escalation sequence 정리.
 
 ## Syntheses
 

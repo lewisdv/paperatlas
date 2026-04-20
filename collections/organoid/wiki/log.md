@@ -596,3 +596,10 @@
 - Added query page wiki/queries/20260420_190410_organoid-to-animal-escalation-rule.md.
 - Added query page wiki/queries/20260420_190411_organoid-assay-failure-mode-triage.md.
 - Updated wiki/index.md with three additional decision-oriented query entries.
+
+## [2026-04-20 19:17 KST] query synthesis | coculture-vs-host + organ-specific recovery + disease ladders
+
+- Added query page wiki/queries/20260420_191749_coculture-vs-host-validation-for-interaction-questions.md.
+- Added query page wiki/queries/20260420_191750_organ-specific-assay-recovery-playbook.md.
+- Added query page wiki/queries/20260420_191751_disease-specific-organoid-escalation-ladders.md.
+- Updated wiki/index.md with three additional decision-oriented query entries.
