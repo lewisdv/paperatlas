@@ -88,6 +88,9 @@
 
 - [Brain subregion별 프로토콜 비교](queries/20260408_174047_brain-subregion-protocol-comparison.md) - 9개 뇌 subregion 프로토콜 비교 (whole cerebral, forebrain, hippocampus, midbrain, brainstem, hindbrain, cerebellum 등).
 - [Brain organoid 발달정도·동기화 비교 프레임워크](queries/20260409_brain-protocol-maturation-synchronization.md) - 5축 비교 프레임워크 (region, reproducibility, fidelity, temporal mapping, cross-protocol alignment) 기반 분석. Round 2-4 신규 논문 (Velasco, Yoon, Bhaduri, Kanton, He) 활용.
+- [언제 developmental hPSC organoid 대신 adult/patient-derived platform을 선택해야 하나](queries/20260420_172028_developmental-vs-patient-derived-platform-selection.md) - 발생 재구성, donor specificity, translational screening, multi-lineage niche 관점에서 플랫폼 선택 규칙 정리.
+- [언제 vascularization, perfusion, transplantation 중 무엇을 선택해야 하나](queries/20260420_172029_vascularization-perfusion-vs-transplantation.md) - in vitro 혈관화, flow 기반 성숙화, host-context validation의 선택 기준 정리.
+- [Baseline organoid 뒤에 어떤 assay 또는 engineering layer를 먼저 붙여야 하나](queries/20260420_172030_assay-and-engineering-layer-selection.md) - polarity control, coculture, transplantation, electrophysiology, CRISPR screening의 적용 순서 정리.
 
 ## Syntheses
 

@@ -561,3 +561,10 @@
 - Added concept pages wiki/concepts/brain-organoid-fidelity-reproducibility-and-atlases.md and wiki/concepts/organoid-vascularization-and-perfusion-strategies.md.
 - Updated benchmark-cluster and vascularization-cluster source pages with new concept cross-links.
 - Refreshed wiki/index.md and wiki/overview.md to reflect 50 deeply ingested sources and the current concept entry points.
+
+## [2026-04-20 17:20 KST] query synthesis | platform choice + second-wave workflows
+
+- Added query page wiki/queries/20260420_172028_developmental-vs-patient-derived-platform-selection.md.
+- Added query page wiki/queries/20260420_172029_vascularization-perfusion-vs-transplantation.md.
+- Added query page wiki/queries/20260420_172030_assay-and-engineering-layer-selection.md.
+- Updated wiki/index.md with three new decision-oriented query entries.
