@@ -100,6 +100,9 @@
 - [어떤 vascularization 전략이 도입 비용 대비 가장 큰 payoff를 주나](queries/20260420_174124_vascularization-payoff-vs-adoption-cost.md) - stand-alone vessel, TF-driven, flow-based perfusion, MPC mixing, transplantation의 adoption cost 대비 payoff 정리.
 - [질병 모델링에서는 phenotype source를 먼저 어떻게 구분해야 하나](queries/20260420_174125_disease-phenotype-source-triage.md) - donor, developmental, exposure, niche, host-context 중 질병 phenotype의 원천별 모델 선택 규칙 정리.
 - [어떤 organoid가 translational screening에 가장 먼저 올라가야 하나](queries/20260420_174126_translational-screening-triage.md) - near-term, assay-dependent, discovery-first tier로 organoid screening 우선순위 정리.
+- [Immune, vascular, niche 보완 중 무엇을 먼저 붙여야 하나](queries/20260420_190409_immune-vascular-vs-niche-compensation-priority.md) - access, interaction, tissue-support, niche dependence 기준으로 support-compartment 보완 우선순위 정리.
+- [언제 organoid에서 animal로 escalation해야 하나](queries/20260420_190410_organoid-to-animal-escalation-rule.md) - host-only claim과 in vitro 대체 가능성을 기준으로 animal validation 진입 시점 정리.
+- [Organoid assay가 실패할 때 무엇부터 의심해야 하나](queries/20260420_190411_organoid-assay-failure-mode-triage.md) - access, baseline stability, missing partner, vascular bottleneck, readout-layer 문제를 구분하는 triage 규칙 정리.
 
 ## Syntheses
 
