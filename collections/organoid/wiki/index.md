@@ -36,12 +36,12 @@
 - [Production of human blood-generating heart-forming organoids and sample preparation for advanced imaging](sources/dardano_2025_production_of_human_blood-generating_heart-forming.md) - deeply ingested protocol source.
 - [CRISPR screens in human neural organoids and assembloids](sources/meng_2025_crispr_screens_in_human_neural.md) - deeply ingested protocol source.
 
-- [Brainstem Organoids From Human Pluripotent Stem Cells](sources/eura_2020_brainstem_organoids_from_human_pluripotent.md) - paper source queued for ingest.
-- [Human iPSC-Derived Hippocampal Spheroids: An Innovative Tool for Stratifying Alzheimer Disease Patient-Specific Cellular Phenotypes and Developing Therapies](sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.md) - paper source queued for ingest.
-- [A robust protocol for the generation of human midbrain organoids](sources/zagare_2021_a_robust_protocol_for_the.md) - paper source queued for ingest.
-- [Generation of caudal-type serotonin neurons and hindbrain-fate organoids from hPSCs](sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md) - paper source queued for ingest.
-- [Protocol for generating reproducible miniaturized controlled midbrain organoids](sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md) - paper source queued for ingest.
-- [Generation and long-term culture of human cerebellar organoids from pluripotent stem cells](sources/atamian_2024_generation_and_long-term_culture_of.md) - paper source queued for ingest.
+- [Brainstem Organoids From Human Pluripotent Stem Cells](sources/eura_2020_brainstem_organoids_from_human_pluripotent.md) - brainstem organoid generation with midbrain and hindbrain progenitors, deep-ingested.
+- [Human iPSC-Derived Hippocampal Spheroids: An Innovative Tool for Stratifying Alzheimer Disease Patient-Specific Cellular Phenotypes and Developing Therapies](sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.md) - hippocampal spheroid generation from hiPSCs for disease modeling, deep-ingested.
+- [A robust protocol for the generation of human midbrain organoids](sources/zagare_2021_a_robust_protocol_for_the.md) - robust human midbrain organoid generation from neuroepithelial stem cells, deep-ingested.
+- [Generation of caudal-type serotonin neurons and hindbrain-fate organoids from hPSCs](sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md) - caudal hindbrain organoid generation with serotonin neuron enrichment, deep-ingested.
+- [Protocol for generating reproducible miniaturized controlled midbrain organoids](sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md) - miniaturized controlled midbrain organoid generation for screening workflows, deep-ingested.
+- [Generation and long-term culture of human cerebellar organoids from pluripotent stem cells](sources/atamian_2024_generation_and_long-term_culture_of.md) - human cerebellar organoid generation and long-term culture, deep-ingested.
 
 ### Round 2 additions (2026-04-09) — gap-filling
 
@@ -73,12 +73,15 @@
 
 - [Self-organization and directed patterning](concepts/self-organization-and-directed-patterning.md) - working synthesis page.
 - [Brain organoid patterning and assembloids](concepts/brain-organoid-patterning-and-assembloids.md) - working synthesis page.
+- [Brain organoid fidelity, reproducibility, and atlas benchmarks](concepts/brain-organoid-fidelity-reproducibility-and-atlases.md) - working synthesis page.
+- [Brain subregion-specific organoid protocols](concepts/brain-subregion-specific-organoid-protocols.md) - working synthesis page.
 - [Gastrointestinal and endodermal organoid systems](concepts/gastrointestinal-and-endodermal-organoid-systems.md) - working synthesis page.
 - [Kidney organoid differentiation routes](concepts/kidney-organoid-differentiation-routes.md) - working synthesis page.
 - [Cardiac and hematoendothelial organoids](concepts/cardiac-and-hematoendothelial-organoids.md) - working synthesis page.
 - [Adult stem cell and patient-derived organoid platforms](concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md) - working synthesis page.
 - [Multi-lineage and tissue complexity](concepts/multi-lineage-and-tissue-complexity.md) - working synthesis page.
 - [Organoid functional assays, transplantation, and coculture](concepts/organoid-functional-assays-transplantation-and-coculture.md) - working synthesis page.
+- [Organoid vascularization and perfusion strategies](concepts/organoid-vascularization-and-perfusion-strategies.md) - working synthesis page.
 - [Organoid engineering, imaging, and screening](concepts/organoid-engineering-imaging-and-screening.md) - working synthesis page.
 
 ## Queries

@@ -1,12 +1,14 @@
 # Overview
 
-This collection contains 44 deeply ingested organoid protocol papers (29 from Round 1 + 15 from Rounds 2-4 gap-filling) spanning foundational hPSC differentiation, adult and patient-derived systems, multi-lineage developmental models, second-wave assay or perturbation workflows, cross-protocol benchmarking, organ+vascular intersections, and pancreatic islet maturation.
+This collection contains 50 deeply ingested organoid protocol papers spanning foundational hPSC differentiation, adult and patient-derived systems, multi-lineage developmental models, second-wave assay or perturbation workflows, cross-protocol benchmarking, organ+vascular intersections, and pancreatic islet maturation.
 
 ## What this collection is good for
 
 - finding baseline protocols for brain, gastrointestinal, kidney, heart, lung, skin, bone marrow, and gastric organoids
 - comparing self-organizing versus more directed patterning strategies
+- comparing brain organoid reproducibility, fidelity, temporal mapping, and cross-protocol atlas coverage
 - identifying when organoid work shifts from derivation into coculture, transplantation, imaging, or screening
+- comparing vascularization and perfusion strategies across blood vessel, brain, kidney, and multi-lineage organoids
 - choosing between developmental hPSC systems and adult or patient-derived organoid platforms
 
 ## Major protocol families
@@ -94,8 +96,11 @@ This order works well because it starts with foundational derivation logic, then
 
 - [Self-organization and directed patterning](concepts/self-organization-and-directed-patterning.md)
 - [Brain organoid patterning and assembloids](concepts/brain-organoid-patterning-and-assembloids.md)
+- [Brain organoid fidelity, reproducibility, and atlas benchmarks](concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
+- [Brain subregion-specific organoid protocols](concepts/brain-subregion-specific-organoid-protocols.md)
 - [Gastrointestinal and endodermal organoid systems](concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Kidney organoid differentiation routes](concepts/kidney-organoid-differentiation-routes.md)
 - [Adult stem cell and patient-derived organoid platforms](concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
+- [Organoid vascularization and perfusion strategies](concepts/organoid-vascularization-and-perfusion-strategies.md)
 - [Organoid functional assays, transplantation, and coculture](concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Organoid engineering, imaging, and screening](concepts/organoid-engineering-imaging-and-screening.md)

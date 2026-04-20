@@ -65,6 +65,7 @@ deep_ingested: 2026-04-09
 
 - [Kidney organoid differentiation routes](../concepts/kidney-organoid-differentiation-routes.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
+- [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
 ## Related sources

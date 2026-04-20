@@ -555,3 +555,9 @@
 - Parsed raw/sources/zagare_2021_a_robust_protocol_for_the.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/zagare_2021_a_robust_protocol_for_the.
 - Updated source page wiki/sources/zagare_2021_a_robust_protocol_for_the.md.
+
+## [2026-04-20 17:08 KST] concept synthesis | brain benchmarking + vascularization
+
+- Added concept pages wiki/concepts/brain-organoid-fidelity-reproducibility-and-atlases.md and wiki/concepts/organoid-vascularization-and-perfusion-strategies.md.
+- Updated benchmark-cluster and vascularization-cluster source pages with new concept cross-links.
+- Refreshed wiki/index.md and wiki/overview.md to reflect 50 deeply ingested sources and the current concept entry points.

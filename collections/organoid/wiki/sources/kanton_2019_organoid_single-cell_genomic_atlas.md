@@ -61,6 +61,7 @@ deep_ingested: 2026-04-09
 
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
+- [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
 ## Related sources

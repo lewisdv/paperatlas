@@ -62,6 +62,7 @@ deep_ingested: 2026-04-09
 
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
+- [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
 ## Related sources
