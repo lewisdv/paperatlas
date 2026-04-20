@@ -94,6 +94,9 @@
 - [얼마나 복잡한 organoid가 정말 필요한가](queries/20260420_172824_complexity-vs-throughput-tradeoff.md) - biological richness와 throughput 사이에서 complexity를 올릴 시점을 정리.
 - [Brain organoid는 functional readout에 따라 어떻게 고르는 게 맞나](queries/20260420_172825_brain-functional-readout-selection.md) - reproducibility, fidelity, timing, oscillation, host integration, perturbation readout별 선택 규칙 정리.
 - [Adult 또는 patient-derived organoid의 빠진 compartment는 어떻게 보완해야 하나](queries/20260420_172826_missing-compartment-compensation-for-adult-organoids.md) - access, immune, vascular, host-context, niche 결손을 어떤 보완 레이어로 메울지 정리.
+- [Organ마다 maturity benchmark를 어떻게 다르게 잡아야 하나](queries/20260420_173503_organ-specific-maturity-benchmarking.md) - brain, pancreas, kidney, intestine, niche-rich system별 성숙도 benchmark 축을 organ-specific하게 정리.
+- [Screening-ready organoid stack는 어떻게 설계해야 하나](queries/20260420_173504_screening-ready-protocol-stack-design.md) - baseline, scale control, assay layer, perturbation, secondary validation 순서의 screening stack 설계 규칙 정리.
+- [Non-brain organoid는 어떤 functional validation을 붙여야 믿을 수 있나](queries/20260420_173505_non-brain-functional-validation-selection.md) - pancreas, kidney, intestine, vascular, niche-rich system에서 claim-matched validation 선택 규칙 정리.
 
 ## Syntheses
 

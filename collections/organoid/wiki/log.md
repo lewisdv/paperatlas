@@ -575,3 +575,10 @@
 - Added query page wiki/queries/20260420_172825_brain-functional-readout-selection.md.
 - Added query page wiki/queries/20260420_172826_missing-compartment-compensation-for-adult-organoids.md.
 - Updated wiki/index.md with three additional decision-oriented query entries.
+
+## [2026-04-20 17:35 KST] query synthesis | maturity benchmarks + screening stacks + non-brain validation
+
+- Added query page wiki/queries/20260420_173503_organ-specific-maturity-benchmarking.md.
+- Added query page wiki/queries/20260420_173504_screening-ready-protocol-stack-design.md.
+- Added query page wiki/queries/20260420_173505_non-brain-functional-validation-selection.md.
+- Updated wiki/index.md with three additional decision-oriented query entries.
