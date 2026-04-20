@@ -91,6 +91,9 @@
 - [언제 developmental hPSC organoid 대신 adult/patient-derived platform을 선택해야 하나](queries/20260420_172028_developmental-vs-patient-derived-platform-selection.md) - 발생 재구성, donor specificity, translational screening, multi-lineage niche 관점에서 플랫폼 선택 규칙 정리.
 - [언제 vascularization, perfusion, transplantation 중 무엇을 선택해야 하나](queries/20260420_172029_vascularization-perfusion-vs-transplantation.md) - in vitro 혈관화, flow 기반 성숙화, host-context validation의 선택 기준 정리.
 - [Baseline organoid 뒤에 어떤 assay 또는 engineering layer를 먼저 붙여야 하나](queries/20260420_172030_assay-and-engineering-layer-selection.md) - polarity control, coculture, transplantation, electrophysiology, CRISPR screening의 적용 순서 정리.
+- [얼마나 복잡한 organoid가 정말 필요한가](queries/20260420_172824_complexity-vs-throughput-tradeoff.md) - biological richness와 throughput 사이에서 complexity를 올릴 시점을 정리.
+- [Brain organoid는 functional readout에 따라 어떻게 고르는 게 맞나](queries/20260420_172825_brain-functional-readout-selection.md) - reproducibility, fidelity, timing, oscillation, host integration, perturbation readout별 선택 규칙 정리.
+- [Adult 또는 patient-derived organoid의 빠진 compartment는 어떻게 보완해야 하나](queries/20260420_172826_missing-compartment-compensation-for-adult-organoids.md) - access, immune, vascular, host-context, niche 결손을 어떤 보완 레이어로 메울지 정리.
 
 ## Syntheses
 

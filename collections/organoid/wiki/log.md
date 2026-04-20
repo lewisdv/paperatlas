@@ -568,3 +568,10 @@
 - Added query page wiki/queries/20260420_172029_vascularization-perfusion-vs-transplantation.md.
 - Added query page wiki/queries/20260420_172030_assay-and-engineering-layer-selection.md.
 - Updated wiki/index.md with three new decision-oriented query entries.
+
+## [2026-04-20 17:28 KST] query synthesis | complexity + readouts + missing compartments
+
+- Added query page wiki/queries/20260420_172824_complexity-vs-throughput-tradeoff.md.
+- Added query page wiki/queries/20260420_172825_brain-functional-readout-selection.md.
+- Added query page wiki/queries/20260420_172826_missing-compartment-compensation-for-adult-organoids.md.
+- Updated wiki/index.md with three additional decision-oriented query entries.
