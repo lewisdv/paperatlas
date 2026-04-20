@@ -582,3 +582,10 @@
 - Added query page wiki/queries/20260420_173504_screening-ready-protocol-stack-design.md.
 - Added query page wiki/queries/20260420_173505_non-brain-functional-validation-selection.md.
 - Updated wiki/index.md with three additional decision-oriented query entries.
+
+## [2026-04-20 17:41 KST] query synthesis | vascularization tradeoffs + disease triage + translational screens
+
+- Added query page wiki/queries/20260420_174124_vascularization-payoff-vs-adoption-cost.md.
+- Added query page wiki/queries/20260420_174125_disease-phenotype-source-triage.md.
+- Added query page wiki/queries/20260420_174126_translational-screening-triage.md.
+- Updated wiki/index.md with three additional decision-oriented query entries.

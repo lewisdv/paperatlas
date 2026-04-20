@@ -97,6 +97,9 @@
 - [Organ마다 maturity benchmark를 어떻게 다르게 잡아야 하나](queries/20260420_173503_organ-specific-maturity-benchmarking.md) - brain, pancreas, kidney, intestine, niche-rich system별 성숙도 benchmark 축을 organ-specific하게 정리.
 - [Screening-ready organoid stack는 어떻게 설계해야 하나](queries/20260420_173504_screening-ready-protocol-stack-design.md) - baseline, scale control, assay layer, perturbation, secondary validation 순서의 screening stack 설계 규칙 정리.
 - [Non-brain organoid는 어떤 functional validation을 붙여야 믿을 수 있나](queries/20260420_173505_non-brain-functional-validation-selection.md) - pancreas, kidney, intestine, vascular, niche-rich system에서 claim-matched validation 선택 규칙 정리.
+- [어떤 vascularization 전략이 도입 비용 대비 가장 큰 payoff를 주나](queries/20260420_174124_vascularization-payoff-vs-adoption-cost.md) - stand-alone vessel, TF-driven, flow-based perfusion, MPC mixing, transplantation의 adoption cost 대비 payoff 정리.
+- [질병 모델링에서는 phenotype source를 먼저 어떻게 구분해야 하나](queries/20260420_174125_disease-phenotype-source-triage.md) - donor, developmental, exposure, niche, host-context 중 질병 phenotype의 원천별 모델 선택 규칙 정리.
+- [어떤 organoid가 translational screening에 가장 먼저 올라가야 하나](queries/20260420_174126_translational-screening-triage.md) - near-term, assay-dependent, discovery-first tier로 organoid screening 우선순위 정리.
 
 ## Syntheses
 
