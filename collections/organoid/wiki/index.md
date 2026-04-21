@@ -91,6 +91,12 @@
 - [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md) - patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression, ingested source page.
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids, ingested source page.
 
+- [Protocol for the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system.](sources/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.md) - paper source queued for ingest.
+- [Protocol to create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools.](sources/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.md) - paper source queued for ingest.
+- [Protocol for generation and utilization of patient-derived organoids from multimodal specimen.](sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.md) - paper source queued for ingest.
+- [Protocol for in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.](sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md) - paper source queued for ingest.
+- [Protocol for the generation and differentiation of thymic epithelial organoids from adult mouse thymus tissue.](sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.md) - paper source queued for ingest.
+- [Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency.](sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md) - paper source queued for ingest.
 ## Entities
 
 

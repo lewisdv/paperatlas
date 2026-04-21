@@ -1222,3 +1222,32 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, dekkers_2019_high-resolution_3d_imaging_of_fixed.md, e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.md, ...
 
+## [2026-04-21 20:27 KST] ingest queued | Protocol for the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system.
+
+- Registered raw source raw/sources/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.pdf.
+- Created source page wiki/sources/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.md.
+
+## [2026-04-21 20:27 KST] ingest queued | Protocol to create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools.
+
+- Registered raw source raw/sources/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.pdf.
+- Created source page wiki/sources/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.md.
+
+## [2026-04-21 20:27 KST] ingest queued | Protocol for generation and utilization of patient-derived organoids from multimodal specimen.
+
+- Registered raw source raw/sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.pdf.
+- Created source page wiki/sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.md.
+
+## [2026-04-21 20:27 KST] ingest queued | Protocol for in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.
+
+- Registered raw source raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf.
+- Created source page wiki/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md.
+
+## [2026-04-21 20:27 KST] ingest queued | Protocol for the generation and differentiation of thymic epithelial organoids from adult mouse thymus tissue.
+
+- Registered raw source raw/sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.pdf.
+- Created source page wiki/sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.md.
+
+## [2026-04-21 20:28 KST] ingest queued | Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency.
+
+- Registered raw source raw/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.pdf.
+- Created source page wiki/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md.
