@@ -1373,3 +1373,33 @@
 - Parsed raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.
 - Updated source page wiki/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md.
+
+## [2026-04-21 20:31 KST] source parsed | kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.pdf
+
+- Parsed raw/sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.
+- Updated source page wiki/sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md.
+
+## [2026-04-21 20:31 KST] source parsed | l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.pdf
+
+- Parsed raw/sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.
+- Updated source page wiki/sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md.
+
+## [2026-04-21 20:31 KST] source parsed | m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.pdf
+
+- Parsed raw/sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.
+- Updated source page wiki/sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md.
+
+## [2026-04-21 20:31 KST] source parsed | q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.pdf
+
+- Parsed raw/sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.
+- Updated source page wiki/sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.md.
+
+## [2026-04-21 20:31 KST] source parsed | y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.pdf
+
+- Parsed raw/sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.
+- Updated source page wiki/sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md.
