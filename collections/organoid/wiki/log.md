@@ -1131,3 +1131,42 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, dekkers_2019_high-resolution_3d_imaging_of_fixed.md, e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.md, ...
 
+## [2026-04-21 15:51 KST] ingest queued | Application of an iPSC-Derived Organoid Model for Localized Scleroderma Therapy (Adv. Sci. 16/2022)
+
+- Registered raw source raw/sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.pdf.
+- Created source page wiki/sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.md.
+
+## [2026-04-21 15:51 KST] ingest queued | #17: Disease and Immunoprophylaxis Model of Human Nose Organoids to Study SARS-CoV-2 and RSV Infection
+
+- Registered raw source raw/sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.pdf.
+- Created source page wiki/sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.md.
+
+## [2026-04-21 15:51 KST] ingest queued | Brain Organoids to Study SARS-Cov-2 Infection of Developing CNS
+
+- Registered raw source raw/sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.pdf.
+- Created source page wiki/sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.md.
+
+## [2026-04-21 15:51 KST] source parsed | 17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.pdf
+
+- Parsed raw/sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.
+- Updated source page wiki/sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.md.
+
+## [2026-04-21 15:51 KST] source parsed | application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.pdf
+
+- Parsed raw/sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.
+- Updated source page wiki/sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.md.
+
+## [2026-04-21 15:51 KST] source parsed | l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.pdf
+
+- Parsed raw/sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.
+- Updated source page wiki/sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.md.
+
+## [2026-04-21 15:51 KST] generic ingest | Organoid batch update
+
+- Generic-ingested 34 source pages using metadata, abstract text, and raw-PDF scope extraction.
+- Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
+- Representative source pages in this pass: 17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.md, application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.md, b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, ...
+
