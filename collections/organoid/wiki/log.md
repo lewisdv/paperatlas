@@ -807,3 +807,18 @@
 
 - Registered raw source raw/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.pdf.
 - Created source page wiki/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.md.
+
+## [2026-04-21 14:45 KST] ingest queued | Beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids
+
+- Registered raw source raw/sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.pdf.
+- Created source page wiki/sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md.
+
+## [2026-04-21 14:46 KST] ingest queued | Developing human locus coeruleus organoids to study regional selective vulnerability in Alzheimer's disease
+
+- Registered raw source raw/sources/m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.pdf.
+- Created source page wiki/sources/m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.md.
+
+## [2026-04-21 14:46 KST] ingest queued | Fr135 DEVELOPING AN ORGANOID MODEL TO UNDERSTAND THE BAT GASTROINTESTINAL EPITHELIAL RESPONSE TO THE SEVER ACUTE RESPIRATORY CORONA VIRUS-2 (SARS-COV-2)
+
+- Registered raw source raw/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.pdf.
+- Created source page wiki/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.md.

@@ -101,6 +101,9 @@
 - [Microglia‐containing cerebral organoids model APOE4‐driven Alzheimer's disease pathologies](sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.md) - paper source queued for ingest.
 - [EPEN-17.IN VITRO MODELLING OF PEDIATRIC SUPRATENTORIAL EPENDYMOMAS USING CEREBRAL ORGANOIDS](sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.md) - paper source queued for ingest.
 - [Develop a vascularized neuroimmune organoid model for studying sporadic Alzheimer’s disease](sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.md) - paper source queued for ingest.
+- [Beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids](sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md) - paper source queued for ingest.
+- [Developing human locus coeruleus organoids to study regional selective vulnerability in Alzheimer's disease](sources/m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.md) - paper source queued for ingest.
+- [Fr135 DEVELOPING AN ORGANOID MODEL TO UNDERSTAND THE BAT GASTROINTESTINAL EPITHELIAL RESPONSE TO THE SEVER ACUTE RESPIRATORY CORONA VIRUS-2 (SARS-COV-2)](sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.md) - paper source queued for ingest.
 ## Entities
 
 
