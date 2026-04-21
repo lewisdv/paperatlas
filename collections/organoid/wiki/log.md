@@ -945,3 +945,39 @@
 - Parsed raw/sources/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.
 - Updated source page wiki/sources/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.md.
+
+## [2026-04-21 14:49 KST] source parsed | j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf
+
+- Parsed raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.
+- Updated source page wiki/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md.
+
+## [2026-04-21 14:49 KST] source parsed | j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.pdf
+
+- Parsed raw/sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.
+- Updated source page wiki/sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md.
+
+## [2026-04-21 14:49 KST] source parsed | k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf
+
+- Parsed raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.
+- Updated source page wiki/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.md.
+
+## [2026-04-21 14:49 KST] source parsed | k_2024_neuropathologic-and-transcriptomic-analysis-reveals-abnormal-stress-response-in-sporadic-p.pdf
+
+- Parsed raw/sources/k_2024_neuropathologic-and-transcriptomic-analysis-reveals-abnormal-stress-response-in-sporadic-p.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/k_2024_neuropathologic-and-transcriptomic-analysis-reveals-abnormal-stress-response-in-sporadic-p.
+- Updated source page wiki/sources/k_2024_neuropathologic-and-transcriptomic-analysis-reveals-abnormal-stress-response-in-sporadic-p.md.
+
+## [2026-04-21 14:49 KST] source parsed | l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.pdf
+
+- Parsed raw/sources/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.
+- Updated source page wiki/sources/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.md.
+
+## [2026-04-21 14:49 KST] source parsed | m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.pdf
+
+- Parsed raw/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.
+- Updated source page wiki/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.md.
