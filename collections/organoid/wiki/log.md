@@ -1309,3 +1309,10 @@
 - Parsed raw/sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.
 - Updated source page wiki/sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.md.
+
+## [2026-04-21 20:29 KST] generic ingest | Organoid batch update
+
+- Generic-ingested 42 source pages using metadata, abstract text, and raw-PDF scope extraction.
+- Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
+- Representative source pages in this pass: b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.md, b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md, c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, ...
+
