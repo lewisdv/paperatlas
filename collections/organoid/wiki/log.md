@@ -603,3 +603,9 @@
 - Added query page wiki/queries/20260420_191750_organ-specific-assay-recovery-playbook.md.
 - Added query page wiki/queries/20260420_191751_disease-specific-organoid-escalation-ladders.md.
 - Updated wiki/index.md with three additional decision-oriented query entries.
+
+## [2026-04-21 14:20 KST] source parsed | bakker_2022_preparing_ductal_epithelial_organoids_for.pdf
+
+- Parsed raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/bakker_2022_preparing_ductal_epithelial_organoids_for.
+- Updated source page wiki/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.md.
