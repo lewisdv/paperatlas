@@ -1,5 +1,5 @@
 ---
-title: bakker 2022 preparing ductal epithelial organoids for
+title: Preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
 kind: paper
 status: ingested
 added: 2026-04-21T14:20:30+09:00
@@ -7,12 +7,12 @@ raw_source: raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pd
 article_url: https://doi.org/10.1038/s41596-021-00661-8
 published_date: 
 organ: ductal epithelial
-protocol_focus: bakker 2022 preparing ductal epithelial organoids for
+protocol_focus: preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
 ingest_method: generic-auto
 ingested: 2026-04-21
 ---
 
-# bakker 2022 preparing ductal epithelial organoids for
+# Preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
 
 ## Source
 
@@ -21,53 +21,53 @@ ingested: 2026-04-21
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: ductal epithelial
-- Protocol focus: bakker 2022 preparing ductal epithelial organoids for
+- Protocol focus: preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
 
 ## Study design
 
 - Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: stepwise derivation and maturation protocol
-- Aim: bakker 2022 preparing ductal epithelial organoids for
+- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
+- Aim: preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
 - Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-- This paper is best understood as a stepwise derivation and maturation protocol for bakker 2022 preparing ductal epithelial organoids for.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for bakker 2022 preparing ductal epithelial organoids for.
-- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
+- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
+- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
 - Paper framing: Organoid culture systems are self-renewing, three-dimensional (3D) models derived from pluripotent stem cells, adult derived stem cells or cancer cells that recapitulate key molecular and structural characteristics of their tissue of origin.
 
 ## Key findings
 
-- Defines a workflow centered on bakker 2022 preparing ductal epithelial organoids for.
-- Its distinctive focus in practice is the way it establishes a workflow for bakker 2022 preparing ductal epithelial organoids for.
-- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
+- Defines a workflow centered on preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
+- Its distinctive focus in practice is the way it establishes a workflow for preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
+- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
 
 ## Strengths
 
-- Useful as a starting-point protocol for building this organ system from stem cells.
-- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+- Adds a reusable perturbation or imaging layer that increases experimental leverage.
+- Makes organoids more compatible with mechanistic and platform-style studies.
 
 ## Limitations and caveats
 
 - This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
-- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+- Usually assumes that the baseline organoid system is already robust before engineering begins.
+- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
 
 ## Relevance to this corpus
 
-- Specific role in this corpus: Extends the corpus with ductal epithelial work and strengthens the baseline derivation coverage around bakker 2022 preparing ductal epithelial organoids for.
+- Specific role in this corpus: Extends the corpus with ductal epithelial work and strengthens the engineering and platform-readout coverage around preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
 - This paper broadens the collection's coverage of ductal epithelial organoid work.
-- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
 
 ## Related concepts
 
-- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
 ## Open questions
 
-- Which steps in this ductal epithelial workflow drive the most variability across lines or batches?
-- What extra maturation or assay layer is usually needed after the baseline derivation works?
+- Which engineering or readout step is most likely to fail before the biology is interpretable?
+- How should this workflow be standardized across cell lines, batches, or perturbation sets?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

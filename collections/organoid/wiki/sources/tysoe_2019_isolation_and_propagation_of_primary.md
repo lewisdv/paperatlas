@@ -7,7 +7,7 @@ raw_source: raw/sources/tysoe_2019_isolation_and_propagation_of_primary.pdf
 article_url: https://doi.org/10.1038/s41596-019-0168-0
 published_date: 
 organ: organoid-system
-protocol_focus: tysoe 2019 isolation and propagation of primary
+protocol_focus: isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue
 ingest_method: generic-auto
 ingested: 2026-04-21
 ---
@@ -21,26 +21,26 @@ ingested: 2026-04-21
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
-- Protocol focus: tysoe 2019 isolation and propagation of primary
+- Protocol focus: isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue
 
 ## Study design
 
 - Starting material: pre-established organoid cultures or matched source tissue
 - Protocol type: primary-tissue or patient-derived organoid culture protocol
-- Aim: tysoe 2019 isolation and propagation of primary
+- Aim: isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue
 - Core readouts: organoid establishment, long-term expansion, and disease- or donor-relevant downstream assays
 
 ## Summary
 
-- This paper is best understood as a primary-tissue or patient-derived organoid culture protocol for tysoe 2019 isolation and propagation of primary.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for tysoe 2019 isolation and propagation of primary.
+- This paper is best understood as a primary-tissue or patient-derived organoid culture protocol for isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue.
 - Within this collection, it belongs to the adult or patient-derived platform branch of organoid protocol work.
 - Paper framing: transplantation, we developed a protocol for generating bioengineered biliary tissue suitable for biliary reconstruction.
 
 ## Key findings
 
-- Defines a workflow centered on tysoe 2019 isolation and propagation of primary.
-- Its distinctive focus in practice is the way it establishes a workflow for tysoe 2019 isolation and propagation of primary.
+- Defines a workflow centered on isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue.
+- Its distinctive focus in practice is the way it establishes a workflow for isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue.
 - Shows that expandable organoid platforms can come from primary or patient material, not only from pluripotent differentiation.
 
 ## Strengths
@@ -56,7 +56,7 @@ ingested: 2026-04-21
 
 ## Relevance to this corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the adult or patient-derived organoid coverage around tysoe 2019 isolation and propagation of primary.
+- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the adult or patient-derived organoid coverage around isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue.
 - This paper broadens the collection's coverage of organoid system organoid work.
 - It helps keep the collection from collapsing into hPSC-only developmental protocols.
 

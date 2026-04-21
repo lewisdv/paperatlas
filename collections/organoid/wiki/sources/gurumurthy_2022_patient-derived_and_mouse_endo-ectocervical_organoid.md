@@ -7,7 +7,7 @@ raw_source: raw/sources/gurumurthy_2022_patient-derived_and_mouse_endo-ectocervi
 article_url: https://doi.org/10.1038/s41596-022-00695-6
 published_date: 
 organ: cervix
-protocol_focus: gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid
+protocol_focus: patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection
 ingest_method: generic-auto
 ingested: 2026-04-21
 ---
@@ -21,26 +21,26 @@ ingested: 2026-04-21
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: cervix
-- Protocol focus: gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid
+- Protocol focus: patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection
 
 ## Study design
 
 - Starting material: patient-derived tumor tissue or matched clinical samples
 - Protocol type: functional assay extension layered onto organoid culture
-- Aim: gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid
+- Aim: patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection
 - Core readouts: editing, manipulation, and downstream phenotyping workflows
 
 ## Summary
 
-- This paper is best understood as a functional assay extension layered onto organoid culture for gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid.
+- This paper is best understood as a functional assay extension layered onto organoid culture for patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection.
 - Within this collection, it belongs to the assay-extension branch of organoid protocol work.
 - Paper framing: cancer cell lines have been primarily used to study cervix biology in vitro. The lack of an in vitro system that reflects the cellular, physiological and functional properties of the two epithelial types has hampered the study of normal physiology, disease development and infection processes.
 
 ## Key findings
 
-- Defines a workflow centered on gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid.
-- Its distinctive focus in practice is the way it establishes a workflow for gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid.
+- Defines a workflow centered on patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection.
+- Its distinctive focus in practice is the way it establishes a workflow for patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection.
 - Demonstrates that experimental value often comes from the assay layer added on top of an existing organoid rather than from derivation alone.
 
 ## Strengths
@@ -56,7 +56,7 @@ ingested: 2026-04-21
 
 ## Relevance to this corpus
 
-- Specific role in this corpus: Extends the corpus with cervix work and strengthens the assay-layer coverage around gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid.
+- Specific role in this corpus: Extends the corpus with cervix work and strengthens the assay-layer coverage around patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection.
 - This paper broadens the collection's coverage of cervix organoid work.
 - It represents the second-wave move from making organoids to actually using them in a biologically specific experiment.
 

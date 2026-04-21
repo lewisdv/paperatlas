@@ -7,7 +7,7 @@ raw_source: raw/sources/gabriel_2023_generation_of_ipsc-derived_human_forebrain.
 article_url: https://doi.org/10.1038/s41596-023-00814-x
 published_date: 
 organ: brain
-protocol_focus: gabriel 2023 generation of ipsc-derived human forebrain
+protocol_focus: iPSC-derived human forebrain organoids assembling bilateral eye primordia
 ingest_method: generic-auto
 ingested: 2026-04-21
 ---
@@ -21,26 +21,26 @@ ingested: 2026-04-21
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: brain
-- Protocol focus: gabriel 2023 generation of ipsc-derived human forebrain
+- Protocol focus: iPSC-derived human forebrain organoids assembling bilateral eye primordia
 
 ## Study design
 
 - Starting material: human pluripotent stem cells
 - Protocol type: multi-lineage developmental organoid protocol
-- Aim: gabriel 2023 generation of ipsc-derived human forebrain
+- Aim: iPSC-derived human forebrain organoids assembling bilateral eye primordia
 - Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-- This paper is best understood as a multi-lineage developmental organoid protocol for gabriel 2023 generation of ipsc-derived human forebrain.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for gabriel 2023 generation of ipsc-derived human forebrain.
+- This paper is best understood as a multi-lineage developmental organoid protocol for iPSC-derived human forebrain organoids assembling bilateral eye primordia.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for iPSC-derived human forebrain organoids assembling bilateral eye primordia.
 - Within this collection, it belongs to the multi-lineage and complexity-oriented branch of organoid protocol work.
 - Paper framing: Induced pluripotent stem cell-derived brain organoids enable the developmental complexities of the human brain to be deconstructed. During embryogenesis, optic vesicles (OVs), the eye primordium attached to the forebrain, develop from diencephalon.
 
 ## Key findings
 
-- Defines a workflow centered on gabriel 2023 generation of ipsc-derived human forebrain.
-- Its distinctive focus in practice is the way it establishes a workflow for gabriel 2023 generation of ipsc-derived human forebrain.
+- Defines a workflow centered on iPSC-derived human forebrain organoids assembling bilateral eye primordia.
+- Its distinctive focus in practice is the way it establishes a workflow for iPSC-derived human forebrain organoids assembling bilateral eye primordia.
 - Prioritizes multicompartment or boundary biology that would be missed in simpler single-lineage cultures.
 
 ## Strengths
@@ -56,7 +56,7 @@ ingested: 2026-04-21
 
 ## Relevance to this corpus
 
-- Specific role in this corpus: Extends the corpus with brain work and strengthens the multi-lineage organoid coverage around gabriel 2023 generation of ipsc-derived human forebrain.
+- Specific role in this corpus: Extends the corpus with brain work and strengthens the multi-lineage organoid coverage around iPSC-derived human forebrain organoids assembling bilateral eye primordia.
 - This paper broadens the collection's coverage of brain organoid work.
 - It shows why multi-lineage or boundary-level models are often needed when single-tissue organoids become too reductionist.
 

@@ -7,7 +7,7 @@ raw_source: raw/sources/sheridan_2020_establishment_and_differentiation_of_long-
 article_url: https://doi.org/10.1038/s41596-020-0381-x
 published_date: 
 organ: organoid-system
-protocol_focus: sheridan 2020 establishment and differentiation of long-term
+protocol_focus: establishment and differentiation of long-term trophoblast organoid cultures from the human placenta
 ingest_method: generic-auto
 ingested: 2026-04-21
 ---
@@ -21,26 +21,26 @@ ingested: 2026-04-21
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
-- Protocol focus: sheridan 2020 establishment and differentiation of long-term
+- Protocol focus: establishment and differentiation of long-term trophoblast organoid cultures from the human placenta
 
 ## Study design
 
 - Starting material: pre-established organoid cultures or matched source tissue
 - Protocol type: primary-tissue or patient-derived organoid culture protocol
-- Aim: sheridan 2020 establishment and differentiation of long-term
+- Aim: establishment and differentiation of long-term trophoblast organoid cultures from the human placenta
 - Core readouts: organoid establishment, long-term expansion, and disease- or donor-relevant downstream assays
 
 ## Summary
 
-- This paper is best understood as a primary-tissue or patient-derived organoid culture protocol for sheridan 2020 establishment and differentiation of long-term.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for sheridan 2020 establishment and differentiation of long-term.
+- This paper is best understood as a primary-tissue or patient-derived organoid culture protocol for establishment and differentiation of long-term trophoblast organoid cultures from the human placenta.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for establishment and differentiation of long-term trophoblast organoid cultures from the human placenta.
 - Within this collection, it belongs to the adult or patient-derived platform branch of organoid protocol work.
 - Paper framing: The human placenta is essential for successful reproduction. There is great variation in the anatomy and development of the placenta in different species, meaning that animal models provide limited information about human placental development and function.
 
 ## Key findings
 
-- Defines a workflow centered on sheridan 2020 establishment and differentiation of long-term.
-- Its distinctive focus in practice is the way it establishes a workflow for sheridan 2020 establishment and differentiation of long-term.
+- Defines a workflow centered on establishment and differentiation of long-term trophoblast organoid cultures from the human placenta.
+- Its distinctive focus in practice is the way it establishes a workflow for establishment and differentiation of long-term trophoblast organoid cultures from the human placenta.
 - Shows that expandable organoid platforms can come from primary or patient material, not only from pluripotent differentiation.
 
 ## Strengths
@@ -56,7 +56,7 @@ ingested: 2026-04-21
 
 ## Relevance to this corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the adult or patient-derived organoid coverage around sheridan 2020 establishment and differentiation of long-term.
+- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the adult or patient-derived organoid coverage around establishment and differentiation of long-term trophoblast organoid cultures from the human placenta.
 - This paper broadens the collection's coverage of organoid system organoid work.
 - It helps keep the collection from collapsing into hPSC-only developmental protocols.
 
