@@ -737,3 +737,43 @@
 
 - Registered raw source raw/sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.pdf.
 - Created source page wiki/sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md.
+
+## [2026-04-21 14:32 KST] ingest queued | Generating a novel and reliable human iPSC‐derived midbrain organoid model of sporadic progressive supranuclear palsy
+
+- Registered raw source raw/sources/g_2024_generating-a-novel-and-reliable-human-ipsc-derived-midbrain-organoid-model-of-sporadic-pro.pdf.
+- Created source page wiki/sources/g_2024_generating-a-novel-and-reliable-human-ipsc-derived-midbrain-organoid-model-of-sporadic-pro.md.
+
+## [2026-04-21 14:32 KST] ingest queued | Co‐Culture system for studying neuro‐inflammation pathology with iPSC derived cerebral organoid and microglia
+
+- Registered raw source raw/sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.pdf.
+- Created source page wiki/sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.md.
+
+## [2026-04-21 14:33 KST] ingest queued | Sildenafil is a candidate drug for Alzheimer’s disease: Mechanism‐of‐action observation in patient iPSC‐derived brain organoids and a 5xFAD mouse model
+
+- Registered raw source raw/sources/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.pdf.
+- Created source page wiki/sources/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.md.
+
+## [2026-04-21 14:33 KST] ingest queued | The Role of Biophysical Factors in Organ Development: Insights from Current Organoid Models
+
+- Registered raw source raw/sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.pdf.
+- Created source page wiki/sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.md.
+
+## [2026-04-21 14:33 KST] ingest queued | Single‐Cell Transcriptome Landscape and Cell Fate Decoding in Human Brain Organoids after Transplantation (Adv. Sci. 28/2024)
+
+- Registered raw source raw/sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.pdf.
+- Created source page wiki/sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.md.
+
+## [2026-04-21 14:33 KST] ingest queued | A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
+
+- Registered raw source raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf.
+- Created source page wiki/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md.
+
+## [2026-04-21 14:33 KST] ingest queued | 6432 Enriching Testicular Organoid Aggregates to Promote Germ Cell Homing
+
+- Registered raw source raw/sources/6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.pdf.
+- Created source page wiki/sources/6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.md.
+
+## [2026-04-21 14:33 KST] ingest queued | Creating human locus coeruleus organoids to study the role of the locus coeruleus in Alzheimer’s disease
+
+- Registered raw source raw/sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.pdf.
+- Created source page wiki/sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.md.

@@ -87,6 +87,14 @@
 - [Reconstruction of T cell infiltration in an osteosarcoma PDX-organoid interactive biobank for personalized immunotherapy](sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md) - paper source queued for ingest.
 - [Primitive and Definitive Neural Precursor Cells Are Present in Human Cerebral Organoids](sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md) - paper source queued for ingest.
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - paper source queued for ingest.
+- [Generating a novel and reliable human iPSC‐derived midbrain organoid model of sporadic progressive supranuclear palsy](sources/g_2024_generating-a-novel-and-reliable-human-ipsc-derived-midbrain-organoid-model-of-sporadic-pro.md) - paper source queued for ingest.
+- [Co‐Culture system for studying neuro‐inflammation pathology with iPSC derived cerebral organoid and microglia](sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.md) - paper source queued for ingest.
+- [Sildenafil is a candidate drug for Alzheimer’s disease: Mechanism‐of‐action observation in patient iPSC‐derived brain organoids and a 5xFAD mouse model](sources/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.md) - paper source queued for ingest.
+- [The Role of Biophysical Factors in Organ Development: Insights from Current Organoid Models](sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.md) - paper source queued for ingest.
+- [Single‐Cell Transcriptome Landscape and Cell Fate Decoding in Human Brain Organoids after Transplantation (Adv. Sci. 28/2024)](sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.md) - paper source queued for ingest.
+- [A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids](sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md) - paper source queued for ingest.
+- [6432 Enriching Testicular Organoid Aggregates to Promote Germ Cell Homing](sources/6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.md) - paper source queued for ingest.
+- [Creating human locus coeruleus organoids to study the role of the locus coeruleus in Alzheimer’s disease](sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.md) - paper source queued for ingest.
 ## Entities
 
 
