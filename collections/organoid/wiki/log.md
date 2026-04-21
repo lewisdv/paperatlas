@@ -628,3 +628,42 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, dekkers_2019_high-resolution_3d_imaging_of_fixed.md, gabriel_2023_generation_of_ipsc-derived_human_forebrain.md, gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md, miura_2022_engineering_brain_assembloids_to_interrogate.md, sheridan_2020_establishment_and_differentiation_of_long-term.md, tysoe_2019_isolation_and_propagation_of_primary.md
 
+## [2026-04-21 14:25 KST] ingest queued | A Dynamic Protocol to Explore NLRP3 Inflammasome Activation in Cerebral Organoids
+
+- Registered raw source raw/sources/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.pdf.
+- Created source page wiki/sources/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md.
+
+## [2026-04-21 14:25 KST] ingest queued | Human iPSC derived organoid models to study tau pathology
+
+- Registered raw source raw/sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.pdf.
+- Created source page wiki/sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.md.
+
+## [2026-04-21 14:25 KST] ingest queued | Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
+
+- Registered raw source raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf.
+- Created source page wiki/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md.
+
+## [2026-04-21 14:25 KST] ingest queued | Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression
+
+- Registered raw source raw/sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.pdf.
+- Created source page wiki/sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md.
+
+## [2026-04-21 14:25 KST] ingest queued | Mathematical Modeling of Non-Small-Cell Lung Cancer Biology through the Experimental Data on Cell Composition and Growth of Patient-Derived Organoids
+
+- Registered raw source raw/sources/r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.pdf.
+- Created source page wiki/sources/r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.md.
+
+## [2026-04-21 14:25 KST] ingest queued | Human pluripotent stem cell-derived kidney organoids: Current progress and challenges
+
+- Registered raw source raw/sources/human_2024_human-pluripotent-stem-cell-derived-kidney-organoids-current-progress-and-challenges.pdf.
+- Created source page wiki/sources/human_2024_human-pluripotent-stem-cell-derived-kidney-organoids-current-progress-and-challenges.md.
+
+## [2026-04-21 14:26 KST] ingest queued | Alzheimer’s disease histopathology in the human Down syndrome retina and in hiPSC‐derived retinal organoids
+
+- Registered raw source raw/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.pdf.
+- Created source page wiki/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.md.
+
+## [2026-04-21 14:26 KST] ingest queued | From organoid culture to manufacturing: technologies for reproducible and scalable organoid production
+
+- Registered raw source raw/sources/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.pdf.
+- Created source page wiki/sources/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.md.

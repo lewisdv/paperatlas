@@ -65,6 +65,14 @@
 - [CRISPR screens in human neural organoids and assembloids](sources/meng_2025_crispr_screens_in_human_neural.md) - deeply ingested protocol source.
 - ["Generation and characterization of vestibular inner ear organoids from human pluripotent stem cells"](sources/vandervalk_2025_generation_and_characterization_of_vestibular.md) - deeply ingested protocol source.
 
+- [A Dynamic Protocol to Explore NLRP3 Inflammasome Activation in Cerebral Organoids](sources/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md) - paper source queued for ingest.
+- [Human iPSC derived organoid models to study tau pathology](sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.md) - paper source queued for ingest.
+- [Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery](sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md) - paper source queued for ingest.
+- [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md) - paper source queued for ingest.
+- [Mathematical Modeling of Non-Small-Cell Lung Cancer Biology through the Experimental Data on Cell Composition and Growth of Patient-Derived Organoids](sources/r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.md) - paper source queued for ingest.
+- [Human pluripotent stem cell-derived kidney organoids: Current progress and challenges](sources/human_2024_human-pluripotent-stem-cell-derived-kidney-organoids-current-progress-and-challenges.md) - paper source queued for ingest.
+- [Alzheimer’s disease histopathology in the human Down syndrome retina and in hiPSC‐derived retinal organoids](sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.md) - paper source queued for ingest.
+- [From organoid culture to manufacturing: technologies for reproducible and scalable organoid production](sources/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.md) - paper source queued for ingest.
 ## Entities
 
 
