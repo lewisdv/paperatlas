@@ -12,6 +12,7 @@ This corpus now separates benchmark questions that are easy to blur together in 
 - [Kanton 2019](../sources/kanton_2019_organoid_single-cell_genomic_atlas.md)
 - [He 2024](../sources/he_2024_an_integrated_transcriptomic_cell_atlas.md)
 - [Kelley 2024](../sources/kelley_2024_host_circuit_engagement_of_human.md)
+- [Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids](../sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md)
 
 ## Working synthesis
 
@@ -20,6 +21,7 @@ This corpus now separates benchmark questions that are easy to blur together in 
 - [Kanton 2019](../sources/kanton_2019_organoid_single-cell_genomic_atlas.md) adds a temporal benchmark layer by showing when major cell states emerge in cerebral organoids and how human developmental timing differs from chimpanzee and macaque trajectories.
 - [He 2024](../sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) turns these individual comparison axes into a shared atlas framework, letting protocols be compared on common regional coverage and transcriptomic similarity scales.
 - [Kelley 2024](../sources/kelley_2024_host_circuit_engagement_of_human.md) is important here because transplantation functions as a downstream validation layer when dish-based maturation and fidelity claims remain ambiguous.
+- [i 2026](../sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md) shows that reproducibility conversations also extend to low-cost murine cerebral baselines, even when the benchmark is morphological stability rather than human atlas alignment.
 
 ## Main tensions
 

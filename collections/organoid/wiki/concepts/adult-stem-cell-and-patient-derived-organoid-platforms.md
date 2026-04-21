@@ -11,12 +11,17 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - [Hendriks 2020](../sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.md)
 - [Dekkers 2021](../sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md)
 - [Broutier 2016](../sources/broutier_2016_culture_and_establishment_of_self-renewing.md)
+- [Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency](../sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md)
+- [Protocol for the establishment and characterization of South African patient-derived intestinal organoids](../sources/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.md)
+- [Protocol for generation and utilization of patient-derived organoids from multimodal specimen](../sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.md)
+- [Protocol for the generation and differentiation of thymic epithelial organoids from adult mouse thymus tissue](../sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.md)
 
 ## Working synthesis
 
 - These protocols are strongest when donor context, tumor state, or long-term expandability matter more than recapitulating early embryogenesis.
-- They also tend to be the quickest route into perturbation, drug screening, or xenotransplantation once tissue access is solved.
-- The main tradeoff is that they often preserve epithelial or disease-specific features better than they capture whole-organ developmental context.
+- The refill cohort broadens this branch from classic liver, prostate, and cancer organoids into intestinal, thymic, and specimen-logistics-heavy workflows, showing that tissue access and collection strategy are now part of platform design.
+- High-efficiency transduction and multimodal specimen handling also show that adult or patient-derived organoids are often the most practical substrate for downstream perturbation once the baseline culture is stable.
+- The main tradeoff is that these platforms usually preserve donor-specific or disease-specific context better than they capture whole-organ developmental architecture.
 
 ## Main tension
 

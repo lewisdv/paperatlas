@@ -17,11 +17,13 @@ This corpus now spans a continuum from broad cerebral organoids to explicitly pa
 - [Valiulahi 2021](../sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md)
 - [Chen 2023](../sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md)
 - [Atamian 2024](../sources/atamian_2024_generation_and_long-term_culture_of.md)
+- [Protocol for differentiating human pluripotent stem cells into midbrain organoids for targeted microinjection of viruses](../sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md)
 
 ## Working synthesis
 
 - Lancaster and Giandomenico remain broad cerebral references, whereas Sloan and Ullah move toward cleaner forebrain or telencephalic control.
 - Eura, Zagare, and Chen extend the corpus into brainstem and midbrain workflows, with Chen emphasizing miniaturization and screening-friendly control.
+- The new midbrain microinjection protocol adds an assay-access layer on top of subregion-specific differentiation, which is useful when the actual bottleneck is delivery rather than patterning itself.
 - Valiulahi, Pomeshchik, and Atamian fill caudal hindbrain, hippocampal, and cerebellar territory that would otherwise be missing from a forebrain-heavy brain collection.
 
 ## Main tension

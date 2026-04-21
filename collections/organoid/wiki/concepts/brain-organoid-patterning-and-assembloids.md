@@ -19,12 +19,15 @@ Brain-organoid protocols in this collection now split into broad cerebral self-o
 - [Valiulahi 2021](../sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md)
 - [Chen 2023](../sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md)
 - [Atamian 2024](../sources/atamian_2024_generation_and_long-term_culture_of.md)
+- [Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids](../sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md)
+- [Protocol for differentiating human pluripotent stem cells into midbrain organoids for targeted microinjection of viruses](../sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md)
 
 ## Working synthesis
 
 - Lancaster remains the self-organizing cerebral reference point, whereas Sloan and Ullah move toward cleaner forebrain or telencephalic control.
 - Eura, Zagare, Chen, Valiulahi, Pomeshchik, and Atamian extend the corpus into brainstem, midbrain, hindbrain, hippocampal, and cerebellar protocols rather than leaving it forebrain-dominant.
-- Giandomenico and Fitzgerald emphasize later-stage maturation and functional readouts, while Kelley and Meng show how transplantation or pooled perturbation can become the next experimental layer.
+- The refill cohort adds a long-term murine cerebral baseline and a perturbation-ready midbrain workflow, showing that recent brain papers often combine patterning with downstream access methods rather than stopping at regional identity.
+- Giandomenico and Fitzgerald emphasize later-stage maturation and functional readouts, while Kelley, Meng, and the new midbrain microinjection protocol show how transplantation or targeted perturbation can become the next experimental layer.
 
 ## Main tension
 
