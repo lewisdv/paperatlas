@@ -903,3 +903,45 @@
 - Parsed raw/sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.
 - Updated source page wiki/sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md.
+
+## [2026-04-21 14:48 KST] source parsed | fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.pdf
+
+- Parsed raw/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.
+- Updated source page wiki/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.md.
+
+## [2026-04-21 14:48 KST] source parsed | g_2024_generating-a-novel-and-reliable-human-ipsc-derived-midbrain-organoid-model-of-sporadic-pro.pdf
+
+- Parsed raw/sources/g_2024_generating-a-novel-and-reliable-human-ipsc-derived-midbrain-organoid-model-of-sporadic-pro.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/g_2024_generating-a-novel-and-reliable-human-ipsc-derived-midbrain-organoid-model-of-sporadic-pro.
+- Updated source page wiki/sources/g_2024_generating-a-novel-and-reliable-human-ipsc-derived-midbrain-organoid-model-of-sporadic-pro.md.
+
+## [2026-04-21 14:48 KST] source parsed | h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.pdf
+
+- Parsed raw/sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.
+- Updated source page wiki/sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.md.
+
+## [2026-04-21 14:49 KST] source parsed | h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.pdf
+
+- Parsed raw/sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.
+- Updated source page wiki/sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.md.
+
+## [2026-04-21 14:49 KST] source parsed | h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf
+
+- Parsed raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.
+- Updated source page wiki/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.md.
+
+## [2026-04-21 14:49 KST] source parsed | human_2024_human-pluripotent-stem-cell-derived-kidney-organoids-current-progress-and-challenges.pdf
+
+- Parsed raw/sources/human_2024_human-pluripotent-stem-cell-derived-kidney-organoids-current-progress-and-challenges.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/human_2024_human-pluripotent-stem-cell-derived-kidney-organoids-current-progress-and-challenges.
+- Updated source page wiki/sources/human_2024_human-pluripotent-stem-cell-derived-kidney-organoids-current-progress-and-challenges.md.
+
+## [2026-04-21 14:49 KST] source parsed | human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.pdf
+
+- Parsed raw/sources/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.
+- Updated source page wiki/sources/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.md.
