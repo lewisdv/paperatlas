@@ -707,3 +707,33 @@
 
 - Registered raw source raw/sources/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.pdf.
 - Created source page wiki/sources/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.md.
+
+## [2026-04-21 14:30 KST] ingest queued | Th2 Cytokines Reshape the Transcriptome: Insights from a Canine Organoid Model of Atopic Dermatitis
+
+- Registered raw source raw/sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.pdf.
+- Created source page wiki/sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md.
+
+## [2026-04-21 14:30 KST] ingest queued | From Patient Liver Tissue to Organoids: Establishment of a Translational Platform Using Healthy, Steatotic, and Cirrhotic Tissue Sources
+
+- Registered raw source raw/sources/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.pdf.
+- Created source page wiki/sources/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md.
+
+## [2026-04-21 14:30 KST] ingest queued | Integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
+
+- Registered raw source raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf.
+- Created source page wiki/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.md.
+
+## [2026-04-21 14:30 KST] ingest queued | Reconstruction of T cell infiltration in an osteosarcoma PDX-organoid interactive biobank for personalized immunotherapy
+
+- Registered raw source raw/sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.pdf.
+- Created source page wiki/sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md.
+
+## [2026-04-21 14:30 KST] ingest queued | Primitive and Definitive Neural Precursor Cells Are Present in Human Cerebral Organoids
+
+- Registered raw source raw/sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.pdf.
+- Created source page wiki/sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md.
+
+## [2026-04-21 14:30 KST] ingest queued | Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids
+
+- Registered raw source raw/sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.pdf.
+- Created source page wiki/sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md.

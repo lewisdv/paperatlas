@@ -81,6 +81,12 @@
 - [Segmentation and Multi-Timepoint Tracking of 3D Cancer Organoids from Optical Coherence Tomography Images Using Deep Neural Networks](sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md) - paper source queued for ingest.
 - [Choroid plexus defects in Down syndrome brain organoids enhance neurotropism of SARS-CoV-2](sources/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.md) - paper source queued for ingest.
 - [A7 OPPORTUNISTIC PATHOGEN MODULATION OF GLUTEN-REACTIVE CD4+ T CELL ACTIVATION BY DQ2-EXPRESSING ORGANOID MONOLAYERS](sources/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.md) - paper source queued for ingest.
+- [Th2 Cytokines Reshape the Transcriptome: Insights from a Canine Organoid Model of Atopic Dermatitis](sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md) - paper source queued for ingest.
+- [From Patient Liver Tissue to Organoids: Establishment of a Translational Platform Using Healthy, Steatotic, and Cirrhotic Tissue Sources](sources/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md) - paper source queued for ingest.
+- [Integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model](sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.md) - paper source queued for ingest.
+- [Reconstruction of T cell infiltration in an osteosarcoma PDX-organoid interactive biobank for personalized immunotherapy](sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md) - paper source queued for ingest.
+- [Primitive and Definitive Neural Precursor Cells Are Present in Human Cerebral Organoids](sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md) - paper source queued for ingest.
+- [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - paper source queued for ingest.
 ## Entities
 
 
