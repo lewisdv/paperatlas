@@ -95,6 +95,12 @@
 - [A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids](sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md) - paper source queued for ingest.
 - [6432 Enriching Testicular Organoid Aggregates to Promote Germ Cell Homing](sources/6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.md) - paper source queued for ingest.
 - [Creating human locus coeruleus organoids to study the role of the locus coeruleus in Alzheimer’s disease](sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.md) - paper source queued for ingest.
+- [Alzheimer’s Disease patient stratification using iPSC‐derived hindbrain organoids as a novel pre‐clinical tool for drug testing](sources/c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.md) - paper source queued for ingest.
+- [Neuropathologic and transcriptomic analysis reveals abnormal stress response in sporadic progressive supranuclear palsy autopsy brain tissue and human iPSC‐derived midbrain organoids](sources/k_2024_neuropathologic-and-transcriptomic-analysis-reveals-abnormal-stress-response-in-sporadic-p.md) - paper source queued for ingest.
+- [60 INVESTIGATING SETD2 MUTATIONS IN NEURODEVELOPMENT USING CEREBRAL ORGANOID MODELS](sources/60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.md) - paper source queued for ingest.
+- [Microglia‐containing cerebral organoids model APOE4‐driven Alzheimer's disease pathologies](sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.md) - paper source queued for ingest.
+- [EPEN-17.IN VITRO MODELLING OF PEDIATRIC SUPRATENTORIAL EPENDYMOMAS USING CEREBRAL ORGANOIDS](sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.md) - paper source queued for ingest.
+- [Develop a vascularized neuroimmune organoid model for studying sporadic Alzheimer’s disease](sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.md) - paper source queued for ingest.
 ## Entities
 
 

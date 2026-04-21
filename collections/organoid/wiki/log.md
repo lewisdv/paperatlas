@@ -777,3 +777,33 @@
 
 - Registered raw source raw/sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.pdf.
 - Created source page wiki/sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.md.
+
+## [2026-04-21 14:36 KST] ingest queued | Alzheimer’s Disease patient stratification using iPSC‐derived hindbrain organoids as a novel pre‐clinical tool for drug testing
+
+- Registered raw source raw/sources/c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.pdf.
+- Created source page wiki/sources/c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.md.
+
+## [2026-04-21 14:36 KST] ingest queued | Neuropathologic and transcriptomic analysis reveals abnormal stress response in sporadic progressive supranuclear palsy autopsy brain tissue and human iPSC‐derived midbrain organoids
+
+- Registered raw source raw/sources/k_2024_neuropathologic-and-transcriptomic-analysis-reveals-abnormal-stress-response-in-sporadic-p.pdf.
+- Created source page wiki/sources/k_2024_neuropathologic-and-transcriptomic-analysis-reveals-abnormal-stress-response-in-sporadic-p.md.
+
+## [2026-04-21 14:36 KST] ingest queued | 60 INVESTIGATING SETD2 MUTATIONS IN NEURODEVELOPMENT USING CEREBRAL ORGANOID MODELS
+
+- Registered raw source raw/sources/60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.pdf.
+- Created source page wiki/sources/60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.md.
+
+## [2026-04-21 14:36 KST] ingest queued | Microglia‐containing cerebral organoids model APOE4‐driven Alzheimer's disease pathologies
+
+- Registered raw source raw/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.pdf.
+- Created source page wiki/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.md.
+
+## [2026-04-21 14:36 KST] ingest queued | EPEN-17.IN VITRO MODELLING OF PEDIATRIC SUPRATENTORIAL EPENDYMOMAS USING CEREBRAL ORGANOIDS
+
+- Registered raw source raw/sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.pdf.
+- Created source page wiki/sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.md.
+
+## [2026-04-21 14:36 KST] ingest queued | Develop a vascularized neuroimmune organoid model for studying sporadic Alzheimer’s disease
+
+- Registered raw source raw/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.pdf.
+- Created source page wiki/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.md.
