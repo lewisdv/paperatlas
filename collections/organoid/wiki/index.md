@@ -99,6 +99,14 @@
 - [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md) - patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression, ingested source page.
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids, ingested source page.
 
+- [Protocol for generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture.](sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.md) - paper source queued for ingest.
+- [Protocol for generating human vascular organoids via orthogonal activation of ETV2 and NKX3.1.](sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md) - paper source queued for ingest.
+- [Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids.](sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md) - paper source queued for ingest.
+- [Protocol for differentiating human pluripotent stem cells into midbrain organoids for targeted microinjection of viruses.](sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md) - paper source queued for ingest.
+- [Protocol for generating liver organoids containing Kupffer cells using human iPSCs.](sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md) - paper source queued for ingest.
+- [Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids.](sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md) - paper source queued for ingest.
+- [Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids.](sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md) - paper source queued for ingest.
+- [Protocol for the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening.](sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.md) - paper source queued for ingest.
 ## Entities
 
 

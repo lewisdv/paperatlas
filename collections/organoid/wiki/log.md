@@ -1316,3 +1316,60 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.md, b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md, c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, ...
 
+## [2026-04-21 20:30 KST] ingest queued | Protocol for generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture.
+
+- Registered raw source raw/sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.pdf.
+- Created source page wiki/sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.md.
+
+## [2026-04-21 20:30 KST] ingest queued | Protocol for generating human vascular organoids via orthogonal activation of ETV2 and NKX3.1.
+
+- Registered raw source raw/sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.pdf.
+- Created source page wiki/sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md.
+
+## [2026-04-21 20:30 KST] ingest queued | Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
+
+- Registered raw source raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf.
+- Created source page wiki/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md.
+
+## [2026-04-21 20:30 KST] ingest queued | Protocol for differentiating human pluripotent stem cells into midbrain organoids for targeted microinjection of viruses.
+
+- Registered raw source raw/sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.pdf.
+- Created source page wiki/sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md.
+
+## [2026-04-21 20:30 KST] ingest queued | Protocol for generating liver organoids containing Kupffer cells using human iPSCs.
+
+- Registered raw source raw/sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.pdf.
+- Created source page wiki/sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md.
+
+## [2026-04-21 20:30 KST] ingest queued | Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids.
+
+- Registered raw source raw/sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.pdf.
+- Created source page wiki/sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md.
+
+## [2026-04-21 20:31 KST] ingest queued | Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids.
+
+- Registered raw source raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf.
+- Created source page wiki/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md.
+
+## [2026-04-21 20:31 KST] ingest queued | Protocol for the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening.
+
+- Registered raw source raw/sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.pdf.
+- Created source page wiki/sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.md.
+
+## [2026-04-21 20:31 KST] source parsed | d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.pdf
+
+- Parsed raw/sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.
+- Updated source page wiki/sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.md.
+
+## [2026-04-21 20:31 KST] source parsed | i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf
+
+- Parsed raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.
+- Updated source page wiki/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md.
+
+## [2026-04-21 20:31 KST] source parsed | iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf
+
+- Parsed raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.
+- Updated source page wiki/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md.
