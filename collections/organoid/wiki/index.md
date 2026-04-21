@@ -97,6 +97,8 @@
 - [Protocol for in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.](sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md) - paper source queued for ingest.
 - [Protocol for the generation and differentiation of thymic epithelial organoids from adult mouse thymus tissue.](sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.md) - paper source queued for ingest.
 - [Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency.](sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md) - paper source queued for ingest.
+- [Protocol for establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.](sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.md) - paper source queued for ingest.
+- [Protocol to generate genetically engineered organoid-initiated mouse models of esophageal cancer.](sources/j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.md) - paper source queued for ingest.
 ## Entities
 
 

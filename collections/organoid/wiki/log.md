@@ -1251,3 +1251,31 @@
 
 - Registered raw source raw/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.pdf.
 - Created source page wiki/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md.
+
+## [2026-04-21 20:28 KST] ingest queued | Protocol for establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
+
+- Registered raw source raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf.
+- Created source page wiki/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.md.
+
+## [2026-04-21 20:28 KST] ingest queued | Protocol to generate genetically engineered organoid-initiated mouse models of esophageal cancer.
+
+- Registered raw source raw/sources/j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.pdf.
+- Created source page wiki/sources/j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.md.
+
+## [2026-04-21 20:28 KST] source parsed | b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf
+
+- Parsed raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.
+- Updated source page wiki/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.md.
+
+## [2026-04-21 20:28 KST] source parsed | c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.pdf
+
+- Parsed raw/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.
+- Updated source page wiki/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md.
+
+## [2026-04-21 20:28 KST] source parsed | c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf
+
+- Parsed raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.
+- Updated source page wiki/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md.
