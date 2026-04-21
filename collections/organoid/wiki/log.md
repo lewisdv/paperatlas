@@ -822,3 +822,54 @@
 
 - Registered raw source raw/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.pdf.
 - Created source page wiki/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.md.
+
+## [2026-04-21 14:48 KST] ingest queued | In vitro and in silico approaches to engineering three-dimensional biological tissues and organoids
+
+- Registered raw source raw/sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.pdf.
+- Created source page wiki/sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.md.
+
+## [2026-04-21 14:48 KST] ingest queued | Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
+
+- Registered raw source raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf.
+- Created source page wiki/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.md.
+
+## [2026-04-21 14:48 KST] ingest queued | Novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease
+
+- Registered raw source raw/sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.pdf.
+- Created source page wiki/sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.md.
+
+## [2026-04-21 14:48 KST] source parsed | 60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.pdf
+
+- Parsed raw/sources/60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.
+- Updated source page wiki/sources/60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.md.
+
+## [2026-04-21 14:48 KST] source parsed | 6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.pdf
+
+- Parsed raw/sources/6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.
+- Updated source page wiki/sources/6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.md.
+
+## [2026-04-21 14:48 KST] source parsed | b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.pdf
+
+- Parsed raw/sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.
+- Updated source page wiki/sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md.
+
+## [2026-04-21 14:48 KST] source parsed | c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.pdf
+
+- Parsed raw/sources/c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.
+- Updated source page wiki/sources/c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.md.
+
+## [2026-04-21 14:48 KST] source parsed | d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.pdf
+
+- Parsed raw/sources/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.
+- Updated source page wiki/sources/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md.
+
+## [2026-04-21 14:48 KST] source parsed | d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.pdf
+
+- Parsed raw/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.
+- Updated source page wiki/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.md.

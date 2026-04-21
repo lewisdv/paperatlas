@@ -104,6 +104,9 @@
 - [Beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids](sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md) - paper source queued for ingest.
 - [Developing human locus coeruleus organoids to study regional selective vulnerability in Alzheimer's disease](sources/m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.md) - paper source queued for ingest.
 - [Fr135 DEVELOPING AN ORGANOID MODEL TO UNDERSTAND THE BAT GASTROINTESTINAL EPITHELIAL RESPONSE TO THE SEVER ACUTE RESPIRATORY CORONA VIRUS-2 (SARS-COV-2)](sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.md) - paper source queued for ingest.
+- [In vitro and in silico approaches to engineering three-dimensional biological tissues and organoids](sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.md) - paper source queued for ingest.
+- [Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease](sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.md) - paper source queued for ingest.
+- [Novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease](sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.md) - paper source queued for ingest.
 ## Entities
 
 
