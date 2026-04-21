@@ -1,29 +1,73 @@
 ---
 title: Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T14:25:51+09:00
 raw_source: raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13006397/
+published_date: 2026-03-09
+organ: liver
+protocol_focus: human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
 
 ## Source
 
-- File: [raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf](../../raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf)
-- Added: 2026-04-21T14:25:51+09:00
+- PDF: [raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf](../../raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC13006397/](https://pmc.ncbi.nlm.nih.gov/articles/PMC13006397/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: liver
+- Protocol focus: human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
+
+## Study design
+
+- Starting material: pre-established organoid cultures or matched source tissue
+- Protocol type: functional assay extension layered onto organoid culture
+- Aim: human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as a functional assay extension layered onto organoid culture for human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
+- Within this collection, it belongs to the assay-extension branch of organoid protocol work.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
+- Its distinctive focus in practice is the way it establishes a workflow for human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
+- Demonstrates that experimental value often comes from the assay layer added on top of an existing organoid rather than from derivation alone.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Moves organoids beyond derivation into a biologically interpretable assay context.
+- Clarifies how to operationalize exposure, coculture, or host interaction instead of leaving it as an ad hoc extension.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Best treated as an extension protocol, not a replacement for a stable baseline organoid pipeline.
+- Assay outcomes can be dominated by the quality, polarity, or maturity of the starting organoid culture.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with liver work and strengthens the assay-layer coverage around human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
+- This paper broadens the collection's coverage of liver organoid work.
+- It represents the second-wave move from making organoids to actually using them in a biologically specific experiment.
+
+## Related concepts
+
+- [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
+- [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
+
+## Open questions
+
+- How much of the observed phenotype comes from the added assay layer versus the baseline organoid state?
+- What maturity or polarity checks should be mandatory before this assay is trusted?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

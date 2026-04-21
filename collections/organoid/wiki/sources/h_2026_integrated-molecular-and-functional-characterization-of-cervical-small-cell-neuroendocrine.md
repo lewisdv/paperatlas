@@ -1,29 +1,73 @@
 ---
 title: Integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T14:30:11+09:00
 raw_source: raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12986295/
+published_date: 2026-03-01
+organ: cervix
+protocol_focus: integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
 
 ## Source
 
-- File: [raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf](../../raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf)
-- Added: 2026-04-21T14:30:11+09:00
+- PDF: [raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf](../../raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12986295/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12986295/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: cervix
+- Protocol focus: integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
+
+## Study design
+
+- Starting material: pre-established organoid cultures or matched source tissue
+- Protocol type: stepwise derivation and maturation protocol
+- Aim: integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as a stepwise derivation and maturation protocol for integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
+- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
+- Paper framing: Academic Editor: Raffaella Lazzarini Received: 17 February 2026 Revised: 2 March 2026 Accepted: 2 March 2026 Published: 4 March 2026 Cervical small-cell neuroendocrine carcinoma (SCNEC) is a rare cervical cancer with high metastatic potential and is frequently associated with high-risk human papillomavirus (HPV) infection.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
+- Its distinctive focus in practice is the way it establishes a workflow for integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
+- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Useful as a starting-point protocol for building this organ system from stem cells.
+- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
+- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with cervix work and strengthens the baseline derivation coverage around integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
+- This paper broadens the collection's coverage of cervix organoid work.
+- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+
+## Related concepts
+
+- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+
+## Open questions
+
+- Which steps in this cervix workflow drive the most variability across lines or batches?
+- What extra maturation or assay layer is usually needed after the baseline derivation works?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

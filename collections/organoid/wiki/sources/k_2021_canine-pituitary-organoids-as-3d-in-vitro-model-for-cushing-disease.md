@@ -1,29 +1,73 @@
 ---
 title: Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T14:48:03+09:00
 raw_source: raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8090587/
+published_date: 2021-05-03
+organ: tumor
+protocol_focus: canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
 
 ## Source
 
-- File: [raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf](../../raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf)
-- Added: 2026-04-21T14:48:03+09:00
+- PDF: [raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf](../../raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8090587/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8090587/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: tumor
+- Protocol focus: canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
+
+## Study design
+
+- Starting material: primary healthy or disease tissue, tumor material, and related patient samples
+- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
+- Aim: canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease.
+- Its main distinctive contribution in this corpus is that it abstract Cushing disease (CD) is a serious endocrine disorder that is most often caused by an ACTH-secreting pituitary adenoma.
+- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
+- Paper framing: Abstract Cushing disease (CD) is a serious endocrine disorder that is most often caused by an ACTH-secreting pituitary adenoma.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease.
+- Its distinctive focus in practice is the way it abstract Cushing disease (CD) is a serious endocrine disorder that is most often caused by an ACTH-secreting pituitary adenoma.
+- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Adds a reusable perturbation or imaging layer that increases experimental leverage.
+- Makes organoids more compatible with mechanistic and platform-style studies.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Usually assumes that the baseline organoid system is already robust before engineering begins.
+- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with tumor work and strengthens the engineering and platform-readout coverage around canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease.
+- This paper broadens the collection's coverage of tumor organoid work.
+- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+
+## Related concepts
+
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
+
+## Open questions
+
+- Which engineering or readout step is most likely to fail before the biology is interpretable?
+- How should this workflow be standardized across cell lines, batches, or perturbation sets?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

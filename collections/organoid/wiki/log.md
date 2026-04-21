@@ -1089,3 +1089,10 @@
 - Parsed raw/sources/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.
 - Updated source page wiki/sources/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.md.
+
+## [2026-04-21 14:51 KST] generic ingest | Organoid batch update
+
+- Generic-ingested 50 source pages using metadata, abstract text, and raw-PDF scope extraction.
+- Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
+- Representative source pages in this pass: 60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.md, 6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.md, b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.md, ...
+

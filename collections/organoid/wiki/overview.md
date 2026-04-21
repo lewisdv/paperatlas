@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 58 organoid-related source pages. 50 are deep-ingested protocol pages, 8 are standard ingested pages, and 0 remain queued.
+This collection currently contains 100 organoid-related source pages. 50 are deep-ingested protocol pages, 50 are standard ingested pages, and 0 remain queued.
 
 ## What this collection is good for
 
@@ -12,21 +12,21 @@ This collection currently contains 58 organoid-related source pages. 50 are deep
 ## Current source-page status
 
 - Deep ingested: 50
-- Standard ingested: 8
+- Standard ingested: 50
 - Queued: 0
 
 ## Largest organ/system clusters
 
-- brain: 15
-- kidney: 4
-- colon intestine: 3
-- organoid system: 3
-- heart: 2
-- inner ear: 2
-- lung: 2
-- midbrain: 2
-- pancreas: 2
-- blood vessel: 1
+- brain: 20
+- organoid system: 19
+- kidney: 6
+- colon intestine: 5
+- midbrain: 4
+- tumor: 4
+- liver: 3
+- lung: 3
+- breast: 2
+- cancer: 2
 
 ## Working note
 

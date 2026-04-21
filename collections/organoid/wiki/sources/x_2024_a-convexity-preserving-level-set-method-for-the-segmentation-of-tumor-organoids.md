@@ -1,29 +1,73 @@
 ---
 title: A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T14:33:19+09:00
 raw_source: raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11200484/
+published_date: 2024-06-01
+organ: tumor
+protocol_focus: convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
 
 ## Source
 
-- File: [raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf](../../raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf)
-- Added: 2026-04-21T14:33:19+09:00
+- PDF: [raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf](../../raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11200484/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11200484/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: tumor
+- Protocol focus: convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
+
+## Study design
+
+- Starting material: primary healthy or disease tissue, tumor material, and related patient samples
+- Protocol type: primary-tissue or patient-derived organoid culture protocol
+- Aim: convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
+- Core readouts: organoid establishment, long-term expansion, and disease- or donor-relevant downstream assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as a primary-tissue or patient-derived organoid culture protocol for convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
+- Within this collection, it belongs to the adult or patient-derived platform branch of organoid protocol work.
+- Paper framing: : Tumor organoid cultures play a crucial role in clinical practice, particularly in guiding med- ication by accurately determining the morphology and size of the organoids. However, segmenting individual tumor organoids is challenging due to their inhomogeneous internal intensity and over- lapping structures.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
+- Its distinctive focus in practice is the way it establishes a workflow for convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
+- Shows that expandable organoid platforms can come from primary or patient material, not only from pluripotent differentiation.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Closer to donor or disease-specific biology than a generic pluripotent derivation alone.
+- Expandable enough to support downstream drug testing, perturbation, or translational work once established.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Requires access to suitable primary or patient tissue and careful tissue-specific media handling.
+- May capture epithelial or donor-specific behavior better than whole-organ multicompartment biology.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with tumor work and strengthens the adult or patient-derived organoid coverage around convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
+- This paper broadens the collection's coverage of tumor organoid work.
+- It helps keep the collection from collapsing into hPSC-only developmental protocols.
+
+## Related concepts
+
+- [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
+
+## Open questions
+
+- Which parts of the donor or disease context stay stable over long-term expansion?
+- What missing non-epithelial compartments most limit interpretation in this platform?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
