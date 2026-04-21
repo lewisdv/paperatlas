@@ -63,6 +63,7 @@ ingested: 2026-04-21
 ## Related concepts
 
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+- [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
 ## Open questions
 

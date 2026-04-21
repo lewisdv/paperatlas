@@ -63,6 +63,7 @@ ingested: 2026-04-21
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
+- [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
 ## Open questions
 

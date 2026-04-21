@@ -1434,3 +1434,8 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md, c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, ...
 
+## [2026-04-21 20:47 KST] concept linking | Refill cohort folded into organoid concept layer
+
+- Updated concept pages for adult or patient-derived platforms, functional assay or coculture workflows, engineering or screening layers, gastrointestinal and endodermal systems, brain subregion coverage, brain fidelity, vascularization, and multi-lineage complexity.
+- Tightened `Related concepts` on recent refill-era source pages so adult-platform, immune or stromal coculture, vascular, liver immune-cell, brain-subregion, and organ-on-chip papers now land on the right concept entry points.
+- Refreshed wiki/overview.md so the refill cohort is easier to navigate from the concept layer before opening individual standard-ingest pages.

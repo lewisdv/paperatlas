@@ -63,6 +63,7 @@ ingested: 2026-04-21
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
 ## Open questions
 

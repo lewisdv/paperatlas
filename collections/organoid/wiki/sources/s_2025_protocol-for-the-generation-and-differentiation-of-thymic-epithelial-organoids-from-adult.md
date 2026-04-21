@@ -63,7 +63,6 @@ ingested: 2026-04-21
 ## Related concepts
 
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
-- [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 
 ## Open questions
 

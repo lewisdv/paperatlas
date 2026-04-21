@@ -63,6 +63,7 @@ ingested: 2026-04-21
 ## Related concepts
 
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
+- [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 
 ## Open questions
 

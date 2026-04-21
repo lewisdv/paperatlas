@@ -64,6 +64,8 @@ ingested: 2026-04-21
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
+- [Brain subregion-specific organoid protocols](../concepts/brain-subregion-specific-organoid-protocols.md)
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
 ## Open questions
 

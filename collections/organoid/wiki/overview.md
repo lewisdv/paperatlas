@@ -8,6 +8,7 @@ This collection currently contains 100 active organoid-related source pages. 50 
 - comparing self-organization, directed patterning, and multi-lineage assembly strategies across organ systems
 - identifying which papers are already deeply curated versus which newer additions still need a later deep-ingest pass
 - keeping low-signal conference abstracts, cover pages, and review-only additions out of the active protocol corpus while retaining them for traceability
+- navigating a now-better-linked concept layer for the refill cohort across adult or patient-derived access, coculture or transplantation, vascular induction, brain-subregion workflows, and engineering-on-chip stacks
 - using the organoid collection as a practical protocol and assay-planning map rather than only a static bibliography
 
 ## Current source-page status
@@ -37,5 +38,6 @@ This collection currently contains 100 active organoid-related source pages. 50 
 
 - New standard ingests are grounded in article metadata, abstract text, and raw-PDF scope extraction.
 - Use the deep-ingested pages first when you need the most curated cross-paper framing.
+- Recent concept-linking pulled the newest standard ingests into the concept pages, so `wiki/concepts/` is now a better first stop before browsing refill-era source pages one by one.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.

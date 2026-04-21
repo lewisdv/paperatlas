@@ -63,6 +63,7 @@ ingested: 2026-04-21
 ## Related concepts
 
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
 ## Open questions
 

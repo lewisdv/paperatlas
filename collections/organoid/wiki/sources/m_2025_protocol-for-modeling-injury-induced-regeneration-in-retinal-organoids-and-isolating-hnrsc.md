@@ -63,7 +63,6 @@ ingested: 2026-04-21
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
-- [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 
 ## Open questions
 
