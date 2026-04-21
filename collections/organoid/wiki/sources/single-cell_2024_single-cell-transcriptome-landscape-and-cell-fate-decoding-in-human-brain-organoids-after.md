@@ -1,7 +1,7 @@
 ---
 title: Single‐Cell Transcriptome Landscape and Cell Fate Decoding in Human Brain Organoids after Transplantation (Adv. Sci. 28/2024)
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:33:12+09:00
 raw_source: raw/sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11267310/
@@ -10,15 +10,24 @@ organ: brain
 protocol_focus: single‐Cell Transcriptome Landscape and Cell Fate Decoding in Human Brain Organoids after Transplantation (Adv. Sci. 28/2024)
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: cover or promotional blurb
+pruned: 2026-04-21
 ---
 
 # Single‐Cell Transcriptome Landscape and Cell Fate Decoding in Human Brain Organoids after Transplantation (Adv. Sci. 28/2024)
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: cover or promotional blurb
+- Basis from parsed PDF: `cover depicts`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.pdf](../../raw/sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11267310/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11267310/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: brain
 - Protocol focus: single‐Cell Transcriptome Landscape and Cell Fate Decoding in Human Brain Organoids after Transplantation (Adv. Sci. 28/2024)

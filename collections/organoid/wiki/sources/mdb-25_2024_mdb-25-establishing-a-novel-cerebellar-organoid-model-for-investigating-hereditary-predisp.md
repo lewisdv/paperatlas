@@ -1,7 +1,7 @@
 ---
 title: MDB-25. ESTABLISHING A NOVEL CEREBELLAR ORGANOID MODEL FOR INVESTIGATING HEREDITARY PREDISPOSITION TO CHILDHOOD BRAIN CANCER
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:26:15+09:00
 raw_source: raw/sources/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11183991/
@@ -10,15 +10,24 @@ organ: cerebellum
 protocol_focus: mDB-25. ESTABLISHING A NOVEL CEREBELLAR ORGANOID MODEL FOR INVESTIGATING HEREDITARY PREDISPOSITION TO CHILDHOOD BRAIN CANCER
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # MDB-25. ESTABLISHING A NOVEL CEREBELLAR ORGANOID MODEL FOR INVESTIGATING HEREDITARY PREDISPOSITION TO CHILDHOOD BRAIN CANCER
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `abstract citation id`, `^abstracts\s*$`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.pdf](../../raw/sources/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11183991/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11183991/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: cerebellum
 - Protocol focus: mDB-25. ESTABLISHING A NOVEL CEREBELLAR ORGANOID MODEL FOR INVESTIGATING HEREDITARY PREDISPOSITION TO CHILDHOOD BRAIN CANCER

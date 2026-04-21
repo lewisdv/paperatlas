@@ -1,7 +1,7 @@
 ---
 title: Microglia‐containing cerebral organoids model APOE4‐driven Alzheimer's disease pathologies
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:36:08+09:00
 raw_source: raw/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12726786/
@@ -10,15 +10,24 @@ organ: organoid-system
 protocol_focus: microglia‐containing cerebral organoids model APOE4‐driven Alzheimer's disease pathologies
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Microglia‐containing cerebral organoids model APOE4‐driven Alzheimer's disease pathologies
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `poster presentation`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.pdf](../../raw/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12726786/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12726786/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
 - Protocol focus: microglia‐containing cerebral organoids model APOE4‐driven Alzheimer's disease pathologies

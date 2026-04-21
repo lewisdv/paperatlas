@@ -1096,3 +1096,9 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: 60_2025_60-investigating-setd2-mutations-in-neurodevelopment-using-cerebral-organoid-models.md, 6432_2024_6432-enriching-testicular-organoid-aggregates-to-promote-germ-cell-homing.md, b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, c_2024_alzheimer-s-disease-patient-stratification-using-ipsc-derived-hindbrain-organoids-as-a-nov.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.md, ...
 
+## [2026-04-21 15:37 KST] lint prune | Organoid 100-paper corpus
+
+- Marked 21 source pages as pruned from the active corpus.
+- Saved lint/prune report wiki/queries/20260421_153718_organoid-corpus-lint-prune-pass.md.
+- Rebuilt wiki/index.md, wiki/overview.md, and organoid_protocols_manifest.tsv after pruning.
+- Retained raw PDFs for traceability while excluding pruned pages from the active source list.

@@ -1,7 +1,7 @@
 ---
 title: Alzheimer’s disease histopathology in the human Down syndrome retina and in hiPSC‐derived retinal organoids
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:26:01+09:00
 raw_source: raw/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11710804/
@@ -10,15 +10,24 @@ organ: retina
 protocol_focus: alzheimer’s disease histopathology in the human Down syndrome retina and in hiPSC‐derived retinal organoids
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Alzheimer’s disease histopathology in the human Down syndrome retina and in hiPSC‐derived retinal organoids
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `poster presentation`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.pdf](../../raw/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11710804/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11710804/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: retina
 - Protocol focus: alzheimer’s disease histopathology in the human Down syndrome retina and in hiPSC‐derived retinal organoids

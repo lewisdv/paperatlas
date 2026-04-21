@@ -1,7 +1,7 @@
 ---
 title: The Role of Biophysical Factors in Organ Development: Insights from Current Organoid Models
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:33:09+09:00
 raw_source: raw/sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11200479/
@@ -10,15 +10,24 @@ organ: organoid-system
 protocol_focus: role of Biophysical Factors in Organ Development: Insights from Current Organoid Models
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: secondary review article
+pruned: 2026-04-21
 ---
 
 # The Role of Biophysical Factors in Organ Development: Insights from Current Organoid Models
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: secondary review article
+- Basis from parsed PDF: `^review\s*$`, `\bin this review\b`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.pdf](../../raw/sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11200479/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11200479/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
 - Protocol focus: role of Biophysical Factors in Organ Development: Insights from Current Organoid Models

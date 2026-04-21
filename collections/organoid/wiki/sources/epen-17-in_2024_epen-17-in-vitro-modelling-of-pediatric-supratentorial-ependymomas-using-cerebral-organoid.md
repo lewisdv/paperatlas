@@ -1,7 +1,7 @@
 ---
 title: EPEN-17.IN VITRO MODELLING OF PEDIATRIC SUPRATENTORIAL EPENDYMOMAS USING CEREBRAL ORGANOIDS
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:36:09+09:00
 raw_source: raw/sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11184085/
@@ -10,15 +10,24 @@ organ: organoid-system
 protocol_focus: ePEN-17.IN VITRO MODELLING OF PEDIATRIC SUPRATENTORIAL EPENDYMOMAS USING CEREBRAL ORGANOIDS
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # EPEN-17.IN VITRO MODELLING OF PEDIATRIC SUPRATENTORIAL EPENDYMOMAS USING CEREBRAL ORGANOIDS
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `abstract citation id`, `^abstracts\s*$`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.pdf](../../raw/sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11184085/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11184085/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
 - Protocol focus: ePEN-17.IN VITRO MODELLING OF PEDIATRIC SUPRATENTORIAL EPENDYMOMAS USING CEREBRAL ORGANOIDS

@@ -1,7 +1,7 @@
 ---
 title: Develop a vascularized neuroimmune organoid model for studying sporadic Alzheimer’s disease
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:36:11+09:00
 raw_source: raw/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11709632/
@@ -10,15 +10,24 @@ organ: vascular
 protocol_focus: develop a vascularized neuroimmune organoid model for studying sporadic Alzheimer’s disease
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Develop a vascularized neuroimmune organoid model for studying sporadic Alzheimer’s disease
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `poster presentation`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.pdf](../../raw/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11709632/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11709632/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: vascular
 - Protocol focus: develop a vascularized neuroimmune organoid model for studying sporadic Alzheimer’s disease

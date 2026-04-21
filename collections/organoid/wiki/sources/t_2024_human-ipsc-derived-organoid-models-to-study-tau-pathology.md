@@ -1,7 +1,7 @@
 ---
 title: Human iPSC derived organoid models to study tau pathology
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:25:45+09:00
 raw_source: raw/sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11713796/
@@ -10,15 +10,24 @@ organ: organoid-system
 protocol_focus: human iPSC derived organoid models to study tau pathology
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Human iPSC derived organoid models to study tau pathology
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `podium presentation`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.pdf](../../raw/sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11713796/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11713796/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
 - Protocol focus: human iPSC derived organoid models to study tau pathology

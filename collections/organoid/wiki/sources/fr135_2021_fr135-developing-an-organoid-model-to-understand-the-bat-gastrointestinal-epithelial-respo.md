@@ -1,7 +1,7 @@
 ---
 title: Fr135 DEVELOPING AN ORGANOID MODEL TO UNDERSTAND THE BAT GASTROINTESTINAL EPITHELIAL RESPONSE TO THE SEVER ACUTE RESPIRATORY CORONA VIRUS-2 (SARS-COV-2)
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:46:01+09:00
 raw_source: raw/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8108301/
@@ -10,15 +10,24 @@ organ: colon-intestine
 protocol_focus: fr135 DEVELOPING AN ORGANOID MODEL TO UNDERSTAND THE BAT GASTROINTESTINAL EPITHELIAL RESPONSE TO THE SEVER ACUTE RESPIRATORY CORONA VIRUS-2 (SARS-COV-2)
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Fr135 DEVELOPING AN ORGANOID MODEL TO UNDERSTAND THE BAT GASTROINTESTINAL EPITHELIAL RESPONSE TO THE SEVER ACUTE RESPIRATORY CORONA VIRUS-2 (SARS-COV-2)
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `agaabstracts`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.pdf](../../raw/sources/fr135_2021_fr135-developing-an-organoid-model-to-understand-the-bat-gastrointestinal-epithelial-respo.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8108301/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8108301/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: colon / intestine
 - Protocol focus: fr135 DEVELOPING AN ORGANOID MODEL TO UNDERSTAND THE BAT GASTROINTESTINAL EPITHELIAL RESPONSE TO THE SEVER ACUTE RESPIRATORY CORONA VIRUS-2 (SARS-COV-2)

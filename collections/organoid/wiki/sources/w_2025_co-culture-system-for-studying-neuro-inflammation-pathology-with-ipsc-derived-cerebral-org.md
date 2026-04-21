@@ -1,7 +1,7 @@
 ---
 title: Co‐Culture system for studying neuro‐inflammation pathology with iPSC derived cerebral organoid and microglia
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:32:59+09:00
 raw_source: raw/sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12726497/
@@ -10,15 +10,24 @@ organ: organoid-system
 protocol_focus: co‐Culture system for studying neuro‐inflammation pathology with iPSC derived cerebral organoid and microglia
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Co‐Culture system for studying neuro‐inflammation pathology with iPSC derived cerebral organoid and microglia
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `poster presentation`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.pdf](../../raw/sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12726497/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12726497/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
 - Protocol focus: co‐Culture system for studying neuro‐inflammation pathology with iPSC derived cerebral organoid and microglia
