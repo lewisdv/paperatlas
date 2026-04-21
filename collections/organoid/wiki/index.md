@@ -88,6 +88,9 @@
 - [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md) - patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression, ingested source page.
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids, ingested source page.
 
+- [Protocol to enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers.](sources/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.md) - paper source queued for ingest.
+- [Protocol for the establishment and characterization of South African patient-derived intestinal organoids.](sources/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.md) - paper source queued for ingest.
+- [Protocol for modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice.](sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.md) - paper source queued for ingest.
 ## Entities
 
 
