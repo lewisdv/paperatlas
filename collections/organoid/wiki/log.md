@@ -981,3 +981,51 @@
 - Parsed raw/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.
 - Updated source page wiki/sources/m_2024_alzheimer-s-disease-histopathology-in-the-human-down-syndrome-retina-and-in-hipsc-derived.md.
+
+## [2026-04-21 14:49 KST] source parsed | m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.pdf
+
+- Parsed raw/sources/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.
+- Updated source page wiki/sources/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.md.
+
+## [2026-04-21 14:50 KST] source parsed | m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.pdf
+
+- Parsed raw/sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.
+- Updated source page wiki/sources/m_2024_creating-human-locus-coeruleus-organoids-to-study-the-role-of-the-locus-coeruleus-in-alzhe.md.
+
+## [2026-04-21 14:50 KST] source parsed | m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.pdf
+
+- Parsed raw/sources/m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.
+- Updated source page wiki/sources/m_2025_developing-human-locus-coeruleus-organoids-to-study-regional-selective-vulnerability-in-al.md.
+
+## [2026-04-21 14:50 KST] source parsed | mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.pdf
+
+- Parsed raw/sources/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.
+- Updated source page wiki/sources/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.md.
+
+## [2026-04-21 14:50 KST] source parsed | patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.pdf
+
+- Parsed raw/sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.
+- Updated source page wiki/sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md.
+
+## [2026-04-21 14:50 KST] source parsed | r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.pdf
+
+- Parsed raw/sources/r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.
+- Updated source page wiki/sources/r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.md.
+
+## [2026-04-21 14:50 KST] source parsed | r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.pdf
+
+- Parsed raw/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.
+- Updated source page wiki/sources/r_2024_develop-a-vascularized-neuroimmune-organoid-model-for-studying-sporadic-alzheimer-s-diseas.md.
+
+## [2026-04-21 14:50 KST] source parsed | r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.pdf
+
+- Parsed raw/sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.
+- Updated source page wiki/sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md.
