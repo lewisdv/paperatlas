@@ -6,66 +6,65 @@
 
 ## Sources
 
+- [bakker 2022 preparing ductal epithelial organoids for](sources/bakker_2022_preparing_ductal_epithelial_organoids_for.md) - bakker 2022 preparing ductal epithelial organoids for, ingested source page.
+- [bergmann 2018 bloodbrain-barrier organoids for investigating the](sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md) - bergmann 2018 bloodbrain-barrier organoids for investigating the, ingested source page.
+- [dekkers 2019 high-resolution 3d imaging of fixed](sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.md) - dekkers 2019 high-resolution 3d imaging of fixed, ingested source page.
+- [gabriel 2023 generation of ipsc-derived human forebrain](sources/gabriel_2023_generation_of_ipsc-derived_human_forebrain.md) - gabriel 2023 generation of ipsc-derived human forebrain, ingested source page.
+- [gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid](sources/gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md) - gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid, ingested source page.
+- [miura 2022 engineering brain assembloids to interrogate](sources/miura_2022_engineering_brain_assembloids_to_interrogate.md) - miura 2022 engineering brain assembloids to interrogate, ingested source page.
+- [sheridan 2020 establishment and differentiation of long-term](sources/sheridan_2020_establishment_and_differentiation_of_long-term.md) - sheridan 2020 establishment and differentiation of long-term, ingested source page.
+- [tysoe 2019 isolation and propagation of primary](sources/tysoe_2019_isolation_and_propagation_of_primary.md) - tysoe 2019 isolation and propagation of primary, ingested source page.
 - [Generating human intestinal tissue from pluripotent stem cells in vitro](sources/mccracken_2011_generating_human_intestinal_tissue_from.md) - deeply ingested protocol source.
 - [Generation of cerebral organoids from human pluripotent stem cells](sources/lancaster_2014_generation_of_cerebral_organoids_from.md) - deeply ingested protocol source.
+- [The generation of kidney organoids by differentiation of human pluripotent cells to ureteric bud progenitor-like cells](sources/xia_2014_the_generation_of_kidney_organoids.md) - deeply ingested protocol source.
+- ["Generation of a ciliary margin-like stem cell niche from self-organizing human retinal tissue"](sources/kuwahara_2015_generation_of_a_ciliary.md) - deeply ingested protocol source.
 - [Organoid culture systems for prostate epithelial and cancer tissue](sources/drost_2016_organoid_culture_systems_for_prostate.md) - deeply ingested protocol source.
+- [Generation of kidney organoids from human pluripotent stem cells](sources/takasato_2016_generation_of_kidney_organoids_from.md) - deeply ingested protocol source.
+- [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](sources/broutier_2016_culture_and_establishment_of_self-renewing.md) - deeply ingested protocol source.
+- [Generation of nephron progenitor cells and kidney organoids from human pluripotent stem cells](sources/morizane_2016_generation_of_nephron_progenitor_cells.md) - deeply ingested protocol source.
+- ["Generation of inner ear organoids containing functional hair cells from human pluripotent stem cells"](sources/koehler_2017_generation_of_inner_ear_organoids.md) - deeply ingested protocol source.
+- [Generation and assembly of human brain region-specific three-dimensional cultures](sources/sloan_2018_generation_and_assembly_of_human.md) - deeply ingested protocol source.
+- [Generation of human antral and fundic gastric organoids from pluripotent stem cells](sources/broda_2018_generation_of_human_antral_and.md) - deeply ingested protocol source.
+- ["Reliability of human cortical organoid generation"](sources/yoon_2019_reliability_of_human_cortical.md) - deeply ingested protocol source.
+- [Generation of lung organoids from human pluripotent stem cells in vitro](sources/miller_2019_generation_of_lung_organoids_from.md) - deeply ingested protocol source.
+- ["Flow-enhanced vascularization and maturation of kidney organoids in vitro"](sources/homan_2019_flow-enhanced_vascularization_and_maturation.md) - deeply ingested protocol source.
+- ["Individual brain organoids reproducibly form cell diversity of the human cerebral cortex"](sources/velasco_2019_individual_brain_organoids_reproducibly.md) - deeply ingested protocol source.
+- ["Generation of blood vessel organoids from human pluripotent stem cells"](sources/wimmer_2019_generation_of_blood_vessel_organoids.md) - deeply ingested protocol source.
+- ["Engineering of human brain organoids with a functional vascular-like system"](sources/cakir_2019_engineering_of_human_brain.md) - deeply ingested protocol source.
+- ["Organoid single-cell genomic atlas uncovers human-specific features of brain development"](sources/kanton_2019_organoid_single-cell_genomic_atlas.md) - deeply ingested protocol source.
+- ["Generation of complex human organoid models including vascular networks by incorporation of mesodermal progenitor cells"](sources/worsdorfer_2019_generation_of_complex_human_organoid.md) - deeply ingested protocol source.
 - [Tumor organoid-T-cell coculture systems](sources/cattaneo_2019_tumor_organoid-t-cell_coculture_systems.md) - deeply ingested protocol source.
+- ["Cell stress in cortical organoids impairs molecular subtype specification"](sources/bhaduri_2020_cell_stress_in_cortical.md) - deeply ingested protocol source.
+- [Brainstem Organoids From Human Pluripotent Stem Cells](sources/eura_2020_brainstem_organoids_from_human_pluripotent.md) - deeply ingested protocol source.
+- [Human iPSC-Derived Hippocampal Spheroids: An Innovative Tool for Stratifying Alzheimer Disease Patient-Specific Cellular Phenotypes and Developing Therapies](sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.md) - deeply ingested protocol source.
 - [Establishment of patient-derived cancer organoids for drug-screening applications](sources/driehuis_2020_establishment_of_patient-derived_cancer_organoids.md) - deeply ingested protocol source.
 - [Establishment of human fetal hepatocyte organoids and CRISPR-Cas9-based gene knockin and knockout in organoid cultures from human liver](sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.md) - deeply ingested protocol source.
 - [Engineering human hepato-biliary-pancreatic organoids from pluripotent stem cells](sources/koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.md) - deeply ingested protocol source.
-- [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md) - deeply ingested protocol source.
-- [Generation of heart-forming organoids from human pluripotent stem cells](sources/drakhlis_2021_generation_of_heart-forming_organoids_from.md) - deeply ingested protocol source.
-- [Generation of proximal tubule-enhanced kidney organoids from human pluripotent stem cells](sources/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.md) - deeply ingested protocol source.
-- [The generation of kidney organoids by differentiation of human pluripotent cells to ureteric bud progenitor-like cells](sources/xia_2014_the_generation_of_kidney_organoids.md) - deeply ingested protocol source.
-- [Generation of kidney organoids from human pluripotent stem cells](sources/takasato_2016_generation_of_kidney_organoids_from.md) - deeply ingested protocol source.
-- [Generation of nephron progenitor cells and kidney organoids from human pluripotent stem cells](sources/morizane_2016_generation_of_nephron_progenitor_cells.md) - deeply ingested protocol source.
-- [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](sources/broutier_2016_culture_and_establishment_of_self-renewing.md) - deeply ingested protocol source.
-- [Generation and assembly of human brain region-specific three-dimensional cultures](sources/sloan_2018_generation_and_assembly_of_human.md) - deeply ingested protocol source.
 - [Generation and long-term culture of advanced cerebral organoids for studying later stages of neural development](sources/giandomenico_2021_generation_and_long-term_culture_of.md) - deeply ingested protocol source.
+- [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md) - deeply ingested protocol source.
+- [A robust protocol for the generation of human midbrain organoids](sources/zagare_2021_a_robust_protocol_for_the.md) - deeply ingested protocol source.
+- ["Generation of insulin-producing pancreatic β cells from multiple human stem cell lines"](sources/hogrebe_2021_generation_of_insulin-producing_pancreatic.md) - deeply ingested protocol source.
+- [Generation of caudal-type serotonin neurons and hindbrain-fate organoids from hPSCs](sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md) - deeply ingested protocol source.
+- ["Human sensorimotor organoids derived from healthy and amyotrophic lateral sclerosis stem cells form neuromuscular junctions"](sources/pereira_2021_human_sensorimotor_organoids_derived.md) - deeply ingested protocol source.
 - [Intestinal organoid cocultures with microbes](sources/puschhof_2021_intestinal_organoid_cocultures_with_microbes.md) - deeply ingested protocol source.
 - [Controlling the polarity of human gastrointestinal organoids to investigate epithelial biology and infectious diseases](sources/co_2021_controlling_the_polarity_of_human.md) - deeply ingested protocol source.
+- [Generation of heart-forming organoids from human pluripotent stem cells](sources/drakhlis_2021_generation_of_heart-forming_organoids_from.md) - deeply ingested protocol source.
 - [Transplantation of intestinal organoids into a mouse model of colitis](sources/watanabe_2022_transplantation_of_intestinal_organoids_into.md) - deeply ingested protocol source.
-- [A distal lung organoid model to study interstitial lung disease, viral infection and human lung development](sources/matkovicleko_2023_a_distal_lung_organoid_model.md) - deeply ingested protocol source.
-- [Generation of human antral and fundic gastric organoids from pluripotent stem cells](sources/broda_2018_generation_of_human_antral_and.md) - deeply ingested protocol source.
-- [Generation of lung organoids from human pluripotent stem cells in vitro](sources/miller_2019_generation_of_lung_organoids_from.md) - deeply ingested protocol source.
+- ["Functional, metabolic and transcriptional maturation of human pancreatic islets derived from stem cells"](sources/balboa_2022_functional_metabolic_and_transcriptional.md) - deeply ingested protocol source.
 - [Generation and characterization of hair-bearing skin organoids from human pluripotent stem cells](sources/lee_2022_generation_and_characterization_of_hair-bearing.md) - deeply ingested protocol source.
+- [A distal lung organoid model to study interstitial lung disease, viral infection and human lung development](sources/matkovicleko_2023_a_distal_lung_organoid_model.md) - deeply ingested protocol source.
+- [Protocol for generating reproducible miniaturized controlled midbrain organoids](sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md) - deeply ingested protocol source.
+- [Generation of proximal tubule-enhanced kidney organoids from human pluripotent stem cells](sources/vanslambrouck_2023_generation_of_proximal_tubule-enhanced_kidney.md) - deeply ingested protocol source.
 - [Generating human bone marrow organoids for disease modeling and drug discovery](sources/olijnik_2024_generating_human_bone_marrow_organoids.md) - deeply ingested protocol source.
 - [Generation of ‘semi-guided’ cortical organoids with complex neural oscillations](sources/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.md) - deeply ingested protocol source.
 - [Host circuit engagement of human cortical organoids transplanted in rodents](sources/kelley_2024_host_circuit_engagement_of_human.md) - deeply ingested protocol source.
+- ["An integrated transcriptomic cell atlas of human neural organoids"](sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) - deeply ingested protocol source.
+- [Generation and long-term culture of human cerebellar organoids from pluripotent stem cells](sources/atamian_2024_generation_and_long-term_culture_of.md) - deeply ingested protocol source.
 - [Generating and characterizing human telencephalic brain organoids from stem cell-derived single neural rosettes](sources/ullah_2025_generating_and_characterizing_human_telencephalic.md) - deeply ingested protocol source.
 - [Production of human blood-generating heart-forming organoids and sample preparation for advanced imaging](sources/dardano_2025_production_of_human_blood-generating_heart-forming.md) - deeply ingested protocol source.
 - [CRISPR screens in human neural organoids and assembloids](sources/meng_2025_crispr_screens_in_human_neural.md) - deeply ingested protocol source.
+- ["Generation and characterization of vestibular inner ear organoids from human pluripotent stem cells"](sources/vandervalk_2025_generation_and_characterization_of_vestibular.md) - deeply ingested protocol source.
 
-- [Brainstem Organoids From Human Pluripotent Stem Cells](sources/eura_2020_brainstem_organoids_from_human_pluripotent.md) - brainstem organoid generation with midbrain and hindbrain progenitors, deep-ingested.
-- [Human iPSC-Derived Hippocampal Spheroids: An Innovative Tool for Stratifying Alzheimer Disease Patient-Specific Cellular Phenotypes and Developing Therapies](sources/pomeshchik_2020_human_ipsc-derived_hippocampal_spheroids_an.md) - hippocampal spheroid generation from hiPSCs for disease modeling, deep-ingested.
-- [A robust protocol for the generation of human midbrain organoids](sources/zagare_2021_a_robust_protocol_for_the.md) - robust human midbrain organoid generation from neuroepithelial stem cells, deep-ingested.
-- [Generation of caudal-type serotonin neurons and hindbrain-fate organoids from hPSCs](sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md) - caudal hindbrain organoid generation with serotonin neuron enrichment, deep-ingested.
-- [Protocol for generating reproducible miniaturized controlled midbrain organoids](sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md) - miniaturized controlled midbrain organoid generation for screening workflows, deep-ingested.
-- [Generation and long-term culture of human cerebellar organoids from pluripotent stem cells](sources/atamian_2024_generation_and_long-term_culture_of.md) - human cerebellar organoid generation and long-term culture, deep-ingested.
-
-### Round 2 additions (2026-04-09) — gap-filling
-
-- [Human sensorimotor organoids derived from healthy and ALS stem cells form neuromuscular junctions](sources/pereira_2021_human_sensorimotor_organoids_derived.md) - spinal cord / neuromuscular organoid, deep-ingested.
-- [Generation of blood vessel organoids from human pluripotent stem cells](sources/wimmer_2019_generation_of_blood_vessel_organoids.md) - vascularized organoid (Nat Protoc), deep-ingested.
-- [Generation of insulin-producing pancreatic β cells from multiple human stem cell lines](sources/hogrebe_2021_generation_of_insulin-producing_pancreatic.md) - pancreatic islet (Nat Protoc), deep-ingested.
-- [Generation of inner ear organoids containing functional hair cells from human pluripotent stem cells](sources/koehler_2017_generation_of_inner_ear_organoids.md) - inner ear (Nat Biotech, Koehler), deep-ingested.
-- [Generation and characterization of vestibular inner ear organoids from human pluripotent stem cells](sources/vandervalk_2025_generation_and_characterization_of_vestibular.md) - inner ear (Nat Protoc 2025), deep-ingested.
-- [Individual brain organoids reproducibly form cell diversity of the human cerebral cortex](sources/velasco_2019_individual_brain_organoids_reproducibly.md) - brain benchmarking (Velasco 2019, Nature), deep-ingested.
-- [An integrated transcriptomic cell atlas of human neural organoids](sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) - cross-protocol atlas (He 2024, Nature), deep-ingested.
-- [Organoid single-cell genomic atlas uncovers human-specific features of brain development](sources/kanton_2019_organoid_single-cell_genomic_atlas.md) - developmental trajectory (Kanton 2019, Nature), deep-ingested.
-
-### Round 3 additions (2026-04-09) — brain fidelity + retinal
-
-- [Reliability of human cortical organoid generation](sources/yoon_2019_reliability_of_human_cortical.md) - brain reproducibility (Yoon 2019, Nat Methods, Pasca lab), deep-ingested.
-- [Cell stress in cortical organoids impairs molecular subtype specification](sources/bhaduri_2020_cell_stress_in_cortical.md) - brain fidelity counterpoint (Bhaduri 2020, Nature, Kriegstein lab), deep-ingested.
-- [Generation of a ciliary margin-like stem cell niche from self-organizing human retinal tissue](sources/kuwahara_2015_generation_of_a_ciliary.md) - retinal organoid (Kuwahara 2015, Nat Comms, Sasai lab), deep-ingested.
-
-### Round 4 additions (2026-04-09) — vascular intersections + islet maturation
-
-- [Engineering of human brain organoids with a functional vascular-like system](sources/cakir_2019_engineering_of_human_brain.md) - brain+vascular (Cakir 2019, Nat Methods, Park lab), deep-ingested.
-- [Flow-enhanced vascularization and maturation of kidney organoids in vitro](sources/homan_2019_flow-enhanced_vascularization_and_maturation.md) - kidney+vascular (Homan 2019, Nat Methods, Lewis lab), deep-ingested.
-- [Generation of complex human organoid models including vascular networks by incorporation of mesodermal progenitor cells](sources/worsdorfer_2019_generation_of_complex_human_organoid.md) - multi-lineage+vascular (Wörsdorfer 2019, Sci Rep), deep-ingested.
-- [Functional, metabolic and transcriptional maturation of human pancreatic islets derived from stem cells](sources/balboa_2022_functional_metabolic_and_transcriptional.md) - SC-islet maturation (Balboa 2022, Nat Biotech), deep-ingested.
 ## Entities
 
 

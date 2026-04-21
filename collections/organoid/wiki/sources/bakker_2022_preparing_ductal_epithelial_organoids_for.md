@@ -1,29 +1,73 @@
 ---
 title: bakker 2022 preparing ductal epithelial organoids for
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T14:20:30+09:00
 raw_source: raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf
+article_url: 
+published_date: 
+organ: ductal epithelial
+protocol_focus: bakker 2022 preparing ductal epithelial organoids for
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # bakker 2022 preparing ductal epithelial organoids for
 
 ## Source
 
-- File: [raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf](../../raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf)
-- Added: 2026-04-21T14:20:30+09:00
+- PDF: [raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf](../../raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf)
+- Article: not recorded in local metadata
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: ductal epithelial
+- Protocol focus: bakker 2022 preparing ductal epithelial organoids for
+
+## Study design
+
+- Starting material: pre-established organoid cultures or matched source tissue
+- Protocol type: stepwise derivation and maturation protocol
+- Aim: bakker 2022 preparing ductal epithelial organoids for
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as a stepwise derivation and maturation protocol for bakker 2022 preparing ductal epithelial organoids for.
+- Its main distinctive contribution in this corpus is that it establishes a workflow for bakker 2022 preparing ductal epithelial organoids for.
+- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
+- Paper framing: Organoid culture systems are self-renewing, three-dimensional (3D) models derived from pluripotent stem cells, adult derived stem cells or cancer cells that recapitulate key molecular and structural characteristics of their tissue of origin.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on bakker 2022 preparing ductal epithelial organoids for.
+- Its distinctive focus in practice is the way it establishes a workflow for bakker 2022 preparing ductal epithelial organoids for.
+- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Useful as a starting-point protocol for building this organ system from stem cells.
+- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
+- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with ductal epithelial work and strengthens the baseline derivation coverage around bakker 2022 preparing ductal epithelial organoids for.
+- This paper broadens the collection's coverage of ductal epithelial organoid work.
+- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+
+## Related concepts
+
+- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+
+## Open questions
+
+- Which steps in this ductal epithelial workflow drive the most variability across lines or batches?
+- What extra maturation or assay layer is usually needed after the baseline derivation works?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
