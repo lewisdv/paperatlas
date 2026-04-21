@@ -1203,3 +1203,22 @@
 - Parsed raw/sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.
 - Updated source page wiki/sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.md.
+
+## [2026-04-21 20:26 KST] source parsed | n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.pdf
+
+- Parsed raw/sources/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.
+- Updated source page wiki/sources/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.md.
+
+## [2026-04-21 20:26 KST] source parsed | s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.pdf
+
+- Parsed raw/sources/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.
+- Updated source page wiki/sources/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.md.
+
+## [2026-04-21 20:26 KST] generic ingest | Organoid batch update
+
+- Generic-ingested 34 source pages using metadata, abstract text, and raw-PDF scope extraction.
+- Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
+- Representative source pages in this pass: b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, dekkers_2019_high-resolution_3d_imaging_of_fixed.md, e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.md, ...
+

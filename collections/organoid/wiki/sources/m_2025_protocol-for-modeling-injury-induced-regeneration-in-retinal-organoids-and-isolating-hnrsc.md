@@ -1,29 +1,74 @@
 ---
 title: Protocol for modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice.
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T20:25:46+09:00
 raw_source: raw/sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12702322/
+published_date: 2025-11-27
+organ: brain
+protocol_focus: modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Protocol for modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice.
 
 ## Source
 
-- File: [raw/sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.pdf](../../raw/sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.pdf)
-- Added: 2026-04-21T20:25:46+09:00
+- PDF: [raw/sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.pdf](../../raw/sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12702322/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12702322/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: brain
+- Protocol focus: modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice
+
+## Study design
+
+- Starting material: pre-established organoids combined with an in vivo recipient assay
+- Protocol type: transplantation or host-engagement protocol
+- Aim: modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice
+- Core readouts: engraftment, repair, or host-integration readouts in vivo
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as a transplantation or host-engagement protocol for modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice.
+- Its main distinctive contribution in this corpus is that it human retinal organoids (hROs) provide a platform for modeling injury and assessing regenerative capacity in vitro.
+- Within this collection, it belongs to the host-context and transplantation branch of organoid protocol work.
+- Paper framing: Human retinal organoids (hROs) provide a platform for modeling injury and assessing regenerative capacity in vitro.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice.
+- Its distinctive focus in practice is the way it human retinal organoids (hROs) provide a platform for modeling injury and assessing regenerative capacity in vitro.
+- Pushes the model into a host or injury context to test whether in vitro claims hold up in a more functional setting.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Tests organoid behavior in a host or injury context rather than staying purely in vitro.
+- Brings maturation, repair, or integration claims closer to functional validation.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Host environment becomes part of the phenotype, which makes attribution harder.
+- In vivo logistics and recipient variability increase the practical barrier to adoption.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with brain work and strengthens the host-context validation coverage around modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice.
+- This paper broadens the collection's coverage of brain organoid work.
+- It is one of the clearest reminders that some claims about repair, maturation, or circuit engagement need host-context testing.
+
+## Related concepts
+
+- [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
+- [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
+
+## Open questions
+
+- Which phenotypes remain robust after moving into an in vivo host context?
+- How should host-driven effects be separated from organoid-intrinsic effects?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
