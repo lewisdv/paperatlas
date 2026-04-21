@@ -1029,3 +1029,63 @@
 - Parsed raw/sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.
 - Updated source page wiki/sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md.
+
+## [2026-04-21 14:50 KST] source parsed | r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.pdf
+
+- Parsed raw/sources/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.
+- Updated source page wiki/sources/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md.
+
+## [2026-04-21 14:50 KST] source parsed | s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.pdf
+
+- Parsed raw/sources/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.
+- Updated source page wiki/sources/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.md.
+
+## [2026-04-21 14:50 KST] source parsed | shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.pdf
+
+- Parsed raw/sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.
+- Updated source page wiki/sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md.
+
+## [2026-04-21 14:50 KST] source parsed | single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.pdf
+
+- Parsed raw/sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.
+- Updated source page wiki/sources/single-cell_2024_single-cell-transcriptome-landscape-and-cell-fate-decoding-in-human-brain-organoids-after.md.
+
+## [2026-04-21 14:50 KST] source parsed | t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.pdf
+
+- Parsed raw/sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.
+- Updated source page wiki/sources/t_2024_human-ipsc-derived-organoid-models-to-study-tau-pathology.md.
+
+## [2026-04-21 14:50 KST] source parsed | w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.pdf
+
+- Parsed raw/sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.
+- Updated source page wiki/sources/w_2025_co-culture-system-for-studying-neuro-inflammation-pathology-with-ipsc-derived-cerebral-org.md.
+
+## [2026-04-21 14:50 KST] source parsed | w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.pdf
+
+- Parsed raw/sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.
+- Updated source page wiki/sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md.
+
+## [2026-04-21 14:50 KST] source parsed | x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf
+
+- Parsed raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.
+- Updated source page wiki/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md.
+
+## [2026-04-21 14:50 KST] source parsed | y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.pdf
+
+- Parsed raw/sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.
+- Updated source page wiki/sources/y_2024_the-role-of-biophysical-factors-in-organ-development-insights-from-current-organoid-models.md.
+
+## [2026-04-21 14:51 KST] source parsed | y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.pdf
+
+- Parsed raw/sources/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.
+- Updated source page wiki/sources/y_2025_sildenafil-is-a-candidate-drug-for-alzheimer-s-disease-mechanism-of-action-observation-in.md.
