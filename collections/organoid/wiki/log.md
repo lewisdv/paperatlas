@@ -667,3 +667,43 @@
 
 - Registered raw source raw/sources/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.pdf.
 - Created source page wiki/sources/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.md.
+
+## [2026-04-21 14:26 KST] ingest queued | Monocytes prevent apoptosis of iPSCs and promote differentiation of kidney organoids
+
+- Registered raw source raw/sources/e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.pdf.
+- Created source page wiki/sources/e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.md.
+
+## [2026-04-21 14:26 KST] ingest queued | Clinically used drug arsenic trioxide targets XIAP and overcomes apoptosis resistance in an organoid-based preclinical cancer model† † Electronic supplementary information (ESI) available. See DOI: https://doi.org/10.1039/d4sc01294a
+
+- Registered raw source raw/sources/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.pdf.
+- Created source page wiki/sources/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.md.
+
+## [2026-04-21 14:26 KST] ingest queued | MDB-25. ESTABLISHING A NOVEL CEREBELLAR ORGANOID MODEL FOR INVESTIGATING HEREDITARY PREDISPOSITION TO CHILDHOOD BRAIN CANCER
+
+- Registered raw source raw/sources/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.pdf.
+- Created source page wiki/sources/mdb-25_2024_mdb-25-establishing-a-novel-cerebellar-organoid-model-for-investigating-hereditary-predisp.md.
+
+## [2026-04-21 14:26 KST] ingest queued | Human neuromodulatory assembloids to study serotonin signaling and disease
+
+- Registered raw source raw/sources/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.pdf.
+- Created source page wiki/sources/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.md.
+
+## [2026-04-21 14:26 KST] ingest queued | Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness
+
+- Registered raw source raw/sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.pdf.
+- Created source page wiki/sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md.
+
+## [2026-04-21 14:26 KST] ingest queued | Segmentation and Multi-Timepoint Tracking of 3D Cancer Organoids from Optical Coherence Tomography Images Using Deep Neural Networks
+
+- Registered raw source raw/sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.pdf.
+- Created source page wiki/sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md.
+
+## [2026-04-21 14:26 KST] ingest queued | Choroid plexus defects in Down syndrome brain organoids enhance neurotropism of SARS-CoV-2
+
+- Registered raw source raw/sources/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.pdf.
+- Created source page wiki/sources/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.md.
+
+## [2026-04-21 14:26 KST] ingest queued | A7 OPPORTUNISTIC PATHOGEN MODULATION OF GLUTEN-REACTIVE CD4+ T CELL ACTIVATION BY DQ2-EXPRESSING ORGANOID MONOLAYERS
+
+- Registered raw source raw/sources/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.pdf.
+- Created source page wiki/sources/s_2023_a7-opportunistic-pathogen-modulation-of-gluten-reactive-cd4-t-cell-activation-by-dq2-expre.md.
