@@ -45,18 +45,15 @@
 - [Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease](sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.md) - canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease, ingested source page.
 - [Novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease](sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.md) - novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease, ingested source page.
 - [A robust protocol for the generation of human midbrain organoids](sources/zagare_2021_a_robust_protocol_for_the.md) - deeply ingested protocol source.
-- [#17: Disease and Immunoprophylaxis Model of Human Nose Organoids to Study SARS-CoV-2 and RSV Infection](sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.md) - #17: Disease and Immunoprophylaxis Model of Human Nose Organoids to Study SARS-CoV-2 and RSV Infection, ingested source page.
 - ["Generation of insulin-producing pancreatic β cells from multiple human stem cell lines"](sources/hogrebe_2021_generation_of_insulin-producing_pancreatic.md) - deeply ingested protocol source.
 - [Generation of caudal-type serotonin neurons and hindbrain-fate organoids from hPSCs](sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md) - deeply ingested protocol source.
 - ["Human sensorimotor organoids derived from healthy and amyotrophic lateral sclerosis stem cells form neuromuscular junctions"](sources/pereira_2021_human_sensorimotor_organoids_derived.md) - deeply ingested protocol source.
 - [Intestinal organoid cocultures with microbes](sources/puschhof_2021_intestinal_organoid_cocultures_with_microbes.md) - deeply ingested protocol source.
-- [Brain Organoids to Study SARS-Cov-2 Infection of Developing CNS](sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.md) - brain Organoids to Study SARS-Cov-2 Infection of Developing CNS, ingested source page.
 - [Controlling the polarity of human gastrointestinal organoids to investigate epithelial biology and infectious diseases](sources/co_2021_controlling_the_polarity_of_human.md) - deeply ingested protocol source.
 - [Generation of heart-forming organoids from human pluripotent stem cells](sources/drakhlis_2021_generation_of_heart-forming_organoids_from.md) - deeply ingested protocol source.
 - [Transplantation of intestinal organoids into a mouse model of colitis](sources/watanabe_2022_transplantation_of_intestinal_organoids_into.md) - deeply ingested protocol source.
 - ["Functional, metabolic and transcriptional maturation of human pancreatic islets derived from stem cells"](sources/balboa_2022_functional_metabolic_and_transcriptional.md) - deeply ingested protocol source.
 - [Generation and characterization of hair-bearing skin organoids from human pluripotent stem cells](sources/lee_2022_generation_and_characterization_of_hair-bearing.md) - deeply ingested protocol source.
-- [Application of an iPSC-Derived Organoid Model for Localized Scleroderma Therapy (Adv. Sci. 16/2022)](sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.md) - application of an iPSC-Derived Organoid Model for Localized Scleroderma Therapy (Adv. Sci. 16/2022), ingested source page.
 - [In vitro and in silico approaches to engineering three-dimensional biological tissues and organoids](sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.md) - in vitro and in silico approaches to engineering three-dimensional biological tissues and organoids, ingested source page.
 - [Automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks](sources/d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md) - automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks, ingested source page.
 - [A distal lung organoid model to study interstitial lung disease, viral infection and human lung development](sources/matkovicleko_2023_a_distal_lung_organoid_model.md) - deeply ingested protocol source.
@@ -133,6 +130,7 @@
 - [질병 종류별로 organoid escalation ladder를 어떻게 짜야 하나](queries/20260420_191751_disease-specific-organoid-escalation-ladders.md) - cancer, developmental neuro, infection/barrier, regenerative, niche disease별 complexity escalation sequence 정리.
 
 - [Organoid corpus lint/prune pass](queries/20260421_153718_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
+- [Organoid corpus lint/prune pass](queries/20260421_155351_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
 ## Syntheses
 
 - [Organoid Protocol Starter Corpus](syntheses/20260408_organoid-protocol-corpus.md) - corpus-level synthesis.

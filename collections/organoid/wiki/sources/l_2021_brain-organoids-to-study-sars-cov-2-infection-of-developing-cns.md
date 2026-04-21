@@ -1,7 +1,7 @@
 ---
 title: Brain Organoids to Study SARS-Cov-2 Infection of Developing CNS
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T15:51:08+09:00
 raw_source: raw/sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8461781/
@@ -10,15 +10,24 @@ organ: brain
 protocol_focus: brain Organoids to Study SARS-Cov-2 Infection of Developing CNS
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Brain Organoids to Study SARS-Cov-2 Infection of Developing CNS
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `abstracts\s*/`, `^[A-Z]{2,}\d{2}-\d{2}\b`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.pdf](../../raw/sources/l_2021_brain-organoids-to-study-sars-cov-2-infection-of-developing-cns.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8461781/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8461781/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: brain
 - Protocol focus: brain Organoids to Study SARS-Cov-2 Infection of Developing CNS

@@ -1,7 +1,7 @@
 ---
 title: Application of an iPSC-Derived Organoid Model for Localized Scleroderma Therapy (Adv. Sci. 16/2022)
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T15:51:02+09:00
 raw_source: raw/sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9165512/
@@ -10,15 +10,24 @@ organ: organoid-system
 protocol_focus: application of an iPSC-Derived Organoid Model for Localized Scleroderma Therapy (Adv. Sci. 16/2022)
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: cover or promotional blurb
+pruned: 2026-04-21
 ---
 
 # Application of an iPSC-Derived Organoid Model for Localized Scleroderma Therapy (Adv. Sci. 16/2022)
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: cover or promotional blurb
+- Basis from parsed PDF: `www.advancedscience.com`, `vol. issue cover without article body`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.pdf](../../raw/sources/application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC9165512/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9165512/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
 - Protocol focus: application of an iPSC-Derived Organoid Model for Localized Scleroderma Therapy (Adv. Sci. 16/2022)

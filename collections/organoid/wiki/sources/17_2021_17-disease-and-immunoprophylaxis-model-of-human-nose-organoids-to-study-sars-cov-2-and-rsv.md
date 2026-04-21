@@ -1,7 +1,7 @@
 ---
 title: #17: Disease and Immunoprophylaxis Model of Human Nose Organoids to Study SARS-CoV-2 and RSV Infection
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T15:51:04+09:00
 raw_source: raw/sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8344456/
@@ -10,15 +10,24 @@ organ: lung
 protocol_focus: #17: Disease and Immunoprophylaxis Model of Human Nose Organoids to Study SARS-CoV-2 and RSV Infection
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # #17: Disease and Immunoprophylaxis Model of Human Nose Organoids to Study SARS-CoV-2 and RSV Infection
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `^#\d+:`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.pdf](../../raw/sources/17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8344456/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8344456/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: lung
 - Protocol focus: #17: Disease and Immunoprophylaxis Model of Human Nose Organoids to Study SARS-CoV-2 and RSV Infection

@@ -1170,3 +1170,9 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: 17_2021_17-disease-and-immunoprophylaxis-model-of-human-nose-organoids-to-study-sars-cov-2-and-rsv.md, application_2022_application-of-an-ipsc-derived-organoid-model-for-localized-scleroderma-therapy-adv-sci-16.md, b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, ...
 
+## [2026-04-21 15:53 KST] lint prune | Organoid 100-paper corpus
+
+- Marked 3 source pages as pruned from the active corpus.
+- Saved lint/prune report wiki/queries/20260421_155351_organoid-corpus-lint-prune-pass.md.
+- Rebuilt wiki/index.md, wiki/overview.md, and organoid_protocols_manifest.tsv after pruning.
+- Retained raw PDFs for traceability while excluding pruned pages from the active source list.
