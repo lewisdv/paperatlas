@@ -1416,3 +1416,21 @@
 - Saved lint/prune report wiki/queries/20260421_203208_organoid-corpus-lint-prune-pass.md.
 - Rebuilt wiki/index.md, wiki/overview.md, and organoid_protocols_manifest.tsv after pruning.
 - Retained raw PDFs for traceability while excluding pruned pages from the active source list.
+
+## [2026-04-21 20:33 KST] ingest queued | Protocol for the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation.
+
+- Registered raw source raw/sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.pdf.
+- Created source page wiki/sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.md.
+
+## [2026-04-21 20:33 KST] source parsed | jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.pdf
+
+- Parsed raw/sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.
+- Updated source page wiki/sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.md.
+
+## [2026-04-21 20:33 KST] generic ingest | Organoid batch update
+
+- Generic-ingested 50 source pages using metadata, abstract text, and raw-PDF scope extraction.
+- Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
+- Representative source pages in this pass: b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md, c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, ...
+
