@@ -1,29 +1,74 @@
 ---
 title: Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids.
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T20:31:00+09:00
 raw_source: raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11066468/
+published_date: 2024-04-26
+organ: colon-intestine
+protocol_focus: generating and analyzing organ-on-chip using human and mouse intestinal organoids
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids.
 
 ## Source
 
-- File: [raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf](../../raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf)
-- Added: 2026-04-21T20:31:00+09:00
+- PDF: [raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf](../../raw/sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11066468/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11066468/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: colon / intestine
+- Protocol focus: generating and analyzing organ-on-chip using human and mouse intestinal organoids
+
+## Study design
+
+- Starting material: pre-established organoid cultures or matched source tissue
+- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
+- Aim: generating and analyzing organ-on-chip using human and mouse intestinal organoids
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for generating and analyzing organ-on-chip using human and mouse intestinal organoids.
+- Its main distinctive contribution in this corpus is that it organ-on-chip technology is a powerful tool for in vitro modeling.
+- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
+- Paper framing: Organ-on-chip technology is a powerful tool for in vitro modeling.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on generating and analyzing organ-on-chip using human and mouse intestinal organoids.
+- Its distinctive focus in practice is the way it organ-on-chip technology is a powerful tool for in vitro modeling.
+- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Adds a reusable perturbation or imaging layer that increases experimental leverage.
+- Makes organoids more compatible with mechanistic and platform-style studies.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Usually assumes that the baseline organoid system is already robust before engineering begins.
+- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with colon intestine work and strengthens the engineering and platform-readout coverage around generating and analyzing organ-on-chip using human and mouse intestinal organoids.
+- This paper broadens the collection's coverage of colon / intestine organoid work.
+- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+
+## Related concepts
+
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
+- [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
+
+## Open questions
+
+- Which engineering or readout step is most likely to fail before the biology is interpretable?
+- How should this workflow be standardized across cell lines, batches, or perturbation sets?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

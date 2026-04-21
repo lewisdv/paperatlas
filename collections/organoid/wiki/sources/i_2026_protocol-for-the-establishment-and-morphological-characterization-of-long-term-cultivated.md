@@ -1,29 +1,73 @@
 ---
 title: Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T20:30:45+09:00
 raw_source: raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12819030/
+published_date: 2026-01-09
+organ: organoid-system
+protocol_focus: the establishment and morphological characterization of long-term cultivated murine cerebral organoids
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
 
 ## Source
 
-- File: [raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf](../../raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf)
-- Added: 2026-04-21T20:30:45+09:00
+- PDF: [raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf](../../raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12819030/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12819030/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: organoid system
+- Protocol focus: the establishment and morphological characterization of long-term cultivated murine cerebral organoids
+
+## Study design
+
+- Starting material: pre-established organoid cultures or matched source tissue
+- Protocol type: stepwise derivation and maturation protocol
+- Aim: the establishment and morphological characterization of long-term cultivated murine cerebral organoids
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as a stepwise derivation and maturation protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
+- Its main distinctive contribution in this corpus is that it murine cerebral organoids provide a rapid and reproducible in vitro system that recapitulates key aspects of neurogenesis.
+- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
+- Paper framing: Murine cerebral organoids provide a rapid and reproducible in vitro system that recapitulates key aspects of neurogenesis.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
+- Its distinctive focus in practice is the way it murine cerebral organoids provide a rapid and reproducible in vitro system that recapitulates key aspects of neurogenesis.
+- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Useful as a starting-point protocol for building this organ system from stem cells.
+- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
+- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the baseline derivation coverage around the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
+- This paper broadens the collection's coverage of organoid system organoid work.
+- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+
+## Related concepts
+
+- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+
+## Open questions
+
+- Which steps in this organoid system workflow drive the most variability across lines or batches?
+- What extra maturation or assay layer is usually needed after the baseline derivation works?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

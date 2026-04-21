@@ -1,7 +1,7 @@
 ---
 title: Protocol for establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T20:28:04+09:00
 raw_source: raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12221707/
@@ -10,15 +10,24 @@ organ: lung
 protocol_focus: establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-21
 ---
 
 # Protocol for establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-21
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `^[A-Z]{2,4}\d{2,}(?:\s+\|\s+[A-Z]{2,8}\d{2,})?\s+[A-Z]`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf](../../raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12221707/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12221707/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: lung
 - Protocol focus: establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration
