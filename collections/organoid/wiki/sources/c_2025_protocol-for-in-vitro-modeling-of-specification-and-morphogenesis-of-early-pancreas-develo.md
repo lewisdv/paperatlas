@@ -1,29 +1,74 @@
 ---
 title: Protocol for in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T20:27:53+09:00
 raw_source: raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12149599/
+published_date: 2025-05-21
+organ: pancreas
+protocol_focus: in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Protocol for in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.
 
 ## Source
 
-- File: [raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf](../../raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf)
-- Added: 2026-04-21T20:27:53+09:00
+- PDF: [raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf](../../raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12149599/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12149599/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: pancreas
+- Protocol focus: in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation
+
+## Study design
+
+- Starting material: pre-established organoid cultures or matched source tissue
+- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
+- Aim: in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.
+- Its main distinctive contribution in this corpus is that it a protocol to generate key pancreatic cell types in vitro using human pluripotent stem cell (hPSC)-based Matrigel-overlay organoid differentiation.
+- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
+- Paper framing: Here, we present a protocol to generate key pancreatic cell types in vitro using human pluripotent stem cell (hPSC)-based Matrigel-overlay organoid differentiation.
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.
+- Its distinctive focus in practice is the way it a protocol to generate key pancreatic cell types in vitro using human pluripotent stem cell (hPSC)-based Matrigel-overlay organoid differentiation.
+- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Adds a reusable perturbation or imaging layer that increases experimental leverage.
+- Makes organoids more compatible with mechanistic and platform-style studies.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Usually assumes that the baseline organoid system is already robust before engineering begins.
+- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with pancreas work and strengthens the engineering and platform-readout coverage around in vitro modeling of specification and morphogenesis of early pancreas development using human pluripotent stem cell-based organoid differentiation.
+- This paper broadens the collection's coverage of pancreas organoid work.
+- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+
+## Related concepts
+
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
+- [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
+
+## Open questions
+
+- Which engineering or readout step is most likely to fail before the biology is interpretable?
+- How should this workflow be standardized across cell lines, batches, or perturbation sets?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

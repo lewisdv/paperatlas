@@ -1,29 +1,73 @@
 ---
 title: Protocol for establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
 kind: paper
-status: queued
+status: ingested
 added: 2026-04-21T20:28:04+09:00
 raw_source: raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf
+article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12221707/
+published_date: 2025-06-20
+organ: lung
+protocol_focus: establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration
+ingest_method: generic-auto
+ingested: 2026-04-21
 ---
 
 # Protocol for establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
 
 ## Source
 
-- File: [raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf](../../raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf)
-- Added: 2026-04-21T20:28:04+09:00
+- PDF: [raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf](../../raw/sources/b_2025_protocol-for-establishing-genetically-engineered-murine-lung-organoids-mimicking-cell-plas.pdf)
+- Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12221707/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12221707/)
+- Status: ingested on 2026-04-21
+- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
+- Organ focus: lung
+- Protocol focus: establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration
+
+## Study design
+
+- Starting material: pre-established organoid cultures or matched source tissue
+- Protocol type: stepwise derivation and maturation protocol
+- Aim: establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration
+- Core readouts: organoid morphology, lineage markers, and downstream functional assays
 
 ## Summary
 
-Pending ingest.
+- This paper is best understood as a stepwise derivation and maturation protocol for establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
+- Its main distinctive contribution in this corpus is that it lung endothelial cells (LuECs) play crucial roles in lung regeneration and support lung organoids (LOs).
+- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
+- Paper framing: Lung endothelial cells (LuECs) play crucial roles in lung regeneration and support lung organoids (LOs).
 
-## Key Claims
+## Key findings
 
-- Pending ingest.
+- Defines a workflow centered on establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
+- Its distinctive focus in practice is the way it lung endothelial cells (LuECs) play crucial roles in lung regeneration and support lung organoids (LOs).
+- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
 
-## Open Questions
+## Strengths
 
-- Pending ingest.
+- Useful as a starting-point protocol for building this organ system from stem cells.
+- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+
+## Limitations and caveats
+
+- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
+- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
+- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+
+## Relevance to this corpus
+
+- Specific role in this corpus: Extends the corpus with lung work and strengthens the baseline derivation coverage around establishing genetically engineered murine lung organoids mimicking cell plasticity and regeneration.
+- This paper broadens the collection's coverage of lung organoid work.
+- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+
+## Related concepts
+
+- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+
+## Open questions
+
+- Which steps in this lung workflow drive the most variability across lines or batches?
+- What extra maturation or assay layer is usually needed after the baseline derivation works?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

@@ -1279,3 +1279,33 @@
 - Parsed raw/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.
 - Updated source page wiki/sources/c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md.
+
+## [2026-04-21 20:28 KST] source parsed | j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.pdf
+
+- Parsed raw/sources/j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.
+- Updated source page wiki/sources/j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.md.
+
+## [2026-04-21 20:28 KST] source parsed | ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.pdf
+
+- Parsed raw/sources/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.
+- Updated source page wiki/sources/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.md.
+
+## [2026-04-21 20:28 KST] source parsed | m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.pdf
+
+- Parsed raw/sources/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.
+- Updated source page wiki/sources/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.md.
+
+## [2026-04-21 20:28 KST] source parsed | s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.pdf
+
+- Parsed raw/sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.
+- Updated source page wiki/sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.md.
+
+## [2026-04-21 20:29 KST] source parsed | s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.pdf
+
+- Parsed raw/sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.
+- Updated source page wiki/sources/s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.md.
