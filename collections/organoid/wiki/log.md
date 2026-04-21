@@ -873,3 +873,33 @@
 - Parsed raw/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.pdf with OpenDataLoader PDF.
 - Saved helper artifacts under raw/derived/opendataloader/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.
 - Updated source page wiki/sources/d_2025_microglia-containing-cerebral-organoids-model-apoe4-driven-alzheimer-s-disease-pathologies.md.
+
+## [2026-04-21 14:48 KST] source parsed | d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.pdf
+
+- Parsed raw/sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.
+- Updated source page wiki/sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md.
+
+## [2026-04-21 14:48 KST] source parsed | d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.pdf
+
+- Parsed raw/sources/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.
+- Updated source page wiki/sources/d_2026_from-organoid-culture-to-manufacturing-technologies-for-reproducible-and-scalable-organoid.md.
+
+## [2026-04-21 14:48 KST] source parsed | e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.pdf
+
+- Parsed raw/sources/e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.
+- Updated source page wiki/sources/e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.md.
+
+## [2026-04-21 14:48 KST] source parsed | epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.pdf
+
+- Parsed raw/sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.
+- Updated source page wiki/sources/epen-17-in_2024_epen-17-in-vitro-modelling-of-pediatric-supratentorial-ependymomas-using-cerebral-organoid.md.
+
+## [2026-04-21 14:48 KST] source parsed | f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.pdf
+
+- Parsed raw/sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.pdf with OpenDataLoader PDF.
+- Saved helper artifacts under raw/derived/opendataloader/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.
+- Updated source page wiki/sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md.
