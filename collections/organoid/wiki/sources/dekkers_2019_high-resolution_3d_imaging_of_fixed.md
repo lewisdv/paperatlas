@@ -1,10 +1,10 @@
 ---
-title: dekkers 2019 high-resolution 3d imaging of fixed
+title: High-resolution 3D imaging of ﬁxed and cleared organoids
 kind: paper
 status: ingested
 added: 2026-04-21T14:21:48+09:00
 raw_source: raw/sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.pdf
-article_url: 
+article_url: https://doi.org/10.1038/s41596-019-0160-8
 published_date: 
 organ: organoid-system
 protocol_focus: dekkers 2019 high-resolution 3d imaging of fixed
@@ -12,12 +12,12 @@ ingest_method: generic-auto
 ingested: 2026-04-21
 ---
 
-# dekkers 2019 high-resolution 3d imaging of fixed
+# High-resolution 3D imaging of ﬁxed and cleared organoids
 
 ## Source
 
 - PDF: [raw/sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.pdf](../../raw/sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.pdf)
-- Article: not recorded in local metadata
+- Article: [https://doi.org/10.1038/s41596-019-0160-8](https://doi.org/10.1038/s41596-019-0160-8)
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system

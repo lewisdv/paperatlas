@@ -4,7 +4,7 @@ kind: paper
 status: ingested
 added: 2026-04-21T14:20:30+09:00
 raw_source: raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf
-article_url: 
+article_url: https://doi.org/10.1038/s41596-021-00661-8
 published_date: 
 organ: ductal epithelial
 protocol_focus: bakker 2022 preparing ductal epithelial organoids for
@@ -17,7 +17,7 @@ ingested: 2026-04-21
 ## Source
 
 - PDF: [raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf](../../raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf)
-- Article: not recorded in local metadata
+- Article: [https://doi.org/10.1038/s41596-021-00661-8](https://doi.org/10.1038/s41596-021-00661-8)
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: ductal epithelial

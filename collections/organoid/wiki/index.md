@@ -7,13 +7,13 @@
 ## Sources
 
 - [bakker 2022 preparing ductal epithelial organoids for](sources/bakker_2022_preparing_ductal_epithelial_organoids_for.md) - bakker 2022 preparing ductal epithelial organoids for, ingested source page.
-- [bergmann 2018 bloodbrain-barrier organoids for investigating the](sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md) - bergmann 2018 bloodbrain-barrier organoids for investigating the, ingested source page.
-- [dekkers 2019 high-resolution 3d imaging of fixed](sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.md) - dekkers 2019 high-resolution 3d imaging of fixed, ingested source page.
-- [gabriel 2023 generation of ipsc-derived human forebrain](sources/gabriel_2023_generation_of_ipsc-derived_human_forebrain.md) - gabriel 2023 generation of ipsc-derived human forebrain, ingested source page.
-- [gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid](sources/gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md) - gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid, ingested source page.
-- [miura 2022 engineering brain assembloids to interrogate](sources/miura_2022_engineering_brain_assembloids_to_interrogate.md) - miura 2022 engineering brain assembloids to interrogate, ingested source page.
-- [sheridan 2020 establishment and differentiation of long-term](sources/sheridan_2020_establishment_and_differentiation_of_long-term.md) - sheridan 2020 establishment and differentiation of long-term, ingested source page.
-- [tysoe 2019 isolation and propagation of primary](sources/tysoe_2019_isolation_and_propagation_of_primary.md) - tysoe 2019 isolation and propagation of primary, ingested source page.
+- [Blood–brain-barrier organoids for investigating the permeability of CNS therapeutics](sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md) - bergmann 2018 bloodbrain-barrier organoids for investigating the, ingested source page.
+- [Engineering brain assembloids to interrogate human neural circuits](sources/miura_2022_engineering_brain_assembloids_to_interrogate.md) - miura 2022 engineering brain assembloids to interrogate, ingested source page.
+- [Establishment and differentiation of long-term trophoblast organoid cultures from the human placenta](sources/sheridan_2020_establishment_and_differentiation_of_long-term.md) - sheridan 2020 establishment and differentiation of long-term, ingested source page.
+- [Generation of iPSC-derived human forebrain organoids assembling bilateral eye primordia](sources/gabriel_2023_generation_of_ipsc-derived_human_forebrain.md) - gabriel 2023 generation of ipsc-derived human forebrain, ingested source page.
+- [High-resolution 3D imaging of ﬁxed and cleared organoids](sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.md) - dekkers 2019 high-resolution 3d imaging of fixed, ingested source page.
+- [Isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue](sources/tysoe_2019_isolation_and_propagation_of_primary.md) - tysoe 2019 isolation and propagation of primary, ingested source page.
+- [Patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection](sources/gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md) - gurumurthy 2022 patient-derived and mouse endo-ectocervical organoid, ingested source page.
 - [Generating human intestinal tissue from pluripotent stem cells in vitro](sources/mccracken_2011_generating_human_intestinal_tissue_from.md) - deeply ingested protocol source.
 - [Generation of cerebral organoids from human pluripotent stem cells](sources/lancaster_2014_generation_of_cerebral_organoids_from.md) - deeply ingested protocol source.
 - [The generation of kidney organoids by differentiation of human pluripotent cells to ureteric bud progenitor-like cells](sources/xia_2014_the_generation_of_kidney_organoids.md) - deeply ingested protocol source.

@@ -616,3 +616,9 @@
 - Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
 - Representative source pages in this pass: bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, dekkers_2019_high-resolution_3d_imaging_of_fixed.md, gabriel_2023_generation_of_ipsc-derived_human_forebrain.md, gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md, miura_2022_engineering_brain_assembloids_to_interrogate.md, sheridan_2020_establishment_and_differentiation_of_long-term.md, tysoe_2019_isolation_and_propagation_of_primary.md
 
+## [2026-04-21 14:23 KST] generic ingest | Organoid batch update
+
+- Generic-ingested 8 source pages using metadata, abstract text, and raw-PDF scope extraction.
+- Updated wiki/index.md and wiki/overview.md to reflect the expanded corpus.
+- Representative source pages in this pass: bakker_2022_preparing_ductal_epithelial_organoids_for.md, bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, dekkers_2019_high-resolution_3d_imaging_of_fixed.md, gabriel_2023_generation_of_ipsc-derived_human_forebrain.md, gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md, miura_2022_engineering_brain_assembloids_to_interrogate.md, sheridan_2020_establishment_and_differentiation_of_long-term.md, tysoe_2019_isolation_and_propagation_of_primary.md
+

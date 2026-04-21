@@ -1,10 +1,10 @@
 ---
-title: miura 2022 engineering brain assembloids to interrogate
+title: Engineering brain assembloids to interrogate human neural circuits
 kind: paper
 status: ingested
 added: 2026-04-21T14:21:48+09:00
 raw_source: raw/sources/miura_2022_engineering_brain_assembloids_to_interrogate.pdf
-article_url: 
+article_url: https://doi.org/10.1038/s41596-021-00632-z
 published_date: 
 organ: brain
 protocol_focus: miura 2022 engineering brain assembloids to interrogate
@@ -12,12 +12,12 @@ ingest_method: generic-auto
 ingested: 2026-04-21
 ---
 
-# miura 2022 engineering brain assembloids to interrogate
+# Engineering brain assembloids to interrogate human neural circuits
 
 ## Source
 
 - PDF: [raw/sources/miura_2022_engineering_brain_assembloids_to_interrogate.pdf](../../raw/sources/miura_2022_engineering_brain_assembloids_to_interrogate.pdf)
-- Article: not recorded in local metadata
+- Article: [https://doi.org/10.1038/s41596-021-00632-z](https://doi.org/10.1038/s41596-021-00632-z)
 - Status: ingested on 2026-04-21
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: brain
