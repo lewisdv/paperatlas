@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12915229/
 published_date: 2026-02-11
 organ: retina
 protocol_focus: enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol to enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers.
@@ -18,57 +17,61 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.pdf](../../raw/sources/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12915229/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12915229/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: retina
-- Protocol focus: enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers
+- Status: deep ingested 2026-04-22
+- Organ focus: human retinal pigment epithelial cells and murine intestinal organoid-derived monolayers used as non-feline host epithelia
+- Protocol focus: combine feline-like lipid media and inducible MORC depletion to drive pre-sexual and early sexual Toxoplasma differentiation in assay-ready epithelial models
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: functional assay extension layered onto organoid culture
-- Aim: enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a functional assay extension layered onto organoid culture for enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers.
-- Its main distinctive contribution in this corpus is that it toxoplasma gondii undergoes pre-sexual and sexual differentiation primarily in feline hosts, limiting experimental study.
-- Within this collection, it belongs to the assay-extension branch of organoid protocol work.
-- Paper framing: Toxoplasma gondii undergoes pre-sexual and sexual differentiation primarily in feline hosts, limiting experimental study.
+- Starting material: hRPE cultures, murine intestinal organoids converted into monolayers, and PruDku80 MORC-mAID-Tir-HA parasites
+- Protocol stages:
+  - prepare hRPE cells and organoid-derived monolayers, using an ODM medium supplemented with Y-27632, SB431542, CHIR99021, SB202190, N-acetyl cysteine, and nicotinamide to support intestinal epithelial plating
+  - shift host cells into feline-like lipid biochemistry with FELIX formulations, including 200 uM linoleic acid, 10 uM trans-retinoic acid for hRPE, and the delta-6-desaturase inhibitor SC-26196 in organoid monolayers
+  - infect host cells with MORC-depletable parasites and induce MORC loss with IAA so that host metabolic cues and parasite chromatin derepression act together
+  - quantify pre-sexual and sexual-stage induction with qPCR and immunofluorescence readouts including GRA11b, GRA81, PF16, AO2, CC2, and H2Bz
+- Key validation: FELIX plus IAA raises GRA11b expression by roughly 2 orders of magnitude, produces about 50-60% GRA11b-positive or CC2-positive vacuoles in hRPE and ODM settings, and yields rare but reproducible AO2-positive macrogamete-like structures
+- Distinct protocol emphasis: the key move is not organoid derivation itself but conversion of organoids into a lipid-conditioned, experimentally accessible host surface that unlocks a normally feline-restricted parasite transition
 
 ## Key findings
 
-- Defines a workflow centered on enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers.
-- Its distinctive focus in practice is the way it toxoplasma gondii undergoes pre-sexual and sexual differentiation primarily in feline hosts, limiting experimental study.
-- Demonstrates that experimental value often comes from the assay layer added on top of an existing organoid rather than from derivation alone.
+- Shows that parasite sexual commitment depends on a three-part design logic: permissive epithelial host context, feline-like linoleic-acid-rich metabolism, and MORC depletion within the parasite.
+- Uses intestinal organoid-derived monolayers rather than only conventional cell lines, which makes the host surface more physiologic and experimentally tunable.
+- Makes stage conversion quantifiable with repeatable molecular and image-based readouts instead of relying on anecdotal morphology.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Moves organoids beyond derivation into a biologically interpretable assay context.
-- Clarifies how to operationalize exposure, coculture, or host interaction instead of leaving it as an ad hoc extension.
+- One of the strongest host-pathogen assay-design papers in the collection because the organoid contribution is explicit and mechanistic.
+- Demonstrates that organoid value can come from monolayer conversion and media biochemistry, not only from keeping a 3D spheroid intact.
+- Extends the gastrointestinal-endoderm branch into parasite developmental biology rather than only bacterial exposure, polarity control, or mammalian tissue repair.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Best treated as an extension protocol, not a replacement for a stable baseline organoid pipeline.
-- Assay outcomes can be dominated by the quality, polarity, or maturity of the starting organoid culture.
+- The system induces only pre-sexual and early sexual signatures; it does not complete the full feline-dependent cycle or form mature oocyst structures.
+- FELIX medium components, especially linoleic acid and retinoic acid, are chemically fragile, so reagent freshness and light protection matter to reproducibility.
+- Organoid-derived monolayers are mechanically delicate, and assay success depends on plating quality, residual matrix handling, and infecting at the right confluence window.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with retina work and strengthens the assay-layer coverage around enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers.
-- This paper broadens the collection's coverage of retina organoid work.
-- It represents the second-wave move from making organoids to actually using them in a biologically specific experiment.
+- Strengthens the functional-assay and gastrointestinal-endoderm branches with a paper where host access and lipid state are the whole point of the protocol.
+- Useful when the question is how to turn an organoid-derived epithelium into a pathogen-facing assay surface rather than how to derive the epithelium in the first place.
+- Sits alongside microbe coculture, polarity-control, and liver-infection papers as a high-value example of second-wave assay engineering.
 
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related sources
+
+- [Intestinal organoid cocultures with microbes](puschhof_2021_intestinal_organoid_cocultures_with_microbes.md) - a gut-microbe exposure comparator that also turns organoids into experimentally accessible infection systems.
+- [Controlling the polarity of human gastrointestinal organoids to investigate epithelial biology and infectious diseases](co_2021_controlling_the_polarity_of_human.md) - a polarity and access comparator for host-pathogen experiments on intestinal epithelia.
+- [Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery](j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md) - another infection-facing assay paper where an established organoid platform becomes useful only after the right exposure design is layered on top.
+
 ## Open questions
 
-- How much of the observed phenotype comes from the added assay layer versus the baseline organoid state?
-- What maturity or polarity checks should be mandatory before this assay is trusted?
+- Which host-cell features beyond lipids most determine permissiveness for Toxoplasma sexual commitment?
+- Can the microscopy-heavy readout stack be converted into a more scalable reporter system for screening?
+- What extra host compartments would be needed to move from early sexual differentiation to a fuller feline-like developmental cycle?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
