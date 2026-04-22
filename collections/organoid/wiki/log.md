@@ -1457,3 +1457,10 @@
 - Promoted 6 additional source pages from generic ingest to manual deep-ingest: i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md, d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.md, jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.md, gabriel_2023_generation_of_ipsc-derived_human_forebrain.md, miura_2022_engineering_brain_assembloids_to_interrogate.md, and human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.md.
 - Rewrote those pages around protocol stages, validation logic, corpus role, and related-source comparison so the brain-patterning, immune-coculture, and multi-lineage concept paths have deeper support.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 67 deep-ingested and 33 standard-ingested source pages.
+
+## [2026-04-22 13:48 KST] manual deep-ingest | Adult, imaging, and non-brain assay anchors
+
+- Promoted 6 additional source pages from generic ingest to manual deep-ingest: tysoe_2019_isolation_and_propagation_of_primary.md, s_2025_protocol-for-the-generation-and-differentiation-of-thymic-epithelial-organoids-from-adult.md, q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.md, bakker_2022_preparing_ductal_epithelial_organoids_for.md, dekkers_2019_high-resolution_3d_imaging_of_fixed.md, and j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md.
+- Rewrote those pages around protocol stages, validation logic, assay design, and related-source comparison, and corrected organ labeling for the thymic and biliary branches.
+- Updated the adult-platform, engineering-imaging, functional-assay, and gastrointestinal-endoderm concept pages so these anchors surface from the concept layer before source-by-source browsing.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 73 deep-ingested and 27 standard-ingested source pages.

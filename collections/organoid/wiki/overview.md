@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 100 active organoid-related source pages. 67 are deep-ingested protocol pages, 33 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
+This collection currently contains 100 active organoid-related source pages. 73 are deep-ingested protocol pages, 27 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -13,8 +13,8 @@ This collection currently contains 100 active organoid-related source pages. 67 
 
 ## Current source-page status
 
-- Deep ingested: 67
-- Standard ingested: 33
+- Deep ingested: 73
+- Standard ingested: 27
 - Queued: 0
 
 ## Pruned source-page status
@@ -23,8 +23,8 @@ This collection currently contains 100 active organoid-related source pages. 67 
 
 ## Largest organ/system clusters
 
-- brain: 22
-- organoid system: 10
+- brain: 21
+- organoid system: 9
 - colon intestine: 6
 - kidney: 5
 - tumor: 5
@@ -42,5 +42,6 @@ This collection currently contains 100 active organoid-related source pages. 67 
 - A new manual deep-ingest pass promoted five refill-era papers into the curated tier, covering adult-organoid CRISPR engineering, South African intestinal PDO establishment, targeted viral delivery in midbrain organoids, orthogonal vascular programming, and Kupffer-integrated liver organoids.
 - A second manual deep-ingest pass promoted six additional concept-anchor pages into the curated tier, covering prostate lentiviral perturbation, intestinal organ-on-chip, endometrial stromal coculture, multimodal-specimen PDO generation, esophageal organoid-initiated cancer models, and intestinal MSC-mediated repair assays.
 - A third manual deep-ingest pass promoted six brain or immune concept anchors into the curated tier, covering murine cerebral baseline morphology, tonsil immune organoids, vaginal TRM coculture, eye-primordia forebrain organoids, cortico-striatal assembloids, and serotonergic neuromodulatory assembloids.
+- A fourth manual deep-ingest pass promoted six adult-platform, imaging, and non-brain assay anchors into the curated tier, covering cholangiocyte-to-biliary-graft engineering, adult thymic TEC organoids, trophoblast CRISPR screening, MSI-ready organoid preparation, whole-mount clearing and 3D imaging, and Oropouche liver-organoid antiviral assays.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.
