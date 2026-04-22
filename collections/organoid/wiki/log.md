@@ -1439,3 +1439,9 @@
 - Updated concept pages for adult or patient-derived platforms, functional assay or coculture workflows, engineering or screening layers, gastrointestinal and endodermal systems, brain subregion coverage, brain fidelity, vascularization, and multi-lineage complexity.
 - Tightened `Related concepts` on recent refill-era source pages so adult-platform, immune or stromal coculture, vascular, liver immune-cell, brain-subregion, and organ-on-chip papers now land on the right concept entry points.
 - Refreshed wiki/overview.md so the refill cohort is easier to navigate from the concept layer before opening individual standard-ingest pages.
+
+## [2026-04-22 11:05 KST] manual deep-ingest | Refill cohort representative protocols
+
+- Promoted 5 refill-era source pages from generic ingest to manual deep-ingest: m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.md, n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.md, m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md, y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md, and l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md.
+- Rewrote those pages around protocol stages, key validation, distinctive corpus contribution, caveats, and cross-paper links instead of metadata-level summaries.
+- Updated wiki/index.md and wiki/overview.md so the collection now exposes 55 deep-ingested and 45 standard-ingested active source pages.
