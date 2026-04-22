@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11298932/
 published_date: 2024-07-12
 organ: organoid-system
 protocol_focus: create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol to create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools.
@@ -18,57 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.pdf](../../raw/sources/m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11298932/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11298932/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: organoid system
-- Protocol focus: create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools
+- Status: deep ingested 2026-04-22
+- Organ focus: adult stem cell-derived organoid systems across intestinal, endometrial, and hepatocyte contexts
+- Protocol focus: DSB-free CRISPR engineering for isogenic disease-model generation in ASC organoids
 
 ## Study design
 
-- Starting material: adult stem or progenitor cells from primary tissue
-- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
-- Aim: create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools
-- Core readouts: pooled perturbation, selection, and follow-up validation workflows
-
-## Summary
-
-- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools.
-- Its main distinctive contribution in this corpus is that it isogenic disease models, such as genetically engineered organoids, provide insight into the impact of genetic variants on organ function.
-- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
-- Paper framing: Isogenic disease models, such as genetically engineered organoids, provide insight into the impact of genetic variants on organ function.
+- Starting material: murine or human adult stem cell-derived organoids, with the paper explicitly discussing intestinal, endometrial, and hepatocyte examples
+- Protocol stages:
+  - choose the editing modality first, using a decision tree that separates base editing from prime editing according to mutation class, PAM availability, and editing window constraints
+  - design and clone sgRNAs or pegRNAs into plasmid-based editor systems
+  - dissociate organoids and deliver editor constructs by electroporation
+  - recover edited cells and choose a selection route suited to the organoid type and edit goal: functional selection, transient-GFP FACS selection, or antibiotic selection
+  - derive clonal organoid lines and confirm the intended edit by genotyping and Sanger sequencing
+- Key validation: successful clonal edited organoids are sequencing-verified, and the troubleshooting section treats electroporation impedance, post-pulse cell death, weak GFP signal, and noisy Sanger traces as the core operational failure points
+- Distinct protocol emphasis: next-generation CRISPR tools avoid double-strand breaks, so the workflow is optimized for point-mutation modeling and small edits without leaning on HDR-heavy repair logic
 
 ## Key findings
 
-- Defines a workflow centered on create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools.
-- Its distinctive focus in practice is the way it isogenic disease models, such as genetically engineered organoids, provide insight into the impact of genetic variants on organ function.
-- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
+- Recasts adult organoid engineering as a decision problem about editor class, not just delivery: base editors cover many SNVs, while prime editors extend the space to edits that base editors cannot reach cleanly.
+- Makes selection strategy an explicit design variable rather than an afterthought by separating functional-selection cases from FACS-tolerant organoids and last-resort antibiotic selection.
+- Shows that the same DSB-free editing logic can travel across multiple adult organoid systems rather than staying intestine-specific.
+- Frames clonal line generation and Sanger validation as essential downstream steps, not optional cleanup after editing.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Adds a reusable perturbation or imaging layer that increases experimental leverage.
-- Makes organoids more compatible with mechanistic and platform-style studies.
+- One of the clearest papers in this collection for turning expandable adult organoids into isogenic comparator systems rather than only long-term culture endpoints.
+- Extends the corpus's engineering branch beyond knockout-style CRISPR workflows into base-editing and prime-editing logic that is better matched to patient-mutation modeling.
+- Bridges the adult or patient-derived organoid platform pages with the engineering pages by showing exactly where delivery, selection, and clonal validation sit in the workflow.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Usually assumes that the baseline organoid system is already robust before engineering begins.
-- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+- The protocol assumes the baseline adult organoid culture is already robust; weak growth or poor recovery will dominate results before editor choice matters.
+- FACS-based enrichment is organoid-type and donor dependent, so a route that works for one ASC system may fail in another.
+- Antibiotic selection is described as the least favorable option because it relies on random PiggyBac integration and adds another source of confounding variation.
+- DSB-free editors reduce indels and rearrangement risk, but they still impose PAM, editing-window, and cloning constraints that can rule out some desired variants.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the engineering and platform-readout coverage around create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools.
-- This paper broadens the collection's coverage of organoid system organoid work.
-- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+- Strengthens the adult stem cell and patient-derived branch of the corpus by showing how mature ASC cultures become causal genetics platforms.
+- Adds practical protocol detail to the engineering concept layer around editor choice, electroporation recovery, selection logic, and clone validation.
+- Useful whenever the question is not just how to grow an organoid, but how to introduce or repair a defined mutation without leaning on canonical DSB-based CRISPR.
 
 ## Related concepts
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 
+## Related sources
+
+- [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](broutier_2016_culture_and_establishment_of_self-renewing.md) - adult organoid expansion plus manipulation baseline for endodermal tissues.
+- [Establishment of human fetal hepatocyte organoids and CRISPR-Cas9-based gene knockin and knockout in organoid cultures from human liver](hendriks_2020_establishment_of_human_fetal_hepatocyte.md) - liver-focused genome engineering comparator that uses a more conventional CRISPR framing.
+- [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](dekkers_2021_long-term_culture_genetic_manipulation_and.md) - another example of stable adult or patient-derived organoids being turned into manipulable experimental systems.
+
 ## Open questions
 
-- Which engineering or readout step is most likely to fail before the biology is interpretable?
-- How should this workflow be standardized across cell lines, batches, or perturbation sets?
+- When is prime editing worth the extra construct and optimization burden relative to base editing in adult organoid systems?
+- Which organoid types can reliably tolerate FACS-based enrichment, and which are better served by functional selection only?
+- How portable are the paper's selection heuristics outside the intestinal models that dominate historical organoid engineering practice?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
