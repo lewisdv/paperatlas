@@ -56,3 +56,8 @@ Several papers in this corpus are best understood as second-wave protocols: they
 
 - What baseline maturity or polarity is required before a coculture or transplantation result is believable?
 - Which assays genuinely add biological insight rather than just technical complexity?
+
+## Related entities
+
+- [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
+- [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)

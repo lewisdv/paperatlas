@@ -22,6 +22,11 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 - Pruned from active corpus: 29
 
+## Entity-page status
+
+- Entity pages: 5
+- First-pass coverage: PDO-X, CRISPR editing, MEA readouts, OCT, and NLRP3 inflammasome
+
 ## Largest organ/system clusters
 
 - brain: 17
@@ -53,5 +58,6 @@ This collection currently contains 96 active organoid-related source pages. All 
 - A ninth manual deep-ingest pass promoted three protocol-and-assay pages into the curated tier, covering Th2-driven canine epidermal disease induction, an imageable Matrigel-overlay pancreas morphogenesis system, and ODE-based quantitative modeling of NSCLC patient-derived organoid composition.
 - A final remaining-standard cleanup pass pruned four low-signal leftovers and deep-ingested one retained heart macrophage assembloid paper, so the active corpus now sits at 96 deep-ingested pages with no standard pages left.
 - A new synthesis page now condenses the 2026-04-20 decision-query burst into one project-design playbook covering baseline choice, compensation priority, complexity control, organ-specific recovery, and disease-specific escalation.
+- A first entity pass now captures repeated platforms and tools as dedicated pages, so the collection no longer relies only on source, concept, query, and synthesis layers.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.

@@ -1512,3 +1512,9 @@
 - Added wiki/syntheses/20260422_organoid-project-design-playbook.md to consolidate the 2026-04-20 decision-query burst into one synthesis page.
 - Compressed repeated rules around baseline platform choice, first compensation layer, complexity control, disease-specific escalation, and organ-specific assay recovery into a single project-design playbook.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the new synthesis is surfaced alongside the fully deep-ingested active corpus.
+
+## [2026-04-22 19:29 KST] entity pass | Repeated platforms, tools, and assay systems
+
+- Added the first five entity pages under wiki/entities/: patient-derived-organoid-xenograft-pdo-x.md, crispr-cas9-and-next-generation-crispr-editing.md, mea-electrophysiology-readouts.md, optical-coherence-tomography-oct.md, and nlrp3-inflammasome.md.
+- Used this pass to start an entity layer for repeated platforms, tools, imaging modalities, and disease-assay systems that were otherwise scattered across source and query pages.
+- Updated wiki/index.md, wiki/overview.md, and the adult-platform, engineering-imaging, and functional-assay concept pages so the new entity layer is reachable from the main navigation.

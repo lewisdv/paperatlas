@@ -48,3 +48,8 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 
 - When should a project start from patient-derived tissue rather than from pluripotent differentiation?
 - Which missing stromal, immune, or vascular compartments most limit interpretation in adult or tumor organoid systems?
+
+## Related entities
+
+- [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
+- [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)

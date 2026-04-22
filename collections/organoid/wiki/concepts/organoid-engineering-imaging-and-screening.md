@@ -51,3 +51,9 @@ The newest protocols in this collection do not stop at making organoids. They in
 
 - Which engineering layer adds the most insight for the least extra protocol burden?
 - How should screening or imaging workflows be standardized across organoid lines and batches?
+
+## Related entities
+
+- [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+- [MEA electrophysiology readouts](../entities/mea-electrophysiology-readouts.md)
+- [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
