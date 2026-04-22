@@ -1485,3 +1485,10 @@
 - Rewrote those pages around actual protocol stages, assay logic, regeneration or infection validation, and organ-label corrections, including the shift from generic brain or organoid-system labels to retina and choroid-plexus where appropriate.
 - Updated the brain-fidelity, brain-subregion, functional-assay, and self-organization concept pages so the new neural disease and regeneration batch is visible from the concept layer before source-by-source browsing.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 87 deep-ingested and 13 standard-ingested source pages.
+
+## [2026-04-22 18:13 KST] manual deep-ingest | Translational cancer and PDO-X anchors
+
+- Promoted 5 additional source pages from generic ingest to manual deep-ingest: h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.md, patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md, w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md, j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md, and l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.md.
+- Rewrote those pages around actual protocol stages, matched host-escalation logic, immune reconstruction or kinome-restoration readouts, and donor-aware translational assay framing instead of metadata-level summaries.
+- Updated the adult-platform, functional-assay, and engineering-or-screening concept pages so this cancer-translational batch is visible from the concept layer before source-by-source browsing.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 92 deep-ingested and 8 standard-ingested source pages.

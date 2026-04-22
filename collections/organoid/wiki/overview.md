@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 100 active organoid-related source pages. 87 are deep-ingested protocol pages, 13 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
+This collection currently contains 100 active organoid-related source pages. 92 are deep-ingested protocol pages, 8 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -13,8 +13,8 @@ This collection currently contains 100 active organoid-related source pages. 87 
 
 ## Current source-page status
 
-- Deep ingested: 87
-- Standard ingested: 13
+- Deep ingested: 92
+- Standard ingested: 8
 - Queued: 0
 
 ## Pruned source-page status
@@ -47,5 +47,6 @@ This collection currently contains 100 active organoid-related source pages. 87 
 - A fifth manual deep-ingest pass promoted five adult-platform and assay papers into the curated tier, covering disease-stratified adult liver biobanking, primary placental trophoblast organoids, cervical epithelial niche divergence plus infection modeling, Toxoplasma sexual-stage induction on retinal or intestinal epithelial hosts, and monocyte-supported kidney differentiation.
 - A sixth manual deep-ingest pass promoted five barrier and imaging readout papers into the curated tier, covering BBB permeability organoids, printed-tumor OCT growth tracking, 13-day breast-cancer OCT tracking, convexity-preserving PDAC segmentation, and cross-system shape-factor morphology analysis.
 - A seventh manual deep-ingest pass promoted four neural disease and regeneration anchors into the curated tier, covering a cerebral NLRP3 inflammasome slice assay, a Down-syndrome choroid-plexus SARS-CoV-2 model, retinal injury-induced hNRSC isolation with rd10 transplantation, and cerebral pNSC or dNSC precursor-state assays.
+- An eighth manual deep-ingest pass promoted five translational cancer and PDO-X anchors into the curated tier, covering cervical SCNEC tri-model derivation, MALAT1-targeted breast PDO-X escalation, osteosarcoma immune-reconstructed iOS biobanking, metastatic PDO kinome restoration after host engraftment, and XIAP-targeted cisplatin sensitization in colon cancer organoids.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.
