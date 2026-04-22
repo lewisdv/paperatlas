@@ -1506,3 +1506,9 @@
 - Promoted modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md from generic ingest to manual deep-ingest because it still adds a distinct immune-bearing cardiac disease-assay axis.
 - Saved the prune rationale in wiki/queries/20260422_185044_organoid-corpus-lint-prune-pass.md and updated the cardiac, multi-lineage, and functional-assay concept pages to reflect the retained heart macrophage assembloid branch.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 96 deep-ingested and 0 standard-ingested source pages, with 29 pruned pages retained for traceability.
+
+## [2026-04-22 19:13 KST] synthesis | Organoid project design playbook
+
+- Added wiki/syntheses/20260422_organoid-project-design-playbook.md to consolidate the 2026-04-20 decision-query burst into one synthesis page.
+- Compressed repeated rules around baseline platform choice, first compensation layer, complexity control, disease-specific escalation, and organ-specific assay recovery into a single project-design playbook.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the new synthesis is surfaced alongside the fully deep-ingested active corpus.

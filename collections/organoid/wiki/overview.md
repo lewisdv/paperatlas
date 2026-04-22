@@ -10,6 +10,7 @@ This collection currently contains 96 active organoid-related source pages. All 
 - keeping low-signal conference abstracts, cover pages, and review-only additions out of the active protocol corpus while retaining them for traceability
 - navigating a now-better-linked concept layer for the refill cohort across adult or patient-derived access, coculture or transplantation, vascular induction, brain-subregion workflows, and engineering-on-chip stacks
 - using the organoid collection as a practical protocol and assay-planning map rather than only a static bibliography
+- using a new synthesis-level design playbook to jump from question type to baseline choice, assay layer, and escalation order
 
 ## Current source-page status
 
@@ -51,5 +52,6 @@ This collection currently contains 96 active organoid-related source pages. All 
 - An eighth manual deep-ingest pass promoted five translational cancer and PDO-X anchors into the curated tier, covering cervical SCNEC tri-model derivation, MALAT1-targeted breast PDO-X escalation, osteosarcoma immune-reconstructed iOS biobanking, metastatic PDO kinome restoration after host engraftment, and XIAP-targeted cisplatin sensitization in colon cancer organoids.
 - A ninth manual deep-ingest pass promoted three protocol-and-assay pages into the curated tier, covering Th2-driven canine epidermal disease induction, an imageable Matrigel-overlay pancreas morphogenesis system, and ODE-based quantitative modeling of NSCLC patient-derived organoid composition.
 - A final remaining-standard cleanup pass pruned four low-signal leftovers and deep-ingested one retained heart macrophage assembloid paper, so the active corpus now sits at 96 deep-ingested pages with no standard pages left.
+- A new synthesis page now condenses the 2026-04-20 decision-query burst into one project-design playbook covering baseline choice, compensation priority, complexity control, organ-specific recovery, and disease-specific escalation.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.
