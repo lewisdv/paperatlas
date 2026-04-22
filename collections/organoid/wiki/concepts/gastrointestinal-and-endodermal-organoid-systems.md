@@ -20,6 +20,7 @@ The endodermal side of the corpus spans both foundational derivation and later a
 - [Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids](../sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md)
 - [Protocol for generating liver organoids containing Kupffer cells using human iPSCs](../sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md)
 - [Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery](../sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md)
+- [From Patient Liver Tissue to Organoids: Establishment of a Translational Platform Using Healthy, Steatotic, and Cirrhotic Tissue Sources](../sources/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md)
 - [Protocol to enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers](../sources/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.md)
 
 ## Working synthesis
@@ -27,7 +28,7 @@ The endodermal side of the corpus spans both foundational derivation and later a
 - McCracken and Broda provide the developmental starting points for intestinal and gastric identity from pluripotent cells.
 - Puschhof, Co, and Watanabe show how intestinal organoids become experimentally useful when lumen access, polarity, host interaction, or transplantation are built in.
 - Koike, Broutier, and Tysoe broaden endodermal work toward boundary models, adult self-renewing tissue systems, and scaffolded biliary reconstruction.
-- The refill cohort extends this branch into patient-derived intestinal capture, pancreas morphogenesis, organ-on-chip deployment, stromal repair coculture, immune-bearing liver organoids, outbreak-relevant liver infection assays, and pathogen-facing intestinal monolayers.
+- The refill cohort extends this branch into patient-derived intestinal capture, pancreas morphogenesis, organ-on-chip deployment, stromal repair coculture, immune-bearing liver organoids, outbreak-relevant liver infection assays, disease-stratified adult liver biobanking, and pathogen-facing intestinal monolayers.
 - Together these papers make clear that endodermal organoids are no longer just derivation problems; they are now platforms for access, repair, screening, and multicompartment niche design.
 
 ## Main tension

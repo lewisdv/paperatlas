@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 100 active organoid-related source pages. 73 are deep-ingested protocol pages, 27 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
+This collection currently contains 100 active organoid-related source pages. 78 are deep-ingested protocol pages, 22 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -13,8 +13,8 @@ This collection currently contains 100 active organoid-related source pages. 73 
 
 ## Current source-page status
 
-- Deep ingested: 73
-- Standard ingested: 27
+- Deep ingested: 78
+- Standard ingested: 22
 - Queued: 0
 
 ## Pruned source-page status
@@ -24,8 +24,8 @@ This collection currently contains 100 active organoid-related source pages. 73 
 ## Largest organ/system clusters
 
 - brain: 21
-- organoid system: 9
-- colon intestine: 6
+- organoid-system: 8
+- colon-intestine: 6
 - kidney: 5
 - tumor: 5
 - liver: 4
@@ -43,5 +43,6 @@ This collection currently contains 100 active organoid-related source pages. 73 
 - A second manual deep-ingest pass promoted six additional concept-anchor pages into the curated tier, covering prostate lentiviral perturbation, intestinal organ-on-chip, endometrial stromal coculture, multimodal-specimen PDO generation, esophageal organoid-initiated cancer models, and intestinal MSC-mediated repair assays.
 - A third manual deep-ingest pass promoted six brain or immune concept anchors into the curated tier, covering murine cerebral baseline morphology, tonsil immune organoids, vaginal TRM coculture, eye-primordia forebrain organoids, cortico-striatal assembloids, and serotonergic neuromodulatory assembloids.
 - A fourth manual deep-ingest pass promoted six adult-platform, imaging, and non-brain assay anchors into the curated tier, covering cholangiocyte-to-biliary-graft engineering, adult thymic TEC organoids, trophoblast CRISPR screening, MSI-ready organoid preparation, whole-mount clearing and 3D imaging, and Oropouche liver-organoid antiviral assays.
+- A fifth manual deep-ingest pass promoted five adult-platform and assay papers into the curated tier, covering disease-stratified adult liver biobanking, primary placental trophoblast organoids, cervical epithelial niche divergence plus infection modeling, Toxoplasma sexual-stage induction on retinal or intestinal epithelial hosts, and monocyte-supported kidney differentiation.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.

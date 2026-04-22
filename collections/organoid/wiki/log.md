@@ -1464,3 +1464,10 @@
 - Rewrote those pages around protocol stages, validation logic, assay design, and related-source comparison, and corrected organ labeling for the thymic and biliary branches.
 - Updated the adult-platform, engineering-imaging, functional-assay, and gastrointestinal-endoderm concept pages so these anchors surface from the concept layer before source-by-source browsing.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 73 deep-ingested and 27 standard-ingested source pages.
+
+## [2026-04-22 14:06 KST] manual deep-ingest | Adult translational and infection assay anchors
+
+- Promoted 5 additional source pages from generic ingest to manual deep-ingest: r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md, sheridan_2020_establishment_and_differentiation_of_long-term.md, s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.md, e_2024_monocytes-prevent-apoptosis-of-ipscs-and-promote-differentiation-of-kidney-organoids.md, and gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md.
+- Rewrote those pages around protocol stages, validation logic, corpus role, and related-source comparison, correcting the placental organ label and surfacing adult-platform, infection, and support-layer design rules that were hidden in generic summaries.
+- Updated the adult-platform, functional-assay, gastrointestinal-endoderm, and kidney-differentiation concept pages so the new batch is visible from the concept layer before source-by-source browsing.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 78 deep-ingested and 22 standard-ingested source pages.
