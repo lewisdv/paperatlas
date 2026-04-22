@@ -42,8 +42,6 @@
 - [Engineering human hepato-biliary-pancreatic organoids from pluripotent stem cells](sources/koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.md) - deeply ingested protocol source.
 - [Generation and long-term culture of advanced cerebral organoids for studying later stages of neural development](sources/giandomenico_2021_generation_and_long-term_culture_of.md) - deeply ingested protocol source.
 - [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md) - deeply ingested protocol source.
-- [Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease](sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.md) - canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease, ingested source page.
-- [Novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease](sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.md) - novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease, ingested source page.
 - [A robust protocol for the generation of human midbrain organoids](sources/zagare_2021_a_robust_protocol_for_the.md) - deeply ingested protocol source.
 - ["Generation of insulin-producing pancreatic β cells from multiple human stem cell lines"](sources/hogrebe_2021_generation_of_insulin-producing_pancreatic.md) - deeply ingested protocol source.
 - [Generation of caudal-type serotonin neurons and hindbrain-fate organoids from hPSCs](sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md) - deeply ingested protocol source.
@@ -54,7 +52,6 @@
 - [Transplantation of intestinal organoids into a mouse model of colitis](sources/watanabe_2022_transplantation_of_intestinal_organoids_into.md) - deeply ingested protocol source.
 - ["Functional, metabolic and transcriptional maturation of human pancreatic islets derived from stem cells"](sources/balboa_2022_functional_metabolic_and_transcriptional.md) - deeply ingested protocol source.
 - [Generation and characterization of hair-bearing skin organoids from human pluripotent stem cells](sources/lee_2022_generation_and_characterization_of_hair-bearing.md) - deeply ingested protocol source.
-- [In vitro and in silico approaches to engineering three-dimensional biological tissues and organoids](sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.md) - in vitro and in silico approaches to engineering three-dimensional biological tissues and organoids, ingested source page.
 - [Automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks](sources/d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md) - automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks, deeply ingested protocol source.
 - [A distal lung organoid model to study interstitial lung disease, viral infection and human lung development](sources/matkovicleko_2023_a_distal_lung_organoid_model.md) - deeply ingested protocol source.
 - [Protocol for generating reproducible miniaturized controlled midbrain organoids](sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md) - deeply ingested protocol source.
@@ -87,7 +84,7 @@
 - [Protocol for the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation.](sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.md) - deeply ingested protocol source.
 - [Protocol for generating liver organoids containing Kupffer cells using human iPSCs.](sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md) - deeply ingested protocol source.
 - [Production of human blood-generating heart-forming organoids and sample preparation for advanced imaging](sources/dardano_2025_production_of_human_blood-generating_heart-forming.md) - deeply ingested protocol source.
-- [Modeling Atrial Fibrillation in a Human Heart Macrophage Assembloid](sources/modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md) - modeling Atrial Fibrillation in a Human Heart Macrophage Assembloid, ingested source page.
+- [Modeling Atrial Fibrillation in a Human Heart Macrophage Assembloid](sources/modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md) - deeply ingested protocol source.
 - [Protocol for modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice.](sources/m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.md) - modeling injury-induced regeneration in retinal organoids and isolating hNRSCs for subretinal transplantation in rd10 mice, deeply ingested protocol source.
 - [CRISPR screens in human neural organoids and assembloids](sources/meng_2025_crispr_screens_in_human_neural.md) - deeply ingested protocol source.
 - [Protocol for generating human vascular organoids via orthogonal activation of ETV2 and NKX3.1.](sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md) - deeply ingested protocol source.
@@ -103,7 +100,6 @@
 - [Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery](sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md) - deeply ingested protocol source.
 - [Human neuromodulatory assembloids to study serotonin signaling and disease](sources/human_2026_human-neuromodulatory-assembloids-to-study-serotonin-signaling-and-disease.md) - deeply ingested protocol source.
 - [Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness](sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md) - shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness, deeply ingested protocol source.
-- [Beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids](sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md) - beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids, ingested source page.
 - [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md) - deeply ingested protocol source.
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - deeply ingested protocol source.
 
@@ -151,6 +147,7 @@
 - [Organoid corpus lint/prune pass](queries/20260421_153718_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
 - [Organoid corpus lint/prune pass](queries/20260421_155351_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
 - [Organoid corpus lint/prune pass](queries/20260421_203208_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
+- [Organoid corpus lint/prune pass](queries/20260422_185044_organoid-corpus-lint-prune-pass.md) - targeted cleanup of the last standard-ingested source pages.
 ## Syntheses
 
 - [Organoid Protocol Starter Corpus](syntheses/20260408_organoid-protocol-corpus.md) - corpus-level synthesis.

@@ -1499,3 +1499,10 @@
 - Rewrote those pages around actual protocol stages, morphogenesis or cytokine-perturbation logic, quantitative readout design, and clearer corpus roles instead of metadata-level summaries.
 - Updated the adult-platform, functional-assay, engineering-or-screening, gastrointestinal-endoderm, and self-organization concept pages so the new batch is visible from the concept layer before source-by-source browsing.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 95 deep-ingested and 5 standard-ingested source pages.
+
+## [2026-04-22 18:50 KST] targeted prune and final standard-page cleanup | Remaining low-signal leftovers
+
+- Pruned 4 remaining low-signal standard source pages from the active corpus without deleting their raw PDFs: d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.md, h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.md, k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.md, and h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.md.
+- Promoted modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md from generic ingest to manual deep-ingest because it still adds a distinct immune-bearing cardiac disease-assay axis.
+- Saved the prune rationale in wiki/queries/20260422_185044_organoid-corpus-lint-prune-pass.md and updated the cardiac, multi-lineage, and functional-assay concept pages to reflect the retained heart macrophage assembloid branch.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 96 deep-ingested and 0 standard-ingested source pages, with 29 pruned pages retained for traceability.
