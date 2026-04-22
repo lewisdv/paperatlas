@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 100 active organoid-related source pages. 61 are deep-ingested protocol pages, 39 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
+This collection currently contains 100 active organoid-related source pages. 67 are deep-ingested protocol pages, 33 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -13,8 +13,8 @@ This collection currently contains 100 active organoid-related source pages. 61 
 
 ## Current source-page status
 
-- Deep ingested: 61
-- Standard ingested: 39
+- Deep ingested: 67
+- Standard ingested: 33
 - Queued: 0
 
 ## Pruned source-page status
@@ -23,8 +23,8 @@ This collection currently contains 100 active organoid-related source pages. 61 
 
 ## Largest organ/system clusters
 
-- brain: 21
-- organoid system: 13
+- brain: 22
+- organoid system: 10
 - colon intestine: 6
 - kidney: 5
 - tumor: 5
@@ -41,5 +41,6 @@ This collection currently contains 100 active organoid-related source pages. 61 
 - Recent concept-linking pulled the newest standard ingests into the concept pages, so `wiki/concepts/` is now a better first stop before browsing refill-era source pages one by one.
 - A new manual deep-ingest pass promoted five refill-era papers into the curated tier, covering adult-organoid CRISPR engineering, South African intestinal PDO establishment, targeted viral delivery in midbrain organoids, orthogonal vascular programming, and Kupffer-integrated liver organoids.
 - A second manual deep-ingest pass promoted six additional concept-anchor pages into the curated tier, covering prostate lentiviral perturbation, intestinal organ-on-chip, endometrial stromal coculture, multimodal-specimen PDO generation, esophageal organoid-initiated cancer models, and intestinal MSC-mediated repair assays.
+- A third manual deep-ingest pass promoted six brain or immune concept anchors into the curated tier, covering murine cerebral baseline morphology, tonsil immune organoids, vaginal TRM coculture, eye-primordia forebrain organoids, cortico-striatal assembloids, and serotonergic neuromodulatory assembloids.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.
