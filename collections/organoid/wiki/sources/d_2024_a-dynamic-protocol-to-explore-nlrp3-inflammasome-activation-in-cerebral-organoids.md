@@ -65,6 +65,10 @@ deep_ingested: 2026-04-22
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)
+
 ## Related sources
 
 - [Generation of cerebral organoids from human pluripotent stem cells](lancaster_2014_generation_of_cerebral_organoids_from.md) - the cerebral baseline underlying later assay-layer adaptations like this one.

@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)
+
 ## Related sources
 
 - [Generation of heart-forming organoids from human pluripotent stem cells under defined conditions](drakhlis_2021_generation_of_heart-forming_organoids_from.md) - the developmental baseline for this cardiac branch before immune-bearing disease assays are layered on top.

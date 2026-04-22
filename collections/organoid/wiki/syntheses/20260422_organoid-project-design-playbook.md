@@ -102,6 +102,14 @@ This is where the corpus is especially useful: weak assay signal does not mean t
 - [Organ마다 assay가 약할 때 recovery move를 어떻게 다르게 잡아야 하나](../queries/20260420_191750_organ-specific-assay-recovery-playbook.md)
 - [질병 종류별로 organoid escalation ladder를 어떻게 짜야 하나](../queries/20260420_191751_disease-specific-organoid-escalation-ladders.md)
 
+## Entity shortcuts
+
+- [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
+- [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+- [MEA electrophysiology readouts](../entities/mea-electrophysiology-readouts.md)
+- [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
+- [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)
+
 ## Concept entry points
 
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)

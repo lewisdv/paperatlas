@@ -60,6 +60,10 @@ deep_ingested: 2026-04-22
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
+
 ## Related sources
 
 - [A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids](x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md) - a precise ROI-generation method that could feed directly into descriptor analysis like the one used here.

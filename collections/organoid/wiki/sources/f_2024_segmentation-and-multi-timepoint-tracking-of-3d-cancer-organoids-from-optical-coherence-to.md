@@ -60,6 +60,10 @@ deep_ingested: 2026-04-22
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
+
 ## Related sources
 
 - [Automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks](d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md) - an earlier OCT tracking paper that is more tied to bioprinted microbeads and multi-cancer cluster analysis.

@@ -61,6 +61,10 @@ deep_ingested: 2026-04-22
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 
+## Related entities
+
+- [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
+
 ## Related sources
 
 - [Segmentation and Multi-Timepoint Tracking of 3D Cancer Organoids from Optical Coherence Tomography Images Using Deep Neural Networks](f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md) - a later OCT tracking paper that uses a cleaner train-validation-test split and a longer 13-day window.
