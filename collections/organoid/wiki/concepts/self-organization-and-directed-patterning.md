@@ -28,6 +28,7 @@ This corpus repeatedly shows the main protocol design tradeoff in organoid work:
 - More directed protocols such as McCracken, Morizane, Takasato, Sloan, and Ullah are better when a specific organ region or lineage must be generated reproducibly.
 - Recent protocols increasingly aim for an intermediate position rather than a strict binary, especially in the brain-organoid literature.
 - The new choroid-plexus and precursor-state papers sharpen why that middle ground matters: some questions require enough self-organization to preserve coupled cortical-plus-epithelial architecture or rare stem-state hierarchies that would likely disappear under tighter overpatterning.
+- The pancreas Matrigel-overlay protocol offers a non-neural version of the same logic: directed cytokine timing still matters, but retaining epithelial lumen remodeling and apical organization makes the system more informative than a purely flat differentiation pipeline.
 
 ## Main tension
 

@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 100 active organoid-related source pages. 92 are deep-ingested protocol pages, 8 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
+This collection currently contains 100 active organoid-related source pages. 95 are deep-ingested protocol pages, 5 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -13,8 +13,8 @@ This collection currently contains 100 active organoid-related source pages. 92 
 
 ## Current source-page status
 
-- Deep ingested: 92
-- Standard ingested: 8
+- Deep ingested: 95
+- Standard ingested: 5
 - Queued: 0
 
 ## Pruned source-page status
@@ -48,5 +48,6 @@ This collection currently contains 100 active organoid-related source pages. 92 
 - A sixth manual deep-ingest pass promoted five barrier and imaging readout papers into the curated tier, covering BBB permeability organoids, printed-tumor OCT growth tracking, 13-day breast-cancer OCT tracking, convexity-preserving PDAC segmentation, and cross-system shape-factor morphology analysis.
 - A seventh manual deep-ingest pass promoted four neural disease and regeneration anchors into the curated tier, covering a cerebral NLRP3 inflammasome slice assay, a Down-syndrome choroid-plexus SARS-CoV-2 model, retinal injury-induced hNRSC isolation with rd10 transplantation, and cerebral pNSC or dNSC precursor-state assays.
 - An eighth manual deep-ingest pass promoted five translational cancer and PDO-X anchors into the curated tier, covering cervical SCNEC tri-model derivation, MALAT1-targeted breast PDO-X escalation, osteosarcoma immune-reconstructed iOS biobanking, metastatic PDO kinome restoration after host engraftment, and XIAP-targeted cisplatin sensitization in colon cancer organoids.
+- A ninth manual deep-ingest pass promoted three protocol-and-assay pages into the curated tier, covering Th2-driven canine epidermal disease induction, an imageable Matrigel-overlay pancreas morphogenesis system, and ODE-based quantitative modeling of NSCLC patient-derived organoid composition.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.

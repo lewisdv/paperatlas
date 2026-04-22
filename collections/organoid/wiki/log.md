@@ -1492,3 +1492,10 @@
 - Rewrote those pages around actual protocol stages, matched host-escalation logic, immune reconstruction or kinome-restoration readouts, and donor-aware translational assay framing instead of metadata-level summaries.
 - Updated the adult-platform, functional-assay, and engineering-or-screening concept pages so this cancer-translational batch is visible from the concept layer before source-by-source browsing.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 92 deep-ingested and 8 standard-ingested source pages.
+
+## [2026-04-22 18:25 KST] manual deep-ingest | Pancreas, skin, and quantitative PDO anchors
+
+- Promoted 3 additional source pages from generic ingest to manual deep-ingest: b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md, c_2025_protocol-for-in-vitro-modeling-of-specification-and-morphogenesis-of-early-pancreas-develo.md, and r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.md.
+- Rewrote those pages around actual protocol stages, morphogenesis or cytokine-perturbation logic, quantitative readout design, and clearer corpus roles instead of metadata-level summaries.
+- Updated the adult-platform, functional-assay, engineering-or-screening, gastrointestinal-endoderm, and self-organization concept pages so the new batch is visible from the concept layer before source-by-source browsing.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 95 deep-ingested and 5 standard-ingested source pages.

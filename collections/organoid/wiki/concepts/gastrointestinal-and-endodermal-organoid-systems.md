@@ -29,6 +29,7 @@ The endodermal side of the corpus spans both foundational derivation and later a
 - Puschhof, Co, and Watanabe show how intestinal organoids become experimentally useful when lumen access, polarity, host interaction, or transplantation are built in.
 - Koike, Broutier, and Tysoe broaden endodermal work toward boundary models, adult self-renewing tissue systems, and scaffolded biliary reconstruction.
 - The refill cohort extends this branch into patient-derived intestinal capture, pancreas morphogenesis, organ-on-chip deployment, stromal repair coculture, immune-bearing liver organoids, outbreak-relevant liver infection assays, disease-stratified adult liver biobanking, and pathogen-facing intestinal monolayers.
+- The pancreas morphogenesis protocol sharpens this branch further by showing that some endodermal systems are most valuable in an intermediate format: neither fully floating organoids nor flat monolayers, but Matrigel-overlay epithelial cultures where luminal remodeling and endocrine fate can be tracked together.
 - Together these papers make clear that endodermal organoids are no longer just derivation problems; they are now platforms for access, repair, screening, and multicompartment niche design.
 
 ## Main tension

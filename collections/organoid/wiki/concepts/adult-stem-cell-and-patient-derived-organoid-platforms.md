@@ -23,6 +23,8 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](../sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md)
 - [Reconstruction of T cell infiltration in an osteosarcoma PDX-organoid interactive biobank for personalized immunotherapy](../sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md)
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](../sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md)
+- [Th2 Cytokines Reshape the Transcriptome: Insights from a Canine Organoid Model of Atopic Dermatitis](../sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md)
+- [Mathematical Modeling of Non-Small-Cell Lung Cancer Biology through the Experimental Data on Cell Composition and Growth of Patient-Derived Organoids](../sources/r_2023_mathematical-modeling-of-non-small-cell-lung-cancer-biology-through-the-experimental-data.md)
 
 ## Working synthesis
 
@@ -33,6 +35,7 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - Sheridan and Gurumurthy extend the branch into reproductive tissues, where platform design is shaped by placental lineage transitions or by opposite niche requirements across adjacent cervical epithelia.
 - The 2026 liver biobank paper makes clinical stratification part of platform design, showing that healthy, steatotic, and cirrhotic donor capture can be preserved as a first-class axis rather than only as metadata.
 - The newest cancer-translational batch pushes this logic further: cervical SCNEC, metastatic biopsy PDOs, breast PDO-Xs, and osteosarcoma iOS models all treat matched xenografts or immune reconstruction as extensions of the platform rather than as unrelated downstream validation.
+- The newest quantitative and comparative additions broaden the branch sideways rather than upward: canine epidermal organoids show that adult primary epithelial platforms can be used as controlled comparative disease-induction assays, while NSCLC PDOs become substrates for explicit cell-composition modeling instead of only morphology or viability testing.
 - Together these papers suggest that adult or patient-derived organoids increasingly serve as staging grounds for escalation: first capture donor biology, then decide whether the missing layer is host tissue, immune infiltration, metastatic context, or broader signaling restoration.
 - The main tradeoff is that these platforms usually preserve donor-specific or disease-specific context better than they capture whole-organ developmental architecture.
 
