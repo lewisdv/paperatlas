@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11532991/
 published_date: 2024-10-19
 organ: placenta
 protocol_focus: the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening.
@@ -18,57 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.pdf](../../raw/sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11532991/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11532991/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: placenta
-- Protocol focus: the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening
+- Status: deep ingested 2026-04-22
+- Organ focus: murine placental trophoblast organoids used as a perturbation-compatible platform for lineage and screening work
+- Protocol focus: derive and differentiate murine trophoblast organoids, install stable Cas9, and run focused sgRNA-library screens at controlled coverage
 
 ## Study design
 
-- Starting material: pre-established organoids prepared for perturbation, editing, or screening
-- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
-- Aim: the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening
-- Core readouts: pooled perturbation, selection, and follow-up validation workflows
-
-## Summary
-
-- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening.
-- Its main distinctive contribution in this corpus is that it murine trophoblast organoids present a more balanced array of trophoblast subtypes, rendering them a suitable platform for CRISPR-Cas9-based screening.
-- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
-- Paper framing: Murine trophoblast organoids present a more balanced array of trophoblast subtypes, rendering them a suitable platform for CRISPR-Cas9-based screening.
+- Starting material: murine trophoblast stem cells or placental tissue used to derive mouse trophoblast organoids
+- Protocol stages:
+  - derive murine trophoblast organoids under maintenance conditions and drive differentiation when subtype analysis is needed
+  - characterize maintenance-state and differentiated organoids with morphology, immunostaining, lineage-marker assays, and optionally single-cell profiling
+  - generate a stable Cas9-BFP trophoblast stem-cell line using PiggyBac-based Cas9 delivery and select uniformly BFP-positive colonies
+  - construct focused sgRNA libraries, determine viral titer, and transduce the Cas9-expressing trophoblast stem cells at low multiplicity before organoid formation
+  - run the screen at an MOI around 0.3 with a coverage ratio typically in the 100 to 1,000 range, then sequence sgRNA representation and analyze the data with MAGeCK
+- Key validation: maintenance cultures can remain stable for more than 6 months across 13 passages, mTOs and mPOs show distinct growth rates, differentiated organoids express expected trophoblast-lineage markers, and screen sequencing is considered robust when at least about 99.5% library coverage and roughly 60% mapped reads are achieved
+- Distinct protocol emphasis: this is one of the clearest examples in the corpus of turning an organoid system into a pooled-functional-screening platform rather than stopping at differentiation alone
 
 ## Key findings
 
-- Defines a workflow centered on the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening.
-- Its distinctive focus in practice is the way it murine trophoblast organoids present a more balanced array of trophoblast subtypes, rendering them a suitable platform for CRISPR-Cas9-based screening.
-- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
+- Makes placental organoids experimentally actionable by explicitly connecting derivation, differentiation, and CRISPR screening logistics in one workflow.
+- Treats MOI and library coverage as first-class design parameters rather than afterthoughts, which is essential for interpretable screening.
+- Highlights that the organoids support a broader trophoblast subtype balance than simpler cell systems, making them attractive for developmental-regulator discovery.
+- Provides a useful benchmark for when an organoid screen is technically good enough to trust, including mapped-read and coverage expectations.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Adds a reusable perturbation or imaging layer that increases experimental leverage.
-- Makes organoids more compatible with mechanistic and platform-style studies.
+- One of the most explicit pooled-screening protocols in the collection outside the neural CRISPR papers.
+- Strengthens the engineering concept page with a non-brain example where screen design and organoid-state quality are both central.
+- Gives the placental branch a practical upgrade from "interesting developmental model" to "screenable discovery platform."
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Usually assumes that the baseline organoid system is already robust before engineering begins.
-- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+- Screen quality is highly sensitive to library quality, targeting efficiency, viral titer, and maintenance of low MOI.
+- Large libraries quickly become expensive and noisy in this format because coverage requirements scale sharply.
+- The differentiated trophoblast states remain dependent on culture context and may vary with derivation conditions or genetic background.
+- This is a murine trophoblast system, so it is not a direct substitute for human placental organoid questions.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with placenta work and strengthens the engineering and platform-readout coverage around the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening.
-- This paper broadens the collection's coverage of placenta organoid work.
-- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+- Strengthens the engineering and screening branch with a screen-ready placental system.
+- Useful when the question is how to connect organoid subtype complexity to gene-function discovery rather than only phenotype description.
+- Serves as a concrete bridge between baseline trophoblast organoid derivation and pooled perturbation experiments.
 
 ## Related concepts
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
-- [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
+- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+
+## Related sources
+
+- [Establishment and differentiation of long-term trophoblast organoid cultures from the human placenta](sheridan_2020_establishment_and_differentiation_of_long-term.md) - the closest trophoblast-organoid comparator for derivation and differentiation without the screening layer.
+- [Protocol to create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools](m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.md) - a complementary organoid-editing paper focused on precise engineering rather than pooled screening.
+- [CRISPR screens in human neural organoids and assembloids](meng_2025_crispr_screens_in_human_neural.md) - a brain-screening comparator that helps frame how unusual it is to have a similar screen-ready workflow in placental organoids.
 
 ## Open questions
 
-- Which engineering or readout step is most likely to fail before the biology is interpretable?
-- How should this workflow be standardized across cell lines, batches, or perturbation sets?
+- How well do hit lists from murine trophoblast screens transfer to human placental organoid contexts?
+- What is the best tradeoff between library size and signal quality in organoid-based trophoblast screening?
+- Which differentiation state should be screened first when the biological question concerns lineage specification versus mature trophoblast function?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

@@ -8,8 +8,7 @@ article_url: https://doi.org/10.1038/s41596-021-00661-8
 published_date: 
 organ: ductal epithelial
 protocol_focus: preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
@@ -18,56 +17,63 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf](../../raw/sources/bakker_2022_preparing_ductal_epithelial_organoids_for.pdf)
 - Article: [https://doi.org/10.1038/s41596-021-00661-8](https://doi.org/10.1038/s41596-021-00661-8)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: ductal epithelial
-- Protocol focus: preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
+- Status: deep ingested 2026-04-22
+- Organ focus: hollow ductal epithelial organoids prepared for high-spatial-resolution spatial metabolite or lipid profiling
+- Protocol focus: preserve fragile hollow organoid morphology while extracting them from BME, embedding them for cryosectioning, and pairing MSI with automated molecular identification
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
-- Aim: preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
-- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
-- Paper framing: Organoid culture systems are self-renewing, three-dimensional (3D) models derived from pluripotent stem cells, adult derived stem cells or cancer cells that recapitulate key molecular and structural characteristics of their tissue of origin.
+- Starting material: pre-established organoids, with pancreatic ductal organoids used as the running example for a workflow meant to generalize to many hollow organoid systems
+- Protocol stages:
+  - collect organoids from BME while preserving a thin residual layer as an external scaffold so the hollow morphology does not collapse
+  - embed the organoids in gelatin, cryosection them, and thaw-mount the sections on glass slides for MSI acquisition
+  - perform MALDI-MSI or related spatial mass-spectrometry workflows, then post-stain with H&E to align molecular maps with organoid morphology
+  - in parallel, generate a dedicated MS2-identification sample by pooling organoids from all conditions, shearing them, and spotting them densely on glass to enable data-dependent acquisition
+  - combine m/z distribution maps, morphology, and MS2-based assignments to interpret epithelial-layer, luminal, and matrix-associated signals
+- Key validation: the protocol was designed for hollow organoids smaller than about 600 micrometers, preserves 3D architecture through sectioning, and supports high-resolution lipid localization plus large-scale molecular assignment with exact-mass and MS2 strategies
+- Distinct protocol emphasis: the central innovation is sample handling for very small, fragile, hollow organoids that are difficult to see and easy to distort during standard MSI preparation
 
 ## Key findings
 
-- Defines a workflow centered on preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
-- Its distinctive focus in practice is the way it establishes a workflow for preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
-- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
+- Solves a real bottleneck in organoid mass spectrometry: standard MSI workflows are optimized for larger or solid samples, whereas hollow organoids are tiny, fragile, and often invisible inside the instrument.
+- Makes a subtle but important preparation choice explicit: complete BME removal is not always optimal, because a thin BME shell can preserve morphology and its signal can later be computationally distinguished.
+- Adds a parallel MS2-sample workflow so molecular identification is not limited by the small size and sparse distribution of individual intact organoids.
+- Turns MSI into a more interpretable organoid readout by explicitly tying molecular maps back to epithelial, luminal, and matrix compartments through histology registration.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Adds a reusable perturbation or imaging layer that increases experimental leverage.
-- Makes organoids more compatible with mechanistic and platform-style studies.
+- One of the strongest spatial-omics preparation protocols in the collection and the clearest MSI-specific page currently present.
+- Extends the engineering and imaging branch beyond microscopy, editing, and chip culture into label-free molecular cartography.
+- Gives the corpus a practical answer to how organoids can be converted into spatially resolved chemistry readouts without losing their architecture.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Usually assumes that the baseline organoid system is already robust before engineering begins.
-- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+- The protocol assumes access to specialized MSI instrumentation and downstream spectral-analysis expertise.
+- Preserving only a thin BME layer is a balancing act: too much matrix interferes with preparation, but too little can collapse morphology.
+- The workflow is geared toward small molecules such as lipids, metabolites, peptides, and drugs; other analyte classes need different preparation.
+- Organoid visibility remains a practical challenge throughout the workflow, especially during region selection and manual handling.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with ductal epithelial work and strengthens the engineering and platform-readout coverage around preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging.
-- This paper broadens the collection's coverage of ductal epithelial organoid work.
-- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+- Strengthens the engineering and readout-expansion branch with a clear spatial-omics workflow.
+- Useful when a project needs sub-organoid molecular localization rather than bulk metabolomics or conventional imaging alone.
+- Helps distinguish imaging for morphology from imaging for molecular-state mapping.
 
 ## Related concepts
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related sources
+
+- [High-resolution 3D imaging of ﬁxed and cleared organoids](dekkers_2019_high-resolution_3d_imaging_of_fixed.md) - an imaging comparator focused on whole-mount fluorescence architecture rather than label-free molecular maps.
+- [Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids](iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md) - another preparation-heavy readout platform that turns organoids into a more assayable substrate.
+- [Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency](c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md) - a different engineering route that increases leverage through perturbation instead of spatial molecular imaging.
+
 ## Open questions
 
-- Which engineering or readout step is most likely to fail before the biology is interpretable?
-- How should this workflow be standardized across cell lines, batches, or perturbation sets?
+- When is it worth preserving a thin BME shell versus fully stripping matrix away for cleaner spectra?
+- Which biological questions gain the most from MSI compared with more common fluorescence or sequencing-based readouts?
+- How should organoid MSI workflows be standardized across donors and culture conditions so spectra remain comparable?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

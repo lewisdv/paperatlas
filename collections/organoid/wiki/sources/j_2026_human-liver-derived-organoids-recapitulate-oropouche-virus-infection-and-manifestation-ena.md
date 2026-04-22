@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13006397/
 published_date: 2026-03-09
 organ: liver
 protocol_focus: human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
@@ -18,56 +17,65 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf](../../raw/sources/j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC13006397/](https://pmc.ncbi.nlm.nih.gov/articles/PMC13006397/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: liver
-- Protocol focus: human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
+- Status: deep ingested 2026-04-22
+- Organ focus: primary human liver-derived intrahepatic cholangiocyte organoids used as an antiviral infection and liver-injury model
+- Protocol focus: infect adult liver organoids with historical and contemporary Oropouche isolates, map host response, and evaluate candidate antivirals including molnupiravir and interferon-alpha
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: functional assay extension layered onto organoid culture
-- Aim: human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a functional assay extension layered onto organoid culture for human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
-- Within this collection, it belongs to the assay-extension branch of organoid protocol work.
+- Starting material: adult human liver-derived intrahepatic cholangiocyte organoids plus patient clinical chemistry data from imported and Brazilian Oropouche cohorts
+- Protocol stages:
+  - start from adult human liver organoids derived from bile-duct-resident progenitor populations and confirm cholangiocyte identity with KRT19-positive epithelial morphology
+  - infect the organoids with both the 1967 historical OROV isolate and the 2024 reassortant outbreak strain, then track intracellular viral RNA, supernatant infectivity, and viral protein staining over time
+  - characterize infection-associated cytopathology using immunostaining, TEM, and transcriptomics at early and later post-inoculation windows including 48 and 96 hours
+  - compare organoid findings with patient liver-enzyme abnormalities to anchor the in vitro system to clinically observed hepatic involvement
+  - perform post-inoculation antiviral treatment experiments, including single agents and combinations such as molnupiravir plus interferon-alpha
+- Key validation: patient cohorts showed frequent AST, ALT, and GGT elevations; organoids supported robust viral replication with intracellular RNA rising to about 8.3 log10 copies and supernatant titers near 6 to 6.8 log10 TCID50 per mL by 4 days; viral Gc staining was visible by 48 hours and TEM showed virion budding and release by 96 hours
+- Distinct protocol emphasis: the value of the system comes from linking a primary human liver organoid assay to outbreak-relevant virology and clinically actionable antiviral triage
 
 ## Key findings
 
-- Defines a workflow centered on human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
-- Its distinctive focus in practice is the way it establishes a workflow for human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
-- Demonstrates that experimental value often comes from the assay layer added on top of an existing organoid rather than from derivation alone.
+- Demonstrates that adult human liver-derived organoids are permissive to both historical and contemporary Oropouche virus strains and show strong cytopathic and innate-immune responses.
+- Integrates clinical chemistry and organoid biology rather than treating the organoids as an isolated assay system, which strengthens translational relevance.
+- Shows that interferon signaling is biologically active in the model: blocking it enhances infection, whereas IFN-alpha suppresses viral replication.
+- Identifies molnupiravir as a strong antiviral in the organoid system and reports synergy when combined with IFN-alpha, framing host-directed and virus-directed interventions as complementary.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Moves organoids beyond derivation into a biologically interpretable assay context.
-- Clarifies how to operationalize exposure, coculture, or host interaction instead of leaving it as an ad hoc extension.
+- One of the clearest infection-and-drug-discovery assay papers in the non-brain portion of the collection.
+- Gives the liver branch a genuine outbreak-response use case rather than only a baseline derivation or multilineage assembly story.
+- Strengthens the assay-layer concept page with a model where clinical triage, virology, and organoid biology all align around the same question.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Best treated as an extension protocol, not a replacement for a stable baseline organoid pipeline.
-- Assay outcomes can be dominated by the quality, polarity, or maturity of the starting organoid culture.
+- The organoids are cholangiocyte-biased ICOs rather than full multicellular liver tissue, so the system is not a complete hepatocyte-immune microenvironment.
+- Clinical enzyme abnormalities support liver involvement but do not by themselves isolate mechanism, so the organoid work carries much of the mechanistic burden.
+- Drug conclusions are assay-informative but still need broader validation across donors, viral isolates, and more complex liver systems.
+- Because the platform is based on established adult organoids, baseline organoid quality and donor-to-donor differences remain important hidden variables.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with liver work and strengthens the assay-layer coverage around human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery.
-- This paper broadens the collection's coverage of liver organoid work.
-- It represents the second-wave move from making organoids to actually using them in a biologically specific experiment.
+- Strengthens the functional-assay branch and the gastrointestinal-endoderm branch at the same time.
+- Useful when the question is whether an adult organoid can serve as a disease-relevant antiviral testbed rather than just an epithelial expansion system.
+- Provides a liver-infection comparator to immune-bearing and multilineage liver models elsewhere in the collection.
 
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
+- [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
+
+## Related sources
+
+- [From Patient Liver Tissue to Organoids: Establishment of a Translational Platform Using Healthy, Steatotic, and Cirrhotic Tissue Sources](r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md) - an adult liver platform comparator focused on disease-state preservation before pathogen challenge.
+- [Protocol for generating liver organoids containing Kupffer cells using human iPSCs](y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md) - a more multicellular liver model that adds resident immune biology rather than viral challenge.
+- [Isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue](tysoe_2019_isolation_and_propagation_of_primary.md) - another adult biliary organoid platform that highlights the cholangiocyte lineage bias of this infection model.
 
 ## Open questions
 
-- How much of the observed phenotype comes from the added assay layer versus the baseline organoid state?
-- What maturity or polarity checks should be mandatory before this assay is trusted?
+- Which antiviral hits remain effective across more donor lines and more hepatocyte-rich liver organoid models?
+- How much of Oropouche-associated liver injury is cholangiocyte driven versus hepatocyte or immune-compartment driven?
+- When does this relatively simple adult-liver organoid assay suffice, and when is a more multicellular liver model necessary?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

@@ -8,8 +8,7 @@ article_url: https://doi.org/10.1038/s41596-019-0160-8
 published_date: 
 organ: organoid-system
 protocol_focus: high-resolution 3D imaging of ﬁxed and cleared organoids
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # High-resolution 3D imaging of ﬁxed and cleared organoids
@@ -18,53 +17,60 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.pdf](../../raw/sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.pdf)
 - Article: [https://doi.org/10.1038/s41596-019-0160-8](https://doi.org/10.1038/s41596-019-0160-8)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: organoid system
-- Protocol focus: high-resolution 3D imaging of ﬁxed and cleared organoids
+- Status: deep ingested 2026-04-22
+- Organ focus: whole-mount organoids from many tissues prepared for volumetric fluorescence imaging and cell-by-cell quantification
+- Protocol focus: recover organoids from BME, fix and immunolabel them, clear them with a homemade fructose-glycerol solution, and image them by confocal, multiphoton, or light-sheet microscopy
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
-- Aim: high-resolution 3D imaging of ﬁxed and cleared organoids
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for high-resolution 3D imaging of ﬁxed and cleared organoids.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for high-resolution 3D imaging of ﬁxed and cleared organoids.
-- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
-- Paper framing: In vitro 3D organoid systems have revolutionized the modeling of organ development and diseases in a dish. Fluorescence microscopy has contributed to the characterization of the cellular composition of organoids and demonstrated organoids' phenotypic resemblance to their original tissues.
+- Starting material: pre-existing organoids grown in BME or Matrigel, typically in the 100 to 500 micrometer size range
+- Protocol stages:
+  - recover organoids from their 3D matrix using ice-cold recovery solution for about 30 to 60 minutes while preserving morphology
+  - fix them with 4% PFA, block, and immunolabel them with sufficiently long antibody incubations for full organoid penetration
+  - clear the labeled organoids for about 20 minutes at room temperature in a homemade fructose-glycerol solution instead of harsher tissue-clearing reagents
+  - prepare slides or light-sheet capillaries for confocal, multiphoton, super-resolution confocal, or light-sheet imaging depending on the question
+  - render and segment 3D datasets with software such as Imaris, with Fiji as a lighter-weight alternative for some steps
+- Key validation: the protocol works across colon, airway, liver, kidney, breast tumor, and mouse mammary organoids, improves z-depth fluorescence performance relative to no clearing or FocusClear, and supports cell-by-cell segmentation and marker quantification in intact organoids
+- Distinct protocol emphasis: this is a widely reusable whole-mount imaging pipeline designed for small, fragile organoids rather than for large tissue-clearing projects
 
 ## Key findings
 
-- Defines a workflow centered on high-resolution 3D imaging of ﬁxed and cleared organoids.
-- Its distinctive focus in practice is the way it establishes a workflow for high-resolution 3D imaging of ﬁxed and cleared organoids.
-- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
+- Provides a fast, relatively gentle 3D imaging workflow that can be completed in about 3 days rather than the weeks required for many tissue-clearing methods.
+- Shows that a simple fructose-glycerol clearing reagent can outperform FocusClear on signal preservation by avoiding fluorescence quenching while still improving depth penetration.
+- Makes whole-organoid architecture quantifiable, not just visible, by coupling the imaging workflow to nuclear segmentation and per-cell marker readouts.
+- Clarifies when not to clear: large cystic organoids can shrink or distort, in which case multiphoton imaging without clearing is often the better choice.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Adds a reusable perturbation or imaging layer that increases experimental leverage.
-- Makes organoids more compatible with mechanistic and platform-style studies.
+- Probably the most generally reusable microscopy-preparation page in the current collection.
+- Gives the engineering and imaging concept layer a broadly applicable whole-mount fluorescence standard that complements more specialized readouts such as MSI or viral microinjection.
+- Helps the corpus distinguish "section-based snapshots" from true volumetric organoid analysis.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Usually assumes that the baseline organoid system is already robust before engineering begins.
-- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+- Large cystic organoids can shrink during clearing and may need multiphoton imaging without clearing.
+- The protocol is operationally simple but still requires careful handling to avoid organoid loss during recovery, washing, and mounting.
+- Full-value use often depends on commercial 3D-analysis software such as Imaris, although some steps can be reproduced in Fiji.
+- Light-sheet imaging is faster for large datasets but trades away some subcellular resolution and is sensitive to bubbles or debris in the optical path.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the engineering and platform-readout coverage around high-resolution 3D imaging of ﬁxed and cleared organoids.
-- This paper broadens the collection's coverage of organoid system organoid work.
-- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+- Strengthens the engineering and imaging branch with a foundational whole-mount readout protocol.
+- Useful whenever a project needs intact 3D architecture, cellular composition, reporter retention, or volumetric quantification rather than thin-section snapshots.
+- Serves as a practical first-choice imaging workflow before escalating to more specialized or destructive spatial readouts.
 
 ## Related concepts
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related sources
+
+- [Preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging](bakker_2022_preparing_ductal_epithelial_organoids_for.md) - another high-value readout-preparation paper, but one focused on spatial chemistry rather than fluorescence architecture.
+- [Protocol for differentiating human pluripotent stem cells into midbrain organoids for targeted microinjection of viruses](m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md) - a brain assay paper where improved whole-mount imaging becomes important after targeted perturbation.
+- [Automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks](d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md) - a complementary imaging page centered on automated growth tracking rather than post-fixation whole-mount analysis.
+
 ## Open questions
 
-- Which engineering or readout step is most likely to fail before the biology is interpretable?
-- How should this workflow be standardized across cell lines, batches, or perturbation sets?
+- Which organoid morphologies should be cleared, and which are better imaged uncleared with multiphoton microscopy?
+- How much analytical value is lost when labs substitute lighter-weight software for full 3D segmentation suites such as Imaris?
+- What should become the default QC panel for cross-lab comparison of whole-mount organoid imaging?
