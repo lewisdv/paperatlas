@@ -1471,3 +1471,10 @@
 - Rewrote those pages around protocol stages, validation logic, corpus role, and related-source comparison, correcting the placental organ label and surfacing adult-platform, infection, and support-layer design rules that were hidden in generic summaries.
 - Updated the adult-platform, functional-assay, gastrointestinal-endoderm, and kidney-differentiation concept pages so the new batch is visible from the concept layer before source-by-source browsing.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 78 deep-ingested and 22 standard-ingested source pages.
+
+## [2026-04-22 17:04 KST] manual deep-ingest | Barrier and imaging readout anchors
+
+- Promoted 5 additional source pages from generic ingest to manual deep-ingest: bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md, d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md, f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md, x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md, and shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md.
+- Rewrote those pages around permeability assay design, OCT tracking logic, morphology quantification, and segmentation tradeoffs, correcting organ labels for the BBB, breast-cancer, and PDAC analysis branches.
+- Updated the engineering-imaging, functional-assay, and multi-lineage concept pages so barrier and image-analysis papers now surface from the concept layer before source-by-source browsing.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 83 deep-ingested and 17 standard-ingested source pages.

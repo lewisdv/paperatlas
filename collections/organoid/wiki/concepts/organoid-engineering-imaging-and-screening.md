@@ -22,12 +22,20 @@ The newest protocols in this collection do not stop at making organoids. They in
 - [Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids](../sources/iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md)
 - [Protocol for the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening](../sources/q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.md)
 - [Protocol for differentiating human pluripotent stem cells into midbrain organoids for targeted microinjection of viruses](../sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md)
+- [Blood-brain-barrier organoids for investigating the permeability of CNS therapeutics](../sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md)
+- [Automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks](../sources/d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md)
+- [Segmentation and Multi-Timepoint Tracking of 3D Cancer Organoids from Optical Coherence Tomography Images Using Deep Neural Networks](../sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md)
+- [A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids](../sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md)
+- [Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness](../sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md)
 
 ## Working synthesis
 
 - Engineering layers make organoids much more useful for mechanism, screening, and lineage interrogation.
 - The newer refill sources widen this from pooled perturbation and imaging prep to whole-mount clearing, MSI-ready sample handling, isogenic CRISPR editing, high-efficiency transduction, organ-on-chip deployment, trophoblast screening, specimen-normalized PDO setup, and targeted viral microinjection.
+- The newest batch widens the engineering layer further into readout design itself: BBB permeability organoids, bioprinted tumor-cluster OCT tracking, 13-day breast-cancer OCT longitudinal tracking, convexity-preserving PDAC segmentation, and cross-system shape-factor phenotyping.
 - They also show that adult or patient-derived and region-specific organoids increasingly act as substrates for engineering rather than endpoints in themselves.
+- Together these papers show that organoid engineering is not only about perturbing the culture. It also includes building the image-analysis, permeability, and morphology-quantification stack that makes screening outputs comparable across batches and models.
+- Deep networks dominate some tracking tasks, but classical geometry-aware segmentation and simple shape metrics still remain useful when data are small, labels are scarce, or high-throughput bright-field readouts matter more than end-to-end automation.
 - The practical bottleneck often shifts from differentiation itself to delivery, imaging quality, screen design, or readout normalization.
 
 ## Main tension

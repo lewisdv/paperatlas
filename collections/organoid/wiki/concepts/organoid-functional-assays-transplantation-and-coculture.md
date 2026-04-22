@@ -21,12 +21,14 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - [Protocol to enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers](../sources/s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.md)
 - [Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids](../sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md)
 - [Protocol to generate genetically engineered organoid-initiated mouse models of esophageal cancer](../sources/j_2025_protocol-to-generate-genetically-engineered-organoid-initiated-mouse-models-of-esophageal.md)
+- [Blood-brain-barrier organoids for investigating the permeability of CNS therapeutics](../sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md)
 
 ## Working synthesis
 
 - These workflows matter because many organoid questions are really assay-design problems rather than derivation problems.
 - The refill cohort makes this explicit across epithelial-stromal coculture, epithelial-T-cell priming, parasite differentiation on organoid-derived monolayers, outbreak-relevant liver infection assays, intestinal repair assays, retinal host-engagement, and organoid-initiated mouse validation.
 - The newest batch expands this further: kidney differentiation can be improved by monocyte transwell support during the vulnerable CHIR window, and cervical organoids can carry both HPV engineering and Chlamydia infection within one lineage-resolved adult platform.
+- Bergmann 2018 adds a distinct assay family in which multicellular BBB organoids act as permeability gates for peptide and small-molecule access rather than only as hosts for exposure or coculture.
 - Together these papers show that coculture or transplantation is not a single add-on but a family of moves for access, repair, immune education, infection, and host-context testing.
 - Not every assay layer sits after derivation is complete; some, like monocyte support in kidney organoids, intervene earlier to preserve organoid competence before later readouts become possible.
 - Their success still depends heavily on the maturity, polarity, and baseline quality of the starting organoid culture.

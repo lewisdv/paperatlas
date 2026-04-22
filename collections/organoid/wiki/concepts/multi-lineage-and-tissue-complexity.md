@@ -16,12 +16,14 @@ A major trend across this collection is the move away from simple epithelial bal
 - [Protocol for generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture](../sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.md)
 - [Protocol for generating liver organoids containing Kupffer cells using human iPSCs](../sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md)
 - [Protocol for generating human vascular organoids via orthogonal activation of ETV2 and NKX3.1](../sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md)
+- [Blood-brain-barrier organoids for investigating the permeability of CNS therapeutics](../sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md)
 
 ## Working synthesis
 
 - Lancaster, Lee, and some cardiac papers show the value of emergent tissue complexity.
 - Koike, Dardano, and the new Kupffer-containing liver protocol explicitly pursue linked developmental programs across neighboring organs or immune-bearing compartments.
 - The new tonsil immune organoid and vascular organoid protocols show that complexity in the refill cohort often means epithelial-immune or multicellular vascular architecture, not only classic organ boundary models.
+- Bergmann 2018 shows that multicellular complexity can also be organized around barrier architecture and direct endothelial-pericyte-astrocyte contact, not only around developmental organ-boundary programs.
 - Olijnik and Matkovic Leko push organoid logic into niche or disease contexts where multicellular composition is central to the model.
 
 ## Main tension
