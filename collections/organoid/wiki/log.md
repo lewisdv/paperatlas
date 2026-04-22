@@ -1518,3 +1518,9 @@
 - Added the first five entity pages under wiki/entities/: patient-derived-organoid-xenograft-pdo-x.md, crispr-cas9-and-next-generation-crispr-editing.md, mea-electrophysiology-readouts.md, optical-coherence-tomography-oct.md, and nlrp3-inflammasome.md.
 - Used this pass to start an entity layer for repeated platforms, tools, imaging modalities, and disease-assay systems that were otherwise scattered across source and query pages.
 - Updated wiki/index.md, wiki/overview.md, and the adult-platform, engineering-imaging, and functional-assay concept pages so the new entity layer is reachable from the main navigation.
+
+## [2026-04-22 19:29 KST] entity threading | Representative source-page back-links
+
+- Added `Related entities` sections to representative source pages across the PDO-X, CRISPR, MEA, OCT, and NLRP3 branches so entity pages are reachable during normal source browsing.
+- Updated the project-design playbook synthesis with an `Entity shortcuts` section so users can jump directly from design rules into repeated platforms, tools, readouts, and named systems.
+- Reflected this state in wiki/overview.md and collection checkpointing without changing active-source counts.

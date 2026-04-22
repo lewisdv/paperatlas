@@ -59,5 +59,6 @@ This collection currently contains 96 active organoid-related source pages. All 
 - A final remaining-standard cleanup pass pruned four low-signal leftovers and deep-ingested one retained heart macrophage assembloid paper, so the active corpus now sits at 96 deep-ingested pages with no standard pages left.
 - A new synthesis page now condenses the 2026-04-20 decision-query burst into one project-design playbook covering baseline choice, compensation priority, complexity control, organ-specific recovery, and disease-specific escalation.
 - A first entity pass now captures repeated platforms and tools as dedicated pages, so the collection no longer relies only on source, concept, query, and synthesis layers.
+- A follow-up entity-threading pass now links those entity pages back into representative source notes and the project-design playbook, making the entity layer useful during normal browsing rather than only from the index.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.
