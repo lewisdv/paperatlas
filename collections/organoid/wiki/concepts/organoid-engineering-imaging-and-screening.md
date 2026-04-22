@@ -27,12 +27,14 @@ The newest protocols in this collection do not stop at making organoids. They in
 - [Segmentation and Multi-Timepoint Tracking of 3D Cancer Organoids from Optical Coherence Tomography Images Using Deep Neural Networks](../sources/f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md)
 - [A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids](../sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md)
 - [Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness](../sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md)
+- [Reconstruction of T cell infiltration in an osteosarcoma PDX-organoid interactive biobank for personalized immunotherapy](../sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md)
 
 ## Working synthesis
 
 - Engineering layers make organoids much more useful for mechanism, screening, and lineage interrogation.
 - The newer refill sources widen this from pooled perturbation and imaging prep to whole-mount clearing, MSI-ready sample handling, isogenic CRISPR editing, high-efficiency transduction, organ-on-chip deployment, trophoblast screening, specimen-normalized PDO setup, and targeted viral microinjection.
 - The newest batch widens the engineering layer further into readout design itself: BBB permeability organoids, bioprinted tumor-cluster OCT tracking, 13-day breast-cancer OCT longitudinal tracking, convexity-preserving PDAC segmentation, and cross-system shape-factor phenotyping.
+- The osteosarcoma iOS paper adds another engineering move: self-assembly, size control, immune reconstruction criteria, and paired pharmacogenomic comparison are treated as parts of a screening platform, not just as culture maintenance details.
 - They also show that adult or patient-derived and region-specific organoids increasingly act as substrates for engineering rather than endpoints in themselves.
 - Together these papers show that organoid engineering is not only about perturbing the culture. It also includes building the image-analysis, permeability, and morphology-quantification stack that makes screening outputs comparable across batches and models.
 - Deep networks dominate some tracking tasks, but classical geometry-aware segmentation and simple shape metrics still remain useful when data are small, labels are scarce, or high-throughput bright-field readouts matter more than end-to-end automation.

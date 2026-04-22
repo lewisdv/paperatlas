@@ -19,6 +19,10 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - [Establishment and differentiation of long-term trophoblast organoid cultures from the human placenta](../sources/sheridan_2020_establishment_and_differentiation_of_long-term.md)
 - [Patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection](../sources/gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md)
 - [From Patient Liver Tissue to Organoids: Establishment of a Translational Platform Using Healthy, Steatotic, and Cirrhotic Tissue Sources](../sources/r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md)
+- [Integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model](../sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.md)
+- [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](../sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md)
+- [Reconstruction of T cell infiltration in an osteosarcoma PDX-organoid interactive biobank for personalized immunotherapy](../sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md)
+- [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](../sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md)
 
 ## Working synthesis
 
@@ -28,6 +32,8 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - Tysoe and the thymic TEC protocol further show that adult-platform logic can support either regenerative scaffold engineering or epithelial support-cell biology, not just donor-matched disease capture.
 - Sheridan and Gurumurthy extend the branch into reproductive tissues, where platform design is shaped by placental lineage transitions or by opposite niche requirements across adjacent cervical epithelia.
 - The 2026 liver biobank paper makes clinical stratification part of platform design, showing that healthy, steatotic, and cirrhotic donor capture can be preserved as a first-class axis rather than only as metadata.
+- The newest cancer-translational batch pushes this logic further: cervical SCNEC, metastatic biopsy PDOs, breast PDO-Xs, and osteosarcoma iOS models all treat matched xenografts or immune reconstruction as extensions of the platform rather than as unrelated downstream validation.
+- Together these papers suggest that adult or patient-derived organoids increasingly serve as staging grounds for escalation: first capture donor biology, then decide whether the missing layer is host tissue, immune infiltration, metastatic context, or broader signaling restoration.
 - The main tradeoff is that these platforms usually preserve donor-specific or disease-specific context better than they capture whole-organ developmental architecture.
 
 ## Main tension

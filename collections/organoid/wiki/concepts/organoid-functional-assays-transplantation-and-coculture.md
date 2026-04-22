@@ -24,6 +24,11 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - [Blood-brain-barrier organoids for investigating the permeability of CNS therapeutics](../sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md)
 - [A Dynamic Protocol to Explore NLRP3 Inflammasome Activation in Cerebral Organoids](../sources/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md)
 - [Choroid plexus defects in Down syndrome brain organoids enhance neurotropism of SARS-CoV-2](../sources/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.md)
+- [Integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model](../sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.md)
+- [Patient-derived organoid xenografts reveal the multifaceted role of the lncRNA MALAT1 in breast cancer progression](../sources/patient-derived_2026_patient-derived-organoid-xenografts-reveal-the-multifaceted-role-of-the-lncrna-malat1-in-b.md)
+- [Reconstruction of T cell infiltration in an osteosarcoma PDX-organoid interactive biobank for personalized immunotherapy](../sources/w_2026_reconstruction-of-t-cell-infiltration-in-an-osteosarcoma-pdx-organoid-interactive-biobank.md)
+- [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](../sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md)
+- [Clinically used drug arsenic trioxide targets XIAP and overcomes apoptosis resistance in an organoid-based preclinical cancer model](../sources/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.md)
 
 ## Working synthesis
 
@@ -32,6 +37,8 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - The newest batch expands this further: kidney differentiation can be improved by monocyte transwell support during the vulnerable CHIR window, and cervical organoids can carry both HPV engineering and Chlamydia infection within one lineage-resolved adult platform.
 - Bergmann 2018 adds a distinct assay family in which multicellular BBB organoids act as permeability gates for peptide and small-molecule access rather than only as hosts for exposure or coculture.
 - The newest neural batch makes this branch broader again: mature cerebral organoids can be pushed into astrocytic inflammasome assays, choroid-plexus-containing brain organoids can act as viral access-control systems, and retinal organoids can be turned into injury-repair plus transplantation pipelines.
+- The newest cancer-translational batch broadens the branch in another direction: cervical SCNEC organoids are validated across matched xenografts and drug assays, breast PDOs are escalated into MALAT1-driven splicing and metastasis readouts, osteosarcoma iOS models rebuild T cell infiltration with PBMCs, metastatic PDOs recover lost SRC-family signaling after host engraftment, and colon cancer organoids act as a fast translational check for XIAP-targeted cisplatin sensitization.
+- These papers sharpen a practical rule for the corpus: sometimes the assay layer is not added because the baseline culture is incomplete, but because the biological question only becomes visible once immune cells, host tissue, metastatic routing, or donor-specific drug response is allowed back into the system.
 - Together these papers show that coculture or transplantation is not a single add-on but a family of moves for access, repair, immune education, infection, and host-context testing.
 - Not every assay layer sits after derivation is complete; some, like monocyte support in kidney organoids, intervene earlier to preserve organoid competence before later readouts become possible.
 - Their success still depends heavily on the maturity, polarity, and baseline quality of the starting organoid culture.

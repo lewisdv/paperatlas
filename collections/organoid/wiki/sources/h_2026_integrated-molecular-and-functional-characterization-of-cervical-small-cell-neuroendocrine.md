@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12986295/
 published_date: 2026-03-01
 organ: cervix
 protocol_focus: integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
@@ -18,56 +17,69 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf](../../raw/sources/h_2026_integrated-molecular-and-functional-characterization-of-cervical-small-cell-neuroendocrine.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12986295/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12986295/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: cervix
-- Protocol focus: integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
+- Status: deep ingested 2026-04-22
+- Organ focus: patient-derived cervical small-cell neuroendocrine carcinoma organoids carried through matched xenograft and drug-response assays
+- Protocol focus: derive a rare cervical SCNEC organoid line from biopsy tissue, validate tumor fidelity across patient-organoid-xenograft triads, and use the platform for molecular profiling plus drug testing
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: stepwise derivation and maturation protocol
-- Aim: integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
+- Starting material: a cervical SCNEC biopsy from an HPV18-positive patient, dissociated for parallel organoid derivation and later xenograft work
+- Protocol stages:
+  - mince the biopsy into roughly 2-3 mm fragments, digest for 45 min at 37 C with dispase II, collagenase P, and DNase I, then use a short Accumax step to obtain a single-cell suspension
+  - seed about 3 x 10^6 viable cells per well of a 12-well plate over 65 uL Matrigel with 800 uL medium, add a 70 uL Matrigel overlay after overnight attachment, replace medium every 2-3 days, and passage at 70-80% confluency at roughly 1:4 to 1:6
+  - validate fidelity across patient tumor, organoid, and xenograft using histology, neuroendocrine marker staining, HPV18 PCR, and whole-exome sequencing
+  - test drug response by replating 4 x 10^3 dissociated cells per well in low-attachment 96-well plates, exposing them to serial dilutions of paclitaxel, cisplatin, carboplatin, etoposide, and everolimus, and reading viability with CellTiter-Glo 3D after 72 h
+  - generate a matched xenograft by injecting 5 x 10^5 organoid cells mixed 1:1 with Matrigel into SCID mice and harvesting tumors after 3-4 months
+- Key validation: organoids recovered after cryopreservation, xenografts formed in 4/4 SCID mice, and all three model states retained CD56, synaptophysin, NSE, high Ki-67, strong p16, HPV18 positivity, the chr8 8q24.21 viral-host integration signal, and a shared PIK3CA p.E542K-centered mutational backbone
+- Distinct protocol emphasis: this is a rare-cancer tri-model paper where derivation, molecular fidelity, and assay readiness are all treated as part of the same platform build
 
 ## Summary
 
-- This paper is best understood as a stepwise derivation and maturation protocol for integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
-- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
-- Paper framing: Academic Editor: Raffaella Lazzarini Received: 17 February 2026 Revised: 2 March 2026 Accepted: 2 March 2026 Published: 4 March 2026 Cervical small-cell neuroendocrine carcinoma (SCNEC) is a rare cervical cancer with high metastatic potential and is frequently associated with high-risk human papillomavirus (HPV) infection.
+- This paper turns a single rare cervical SCNEC biopsy into a practical patient-organoid-xenograft triad rather than stopping at one successful derivation.
+- Its most useful move in this corpus is making fidelity measurable across morphology, viral status, somatic variants, copy number, and drug response at once.
+- Within this collection, it sits at the boundary between adult or patient-derived platform building and host-context cancer validation.
 
 ## Key findings
 
-- Defines a workflow centered on integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
-- Its distinctive focus in practice is the way it establishes a workflow for integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
-- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
+- The organoid and xenograft both preserved the small-cell morphology and neuroendocrine marker pattern of the original biopsy, which matters because SCNEC is rare and easily reduced to anecdotal pathology rather than tractable models.
+- HPV-associated disease identity remained stable across the tri-model, with strong p16, retained HPV18 DNA, and an inferred HPV integration event near MYC on chr8 8q24.21.
+- Whole-exome data showed strong clonal continuity, including 26 shared somatic variants, the canonical PIK3CA p.E542K hotspot, and shared gains in PIK3CA, TERT, and MYC with TP53 loss.
+- The platform also supports immediate therapeutic triage rather than only descriptive profiling, because organoids and spheroids showed dose-responsive loss of viability to standard cytotoxics and an mTOR-pathway inhibitor.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Useful as a starting-point protocol for building this organ system from stem cells.
-- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+- One of the clearest rare-cancer organoid triads in the collection, with unusually direct links from biopsy material to organoid, xenograft, and molecular concordance.
+- Gives the adult-platform branch a cervix cancer comparator that is not just epithelial expansion, but explicit host escalation plus genomics-guided interpretation.
+- Complements the reproductive-tract baseline papers by showing what a downstream malignant cervical workflow looks like once a lineage-resolved adult platform already exists.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
-- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+- The paper is effectively a one-patient proof of concept, so it demonstrates tractability more strongly than it defines the full SCNEC design space.
+- The xenograft is subcutaneous rather than cervical or metastatic-site orthotopic, so niche-dependent behavior is still only partially restored.
+- The drug panel shows assay readiness, but mechanistic follow-up on why a given agent works or fails remains shallow compared with the genomics section.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with cervix work and strengthens the baseline derivation coverage around integrated Molecular and Functional Characterization of Cervical Small-Cell Neuroendocrine Carcinoma Using a 3D Organoid Model.
-- This paper broadens the collection's coverage of cervix organoid work.
-- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+- Strengthens both the adult-platform and functional-assay branches with a rare cervical cancer system that does not separate culture establishment from later host validation.
+- Useful whenever a project needs a concrete template for turning scarce biopsy material into a multi-layer validation platform rather than a single in vitro line.
+- Pairs naturally with other patient-derived cancer workflows in the corpus that ask whether in vitro fidelity survives xenografting or translational drug testing.
 
 ## Related concepts
 
-- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+- [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
+- [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
+
+## Related sources
+
+- [Patient-derived and mouse endo-ectocervical organoid generation, genetic manipulation and applications to model infection](gurumurthy_2022_patient-derived_and_mouse_endo-ectocervical_organoid.md) - the adult cervix baseline that clarifies lineage-specific epithelial logic before malignant escalation.
+- [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](dekkers_2021_long-term_culture_genetic_manipulation_and.md) - another cancer organoid platform that explicitly combines stable culture with in vivo follow-up.
+- [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - a cross-cancer comparator where xenografting is used to recover context-sensitive signaling layers lost in vitro.
 
 ## Open questions
 
-- Which steps in this cervix workflow drive the most variability across lines or batches?
-- What extra maturation or assay layer is usually needed after the baseline derivation works?
+- How reproducible is this tri-model architecture across additional SCNEC patients with different HPV states or driver combinations?
+- Which vulnerabilities will track best with the retained PIK3CA and MYC-centered molecular features: PI3K-pathway inhibition, DNA-damage response, or HPV-dependence?
+- What biology would reappear in an orthotopic or metastatic-site model that remains invisible in the current subcutaneous xenograft setup?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
