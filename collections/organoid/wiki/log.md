@@ -1478,3 +1478,10 @@
 - Rewrote those pages around permeability assay design, OCT tracking logic, morphology quantification, and segmentation tradeoffs, correcting organ labels for the BBB, breast-cancer, and PDAC analysis branches.
 - Updated the engineering-imaging, functional-assay, and multi-lineage concept pages so barrier and image-analysis papers now surface from the concept layer before source-by-source browsing.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 83 deep-ingested and 17 standard-ingested source pages.
+
+## [2026-04-22 17:27 KST] manual deep-ingest | Neural disease and regeneration anchors
+
+- Promoted 4 additional source pages from generic ingest to manual deep-ingest: d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md, m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.md, m_2025_protocol-for-modeling-injury-induced-regeneration-in-retinal-organoids-and-isolating-hnrsc.md, and r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md.
+- Rewrote those pages around actual protocol stages, assay logic, regeneration or infection validation, and organ-label corrections, including the shift from generic brain or organoid-system labels to retina and choroid-plexus where appropriate.
+- Updated the brain-fidelity, brain-subregion, functional-assay, and self-organization concept pages so the new neural disease and regeneration batch is visible from the concept layer before source-by-source browsing.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the active corpus now exposes 87 deep-ingested and 13 standard-ingested source pages.

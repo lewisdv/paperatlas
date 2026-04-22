@@ -19,12 +19,15 @@ This corpus repeatedly shows the main protocol design tradeoff in organoid work:
 - [Valiulahi 2021](../sources/valiulahi_2021_generation_of_caudal-type_serotonin_neurons.md)
 - [Chen 2023](../sources/chen_2023_protocol_for_generating_reproducible_miniaturized.md)
 - [Atamian 2024](../sources/atamian_2024_generation_and_long-term_culture_of.md)
+- [Choroid plexus defects in Down syndrome brain organoids enhance neurotropism of SARS-CoV-2](../sources/m_2024_choroid-plexus-defects-in-down-syndrome-brain-organoids-enhance-neurotropism-of-sars-cov-2.md)
+- [Primitive and Definitive Neural Precursor Cells Are Present in Human Cerebral Organoids](../sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md)
 
 ## Working synthesis
 
 - Unguided or lightly guided protocols such as Lancaster and some later brain workflows are strongest when emergent architecture and cell-type diversity are part of the biological question.
 - More directed protocols such as McCracken, Morizane, Takasato, Sloan, and Ullah are better when a specific organ region or lineage must be generated reproducibly.
 - Recent protocols increasingly aim for an intermediate position rather than a strict binary, especially in the brain-organoid literature.
+- The new choroid-plexus and precursor-state papers sharpen why that middle ground matters: some questions require enough self-organization to preserve coupled cortical-plus-epithelial architecture or rare stem-state hierarchies that would likely disappear under tighter overpatterning.
 
 ## Main tension
 

@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 100 active organoid-related source pages. 83 are deep-ingested protocol pages, 17 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
+This collection currently contains 100 active organoid-related source pages. 87 are deep-ingested protocol pages, 13 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -13,8 +13,8 @@ This collection currently contains 100 active organoid-related source pages. 83 
 
 ## Current source-page status
 
-- Deep ingested: 83
-- Standard ingested: 17
+- Deep ingested: 87
+- Standard ingested: 13
 - Queued: 0
 
 ## Pruned source-page status
@@ -23,8 +23,8 @@ This collection currently contains 100 active organoid-related source pages. 83 
 
 ## Largest organ/system clusters
 
-- brain: 18
-- organoid-system: 8
+- brain: 17
+- organoid-system: 7
 - colon-intestine: 6
 - kidney: 5
 - tumor: 5
@@ -33,6 +33,7 @@ This collection currently contains 100 active organoid-related source pages. 83 
 - breast: 3
 - lung: 3
 - midbrain: 3
+- retina: 3
 
 ## Working note
 
@@ -45,5 +46,6 @@ This collection currently contains 100 active organoid-related source pages. 83 
 - A fourth manual deep-ingest pass promoted six adult-platform, imaging, and non-brain assay anchors into the curated tier, covering cholangiocyte-to-biliary-graft engineering, adult thymic TEC organoids, trophoblast CRISPR screening, MSI-ready organoid preparation, whole-mount clearing and 3D imaging, and Oropouche liver-organoid antiviral assays.
 - A fifth manual deep-ingest pass promoted five adult-platform and assay papers into the curated tier, covering disease-stratified adult liver biobanking, primary placental trophoblast organoids, cervical epithelial niche divergence plus infection modeling, Toxoplasma sexual-stage induction on retinal or intestinal epithelial hosts, and monocyte-supported kidney differentiation.
 - A sixth manual deep-ingest pass promoted five barrier and imaging readout papers into the curated tier, covering BBB permeability organoids, printed-tumor OCT growth tracking, 13-day breast-cancer OCT tracking, convexity-preserving PDAC segmentation, and cross-system shape-factor morphology analysis.
+- A seventh manual deep-ingest pass promoted four neural disease and regeneration anchors into the curated tier, covering a cerebral NLRP3 inflammasome slice assay, a Down-syndrome choroid-plexus SARS-CoV-2 model, retinal injury-induced hNRSC isolation with rd10 transplantation, and cerebral pNSC or dNSC precursor-state assays.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.
