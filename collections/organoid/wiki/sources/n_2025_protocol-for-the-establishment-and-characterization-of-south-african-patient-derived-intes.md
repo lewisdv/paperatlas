@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12305567/
 published_date: 2025-07-22
 organ: colon-intestine
 protocol_focus: the establishment and characterization of South African patient-derived intestinal organoids
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for the establishment and characterization of South African patient-derived intestinal organoids.
@@ -18,58 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.pdf](../../raw/sources/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12305567/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12305567/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: colon / intestine
-- Protocol focus: the establishment and characterization of South African patient-derived intestinal organoids
+- Status: deep ingested 2026-04-22
+- Organ focus: patient-derived intestinal and colorectal tumor organoids from matched healthy and cancerous tissue
+- Protocol focus: rapid specimen-to-organoid establishment plus transcriptional, histologic, and cholesterol-focused characterization
 
 ## Study design
 
-- Starting material: patient-derived tumor tissue or matched clinical samples
-- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
-- Aim: the establishment and characterization of South African patient-derived intestinal organoids
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for the establishment and characterization of South African patient-derived intestinal organoids.
-- Its main distinctive contribution in this corpus is that it patient-derived organoids are valuable for modeling disease pathogenesis, therapeutic screening, and advancing personalized medicine.
-- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
-- Paper framing: Patient-derived organoids are valuable for modeling disease pathogenesis, therapeutic screening, and advancing personalized medicine.
+- Starting material: resected South African patient tissue, with matched tumor-core and distant healthy control samples collected separately
+- Protocol stages:
+  - prepare transport and wash buffers before surgery so specimens can be moved immediately onto ice and processed without delay
+  - collect tumor and matched normal tissue into separate transport tubes, then transfer directly to the lab for trimming and digestion
+  - digest tissue only until crypts or cell clumps are visible, embed in basement membrane extract, and expand in IntestiCult organoid growth medium
+  - characterize resulting organoids by RT-qPCR, immunofluorescence microscopy, and histological staining against matched tissue features
+  - extend characterization with cholesterol and lipid-droplet profiling in both organoids and original tissue samples
+- Key validation: the paper treats fast processing, tissue quality, and controlled digestion as the main success determinants, and notes that organoid generation is most reliable with fresh specimens larger than about 10 mm3
+- Distinct protocol emphasis: specimen logistics and cohort context are part of the protocol itself, not just background, because PDO success depends heavily on transport, resection site, and tissue handling
 
 ## Key findings
 
-- Defines a workflow centered on the establishment and characterization of South African patient-derived intestinal organoids.
-- Its distinctive focus in practice is the way it patient-derived organoids are valuable for modeling disease pathogenesis, therapeutic screening, and advancing personalized medicine.
-- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
+- Shows that matched healthy and tumor intestinal organoids can be established from a South African patient cohort using a practical surgical-specimen workflow rather than a highly specialized discovery setup.
+- Makes the pre-analytic window a central part of protocol quality: transport speed, digestion timing, and tissue viability directly determine organoid take rate.
+- Extends characterization beyond morphology into RT-qPCR, immunofluorescence, histology, and cholesterol-focused phenotyping.
+- Frames the resulting organoids as useful for personalized medicine, disease-pathogenesis work, and ancestry-aware colorectal cancer studies.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Adds a reusable perturbation or imaging layer that increases experimental leverage.
-- Makes organoids more compatible with mechanistic and platform-style studies.
+- Adds a rare intestinal PDO protocol in this corpus that foregrounds real-world biobank and surgical logistics instead of only medium composition.
+- Broadens the patient-derived branch with population-specific context, which matters because the paper explicitly links the protocol to colorectal-cancer patterns seen in individuals of African descent.
+- Gives the gastrointestinal cluster a source that pairs establishment with a concrete biochemical characterization layer rather than stopping at routine growth validation.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Usually assumes that the baseline organoid system is already robust before engineering begins.
-- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+- Fresh tissue availability and viability are the dominant bottlenecks; delays between resection and processing can sharply reduce success.
+- The protocol depends on careful control of digestion time, with overdigestion harming viability and underdigestion reducing crypt recovery.
+- Tumor resection site matters because invasive fronts can have lower LGR5-positive epithelial representation, making organoid establishment less reliable.
+- Patient-to-patient variability in intrinsic growth capacity remains a major source of uneven outcomes even when the workflow is followed closely.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with colon intestine work and strengthens the engineering and platform-readout coverage around the establishment and characterization of South African patient-derived intestinal organoids.
-- This paper broadens the collection's coverage of colon / intestine organoid work.
-- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+- Strengthens the adult stem cell and patient-derived concept layer with a concrete intestinal PDO workflow rooted in clinical collection realities.
+- Gives the gastrointestinal cluster a translational entry point that sits upstream of later polarity, coculture, transplantation, or drug-screening experiments.
+- Useful whenever the question is how to make patient-derived intestinal organoids reproducibly from clinical tissue and validate them beyond morphology alone.
 
 ## Related concepts
 
-- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related sources
+
+- [Establishment of patient-derived cancer organoids for drug-screening applications](driehuis_2020_establishment_of_patient-derived_cancer_organoids.md) - a stronger general comparator for cancer PDO establishment and downstream translational use.
+- [Intestinal organoid cocultures with microbes](puschhof_2021_intestinal_organoid_cocultures_with_microbes.md) - illustrates the kinds of downstream intestinal assays that become possible once robust baseline cultures exist.
+- [Controlling the polarity of human gastrointestinal organoids to investigate epithelial biology and infectious diseases](co_2021_controlling_the_polarity_of_human.md) - another gastrointestinal protocol that depends on stable intestinal organoid culture before the assay layer is added.
+
 ## Open questions
 
-- Which engineering or readout step is most likely to fail before the biology is interpretable?
-- How should this workflow be standardized across cell lines, batches, or perturbation sets?
+- How well does this workflow translate from large resection specimens to smaller biopsies or lower-yield clinical samples?
+- Which patient-specific molecular features remain stable over serial passaging in this cohort-derived PDO system?
+- Can the cholesterol-profiling arm separate healthy and tumor organoids robustly enough to become a reusable translational readout?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
