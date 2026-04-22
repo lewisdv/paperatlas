@@ -1,7 +1,7 @@
 ---
 title: In vitro and in silico approaches to engineering three-dimensional biological tissues and organoids
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:48:01+09:00
 raw_source: raw/sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC9372642/
@@ -10,15 +10,24 @@ organ: organoid-system
 protocol_focus: in vitro and in silico approaches to engineering three-dimensional biological tissues and organoids
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: secondary review article
+pruned: 2026-04-22
 ---
 
 # In vitro and in silico approaches to engineering three-dimensional biological tissues and organoids
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-22
+- Reason: secondary review article
+- Basis from parsed PDF: `One contribution of 6 to a theme issue`, `This special edition showcases`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.pdf](../../raw/sources/h_2022_in-vitro-and-in-silico-approaches-to-engineering-three-dimensional-biological-tissues-and.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC9372642/](https://pmc.ncbi.nlm.nih.gov/articles/PMC9372642/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-22
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: organoid system
 - Protocol focus: in vitro and in silico approaches to engineering three-dimensional biological tissues and organoids

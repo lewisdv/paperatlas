@@ -1,7 +1,7 @@
 ---
 title: Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:48:03+09:00
 raw_source: raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8090587/
@@ -10,15 +10,24 @@ organ: tumor
 protocol_focus: canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-22
 ---
 
 # Canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-22
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `Journal of the Endocrine Society | A533`, `NEUROENDOCRINOLOGY AND PITUITARY BASIC RESEARCH ADVANCES`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf](../../raw/sources/k_2021_canine-pituitary-organoids-as-3d-in-vitro-model-for-cushing-disease.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8090587/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8090587/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-22
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: tumor
 - Protocol focus: canine Pituitary Organoids as 3D In Vitro Model for Cushing Disease

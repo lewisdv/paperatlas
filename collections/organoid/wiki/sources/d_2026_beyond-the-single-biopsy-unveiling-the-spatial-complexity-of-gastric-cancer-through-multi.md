@@ -1,7 +1,7 @@
 ---
 title: Beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:45:57+09:00
 raw_source: raw/sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12989663/
@@ -10,15 +10,24 @@ organ: gastric
 protocol_focus: beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: commentary or perspective article
+pruned: 2026-04-22
 ---
 
 # Beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-22
+- Reason: commentary or perspective article
+- Basis from parsed PDF: `See "Patient-Derived Organoids from Multiple Sites of a Single Tumor..."`, `Corresponding Author`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.pdf](../../raw/sources/d_2026_beyond-the-single-biopsy-unveiling-the-spatial-complexity-of-gastric-cancer-through-multi.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12989663/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12989663/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-22
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: gastric
 - Protocol focus: beyond the Single Biopsy: Unveiling the Spatial Complexity of Gastric Cancer through Multi-Regional Organoids

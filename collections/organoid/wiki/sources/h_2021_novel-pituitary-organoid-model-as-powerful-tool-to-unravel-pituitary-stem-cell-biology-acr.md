@@ -1,7 +1,7 @@
 ---
 title: Novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease
 kind: paper
-status: ingested
+status: pruned
 added: 2026-04-21T14:48:05+09:00
 raw_source: raw/sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8090407/
@@ -10,15 +10,24 @@ organ: tumor
 protocol_focus: novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease
 ingest_method: generic-auto
 ingested: 2026-04-21
+prune_reason: conference abstract supplement
+pruned: 2026-04-22
 ---
 
 # Novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease
+
+## Corpus status
+
+- Active corpus status: pruned on 2026-04-22
+- Reason: conference abstract supplement
+- Basis from parsed PDF: `A652 | Journal of the Endocrine Society`, `Issue Supplement_1`
+- Note: the raw PDF is retained for traceability, but this source is excluded from the active organoid corpus, source index, and rebuilt manifest.
 
 ## Source
 
 - PDF: [raw/sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.pdf](../../raw/sources/h_2021_novel-pituitary-organoid-model-as-powerful-tool-to-unravel-pituitary-stem-cell-biology-acr.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC8090407/](https://pmc.ncbi.nlm.nih.gov/articles/PMC8090407/)
-- Status: ingested on 2026-04-21
+- Status: pruned from active corpus on 2026-04-22
 - Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
 - Organ focus: tumor
 - Protocol focus: novel Pituitary Organoid Model as Powerful Tool to Unravel Pituitary Stem Cell Biology Across Ages and Disease
