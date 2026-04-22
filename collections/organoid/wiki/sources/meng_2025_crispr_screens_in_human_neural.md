@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+
 ## Open questions
 
 - Which engineering or readout step is most likely to fail before the biology is interpretable?

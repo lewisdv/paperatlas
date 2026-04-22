@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 
+## Related entities
+
+- [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+
 ## Related sources
 
 - [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](broutier_2016_culture_and_establishment_of_self-renewing.md) - adult organoid expansion plus manipulation baseline for endodermal tissues.

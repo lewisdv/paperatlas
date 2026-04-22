@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 
+## Related entities
+
+- [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+
 ## Related sources
 
 - [Establishment and differentiation of long-term trophoblast organoid cultures from the human placenta](sheridan_2020_establishment_and_differentiation_of_long-term.md) - the closest trophoblast-organoid comparator for derivation and differentiation without the screening layer.
