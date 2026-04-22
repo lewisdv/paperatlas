@@ -40,7 +40,7 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 - The active source layer is now fully deep-ingested; generic auto-ingest placeholders have either been promoted or pruned.
 - Use the deep-ingested pages first when you need the most curated cross-paper framing.
-- Recent concept-linking pulled the newest standard ingests into the concept pages, so `wiki/concepts/` is now a better first stop before browsing refill-era source pages one by one.
+- Earlier concept-linking pulled the refill-era source pages into the concept pages, so `wiki/concepts/` is now a better first stop before browsing source pages one by one.
 - A new manual deep-ingest pass promoted five refill-era papers into the curated tier, covering adult-organoid CRISPR engineering, South African intestinal PDO establishment, targeted viral delivery in midbrain organoids, orthogonal vascular programming, and Kupffer-integrated liver organoids.
 - A second manual deep-ingest pass promoted six additional concept-anchor pages into the curated tier, covering prostate lentiviral perturbation, intestinal organ-on-chip, endometrial stromal coculture, multimodal-specimen PDO generation, esophageal organoid-initiated cancer models, and intestinal MSC-mediated repair assays.
 - A third manual deep-ingest pass promoted six brain or immune concept anchors into the curated tier, covering murine cerebral baseline morphology, tonsil immune organoids, vaginal TRM coculture, eye-primordia forebrain organoids, cortico-striatal assembloids, and serotonergic neuromodulatory assembloids.
