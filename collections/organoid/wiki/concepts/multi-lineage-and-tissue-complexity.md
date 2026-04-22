@@ -13,6 +13,7 @@ A major trend across this collection is the move away from simple epithelial bal
 - [Lee 2022](../sources/lee_2022_generation_and_characterization_of_hair-bearing.md)
 - [Olijnik 2024](../sources/olijnik_2024_generating_human_bone_marrow_organoids.md)
 - [Dardano 2025](../sources/dardano_2025_production_of_human_blood-generating_heart-forming.md)
+- [Modeling Atrial Fibrillation in a Human Heart Macrophage Assembloid](../sources/modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md)
 - [Protocol for generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture](../sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.md)
 - [Protocol for generating liver organoids containing Kupffer cells using human iPSCs](../sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md)
 - [Protocol for generating human vascular organoids via orthogonal activation of ETV2 and NKX3.1](../sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md)
@@ -22,6 +23,7 @@ A major trend across this collection is the move away from simple epithelial bal
 
 - Lancaster, Lee, and some cardiac papers show the value of emergent tissue complexity.
 - Koike, Dardano, and the new Kupffer-containing liver protocol explicitly pursue linked developmental programs across neighboring organs or immune-bearing compartments.
+- The heart macrophage assembloid paper shows that multicellular complexity can also be justified by disease mechanism, where inflammatory immune cells are required to make the atrial-rhythm question experimentally visible.
 - The new tonsil immune organoid and vascular organoid protocols show that complexity in the refill cohort often means epithelial-immune or multicellular vascular architecture, not only classic organ boundary models.
 - Bergmann 2018 shows that multicellular complexity can also be organized around barrier architecture and direct endothelial-pericyte-astrocyte contact, not only around developmental organ-boundary programs.
 - Olijnik and Matkovic Leko push organoid logic into niche or disease contexts where multicellular composition is central to the model.

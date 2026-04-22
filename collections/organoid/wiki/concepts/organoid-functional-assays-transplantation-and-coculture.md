@@ -30,6 +30,7 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](../sources/j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md)
 - [Clinically used drug arsenic trioxide targets XIAP and overcomes apoptosis resistance in an organoid-based preclinical cancer model](../sources/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.md)
 - [Th2 Cytokines Reshape the Transcriptome: Insights from a Canine Organoid Model of Atopic Dermatitis](../sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md)
+- [Modeling Atrial Fibrillation in a Human Heart Macrophage Assembloid](../sources/modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md)
 
 ## Working synthesis
 
@@ -40,6 +41,7 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - The newest neural batch makes this branch broader again: mature cerebral organoids can be pushed into astrocytic inflammasome assays, choroid-plexus-containing brain organoids can act as viral access-control systems, and retinal organoids can be turned into injury-repair plus transplantation pipelines.
 - The newest cancer-translational batch broadens the branch in another direction: cervical SCNEC organoids are validated across matched xenografts and drug assays, breast PDOs are escalated into MALAT1-driven splicing and metastasis readouts, osteosarcoma iOS models rebuild T cell infiltration with PBMCs, metastatic PDOs recover lost SRC-family signaling after host engraftment, and colon cancer organoids act as a fast translational check for XIAP-targeted cisplatin sensitization.
 - The canine atopic-dermatitis organoid paper adds a simpler but useful assay family: direct cytokine induction on a primary epithelial organoid can answer whether a disease axis is already encoded in the epithelial response before fibroblasts or immune cells are reintroduced.
+- The retained heart macrophage assembloid paper adds a cardiac version of this logic: integrated immune cells and inflammatory triggering become the assay itself, because the question is whether inflammation can precipitate arrhythmic behavior in a human multicellular heart model.
 - These papers sharpen a practical rule for the corpus: sometimes the assay layer is not added because the baseline culture is incomplete, but because the biological question only becomes visible once immune cells, host tissue, metastatic routing, or donor-specific drug response is allowed back into the system.
 - Together these papers show that coculture or transplantation is not a single add-on but a family of moves for access, repair, immune education, infection, and host-context testing.
 - Not every assay layer sits after derivation is complete; some, like monocyte support in kidney organoids, intervene earlier to preserve organoid competence before later readouts become possible.

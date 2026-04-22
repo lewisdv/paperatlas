@@ -8,16 +8,18 @@ The heart-oriented papers show a progression from early heart-forming organoids 
 
 - [Drakhlis 2021](../sources/drakhlis_2021_generation_of_heart-forming_organoids_from.md)
 - [Dardano 2025](../sources/dardano_2025_production_of_human_blood-generating_heart-forming.md)
+- [Modeling Atrial Fibrillation in a Human Heart Macrophage Assembloid](../sources/modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md)
 
 ## Working synthesis
 
 - Drakhlis is the baseline developmental heart-forming protocol in this collection.
 - Dardano extends that platform into blood-generating heart-forming organoids and better whole-mount imaging workflows.
-- Together they show that cardiac organoids are moving toward multi-lineage developmental windows rather than isolated cardiomyocyte production.
+- The heart macrophage assembloid paper adds a different direction of complexity: inflammatory immune integration and rhythm-disease readouts rather than morphogenesis alone.
+- Together they show that cardiac organoids are moving toward multi-lineage developmental windows and disease-assay systems rather than isolated cardiomyocyte production.
 
 ## Main tension
 
-- cardiac morphogenesis models versus broader co-developmental systems
+- cardiac morphogenesis models versus broader co-developmental or immune-integrated systems
 - protocol speed versus structural richness and imaging depth
 
 ## Open questions
