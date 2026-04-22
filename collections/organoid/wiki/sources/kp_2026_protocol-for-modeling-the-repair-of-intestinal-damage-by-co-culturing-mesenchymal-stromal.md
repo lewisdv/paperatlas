@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12800398/
 published_date: 2025-12-24
 organ: colon-intestine
 protocol_focus: modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids.
@@ -18,57 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.pdf](../../raw/sources/kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12800398/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12800398/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: colon / intestine
-- Protocol focus: modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids
+- Status: deep ingested 2026-04-22
+- Organ focus: human duodenal organoids cocultured with bone-marrow-derived mesenchymal stromal or stem cells under injury conditions
+- Protocol focus: scalable intestinal epithelial injury-repair assay using MSC coculture and low-threshold image analysis
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: transplantation or host-engagement protocol
-- Aim: modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a transplantation or host-engagement protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids.
-- Its main distinctive contribution in this corpus is that it mesenchymal stem/stromal cells (MSCs) are known for their regenerative properties.
-- Within this collection, it belongs to the host-context and transplantation branch of organoid protocol work.
-- Paper framing: Mesenchymal stem/stromal cells (MSCs) are known for their regenerative properties.
+- Starting material: established human duodenal organoids and healthy-donor bone-marrow-derived MSCs
+- Protocol stages:
+  - prepare organoid support media and MSC growth media, including conditioned media quality control
+  - dissociate organoids and seed small Matrigel droplets at densities optimized for later image segmentation, typically around 500 cells per droplet
+  - induce epithelial injury with busulfan, then remove the drug and introduce MSC coculture
+  - image wells by standard light microscopy and quantify organoid number and size using OrganoSeg plus the companion OrganoAna analysis workflow
+  - adapt the same framework for short-term survival readouts or longer-term regenerative follow-up
+- Key validation: the assay reads out immediate and longer-term effects of MSCs on busulfan-injured organoids and was built to be statistically robust because each droplet contains many measurable organoids
+- Distinct protocol emphasis: the paper is as much about making the repair assay easy to analyze as it is about the coculture itself
 
 ## Key findings
 
-- Defines a workflow centered on modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids.
-- Its distinctive focus in practice is the way it mesenchymal stem/stromal cells (MSCs) are known for their regenerative properties.
-- Pushes the model into a host or injury context to test whether in vitro claims hold up in a more functional setting.
+- Provides a controllable epithelial-injury model that is simpler than animal studies but more disease-relevant than uninjured organoid coculture.
+- Makes MSC support a measurable regenerative variable rather than a vague coculture add-on.
+- Couples the biology to an accessible analysis pipeline, lowering the barrier for labs that do not have bespoke imaging infrastructure.
+- Shows how injury context can transform a standard intestinal organoid system into a clinically adjacent regeneration assay.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Tests organoid behavior in a host or injury context rather than staying purely in vitro.
-- Brings maturation, repair, or integration claims closer to functional validation.
+- One of the best repair-oriented assay papers in the refill cohort because it makes epithelial-stromal regeneration experimentally tractable at scale.
+- Strengthens the functional-assay concept page with a defined injury model instead of a pure coculture or transplantation example.
+- Adds an intestinal regeneration comparator to the more immune-focused or transplantation-focused assay sources already in the deep-ingested tier.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Host environment becomes part of the phenotype, which makes attribution harder.
-- In vivo logistics and recipient variability increase the practical barrier to adoption.
+- The model is intentionally simplified and omits immune cells, inflammatory cytokine complexity, and many other in vivo modifiers of MSC behavior.
+- The current setup does not distinguish direct cell-cell contact effects from purely paracrine effects unless the assay is redesigned with physical separation.
+- Organoids remain mostly stem-like and not fully differentiated, so lineage-specific repair biology is only partially represented.
+- Busulfan concentration and seeding density both need titration; overseeding reduces image-analysis quality and underinjury collapses assay resolution.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with colon intestine work and strengthens the host-context validation coverage around modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids.
-- This paper broadens the collection's coverage of colon / intestine organoid work.
-- It is one of the clearest reminders that some claims about repair, maturation, or circuit engagement need host-context testing.
+- Useful whenever the practical question is how to model intestinal epithelial repair without immediately escalating to animals.
+- Strengthens the gastrointestinal and coculture branches with a repair-focused stromal assay.
+- Provides a clear example of organoids being used to test regenerative therapeutics rather than only developmental patterning.
 
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related sources
+
+- [Transplantation of intestinal organoids into a mouse model of colitis](watanabe_2022_transplantation_of_intestinal_organoids_into.md) - a stronger in vivo repair escalation step after in vitro assay results.
+- [Protocol for the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system](ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.md) - a stromal-epithelial coculture comparator outside the intestine.
+- [Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids](iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md) - another intestinal assay-layer platform that trades repair focus for polarized access and flow.
+
 ## Open questions
 
-- Which phenotypes remain robust after moving into an in vivo host context?
-- How should host-driven effects be separated from organoid-intrinsic effects?
+- Which MSC effects in this system depend on contact versus soluble signaling?
+- How well do busulfan-repair phenotypes predict what would happen in more complex inflammatory injury settings such as GvHD?
+- What is the minimum analysis stack needed to preserve throughput without sacrificing segmentation quality?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

@@ -6,10 +6,9 @@ added: 2026-04-21T20:27:49+09:00
 raw_source: raw/sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12395520/
 published_date: 2025-08-18
-organ: liver
+organ: tumor
 protocol_focus: generation and utilization of patient-derived organoids from multimodal specimen
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for generation and utilization of patient-derived organoids from multimodal specimen.
@@ -18,58 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.pdf](../../raw/sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12395520/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12395520/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: liver
-- Protocol focus: generation and utilization of patient-derived organoids from multimodal specimen
+- Status: deep ingested 2026-04-22
+- Organ focus: cross-cancer patient-derived tumor organoids from surgical tissue, core biopsies, and liquid biopsy-like specimens
+- Protocol focus: standardized specimen-to-PDO pipeline spanning collection, dissociation, biobanking, QC, and drug screening
 
 ## Study design
 
-- Starting material: patient-derived tumor tissue or matched clinical samples
-- Protocol type: engineering, imaging, or perturbation protocol layered onto organoid culture
-- Aim: generation and utilization of patient-derived organoids from multimodal specimen
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as an engineering, imaging, or perturbation protocol layered onto organoid culture for generation and utilization of patient-derived organoids from multimodal specimen.
-- Its main distinctive contribution in this corpus is that it patient-derived organoids (PDOs) are robust preclinical models for precision oncology.
-- Within this collection, it belongs to the engineering and readout-expansion branch of organoid protocol work.
-- Paper framing: Patient-derived organoids (PDOs) are robust preclinical models for precision oncology.
+- Starting material: patient tumor material collected as resection tissue, punch or needle biopsy, EUS-FNB, percutaneous liver biopsy, ascites, or pleural effusion
+- Protocol stages:
+  - prepare transport media, dissociation reagents, and tumor-type-specific PDO media before specimen arrival
+  - process surgical samples by mincing and controlled enzymatic plus mechanical dissociation, using gentleMACS when available but allowing simpler alternatives for low-input samples
+  - process liquid or fluid specimens with enrichment steps such as density separation and RBC removal when needed
+  - seed dissociated material in BME, stabilize and passage organoids, then bank lines for future use
+  - run freeze-thaw QC, histology or IHC concordance checks, STR-style validation, and high-throughput drug screening once cultures stabilize
+- Key validation: the paper emphasizes stabilized organoid growth over serial days, post-thaw regrowth checks, and histologic concordance with original specimens as quality gates before downstream screening
+- Distinct protocol emphasis: this is not one tumor protocol but a specimen-logistics framework for making PDOs work in patients who cannot contribute large surgical resections
 
 ## Key findings
 
-- Defines a workflow centered on generation and utilization of patient-derived organoids from multimodal specimen.
-- Its distinctive focus in practice is the way it patient-derived organoids (PDOs) are robust preclinical models for precision oncology.
-- Adds a leverage layer such as imaging, editing, or screening that turns organoids into more mechanistic systems.
+- Broadens PDO accessibility from surgery-only workflows to smaller biopsies and body-fluid specimens.
+- Treats specimen handling, tumor cellularity, and dissociation strategy as first-order determinants of PDO success.
+- Integrates biobanking, thaw validation, and screening into the same operating pipeline rather than leaving them as separate downstream improvisations.
+- Makes the case that translational PDO programs are as much about specimen logistics as they are about media recipes.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Adds a reusable perturbation or imaging layer that increases experimental leverage.
-- Makes organoids more compatible with mechanistic and platform-style studies.
+- One of the strongest patient-derived platform papers in the refill cohort because it systematizes how to work with real-world low-input clinical material.
+- Complements more organ-specific PDO papers by adding the missing biobank and specimen-diversity layer.
+- Helps the collection speak to translational deployment, not only to technically ideal lab specimens.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Usually assumes that the baseline organoid system is already robust before engineering begins.
-- Technical failure modes may come from delivery, imaging, or screen design rather than from the organoid biology itself.
+- Tumor cellularity is the central bottleneck; high stromal or immune content can make even adequately sized samples fail.
+- Digestion must be tuned to tissue stiffness but should not exceed about 1 h because prolonged treatment reduces viability.
+- Fibroblast overgrowth, RBC carryover, and microbiota contamination can each derail establishment before organoids stabilize.
+- Media optimization remains tumor-type specific, so the pipeline is standardized at the specimen-handling level more than at the niche-factor level.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with liver work and strengthens the engineering and platform-readout coverage around generation and utilization of patient-derived organoids from multimodal specimen.
-- This paper broadens the collection's coverage of liver organoid work.
-- It matters because many practical organoid projects stall at the perturbation or readout stage rather than at derivation.
+- Strengthens the adult stem cell and patient-derived concept page with a cross-cancer operational framework rather than one organ-specific example.
+- Useful whenever the practical question is how to build a PDO workflow from whatever specimen a clinic can actually provide.
+- Adds a translational bridge from PDO establishment to banking and drug-screening deployment.
 
 ## Related concepts
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
-- [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
+
+## Related sources
+
+- [Establishment of patient-derived cancer organoids for drug-screening applications](driehuis_2020_establishment_of_patient-derived_cancer_organoids.md) - the clearest earlier PDO baseline for downstream screening.
+- [Protocol for the establishment and characterization of South African patient-derived intestinal organoids](n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.md) - a more organ-specific patient-derived intestinal comparator with strong emphasis on specimen handling.
+- [Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency](c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md) - shows what becomes possible once multimodal-specimen PDOs are stable enough for perturbation.
 
 ## Open questions
 
-- Which engineering or readout step is most likely to fail before the biology is interpretable?
-- How should this workflow be standardized across cell lines, batches, or perturbation sets?
+- Which specimen types contribute the best tradeoff between clinical accessibility and organoid establishment rate?
+- How much can tumor-cell enrichment be pushed before selective loss of clinically relevant subclones becomes a problem?
+- What minimal QC panel is sufficient before a newly established PDO line is trusted for treatment-guidance style drug screening?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11315182/
 published_date: 2024-07-18
 organ: prostate
 protocol_focus: transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency.
@@ -18,57 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.pdf](../../raw/sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11315182/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11315182/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: prostate
-- Protocol focus: transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency
+- Status: deep ingested 2026-04-22
+- Organ focus: human primary prostate epithelial cells and prostate patient-derived organoids, with reported transferability to other organoid types
+- Protocol focus: high-efficiency lentiviral transduction for knockdown or overexpression before organoid re-seeding
 
 ## Study design
 
-- Starting material: patient-derived tumor tissue or matched clinical samples
-- Protocol type: primary-tissue or patient-derived organoid culture protocol
-- Aim: transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency
-- Core readouts: organoid establishment, long-term expansion, and disease- or donor-relevant downstream assays
-
-## Summary
-
-- This paper is best understood as a primary-tissue or patient-derived organoid culture protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency.
-- Its main distinctive contribution in this corpus is that it patient-derived organoids (PDOs) are now used to study many diseases, including prostate cancer.
-- Within this collection, it belongs to the adult or patient-derived platform branch of organoid protocol work.
-- Paper framing: Patient-derived organoids (PDOs) are now used to study many diseases, including prostate cancer.
+- Starting material: human primary prostate epithelial cells and prostate PDOs, with additional in-lab use on mouse mammary and mouse prostate organoids
+- Protocol stages:
+  - produce lentivirus in Lenti-X 293T cells using shRNA or overexpression vectors
+  - passage primary epithelial cells into suspension and prepare the transduction mix before 3D re-seeding
+  - combine cells and virus immediately before forming Matrigel domes, using a workflow designed to avoid repeated harsh digestion steps
+  - seed domes with a 25% cell-plus-virus suspension and 75% Matrigel, then expand cells in prostate organoid medium
+  - measure transduction efficiency with GFP and validate knockdown at mRNA and protein level
+- Distinct protocol emphasis: the key move is infecting the cells in suspension just before organoid reconstitution, rather than trying to force virus into already formed dense 3D organoids
+- Key validation: the paper reports strong GFP signal and greater than 80% protein-level knockdown for IDH1 in prostate cancer PDOs, alongside successful modulation of ERa-related biology
 
 ## Key findings
 
-- Defines a workflow centered on transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency.
-- Its distinctive focus in practice is the way it patient-derived organoids (PDOs) are now used to study many diseases, including prostate cancer.
-- Shows that expandable organoid platforms can come from primary or patient material, not only from pluripotent differentiation.
+- Provides a relatively low-friction viral-delivery route for adult or patient-derived organoids that avoids the throughput hit of repeated mechanical and enzymatic processing.
+- Supports both shRNA knockdown and lentiviral overexpression, making the workflow broadly useful beyond one prostate-specific perturbation.
+- Turns primary prostate epithelial culture into an engineering-ready intermediate rather than a dead end before organoid formation.
+- Suggests the method is portable to other epithelial organoid contexts, not just prostate PDOs.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Closer to donor or disease-specific biology than a generic pluripotent derivation alone.
-- Expandable enough to support downstream drug testing, perturbation, or translational work once established.
+- One of the clearest refill-era papers for the transition from adult or patient-derived organoid establishment into routine perturbation.
+- Strengthens the adult-platform branch by showing that patient-derived organoids are not only biologically relevant but also technically tractable for gene-delivery experiments.
+- Gives the engineering concept page a practical viral-delivery complement to the genome-editing papers already in the deep-ingested set.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Requires access to suitable primary or patient tissue and careful tissue-specific media handling.
-- May capture epithelial or donor-specific behavior better than whole-organ multicompartment biology.
+- Results vary across patients, both in organoid-forming capacity and in transduction success.
+- The protocol does not include formal virus titration, so exact viral particle input remains approximate unless users add that step themselves.
+- Efficient organoid formation still depends on using low-passage primary cells; high-passage cells may fail during reconstitution.
+- Matrigel timing is operationally important because rapid polymerization can compromise consistent dome formation.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with prostate work and strengthens the adult or patient-derived organoid coverage around transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency.
-- This paper broadens the collection's coverage of prostate organoid work.
-- It helps keep the collection from collapsing into hPSC-only developmental protocols.
+- Strengthens the overlap between adult stem cell or patient-derived platforms and engineering workflows.
+- Useful whenever the practical question is how to perturb a donor-derived epithelial organoid without abandoning the PDO system for easier 2D cell lines.
+- Adds a prostate-specific counterpart to more general editing workflows elsewhere in the collection.
 
 ## Related concepts
 
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related sources
+
+- [Organoid culture systems for prostate epithelial and cancer tissue](drost_2016_organoid_culture_systems_for_prostate.md) - the core baseline for prostate organoid establishment before perturbation.
+- [Protocol to create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools](m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.md) - a complementary adult-organoid engineering paper centered on genome editing rather than lentiviral delivery.
+- [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](dekkers_2021_long-term_culture_genetic_manipulation_and.md) - another example of adult organoids becoming perturbable systems instead of just stable cultures.
+
 ## Open questions
 
-- Which parts of the donor or disease context stay stable over long-term expansion?
-- What missing non-epithelial compartments most limit interpretation in this platform?
+- How broadly does the suspension-phase transduction logic transfer across adult organoid systems with different fragility profiles?
+- When is viral delivery preferable to electroporation or CRISPR-based editing for patient-derived organoid studies?
+- Which prostate PDO phenotypes remain stable enough after transduction to support longer-term mechanistic assays?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

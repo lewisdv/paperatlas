@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10879800/
 published_date: 2024-02-16
 organ: endometrium
 protocol_focus: the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system.
@@ -18,58 +17,65 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.pdf](../../raw/sources/ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC10879800/](https://pmc.ncbi.nlm.nih.gov/articles/PMC10879800/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: endometrium
-- Protocol focus: the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system
+- Status: deep ingested 2026-04-22
+- Organ focus: murine endometrial epithelial organoids paired with primary uterine stromal fibroblasts
+- Protocol focus: same-system epithelial plus stroma co-culture for paracrine control of endometrial organoid development
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: functional assay extension layered onto organoid culture
-- Aim: the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a functional assay extension layered onto organoid culture for the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system.
-- Its main distinctive contribution in this corpus is that it postnatal development of the uterus involves the specification of undifferentiated epithelium into uterine-type epithelium.
-- Within this collection, it belongs to the assay-extension branch of organoid protocol work.
-- Paper framing: Postnatal development of the uterus involves the specification of undifferentiated epithelium into uterine-type epithelium.
+- Starting material: epithelial and stromal cells isolated from juvenile mouse uterus, with the protocol designed so both populations can be obtained from the same animals
+- Protocol stages:
+  - dissect postnatal day-15 mouse uteri and use sequential enzymatic digestion to isolate epithelial sheets and stromal fractions
+  - establish endometrial epithelial organoids and expand them for characterization, typically passaging at 1:3 every 5 to 7 days
+  - culture stromal fibroblasts in 2D to build a confluent feeder-like stromal layer
+  - seed stromal cells 24 h before assay start so they reach roughly 70% confluence when epithelial organoid inserts are introduced
+  - maintain co-cultures for about 20 days, renewing stroma every 5 days and passaging epithelial organoids every 6 to 8 days, with optional hormone treatment such as E2
+- Key validation: KRT7-positive columnar epithelial identity, KRT5 and p63 basal markers, and the Esr1-KO phenotype that shifts toward basal differentiation unless restrained by stromal co-culture
+- Distinct protocol emphasis: the biological question is explicitly stromal-derived paracrine control of epithelial fate, not organoid growth alone
 
 ## Key findings
 
-- Defines a workflow centered on the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system.
-- Its distinctive focus in practice is the way it postnatal development of the uterus involves the specification of undifferentiated epithelium into uterine-type epithelium.
-- Demonstrates that experimental value often comes from the assay layer added on top of an existing organoid rather than from derivation alone.
+- Separates epithelial and stromal contributions cleanly enough to test how stromal paracrine signals alter organoid growth and lineage state.
+- Uses a paired isolation strategy that keeps the epithelial and stromal components biologically aligned.
+- Demonstrates a concrete phenotype for the system: stromal co-culture suppresses the abnormal basal differentiation seen in Esr1-knockout organoids.
+- Creates a manageable reproductive-tissue analog of the broader epithelial-stroma coculture logic seen elsewhere in the corpus.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Moves organoids beyond derivation into a biologically interpretable assay context.
-- Clarifies how to operationalize exposure, coculture, or host interaction instead of leaving it as an ad hoc extension.
+- One of the clearest non-gastrointestinal coculture protocols in the collection, which helps keep the assay-layer concept page from being intestine-only.
+- Adds a genuinely multicompartment epithelial-plus-stroma example to the adult-platform branch.
+- Useful as a compact model of organoid biology being reshaped by adjacent non-epithelial tissue rather than by a distant soluble factor screen alone.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Best treated as an extension protocol, not a replacement for a stable baseline organoid pipeline.
-- Assay outcomes can be dominated by the quality, polarity, or maturity of the starting organoid culture.
+- The protocol is optimized in mouse tissue and is not yet fully optimized for primary human endometrial co-culture.
+- It still lacks vasculature and broader uterine microenvironment complexity, so the stromal compartment is only a partial in vivo proxy.
+- Stromal confluence is a hard operational dependency; under-confluent stroma weakens the assay.
+- Early-passage epithelial cells can attach to plastic and drift toward unwanted 2D behavior if handling during passaging is rough.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with endometrium work and strengthens the assay-layer coverage around the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system.
-- This paper broadens the collection's coverage of endometrium organoid work.
-- It represents the second-wave move from making organoids to actually using them in a biologically specific experiment.
+- Strengthens the coculture concept page with a stromal-epithelial assay rather than an immune or microbial one.
+- Broadens the adult or patient-derived branch with a reproductive-tissue protocol that still uses the same core logic of matched tissue-derived organoid platforms.
+- Useful whenever the user wants to reason about what a stromal compartment adds to an epithelial organoid assay.
 
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
-- [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
+- [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
+
+## Related sources
+
+- [Protocol for the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation](jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.md) - another reproductive-tissue coculture protocol, but with immune cells instead of stroma.
+- [Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids](kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md) - a gastrointestinal analog focused on stromal support after injury.
+- [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](dekkers_2021_long-term_culture_genetic_manipulation_and.md) - another adult-tissue organoid framework that becomes more informative once paired with a non-epithelial context.
 
 ## Open questions
 
-- How much of the observed phenotype comes from the added assay layer versus the baseline organoid state?
-- What maturity or polarity checks should be mandatory before this assay is trusted?
+- Which stromal signals are truly paracrine drivers of epithelial state versus indirect correlates of culture quality?
+- How far can this mouse workflow be pushed toward primary human endometrial coculture without losing robustness?
+- What additional uterine compartments would matter most after stroma: immune, vascular, or endocrine control?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
