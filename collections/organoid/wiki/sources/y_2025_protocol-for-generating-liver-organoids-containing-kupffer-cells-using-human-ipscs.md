@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12547730/
 published_date: 2025-10-10
 organ: liver
 protocol_focus: generating liver organoids containing Kupffer cells using human iPSCs
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for generating liver organoids containing Kupffer cells using human iPSCs.
@@ -18,47 +17,47 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.pdf](../../raw/sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12547730/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12547730/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: liver
-- Protocol focus: generating liver organoids containing Kupffer cells using human iPSCs
+- Status: deep ingested 2026-04-22
+- Organ focus: multilineage human iPSC-derived liver organoids that include resident macrophage-like Kupffer cells
+- Protocol focus: generate EMP and hepatic endoderm in parallel, then assemble Kupffer-containing liver organoids in Elplasia microwells
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: stepwise derivation and maturation protocol
-- Aim: generating liver organoids containing Kupffer cells using human iPSCs
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a stepwise derivation and maturation protocol for generating liver organoids containing Kupffer cells using human iPSCs.
-- Its main distinctive contribution in this corpus is that it integration of resident immune cells into in vitro organoid models is important for accurately recapitulating native tissue physiology.
-- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
-- Paper framing: Integration of resident immune cells into in vitro organoid models is important for accurately recapitulating native tissue physiology.
+- Starting material: human iPSC-derived hepatic endoderm, endothelial cells, mesenchymal cells, and erythroid-myeloid progenitors (EMPs)
+- Protocol stages:
+  - maintain separate iPSC timelines because hepatic endoderm and EMPs are intended for fresh co-culture rather than freeze-thaw cycling
+  - differentiate EMPs over 12 days using a staged cytokine program built around WNT3A, BMP4, VEGF, bFGF, SCF, TPO, and FLT3L
+  - generate hepatic endoderm in parallel and combine it with previously generated endothelial and mesenchymal populations
+  - seed HE, ECs, MCs, and EMPs into scaffold-free Elplasia U-bottom plates with KuLO medium and ROCK inhibitor to initiate co-culture day 0
+  - refresh medium every 2 days, monitor albumin secretion over time, and characterize hematopoietic maturation by flow cytometry and whole-mount staining
+- Key validation: by day 14 more than 90% of the EMP-derived cells can express Kupffer-associated markers CD45, CD14, and CD163, while the organoids also increase hepatic readouts such as albumin secretion and mature hepatic markers
+- Distinct protocol emphasis: rather than adding macrophages as an external coculture later, the workflow builds Kupffer-like cells into the organoid during multilineage assembly
 
 ## Key findings
 
-- Defines a workflow centered on generating liver organoids containing Kupffer cells using human iPSCs.
-- Its distinctive focus in practice is the way it integration of resident immune cells into in vitro organoid models is important for accurately recapitulating native tissue physiology.
-- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
+- Shows that liver-resident macrophage integration can be built into organoid formation by co-culturing EMPs with hepatic, endothelial, and mesenchymal lineages.
+- Uses Elplasia microwells as a scaffold-free assembly platform where multicellular spheroids form quickly and the hematopoietic compartment expands around the growing organoid.
+- Demonstrates that the resulting KuLOs are not only multilineage but functionally usable, with albumin secretion, hepatic maturation markers, and macrophage differentiation readouts.
+- Extends the system into a disease-relevant assay by showing endotoxin-triggered Kupffer activation and reversible impairment of hepatic function after medium refreshment.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Useful as a starting-point protocol for building this organ system from stem cells.
-- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+- One of the strongest immune-bearing endoderm organoid protocols in the collection because it integrates a resident macrophage lineage instead of treating immune cells as an optional add-on.
+- Pushes the liver branch beyond parenchymal organoid generation into inflammation, repair, and regeneration questions.
+- Serves as a concrete example of how multilineage assembly can be used to model tissue-resident immune biology rather than only morphogenesis.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
-- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+- The workflow is timing-sensitive because four lineage programs have to converge at the right moment for co-culture.
+- The paper does not recommend freezing hepatic endoderm or EMPs for co-culture, which limits scheduling flexibility.
+- Failure to form organoids on co-culture day 1 can result from weak HE differentiation, poor cell viability, or omission of ROCK inhibitor.
+- Flow-cytometry proportions from dissociated organoids are useful for tracking differentiation but do not perfectly report the true spatial composition inside intact organoids.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with liver work and strengthens the baseline derivation coverage around generating liver organoids containing Kupffer cells using human iPSCs.
-- This paper broadens the collection's coverage of liver organoid work.
-- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+- Strengthens both the gastrointestinal or endodermal and multi-lineage concept pages with a liver-specific immune-integration example.
+- Useful as a comparator to adult liver organoid papers that expand epithelial tissue but do not build in resident macrophage biology.
+- Gives the collection a liver protocol that already contains its own inflammation-response use case rather than needing a separate coculture paper to supply it.
 
 ## Related concepts
 
@@ -66,10 +65,17 @@ ingested: 2026-04-21
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related sources
+
+- [Engineering human hepato-biliary-pancreatic organoids from pluripotent stem cells](koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.md) - another multilineage endoderm protocol that expands tissue complexity beyond a single hepatic lineage.
+- [Establishment of human fetal hepatocyte organoids and CRISPR-Cas9-based gene knockin and knockout in organoid cultures from human liver](hendriks_2020_establishment_of_human_fetal_hepatocyte.md) - a liver organoid comparator centered on epithelial expansion and engineering rather than immune integration.
+- [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](broutier_2016_culture_and_establishment_of_self-renewing.md) - the adult endoderm organoid baseline that highlights how different this iPSC multilineage strategy is.
+
 ## Open questions
 
-- Which steps in this liver workflow drive the most variability across lines or batches?
-- What extra maturation or assay layer is usually needed after the baseline derivation works?
+- What EMP-to-hepatic-endoderm ratio most reliably maximizes Kupffer-cell integration without compromising hepatic maturation?
+- How stable are Kupffer-like phenotypes beyond the day-14 window or under chronic inflammatory stimulation?
+- Which liver phenotypes truly require built-in resident macrophages rather than later macrophage coculture?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
