@@ -6,10 +6,9 @@ added: 2026-04-21T14:33:19+09:00
 raw_source: raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11200484/
 published_date: 2024-06-01
-organ: tumor
+organ: pancreas
 protocol_focus: convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
@@ -18,56 +17,60 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf](../../raw/sources/x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC11200484/](https://pmc.ncbi.nlm.nih.gov/articles/PMC11200484/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: tumor
-- Protocol focus: convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
+- Status: deep ingested 2026-04-22
+- Organ focus: pancreatic ductal adenocarcinoma organoid image analysis
+- Protocol focus: perform high-precision single-organoid segmentation in noisy, overlapping PDAC images using a convexity-preserving level-set model with one-click initialization
 
 ## Study design
 
-- Starting material: primary healthy or disease tissue, tumor material, and related patient samples
-- Protocol type: primary-tissue or patient-derived organoid culture protocol
-- Aim: convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids
-- Core readouts: organoid establishment, long-term expansion, and disease- or donor-relevant downstream assays
-
-## Summary
-
-- This paper is best understood as a primary-tissue or patient-derived organoid culture protocol for convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
-- Within this collection, it belongs to the adult or patient-derived platform branch of organoid protocol work.
-- Paper framing: : Tumor organoid cultures play a crucial role in clinical practice, particularly in guiding med- ication by accurately determining the morphology and size of the organoids. However, segmenting individual tumor organoids is challenging due to their inhomogeneous internal intensity and over- lapping structures.
+- Starting material: 51 pancreatic ductal adenocarcinoma organoid images with overlapping structures, intensity inhomogeneity, and variable focus quality
+- Protocol stages:
+  - define a level-set model with four interacting terms: data-driven, length, area, and curvature, so that the evolving contour is encouraged to shrink inward while preserving convexity
+  - generate the initial contour automatically with a one-click setup that combines a coarse C-V segmentation with Canny edge detection to place the contour outside the target organoid
+  - compare the proposed method against C-V and CPLSE baselines on single-organoid segmentation tasks, especially in overlapping regions
+  - tune primarily lambda1 and beta, while keeping most other parameters fixed across images
+- Key validation: on 51 PDAC organoid images the method reached an average Dice score of 98.81 +/- 0.48% with average computation time of 20.67 s, outperforming both C-V and CPLSE and handling overlap, blur, and inhomogeneous interiors more robustly
+- Distinct protocol emphasis: this is a small-data, interpretable segmentation paper whose value is precise ROI extraction for downstream tumor-organoid measurement, not high-throughput deep-learning automation
 
 ## Key findings
 
-- Defines a workflow centered on convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
-- Its distinctive focus in practice is the way it establishes a workflow for convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
-- Shows that expandable organoid platforms can come from primary or patient material, not only from pluripotent differentiation.
+- Shows that classical model-based segmentation remains powerful for organoid analysis when data are scarce and targets are approximately convex.
+- Solves a practical failure mode of tumor-organoid image analysis: one wants a clean mask for a selected organoid even when neighboring organoids overlap.
+- Reduces manual burden by replacing fully hand-drawn outlines with a targeted one-click initialization procedure.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Closer to donor or disease-specific biology than a generic pluripotent derivation alone.
-- Expandable enough to support downstream drug testing, perturbation, or translational work once established.
+- The clearest small-data segmentation paper in the collection, and a useful counterpoint to CNN-heavy OCT workflows.
+- Gives the engineering branch a method that prioritizes single-object accuracy and interpretability over end-to-end automation.
+- Especially relevant for pancreatic or other dense tumor-organoid cultures where overlap is common and training data are limited.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Requires access to suitable primary or patient tissue and careful tissue-specific media handling.
-- May capture epithelial or donor-specific behavior better than whole-organ multicompartment biology.
+- The method assumes a convex or near-convex target shape and therefore is not ideal for strongly branched or highly non-convex organoids.
+- It segments selected individual organoids rather than solving whole-culture instance segmentation at scale.
+- Validation is still based on a modest dataset of 51 images, so generalization to very different imaging setups is unproven.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with tumor work and strengthens the adult or patient-derived organoid coverage around convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids.
-- This paper broadens the collection's coverage of tumor organoid work.
-- It helps keep the collection from collapsing into hPSC-only developmental protocols.
+- Strengthens the engineering-imaging branch with an interpretable segmentation option for tumor organoid morphology work.
+- Useful when the main bottleneck is obtaining clean masks for downstream morphology, area, or invasion measurements rather than monitoring entire cultures over time.
+- Complements data-hungry deep-learning methods by offering a realistic fallback when image counts are too small for robust training.
 
 ## Related concepts
 
-- [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
+
+## Related sources
+
+- [Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness](shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md) - a downstream morphology-analysis framework that depends on having reliable organoid ROIs.
+- [Segmentation and Multi-Timepoint Tracking of 3D Cancer Organoids from Optical Coherence Tomography Images Using Deep Neural Networks](f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md) - a deep-learning tracking comparator optimized for longitudinal OCT volumes rather than single bright-field targets.
+- [Automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks](d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md) - another segmentation-heavy readout paper, but one aimed at high-throughput cluster monitoring rather than one-at-a-time precision masks.
 
 ## Open questions
 
-- Which parts of the donor or disease context stay stable over long-term expansion?
-- What missing non-epithelial compartments most limit interpretation in this platform?
+- How far can convexity priors be pushed before they start erasing real biologic protrusions instead of just rejecting overlap artifacts?
+- Can the one-click initialization be expanded into semi-automated multi-organoid segmentation for entire wells?
+- What parameter-setting strategy would make the method easiest to port across microscopes and organoid types?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

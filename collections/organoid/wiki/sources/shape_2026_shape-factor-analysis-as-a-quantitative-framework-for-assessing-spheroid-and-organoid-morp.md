@@ -8,8 +8,7 @@ article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC13060997/
 published_date: 2026-03-12
 organ: organoid-system
 protocol_focus: shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness
@@ -18,56 +17,60 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.pdf](../../raw/sources/shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC13060997/](https://pmc.ncbi.nlm.nih.gov/articles/PMC13060997/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: organoid system
-- Protocol focus: shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness
+- Status: deep ingested 2026-04-22
+- Organ focus: cross-system morphology analysis spanning breast-cancer spheroids, reproductive-tract organoids, and low-resolution screening images
+- Protocol focus: generate FIJI ROIs, quantify standard and custom shape descriptors, and add MATLAB-based radial length metrics to classify invasion and irregular morphology
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: stepwise derivation and maturation protocol
-- Aim: shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a stepwise derivation and maturation protocol for shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness.
-- Its main distinctive contribution in this corpus is that it establishes a workflow for shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness.
-- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
-- Paper framing: Morphological changes of spheroids and organoids are widely used as in vitro indicators 16 of healthy and diseased tissue functions; however, quantitative methods to classify 17 spheroid and organoid morphology are limited.
+- Starting material: digital phantoms, breast cancer spheroids, endometrial and oviductal organoids, and collagen-embedded coculture spheroids collected by bright-field, confocal, or optical coherence microscopy
+- Protocol stages:
+  - generate or segment ROIs in FIJI from low-resolution bright-field images, confocal projections, OCT-derived images, or histologic sections
+  - quantify standard FIJI descriptors such as circularity, solidity, roundness, and aspect ratio, and add convexity through a custom FIJI macro
+  - import FIJI ROIs into a custom MATLAB workflow to compute radial-length-based metrics including standard deviation of radial lengths and average radial length crossings
+  - compare the different metrics on digital phantoms and experimental models to identify which descriptors best capture invasion, protrusions, folds, or elongation
+- Key validation: circularity and convexity best captured irregular or invasive protrusive morphologies, roundness mainly reported elongation, and radial length analysis added sensitivity to collective radial invasion that standard shape factors often miss
+- Distinct protocol emphasis: this is a morphology-phenotyping framework rather than a segmentation paper, and its central message is that organoid shape readouts must be chosen by biologic question rather than by convenience
 
 ## Key findings
 
-- Defines a workflow centered on shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness.
-- Its distinctive focus in practice is the way it establishes a workflow for shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness.
-- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
+- Argues convincingly that no single descriptor is enough: circularity and convexity report protrusions or folds, roundness reports elongation, and radial-length analysis is best for collective radial invasion.
+- Keeps the workflow accessible by building on FIJI plus MATLAB rather than requiring specialized machine-learning infrastructure.
+- Makes morphology more comparable across imaging modalities and experimental systems, which is valuable for screening and phenotypic profiling.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Useful as a starting-point protocol for building this organ system from stem cells.
-- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+- One of the strongest cross-platform quantification papers in the collection because it translates visual organoid phenotypes into interpretable descriptor choices.
+- Extends the engineering branch beyond segmentation into the harder question of what morphology metrics actually mean biologically.
+- Useful as a synthesis anchor for imaging papers that produce masks or contours but do not by themselves explain which summary metrics matter.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
-- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+- The workflow still depends on upstream ROI quality, and some use cases rely on manual tracing or thresholding rather than fully automated segmentation.
+- Radial-length analysis is tuned for collective radial invasion and is less suitable for single-cell-dominant invasion or strongly non-spheroidal systems.
+- Descriptor interpretation remains context dependent; a decrease in circularity or convexity can reflect biologically different processes in different models.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the baseline derivation coverage around shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness.
-- This paper broadens the collection's coverage of organoid system organoid work.
-- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+- Strengthens the engineering-imaging branch with a practical framework for turning segmented organoid outlines into screening-relevant phenotype scores.
+- Useful when the problem is not obtaining an image, but deciding which morphology measurement actually corresponds to invasion, roughness, or elongation.
+- Pairs naturally with OCT and segmentation papers that generate masks but need a principled downstream readout.
 
 ## Related concepts
 
-- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
+- [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
+
+## Related sources
+
+- [A Convexity-Preserving Level-Set Method for the Segmentation of Tumor Organoids](x_2024_a-convexity-preserving-level-set-method-for-the-segmentation-of-tumor-organoids.md) - a precise ROI-generation method that could feed directly into descriptor analysis like the one used here.
+- [Segmentation and Multi-Timepoint Tracking of 3D Cancer Organoids from Optical Coherence Tomography Images Using Deep Neural Networks](f_2024_segmentation-and-multi-timepoint-tracking-of-3d-cancer-organoids-from-optical-coherence-to.md) - a longitudinal OCT pipeline whose masks and time series become much more informative when paired with better morphology descriptors.
+- [Automated detection and growth tracking of 3D bio-printed organoid clusters using optical coherence tomography with deep convolutional neural networks](d_2023_automated-detection-and-growth-tracking-of-3d-bio-printed-organoid-clusters-using-optical.md) - another readout-layer paper that could use shape-factor analysis to summarize the structures it segments and tracks.
 
 ## Open questions
 
-- Which steps in this organoid system workflow drive the most variability across lines or batches?
-- What extra maturation or assay layer is usually needed after the baseline derivation works?
+- Which combinations of descriptors are most robust across organoid types and imaging modalities?
+- How much manual ROI curation can be removed before descriptor quality starts to drift?
+- Can radial-length metrics be adapted for fused organoids or single-cell invasion without losing interpretability?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
