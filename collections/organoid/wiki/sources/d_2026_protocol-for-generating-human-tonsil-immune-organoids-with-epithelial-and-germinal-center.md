@@ -6,10 +6,9 @@ added: 2026-04-21T20:30:37+09:00
 raw_source: raw/sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12936736/
 published_date: 2026-02-19
-organ: organoid-system
+organ: tonsil immune
 protocol_focus: generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture.
@@ -18,57 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.pdf](../../raw/sources/d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12936736/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12936736/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: organoid system
-- Protocol focus: generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture
+- Status: deep ingested 2026-04-22
+- Organ focus: fresh human tonsil-derived epithelial-immune organoids that preserve both mucosal and germinal-center-like compartments
+- Protocol focus: low-Matrigel transwell reconstruction of tonsil immune organoids from dissociated donor tissue with cytokine-supported maturation
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: stepwise derivation and maturation protocol
-- Aim: generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a stepwise derivation and maturation protocol for generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture.
-- Its main distinctive contribution in this corpus is that it tonsil immune organoids traditionally include either epithelial layers or immune compartments, failing to recapitulate the integrated physiological microenvironment of human tonsils.
-- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
-- Paper framing: Tonsil immune organoids traditionally include either epithelial layers or immune compartments, failing to recapitulate the integrated physiological microenvironment of human tonsils.
+- Starting material: freshly obtained human tonsil tissue dissociated into mixed epithelial and immune cell populations
+- Protocol stages:
+  - preserve tonsil tissue cold immediately after collection and process it as quickly as possible, ideally within 4 hours and no later than 48 hours
+  - generate a dissociated cell suspension, check viability, and discard preparations below the paper's practical quality floor of about 70%, with greater than 80% preferred before seeding
+  - seed cells into a 5% Matrigel transwell configuration at densities scaled to well format, then culture in L-WRN conditioned medium with cytokines such as IL-21 and BAFF
+  - optionally introduce antigen at day 0 to accelerate germinal-center-like maturation and downstream immune activation
+  - mature the organoids over about 15 to 20 days before evaluating epithelial structure, immune organization, and functional response
+- Key validation: the paper reports greater than 85% establishment success across donors and shows epithelial layers together with germinal-center-like immune organization in a format usable for immune-function assays
+- Distinct protocol emphasis: the low-Matrigel transwell setup is designed to preserve immune-cell migration and nutrient exchange, making this a compartment-integration protocol rather than a simple epithelial organoid culture
 
 ## Key findings
 
-- Defines a workflow centered on generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture.
-- Its distinctive focus in practice is the way it tonsil immune organoids traditionally include either epithelial layers or immune compartments, failing to recapitulate the integrated physiological microenvironment of human tonsils.
-- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
+- Shows that epithelial and adaptive-immune organization can be retained together in one organoid system, rather than forcing users to choose between epithelial-only culture and later immune add-on experiments.
+- Makes donor handling and cell viability the dominant operational bottleneck, especially for fragile B-cell populations.
+- Explains the central tradeoff of the platform: 5% Matrigel improves exchange and migration but produces a mechanically softer system that can be harder to handle.
+- Positions antigen addition at day 0 as a practical way to accelerate maturation when the goal is vaccine, adjuvant, or antibody-discovery-style assays.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Useful as a starting-point protocol for building this organ system from stem cells.
-- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+- One of the strongest immune-bearing mucosal organoid protocols in the collection because the immune architecture is intrinsic to the model rather than appended later.
+- Extends the corpus beyond developmental multilineage complexity into adaptive-immune organization and lymphoid-like microenvironment reconstruction.
+- Gives the collection a rare organoid system aimed directly at antigen response, germinal-center biology, and epithelial-immune crosstalk.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
-- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+- Fresh tissue logistics are central to success, so this protocol is much harder to reproduce when sample access is delayed or donor quality varies.
+- Small organoids can be lost or damaged during cryosectioning, and the paper explicitly suggests whole-mount staining as an alternative in some cases.
+- The soft low-Matrigel format improves biological exchange but reduces structural rigidity.
+- Donor-to-donor immune composition is likely to change assay output even when morphology looks acceptable.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the baseline derivation coverage around generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture.
-- This paper broadens the collection's coverage of organoid system organoid work.
-- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+- Strengthens the multi-lineage and coculture-facing parts of the corpus with a model where immune structure is built in from the beginning.
+- Useful when the biological question depends on epithelial-immune crosstalk, B-cell activation, or germinal-center-like organization rather than on epithelial growth alone.
+- Serves as a useful contrast to papers that add immune cells to pre-existing organoids after the fact.
 
 ## Related concepts
 
-- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
+- [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
+
+## Related sources
+
+- [Protocol for generating liver organoids containing Kupffer cells using human iPSCs](y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md) - another immune-bearing organoid, but one that integrates a resident myeloid lineage during developmental assembly rather than from fresh lymphoid tissue.
+- [Protocol for the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation](jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.md) - a cleaner defined immune-coculture comparator where the immune partner is added experimentally rather than co-derived from donor tissue.
+- [Tumor organoid-T-cell coculture systems](cattaneo_2019_tumor_organoid-t-cell_coculture_systems.md) - a broader organoid-immune interaction reference point that helps frame how unusual it is to have a built-in lymphoid microenvironment.
 
 ## Open questions
 
-- Which steps in this organoid system workflow drive the most variability across lines or batches?
-- What extra maturation or assay layer is usually needed after the baseline derivation works?
+- How stable is the germinal-center-like architecture over longer culture windows beyond the initial 15 to 20 day assay period?
+- Which donor features most strongly determine whether the platform becomes screening-ready versus only qualitatively informative?
+- For translational work, when is this integrated tonsil model superior to simpler epithelial organoids plus later immune coculture?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

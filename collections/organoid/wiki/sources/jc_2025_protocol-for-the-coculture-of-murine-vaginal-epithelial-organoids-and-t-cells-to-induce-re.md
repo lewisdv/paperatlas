@@ -6,10 +6,9 @@ added: 2026-04-21T20:33:10+09:00
 raw_source: raw/sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12410536/
 published_date: 2025-08-29
-organ: organoid-system
+organ: vaginal epithelium
 protocol_focus: the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation.
@@ -18,57 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.pdf](../../raw/sources/jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12410536/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12410536/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: organoid system
-- Protocol focus: the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation
+- Status: deep ingested 2026-04-22
+- Organ focus: murine vaginal epithelial organoids used as a tissue-specific immune-instruction platform
+- Protocol focus: staged activation of naive CD8 T cells followed by peptide-loaded epithelial organoid coculture to induce TRM-like differentiation
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: functional assay extension layered onto organoid culture
-- Aim: the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a functional assay extension layered onto organoid culture for the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation.
-- Its main distinctive contribution in this corpus is that it inducing robust resident memory T cell (TRM) establishment in mucosal tissues could enhance immunotherapy and vaccine efficacy.
-- Within this collection, it belongs to the assay-extension branch of organoid protocol work.
-- Paper framing: Inducing robust resident memory T cell (TRM) establishment in mucosal tissues could enhance immunotherapy and vaccine efficacy.
+- Starting material: murine vaginal epithelial organoids plus naive CD8 T cells isolated from antigen-specific mouse models such as P14, OT-I, or gBT-I
+- Protocol stages:
+  - isolate and enrich naive CD8 T cells, then activate them on antibody-coated plates and confirm appropriate early cluster formation after about 48 hours
+  - rest the activated cells with IL-2 support so that they enter coculture in a controlled post-activation state
+  - prepare vaginal epithelial organoids 6 to 9 days after passage, dissociate them to single cells, and load them with antigenic peptide before co-embedding
+  - establish cocultures 4 to 5 days after the start of T-cell activation, using defined epithelial-to-T-cell ratios in BME droplets for 96-well or 24-well formats
+  - remove TGF-beta inhibitors such as SB431542 and A83-01 from the coculture phase, restrict Y-27632 to the first 4 days, change medium every 2 days, and analyze TRM-like phenotypes at days 7, 10, or 12
+- Key validation: around day 10 the protocol recovers roughly 500 to 2,500 T cells per 96-well and reports 7% to 40% CD69-positive CD103-positive TRM-like cells together with PD-1 upregulation and CD62L loss
+- Distinct protocol emphasis: the important innovation is not organoid derivation itself but turning epithelial organoids into a controlled instructive niche for resident-memory T-cell differentiation
 
 ## Key findings
 
-- Defines a workflow centered on the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation.
-- Its distinctive focus in practice is the way it inducing robust resident memory T cell (TRM) establishment in mucosal tissues could enhance immunotherapy and vaccine efficacy.
-- Demonstrates that experimental value often comes from the assay layer added on top of an existing organoid rather than from derivation alone.
+- Demonstrates that epithelial organoids can actively shape immune fate rather than serving only as passive target tissue.
+- Makes T-cell preparation quality just as important as organoid quality, with activation state strongly affecting downstream TRM-like differentiation.
+- Identifies media composition as a mechanistically important variable: TGF-beta inhibitors that may help maintain some organoid cultures can directly interfere with the TRM program being measured.
+- Provides concrete plate-format recipes and recovery expectations, which makes this more operational than many higher-level organoid-immune coculture papers.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Moves organoids beyond derivation into a biologically interpretable assay context.
-- Clarifies how to operationalize exposure, coculture, or host interaction instead of leaving it as an ad hoc extension.
+- One of the sharpest examples in the collection of a defined organoid assay layer where the biological readout depends on a specific epithelial-immune interaction rather than on gross organoid growth.
+- Extends the coculture branch beyond tumor-killing or generic immune exposure into tissue-resident memory programming in a mucosal setting.
+- Helps the collection answer a recurring practical question: when does a baseline organoid become a meaningful immunology model instead of just a 3D epithelial substrate?
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Best treated as an extension protocol, not a replacement for a stable baseline organoid pipeline.
-- Assay outcomes can be dominated by the quality, polarity, or maturity of the starting organoid culture.
+- This protocol depends on an already healthy epithelial organoid system and should be treated as an assay layer, not as a substitute for a stable derivation workflow.
+- If an organoid line requires persistent TGF-beta inhibition, users may need to coculture pre-formed organoids rather than dissociated epithelial cells.
+- Some T-cell loss from the BME droplet is expected, so low recovery does not always mean full assay failure.
+- Phenotype strength depends on both organoid condition and the quality of the initial T-cell activation step.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the assay-layer coverage around the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation.
-- This paper broadens the collection's coverage of organoid system organoid work.
-- It represents the second-wave move from making organoids to actually using them in a biologically specific experiment.
+- Strengthens the functional-assay and coculture branch of the collection with a particularly clean epithelial-immune example.
+- Useful when the question is how to test whether a tissue organoid can instruct immune differentiation rather than merely survive immune exposure.
+- Gives the corpus a reproductive-mucosal counterpart to the tumor and repair coculture systems already present.
 
 ## Related concepts
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related sources
+
+- [Tumor organoid-T-cell coculture systems](cattaneo_2019_tumor_organoid-t-cell_coculture_systems.md) - a broader organoid-immune interaction reference that is less tissue-specific and less focused on TRM instruction.
+- [Protocol for generating human tonsil immune organoids with epithelial and germinal center layers using low-Matrigel culture](d_2026_protocol-for-generating-human-tonsil-immune-organoids-with-epithelial-and-germinal-center.md) - an immune-rich comparator where the immune compartment is built into the organoid from the start.
+- [Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal cells and epithelial organoids](kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md) - another example of turning organoids into a biologically specific interaction assay by adding a defined partner cell type.
+
 ## Open questions
 
-- How much of the observed phenotype comes from the added assay layer versus the baseline organoid state?
-- What maturity or polarity checks should be mandatory before this assay is trusted?
+- Which epithelial-state features most strongly determine whether TRM-like differentiation succeeds, fails, or drifts toward unrelated T-cell phenotypes?
+- How transferable is the assay logic to other mucosal organoid systems with different media dependencies?
+- When does peptide-loaded defined coculture answer the question well enough, and when is a more native multicellular mucosal system required?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts

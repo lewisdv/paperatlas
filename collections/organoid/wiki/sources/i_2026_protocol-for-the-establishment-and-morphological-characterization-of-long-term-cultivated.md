@@ -6,10 +6,9 @@ added: 2026-04-21T20:30:45+09:00
 raw_source: raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf
 article_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12819030/
 published_date: 2026-01-09
-organ: organoid-system
+organ: brain
 protocol_focus: the establishment and morphological characterization of long-term cultivated murine cerebral organoids
-ingest_method: generic-auto
-ingested: 2026-04-21
+deep_ingested: 2026-04-22
 ---
 
 # Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
@@ -18,58 +17,64 @@ ingested: 2026-04-21
 
 - PDF: [raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf](../../raw/sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.pdf)
 - Article: [https://pmc.ncbi.nlm.nih.gov/articles/PMC12819030/](https://pmc.ncbi.nlm.nih.gov/articles/PMC12819030/)
-- Status: ingested on 2026-04-21
-- Ingest method: generic auto-ingest from metadata, abstract text, and raw-PDF scope extraction
-- Organ focus: organoid system
-- Protocol focus: the establishment and morphological characterization of long-term cultivated murine cerebral organoids
+- Status: deep ingested 2026-04-22
+- Organ focus: murine cerebral organoids derived from embryonic stem cells and carried into a longer-term cortical-like maturation window
+- Protocol focus: B27-guided murine cerebral organoid generation, Matrigel embedding, orbital-shaker culture, and morphology-first characterization
 
 ## Study design
 
-- Starting material: pre-established organoid cultures or matched source tissue
-- Protocol type: stepwise derivation and maturation protocol
-- Aim: the establishment and morphological characterization of long-term cultivated murine cerebral organoids
-- Core readouts: organoid morphology, lineage markers, and downstream functional assays
-
-## Summary
-
-- This paper is best understood as a stepwise derivation and maturation protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
-- Its main distinctive contribution in this corpus is that it murine cerebral organoids provide a rapid and reproducible in vitro system that recapitulates key aspects of neurogenesis.
-- Within this collection, it belongs to the baseline derivation branch of organoid protocol work.
-- Paper framing: Murine cerebral organoids provide a rapid and reproducible in vitro system that recapitulates key aspects of neurogenesis.
+- Starting material: E14.5 mouse embryonic stem cells, specifically the E14tg2a ESC line used to build cerebral organoids from scratch
+- Protocol stages:
+  - initiate embryoid-body formation from ESCs and confirm compact aggregate formation within the first 24 hours
+  - embed the early aggregates in Matrigel and transfer them to cortical maturation medium with B27 at day 5
+  - move cultures to orbital-shaker conditions from day 10 onward to support continued growth and tissue organization
+  - characterize organoids between days 15 and 30 for rosette formation, cortical-like architecture, and lineage progression using markers such as PAX6, SOX2, TBR1, CTIP2, SATB2, NeuN, GFAP, OLIG2, and Reelin
+  - extend cultures into the day-40 to day-60 window to document long-term morphology, viability loss, and necrotic-core emergence
+- Key validation: the protocol reports organized neural rosettes and cortical-like zones together with progressive neuronal and glial differentiation, but also shows that viability falls sharply after organoids exceed roughly 2 mm and pass the day-40 to day-50 range
+- Distinct protocol emphasis: this is a morphology-heavy murine baseline protocol whose value comes from reproducible histology, staging, and troubleshooting rather than from maximal human-like maturity or circuit assays
 
 ## Key findings
 
-- Defines a workflow centered on the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
-- Its distinctive focus in practice is the way it murine cerebral organoids provide a rapid and reproducible in vitro system that recapitulates key aspects of neurogenesis.
-- Serves as a baseline generation protocol that other assay, maturation, or perturbation papers can build on.
+- Establishes a straightforward murine cerebral organoid workflow that stays useful well beyond the earliest neuroepithelial stage and makes later morphology easier to benchmark.
+- Makes the main failure mode explicit: central necrosis and greater than 50% non-viability become common by days 55 to 60, so the paper effectively argues that about 40 days is the safer standardized window for comparisons.
+- Gives unusually practical troubleshooting around embryoid-body quality, Matrigel handling, seeding density, and rosette preservation, which is often the information missing from higher-level brain organoid papers.
+- Frames murine organoids as a rapid and reproducible system for neurogenesis-focused questions rather than as a substitute for the most human-faithful cortical atlas models.
 
-## Strengths
+## Distinctive contribution in this corpus
 
-- Useful as a starting-point protocol for building this organ system from stem cells.
-- Makes lineage commitments and media transitions explicit enough to anchor comparison across later protocols.
+- One of the clearest low-complexity brain baselines in the collection for users who need morphology, histology, and timing guidance before moving into expensive human-brain workflows.
+- Strengthens the corpus on the reproducibility side by documenting where apparently successful long-term cultures start to fail structurally.
+- Complements the collection's human cerebral organoid papers by showing how a murine system can be used to study neurogenesis and staging questions with faster iteration.
 
 ## Limitations and caveats
 
-- This page was generated from article metadata, abstract text, and raw-PDF scope extraction; it has not yet had a manual deep-ingest pass.
-- Still likely to depend on stem-cell line quality, timing precision, and local optimization.
-- Baseline derivation protocols often need additional maturation or assay layers before they answer higher-order biological questions.
+- This is a mouse ESC protocol, so it is not a direct proxy for human cortical diversity or human developmental timing.
+- The long-term label should be interpreted carefully because the paper itself shows substantial necrosis and declining viability once cultures become large and old.
+- Most validation is morphological and immunostaining-based; the protocol is much less informative for electrophysiology, network behavior, or transcriptomic fidelity than later human-brain papers.
+- Matrigel lot effects, aggregate heterogeneity, and manual handling remain important sources of variability.
 
-## Relevance to this corpus
+## Relevance to corpus
 
-- Specific role in this corpus: Extends the corpus with organoid system work and strengthens the baseline derivation coverage around the establishment and morphological characterization of long-term cultivated murine cerebral organoids.
-- This paper broadens the collection's coverage of organoid system organoid work.
-- It is most valuable as a baseline protocol to compare against later assay, maturation, or refinement papers.
+- Strengthens the brain-patterning and brain-fidelity branches of the collection with a pragmatic murine comparator.
+- Useful when the question is how to establish a reproducible neural organoid workflow for morphology-first studies before layering on higher-order assays.
+- Helps interpret why some later long-term brain protocols emphasize perfusion, transplantation, or careful maturity benchmarking once simple static culture starts to break down.
 
 ## Related concepts
 
-- [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 
+## Related sources
+
+- [Generation of cerebral organoids from human pluripotent stem cells](lancaster_2014_generation_of_cerebral_organoids_from.md) - the canonical human cerebral-organoid baseline that highlights how this paper trades human fidelity for murine speed and practicality.
+- [Generation and long-term culture of advanced cerebral organoids for studying later stages of neural development](giandomenico_2021_generation_and_long-term_culture_of.md) - a human long-term culture comparator with a stronger emphasis on later-stage maturation.
+- ["Reliability of human cortical organoid generation"](yoon_2019_reliability_of_human_cortical.md) - a better match for reproducibility and standardization questions in human cortical organoids.
+
 ## Open questions
 
-- Which steps in this organoid system workflow drive the most variability across lines or batches?
-- What extra maturation or assay layer is usually needed after the baseline derivation works?
+- How far can the viable culture window be extended with perfusion, size control, or metabolic support before the murine system changes character?
+- Which morphology readouts from this murine protocol actually predict transcriptional or functional maturity in later neural assays?
+- When is a murine cerebral organoid sufficient for the question, and when does the user need to switch to human region-specific models?
 
 <!-- opendataloader:begin -->
 ## Parsed Artifacts
