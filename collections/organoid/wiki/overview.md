@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 100 active organoid-related source pages. 55 are deep-ingested protocol pages, 45 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
+This collection currently contains 100 active organoid-related source pages. 61 are deep-ingested protocol pages, 39 are standard ingested pages, 0 remain queued, and 25 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -13,8 +13,8 @@ This collection currently contains 100 active organoid-related source pages. 55 
 
 ## Current source-page status
 
-- Deep ingested: 55
-- Standard ingested: 45
+- Deep ingested: 61
+- Standard ingested: 39
 - Queued: 0
 
 ## Pruned source-page status
@@ -27,8 +27,8 @@ This collection currently contains 100 active organoid-related source pages. 55 
 - organoid system: 13
 - colon intestine: 6
 - kidney: 5
-- liver: 5
-- tumor: 4
+- tumor: 5
+- liver: 4
 - lung: 3
 - midbrain: 3
 - pancreas: 3
@@ -40,5 +40,6 @@ This collection currently contains 100 active organoid-related source pages. 55 
 - Use the deep-ingested pages first when you need the most curated cross-paper framing.
 - Recent concept-linking pulled the newest standard ingests into the concept pages, so `wiki/concepts/` is now a better first stop before browsing refill-era source pages one by one.
 - A new manual deep-ingest pass promoted five refill-era papers into the curated tier, covering adult-organoid CRISPR engineering, South African intestinal PDO establishment, targeted viral delivery in midbrain organoids, orthogonal vascular programming, and Kupffer-integrated liver organoids.
+- A second manual deep-ingest pass promoted six additional concept-anchor pages into the curated tier, covering prostate lentiviral perturbation, intestinal organ-on-chip, endometrial stromal coculture, multimodal-specimen PDO generation, esophageal organoid-initiated cancer models, and intestinal MSC-mediated repair assays.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.
