@@ -11,6 +11,7 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - [Hendriks 2020](../sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.md)
 - [Dekkers 2021](../sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md)
 - [Broutier 2016](../sources/broutier_2016_culture_and_establishment_of_self-renewing.md)
+- [Tysoe 2019](../sources/tysoe_2019_isolation_and_propagation_of_primary.md)
 - [Protocol for transducing human primary epithelial prostate cells and patient-derived organoids with high efficiency](../sources/c_2024_protocol-for-transducing-human-primary-epithelial-prostate-cells-and-patient-derived-organ.md)
 - [Protocol for the establishment and characterization of South African patient-derived intestinal organoids](../sources/n_2025_protocol-for-the-establishment-and-characterization-of-south-african-patient-derived-intes.md)
 - [Protocol for generation and utilization of patient-derived organoids from multimodal specimen](../sources/s_2025_protocol-for-generation-and-utilization-of-patient-derived-organoids-from-multimodal-speci.md)
@@ -19,8 +20,9 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 ## Working synthesis
 
 - These protocols are strongest when donor context, tumor state, or long-term expandability matter more than recapitulating early embryogenesis.
-- The refill cohort broadens this branch from classic liver, prostate, and cancer organoids into intestinal, thymic, and specimen-logistics-heavy workflows, showing that tissue access and collection strategy are now part of platform design.
+- The refill cohort broadens this branch from classic liver, prostate, and cancer organoids into intestinal, thymic, biliary-reconstructive, and specimen-logistics-heavy workflows, showing that tissue access and collection strategy are now part of platform design.
 - High-efficiency transduction and multimodal specimen handling also show that adult or patient-derived organoids are often the most practical substrate for downstream perturbation once the baseline culture is stable.
+- Tysoe and the thymic TEC protocol further show that adult-platform logic can support either regenerative scaffold engineering or epithelial support-cell biology, not just donor-matched disease capture.
 - The main tradeoff is that these platforms usually preserve donor-specific or disease-specific context better than they capture whole-organ developmental architecture.
 
 ## Main tension

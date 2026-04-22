@@ -9,6 +9,8 @@ The newest protocols in this collection do not stop at making organoids. They in
 - [Hendriks 2020](../sources/hendriks_2020_establishment_of_human_fetal_hepatocyte.md)
 - [Dekkers 2021](../sources/dekkers_2021_long-term_culture_genetic_manipulation_and.md)
 - [Broutier 2016](../sources/broutier_2016_culture_and_establishment_of_self-renewing.md)
+- [Dekkers 2019](../sources/dekkers_2019_high-resolution_3d_imaging_of_fixed.md)
+- [Bakker 2022](../sources/bakker_2022_preparing_ductal_epithelial_organoids_for.md)
 - [Fitzgerald 2024](../sources/fitzgerald_2024_generation_of_semi-guided_cortical_organoids.md)
 - [Dardano 2025](../sources/dardano_2025_production_of_human_blood-generating_heart-forming.md)
 - [Meng 2025](../sources/meng_2025_crispr_screens_in_human_neural.md)
@@ -24,7 +26,7 @@ The newest protocols in this collection do not stop at making organoids. They in
 ## Working synthesis
 
 - Engineering layers make organoids much more useful for mechanism, screening, and lineage interrogation.
-- The newer refill sources widen this from pooled perturbation and imaging prep to isogenic CRISPR editing, high-efficiency transduction, organ-on-chip deployment, trophoblast screening, specimen-normalized PDO setup, and targeted viral microinjection.
+- The newer refill sources widen this from pooled perturbation and imaging prep to whole-mount clearing, MSI-ready sample handling, isogenic CRISPR editing, high-efficiency transduction, organ-on-chip deployment, trophoblast screening, specimen-normalized PDO setup, and targeted viral microinjection.
 - They also show that adult or patient-derived and region-specific organoids increasingly act as substrates for engineering rather than endpoints in themselves.
 - The practical bottleneck often shifts from differentiation itself to delivery, imaging quality, screen design, or readout normalization.
 
