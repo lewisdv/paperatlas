@@ -1547,3 +1547,9 @@
 - Created query page wiki/queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md.
 - Compared polarity inversion, standard microinjection, organ-on-chip, and BBB spheroids as distinct access-route choices rather than interchangeable technologies.
 - Used Co 2021, Puschhof 2021, IV 2024, Bergmann 2018, M 2025, and Homan 2019 to separate surface access, internal delivery, durable compartment control, and barrier triage.
+
+## [2026-04-23 15:54 KST] query saved | PDO readiness rubric for treatment-guidance screening
+
+- Created query page wiki/queries/20260423_1554_pdo-readiness-rubric-for-treatment-guidance-screening.md.
+- Turned multimodal specimen handling, line stability, bankability, thaw recovery, pathology or molecular concordance, and assay-endpoint design into one operational readiness rubric for translational PDO screening.
+- Used Driehuis 2020, S 2025 multimodal-specimen PDOs, N 2025 South African intestinal PDOs, J 2026 metastatic PDO kinome restoration, and L 2024 XIAP-sensitization validation to distinguish compact ex vivo screening readiness from cases that still require richer host-context escalation.
