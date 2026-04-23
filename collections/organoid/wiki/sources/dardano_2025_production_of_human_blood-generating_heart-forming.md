@@ -63,6 +63,11 @@ deep_ingested: 2026-04-08
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Heart-forming organoids](../entities/heart-forming-organoids.md)
+- [Whole-mount 3D clearing and imaging](../entities/whole-mount-3d-clearing-and-imaging.md)
+
 ## Open questions
 
 - Which engineering or readout step is most likely to fail before the biology is interpretable?

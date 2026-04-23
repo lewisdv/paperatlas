@@ -65,6 +65,11 @@ deep_ingested: 2026-04-22
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Reproductive mucosal epithelial organoids](../entities/reproductive-mucosal-epithelial-organoids.md)
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Related sources
 
 - [Protocol for the coculture of murine vaginal epithelial organoids and T cells to induce resident memory CD8 T cell differentiation](jc_2025_protocol-for-the-coculture-of-murine-vaginal-epithelial-organoids-and-t-cells-to-induce-re.md) - another reproductive-tissue coculture protocol, but with immune cells instead of stroma.

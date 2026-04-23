@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Distal lung organoids](../entities/distal-lung-organoids.md)
+
 ## Open questions
 
 - Which steps in this lung workflow drive the most variability across lines or batches?

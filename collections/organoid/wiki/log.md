@@ -1607,3 +1607,9 @@
 - Added 3 entity pages under wiki/entities/: nephron-patterning-kidney-organoids.md, whole-mount-3d-clearing-and-imaging.md, and morphology-segmentation-and-descriptor-analysis.md.
 - Threaded those entities into older kidney baseline sources for Morizane 2016, Takasato 2016, Xia 2014, and Vanslambrouck 2023, plus imaging-stack sources for Dekkers 2019, Bakker 2022, OCT tracking papers, convexity-preserving segmentation, and shape-factor analysis.
 - Updated the kidney differentiation and organoid engineering concept pages, plus wiki/index.md, wiki/overview.md, and collection checkpointing, so the entity layer now exposes 24 pages and better covers both kidney route choice and quantitative imaging workflows.
+
+## [2026-04-23 18:18 KST] entity pass | Reproductive, lung, and cardiac baseline shortcuts
+
+- Added 3 entity pages under wiki/entities/: reproductive-mucosal-epithelial-organoids.md, distal-lung-organoids.md, and heart-forming-organoids.md.
+- Threaded those entities into reproductive-tract sources for Gurumurthy 2022 and JA 2024, lung baselines for Miller 2019 and Matkovic Leko 2023, and cardiac baselines for Drakhlis 2021, Dardano 2025, and the retained heart macrophage assembloid paper.
+- Updated the adult-platform, functional-assay, and cardiac concept pages, plus wiki/index.md, wiki/overview.md, and collection checkpointing, so the entity layer now exposes 27 pages and gives thinner branches clearer browsing anchors.

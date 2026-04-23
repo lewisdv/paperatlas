@@ -24,8 +24,8 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 ## Entity-page status
 
-- Entity pages: 24
-- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, polarity inversion, microinjection, organ-on-chip, BBB spheroids, biobanking or freeze-thaw QC, stand-alone vascular organoids, ETV2-driven vascular induction, mesodermal progenitor mixing, stem-cell-derived islets, assembloids and regional fusion, single-cell atlas benchmarking, adult tissue-derived epithelial organoids, host-context transplantation and repair validation, nephron-patterning kidney organoids, whole-mount 3D clearing and imaging, morphology segmentation and descriptor analysis, OCT, and NLRP3 inflammasome
+- Entity pages: 27
+- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, polarity inversion, microinjection, organ-on-chip, BBB spheroids, biobanking or freeze-thaw QC, stand-alone vascular organoids, ETV2-driven vascular induction, mesodermal progenitor mixing, stem-cell-derived islets, assembloids and regional fusion, single-cell atlas benchmarking, adult tissue-derived epithelial organoids, host-context transplantation and repair validation, nephron-patterning kidney organoids, whole-mount 3D clearing and imaging, morphology segmentation and descriptor analysis, reproductive mucosal epithelial organoids, distal lung organoids, heart-forming organoids, OCT, and NLRP3 inflammasome
 
 ## Largest organ/system clusters
 
@@ -69,6 +69,7 @@ This collection currently contains 96 active organoid-related source pages. All 
 - A fifth entity pass now adds two brain-specific navigation anchors: assembloids and regional fusion, plus single-cell atlas benchmarking, and threads them into the long-running brain patterning and fidelity branches.
 - A sixth entity pass now adds two cross-cutting non-brain anchors as well: adult tissue-derived epithelial organoids and host-context transplantation or repair validation now connect older liver, biliary, placental, intestinal, and host-escalation papers that previously sat mostly at the concept layer.
 - A seventh entity pass now adds a kidney baseline anchor plus two imaging-stack anchors: nephron-patterning kidney organoids, whole-mount 3D clearing and imaging, and morphology segmentation and descriptor analysis now connect older kidney baselines and the readout-heavy imaging branch more directly.
+- An eighth entity pass now fills three lighter but still recurring branches: reproductive mucosal epithelial organoids, distal lung organoids, and heart-forming organoids now connect older reproductive-tract, respiratory, and cardiac baseline sources that previously depended mostly on concept-page navigation.
 - A first entity pass now captures repeated platforms and tools as dedicated pages, so the collection no longer relies only on source, concept, query, and synthesis layers.
 - A follow-up entity-threading pass now links those entity pages back into representative source notes and the project-design playbook, making the entity layer useful during normal browsing rather than only from the index.
 - A second entity pass now fills a more practical middle layer: donor-preserving PDO baselines, organ-on-chip access devices, calcium-imaging functional readouts, and host-circuit validation now have dedicated landing pages and are threaded into the brain and translational-screening queries.

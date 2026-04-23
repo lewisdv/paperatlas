@@ -127,6 +127,9 @@
 - [Nephron-patterning kidney organoids](entities/nephron-patterning-kidney-organoids.md) - kidney baseline platform family spanning nephron-progenitor, broad renal, ureteric-bud, and segment-biased routes.
 - [Whole-mount 3D clearing and imaging](entities/whole-mount-3d-clearing-and-imaging.md) - intact-architecture imaging workflow for volumetric organoid readouts.
 - [Morphology segmentation and descriptor analysis](entities/morphology-segmentation-and-descriptor-analysis.md) - analysis stack for masks, tracks, and interpretable organoid shape measurements.
+- [Reproductive mucosal epithelial organoids](entities/reproductive-mucosal-epithelial-organoids.md) - adult reproductive-tract epithelial platform branch for niche, infection, stromal, and immune-context questions.
+- [Distal lung organoids](entities/distal-lung-organoids.md) - respiratory baseline branch for developmental, ILD-like, and infection-facing lung questions.
+- [Heart-forming organoids](entities/heart-forming-organoids.md) - multicompartment developmental cardiac baseline for later hematoendothelial or immune-bearing extensions.
 - [Optical coherence tomography (OCT)](entities/optical-coherence-tomography-oct.md) - label-free 3D imaging modality for longitudinal organoid tracking and segmentation pipelines.
 - [NLRP3 inflammasome](entities/nlrp3-inflammasome.md) - inducible inflammatory assay system appearing in brain and heart multicellular organoid contexts.
 

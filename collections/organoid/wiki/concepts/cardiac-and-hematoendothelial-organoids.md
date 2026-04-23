@@ -26,3 +26,8 @@ The heart-oriented papers show a progression from early heart-forming organoids 
 
 - How much added value comes from hematoendothelial co-development for a given heart study?
 - Which readouts best justify the extra complexity of blood-generating cardiac models?
+
+## Related entities
+
+- [Heart-forming organoids](../entities/heart-forming-organoids.md)
+- [Whole-mount 3D clearing and imaging](../entities/whole-mount-3d-clearing-and-imaging.md)

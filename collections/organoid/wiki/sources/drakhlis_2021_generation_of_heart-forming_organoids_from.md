@@ -63,6 +63,10 @@ deep_ingested: 2026-04-08
 - [Cardiac and hematoendothelial organoids](../concepts/cardiac-and-hematoendothelial-organoids.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Heart-forming organoids](../entities/heart-forming-organoids.md)
+
 ## Open questions
 
 - Which extra lineage or compartment materially changes the answer to the biological question?

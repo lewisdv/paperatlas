@@ -65,6 +65,7 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
 - [Host circuit engagement](../entities/host-circuit-engagement.md)
 - [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)
+- [Reproductive mucosal epithelial organoids](../entities/reproductive-mucosal-epithelial-organoids.md)
 
 ## Related queries
 

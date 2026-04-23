@@ -61,6 +61,11 @@ deep_ingested: 2026-04-22
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Reproductive mucosal epithelial organoids](../entities/reproductive-mucosal-epithelial-organoids.md)
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Related sources
 
 - [Protocol for the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system](ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.md) - a reproductive-tract comparator that adds stromal support rather than focusing on epithelial niche divergence.

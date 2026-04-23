@@ -67,6 +67,7 @@ deep_ingested: 2026-04-22
 ## Related entities
 
 - [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)
+- [Heart-forming organoids](../entities/heart-forming-organoids.md)
 
 ## Related sources
 
