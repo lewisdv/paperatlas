@@ -135,7 +135,10 @@ Barrier biology나 infection assay를 설계할 때 비슷해 보이는 선택�
 
 ## Related entities
 
+- [Polarity inversion and apical access](../entities/polarity-inversion-and-apical-access.md)
+- [Microinjection and targeted internal delivery](../entities/microinjection-and-targeted-internal-delivery.md)
 - [Organ-on-chip](../entities/organ-on-chip.md)
+- [Blood-brain-barrier (BBB) spheroids](../entities/blood-brain-barrier-bbb-spheroids.md)
 
 ## Sources used
 

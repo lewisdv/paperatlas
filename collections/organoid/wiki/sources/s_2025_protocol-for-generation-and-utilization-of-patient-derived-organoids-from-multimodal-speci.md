@@ -66,6 +66,7 @@ deep_ingested: 2026-04-22
 
 ## Related entities
 
+- [Biobanking and freeze-thaw QC](../entities/biobanking-and-freeze-thaw-qc.md)
 - [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 
 ## Related sources

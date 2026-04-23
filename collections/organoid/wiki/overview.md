@@ -24,8 +24,8 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 ## Entity-page status
 
-- Entity pages: 9
-- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, organ-on-chip, OCT, and NLRP3 inflammasome
+- Entity pages: 13
+- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, polarity inversion, microinjection, organ-on-chip, BBB spheroids, biobanking or freeze-thaw QC, OCT, and NLRP3 inflammasome
 
 ## Largest organ/system clusters
 
@@ -64,6 +64,7 @@ This collection currently contains 96 active organoid-related source pages. All 
 - A new organ-specific screening-stack query now sharpens one of the collection's practical differences across systems: pancreas is maturity-first, intestine is access-first, BBB is barrier-readout-first, and lung is baseline-complexity-first.
 - A new vascularization-route query now separates five different moves that are often collapsed into one bucket: flow, TF-driven vascularization, mesodermal mixing, stand-alone vessel organoids, and host transplantation are now tied to different organs and different endpoint types.
 - A consolidation pass has now folded the newest April 23 decision queries back into the project-design playbook and the adult-platform, engineering-screening, functional-assay, gastrointestinal, and vascularization concept pages, so the concept layer again works as a first stop rather than only the saved-query list.
+- A third entity pass now adds a more operational layer for recurring access and workflow decisions: polarity inversion, targeted microinjection, BBB spheroids, and biobanking or freeze-thaw QC now have dedicated landing pages and are threaded into the relevant access and PDO-readiness branches.
 - A first entity pass now captures repeated platforms and tools as dedicated pages, so the collection no longer relies only on source, concept, query, and synthesis layers.
 - A follow-up entity-threading pass now links those entity pages back into representative source notes and the project-design playbook, making the entity layer useful during normal browsing rather than only from the index.
 - A second entity pass now fills a more practical middle layer: donor-preserving PDO baselines, organ-on-chip access devices, calcium-imaging functional readouts, and host-circuit validation now have dedicated landing pages and are threaded into the brain and translational-screening queries.

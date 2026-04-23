@@ -66,6 +66,10 @@ deep_ingested: 2026-04-22
 - [Brain subregion-specific organoid protocols](../concepts/brain-subregion-specific-organoid-protocols.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Microinjection and targeted internal delivery](../entities/microinjection-and-targeted-internal-delivery.md)
+
 ## Related sources
 
 - [A robust protocol for the generation of human midbrain organoids](zagare_2021_a_robust_protocol_for_the.md) - the baseline midbrain differentiation comparator in this collection.

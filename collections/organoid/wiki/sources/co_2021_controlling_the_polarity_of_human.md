@@ -64,6 +64,7 @@ deep_ingested: 2026-04-08
 
 ## Related entities
 
+- [Polarity inversion and apical access](../entities/polarity-inversion-and-apical-access.md)
 - [Organ-on-chip](../entities/organ-on-chip.md)
 
 ## Open questions

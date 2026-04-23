@@ -64,6 +64,7 @@ deep_ingested: 2026-04-22
 
 ## Related entities
 
+- [Blood-brain-barrier (BBB) spheroids](../entities/blood-brain-barrier-bbb-spheroids.md)
 - [Organ-on-chip](../entities/organ-on-chip.md)
 
 ## Related sources

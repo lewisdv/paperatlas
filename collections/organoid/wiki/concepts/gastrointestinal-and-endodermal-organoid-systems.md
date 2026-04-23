@@ -43,6 +43,11 @@ The endodermal side of the corpus spans both foundational derivation and later a
 - When is a baseline gut or gastric protocol enough, and when is polarity control or transplantation essential?
 - How far can endodermal protocols be pushed toward multi-organ connectivity without sacrificing robustness?
 
+## Related entities
+
+- [Polarity inversion and apical access](../entities/polarity-inversion-and-apical-access.md)
+- [Organ-on-chip](../entities/organ-on-chip.md)
+
 ## Related queries
 
 - [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](../queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md)

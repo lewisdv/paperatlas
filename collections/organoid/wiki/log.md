@@ -1577,3 +1577,9 @@
 - Updated the project-design playbook synthesis so the newest saved queries now appear as reusable rules for PDO readiness, donor-derived cancer escalation stops, organ-specific screening stacks, and vascularization-route choice.
 - Updated adult-platform, engineering-screening, functional-assay, gastrointestinal, and vascularization concept pages so the new decision rules are visible from the concept layer instead of only through query browsing.
 - Updated wiki/overview.md and collection checkpointing to reflect that the current next step has shifted from missing high-priority decision queries to consolidation, entity expansion, or deeper synthesis work.
+
+## [2026-04-23 16:40 KST] entity pass | Access-route and PDO-operations layer
+
+- Added 4 entity pages under wiki/entities/: polarity-inversion-and-apical-access.md, microinjection-and-targeted-internal-delivery.md, blood-brain-barrier-bbb-spheroids.md, and biobanking-and-freeze-thaw-qc.md.
+- Threaded those entities into the access-route and PDO-readiness query pages, into representative source pages for polarity control, microbial microinjection, BBB permeability, midbrain viral delivery, and multimodal-specimen PDO workflows, and into the adult-platform, engineering-screening, and gastrointestinal concept pages.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 13 pages and better covers recurring assay-access and translational-operations decisions.

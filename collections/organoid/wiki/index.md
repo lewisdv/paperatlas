@@ -111,7 +111,11 @@
 - [Calcium imaging readouts](entities/calcium-imaging-readouts.md) - dish-level neural activity readout that helps choose brain organoid branches for function-ready assays.
 - [Host circuit engagement](entities/host-circuit-engagement.md) - host-defined neural validation endpoint used when dish readouts no longer answer the question.
 - [MEA electrophysiology readouts](entities/mea-electrophysiology-readouts.md) - brain-organoid functional readout branch centered on dish-level network activity assays.
+- [Polarity inversion and apical access](entities/polarity-inversion-and-apical-access.md) - geometry-correction technique for opening the apical surface of epithelial organoids without a chip.
+- [Microinjection and targeted internal delivery](entities/microinjection-and-targeted-internal-delivery.md) - internal-delivery technique for placing viral, microbial, or tracer cargo into closed 3D organoid compartments.
 - [Organ-on-chip](entities/organ-on-chip.md) - device-layer platform for access, perfusion, compartment separation, and assay-ready epithelial geometry.
+- [Blood-brain-barrier (BBB) spheroids](entities/blood-brain-barrier-bbb-spheroids.md) - barrier-first assay platform for compound penetration or exclusion triage.
+- [Biobanking and freeze-thaw QC](entities/biobanking-and-freeze-thaw-qc.md) - workflow gate that turns donor-derived organoids into reusable translational screening assets.
 - [Optical coherence tomography (OCT)](entities/optical-coherence-tomography-oct.md) - label-free 3D imaging modality for longitudinal organoid tracking and segmentation pipelines.
 - [NLRP3 inflammasome](entities/nlrp3-inflammasome.md) - inducible inflammatory assay system appearing in brain and heart multicellular organoid contexts.
 

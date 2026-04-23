@@ -56,6 +56,8 @@ The newest protocols in this collection do not stop at making organoids. They in
 
 ## Related entities
 
+- [Microinjection and targeted internal delivery](../entities/microinjection-and-targeted-internal-delivery.md)
+- [Blood-brain-barrier (BBB) spheroids](../entities/blood-brain-barrier-bbb-spheroids.md)
 - [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
 - [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)

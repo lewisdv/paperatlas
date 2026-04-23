@@ -64,6 +64,7 @@ deep_ingested: 2026-04-08
 
 ## Related entities
 
+- [Microinjection and targeted internal delivery](../entities/microinjection-and-targeted-internal-delivery.md)
 - [Organ-on-chip](../entities/organ-on-chip.md)
 
 ## Open questions
