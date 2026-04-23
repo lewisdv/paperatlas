@@ -66,6 +66,11 @@ deep_ingested: 2026-04-09
 - [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Mesodermal progenitor cell mixing](../entities/mesodermal-progenitor-cell-mixing.md)
+- [Stand-alone vascular organoids](../entities/stand-alone-vascular-organoids.md)
+
 ## Related sources
 
 - [Wimmer 2019](wimmer_2019_generation_of_blood_vessel_organoids.md), [Cakir 2019](cakir_2019_engineering_of_human_brain.md), [Homan 2019](homan_2019_flow-enhanced_vascularization_and_maturation.md) — vascularization cluster.

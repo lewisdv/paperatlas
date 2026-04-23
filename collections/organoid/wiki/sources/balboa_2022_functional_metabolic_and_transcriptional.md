@@ -69,6 +69,10 @@ deep_ingested: 2026-04-09
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Stem-cell-derived islets (SC-islets)](../entities/stem-cell-derived-islets-sc-islets.md)
+
 ## Related sources
 
 - [Hogrebe 2021](hogrebe_2021_generation_of_insulin-producing_pancreatic.md) — complementary production-focused protocol (planar).

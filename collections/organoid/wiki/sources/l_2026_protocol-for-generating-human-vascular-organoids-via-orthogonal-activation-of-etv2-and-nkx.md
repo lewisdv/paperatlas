@@ -65,6 +65,11 @@ deep_ingested: 2026-04-22
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 - [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 
+## Related entities
+
+- [Stand-alone vascular organoids](../entities/stand-alone-vascular-organoids.md)
+- [ETV2-driven vascular induction](../entities/etv2-driven-vascular-induction.md)
+
 ## Related sources
 
 - [Generation of blood vessel organoids from human pluripotent stem cells](wimmer_2019_generation_of_blood_vessel_organoids.md) - the main self-organization-first vascular baseline in this corpus.

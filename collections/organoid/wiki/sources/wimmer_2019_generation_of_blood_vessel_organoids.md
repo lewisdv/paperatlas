@@ -65,6 +65,11 @@ deep_ingested: 2026-04-09
 - [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Stand-alone vascular organoids](../entities/stand-alone-vascular-organoids.md)
+- [ETV2-driven vascular induction](../entities/etv2-driven-vascular-induction.md)
+
 ## Related sources
 
 - [Cakir 2019](cakir_2019_engineering_of_human_brain.md) — applies similar logic inside cortical organoids via ETV2.

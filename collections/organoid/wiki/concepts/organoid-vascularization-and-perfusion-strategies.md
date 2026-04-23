@@ -34,6 +34,13 @@ This corpus now contains five distinct vascularization strategies: stand-alone b
 - When does transplantation still outperform purely in vitro vascularization or perfusion?
 - Can vascularization be standardized enough for screening workflows across multiple organ systems?
 
+## Related entities
+
+- [Stand-alone vascular organoids](../entities/stand-alone-vascular-organoids.md)
+- [ETV2-driven vascular induction](../entities/etv2-driven-vascular-induction.md)
+- [Mesodermal progenitor cell mixing](../entities/mesodermal-progenitor-cell-mixing.md)
+- [Organ-on-chip](../entities/organ-on-chip.md)
+
 ## Related queries
 
 - [언제 vascularization, perfusion, transplantation 중 무엇을 선택해야 하나](../queries/20260420_172029_vascularization-perfusion-vs-transplantation.md)

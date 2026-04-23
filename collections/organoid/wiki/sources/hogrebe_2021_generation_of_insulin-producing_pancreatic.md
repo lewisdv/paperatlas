@@ -69,6 +69,10 @@ deep_ingested: 2026-04-09
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related entities
+
+- [Stem-cell-derived islets (SC-islets)](../entities/stem-cell-derived-islets-sc-islets.md)
+
 ## Related sources
 
 - [Balboa 2022](balboa_2022_functional_metabolic_and_transcriptional.md) — detailed maturation benchmarking of SC-islets against primary.

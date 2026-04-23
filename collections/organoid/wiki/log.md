@@ -1583,3 +1583,9 @@
 - Added 4 entity pages under wiki/entities/: polarity-inversion-and-apical-access.md, microinjection-and-targeted-internal-delivery.md, blood-brain-barrier-bbb-spheroids.md, and biobanking-and-freeze-thaw-qc.md.
 - Threaded those entities into the access-route and PDO-readiness query pages, into representative source pages for polarity control, microbial microinjection, BBB permeability, midbrain viral delivery, and multimodal-specimen PDO workflows, and into the adult-platform, engineering-screening, and gastrointestinal concept pages.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 13 pages and better covers recurring assay-access and translational-operations decisions.
+
+## [2026-04-23 17:05 KST] entity pass | Canonical vascularization and pancreas-screening methods
+
+- Added 4 entity pages under wiki/entities/: stand-alone-vascular-organoids.md, etv2-driven-vascular-induction.md, mesodermal-progenitor-cell-mixing.md, and stem-cell-derived-islets-sc-islets.md.
+- Threaded those entities into the vascularization-route and organ-specific screening query pages, into canonical source pages for Wimmer 2019, Cakir 2019, Worsdorfer 2019, L 2026 vascular organoids, Hogrebe 2021, and Balboa 2022, and into the vascularization, gastrointestinal, and self-organization concept pages.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 17 pages and better covers older method anchors instead of only recent operational or translational branches.

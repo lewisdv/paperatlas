@@ -66,6 +66,11 @@ deep_ingested: 2026-04-09
 - [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [ETV2-driven vascular induction](../entities/etv2-driven-vascular-induction.md)
+- [Stand-alone vascular organoids](../entities/stand-alone-vascular-organoids.md)
+
 ## Related sources
 
 - [Wimmer 2019](wimmer_2019_generation_of_blood_vessel_organoids.md) — stand-alone vessel organoid protocol.

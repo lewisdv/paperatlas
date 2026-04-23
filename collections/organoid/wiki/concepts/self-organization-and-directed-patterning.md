@@ -39,3 +39,7 @@ This corpus repeatedly shows the main protocol design tradeoff in organoid work:
 
 - How much heterogeneity is acceptable for a given experimental question?
 - Which steps matter most for reducing line-to-line and batch variability without overspecifying the tissue?
+
+## Related entities
+
+- [Stem-cell-derived islets (SC-islets)](../entities/stem-cell-derived-islets-sc-islets.md)

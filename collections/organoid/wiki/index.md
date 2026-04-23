@@ -116,6 +116,10 @@
 - [Organ-on-chip](entities/organ-on-chip.md) - device-layer platform for access, perfusion, compartment separation, and assay-ready epithelial geometry.
 - [Blood-brain-barrier (BBB) spheroids](entities/blood-brain-barrier-bbb-spheroids.md) - barrier-first assay platform for compound penetration or exclusion triage.
 - [Biobanking and freeze-thaw QC](entities/biobanking-and-freeze-thaw-qc.md) - workflow gate that turns donor-derived organoids into reusable translational screening assets.
+- [Stand-alone vascular organoids](entities/stand-alone-vascular-organoids.md) - vessel-first baseline for defining the vascular branch itself.
+- [ETV2-driven vascular induction](entities/etv2-driven-vascular-induction.md) - transcription-factor route for integrated in-dish vascular support.
+- [Mesodermal progenitor cell mixing](entities/mesodermal-progenitor-cell-mixing.md) - modular multicompartment vascular-support assembly strategy.
+- [Stem-cell-derived islets (SC-islets)](entities/stem-cell-derived-islets-sc-islets.md) - pancreas screening baseline that depends on functional maturity, not markers alone.
 - [Optical coherence tomography (OCT)](entities/optical-coherence-tomography-oct.md) - label-free 3D imaging modality for longitudinal organoid tracking and segmentation pipelines.
 - [NLRP3 inflammasome](entities/nlrp3-inflammasome.md) - inducible inflammatory assay system appearing in brain and heart multicellular organoid contexts.
 

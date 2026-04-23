@@ -168,6 +168,9 @@ created: 2026-04-23T16:26:26+09:00
 ## Related entities
 
 - [Organ-on-chip](../entities/organ-on-chip.md)
+- [Stand-alone vascular organoids](../entities/stand-alone-vascular-organoids.md)
+- [ETV2-driven vascular induction](../entities/etv2-driven-vascular-induction.md)
+- [Mesodermal progenitor cell mixing](../entities/mesodermal-progenitor-cell-mixing.md)
 
 ## Sources used
 
