@@ -105,9 +105,13 @@
 
 ## Entities
 
+- [Patient-derived organoids (PDO)](entities/patient-derived-organoids-pdo.md) - donor-preserving baseline platform for translational screening, perturbation, and escalation decisions.
 - [Patient-derived organoid xenografts (PDO-X)](entities/patient-derived-organoid-xenograft-pdo-x.md) - host-escalation platform for donor-preserving cancer organoid workflows.
 - [CRISPR-Cas9 and next-generation CRISPR editing](entities/crispr-cas9-and-next-generation-crispr-editing.md) - editing and screening tool family spanning knockout, base editing, prime editing, and pooled perturbation.
+- [Calcium imaging readouts](entities/calcium-imaging-readouts.md) - dish-level neural activity readout that helps choose brain organoid branches for function-ready assays.
+- [Host circuit engagement](entities/host-circuit-engagement.md) - host-defined neural validation endpoint used when dish readouts no longer answer the question.
 - [MEA electrophysiology readouts](entities/mea-electrophysiology-readouts.md) - brain-organoid functional readout branch centered on dish-level network activity assays.
+- [Organ-on-chip](entities/organ-on-chip.md) - device-layer platform for access, perfusion, compartment separation, and assay-ready epithelial geometry.
 - [Optical coherence tomography (OCT)](entities/optical-coherence-tomography-oct.md) - label-free 3D imaging modality for longitudinal organoid tracking and segmentation pipelines.
 - [NLRP3 inflammasome](entities/nlrp3-inflammasome.md) - inducible inflammatory assay system appearing in brain and heart multicellular organoid contexts.
 

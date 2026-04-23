@@ -90,6 +90,12 @@ Brain organoid 프로젝트에서 readout이 다를 때, 어떤 프로토콜 또
 - 하나의 brain protocol이 모든 readout에서 최고라는 결론은 지원되지 않는다.
 - midbrain, hindbrain, cerebellum 등 posterior brain branch에 대해 Velasco- or Bhaduri-equivalent benchmark depth는 아직 부족하다.
 
+## Related entities
+
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+- [MEA electrophysiology readouts](../entities/mea-electrophysiology-readouts.md)
+- [Host circuit engagement](../entities/host-circuit-engagement.md)
+
 ## Sources used
 
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)

@@ -24,8 +24,8 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 ## Entity-page status
 
-- Entity pages: 5
-- First-pass coverage: PDO-X, CRISPR editing, MEA readouts, OCT, and NLRP3 inflammasome
+- Entity pages: 9
+- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, organ-on-chip, OCT, and NLRP3 inflammasome
 
 ## Largest organ/system clusters
 
@@ -60,5 +60,6 @@ This collection currently contains 96 active organoid-related source pages. All 
 - A new synthesis page now condenses the 2026-04-20 decision-query burst into one project-design playbook covering baseline choice, compensation priority, complexity control, organ-specific recovery, and disease-specific escalation.
 - A first entity pass now captures repeated platforms and tools as dedicated pages, so the collection no longer relies only on source, concept, query, and synthesis layers.
 - A follow-up entity-threading pass now links those entity pages back into representative source notes and the project-design playbook, making the entity layer useful during normal browsing rather than only from the index.
+- A second entity pass now fills a more practical middle layer: donor-preserving PDO baselines, organ-on-chip access devices, calcium-imaging functional readouts, and host-circuit validation now have dedicated landing pages and are threaded into the brain and translational-screening queries.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.

@@ -122,6 +122,11 @@ created: 2026-04-20T19:17:51+09:00
 - immune host models, stromal partial-support models 같은 중간 단계는 이 corpus에서 충분히 풍부하지 않다.
 - 질병별 ladder의 cost and throughput 비교도 정량화되어 있지 않다.
 
+## Related entities
+
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
+- [Host circuit engagement](../entities/host-circuit-engagement.md)
+
 ## Sources used
 
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)

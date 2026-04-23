@@ -1524,3 +1524,9 @@
 - Added `Related entities` sections to representative source pages across the PDO-X, CRISPR, MEA, OCT, and NLRP3 branches so entity pages are reachable during normal source browsing.
 - Updated the project-design playbook synthesis with an `Entity shortcuts` section so users can jump directly from design rules into repeated platforms, tools, readouts, and named systems.
 - Reflected this state in wiki/overview.md and collection checkpointing without changing active-source counts.
+
+## [2026-04-23 13:48 KST] entity pass | Baseline, access, and host-validation layer
+
+- Added 4 entity pages under wiki/entities/: patient-derived-organoids-pdo.md, organ-on-chip.md, calcium-imaging-readouts.md, and host-circuit-engagement.md.
+- Threaded those new entities into the adult-platform, engineering-screening, and functional-assay concept pages; into brain-readout, screening-stack, assay-recovery, disease-escalation, and translational-triage queries; and into representative source pages plus the project-design playbook.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 9 pages without changing active-source counts.
