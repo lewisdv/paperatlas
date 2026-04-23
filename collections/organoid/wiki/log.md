@@ -1559,3 +1559,9 @@
 - Created query page wiki/queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md.
 - Compared compact ex vivo validation, immune reconstruction, and PDO-X as three different escalation stops for donor-derived cancer work rather than one simple complexity ladder.
 - Used L 2024 XIAP-sensitization validation, Cattaneo 2019 tumor-T-cell coculture, W 2026 osteosarcoma immune reconstruction, J 2026 metastatic PDO kinome restoration, and Patient-derived 2026 MALAT1 PDO-X escalation to separate tumor-intrinsic response, defined immune-partner repair, and host-restored biology or metastasis claims.
+
+## [2026-04-23 16:20 KST] query saved | Organ-specific screening stacks across four systems
+
+- Created query page wiki/queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md.
+- Compared pancreas, intestine, BBB, and lung screening stacks by their first bottleneck rather than by a generic shared pipeline.
+- Used Hogrebe 2021 plus Balboa 2022 to frame pancreas as maturity-first, Co 2021 plus Puschhof 2021 plus IV 2024 to frame intestine as access-first, Bergmann 2018 to frame BBB as barrier-readout-first, and Matkovic Leko 2023 to frame lung as baseline-complexity-first.
