@@ -38,3 +38,9 @@ Brain-organoid protocols in this collection now split into broad cerebral self-o
 
 - Which brain questions require a specific subregion protocol rather than a broad cerebral organoid?
 - What is the best tradeoff between regional control, long-term survival, functional readout, and experimental throughput?
+
+## Related entities
+
+- [Assembloids and regional fusion](../entities/assembloids-and-regional-fusion.md)
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+- [Host circuit engagement](../entities/host-circuit-engagement.md)

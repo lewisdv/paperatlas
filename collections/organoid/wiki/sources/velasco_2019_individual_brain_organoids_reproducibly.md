@@ -63,6 +63,7 @@ deep_ingested: 2026-04-09
 ## Related entities
 
 - [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
 
 ## Related sources
 

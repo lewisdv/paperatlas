@@ -64,6 +64,11 @@ deep_ingested: 2026-04-22
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Assembloids and regional fusion](../entities/assembloids-and-regional-fusion.md)
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+
 ## Related sources
 
 - [Generation and assembly of human brain region-specific three-dimensional cultures](sloan_2018_generation_and_assembly_of_human.md) - the foundational regional-fusion reference that this paper operationalizes into a more assay-ready circuit workflow.

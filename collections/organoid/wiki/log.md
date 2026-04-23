@@ -1589,3 +1589,9 @@
 - Added 4 entity pages under wiki/entities/: stand-alone-vascular-organoids.md, etv2-driven-vascular-induction.md, mesodermal-progenitor-cell-mixing.md, and stem-cell-derived-islets-sc-islets.md.
 - Threaded those entities into the vascularization-route and organ-specific screening query pages, into canonical source pages for Wimmer 2019, Cakir 2019, Worsdorfer 2019, L 2026 vascular organoids, Hogrebe 2021, and Balboa 2022, and into the vascularization, gastrointestinal, and self-organization concept pages.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 17 pages and better covers older method anchors instead of only recent operational or translational branches.
+
+## [2026-04-23 17:24 KST] entity pass | Brain assembloids and atlas benchmarking
+
+- Added 2 entity pages under wiki/entities/: assembloids-and-regional-fusion.md and single-cell-atlas-benchmarking.md.
+- Threaded those entities into foundational and later brain sources for Sloan 2018, Miura 2022, Human 2026 neuromodulatory assembloids, Kanton 2019, He 2024, Bhaduri 2020, Velasco 2019, and Yoon 2019, and added related-entity sections to the brain patterning and brain fidelity concept pages.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 19 pages and gives the brain branch better shortcuts for multicompartment assembly and transcriptomic protocol comparison.

@@ -64,6 +64,10 @@ deep_ingested: 2026-04-09
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+
 ## Related sources
 
 - [Lancaster 2014](lancaster_2014_generation_of_cerebral_organoids_from.md) — protocol whose developmental trajectory this atlas maps.

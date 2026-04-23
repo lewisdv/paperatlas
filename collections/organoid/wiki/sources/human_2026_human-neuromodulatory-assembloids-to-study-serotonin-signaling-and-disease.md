@@ -65,6 +65,11 @@ deep_ingested: 2026-04-22
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 
+## Related entities
+
+- [Assembloids and regional fusion](../entities/assembloids-and-regional-fusion.md)
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+
 ## Related sources
 
 - [Engineering brain assembloids to interrogate human neural circuits](miura_2022_engineering_brain_assembloids_to_interrogate.md) - the clearest circuit-assembly comparator, with this paper adding transmitter-specific neuromodulation and disease use cases.

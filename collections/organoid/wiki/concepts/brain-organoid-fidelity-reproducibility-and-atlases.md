@@ -38,3 +38,9 @@ This corpus now separates benchmark questions that are easy to blur together in 
 - Which benchmark should drive protocol choice for a specific study: batch stability, primary-tissue similarity, temporal accuracy, or host-context function?
 - Which newer brain protocols actually reduce stress-linked divergence rather than simply improving reproducibility within the dish?
 - How should transcriptomic atlas scores be combined with electrophysiology, morphology, and transplantation readouts?
+
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+- [Host circuit engagement](../entities/host-circuit-engagement.md)

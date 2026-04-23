@@ -24,8 +24,8 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 ## Entity-page status
 
-- Entity pages: 17
-- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, polarity inversion, microinjection, organ-on-chip, BBB spheroids, biobanking or freeze-thaw QC, stand-alone vascular organoids, ETV2-driven vascular induction, mesodermal progenitor mixing, stem-cell-derived islets, OCT, and NLRP3 inflammasome
+- Entity pages: 19
+- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, polarity inversion, microinjection, organ-on-chip, BBB spheroids, biobanking or freeze-thaw QC, stand-alone vascular organoids, ETV2-driven vascular induction, mesodermal progenitor mixing, stem-cell-derived islets, assembloids and regional fusion, single-cell atlas benchmarking, OCT, and NLRP3 inflammasome
 
 ## Largest organ/system clusters
 
@@ -66,6 +66,7 @@ This collection currently contains 96 active organoid-related source pages. All 
 - A consolidation pass has now folded the newest April 23 decision queries back into the project-design playbook and the adult-platform, engineering-screening, functional-assay, gastrointestinal, and vascularization concept pages, so the concept layer again works as a first stop rather than only the saved-query list.
 - A third entity pass now adds a more operational layer for recurring access and workflow decisions: polarity inversion, targeted microinjection, BBB spheroids, and biobanking or freeze-thaw QC now have dedicated landing pages and are threaded into the relevant access and PDO-readiness branches.
 - A fourth entity pass now lifts older canonical method branches into the entity layer as well: stand-alone vascular organoids, ETV2-driven vascular induction, mesodermal progenitor cell mixing, and stem-cell-derived islets now have dedicated landing pages and are linked into the vascularization and pancreas-screening branches.
+- A fifth entity pass now adds two brain-specific navigation anchors: assembloids and regional fusion, plus single-cell atlas benchmarking, and threads them into the long-running brain patterning and fidelity branches.
 - A first entity pass now captures repeated platforms and tools as dedicated pages, so the collection no longer relies only on source, concept, query, and synthesis layers.
 - A follow-up entity-threading pass now links those entity pages back into representative source notes and the project-design playbook, making the entity layer useful during normal browsing rather than only from the index.
 - A second entity pass now fills a more practical middle layer: donor-preserving PDO baselines, organ-on-chip access devices, calcium-imaging functional readouts, and host-circuit validation now have dedicated landing pages and are threaded into the brain and translational-screening queries.
