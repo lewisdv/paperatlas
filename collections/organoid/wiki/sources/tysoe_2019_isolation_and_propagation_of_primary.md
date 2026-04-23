@@ -65,6 +65,10 @@ deep_ingested: 2026-04-22
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Related sources
 
 - [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](broutier_2016_culture_and_establishment_of_self-renewing.md) - an adult endoderm baseline that is less explicitly tied to reconstructive scaffold engineering.

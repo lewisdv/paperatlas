@@ -1595,3 +1595,9 @@
 - Added 2 entity pages under wiki/entities/: assembloids-and-regional-fusion.md and single-cell-atlas-benchmarking.md.
 - Threaded those entities into foundational and later brain sources for Sloan 2018, Miura 2022, Human 2026 neuromodulatory assembloids, Kanton 2019, He 2024, Bhaduri 2020, Velasco 2019, and Yoon 2019, and added related-entity sections to the brain patterning and brain fidelity concept pages.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 19 pages and gives the brain branch better shortcuts for multicompartment assembly and transcriptomic protocol comparison.
+
+## [2026-04-23 17:42 KST] entity pass | Adult epithelial baselines and host-context validation
+
+- Added 2 entity pages under wiki/entities/: adult-tissue-derived-epithelial-organoids.md and host-context-transplantation-and-repair-validation.md.
+- Threaded those entities into older adult-platform and host-escalation sources for Broutier 2016, Tysoe 2019, Sheridan 2020, the 2026 patient-liver platform, Watanabe 2022, Kelley 2024, MALAT1 PDO-X work, and metastatic PDO kinome restoration, and connected them to the adult-platform, functional-assay, and host-validation query pages.
+- Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 21 pages and better links mature epithelial platform work with cross-domain transplantation and repair logic.

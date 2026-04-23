@@ -53,10 +53,12 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 
 ## Related entities
 
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
 - [Biobanking and freeze-thaw QC](../entities/biobanking-and-freeze-thaw-qc.md)
 - [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
 - [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
 
 ## Related queries
 

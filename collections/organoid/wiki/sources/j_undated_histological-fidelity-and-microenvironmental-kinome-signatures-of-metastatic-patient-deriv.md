@@ -72,6 +72,7 @@ deep_ingested: 2026-04-22
 
 - [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
 
 ## Related sources
 

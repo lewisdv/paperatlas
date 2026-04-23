@@ -122,6 +122,8 @@
 - [Stem-cell-derived islets (SC-islets)](entities/stem-cell-derived-islets-sc-islets.md) - pancreas screening baseline that depends on functional maturity, not markers alone.
 - [Assembloids and regional fusion](entities/assembloids-and-regional-fusion.md) - modular multicompartment brain-platform strategy for interregional signaling and circuit questions.
 - [Single-cell atlas benchmarking](entities/single-cell-atlas-benchmarking.md) - transcriptomic comparison layer for fidelity, timing, and protocol-selection questions in brain organoids.
+- [Adult tissue-derived epithelial organoids](entities/adult-tissue-derived-epithelial-organoids.md) - donor-grounded mature epithelial platform branch outside hPSC developmental differentiation.
+- [Host-context transplantation and repair validation](entities/host-context-transplantation-and-repair-validation.md) - cross-domain validation move for repair, engraftment, host circuitry, and host-restored disease behavior.
 - [Optical coherence tomography (OCT)](entities/optical-coherence-tomography-oct.md) - label-free 3D imaging modality for longitudinal organoid tracking and segmentation pipelines.
 - [NLRP3 inflammasome](entities/nlrp3-inflammasome.md) - inducible inflammatory assay system appearing in brain and heart multicellular organoid contexts.
 

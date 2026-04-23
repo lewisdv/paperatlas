@@ -109,6 +109,11 @@ Animal로 가면 biology가 richer해지지만, [Kelley 2024](../sources/kelley_
 - humanized immune model 같은 중간 단계는 이 corpus에서 충분히 다뤄지지 않는다.
 - long-term transplantation이 in vitro maturity claim을 얼마나 대체할 수 있는지도 아직 불완전하다.
 
+## Related entities
+
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
+- [Host circuit engagement](../entities/host-circuit-engagement.md)
+
 ## Sources used
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)

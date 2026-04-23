@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
+
 ## Open questions
 
 - Which phenotypes remain robust after moving into an in vivo host context?

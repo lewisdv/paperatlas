@@ -63,6 +63,10 @@ deep_ingested: 2026-04-08
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Open questions
 
 - Which engineering or readout step is most likely to fail before the biology is interpretable?

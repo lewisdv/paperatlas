@@ -61,6 +61,11 @@ deep_ingested: 2026-04-22
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+- [Biobanking and freeze-thaw QC](../entities/biobanking-and-freeze-thaw-qc.md)
+
 ## Related sources
 
 - [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](broutier_2016_culture_and_establishment_of_self-renewing.md) - the adult liver baseline this paper adapts for real-world surgical biobanking.

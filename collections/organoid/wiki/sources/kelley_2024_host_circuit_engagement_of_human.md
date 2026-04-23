@@ -66,6 +66,7 @@ deep_ingested: 2026-04-08
 ## Related entities
 
 - [Host circuit engagement](../entities/host-circuit-engagement.md)
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
 
 ## Open questions
 

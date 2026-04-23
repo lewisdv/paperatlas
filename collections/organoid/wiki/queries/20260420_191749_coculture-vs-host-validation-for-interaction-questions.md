@@ -106,6 +106,11 @@ Interaction biology를 보려는 organoid 프로젝트에서는 coculture를 붙
 - coculture와 host validation을 같은 biological question에 정면 비교한 head-to-head evidence도 없다.
 - stromal-only or partial host mimic branch의 일반 규칙은 아직 빈약하다.
 
+## Related entities
+
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
+- [Host circuit engagement](../entities/host-circuit-engagement.md)
+
 ## Sources used
 
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)

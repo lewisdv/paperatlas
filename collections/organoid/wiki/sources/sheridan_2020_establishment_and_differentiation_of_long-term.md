@@ -61,6 +61,10 @@ deep_ingested: 2026-04-22
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Related sources
 
 - [Protocol for the derivation and culture of murine trophoblast organoids for CRISPR-Cas9 screening](q_2024_protocol-for-the-derivation-and-culture-of-murine-trophoblast-organoids-for-crispr-cas9-sc.md) - a trophoblast comparator that pushes the platform toward screening and perturbation rather than placental architecture.
