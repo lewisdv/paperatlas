@@ -63,6 +63,10 @@ deep_ingested: 2026-04-08
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Host circuit engagement](../entities/host-circuit-engagement.md)
+
 ## Open questions
 
 - Which phenotypes remain robust after moving into an in vivo host context?

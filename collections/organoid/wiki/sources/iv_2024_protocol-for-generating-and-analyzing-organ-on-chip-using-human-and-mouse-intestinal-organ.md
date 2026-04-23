@@ -65,6 +65,10 @@ deep_ingested: 2026-04-22
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related entities
+
+- [Organ-on-chip](../entities/organ-on-chip.md)
+
 ## Related sources
 
 - [Controlling the polarity of human gastrointestinal organoids to investigate epithelial biology and infectious diseases](co_2021_controlling_the_polarity_of_human.md) - another route to luminal accessibility, but through polarity inversion rather than chip engineering.

@@ -65,6 +65,7 @@ deep_ingested: 2026-04-08
 
 ## Related entities
 
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
 - [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
 

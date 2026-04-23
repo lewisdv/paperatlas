@@ -70,6 +70,7 @@ deep_ingested: 2026-04-22
 
 ## Related entities
 
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
 
 ## Related sources

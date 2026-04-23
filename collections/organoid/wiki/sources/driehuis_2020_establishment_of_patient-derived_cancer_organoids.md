@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
+
 ## Open questions
 
 - Which parts of the donor or disease context stay stable over long-term expansion?

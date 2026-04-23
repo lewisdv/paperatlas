@@ -59,5 +59,7 @@ Several papers in this corpus are best understood as second-wave protocols: they
 
 ## Related entities
 
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
+- [Host circuit engagement](../entities/host-circuit-engagement.md)
 - [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)

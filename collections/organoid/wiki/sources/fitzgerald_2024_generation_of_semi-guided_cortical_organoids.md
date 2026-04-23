@@ -65,6 +65,7 @@ deep_ingested: 2026-04-08
 
 ## Related entities
 
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
 - [MEA electrophysiology readouts](../entities/mea-electrophysiology-readouts.md)
 
 ## Open questions

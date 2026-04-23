@@ -54,6 +54,9 @@ The newest protocols in this collection do not stop at making organoids. They in
 
 ## Related entities
 
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
 - [MEA electrophysiology readouts](../entities/mea-electrophysiology-readouts.md)
+- [Organ-on-chip](../entities/organ-on-chip.md)
 - [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
