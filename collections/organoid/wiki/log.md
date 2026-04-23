@@ -1601,3 +1601,9 @@
 - Added 2 entity pages under wiki/entities/: adult-tissue-derived-epithelial-organoids.md and host-context-transplantation-and-repair-validation.md.
 - Threaded those entities into older adult-platform and host-escalation sources for Broutier 2016, Tysoe 2019, Sheridan 2020, the 2026 patient-liver platform, Watanabe 2022, Kelley 2024, MALAT1 PDO-X work, and metastatic PDO kinome restoration, and connected them to the adult-platform, functional-assay, and host-validation query pages.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 21 pages and better links mature epithelial platform work with cross-domain transplantation and repair logic.
+
+## [2026-04-23 18:05 KST] entity pass | Kidney baselines and imaging-stack shortcuts
+
+- Added 3 entity pages under wiki/entities/: nephron-patterning-kidney-organoids.md, whole-mount-3d-clearing-and-imaging.md, and morphology-segmentation-and-descriptor-analysis.md.
+- Threaded those entities into older kidney baseline sources for Morizane 2016, Takasato 2016, Xia 2014, and Vanslambrouck 2023, plus imaging-stack sources for Dekkers 2019, Bakker 2022, OCT tracking papers, convexity-preserving segmentation, and shape-factor analysis.
+- Updated the kidney differentiation and organoid engineering concept pages, plus wiki/index.md, wiki/overview.md, and collection checkpointing, so the entity layer now exposes 24 pages and better covers both kidney route choice and quantitative imaging workflows.

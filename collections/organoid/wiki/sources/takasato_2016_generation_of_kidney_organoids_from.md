@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Kidney organoid differentiation routes](../concepts/kidney-organoid-differentiation-routes.md)
 
+## Related entities
+
+- [Nephron-patterning kidney organoids](../entities/nephron-patterning-kidney-organoids.md)
+
 ## Open questions
 
 - Which steps in this kidney workflow drive the most variability across lines or batches?

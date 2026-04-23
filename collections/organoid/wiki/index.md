@@ -124,6 +124,9 @@
 - [Single-cell atlas benchmarking](entities/single-cell-atlas-benchmarking.md) - transcriptomic comparison layer for fidelity, timing, and protocol-selection questions in brain organoids.
 - [Adult tissue-derived epithelial organoids](entities/adult-tissue-derived-epithelial-organoids.md) - donor-grounded mature epithelial platform branch outside hPSC developmental differentiation.
 - [Host-context transplantation and repair validation](entities/host-context-transplantation-and-repair-validation.md) - cross-domain validation move for repair, engraftment, host circuitry, and host-restored disease behavior.
+- [Nephron-patterning kidney organoids](entities/nephron-patterning-kidney-organoids.md) - kidney baseline platform family spanning nephron-progenitor, broad renal, ureteric-bud, and segment-biased routes.
+- [Whole-mount 3D clearing and imaging](entities/whole-mount-3d-clearing-and-imaging.md) - intact-architecture imaging workflow for volumetric organoid readouts.
+- [Morphology segmentation and descriptor analysis](entities/morphology-segmentation-and-descriptor-analysis.md) - analysis stack for masks, tracks, and interpretable organoid shape measurements.
 - [Optical coherence tomography (OCT)](entities/optical-coherence-tomography-oct.md) - label-free 3D imaging modality for longitudinal organoid tracking and segmentation pipelines.
 - [NLRP3 inflammasome](entities/nlrp3-inflammasome.md) - inducible inflammatory assay system appearing in brain and heart multicellular organoid contexts.
 

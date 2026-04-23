@@ -30,3 +30,8 @@ Kidney protocols in this collection are less about whether organoids are possibl
 - Which kidney differentiation route best matches the disease or screening question at hand?
 - How much specialization is worth the tradeoff in developmental breadth or compatibility with older protocols?
 - Which non-renal support cells or secreted factors most improve robustness without blurring kidney identity?
+
+## Related entities
+
+- [Nephron-patterning kidney organoids](../entities/nephron-patterning-kidney-organoids.md)
+- [Organ-on-chip](../entities/organ-on-chip.md)

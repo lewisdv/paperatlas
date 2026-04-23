@@ -64,6 +64,7 @@ deep_ingested: 2026-04-22
 ## Related entities
 
 - [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
+- [Morphology segmentation and descriptor analysis](../entities/morphology-segmentation-and-descriptor-analysis.md)
 
 ## Related sources
 

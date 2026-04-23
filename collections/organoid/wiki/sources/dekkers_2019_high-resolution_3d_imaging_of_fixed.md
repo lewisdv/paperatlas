@@ -63,6 +63,10 @@ deep_ingested: 2026-04-22
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Whole-mount 3D clearing and imaging](../entities/whole-mount-3d-clearing-and-imaging.md)
+
 ## Related sources
 
 - [Preparing ductal epithelial organoids for high-spatial-resolution molecular proﬁling using mass spectrometry imaging](bakker_2022_preparing_ductal_epithelial_organoids_for.md) - another high-value readout-preparation paper, but one focused on spatial chemistry rather than fluorescence architecture.

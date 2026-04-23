@@ -63,6 +63,10 @@ deep_ingested: 2026-04-22
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Whole-mount 3D clearing and imaging](../entities/whole-mount-3d-clearing-and-imaging.md)
+
 ## Related sources
 
 - [High-resolution 3D imaging of ﬁxed and cleared organoids](dekkers_2019_high-resolution_3d_imaging_of_fixed.md) - an imaging comparator focused on whole-mount fluorescence architecture rather than label-free molecular maps.

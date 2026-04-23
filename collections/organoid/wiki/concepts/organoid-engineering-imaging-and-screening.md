@@ -64,6 +64,8 @@ The newest protocols in this collection do not stop at making organoids. They in
 - [MEA electrophysiology readouts](../entities/mea-electrophysiology-readouts.md)
 - [Organ-on-chip](../entities/organ-on-chip.md)
 - [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
+- [Whole-mount 3D clearing and imaging](../entities/whole-mount-3d-clearing-and-imaging.md)
+- [Morphology segmentation and descriptor analysis](../entities/morphology-segmentation-and-descriptor-analysis.md)
 
 ## Related queries
 

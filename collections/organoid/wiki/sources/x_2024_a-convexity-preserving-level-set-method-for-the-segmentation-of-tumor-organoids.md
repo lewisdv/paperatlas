@@ -60,6 +60,10 @@ deep_ingested: 2026-04-22
 
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Morphology segmentation and descriptor analysis](../entities/morphology-segmentation-and-descriptor-analysis.md)
+
 ## Related sources
 
 - [Shape Factor Analysis as a Quantitative Framework for Assessing Spheroid and Organoid Morphology and Invasiveness](shape_2026_shape-factor-analysis-as-a-quantitative-framework-for-assessing-spheroid-and-organoid-morp.md) - a downstream morphology-analysis framework that depends on having reliable organoid ROIs.
