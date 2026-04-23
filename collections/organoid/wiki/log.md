@@ -1553,3 +1553,9 @@
 - Created query page wiki/queries/20260423_1554_pdo-readiness-rubric-for-treatment-guidance-screening.md.
 - Turned multimodal specimen handling, line stability, bankability, thaw recovery, pathology or molecular concordance, and assay-endpoint design into one operational readiness rubric for translational PDO screening.
 - Used Driehuis 2020, S 2025 multimodal-specimen PDOs, N 2025 South African intestinal PDOs, J 2026 metastatic PDO kinome restoration, and L 2024 XIAP-sensitization validation to distinguish compact ex vivo screening readiness from cases that still require richer host-context escalation.
+
+## [2026-04-23 16:00 KST] query saved | Donor-derived cancer escalation stops
+
+- Created query page wiki/queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md.
+- Compared compact ex vivo validation, immune reconstruction, and PDO-X as three different escalation stops for donor-derived cancer work rather than one simple complexity ladder.
+- Used L 2024 XIAP-sensitization validation, Cattaneo 2019 tumor-T-cell coculture, W 2026 osteosarcoma immune reconstruction, J 2026 metastatic PDO kinome restoration, and Patient-derived 2026 MALAT1 PDO-X escalation to separate tumor-intrinsic response, defined immune-partner repair, and host-restored biology or metastasis claims.
