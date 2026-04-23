@@ -37,6 +37,8 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - The newest cancer-translational batch pushes this logic further: cervical SCNEC, metastatic biopsy PDOs, breast PDO-Xs, and osteosarcoma iOS models all treat matched xenografts or immune reconstruction as extensions of the platform rather than as unrelated downstream validation.
 - The newest quantitative and comparative additions broaden the branch sideways rather than upward: canine epidermal organoids show that adult primary epithelial platforms can be used as controlled comparative disease-induction assays, while NSCLC PDOs become substrates for explicit cell-composition modeling instead of only morphology or viability testing.
 - Together these papers suggest that adult or patient-derived organoids increasingly serve as staging grounds for escalation: first capture donor biology, then decide whether the missing layer is host tissue, immune infiltration, metastatic context, or broader signaling restoration.
+- The newest translational query work makes one gate more explicit: treatment-guidance-style PDOs are not defined only by donor origin, but by specimen adequacy, expandable line stability, freeze-thaw recovery, fidelity checks, and believable assay endpoints.
+- The same query burst also sharpens how escalation should branch once a donor platform is stable: compact ex vivo validation fits tumor-intrinsic response questions, immune reconstruction fits defined missing-partner problems, and PDO-X fits metastasis or host-restored biology questions.
 - The main tradeoff is that these platforms usually preserve donor-specific or disease-specific context better than they capture whole-organ developmental architecture.
 
 ## Main tension
@@ -54,3 +56,8 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 - [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
 - [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
 - [CRISPR-Cas9 and next-generation CRISPR editing](../entities/crispr-cas9-and-next-generation-crispr-editing.md)
+
+## Related queries
+
+- [PDO가 treatment-guidance형 translational screening에 들어갈 준비가 됐는지 어떻게 판정해야 하나](../queries/20260423_1554_pdo-readiness-rubric-for-treatment-guidance-screening.md)
+- [donor-derived cancer work는 언제 compact ex vivo validation에서 멈추고 언제 immune reconstruction이나 PDO-X로 올라가야 하나](../queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md)

@@ -31,6 +31,7 @@ The endodermal side of the corpus spans both foundational derivation and later a
 - The refill cohort extends this branch into patient-derived intestinal capture, pancreas morphogenesis, organ-on-chip deployment, stromal repair coculture, immune-bearing liver organoids, outbreak-relevant liver infection assays, disease-stratified adult liver biobanking, and pathogen-facing intestinal monolayers.
 - The pancreas morphogenesis protocol sharpens this branch further by showing that some endodermal systems are most valuable in an intermediate format: neither fully floating organoids nor flat monolayers, but Matrigel-overlay epithelial cultures where luminal remodeling and endocrine fate can be tracked together.
 - Together these papers make clear that endodermal organoids are no longer just derivation problems; they are now platforms for access, repair, screening, and multicompartment niche design.
+- The newest query consolidation sharpens the intestinal side especially: intestine is one of the clearest access-first branches in the collection, where polarity inversion, microbial exposure logic, and organ-on-chip compartment control often matter before any downstream screen or host escalation.
 
 ## Main tension
 
@@ -41,3 +42,8 @@ The endodermal side of the corpus spans both foundational derivation and later a
 
 - When is a baseline gut or gastric protocol enough, and when is polarity control or transplantation essential?
 - How far can endodermal protocols be pushed toward multi-organ connectivity without sacrificing robustness?
+
+## Related queries
+
+- [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](../queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md)
+- [pancreas, intestine, BBB, lung에서는 screening stack를 어떻게 다르게 짜야 하나](../queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md)

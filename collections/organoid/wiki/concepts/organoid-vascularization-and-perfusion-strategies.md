@@ -20,6 +20,7 @@ This corpus now contains five distinct vascularization strategies: stand-alone b
 - [Worsdorfer 2019](../sources/worsdorfer_2019_generation_of_complex_human_organoid.md) adds a modular mesodermal progenitor cell-mixing strategy that can deliver vasculature, mural cells, and microglia-like cells across neural and tumor contexts.
 - [L 2026](../sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md) adds a more explicitly programmed vessel-only route via orthogonal ETV2 and NKX3.1 activation, extending the vessel branch beyond purely self-organized or perfused systems.
 - Together these papers show that vascularization is not a single upgrade step but a design choice among stand-alone vessel modules, TF engineering, orthogonal activation, flow-based maturation, and mesodermal co-development.
+- The newest vascularization-route query folds these into a simpler organ-matched rule: use flow when organ-specific in-dish maturation is the bottleneck, TF-driven programs when integrated vascular support is needed inside brain organoids, mesodermal mixing when a reusable multicompartment module is needed, stand-alone vessel organoids when the vascular branch itself is the baseline, and transplantation when repair or circulation integration is the endpoint.
 
 ## Main tensions
 
@@ -32,3 +33,8 @@ This corpus now contains five distinct vascularization strategies: stand-alone b
 - Which vascularization strategy gives the best tradeoff among adoption cost, vessel maturity, and compatibility with sensitive organoid identities?
 - When does transplantation still outperform purely in vitro vascularization or perfusion?
 - Can vascularization be standardized enough for screening workflows across multiple organ systems?
+
+## Related queries
+
+- [언제 vascularization, perfusion, transplantation 중 무엇을 선택해야 하나](../queries/20260420_172029_vascularization-perfusion-vs-transplantation.md)
+- [flow, TF-driven vascularization, mesodermal mixing, stand-alone vessel addition, host transplantation은 organ과 질문에 따라 어떻게 골라야 하나](../queries/20260423_1626_vascularization-routes-by-organ-and-question.md)

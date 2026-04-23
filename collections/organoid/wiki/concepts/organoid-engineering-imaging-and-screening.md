@@ -41,6 +41,8 @@ The newest protocols in this collection do not stop at making organoids. They in
 - Together these papers show that organoid engineering is not only about perturbing the culture. It also includes building the image-analysis, permeability, and morphology-quantification stack that makes screening outputs comparable across batches and models.
 - Deep networks dominate some tracking tasks, but classical geometry-aware segmentation and simple shape metrics still remain useful when data are small, labels are scarce, or high-throughput bright-field readouts matter more than end-to-end automation.
 - The practical bottleneck often shifts from differentiation itself to delivery, imaging quality, screen design, or readout normalization.
+- The newest cross-organ screening query makes another point explicit: "screening-ready" does not mean the same thing across systems. Pancreas is maturity-first, intestine is access-first, BBB is barrier-readout-first, and lung is baseline-complexity-first.
+- This means engineering layers should be chosen after the first organ-specific bottleneck is named, not added as a generic upgrade. Chip systems, access-control moves, permeability readouts, and quantitative image stacks are useful precisely because different organs fail in different ways.
 
 ## Main tension
 
@@ -60,3 +62,8 @@ The newest protocols in this collection do not stop at making organoids. They in
 - [MEA electrophysiology readouts](../entities/mea-electrophysiology-readouts.md)
 - [Organ-on-chip](../entities/organ-on-chip.md)
 - [Optical coherence tomography (OCT)](../entities/optical-coherence-tomography-oct.md)
+
+## Related queries
+
+- [pancreas, intestine, BBB, lung에서는 screening stack를 어떻게 다르게 짜야 하나](../queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md)
+- [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](../queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md)

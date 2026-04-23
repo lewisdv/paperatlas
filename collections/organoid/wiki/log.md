@@ -1571,3 +1571,9 @@
 - Created query page wiki/queries/20260423_1626_vascularization-routes-by-organ-and-question.md.
 - Compared flow/perfusion, TF-driven vascularization, mesodermal progenitor mixing, stand-alone vascular organoids, and host transplantation as different route choices rather than different strengths of one vascularization ladder.
 - Used Homan 2019 to anchor kidney flow-based maturation, Cakir 2019 to anchor TF-driven brain vascular support, Worsdorfer 2019 to anchor modular mesodermal mixing, Wimmer 2019 plus L 2026 to anchor vessel-only baselines, and Watanabe 2022 to anchor host-context repair validation.
+
+## [2026-04-23 16:34 KST] consolidation | Fold April 23 query burst back into concept and synthesis pages
+
+- Updated the project-design playbook synthesis so the newest saved queries now appear as reusable rules for PDO readiness, donor-derived cancer escalation stops, organ-specific screening stacks, and vascularization-route choice.
+- Updated adult-platform, engineering-screening, functional-assay, gastrointestinal, and vascularization concept pages so the new decision rules are visible from the concept layer instead of only through query browsing.
+- Updated wiki/overview.md and collection checkpointing to reflect that the current next step has shifted from missing high-priority decision queries to consolidation, entity expansion, or deeper synthesis work.

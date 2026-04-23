@@ -46,6 +46,7 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - Together these papers show that coculture or transplantation is not a single add-on but a family of moves for access, repair, immune education, infection, and host-context testing.
 - Not every assay layer sits after derivation is complete; some, like monocyte support in kidney organoids, intervene earlier to preserve organoid competence before later readouts become possible.
 - Their success still depends heavily on the maturity, polarity, and baseline quality of the starting organoid culture.
+- The newest donor-derived cancer query compresses this into a very practical ladder: stop at compact ex vivo validation when the response is tumor-intrinsic, move to immune reconstruction when the missing layer is a defined effector partner, and escalate to PDO-X only when stromal, metastatic, or host-restored biology could change the conclusion.
 
 ## Main tension
 
@@ -63,3 +64,8 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - [Patient-derived organoid xenografts (PDO-X)](../entities/patient-derived-organoid-xenograft-pdo-x.md)
 - [Host circuit engagement](../entities/host-circuit-engagement.md)
 - [NLRP3 inflammasome](../entities/nlrp3-inflammasome.md)
+
+## Related queries
+
+- [언제 coculture로 충분하고 언제 host validation이 필요한가](../queries/20260420_191749_coculture-vs-host-validation-for-interaction-questions.md)
+- [donor-derived cancer work는 언제 compact ex vivo validation에서 멈추고 언제 immune reconstruction이나 PDO-X로 올라가야 하나](../queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md)
