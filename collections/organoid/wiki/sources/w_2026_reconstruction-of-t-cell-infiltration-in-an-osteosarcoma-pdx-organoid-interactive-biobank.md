@@ -69,6 +69,10 @@ deep_ingested: 2026-04-22
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
+
 ## Related sources
 
 - [Tumor organoid-T-cell coculture systems](cattaneo_2019_tumor_organoid-t-cell_coculture_systems.md) - a simpler tumor-immune coculture comparator without the PDX-linked biobank and size-control logic.

@@ -1530,3 +1530,9 @@
 - Added 4 entity pages under wiki/entities/: patient-derived-organoids-pdo.md, organ-on-chip.md, calcium-imaging-readouts.md, and host-circuit-engagement.md.
 - Threaded those new entities into the adult-platform, engineering-screening, and functional-assay concept pages; into brain-readout, screening-stack, assay-recovery, disease-escalation, and translational-triage queries; and into representative source pages plus the project-design playbook.
 - Updated wiki/index.md, wiki/overview.md, and collection checkpointing so the entity layer now exposes 9 pages without changing active-source counts.
+
+## [2026-04-23 14:02 KST] entity threading | Wider source-page back-links
+
+- Added newer entity back-links into additional source pages across patient-derived cancer, multimodal-specimen PDO, GI access-device, kidney perfusion-chip, and brain benchmarking branches.
+- Extended `Related entities` coverage for PDO, organ-on-chip, and calcium-imaging shortcuts so source browsing no longer depends only on the original representative set.
+- Updated wiki/overview.md and collection checkpointing without changing active-source counts.

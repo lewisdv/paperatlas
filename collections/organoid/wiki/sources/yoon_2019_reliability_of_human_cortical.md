@@ -60,6 +60,10 @@ deep_ingested: 2026-04-09
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 
+## Related entities
+
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+
 ## Related sources
 
 - [Sloan 2018](sloan_2018_generation_and_assembly_of_human.md) — same lab (Pasca), extends hCS to assembloids.

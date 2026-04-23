@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 
+## Related entities
+
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
+
 ## Related sources
 
 - [Establishment of patient-derived cancer organoids for drug-screening applications](driehuis_2020_establishment_of_patient-derived_cancer_organoids.md) - the clearest earlier PDO baseline for downstream screening.

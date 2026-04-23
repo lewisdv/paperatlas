@@ -61,5 +61,6 @@ This collection currently contains 96 active organoid-related source pages. All 
 - A first entity pass now captures repeated platforms and tools as dedicated pages, so the collection no longer relies only on source, concept, query, and synthesis layers.
 - A follow-up entity-threading pass now links those entity pages back into representative source notes and the project-design playbook, making the entity layer useful during normal browsing rather than only from the index.
 - A second entity pass now fills a more practical middle layer: donor-preserving PDO baselines, organ-on-chip access devices, calcium-imaging functional readouts, and host-circuit validation now have dedicated landing pages and are threaded into the brain and translational-screening queries.
+- A second source-threading pass now pushes those newer entities farther into patient-derived cancer, specimen-logistics PDO, gastrointestinal access-device, kidney perfusion-chip, and brain benchmarking source pages, so entity browsing no longer depends on only the first representative set.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned` so older cross-links do not break.
 - Use `python3 scripts/wiki.py --collection organoid resume` to see the current backlog and latest query work.

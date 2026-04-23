@@ -68,6 +68,10 @@ deep_ingested: 2026-04-09
 - [Organoid vascularization and perfusion strategies](../concepts/organoid-vascularization-and-perfusion-strategies.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Organ-on-chip](../entities/organ-on-chip.md)
+
 ## Related sources
 
 - [Morizane 2016](morizane_2016_generation_of_nephron_progenitor_cells.md) — base kidney organoid protocol this builds on.

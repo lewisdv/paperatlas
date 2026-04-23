@@ -60,6 +60,10 @@ deep_ingested: 2026-04-09
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 
+## Related entities
+
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+
 ## Related sources
 
 - [Lancaster 2014](lancaster_2014_generation_of_cerebral_organoids_from.md) — high-variability unguided baseline that Velasco's work addresses.

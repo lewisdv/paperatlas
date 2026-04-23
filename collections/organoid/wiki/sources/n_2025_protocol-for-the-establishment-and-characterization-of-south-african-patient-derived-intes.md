@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related entities
+
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
+
 ## Related sources
 
 - [Establishment of patient-derived cancer organoids for drug-screening applications](driehuis_2020_establishment_of_patient-derived_cancer_organoids.md) - a stronger general comparator for cancer PDO establishment and downstream translational use.

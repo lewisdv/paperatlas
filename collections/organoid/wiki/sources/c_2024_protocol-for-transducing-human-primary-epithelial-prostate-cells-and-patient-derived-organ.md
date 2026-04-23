@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
+
 ## Related sources
 
 - [Organoid culture systems for prostate epithelial and cancer tissue](drost_2016_organoid_culture_systems_for_prostate.md) - the core baseline for prostate organoid establishment before perturbation.
