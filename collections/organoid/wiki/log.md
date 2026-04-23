@@ -1631,3 +1631,9 @@
 - Added `Related entities` sections to four more active source pages without creating new entity pages.
 - Threaded existing host-context validation, polarity-access, assembloid, and atlas-benchmarking entities into intestinal repair coculture, foundational cerebral organoids, precursor-state cerebral assays, and Toxoplasma host-pathogen access papers.
 - This leaves the remaining no-entity pages concentrated mostly in niche developmental baselines where a shortcut is less obviously useful than in assay, escalation, or translational branches.
+
+## [2026-04-23 19:12 KST] synthesis | Assay escalation and validation playbook
+
+- Added `wiki/syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md` to compress the collection's practical escalation rules into one page.
+- Folded existing query logic for access-route choice, coculture versus host validation, animal escalation, PDO readiness, donor-derived cancer escalation, organ-specific screening stacks, and vascularization routes into one decision ladder centered on the first missing readout.
+- Updated `wiki/index.md`, `wiki/overview.md`, and collection checkpointing so the synthesis layer now exposes a narrower escalation-focused companion to the broader project-design playbook.

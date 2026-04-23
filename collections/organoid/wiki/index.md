@@ -184,3 +184,4 @@
 
 - [Organoid Protocol Starter Corpus](syntheses/20260408_organoid-protocol-corpus.md) - corpus-level synthesis.
 - [Organoid project design playbook](syntheses/20260422_organoid-project-design-playbook.md) - consolidated design rules for baseline choice, assay layers, complexity, and escalation.
+- [Organoid assay escalation and validation playbook](syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md) - decision ladder for maturity, access, coculture, host validation, and donor-derived cancer escalation.
