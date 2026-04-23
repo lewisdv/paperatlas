@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
+
 ## Related sources
 
 - [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](dekkers_2021_long-term_culture_genetic_manipulation_and.md) - another adult-organoid paper that explicitly bridges genetic manipulation and in vivo follow-up.

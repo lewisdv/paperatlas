@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Reproductive mucosal epithelial organoids](../entities/reproductive-mucosal-epithelial-organoids.md)
+
 ## Related sources
 
 - [Tumor organoid-T-cell coculture systems](cattaneo_2019_tumor_organoid-t-cell_coculture_systems.md) - a broader organoid-immune interaction reference that is less tissue-specific and less focused on TRM instruction.

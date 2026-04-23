@@ -61,6 +61,10 @@ deep_ingested: 2026-04-22
 - [Kidney organoid differentiation routes](../concepts/kidney-organoid-differentiation-routes.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Nephron-patterning kidney organoids](../entities/nephron-patterning-kidney-organoids.md)
+
 ## Related sources
 
 - [Generation of kidney organoids from human pluripotent stem cells](takasato_2016_generation_of_kidney_organoids_from.md) - a foundational kidney route paper that defines the lineage logic this study tries to stabilize.

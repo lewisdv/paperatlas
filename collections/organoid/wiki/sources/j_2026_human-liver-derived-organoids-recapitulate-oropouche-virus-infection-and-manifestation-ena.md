@@ -65,6 +65,10 @@ deep_ingested: 2026-04-22
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Related sources
 
 - [From Patient Liver Tissue to Organoids: Establishment of a Translational Platform Using Healthy, Steatotic, and Cirrhotic Tissue Sources](r_2026_from-patient-liver-tissue-to-organoids-establishment-of-a-translational-platform-using-hea.md) - an adult liver platform comparator focused on disease-state preservation before pathogen challenge.

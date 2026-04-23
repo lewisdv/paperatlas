@@ -1613,3 +1613,9 @@
 - Added 3 entity pages under wiki/entities/: reproductive-mucosal-epithelial-organoids.md, distal-lung-organoids.md, and heart-forming-organoids.md.
 - Threaded those entities into reproductive-tract sources for Gurumurthy 2022 and JA 2024, lung baselines for Miller 2019 and Matkovic Leko 2023, and cardiac baselines for Drakhlis 2021, Dardano 2025, and the retained heart macrophage assembloid paper.
 - Updated the adult-platform, functional-assay, and cardiac concept pages, plus wiki/index.md, wiki/overview.md, and collection checkpointing, so the entity layer now exposes 27 pages and gives thinner branches clearer browsing anchors.
+
+## [2026-04-23 18:30 KST] cleanup | Long-tail source threading with existing entities
+
+- Added `Related entities` sections to long-tail source pages where existing entity coverage was already sufficient, without creating additional entity pages.
+- Threaded existing adult epithelial, SC-islet, PDO, kidney-patterning, host-context validation, and reproductive-mucosal entities into canine epithelial disease induction, early pancreas morphogenesis, tumor-T-cell coculture, monocyte-supported kidney differentiation, esophageal organoid-initiated mouse models, liver antiviral assays, vaginal T-cell coculture, and NSCLC PDO modeling pages.
+- Reduced the number of active source pages lacking explicit `Related entities` shortcuts and kept the cleanup focused on source browsing rather than expanding the entity taxonomy again.

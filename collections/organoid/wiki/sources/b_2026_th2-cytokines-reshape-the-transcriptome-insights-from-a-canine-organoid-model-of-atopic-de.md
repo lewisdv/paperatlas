@@ -68,6 +68,10 @@ deep_ingested: 2026-04-22
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Related sources
 
 - [Generation and characterization of hair-bearing skin organoids from human pluripotent stem cells](lee_2022_generation_and_characterization_of_hair-bearing.md) - a developmental skin comparator where tissue complexity is generated rather than imposed by cytokine stimulation.

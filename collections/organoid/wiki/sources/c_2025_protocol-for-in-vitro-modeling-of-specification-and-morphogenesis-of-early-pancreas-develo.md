@@ -67,6 +67,10 @@ deep_ingested: 2026-04-22
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 
+## Related entities
+
+- [Stem-cell-derived islets (SC-islets)](../entities/stem-cell-derived-islets-sc-islets.md)
+
 ## Related sources
 
 - [Engineering human hepato-biliary-pancreatic organoids from pluripotent stem cells](koike_2021_engineering_human_hepato-biliary-pancreatic_organoids_from.md) - a broader endodermal boundary model where pancreas identity is linked to neighboring foregut lineages rather than isolated as a single epithelial track.
