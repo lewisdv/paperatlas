@@ -1625,3 +1625,9 @@
 - Added `Related entities` sections to eight more active source pages without creating new entity pages.
 - Threaded existing assembloid, BBB, atlas-benchmarking, adult epithelial, PDO, reproductive-mucosal, host-context validation, and whole-mount-imaging entities into forebrain eye-primordium organoids, Down-syndrome choroid-plexus infection organoids, retinal regeneration with transplantation, prostate cancer organoid baselines, cervical SCNEC organoid-xenograft workflows, adult thymic TEC organoids, vestibular inner-ear protocols, and Kupffer-containing liver organoids.
 - Kept this pass focused on higher-signal long-tail pages where entity shortcuts improve browsing without widening the entity taxonomy again.
+
+## [2026-04-23 18:57 KST] cleanup | Remaining repair, access, and brain-baseline threading
+
+- Added `Related entities` sections to four more active source pages without creating new entity pages.
+- Threaded existing host-context validation, polarity-access, assembloid, and atlas-benchmarking entities into intestinal repair coculture, foundational cerebral organoids, precursor-state cerebral assays, and Toxoplasma host-pathogen access papers.
+- This leaves the remaining no-entity pages concentrated mostly in niche developmental baselines where a shortcut is less obviously useful than in assay, escalation, or translational branches.

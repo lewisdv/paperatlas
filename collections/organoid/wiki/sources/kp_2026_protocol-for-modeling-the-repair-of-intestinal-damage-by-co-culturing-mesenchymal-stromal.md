@@ -70,6 +70,10 @@ deep_ingested: 2026-04-22
 - [Protocol for the establishment and characterization of an endometrial-derived epithelial organoid and stromal cell co-culture system](ja_2024_protocol-for-the-establishment-and-characterization-of-an-endometrial-derived-epithelial-o.md) - a stromal-epithelial coculture comparator outside the intestine.
 - [Protocol for generating and analyzing organ-on-chip using human and mouse intestinal organoids](iv_2024_protocol-for-generating-and-analyzing-organ-on-chip-using-human-and-mouse-intestinal-organ.md) - another intestinal assay-layer platform that trades repair focus for polarized access and flow.
 
+## Related entities
+
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
+
 ## Open questions
 
 - Which MSC effects in this system depend on contact versus soluble signaling?

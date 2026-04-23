@@ -67,6 +67,10 @@ deep_ingested: 2026-04-22
 - [Controlling the polarity of human gastrointestinal organoids to investigate epithelial biology and infectious diseases](co_2021_controlling_the_polarity_of_human.md) - a polarity and access comparator for host-pathogen experiments on intestinal epithelia.
 - [Human liver-derived organoids recapitulate Oropouche virus infection and manifestation, enabling antiviral drug discovery](j_2026_human-liver-derived-organoids-recapitulate-oropouche-virus-infection-and-manifestation-ena.md) - another infection-facing assay paper where an established organoid platform becomes useful only after the right exposure design is layered on top.
 
+## Related entities
+
+- [Polarity inversion and apical access](../entities/polarity-inversion-and-apical-access.md)
+
 ## Open questions
 
 - Which host-cell features beyond lipids most determine permissiveness for Toxoplasma sexual commitment?

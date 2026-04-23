@@ -70,6 +70,10 @@ deep_ingested: 2026-04-22
 - [An integrated transcriptomic cell atlas of human neural organoids uncovers batch effects and marker genes of disease risks](he_2024_an_integrated_transcriptomic_cell_atlas.md) - a transcriptomic benchmark paper that complements this more operational neurosphere-based state readout.
 - [A Dynamic Protocol to Explore NLRP3 Inflammasome Activation in Cerebral Organoids](d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md) - another cerebral-organoid assay paper, but one focused on late astrocytic inflammatory response rather than precursor-pool biology.
 
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+
 ## Open questions
 
 - How well do the operational pNSC and dNSC categories align with atlas-defined human progenitor states at single-cell resolution?
