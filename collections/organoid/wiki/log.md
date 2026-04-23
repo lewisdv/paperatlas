@@ -1619,3 +1619,9 @@
 - Added `Related entities` sections to long-tail source pages where existing entity coverage was already sufficient, without creating additional entity pages.
 - Threaded existing adult epithelial, SC-islet, PDO, kidney-patterning, host-context validation, and reproductive-mucosal entities into canine epithelial disease induction, early pancreas morphogenesis, tumor-T-cell coculture, monocyte-supported kidney differentiation, esophageal organoid-initiated mouse models, liver antiviral assays, vaginal T-cell coculture, and NSCLC PDO modeling pages.
 - Reduced the number of active source pages lacking explicit `Related entities` shortcuts and kept the cleanup focused on source browsing rather than expanding the entity taxonomy again.
+
+## [2026-04-23 18:49 KST] cleanup | Brain, cervical, thymic, and liver long-tail threading
+
+- Added `Related entities` sections to eight more active source pages without creating new entity pages.
+- Threaded existing assembloid, BBB, atlas-benchmarking, adult epithelial, PDO, reproductive-mucosal, host-context validation, and whole-mount-imaging entities into forebrain eye-primordium organoids, Down-syndrome choroid-plexus infection organoids, retinal regeneration with transplantation, prostate cancer organoid baselines, cervical SCNEC organoid-xenograft workflows, adult thymic TEC organoids, vestibular inner-ear protocols, and Kupffer-containing liver organoids.
+- Kept this pass focused on higher-signal long-tail pages where entity shortcuts improve browsing without widening the entity taxonomy again.

@@ -72,6 +72,11 @@ deep_ingested: 2026-04-22
 - [Blood-brain-barrier organoids for investigating the permeability of CNS therapeutics](bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md) - another neural access-control model, but one built from multicellular BBB assembly rather than choroid-plexus-like self-organization.
 - [A robust protocol for the generation of human midbrain organoids](zagare_2021_a_robust_protocol_for_the.md) - a reminder that many subregion protocols optimize neuronal identity without building the epithelial barrier compartment explored here.
 
+## Related entities
+
+- [Blood-brain-barrier (BBB) spheroids](../entities/blood-brain-barrier-bbb-spheroids.md)
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+
 ## Open questions
 
 - Which neural infection questions truly require a choroid-plexus-containing model instead of a simpler cortical organoid?

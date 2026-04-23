@@ -70,6 +70,10 @@ deep_ingested: 2026-04-09
 - [Koehler 2017](koehler_2017_generation_of_inner_ear_organoids.md) — original discovery protocol.
 - [Lee 2022](lee_2022_generation_and_characterization_of_hair-bearing.md) — shared ectodermal foundation (skin + hair organoid).
 
+## Related entities
+
+- [Whole-mount 3D clearing and imaging](../entities/whole-mount-3d-clearing-and-imaging.md)
+
 ## Open questions
 
 - Does the 2026 version improve cochlear hair cell generation over the 2017 approach?

@@ -69,6 +69,10 @@ deep_ingested: 2026-04-22
 - [Generation and assembly of human brain region-specific three-dimensional cultures](sloan_2018_generation_and_assembly_of_human.md) - a modular regional-brain strategy that contrasts with this paper's endogenous co-development logic.
 - [Engineering brain assembloids to interrogate human neural circuits](miura_2022_engineering_brain_assembloids_to_interrogate.md) - a later circuit-focused fusion approach that helps clarify when to choose self-organization versus deliberate assembly.
 
+## Related entities
+
+- [Assembloids and regional fusion](../entities/assembloids-and-regional-fusion.md)
+
 ## Open questions
 
 - Which developmental questions truly require spontaneous eye-brain co-development instead of separate retinal and forebrain models?

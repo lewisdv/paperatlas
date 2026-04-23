@@ -71,6 +71,10 @@ deep_ingested: 2026-04-22
 - [Establishment of human fetal hepatocyte organoids and CRISPR-Cas9-based gene knockin and knockout in organoid cultures from human liver](hendriks_2020_establishment_of_human_fetal_hepatocyte.md) - a liver organoid comparator centered on epithelial expansion and engineering rather than immune integration.
 - [Culture and establishment of self-renewing human and mouse adult liver and pancreas 3D organoids and their genetic manipulation](broutier_2016_culture_and_establishment_of_self-renewing.md) - the adult endoderm organoid baseline that highlights how different this iPSC multilineage strategy is.
 
+## Related entities
+
+- [Whole-mount 3D clearing and imaging](../entities/whole-mount-3d-clearing-and-imaging.md)
+
 ## Open questions
 
 - What EMP-to-hepatic-endoderm ratio most reliably maximizes Kupffer-cell integration without compromising hepatic maturation?

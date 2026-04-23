@@ -69,6 +69,10 @@ deep_ingested: 2026-04-22
 - [Isolation and propagation of primary human cholangiocyte organoids for the generation of bioengineered biliary tissue](tysoe_2019_isolation_and_propagation_of_primary.md) - an adult epithelial platform comparator that emphasizes regenerative graft engineering rather than immune-organ support.
 - [Protocol to create isogenic disease models from adult stem cell-derived organoids using next-generation CRISPR tools](m_2024_protocol-to-create-isogenic-disease-models-from-adult-stem-cell-derived-organoids-using-ne.md) - a useful next-step engineering comparator once a stable adult organoid platform has been established.
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Open questions
 
 - Which added partners, such as thymocytes or stroma, are most necessary before the organoids become functionally informative for selection biology?

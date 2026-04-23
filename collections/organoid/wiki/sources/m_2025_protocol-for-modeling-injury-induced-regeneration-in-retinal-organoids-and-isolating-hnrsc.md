@@ -71,6 +71,10 @@ deep_ingested: 2026-04-22
 - [Protocol to enhance pre-sexual and sexual differentiation of Toxoplasma gondii using retinal cells and intestinal organoid-derived monolayers](s_2026_protocol-to-enhance-pre-sexual-and-sexual-differentiation-of-toxoplasma-gondii-using-retin.md) - a different retinal assay-layer paper in which the retinal tissue serves as a host context rather than a transplantation source.
 - [Protocol for modeling the repair of intestinal damage by co-culturing mesenchymal stromal/stem cells and intestinal organoids](kp_2026_protocol-for-modeling-the-repair-of-intestinal-damage-by-co-culturing-mesenchymal-stromal.md) - a non-neural repair paper that helps compare how organoid injury models are operationalized across tissues.
 
+## Related entities
+
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
+
 ## Open questions
 
 - How specific is CPAMD8 for the most therapeutically relevant regenerative retinal stem-like cells?

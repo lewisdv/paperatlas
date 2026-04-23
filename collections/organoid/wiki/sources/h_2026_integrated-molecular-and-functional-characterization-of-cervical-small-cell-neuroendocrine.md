@@ -75,6 +75,12 @@ deep_ingested: 2026-04-22
 - [Long-term culture, genetic manipulation and xenotransplantation of human normal and breast cancer organoids](dekkers_2021_long-term_culture_genetic_manipulation_and.md) - another cancer organoid platform that explicitly combines stable culture with in vivo follow-up.
 - [Histological fidelity and microenvironmental kinome signatures of metastatic patient-derived organoids](j_undated_histological-fidelity-and-microenvironmental-kinome-signatures-of-metastatic-patient-deriv.md) - a cross-cancer comparator where xenografting is used to recover context-sensitive signaling layers lost in vitro.
 
+## Related entities
+
+- [Reproductive mucosal epithelial organoids](../entities/reproductive-mucosal-epithelial-organoids.md)
+- [Patient-derived organoids (PDO)](../entities/patient-derived-organoids-pdo.md)
+- [Host-context transplantation and repair validation](../entities/host-context-transplantation-and-repair-validation.md)
+
 ## Open questions
 
 - How reproducible is this tri-model architecture across additional SCNEC patients with different HPV states or driver combinations?
