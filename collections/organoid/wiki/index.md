@@ -152,6 +152,7 @@
 - [언제 coculture로 충분하고 언제 host validation이 필요한가](queries/20260420_191749_coculture-vs-host-validation-for-interaction-questions.md) - interaction 질문에서 access, defined partner, tissue-support, host-only endpoint의 순서 정리.
 - [Organ마다 assay가 약할 때 recovery move를 어떻게 다르게 잡아야 하나](queries/20260420_191750_organ-specific-assay-recovery-playbook.md) - brain, pancreas, kidney, intestine, patient-derived cancer 기준으로 organ-specific recovery ladder 정리.
 - [질병 종류별로 organoid escalation ladder를 어떻게 짜야 하나](queries/20260420_191751_disease-specific-organoid-escalation-ladders.md) - cancer, developmental neuro, infection/barrier, regenerative, niche disease별 complexity escalation sequence 정리.
+- [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md) - access correction, internal delivery, durable compartment control, barrier triage의 선택 규칙 정리.
 
 - [Organoid corpus lint/prune pass](queries/20260421_153718_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
 - [Organoid corpus lint/prune pass](queries/20260421_155351_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.

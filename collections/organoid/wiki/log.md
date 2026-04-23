@@ -1541,3 +1541,9 @@
 
 - Added `Related entities` back-links for organ-on-chip into additional infection-barrier source pages, including the BBB permeability and intestinal microbe-coculture branches.
 - Saved a short backlog of high-value next query candidates in WORKFLOW_CHECKPOINT.md so future synthesis work can continue without rebuilding context.
+
+## [2026-04-23 14:08 KST] query saved | Access-route choice for barrier and infection studies
+
+- Created query page wiki/queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md.
+- Compared polarity inversion, standard microinjection, organ-on-chip, and BBB spheroids as distinct access-route choices rather than interchangeable technologies.
+- Used Co 2021, Puschhof 2021, IV 2024, Bergmann 2018, M 2025, and Homan 2019 to separate surface access, internal delivery, durable compartment control, and barrier triage.
