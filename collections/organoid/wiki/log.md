@@ -1536,3 +1536,8 @@
 - Added newer entity back-links into additional source pages across patient-derived cancer, multimodal-specimen PDO, GI access-device, kidney perfusion-chip, and brain benchmarking branches.
 - Extended `Related entities` coverage for PDO, organ-on-chip, and calcium-imaging shortcuts so source browsing no longer depends only on the original representative set.
 - Updated wiki/overview.md and collection checkpointing without changing active-source counts.
+
+## [2026-04-23 14:08 KST] entity threading | Infection-barrier extensions and query backlog
+
+- Added `Related entities` back-links for organ-on-chip into additional infection-barrier source pages, including the BBB permeability and intestinal microbe-coculture branches.
+- Saved a short backlog of high-value next query candidates in WORKFLOW_CHECKPOINT.md so future synthesis work can continue without rebuilding context.

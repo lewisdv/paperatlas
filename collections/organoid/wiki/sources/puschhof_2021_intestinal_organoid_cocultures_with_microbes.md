@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Organ-on-chip](../entities/organ-on-chip.md)
+
 ## Open questions
 
 - How much of the observed phenotype comes from the added assay layer versus the baseline organoid state?

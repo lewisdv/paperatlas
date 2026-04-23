@@ -62,6 +62,10 @@ deep_ingested: 2026-04-22
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Organ-on-chip](../entities/organ-on-chip.md)
+
 ## Related sources
 
 - [Controlling the polarity of human gastrointestinal organoids to investigate epithelial biology and infectious diseases](co_2021_controlling_the_polarity_of_human.md) - another access-focused assay paper where geometry and exposure design determine whether the biology is interpretable.
