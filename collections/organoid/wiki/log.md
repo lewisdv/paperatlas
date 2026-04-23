@@ -1565,3 +1565,9 @@
 - Created query page wiki/queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md.
 - Compared pancreas, intestine, BBB, and lung screening stacks by their first bottleneck rather than by a generic shared pipeline.
 - Used Hogrebe 2021 plus Balboa 2022 to frame pancreas as maturity-first, Co 2021 plus Puschhof 2021 plus IV 2024 to frame intestine as access-first, Bergmann 2018 to frame BBB as barrier-readout-first, and Matkovic Leko 2023 to frame lung as baseline-complexity-first.
+
+## [2026-04-23 16:26 KST] query saved | Vascularization routes by organ and question
+
+- Created query page wiki/queries/20260423_1626_vascularization-routes-by-organ-and-question.md.
+- Compared flow/perfusion, TF-driven vascularization, mesodermal progenitor mixing, stand-alone vascular organoids, and host transplantation as different route choices rather than different strengths of one vascularization ladder.
+- Used Homan 2019 to anchor kidney flow-based maturation, Cakir 2019 to anchor TF-driven brain vascular support, Worsdorfer 2019 to anchor modular mesodermal mixing, Wimmer 2019 plus L 2026 to anchor vessel-only baselines, and Watanabe 2022 to anchor host-context repair validation.

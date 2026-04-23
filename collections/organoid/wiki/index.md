@@ -156,6 +156,7 @@
 - [PDO가 treatment-guidance형 translational screening에 들어갈 준비가 됐는지 어떻게 판정해야 하나](queries/20260423_1554_pdo-readiness-rubric-for-treatment-guidance-screening.md) - specimen adequacy, line stability, freeze-thaw QC, disease fidelity, assay credibility 기준의 PDO readiness rubric.
 - [donor-derived cancer work는 언제 compact ex vivo validation에서 멈추고 언제 immune reconstruction이나 PDO-X로 올라가야 하나](queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md) - tumor-intrinsic response, defined immune partner, host-restored biology 기준의 cancer escalation rule.
 - [pancreas, intestine, BBB, lung에서는 screening stack를 어떻게 다르게 짜야 하나](queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md) - organ별 첫 병목을 maturity, access, barrier-readout, baseline-complexity로 나눠 screening stack 차이 정리.
+- [flow, TF-driven vascularization, mesodermal mixing, stand-alone vessel addition, host transplantation은 organ과 질문에 따라 어떻게 골라야 하나](queries/20260423_1626_vascularization-routes-by-organ-and-question.md) - kidney, brain, multicompartment, vessel-only, host-validation branch별 vascularization route 선택 규칙 정리.
 
 - [Organoid corpus lint/prune pass](queries/20260421_153718_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
 - [Organoid corpus lint/prune pass](queries/20260421_155351_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
