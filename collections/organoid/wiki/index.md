@@ -116,9 +116,11 @@ Recommended first-stop entities:
 Platform and baseline anchors:
 
 - [Patient-derived organoid xenografts (PDO-X)](entities/patient-derived-organoid-xenograft-pdo-x.md) - host-escalation platform for donor-preserving cancer organoid workflows.
+- [Foregut-midgut regionalization from hPSCs](entities/foregut-midgut-regionalization-from-hpscs.md) - developmental endoderm route for separating intestinal, gastric, and boundary-connected foregut or midgut fates.
 - [Stand-alone vascular organoids](entities/stand-alone-vascular-organoids.md) - vessel-first baseline for defining the vascular branch itself.
 - [Stem-cell-derived islets (SC-islets)](entities/stem-cell-derived-islets-sc-islets.md) - pancreas screening baseline that depends on functional maturity, not markers alone.
 - [Nephron-patterning kidney organoids](entities/nephron-patterning-kidney-organoids.md) - kidney baseline platform family spanning nephron-progenitor, broad renal, ureteric-bud, and segment-biased routes.
+- [Sensory ectoderm and appendage organoids](entities/sensory-ectoderm-and-appendage-organoids.md) - self-organized branch for retinal niche, inner-ear sensory, and hair-bearing skin architectures.
 - [Reproductive mucosal epithelial organoids](entities/reproductive-mucosal-epithelial-organoids.md) - adult reproductive-tract epithelial platform branch for niche, infection, stromal, and immune-context questions.
 - [Distal lung organoids](entities/distal-lung-organoids.md) - respiratory baseline branch for developmental, ILD-like, and infection-facing lung questions.
 - [Heart-forming organoids](entities/heart-forming-organoids.md) - multicompartment developmental cardiac baseline for later hematoendothelial or immune-bearing extensions.

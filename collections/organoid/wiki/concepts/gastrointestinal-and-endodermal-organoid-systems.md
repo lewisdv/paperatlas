@@ -43,6 +43,7 @@ The endodermal side of the corpus spans both foundational derivation and later a
 
 ## Related entities
 
+- [Foregut-midgut regionalization from hPSCs](../entities/foregut-midgut-regionalization-from-hpscs.md)
 - [Polarity inversion and apical access](../entities/polarity-inversion-and-apical-access.md)
 - [Organ-on-chip](../entities/organ-on-chip.md)
 - [Stem-cell-derived islets (SC-islets)](../entities/stem-cell-derived-islets-sc-islets.md)

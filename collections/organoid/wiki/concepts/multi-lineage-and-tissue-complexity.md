@@ -40,3 +40,8 @@ A major trend across this collection is the move away from simple epithelial bal
 
 - Which extra tissue compartments materially change the answer to the biological question?
 - When does added complexity improve realism, and when does it mostly increase variability?
+
+## Related entities
+
+- [Sensory ectoderm and appendage organoids](../entities/sensory-ectoderm-and-appendage-organoids.md)
+- [Foregut-midgut regionalization from hPSCs](../entities/foregut-midgut-regionalization-from-hpscs.md)

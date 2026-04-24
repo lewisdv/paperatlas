@@ -42,6 +42,8 @@ This corpus repeatedly shows the main protocol design tradeoff in organoid work:
 
 ## Related entities
 
+- [Foregut-midgut regionalization from hPSCs](../entities/foregut-midgut-regionalization-from-hpscs.md)
+- [Sensory ectoderm and appendage organoids](../entities/sensory-ectoderm-and-appendage-organoids.md)
 - [Stem-cell-derived islets (SC-islets)](../entities/stem-cell-derived-islets-sc-islets.md)
 
 ## Related syntheses
