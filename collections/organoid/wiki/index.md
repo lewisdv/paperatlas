@@ -105,33 +105,47 @@
 
 ## Entities
 
+Recommended first-stop entities:
+
 - [Patient-derived organoids (PDO)](entities/patient-derived-organoids-pdo.md) - donor-preserving baseline platform for translational screening, perturbation, and escalation decisions.
-- [Patient-derived organoid xenografts (PDO-X)](entities/patient-derived-organoid-xenograft-pdo-x.md) - host-escalation platform for donor-preserving cancer organoid workflows.
-- [CRISPR-Cas9 and next-generation CRISPR editing](entities/crispr-cas9-and-next-generation-crispr-editing.md) - editing and screening tool family spanning knockout, base editing, prime editing, and pooled perturbation.
-- [Calcium imaging readouts](entities/calcium-imaging-readouts.md) - dish-level neural activity readout that helps choose brain organoid branches for function-ready assays.
-- [Host circuit engagement](entities/host-circuit-engagement.md) - host-defined neural validation endpoint used when dish readouts no longer answer the question.
-- [MEA electrophysiology readouts](entities/mea-electrophysiology-readouts.md) - brain-organoid functional readout branch centered on dish-level network activity assays.
-- [Polarity inversion and apical access](entities/polarity-inversion-and-apical-access.md) - geometry-correction technique for opening the apical surface of epithelial organoids without a chip.
-- [Microinjection and targeted internal delivery](entities/microinjection-and-targeted-internal-delivery.md) - internal-delivery technique for placing viral, microbial, or tracer cargo into closed 3D organoid compartments.
 - [Organ-on-chip](entities/organ-on-chip.md) - device-layer platform for access, perfusion, compartment separation, and assay-ready epithelial geometry.
-- [Blood-brain-barrier (BBB) spheroids](entities/blood-brain-barrier-bbb-spheroids.md) - barrier-first assay platform for compound penetration or exclusion triage.
-- [Biobanking and freeze-thaw QC](entities/biobanking-and-freeze-thaw-qc.md) - workflow gate that turns donor-derived organoids into reusable translational screening assets.
-- [Stand-alone vascular organoids](entities/stand-alone-vascular-organoids.md) - vessel-first baseline for defining the vascular branch itself.
-- [ETV2-driven vascular induction](entities/etv2-driven-vascular-induction.md) - transcription-factor route for integrated in-dish vascular support.
-- [Mesodermal progenitor cell mixing](entities/mesodermal-progenitor-cell-mixing.md) - modular multicompartment vascular-support assembly strategy.
-- [Stem-cell-derived islets (SC-islets)](entities/stem-cell-derived-islets-sc-islets.md) - pancreas screening baseline that depends on functional maturity, not markers alone.
-- [Assembloids and regional fusion](entities/assembloids-and-regional-fusion.md) - modular multicompartment brain-platform strategy for interregional signaling and circuit questions.
-- [Single-cell atlas benchmarking](entities/single-cell-atlas-benchmarking.md) - transcriptomic comparison layer for fidelity, timing, and protocol-selection questions in brain organoids.
+- [Polarity inversion and apical access](entities/polarity-inversion-and-apical-access.md) - geometry-correction technique for opening the apical surface of epithelial organoids without a chip.
 - [Adult tissue-derived epithelial organoids](entities/adult-tissue-derived-epithelial-organoids.md) - donor-grounded mature epithelial platform branch outside hPSC developmental differentiation.
 - [Host-context transplantation and repair validation](entities/host-context-transplantation-and-repair-validation.md) - cross-domain validation move for repair, engraftment, host circuitry, and host-restored disease behavior.
+
+Platform and baseline anchors:
+
+- [Patient-derived organoid xenografts (PDO-X)](entities/patient-derived-organoid-xenograft-pdo-x.md) - host-escalation platform for donor-preserving cancer organoid workflows.
+- [Stand-alone vascular organoids](entities/stand-alone-vascular-organoids.md) - vessel-first baseline for defining the vascular branch itself.
+- [Stem-cell-derived islets (SC-islets)](entities/stem-cell-derived-islets-sc-islets.md) - pancreas screening baseline that depends on functional maturity, not markers alone.
 - [Nephron-patterning kidney organoids](entities/nephron-patterning-kidney-organoids.md) - kidney baseline platform family spanning nephron-progenitor, broad renal, ureteric-bud, and segment-biased routes.
-- [Whole-mount 3D clearing and imaging](entities/whole-mount-3d-clearing-and-imaging.md) - intact-architecture imaging workflow for volumetric organoid readouts.
-- [Morphology segmentation and descriptor analysis](entities/morphology-segmentation-and-descriptor-analysis.md) - analysis stack for masks, tracks, and interpretable organoid shape measurements.
 - [Reproductive mucosal epithelial organoids](entities/reproductive-mucosal-epithelial-organoids.md) - adult reproductive-tract epithelial platform branch for niche, infection, stromal, and immune-context questions.
 - [Distal lung organoids](entities/distal-lung-organoids.md) - respiratory baseline branch for developmental, ILD-like, and infection-facing lung questions.
 - [Heart-forming organoids](entities/heart-forming-organoids.md) - multicompartment developmental cardiac baseline for later hematoendothelial or immune-bearing extensions.
+- [Assembloids and regional fusion](entities/assembloids-and-regional-fusion.md) - modular multicompartment brain-platform strategy for interregional signaling and circuit questions.
+
+Access, delivery, and engineering tools:
+
+- [Microinjection and targeted internal delivery](entities/microinjection-and-targeted-internal-delivery.md) - internal-delivery technique for placing viral, microbial, or tracer cargo into closed 3D organoid compartments.
+- [CRISPR-Cas9 and next-generation CRISPR editing](entities/crispr-cas9-and-next-generation-crispr-editing.md) - editing and screening tool family spanning knockout, base editing, prime editing, and pooled perturbation.
+- [Biobanking and freeze-thaw QC](entities/biobanking-and-freeze-thaw-qc.md) - workflow gate that turns donor-derived organoids into reusable translational screening assets.
+- [ETV2-driven vascular induction](entities/etv2-driven-vascular-induction.md) - transcription-factor route for integrated in-dish vascular support.
+- [Mesodermal progenitor cell mixing](entities/mesodermal-progenitor-cell-mixing.md) - modular multicompartment vascular-support assembly strategy.
+
+Readout and assay-specific entities:
+
+- [Blood-brain-barrier (BBB) spheroids](entities/blood-brain-barrier-bbb-spheroids.md) - barrier-first assay platform for compound penetration or exclusion triage.
+- [Single-cell atlas benchmarking](entities/single-cell-atlas-benchmarking.md) - transcriptomic comparison layer for fidelity, timing, and protocol-selection questions in brain organoids.
+- [Calcium imaging readouts](entities/calcium-imaging-readouts.md) - dish-level neural activity readout that helps choose brain organoid branches for function-ready assays.
+- [MEA electrophysiology readouts](entities/mea-electrophysiology-readouts.md) - brain-organoid functional readout branch centered on dish-level network activity assays.
+- [Whole-mount 3D clearing and imaging](entities/whole-mount-3d-clearing-and-imaging.md) - intact-architecture imaging workflow for volumetric organoid readouts.
 - [Optical coherence tomography (OCT)](entities/optical-coherence-tomography-oct.md) - label-free 3D imaging modality for longitudinal organoid tracking and segmentation pipelines.
+- [Morphology segmentation and descriptor analysis](entities/morphology-segmentation-and-descriptor-analysis.md) - analysis stack for masks, tracks, and interpretable organoid shape measurements.
 - [NLRP3 inflammasome](entities/nlrp3-inflammasome.md) - inducible inflammatory assay system appearing in brain and heart multicellular organoid contexts.
+
+Validation endpoints:
+
+- [Host circuit engagement](entities/host-circuit-engagement.md) - host-defined neural validation endpoint used when dish readouts no longer answer the question.
 
 ## Concepts
 

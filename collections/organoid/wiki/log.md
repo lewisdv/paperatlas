@@ -1655,3 +1655,9 @@
 - Reorganized `wiki/index.md` so concepts, queries, and syntheses are grouped by browsing role rather than left as one flat list.
 - Pulled the main first-stop concept pages and the highest-value decision queries to the top, separated organ- or task-specific queries from maintenance history, and moved the broadest syntheses into a clearly recommended first section.
 - Updated `wiki/overview.md` and collection checkpointing so the collection's entry layer now reflects the same "branching map" design as the concept layer.
+
+## [2026-04-24 00:35 KST] consolidation | Entity browsing-order pass
+
+- Reorganized the entity section of `wiki/index.md` so entity pages are grouped by browsing role rather than left as one flat alphabetical or historical list.
+- Pulled the most reusable first-stop entities to the top, then separated platform anchors, access or engineering tools, readout entities, and validation endpoints.
+- Updated `wiki/overview.md` and collection checkpointing so the full entry layer now uses a consistent browsing-order structure across concepts, queries, syntheses, and entities.
