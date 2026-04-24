@@ -63,6 +63,10 @@ deep_ingested: 2026-04-10
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Brain subregion-specific organoid protocols](../concepts/brain-subregion-specific-organoid-protocols.md)
 
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+
 ## Open questions
 
 - Which steps in this hindbrain workflow drive the most variability across lines or batches?

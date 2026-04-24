@@ -63,6 +63,11 @@ deep_ingested: 2026-04-08
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+- [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
+
 ## Open questions
 
 - Which steps in this brain workflow drive the most variability across lines or batches?

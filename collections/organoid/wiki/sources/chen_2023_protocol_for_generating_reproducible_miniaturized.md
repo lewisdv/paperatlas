@@ -64,6 +64,10 @@ deep_ingested: 2026-04-10
 - [Brain subregion-specific organoid protocols](../concepts/brain-subregion-specific-organoid-protocols.md)
 - [Organoid engineering, imaging, and screening](../concepts/organoid-engineering-imaging-and-screening.md)
 
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+
 ## Open questions
 
 - Which steps in this midbrain workflow drive the most variability across lines or batches?

@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+
 ## Open questions
 
 - Which steps in this brain workflow drive the most variability across lines or batches?

@@ -1667,3 +1667,9 @@
 - Compressed `wiki/overview.md` so it foregrounds current entry points, live browsing rules, and active collection state instead of carrying the full multi-day buildout as one long working note.
 - Updated `WORKFLOW_CHECKPOINT.md` to reflect the current 2026-04-24 state, including the third synthesis page, the latest consolidation passes, and the overview cleanup.
 - Kept the collection state and navigation guidance aligned after the recent index, entity, and concept reorganization work.
+
+## [2026-04-24 01:00 KST] cleanup | Brain baseline entity threading
+
+- Added `Related entities` sections to seven active brain baseline or screening-oriented source pages without creating any new entity pages.
+- Threaded `single-cell atlas benchmarking` into brainstem, cerebral, hippocampal, telencephalic, hindbrain, and midbrain baseline pages, and also linked `calcium imaging readouts` into the long-term advanced cerebral organoid page.
+- Kept this pass focused on source browsing cleanup for recurring brain protocol-selection pages rather than widening the entity taxonomy again.
