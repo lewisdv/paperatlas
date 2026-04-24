@@ -1679,3 +1679,9 @@
 - Added `Related entities` sections to three more active source pages without creating any new entity pages.
 - Threaded `single-cell atlas benchmarking` into murine cerebral and cerebellar baseline pages, and linked the tonsil immune organoid page to `adult tissue-derived epithelial organoids` because it starts from fresh donor-derived epithelial-immune material rather than a pluripotent developmental route.
 - Kept this pass selective so the remaining no-entity pages are mostly niche baseline protocols where a shortcut still feels optional rather than clearly necessary.
+
+## [2026-04-24 01:20 KST] entity pass | Long-tail developmental baselines
+
+- Added 2 entity pages under `wiki/entities/`: `foregut-midgut-regionalization-from-hpscs.md` and `sensory-ectoderm-and-appendage-organoids.md`.
+- Threaded those entities into lingering developmental baseline pages for gastric, intestinal, hepato-biliary-pancreatic, retinal, inner-ear, and hair-bearing skin organoids, and linked them back into the GI, self-organization, and multi-lineage concept pages plus `wiki/index.md`.
+- Updated `wiki/overview.md` and collection checkpointing so the entity layer now exposes 29 pages and the remaining no-entity set is reduced to a very small residual long-tail.

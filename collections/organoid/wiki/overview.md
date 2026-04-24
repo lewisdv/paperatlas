@@ -24,8 +24,8 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 ## Entity-page status
 
-- Entity pages: 27
-- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, polarity inversion, microinjection, organ-on-chip, BBB spheroids, biobanking or freeze-thaw QC, stand-alone vascular organoids, ETV2-driven vascular induction, mesodermal progenitor mixing, stem-cell-derived islets, assembloids and regional fusion, single-cell atlas benchmarking, adult tissue-derived epithelial organoids, host-context transplantation and repair validation, nephron-patterning kidney organoids, whole-mount 3D clearing and imaging, morphology segmentation and descriptor analysis, reproductive mucosal epithelial organoids, distal lung organoids, heart-forming organoids, OCT, and NLRP3 inflammasome
+- Entity pages: 29
+- Coverage now includes PDO, PDO-X, CRISPR editing, calcium imaging, host circuit engagement, MEA readouts, polarity inversion, microinjection, organ-on-chip, BBB spheroids, biobanking or freeze-thaw QC, stand-alone vascular organoids, ETV2-driven vascular induction, mesodermal progenitor mixing, stem-cell-derived islets, assembloids and regional fusion, single-cell atlas benchmarking, adult tissue-derived epithelial organoids, host-context transplantation and repair validation, nephron-patterning kidney organoids, whole-mount 3D clearing and imaging, morphology segmentation and descriptor analysis, reproductive mucosal epithelial organoids, distal lung organoids, heart-forming organoids, foregut-midgut regionalization from hPSCs, sensory ectoderm and appendage organoids, OCT, and NLRP3 inflammasome
 
 ## Largest organ/system clusters
 
@@ -50,6 +50,6 @@ This collection currently contains 96 active organoid-related source pages. All 
 - For decision support, the two best first syntheses are `wiki/syntheses/20260422_organoid-project-design-playbook.md` and `wiki/syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md`.
 - The April 23 query burst has already been folded back into the syntheses and concept pages, so the saved queries are now better treated as drill-down pages than as the only place where decision rules live.
 - The entity layer is now operational, not decorative. Repeated platforms, access methods, readouts, and validation endpoints have dedicated pages and are grouped in the index as first-stop anchors, platform anchors, tools, readouts, and validation endpoints.
-- Entity back-links now cover the highest-value translational, assay, brain, kidney, imaging, vascularization, and access branches; follow-up cleanups also threaded atlas-benchmarking links into more brain baseline and midbrain-screening pages and donor-baseline links into the tonsil immune branch, so remaining gaps are increasingly concentrated in lighter developmental baseline pages.
+- Entity back-links now cover the highest-value translational, assay, brain, kidney, imaging, vascularization, and access branches; follow-up cleanups also threaded atlas-benchmarking links into more brain baseline and midbrain-screening pages, donor-baseline links into the tonsil immune branch, and new developmental anchors into endodermal and sensory-ectoderm pages, so remaining gaps are increasingly concentrated in only a few niche baselines.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned`, so older cross-links still resolve and pruning remains auditable.
 - Use `python3 scripts/wiki.py --collection organoid resume` when context disappears or when you want the latest backlog, counts, and recent structural changes.
