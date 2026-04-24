@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Brain organoid patterning and assembloids](../concepts/brain-organoid-patterning-and-assembloids.md)
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](../concepts/brain-organoid-fidelity-reproducibility-and-atlases.md)
 
+## Related entities
+
+- [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
+
 ## Related sources
 
 - [Generation of cerebral organoids from human pluripotent stem cells](lancaster_2014_generation_of_cerebral_organoids_from.md) - the canonical human cerebral-organoid baseline that highlights how this paper trades human fidelity for murine speed and practicality.

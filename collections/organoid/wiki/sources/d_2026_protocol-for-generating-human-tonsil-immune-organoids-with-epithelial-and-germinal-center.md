@@ -64,6 +64,10 @@ deep_ingested: 2026-04-22
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 - [Organoid functional assays, transplantation, and coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 
+## Related entities
+
+- [Adult tissue-derived epithelial organoids](../entities/adult-tissue-derived-epithelial-organoids.md)
+
 ## Related sources
 
 - [Protocol for generating liver organoids containing Kupffer cells using human iPSCs](y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md) - another immune-bearing organoid, but one that integrates a resident myeloid lineage during developmental assembly rather than from fresh lymphoid tissue.

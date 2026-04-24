@@ -1673,3 +1673,9 @@
 - Added `Related entities` sections to seven active brain baseline or screening-oriented source pages without creating any new entity pages.
 - Threaded `single-cell atlas benchmarking` into brainstem, cerebral, hippocampal, telencephalic, hindbrain, and midbrain baseline pages, and also linked `calcium imaging readouts` into the long-term advanced cerebral organoid page.
 - Kept this pass focused on source browsing cleanup for recurring brain protocol-selection pages rather than widening the entity taxonomy again.
+
+## [2026-04-24 01:09 KST] cleanup | Selective donor-baseline and brain-benchmark threading
+
+- Added `Related entities` sections to three more active source pages without creating any new entity pages.
+- Threaded `single-cell atlas benchmarking` into murine cerebral and cerebellar baseline pages, and linked the tonsil immune organoid page to `adult tissue-derived epithelial organoids` because it starts from fresh donor-derived epithelial-immune material rather than a pluripotent developmental route.
+- Kept this pass selective so the remaining no-entity pages are mostly niche baseline protocols where a shortcut still feels optional rather than clearly necessary.
