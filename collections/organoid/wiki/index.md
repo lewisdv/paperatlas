@@ -135,27 +135,46 @@
 
 ## Concepts
 
-- [Self-organization and directed patterning](concepts/self-organization-and-directed-patterning.md) - working synthesis page.
-- [Brain organoid patterning and assembloids](concepts/brain-organoid-patterning-and-assembloids.md) - working synthesis page.
-- [Brain organoid fidelity, reproducibility, and atlas benchmarks](concepts/brain-organoid-fidelity-reproducibility-and-atlases.md) - working synthesis page.
-- [Brain subregion-specific organoid protocols](concepts/brain-subregion-specific-organoid-protocols.md) - working synthesis page.
-- [Gastrointestinal and endodermal organoid systems](concepts/gastrointestinal-and-endodermal-organoid-systems.md) - working synthesis page.
-- [Kidney organoid differentiation routes](concepts/kidney-organoid-differentiation-routes.md) - working synthesis page.
-- [Cardiac and hematoendothelial organoids](concepts/cardiac-and-hematoendothelial-organoids.md) - working synthesis page.
-- [Adult stem cell and patient-derived organoid platforms](concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md) - working synthesis page.
-- [Multi-lineage and tissue complexity](concepts/multi-lineage-and-tissue-complexity.md) - working synthesis page.
-- [Organoid functional assays, transplantation, and coculture](concepts/organoid-functional-assays-transplantation-and-coculture.md) - working synthesis page.
-- [Organoid vascularization and perfusion strategies](concepts/organoid-vascularization-and-perfusion-strategies.md) - working synthesis page.
-- [Organoid engineering, imaging, and screening](concepts/organoid-engineering-imaging-and-screening.md) - working synthesis page.
+Start here for broad branch choice:
+
+- [Self-organization and directed patterning](concepts/self-organization-and-directed-patterning.md) - first stop for deciding how much developmental control versus heterogeneity is worth trading.
+- [Adult stem cell and patient-derived organoid platforms](concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md) - first stop for deciding whether donor-grounded capture matters more than developmental reconstruction.
+- [Organoid functional assays, transplantation, and coculture](concepts/organoid-functional-assays-transplantation-and-coculture.md) - first stop when the baseline tissue exists and the next question is which assay or validation layer to add.
+- [Organoid engineering, imaging, and screening](concepts/organoid-engineering-imaging-and-screening.md) - first stop when the bottleneck is delivery, imaging, quantification, or screen standardization.
+- [Multi-lineage and tissue complexity](concepts/multi-lineage-and-tissue-complexity.md) - first stop when added compartments are tempting and the real question is whether they change the answer enough to justify complexity.
+
+System-specific branches:
+
+- [Brain organoid patterning and assembloids](concepts/brain-organoid-patterning-and-assembloids.md) - branch map for region choice, single-region baselines, and when fusion or later assay layers become necessary.
+- [Brain organoid fidelity, reproducibility, and atlas benchmarks](concepts/brain-organoid-fidelity-reproducibility-and-atlases.md) - branch map for judging whether a chosen brain protocol is stable and believable enough to trust.
+- [Brain subregion-specific organoid protocols](concepts/brain-subregion-specific-organoid-protocols.md) - subregion-oriented comparison page across forebrain, midbrain, brainstem, hindbrain, hippocampal, and cerebellar protocols.
+- [Gastrointestinal and endodermal organoid systems](concepts/gastrointestinal-and-endodermal-organoid-systems.md) - branch map for gut, gastric, liver, pancreas, access-control, repair, and endodermal complexity questions.
+- [Kidney organoid differentiation routes](concepts/kidney-organoid-differentiation-routes.md) - branch map for renal route choice, segment bias, and support-compartment rescue.
+- [Cardiac and hematoendothelial organoids](concepts/cardiac-and-hematoendothelial-organoids.md) - branch map for heart-forming baselines, blood-generating extensions, and immune-integrated cardiac assays.
+- [Organoid vascularization and perfusion strategies](concepts/organoid-vascularization-and-perfusion-strategies.md) - branch map for vessel-only, integrated vascular support, perfusion rescue, and host-integration routes.
 
 ## Queries
 
-- [Brain subregion별 프로토콜 비교](queries/20260408_174047_brain-subregion-protocol-comparison.md) - 9개 뇌 subregion 프로토콜 비교 (whole cerebral, forebrain, hippocampus, midbrain, brainstem, hindbrain, cerebellum 등).
-- [Brain organoid 발달정도·동기화 비교 프레임워크](queries/20260409_brain-protocol-maturation-synchronization.md) - 5축 비교 프레임워크 (region, reproducibility, fidelity, temporal mapping, cross-protocol alignment) 기반 분석. Round 2-4 신규 논문 (Velasco, Yoon, Bhaduri, Kanton, He) 활용.
+Recommended first decision queries:
+
 - [언제 developmental hPSC organoid 대신 adult/patient-derived platform을 선택해야 하나](queries/20260420_172028_developmental-vs-patient-derived-platform-selection.md) - 발생 재구성, donor specificity, translational screening, multi-lineage niche 관점에서 플랫폼 선택 규칙 정리.
-- [언제 vascularization, perfusion, transplantation 중 무엇을 선택해야 하나](queries/20260420_172029_vascularization-perfusion-vs-transplantation.md) - in vitro 혈관화, flow 기반 성숙화, host-context validation의 선택 기준 정리.
 - [Baseline organoid 뒤에 어떤 assay 또는 engineering layer를 먼저 붙여야 하나](queries/20260420_172030_assay-and-engineering-layer-selection.md) - polarity control, coculture, transplantation, electrophysiology, CRISPR screening의 적용 순서 정리.
 - [얼마나 복잡한 organoid가 정말 필요한가](queries/20260420_172824_complexity-vs-throughput-tradeoff.md) - biological richness와 throughput 사이에서 complexity를 올릴 시점을 정리.
+- [언제 organoid에서 animal로 escalation해야 하나](queries/20260420_190410_organoid-to-animal-escalation-rule.md) - host-only claim과 in vitro 대체 가능성을 기준으로 animal validation 진입 시점 정리.
+- [언제 coculture로 충분하고 언제 host validation이 필요한가](queries/20260420_191749_coculture-vs-host-validation-for-interaction-questions.md) - interaction 질문에서 access, defined partner, tissue-support, host-only endpoint의 순서 정리.
+
+High-value newer decision queries:
+
+- [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md) - access correction, internal delivery, durable compartment control, barrier triage의 선택 규칙 정리.
+- [PDO가 treatment-guidance형 translational screening에 들어갈 준비가 됐는지 어떻게 판정해야 하나](queries/20260423_1554_pdo-readiness-rubric-for-treatment-guidance-screening.md) - specimen adequacy, line stability, freeze-thaw QC, disease fidelity, assay credibility 기준의 PDO readiness rubric.
+- [donor-derived cancer work는 언제 compact ex vivo validation에서 멈추고 언제 immune reconstruction이나 PDO-X로 올라가야 하나](queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md) - tumor-intrinsic response, defined immune partner, host-restored biology 기준의 cancer escalation rule.
+- [pancreas, intestine, BBB, lung에서는 screening stack를 어떻게 다르게 짜야 하나](queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md) - organ별 첫 병목을 maturity, access, barrier-readout, baseline-complexity로 나눠 screening stack 차이 정리.
+- [flow, TF-driven vascularization, mesodermal mixing, stand-alone vessel addition, host transplantation은 organ과 질문에 따라 어떻게 골라야 하나](queries/20260423_1626_vascularization-routes-by-organ-and-question.md) - kidney, brain, multicompartment, vessel-only, host-validation branch별 vascularization route 선택 규칙 정리.
+
+Organ- or task-specific decision queries:
+
+- [Brain subregion별 프로토콜 비교](queries/20260408_174047_brain-subregion-protocol-comparison.md) - 9개 뇌 subregion 프로토콜 비교 (whole cerebral, forebrain, hippocampus, midbrain, brainstem, hindbrain, cerebellum 등).
+- [Brain organoid 발달정도·동기화 비교 프레임워크](queries/20260409_brain-protocol-maturation-synchronization.md) - 5축 비교 프레임워크 (region, reproducibility, fidelity, temporal mapping, cross-protocol alignment) 기반 분석. Round 2-4 신규 논문 (Velasco, Yoon, Bhaduri, Kanton, He) 활용.
 - [Brain organoid는 functional readout에 따라 어떻게 고르는 게 맞나](queries/20260420_172825_brain-functional-readout-selection.md) - reproducibility, fidelity, timing, oscillation, host integration, perturbation readout별 선택 규칙 정리.
 - [Adult 또는 patient-derived organoid의 빠진 compartment는 어떻게 보완해야 하나](queries/20260420_172826_missing-compartment-compensation-for-adult-organoids.md) - access, immune, vascular, host-context, niche 결손을 어떤 보완 레이어로 메울지 정리.
 - [Organ마다 maturity benchmark를 어떻게 다르게 잡아야 하나](queries/20260420_173503_organ-specific-maturity-benchmarking.md) - brain, pancreas, kidney, intestine, niche-rich system별 성숙도 benchmark 축을 organ-specific하게 정리.
@@ -165,16 +184,11 @@
 - [질병 모델링에서는 phenotype source를 먼저 어떻게 구분해야 하나](queries/20260420_174125_disease-phenotype-source-triage.md) - donor, developmental, exposure, niche, host-context 중 질병 phenotype의 원천별 모델 선택 규칙 정리.
 - [어떤 organoid가 translational screening에 가장 먼저 올라가야 하나](queries/20260420_174126_translational-screening-triage.md) - near-term, assay-dependent, discovery-first tier로 organoid screening 우선순위 정리.
 - [Immune, vascular, niche 보완 중 무엇을 먼저 붙여야 하나](queries/20260420_190409_immune-vascular-vs-niche-compensation-priority.md) - access, interaction, tissue-support, niche dependence 기준으로 support-compartment 보완 우선순위 정리.
-- [언제 organoid에서 animal로 escalation해야 하나](queries/20260420_190410_organoid-to-animal-escalation-rule.md) - host-only claim과 in vitro 대체 가능성을 기준으로 animal validation 진입 시점 정리.
 - [Organoid assay가 실패할 때 무엇부터 의심해야 하나](queries/20260420_190411_organoid-assay-failure-mode-triage.md) - access, baseline stability, missing partner, vascular bottleneck, readout-layer 문제를 구분하는 triage 규칙 정리.
-- [언제 coculture로 충분하고 언제 host validation이 필요한가](queries/20260420_191749_coculture-vs-host-validation-for-interaction-questions.md) - interaction 질문에서 access, defined partner, tissue-support, host-only endpoint의 순서 정리.
 - [Organ마다 assay가 약할 때 recovery move를 어떻게 다르게 잡아야 하나](queries/20260420_191750_organ-specific-assay-recovery-playbook.md) - brain, pancreas, kidney, intestine, patient-derived cancer 기준으로 organ-specific recovery ladder 정리.
 - [질병 종류별로 organoid escalation ladder를 어떻게 짜야 하나](queries/20260420_191751_disease-specific-organoid-escalation-ladders.md) - cancer, developmental neuro, infection/barrier, regenerative, niche disease별 complexity escalation sequence 정리.
-- [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md) - access correction, internal delivery, durable compartment control, barrier triage의 선택 규칙 정리.
-- [PDO가 treatment-guidance형 translational screening에 들어갈 준비가 됐는지 어떻게 판정해야 하나](queries/20260423_1554_pdo-readiness-rubric-for-treatment-guidance-screening.md) - specimen adequacy, line stability, freeze-thaw QC, disease fidelity, assay credibility 기준의 PDO readiness rubric.
-- [donor-derived cancer work는 언제 compact ex vivo validation에서 멈추고 언제 immune reconstruction이나 PDO-X로 올라가야 하나](queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md) - tumor-intrinsic response, defined immune partner, host-restored biology 기준의 cancer escalation rule.
-- [pancreas, intestine, BBB, lung에서는 screening stack를 어떻게 다르게 짜야 하나](queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md) - organ별 첫 병목을 maturity, access, barrier-readout, baseline-complexity로 나눠 screening stack 차이 정리.
-- [flow, TF-driven vascularization, mesodermal mixing, stand-alone vessel addition, host transplantation은 organ과 질문에 따라 어떻게 골라야 하나](queries/20260423_1626_vascularization-routes-by-organ-and-question.md) - kidney, brain, multicompartment, vessel-only, host-validation branch별 vascularization route 선택 규칙 정리.
+
+Maintenance and cleanup history:
 
 - [Organoid corpus lint/prune pass](queries/20260421_153718_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
 - [Organoid corpus lint/prune pass](queries/20260421_155351_organoid-corpus-lint-prune-pass.md) - low-signal source cleanup for the 100-paper expansion.
@@ -182,6 +196,11 @@
 - [Organoid corpus lint/prune pass](queries/20260422_185044_organoid-corpus-lint-prune-pass.md) - targeted cleanup of the last standard-ingested source pages.
 ## Syntheses
 
-- [Organoid Protocol Starter Corpus](syntheses/20260408_organoid-protocol-corpus.md) - corpus-level synthesis.
+Recommended first syntheses:
+
 - [Organoid project design playbook](syntheses/20260422_organoid-project-design-playbook.md) - consolidated design rules for baseline choice, assay layers, complexity, and escalation.
 - [Organoid assay escalation and validation playbook](syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md) - decision ladder for maturity, access, coculture, host validation, and donor-derived cancer escalation.
+
+Background corpus synthesis:
+
+- [Organoid Protocol Starter Corpus](syntheses/20260408_organoid-protocol-corpus.md) - earlier corpus-level synthesis from the smaller starter set.

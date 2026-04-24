@@ -1649,3 +1649,9 @@
 - Shortened the brain-patterning, brain-benchmarking, GI-endoderm, vascularization, self-organization, and multi-lineage concept pages so each page now foregrounds the question it owns instead of restating overlapping cross-page summaries.
 - Added synthesis links from those concept pages back into the project-design and assay-escalation playbooks, making the concept layer function more consistently as a branching map.
 - Updated `wiki/overview.md` and collection checkpointing to reflect that most major concept pages now serve as concise entry points rather than parallel long-form summaries.
+
+## [2026-04-24 00:28 KST] consolidation | Index browsing-order pass
+
+- Reorganized `wiki/index.md` so concepts, queries, and syntheses are grouped by browsing role rather than left as one flat list.
+- Pulled the main first-stop concept pages and the highest-value decision queries to the top, separated organ- or task-specific queries from maintenance history, and moved the broadest syntheses into a clearly recommended first section.
+- Updated `wiki/overview.md` and collection checkpointing so the collection's entry layer now reflects the same "branching map" design as the concept layer.
