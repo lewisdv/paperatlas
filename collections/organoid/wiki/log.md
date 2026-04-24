@@ -1685,3 +1685,9 @@
 - Added 2 entity pages under `wiki/entities/`: `foregut-midgut-regionalization-from-hpscs.md` and `sensory-ectoderm-and-appendage-organoids.md`.
 - Threaded those entities into lingering developmental baseline pages for gastric, intestinal, hepato-biliary-pancreatic, retinal, inner-ear, and hair-bearing skin organoids, and linked them back into the GI, self-organization, and multi-lineage concept pages plus `wiki/index.md`.
 - Updated `wiki/overview.md` and collection checkpointing so the entity layer now exposes 29 pages and the remaining no-entity set is reduced to a very small residual long-tail.
+
+## [2026-04-24 01:35 KST] synthesis | Developmental baseline and regionalization playbook
+
+- Added `wiki/syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md` to compress developmental baseline selection into one page distinct from the broader design and assay-escalation playbooks.
+- Folded self-organization versus directed patterning, brain subregion choice, endodermal regionalization, sensory ectoderm, and early multi-lineage developmental baselines into one route-selection map.
+- Updated `wiki/index.md`, `wiki/overview.md`, and collection checkpointing so the synthesis layer now exposes 4 pages and better covers developmental baseline choice as its own first-stop branch.

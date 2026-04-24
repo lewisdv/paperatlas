@@ -216,6 +216,7 @@ Recommended first syntheses:
 
 - [Organoid project design playbook](syntheses/20260422_organoid-project-design-playbook.md) - consolidated design rules for baseline choice, assay layers, complexity, and escalation.
 - [Organoid assay escalation and validation playbook](syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md) - decision ladder for maturity, access, coculture, host validation, and donor-derived cancer escalation.
+- [Organoid developmental baseline and regionalization playbook](syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md) - developmental route map for self-organization, regional patterning, endodermal regionalization, sensory ectoderm, and early multi-lineage baselines.
 
 Background corpus synthesis:
 
