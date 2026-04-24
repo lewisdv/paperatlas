@@ -1661,3 +1661,9 @@
 - Reorganized the entity section of `wiki/index.md` so entity pages are grouped by browsing role rather than left as one flat alphabetical or historical list.
 - Pulled the most reusable first-stop entities to the top, then separated platform anchors, access or engineering tools, readout entities, and validation endpoints.
 - Updated `wiki/overview.md` and collection checkpointing so the full entry layer now uses a consistent browsing-order structure across concepts, queries, syntheses, and entities.
+
+## [2026-04-24 00:46 KST] consolidation | Overview compression pass
+
+- Compressed `wiki/overview.md` so it foregrounds current entry points, live browsing rules, and active collection state instead of carrying the full multi-day buildout as one long working note.
+- Updated `WORKFLOW_CHECKPOINT.md` to reflect the current 2026-04-24 state, including the third synthesis page, the latest consolidation passes, and the overview cleanup.
+- Kept the collection state and navigation guidance aligned after the recent index, entity, and concept reorganization work.
