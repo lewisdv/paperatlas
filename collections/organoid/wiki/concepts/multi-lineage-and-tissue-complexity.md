@@ -21,12 +21,15 @@ A major trend across this collection is the move away from simple epithelial bal
 
 ## Working synthesis
 
-- Lancaster, Lee, and some cardiac papers show the value of emergent tissue complexity.
-- Koike, Dardano, and the new Kupffer-containing liver protocol explicitly pursue linked developmental programs across neighboring organs or immune-bearing compartments.
-- The heart macrophage assembloid paper shows that multicellular complexity can also be justified by disease mechanism, where inflammatory immune cells are required to make the atrial-rhythm question experimentally visible.
-- The new tonsil immune organoid and vascular organoid protocols show that complexity in the refill cohort often means epithelial-immune or multicellular vascular architecture, not only classic organ boundary models.
-- Bergmann 2018 shows that multicellular complexity can also be organized around barrier architecture and direct endothelial-pericyte-astrocyte contact, not only around developmental organ-boundary programs.
-- Olijnik and Matkovic Leko push organoid logic into niche or disease contexts where multicellular composition is central to the model.
+- This page is the main entry point when the question is **whether added compartments are actually worth the complexity cost**.
+- In this corpus, complexity is justified in several different ways: developmental boundary logic, immune-bearing architecture, barrier architecture, vascular modules, or disease mechanisms that only become visible once multiple partners coexist.
+- Koike, Kupffer-containing liver organoids, tonsil immune organoids, and cardiac immune-integrated models show that added lineages are useful only when they unlock a question that a simpler system would miss.
+- A useful rule for this page is therefore: **come here first when a project is tempted to add more tissue compartments and the real question is whether those compartments materially change the answer or only add noise**.
+
+## Related syntheses
+
+- [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)
 
 ## Main tension
 

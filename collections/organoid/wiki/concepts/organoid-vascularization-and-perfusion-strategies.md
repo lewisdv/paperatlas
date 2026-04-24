@@ -14,13 +14,10 @@ This corpus now contains five distinct vascularization strategies: stand-alone b
 
 ## Working synthesis
 
-- [Wimmer 2019](../sources/wimmer_2019_generation_of_blood_vessel_organoids.md) provides the baseline definition of a self-organized microvascular organoid and clarifies what vessel-only systems can achieve before organ-specific integration.
-- [Cakir 2019](../sources/cakir_2019_engineering_of_human_brain.md) shows that engineered endothelial fate induction can build vascular-like networks inside cortical organoids and reduce hypoxia without obviously disrupting cortical architecture.
-- [Homan 2019](../sources/homan_2019_flow-enhanced_vascularization_and_maturation.md) argues that perfusion, device geometry, and ECM context can expand endogenous vascular compartments and mature kidney organoids without genetic engineering.
-- [Worsdorfer 2019](../sources/worsdorfer_2019_generation_of_complex_human_organoid.md) adds a modular mesodermal progenitor cell-mixing strategy that can deliver vasculature, mural cells, and microglia-like cells across neural and tumor contexts.
-- [L 2026](../sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md) adds a more explicitly programmed vessel-only route via orthogonal ETV2 and NKX3.1 activation, extending the vessel branch beyond purely self-organized or perfused systems.
-- Together these papers show that vascularization is not a single upgrade step but a design choice among stand-alone vessel modules, TF engineering, orthogonal activation, flow-based maturation, and mesodermal co-development.
-- The newest vascularization-route query folds these into a simpler organ-matched rule: use flow when organ-specific in-dish maturation is the bottleneck, TF-driven programs when integrated vascular support is needed inside brain organoids, mesodermal mixing when a reusable multicompartment module is needed, stand-alone vessel organoids when the vascular branch itself is the baseline, and transplantation when repair or circulation integration is the endpoint.
+- This page is the main entry point when the question is **which vascularization route fits the organ and endpoint**.
+- The corpus now separates several moves that used to collapse into one word: stand-alone vessel organoids, TF-driven vascular induction inside a host tissue, flow or perfusion rescue, mesodermal co-development, and later host integration.
+- Wimmer anchors vessel-only baselines, Cakir anchors integrated brain support, Homan anchors kidney perfusion or maturation rescue, Worsdorfer anchors reusable multicompartment mesodermal mixing, and L 2026 extends the vessel-only branch into more explicit transcriptional programming.
+- A useful rule for this page is therefore: **come here first when vascularization is the missing layer, but the harder question is whether you need a vessel module, an organ-support module, a perfusion module, or a host-integration endpoint**.
 
 ## Main tensions
 
@@ -45,3 +42,8 @@ This corpus now contains five distinct vascularization strategies: stand-alone b
 
 - [언제 vascularization, perfusion, transplantation 중 무엇을 선택해야 하나](../queries/20260420_172029_vascularization-perfusion-vs-transplantation.md)
 - [flow, TF-driven vascularization, mesodermal mixing, stand-alone vessel addition, host transplantation은 organ과 질문에 따라 어떻게 골라야 하나](../queries/20260423_1626_vascularization-routes-by-organ-and-question.md)
+
+## Related syntheses
+
+- [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)

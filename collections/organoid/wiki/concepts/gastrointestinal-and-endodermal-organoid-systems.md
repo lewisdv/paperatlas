@@ -25,13 +25,11 @@ The endodermal side of the corpus spans both foundational derivation and later a
 
 ## Working synthesis
 
-- McCracken and Broda provide the developmental starting points for intestinal and gastric identity from pluripotent cells.
-- Puschhof, Co, and Watanabe show how intestinal organoids become experimentally useful when lumen access, polarity, host interaction, or transplantation are built in.
-- Koike, Broutier, and Tysoe broaden endodermal work toward boundary models, adult self-renewing tissue systems, and scaffolded biliary reconstruction.
-- The refill cohort extends this branch into patient-derived intestinal capture, pancreas morphogenesis, organ-on-chip deployment, stromal repair coculture, immune-bearing liver organoids, outbreak-relevant liver infection assays, disease-stratified adult liver biobanking, and pathogen-facing intestinal monolayers.
-- The pancreas morphogenesis protocol sharpens this branch further by showing that some endodermal systems are most valuable in an intermediate format: neither fully floating organoids nor flat monolayers, but Matrigel-overlay epithelial cultures where luminal remodeling and endocrine fate can be tracked together.
-- Together these papers make clear that endodermal organoids are no longer just derivation problems; they are now platforms for access, repair, screening, and multicompartment niche design.
-- The newest query consolidation sharpens the intestinal side especially: intestine is one of the clearest access-first branches in the collection, where polarity inversion, microbial exposure logic, and organ-on-chip compartment control often matter before any downstream screen or host escalation.
+- This page is the main entry point when the question is **which endodermal branch matters more: derivation, donor capture, access control, repair, or multicompartment extension**.
+- McCracken and Broda anchor the developmental gut and gastric baselines, while Broutier, Tysoe, and the newer liver or intestinal capture papers anchor adult or donor-grounded endoderm platforms.
+- The intestinal side of the corpus is now especially clear: many downstream questions are access-first rather than differentiation-first, so polarity inversion, microbial exposure logic, and organ-on-chip control often matter before screening or host escalation.
+- Koike, the Kupffer-containing liver protocol, and the pancreas morphogenesis workflow show that endodermal systems also occupy useful middle ground between simple epithelial baselines and fully multi-organ complexity.
+- A useful rule for this page is therefore: **come here first when the tissue is endodermal and the unresolved issue is whether to stay with a simple epithelial baseline or move toward access, repair, immune integration, or boundary-connected architecture**.
 
 ## Main tension
 
@@ -53,3 +51,8 @@ The endodermal side of the corpus spans both foundational derivation and later a
 
 - [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](../queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md)
 - [pancreas, intestine, BBB, lung에서는 screening stack를 어떻게 다르게 짜야 하나](../queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md)
+
+## Related syntheses
+
+- [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)

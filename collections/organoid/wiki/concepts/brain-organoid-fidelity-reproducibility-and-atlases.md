@@ -18,14 +18,11 @@ This corpus now separates benchmark questions that are easy to blur together in 
 
 ## Working synthesis
 
-- [Velasco 2019](../sources/velasco_2019_individual_brain_organoids_reproducibly.md) and [Yoon 2019](../sources/yoon_2019_reliability_of_human_cortical.md) make the strongest case in this corpus that directed cortical workflows can be reproducible across batches and lines, but they define reproducibility differently and at different scales.
-- [Bhaduri 2020](../sources/bhaduri_2020_cell_stress_in_cortical.md) shifts the benchmark from organoid-to-organoid similarity toward fidelity versus primary fetal cortex and makes the key point that reproducibility does not guarantee endogenous-like subtype specification.
-- [Kanton 2019](../sources/kanton_2019_organoid_single-cell_genomic_atlas.md) adds a temporal benchmark layer by showing when major cell states emerge in cerebral organoids and how human developmental timing differs from chimpanzee and macaque trajectories.
-- [He 2024](../sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) turns these individual comparison axes into a shared atlas framework, letting protocols be compared on common regional coverage and transcriptomic similarity scales.
-- [Kelley 2024](../sources/kelley_2024_host_circuit_engagement_of_human.md) is important here because transplantation functions as a downstream validation layer when dish-based maturation and fidelity claims remain ambiguous.
-- [i 2026](../sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md) shows that reproducibility conversations also extend to low-cost murine cerebral baselines, even when the benchmark is morphological stability rather than human atlas alignment.
-- [r 2024](../sources/r_2024_primitive-and-definitive-neural-precursor-cells-are-present-in-human-cerebral-organoids.md) adds a missing benchmark axis around hidden precursor-pool composition, showing that fidelity is also about whether organoids preserve operational stem-state hierarchies rather than only mature neuronal resemblance.
-- [d 2024](../sources/d_2024_a-dynamic-protocol-to-explore-nlrp3-inflammasome-activation-in-cerebral-organoids.md) shows that assay interpretability itself depends on maturity benchmarks: late astrocyte emergence determines whether a cerebral organoid can support meaningful neuroinflammation readouts.
+- This page is the main entry point when the question is **how to judge whether a brain protocol is believable enough to use**.
+- The corpus now separates several benchmark axes that are easy to blur together: within-protocol reproducibility, fidelity to primary tissue, temporal alignment, precursor-state composition, and cross-protocol atlas coverage.
+- Velasco and Yoon anchor reproducibility, Bhaduri anchors fidelity-versus-stress, Kanton and He anchor atlas or temporal benchmarking, and r 2024 adds a more operational benchmark around hidden precursor-pool composition.
+- Kelley matters here because host transplantation becomes the next validation layer once dish-based benchmarks stop resolving the ambiguity.
+- A useful rule for this page is therefore: **come here first when the unresolved issue is not region choice but whether the chosen brain protocol is mature, stable, and biologically faithful enough to trust**.
 
 ## Main tensions
 
@@ -44,3 +41,8 @@ This corpus now separates benchmark questions that are easy to blur together in 
 - [Single-cell atlas benchmarking](../entities/single-cell-atlas-benchmarking.md)
 - [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
 - [Host circuit engagement](../entities/host-circuit-engagement.md)
+
+## Related syntheses
+
+- [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)

@@ -24,10 +24,11 @@ Brain-organoid protocols in this collection now split into broad cerebral self-o
 
 ## Working synthesis
 
-- Lancaster remains the self-organizing cerebral reference point, whereas Sloan and Ullah move toward cleaner forebrain or telencephalic control.
-- Eura, Zagare, Chen, Valiulahi, Pomeshchik, and Atamian extend the corpus into brainstem, midbrain, hindbrain, hippocampal, and cerebellar protocols rather than leaving it forebrain-dominant.
-- The refill cohort adds a long-term murine cerebral baseline and a perturbation-ready midbrain workflow, showing that recent brain papers often combine patterning with downstream access methods rather than stopping at regional identity.
-- Giandomenico and Fitzgerald emphasize later-stage maturation and functional readouts, while Kelley, Meng, and the new midbrain microinjection protocol show how transplantation or targeted perturbation can become the next experimental layer.
+- This page is the main entry point when the question is **which brain region or assembly logic should be chosen first**.
+- Lancaster remains the broad self-organizing cerebral baseline, while Sloan and Ullah represent the move toward cleaner forebrain or telencephalic control.
+- Eura, Zagare, Chen, Valiulahi, Pomeshchik, and Atamian extend the branch beyond cortex into brainstem, midbrain, hindbrain, hippocampal, and cerebellar routes, making it clear that brain-organoid choice in this corpus is often a subregion-choice problem.
+- A second split appears after region choice: stay with a single-region protocol, move to longer maturation and functional-readout branches, or escalate into fusion, perturbation, or host-facing validation.
+- A useful rule for this page is therefore: **come here first when the unresolved issue is regional identity or whether one compartment is enough before moving to assembloid or later assay layers**.
 
 ## Main tension
 
@@ -44,3 +45,8 @@ Brain-organoid protocols in this collection now split into broad cerebral self-o
 - [Assembloids and regional fusion](../entities/assembloids-and-regional-fusion.md)
 - [Calcium imaging readouts](../entities/calcium-imaging-readouts.md)
 - [Host circuit engagement](../entities/host-circuit-engagement.md)
+
+## Related syntheses
+
+- [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)

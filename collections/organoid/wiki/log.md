@@ -1643,3 +1643,9 @@
 - Shortened the adult-platform, functional-assay, and engineering-screening concept pages so each page now points more clearly to the question it owns instead of restating the entire April 23 query burst.
 - Added direct links from those concept pages to the assay-escalation synthesis, making the concept layer a cleaner entry point for donor-platform choice, assay-layer choice, and engineering-or-readout choice.
 - Updated `wiki/overview.md` and collection checkpointing to reflect that the concept layer has moved from accumulation toward compression and navigation cleanup.
+
+## [2026-04-24 00:19 KST] consolidation | Second concept entry-point pass
+
+- Shortened the brain-patterning, brain-benchmarking, GI-endoderm, vascularization, self-organization, and multi-lineage concept pages so each page now foregrounds the question it owns instead of restating overlapping cross-page summaries.
+- Added synthesis links from those concept pages back into the project-design and assay-escalation playbooks, making the concept layer function more consistently as a branching map.
+- Updated `wiki/overview.md` and collection checkpointing to reflect that most major concept pages now serve as concise entry points rather than parallel long-form summaries.

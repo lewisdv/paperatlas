@@ -24,11 +24,11 @@ This corpus repeatedly shows the main protocol design tradeoff in organoid work:
 
 ## Working synthesis
 
-- Unguided or lightly guided protocols such as Lancaster and some later brain workflows are strongest when emergent architecture and cell-type diversity are part of the biological question.
-- More directed protocols such as McCracken, Morizane, Takasato, Sloan, and Ullah are better when a specific organ region or lineage must be generated reproducibly.
-- Recent protocols increasingly aim for an intermediate position rather than a strict binary, especially in the brain-organoid literature.
-- The new choroid-plexus and precursor-state papers sharpen why that middle ground matters: some questions require enough self-organization to preserve coupled cortical-plus-epithelial architecture or rare stem-state hierarchies that would likely disappear under tighter overpatterning.
-- The pancreas Matrigel-overlay protocol offers a non-neural version of the same logic: directed cytokine timing still matters, but retaining epithelial lumen remodeling and apical organization makes the system more informative than a purely flat differentiation pipeline.
+- This page is the main entry point when the question is **how much control is worth trading for heterogeneity**.
+- Unguided or lightly guided protocols are strongest when emergent architecture, coupled compartments, or rare cell-state structure are part of the biological question.
+- More directed protocols are strongest when a specific region, lineage, or reproducible segment balance must be generated on demand.
+- Many newer papers sit in the middle rather than at either extreme, using enough patterning to stabilize identity while preserving self-organized structure that would otherwise disappear.
+- A useful rule for this page is therefore: **come here first when the unresolved issue is not which organ, but how much developmental freedom the protocol can afford before the biology of interest is lost**.
 
 ## Main tension
 
@@ -43,3 +43,7 @@ This corpus repeatedly shows the main protocol design tradeoff in organoid work:
 ## Related entities
 
 - [Stem-cell-derived islets (SC-islets)](../entities/stem-cell-derived-islets-sc-islets.md)
+
+## Related syntheses
+
+- [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
