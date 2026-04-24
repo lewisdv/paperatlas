@@ -59,6 +59,10 @@ deep_ingested: 2026-04-09
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Sensory ectoderm and appendage organoids](../entities/sensory-ectoderm-and-appendage-organoids.md)
+
 ## Related sources
 
 - [Lancaster 2014](lancaster_2014_generation_of_cerebral_organoids_from.md) — parallel self-organization paradigm for brain.

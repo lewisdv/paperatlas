@@ -62,6 +62,10 @@ deep_ingested: 2026-04-08
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 
+## Related entities
+
+- [Foregut-midgut regionalization from hPSCs](../entities/foregut-midgut-regionalization-from-hpscs.md)
+
 ## Open questions
 
 - Which steps in this gastric workflow drive the most variability across lines or batches?

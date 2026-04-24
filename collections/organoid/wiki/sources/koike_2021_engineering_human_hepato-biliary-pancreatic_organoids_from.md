@@ -63,6 +63,10 @@ deep_ingested: 2026-04-08
 - [Gastrointestinal and endodermal organoid systems](../concepts/gastrointestinal-and-endodermal-organoid-systems.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Foregut-midgut regionalization from hPSCs](../entities/foregut-midgut-regionalization-from-hpscs.md)
+
 ## Open questions
 
 - Which extra lineage or compartment materially changes the answer to the biological question?

@@ -64,6 +64,10 @@ deep_ingested: 2026-04-09
 - [Self-organization and directed patterning](../concepts/self-organization-and-directed-patterning.md)
 - [Multi-lineage and tissue complexity](../concepts/multi-lineage-and-tissue-complexity.md)
 
+## Related entities
+
+- [Sensory ectoderm and appendage organoids](../entities/sensory-ectoderm-and-appendage-organoids.md)
+
 ## Related sources
 
 - [van der Valk 2025](vandervalk_2025_generation_and_characterization_of_vestibular.md) — Nature Protocols extension with detailed step-by-step method from the same lab.
