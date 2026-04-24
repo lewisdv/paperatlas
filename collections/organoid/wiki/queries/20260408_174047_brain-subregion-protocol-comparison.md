@@ -207,6 +207,10 @@ Related: [Atamian 2024 raw](../../raw/sources/atamian_2024_generation_and_long-t
 3. **Forebrain default**: patterning 없으면 hPSC는 forebrain-like fate를 취함 → caudal region은 반드시 caudalizing signal 필요
 4. **Region 순도 vs diversity**: unguided (Lancaster) → semi-guided (Fitzgerald) → fully guided (Sloan, midbrain, hindbrain, cerebellum) 순으로 순도 증가, diversity 감소
 
+## Related syntheses
+
+- [Organoid developmental baseline and regionalization playbook](../syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md)
+
 ## Sources used
 
 - [Lancaster 2014](../sources/lancaster_2014_generation_of_cerebral_organoids_from.md)

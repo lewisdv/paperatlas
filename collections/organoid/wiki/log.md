@@ -1691,3 +1691,9 @@
 - Added `wiki/syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md` to compress developmental baseline selection into one page distinct from the broader design and assay-escalation playbooks.
 - Folded self-organization versus directed patterning, brain subregion choice, endodermal regionalization, sensory ectoderm, and early multi-lineage developmental baselines into one route-selection map.
 - Updated `wiki/index.md`, `wiki/overview.md`, and collection checkpointing so the synthesis layer now exposes 4 pages and better covers developmental baseline choice as its own first-stop branch.
+
+## [2026-04-24 01:44 KST] consolidation | Developmental synthesis wiring pass
+
+- Added direct `Related syntheses` links from the most relevant developmental concept pages and drill-down query pages back to `20260424_organoid-developmental-baseline-and-regionalization-playbook.md`.
+- Kept the older developmental queries intact as detailed references while making the newer synthesis the default starting point for developmental route choice.
+- Updated `wiki/overview.md` and collection checkpointing so the developmental branch is now more clearly routed through the synthesis layer first.

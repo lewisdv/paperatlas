@@ -49,4 +49,5 @@ Brain-organoid protocols in this collection now split into broad cerebral self-o
 ## Related syntheses
 
 - [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid developmental baseline and regionalization playbook](../syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md)
 - [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)

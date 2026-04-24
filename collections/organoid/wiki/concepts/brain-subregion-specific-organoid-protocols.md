@@ -37,3 +37,7 @@ This corpus now spans a continuum from broad cerebral organoids to explicitly pa
 
 - Which subregion protocol best matches the desired cell types, maturity window, and assay readout?
 - Which protocol differences reflect true regional specification versus engineering for throughput or disease modeling?
+
+## Related syntheses
+
+- [Organoid developmental baseline and regionalization playbook](../syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md)

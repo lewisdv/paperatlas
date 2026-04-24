@@ -67,6 +67,11 @@ Organoid 프로젝트를 설계할 때, 언제 hPSC 기반 developmental organoi
 - 같은 organ system 안에서 developmental hPSC route와 patient-derived route를 **정면 비교한 head-to-head evidence**는 이 corpus에 충분하지 않다.
 - adult/patient-derived platform이 donor context를 얼마나 오래 유지하는지, 그리고 어떤 non-epithelial compartment 부재가 가장 치명적인지는 여전히 open question으로 남아 있다.
 
+## Related syntheses
+
+- [Organoid developmental baseline and regionalization playbook](../syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md)
+- [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+
 ## Sources used
 
 - [Adult stem cell and patient-derived organoid platforms](../concepts/adult-stem-cell-and-patient-derived-organoid-platforms.md)

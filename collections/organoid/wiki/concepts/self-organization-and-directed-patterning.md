@@ -49,3 +49,4 @@ This corpus repeatedly shows the main protocol design tradeoff in organoid work:
 ## Related syntheses
 
 - [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid developmental baseline and regionalization playbook](../syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md)

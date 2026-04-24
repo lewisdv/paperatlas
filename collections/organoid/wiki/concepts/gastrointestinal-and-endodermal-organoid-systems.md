@@ -56,4 +56,5 @@ The endodermal side of the corpus spans both foundational derivation and later a
 ## Related syntheses
 
 - [Organoid project design playbook](../syntheses/20260422_organoid-project-design-playbook.md)
+- [Organoid developmental baseline and regionalization playbook](../syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md)
 - [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)
