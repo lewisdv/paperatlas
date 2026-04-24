@@ -32,17 +32,13 @@ The newest protocols in this collection do not stop at making organoids. They in
 
 ## Working synthesis
 
-- Engineering layers make organoids much more useful for mechanism, screening, and lineage interrogation.
-- The newer refill sources widen this from pooled perturbation and imaging prep to whole-mount clearing, MSI-ready sample handling, isogenic CRISPR editing, high-efficiency transduction, organ-on-chip deployment, trophoblast screening, specimen-normalized PDO setup, and targeted viral microinjection.
-- The newest batch widens the engineering layer further into readout design itself: BBB permeability organoids, bioprinted tumor-cluster OCT tracking, 13-day breast-cancer OCT longitudinal tracking, convexity-preserving PDAC segmentation, and cross-system shape-factor phenotyping.
-- The osteosarcoma iOS paper adds another engineering move: self-assembly, size control, immune reconstruction criteria, and paired pharmacogenomic comparison are treated as parts of a screening platform, not just as culture maintenance details.
-- The NSCLC mathematical-modeling paper adds a different readout layer again, where serial flow cytometry and ODE-based software are used to predict how tumor, macrophage-like, fibroblast-like, and cytotoxic compartments shift over time inside PDOs.
-- They also show that adult or patient-derived and region-specific organoids increasingly act as substrates for engineering rather than endpoints in themselves.
-- Together these papers show that organoid engineering is not only about perturbing the culture. It also includes building the image-analysis, permeability, and morphology-quantification stack that makes screening outputs comparable across batches and models.
-- Deep networks dominate some tracking tasks, but classical geometry-aware segmentation and simple shape metrics still remain useful when data are small, labels are scarce, or high-throughput bright-field readouts matter more than end-to-end automation.
-- The practical bottleneck often shifts from differentiation itself to delivery, imaging quality, screen design, or readout normalization.
-- The newest cross-organ screening query makes another point explicit: "screening-ready" does not mean the same thing across systems. Pancreas is maturity-first, intestine is access-first, BBB is barrier-readout-first, and lung is baseline-complexity-first.
-- This means engineering layers should be chosen after the first organ-specific bottleneck is named, not added as a generic upgrade. Chip systems, access-control moves, permeability readouts, and quantitative image stacks are useful precisely because different organs fail in different ways.
+- Engineering in this corpus means more than perturbing organoids. It also means building the delivery, imaging, quantification, and normalization stack that makes downstream claims comparable.
+- The branch now spans CRISPR editing, high-efficiency transduction, targeted viral delivery, whole-mount clearing, OCT tracking, morphology segmentation, BBB permeability readouts, organ-on-chip deployment, and explicit quantitative modeling of PDO composition.
+- A recurring lesson is that organoids increasingly act as **substrates for readout design** rather than endpoints in themselves. Once a baseline culture is stable, the bottleneck often shifts to delivery route, imaging quality, screen layout, or analysis pipeline.
+- The collection also shows that engineering layers are organ-specific. Pancreas screening is maturity-first, intestine is access-first, BBB is barrier-readout-first, and lung is baseline-complexity-first, so the right tool depends on which bottleneck appears first.
+- Deep learning is useful in the imaging-heavy branch, but this corpus also keeps simpler geometry-aware segmentation and shape metrics alive when labels are scarce, throughput matters, or the analysis problem is narrower than a full end-to-end model.
+- A useful rule for this page is therefore: **come here first when the tissue question is already chosen and the real problem is how to deliver, image, quantify, or standardize the experiment well enough to trust the output**.
+- The main tradeoff is not biological realism versus simplicity, but experimental leverage versus technical overhead.
 
 ## Main tension
 
@@ -71,3 +67,7 @@ The newest protocols in this collection do not stop at making organoids. They in
 
 - [pancreas, intestine, BBB, lung에서는 screening stack를 어떻게 다르게 짜야 하나](../queries/20260423_1620_organ-specific-screening-stacks-pancreas-intestine-bbb-lung.md)
 - [barrier 또는 infection study에서 polarity inversion, organ-on-chip, BBB spheroids, microinjection 중 무엇을 골라야 하나](../queries/20260423_1408_access-route-selection-for-barrier-and-infection-studies.md)
+
+## Related syntheses
+
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)

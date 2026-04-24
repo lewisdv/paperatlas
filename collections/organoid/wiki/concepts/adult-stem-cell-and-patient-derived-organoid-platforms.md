@@ -28,18 +28,13 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 
 ## Working synthesis
 
-- These protocols are strongest when donor context, tumor state, or long-term expandability matter more than recapitulating early embryogenesis.
-- The refill cohort broadens this branch from classic liver, prostate, and cancer organoids into intestinal, thymic, biliary-reconstructive, and specimen-logistics-heavy workflows, showing that tissue access and collection strategy are now part of platform design.
-- High-efficiency transduction and multimodal specimen handling also show that adult or patient-derived organoids are often the most practical substrate for downstream perturbation once the baseline culture is stable.
-- Tysoe and the thymic TEC protocol further show that adult-platform logic can support either regenerative scaffold engineering or epithelial support-cell biology, not just donor-matched disease capture.
-- Sheridan and Gurumurthy extend the branch into reproductive tissues, where platform design is shaped by placental lineage transitions or by opposite niche requirements across adjacent cervical epithelia.
-- The 2026 liver biobank paper makes clinical stratification part of platform design, showing that healthy, steatotic, and cirrhotic donor capture can be preserved as a first-class axis rather than only as metadata.
-- The newest cancer-translational batch pushes this logic further: cervical SCNEC, metastatic biopsy PDOs, breast PDO-Xs, and osteosarcoma iOS models all treat matched xenografts or immune reconstruction as extensions of the platform rather than as unrelated downstream validation.
-- The newest quantitative and comparative additions broaden the branch sideways rather than upward: canine epidermal organoids show that adult primary epithelial platforms can be used as controlled comparative disease-induction assays, while NSCLC PDOs become substrates for explicit cell-composition modeling instead of only morphology or viability testing.
-- Together these papers suggest that adult or patient-derived organoids increasingly serve as staging grounds for escalation: first capture donor biology, then decide whether the missing layer is host tissue, immune infiltration, metastatic context, or broader signaling restoration.
-- The newest translational query work makes one gate more explicit: treatment-guidance-style PDOs are not defined only by donor origin, but by specimen adequacy, expandable line stability, freeze-thaw recovery, fidelity checks, and believable assay endpoints.
-- The same query burst also sharpens how escalation should branch once a donor platform is stable: compact ex vivo validation fits tumor-intrinsic response questions, immune reconstruction fits defined missing-partner problems, and PDO-X fits metastasis or host-restored biology questions.
-- The main tradeoff is that these platforms usually preserve donor-specific or disease-specific context better than they capture whole-organ developmental architecture.
+- This branch is strongest when donor state, disease state, or long-term expandability matter more than recapitulating early embryogenesis.
+- In this corpus, adult and patient-derived organoids are best treated as **capture platforms**: first preserve the donor-relevant biology, then decide what downstream layer is still missing.
+- The strongest practical additions in the newer cohort are not just more tissues, but more operational rules: multimodal specimen handling, transduction readiness, thaw recovery, and disease-stratified biobanking are now part of platform quality rather than side logistics.
+- These papers also show that the branch is broader than classic tumor PDOs. It includes regenerative biliary engineering, thymic epithelial support systems, placental and cervical epithelial niche work, and controlled primary-epithelial disease induction.
+- The translational cancer subset is now especially clear. Once a donor platform is stable, compact ex vivo validation fits tumor-intrinsic response questions, immune reconstruction fits defined missing-partner problems, and PDO-X fits metastasis or host-restored biology questions.
+- A useful rule for this concept page is therefore: **come here first when the real question is whether donor-grounded capture is more important than developmental self-organization**.
+- The main tradeoff remains the same: these systems usually preserve donor-specific or disease-specific context better than they preserve whole-organ developmental architecture.
 
 ## Main tension
 
@@ -65,3 +60,7 @@ Not all organoid workflows in this corpus are developmental hPSC differentiation
 
 - [PDO가 treatment-guidance형 translational screening에 들어갈 준비가 됐는지 어떻게 판정해야 하나](../queries/20260423_1554_pdo-readiness-rubric-for-treatment-guidance-screening.md)
 - [donor-derived cancer work는 언제 compact ex vivo validation에서 멈추고 언제 immune reconstruction이나 PDO-X로 올라가야 하나](../queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md)
+
+## Related syntheses
+
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)

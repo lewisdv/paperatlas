@@ -1637,3 +1637,9 @@
 - Added `wiki/syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md` to compress the collection's practical escalation rules into one page.
 - Folded existing query logic for access-route choice, coculture versus host validation, animal escalation, PDO readiness, donor-derived cancer escalation, organ-specific screening stacks, and vascularization routes into one decision ladder centered on the first missing readout.
 - Updated `wiki/index.md`, `wiki/overview.md`, and collection checkpointing so the synthesis layer now exposes a narrower escalation-focused companion to the broader project-design playbook.
+
+## [2026-04-24 00:09 KST] consolidation | Concept layer cleanup after escalation synthesis
+
+- Shortened the adult-platform, functional-assay, and engineering-screening concept pages so each page now points more clearly to the question it owns instead of restating the entire April 23 query burst.
+- Added direct links from those concept pages to the assay-escalation synthesis, making the concept layer a cleaner entry point for donor-platform choice, assay-layer choice, and engineering-or-readout choice.
+- Updated `wiki/overview.md` and collection checkpointing to reflect that the concept layer has moved from accumulation toward compression and navigation cleanup.

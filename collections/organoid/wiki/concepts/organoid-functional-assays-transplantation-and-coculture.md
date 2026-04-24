@@ -34,19 +34,13 @@ Several papers in this corpus are best understood as second-wave protocols: they
 
 ## Working synthesis
 
-- These workflows matter because many organoid questions are really assay-design problems rather than derivation problems.
-- The refill cohort makes this explicit across epithelial-stromal coculture, epithelial-T-cell priming, parasite differentiation on organoid-derived monolayers, outbreak-relevant liver infection assays, intestinal repair assays, retinal host-engagement, and organoid-initiated mouse validation.
-- The newest batch expands this further: kidney differentiation can be improved by monocyte transwell support during the vulnerable CHIR window, and cervical organoids can carry both HPV engineering and Chlamydia infection within one lineage-resolved adult platform.
-- Bergmann 2018 adds a distinct assay family in which multicellular BBB organoids act as permeability gates for peptide and small-molecule access rather than only as hosts for exposure or coculture.
-- The newest neural batch makes this branch broader again: mature cerebral organoids can be pushed into astrocytic inflammasome assays, choroid-plexus-containing brain organoids can act as viral access-control systems, and retinal organoids can be turned into injury-repair plus transplantation pipelines.
-- The newest cancer-translational batch broadens the branch in another direction: cervical SCNEC organoids are validated across matched xenografts and drug assays, breast PDOs are escalated into MALAT1-driven splicing and metastasis readouts, osteosarcoma iOS models rebuild T cell infiltration with PBMCs, metastatic PDOs recover lost SRC-family signaling after host engraftment, and colon cancer organoids act as a fast translational check for XIAP-targeted cisplatin sensitization.
-- The canine atopic-dermatitis organoid paper adds a simpler but useful assay family: direct cytokine induction on a primary epithelial organoid can answer whether a disease axis is already encoded in the epithelial response before fibroblasts or immune cells are reintroduced.
-- The retained heart macrophage assembloid paper adds a cardiac version of this logic: integrated immune cells and inflammatory triggering become the assay itself, because the question is whether inflammation can precipitate arrhythmic behavior in a human multicellular heart model.
-- These papers sharpen a practical rule for the corpus: sometimes the assay layer is not added because the baseline culture is incomplete, but because the biological question only becomes visible once immune cells, host tissue, metastatic routing, or donor-specific drug response is allowed back into the system.
-- Together these papers show that coculture or transplantation is not a single add-on but a family of moves for access, repair, immune education, infection, and host-context testing.
-- Not every assay layer sits after derivation is complete; some, like monocyte support in kidney organoids, intervene earlier to preserve organoid competence before later readouts become possible.
-- Their success still depends heavily on the maturity, polarity, and baseline quality of the starting organoid culture.
-- The newest donor-derived cancer query compresses this into a very practical ladder: stop at compact ex vivo validation when the response is tumor-intrinsic, move to immune reconstruction when the missing layer is a defined effector partner, and escalate to PDO-X only when stromal, metastatic, or host-restored biology could change the conclusion.
+- This branch matters because many organoid projects fail or succeed at the assay-layer decision, not at baseline derivation.
+- The collection now separates several distinct moves that used to blur together: access correction, partner reconstruction, injury or repair assays, barrier-specific platforms, and host-context validation.
+- The practical rule is to add the **smallest sufficient layer**. If the missing piece is a defined partner, start with coculture or reconstruction. If the endpoint itself is repair, host circuitry, or host-restored signaling, escalate to transplantation or host context.
+- The newer cohort broadens this beyond classic microbe or T-cell coculture into retinal repair plus transplantation, liver antiviral assays, cervical lineage-plus-infection platforms, cerebral inflammasome assays, choroid-plexus viral access systems, and cardiac immune-triggered arrhythmia models.
+- Some assay layers intervene earlier than expected. Monocyte support in kidney organoids, for example, acts before the downstream readout by preserving competence during a vulnerable differentiation window.
+- A useful rule for this page is therefore: **come here first when the baseline tissue already exists and the real problem is what interaction, injury, exposure, or validation layer should be added next**.
+- The main tradeoff stays consistent across the branch: cleaner attribution and lower burden in vitro versus richer but noisier host-defined validation.
 
 ## Main tension
 
@@ -71,3 +65,7 @@ Several papers in this corpus are best understood as second-wave protocols: they
 
 - [언제 coculture로 충분하고 언제 host validation이 필요한가](../queries/20260420_191749_coculture-vs-host-validation-for-interaction-questions.md)
 - [donor-derived cancer work는 언제 compact ex vivo validation에서 멈추고 언제 immune reconstruction이나 PDO-X로 올라가야 하나](../queries/20260423_1600_compact-ex-vivo-vs-immune-reconstruction-vs-pdo-x.md)
+
+## Related syntheses
+
+- [Organoid assay escalation and validation playbook](../syntheses/20260423_organoid-assay-escalation-and-validation-playbook.md)
