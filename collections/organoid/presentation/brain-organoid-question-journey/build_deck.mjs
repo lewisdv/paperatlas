@@ -767,9 +767,9 @@ async function slideCover(presentation, data, slideNo, idx) {
   connectNodes(slide, slideNo, center, b, "#B7B0A1", 3);
   connectNodes(slide, slideNo, center, c, "#CDA69F", 3);
 
-  addPill(slide, slideNo, "15 min talk", 86, 572, 116, 28, GOLD_TINT, "#7A5A14");
-  addPill(slide, slideNo, "question journey", 214, 572, 164, 28, MINT, ACCENT_DARK);
-  addFooter(slide, slideNo, "발표 구조: 출발 질문 -> 한계 발견 -> 질문 재정의 -> 최종 선택 규칙");
+  addPill(slide, slideNo, "LLM-wiki", 86, 572, 104, 28, GOLD_TINT, "#7A5A14");
+  addPill(slide, slideNo, "brain branch", 202, 572, 132, 28, MINT, ACCENT_DARK);
+  addFooter(slide, slideNo, "흐름: LLM-wiki 운영 -> subregion 질문 -> benchmark -> readout-first rule");
   addNotes(slide, data.notes, data.sources);
 }
 
