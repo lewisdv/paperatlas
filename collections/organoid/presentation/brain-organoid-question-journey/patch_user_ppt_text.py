@@ -27,8 +27,9 @@ def normalize_joined_text(shape) -> str:
 
 
 def find_shape(slide_root, contains: str):
+    needle = contains.replace("\u00a0", " ").replace(" ", "").strip()
     for shape in slide_root.findall(".//p:sp", NS):
-        if contains in normalize_joined_text(shape):
+        if needle in normalize_joined_text(shape):
             return shape
     raise ValueError(f"Could not find shape containing: {contains}")
 
