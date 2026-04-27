@@ -579,7 +579,7 @@ function addNode(slide, slideNo, x, y, w, h, title, body = "", accent = ACCENT, 
   } else {
     addPill(slide, slideNo, "source", x + 18, y + 16, 68, 24, NAVY_TINT, "#274D63");
   }
-  addText(slide, slideNo, title, x + 18, y + 46, w - 34, body ? 28 : 56, {
+  addText(slide, slideNo, title, x + 18, y + 46, w - 34, body ? 24 : 56, {
     size: body ? 17 : 15,
     color: INK,
     bold: true,
@@ -587,8 +587,8 @@ function addNode(slide, slideNo, x, y, w, h, title, body = "", accent = ACCENT, 
     role: "node title",
   });
   if (body) {
-    addText(slide, slideNo, body, x + 18, y + 76, w - 34, h - 88, {
-      size: 12,
+    addText(slide, slideNo, body, x + 18, y + 72, w - 34, h - 84, {
+      size: 11,
       color: GRAPHITE,
       face: BODY_FACE,
       role: "node body",
