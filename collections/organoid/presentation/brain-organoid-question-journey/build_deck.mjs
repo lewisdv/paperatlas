@@ -768,58 +768,72 @@ async function slideProcess(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "교수님 포인트: 결론보다 '지식-위키 체인'이 어떻게 만들어졌는지를 보여주는 발표",
-    816,
-    104,
-    390,
-    92,
+    "collection 단위로 질문 범위를 제한해 관련 없는 지식 혼입을 줄이고, 같은 주제 안에서 source와 해석을 더 조밀하게 쌓아갔다.",
+    64,
+    174,
+    1140,
+    78,
     GOLD_TINT,
     GOLD,
   );
 
-  addMetricCard(slide, slideNo, 64, 232, 344, 116, "96", "active source pages", "overview.md", ACCENT);
-  addMetricCard(slide, slideNo, 432, 232, 344, 116, "17", "brain cluster sources", "overview.md", GOLD);
-  addMetricCard(slide, slideNo, 800, 232, 344, 116, "3", "core question notes in this talk", "q1 -> q2 -> q3", CORAL);
-
   addCard(
     slide,
     slideNo,
-    82,
-    406,
-    314,
-    184,
-    "1. corpus browse",
-    "index와 overview에서 organoid corpus 전체 구조를 잡고, brain 관련 source와 concept page를 먼저 추렸다.",
+    76,
+    286,
+    252,
+    192,
+    "collection 분리",
+    "organoid, single-cell, sequencing처럼 collection을 나눠 unrelated topic이 한 답변 안에 섞이지 않게 했다.",
     ACCENT,
     PANEL,
   );
-  addArrowBetween(slide, slideNo, 418, 486, 76);
   addCard(
     slide,
     slideNo,
-    506,
-    406,
-    314,
-    184,
-    "2. first query",
-    "subregion별 프로토콜 차이를 정리하면서 region choice를 중심 질문으로 세웠다.",
+    352,
+    286,
+    252,
+    192,
+    "raw / wiki 분리",
+    "raw는 원본으로 남겨 두고, wiki에서 source page와 concept page, query를 계속 갱신한다.",
     GOLD,
     PANEL,
   );
-  addArrowBetween(slide, slideNo, 842, 486, 76);
   addCard(
     slide,
     slideNo,
-    930,
-    406,
-    256,
-    184,
-    "3. refined query",
-    "그 질문만으로는 부족하다는 걸 발견하고 benchmark와 readout 질문으로 확장했다.",
+    628,
+    286,
+    252,
+    192,
+    "질문 범위 제한",
+    "collection 질문은 그 collection의 wiki와 raw만 쓰도록 해서 hallucination과 topic drift를 줄인다.",
     CORAL,
     PANEL,
   );
-  addFooter(slide, slideNo, "오늘 발표는 이 세 단계 자체를 보여주는 발표다.");
+  addCard(
+    slide,
+    slideNo,
+    904,
+    286,
+    252,
+    192,
+    "지식 밀도 축적",
+    "source -> concept -> query -> synthesis가 같은 공간에 연결되면서 주제별 정보 밀도가 높아진다.",
+    "#517C95",
+    PANEL,
+  );
+
+  addPill(slide, slideNo, "raw/sources", 138, 560, 146, 30, NAVY_TINT, "#274D63");
+  addArrowBetween(slide, slideNo, 292, 564, 70);
+  addPill(slide, slideNo, "wiki/sources", 378, 560, 146, 30, MINT, ACCENT_DARK);
+  addArrowBetween(slide, slideNo, 532, 564, 70);
+  addPill(slide, slideNo, "concept / entity", 620, 560, 162, 30, GOLD_TINT, "#7A5A14");
+  addArrowBetween(slide, slideNo, 792, 564, 70);
+  addPill(slide, slideNo, "query / synthesis", 878, 560, 178, 30, ROSE_TINT, CORAL);
+  addFooter(slide, slideNo, "운영 원리: topic boundary를 좁히고, 해석 가능한 지식을 같은 collection 안에 누적한다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -830,47 +844,75 @@ async function slideScope(presentation, data, slideNo, idx) {
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
   addTitleBlock(slide, slideNo, data.title, null, 64, 88, 740, { titleSize: 38, subtitleSize: 18 });
 
-  addMetricCard(slide, slideNo, 72, 228, 344, 116, "17", "brain-related active sources", "overview.md cluster count", ACCENT);
-  addMetricCard(slide, slideNo, 440, 228, 344, 116, "3", "core question notes", "q1 -> q2 -> q3", GOLD);
-  addMetricCard(slide, slideNo, 808, 228, 344, 116, "5", "benchmark axes in final frame", "region / reproducibility / fidelity / timing / atlas", CORAL);
+  addBanner(
+    slide,
+    slideNo,
+    "Markdown으로 저장한 위키를 정적 HTML로 렌더링하고, 로컬 뷰어와 GitHub Pages를 통해 계속 읽고 탐색할 수 있게 했다.",
+    64,
+    174,
+    1140,
+    78,
+    MINT,
+    ACCENT,
+  );
 
   addCard(
     slide,
     slideNo,
-    82,
-    396,
-    330,
-    184,
-    "왜 brain인가",
-    "이 corpus에서 brain branch는 source 수가 크고, subregion protocol과 benchmark 논문, functional readout 논문이 동시에 연결돼 있다.",
+    74,
+    286,
+    268,
+    202,
+    "static HTML render",
+    "Markdown wiki를 collection별 HTML site로 바꾸고, top-level hub도 함께 갱신한다.",
     ACCENT,
     PANEL,
   );
   addCard(
     slide,
     slideNo,
-    474,
-    396,
-    330,
-    184,
-    "왜 좋은 발표 소재인가",
-    "질문이 subregion selection에서 benchmark question, 그리고 readout-first rule로 자라나는 과정이 가장 뚜렷하게 보인다.",
+    368,
+    286,
+    268,
+    202,
+    "local viewer",
+    "localhost viewer에서 검색, 태그 필터, 그래프 뷰를 통해 collection 내부 페이지를 빠르게 탐색한다.",
     GOLD,
     PANEL,
   );
   addCard(
     slide,
     slideNo,
-    866,
-    396,
-    330,
-    184,
-    "왜 리뷰 글과도 맞나",
-    "결론만 요약하는 대신, protocol family와 평가 기준이 분기되는 구조를 review article의 장 구조로 바꾸기 좋다.",
+    662,
+    286,
+    268,
+    202,
+    "GitHub Pages",
+    "원격에서도 같은 구조로 읽을 수 있도록 public static site로 export하고 GitHub Pages에 배포한다.",
     CORAL,
     PANEL,
   );
-  addFooter(slide, slideNo, "brain branch는 scope, benchmark, readout이 모두 살아 있어서 question journey를 보여주기 좋았다.");
+  addCard(
+    slide,
+    slideNo,
+    956,
+    286,
+    248,
+    202,
+    "auto update",
+    "watcher와 deploy workflow를 붙여 collection 변경이 생기면 site도 함께 갱신되도록 만들었다.",
+    "#517C95",
+    PANEL,
+  );
+
+  addPill(slide, slideNo, "wiki/*.md", 120, 560, 120, 30, NAVY_TINT, "#274D63");
+  addArrowBetween(slide, slideNo, 252, 564, 68);
+  addPill(slide, slideNo, "wiki_html", 336, 560, 120, 30, MINT, ACCENT_DARK);
+  addArrowBetween(slide, slideNo, 470, 564, 68);
+  addPill(slide, slideNo, "local search", 556, 560, 132, 30, GOLD_TINT, "#7A5A14");
+  addArrowBetween(slide, slideNo, 700, 564, 68);
+  addPill(slide, slideNo, "GitHub Pages", 786, 560, 146, 30, ROSE_TINT, CORAL);
+  addFooter(slide, slideNo, "접근 계층: Markdown wiki를 읽기 쉬운 site로 바꿔 검색, 탐색, 공유가 가능하도록 했다.");
   addNotes(slide, data.notes, data.sources);
 }
 
