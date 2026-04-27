@@ -1,16 +1,16 @@
 {"kind":"deck","id":"brain-organoid-question-journey","slideCount":12,"slideSize":{"width":1280,"height":720}}
-{"kind":"slide","slide":1,"id":"aqsrte"}
-{"kind":"slide","slide":2,"id":"x1ebfo"}
-{"kind":"slide","slide":3,"id":"o1etta"}
-{"kind":"slide","slide":4,"id":"69jf9d"}
-{"kind":"slide","slide":5,"id":"hb4n8o"}
-{"kind":"slide","slide":6,"id":"mmsco4"}
-{"kind":"slide","slide":7,"id":"xkecfu"}
-{"kind":"slide","slide":8,"id":"0pbm3n"}
-{"kind":"slide","slide":9,"id":"q4lyyt"}
-{"kind":"slide","slide":10,"id":"e120iw"}
-{"kind":"slide","slide":11,"id":"6u0gyu"}
-{"kind":"slide","slide":12,"id":"y7lz6j"}
+{"kind":"slide","slide":1,"id":"k4aa09"}
+{"kind":"slide","slide":2,"id":"01mfsy"}
+{"kind":"slide","slide":3,"id":"gdi01m"}
+{"kind":"slide","slide":4,"id":"9rskt9"}
+{"kind":"slide","slide":5,"id":"o9jqjp"}
+{"kind":"slide","slide":6,"id":"fshnyk"}
+{"kind":"slide","slide":7,"id":"88ccdj"}
+{"kind":"slide","slide":8,"id":"bifx47"}
+{"kind":"slide","slide":9,"id":"7wt8pj"}
+{"kind":"slide","slide":10,"id":"sboebd"}
+{"kind":"slide","slide":11,"id":"39szwm"}
+{"kind":"slide","slide":12,"id":"5skje5"}
 {"kind":"image","slide":1,"id":"2","role":"art plate","path":"/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/references/slide-01.png","bbox":[0,0,1280,720]}
 {"kind":"shape","slide":1,"id":"3","role":"background glow","shapeType":"ellipse","bbox":[826,82,382,382]}
 {"kind":"shape","slide":1,"id":"4","role":"background glow","shapeType":"ellipse","bbox":[968,436,206,206]}

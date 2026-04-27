@@ -32,9 +32,10 @@ const CORAL = "#D66C60";
 const NAVY_TINT = "#DCE7EE";
 const TRANSPARENT = "#00000000";
 
-const TITLE_FACE = "Apple SD Gothic Neo";
-const BODY_FACE = "Apple SD Gothic Neo";
+const TITLE_FACE = "Malgun Gothic";
+const BODY_FACE = "Malgun Gothic";
 const MONO_FACE = "Aptos Mono";
+const LATIN_FACE = "Arial";
 
 const FALLBACK_PLATE_DATA_URL =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=";
@@ -377,6 +378,18 @@ function applyTextStyle(box, text, size, color, bold, face, align, valign, autoF
   if (listStyle) box.text.style = "list";
 }
 
+function applyBilingualTypeface(box, text) {
+  const value = normalizeText(text);
+  const latinTokens = value.match(/[A-Za-z0-9][A-Za-z0-9&+./,:;'"!?()\-<>]*/g) || [];
+  for (const token of latinTokens) {
+    try {
+      box.text.get(token).typeface = LATIN_FACE;
+    } catch {
+      // Ignore tokens the presentation surface cannot target precisely.
+    }
+  }
+}
+
 function addText(
   slide,
   slideNo,
@@ -407,6 +420,9 @@ function addText(
   if (checkFit) assertTextFits(text, h, size, role);
   const box = addShape(slide, "rect", x, y, w, h, fill, line, lineWidth, { slideNo, role });
   applyTextStyle(box, text, size, color, bold, face, align, valign, autoFit, listStyle);
+  if (face !== MONO_FACE) {
+    applyBilingualTypeface(box, text);
+  }
   recordText(slideNo, box, role, text, x, y, w, h);
   return box;
 }
