@@ -1260,7 +1260,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
     336,
     120,
     "대표 readout 묶음",
-    "composition stability,\nfidelity/atlas,\ndish function, host circuit, screening",
+    "stability, fidelity/atlas,\nfunction, host, screening",
     GOLD,
     PANEL,
   );
@@ -1272,7 +1272,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
     336,
     126,
     "대표 anchor",
-    "Velasco, Bhaduri, He,\nFitzgerald, Kelley,\nChen 등",
+    "Velasco, Bhaduri, He,\nFitzgerald, Kelley, Chen 등",
     CORAL,
     PANEL,
   );
