@@ -547,7 +547,7 @@ function addPill(slide, slideNo, text, x, y, w, h, fill = MINT, textColor = ACCE
 
 function addBanner(slide, slideNo, text, x, y, w, h, fill = PANEL, accent = ACCENT) {
   addShape(slide, "roundRect", x, y, w, h, fill, INK, 1.2, { slideNo, role: "banner panel" });
-  addShape(slide, "rect", x, y, 8, h, accent, TRANSPARENT, 0, { slideNo, role: "banner accent" });
+  addShape(slide, "rect", x + 5, y + 5, 6, h - 10, accent, TRANSPARENT, 0, { slideNo, role: "banner accent" });
   addText(slide, slideNo, text, x + 22, y + 16, w - 40, h - 28, {
     size: 18,
     color: INK,
@@ -558,7 +558,7 @@ function addBanner(slide, slideNo, text, x, y, w, h, fill = PANEL, accent = ACCE
 
 function addCard(slide, slideNo, x, y, w, h, label, body, accent = ACCENT, fill = PANEL) {
   addShape(slide, "roundRect", x, y, w, h, fill, INK, 1.2, { slideNo, role: `card panel: ${label}` });
-  addShape(slide, "rect", x, y, w, 8, accent, TRANSPARENT, 0, { slideNo, role: `card accent: ${label}` });
+  addShape(slide, "rect", x + 6, y + 6, w - 12, 6, accent, TRANSPARENT, 0, { slideNo, role: `card accent: ${label}` });
   addText(slide, slideNo, label, x + 22, y + 20, w - 44, 30, {
     size: 15,
     color: ACCENT_DARK,
@@ -577,7 +577,7 @@ function addCard(slide, slideNo, x, y, w, h, label, body, accent = ACCENT, fill 
 
 function addMetricCard(slide, slideNo, x, y, w, h, metric, label, note, accent) {
   addShape(slide, "roundRect", x, y, w, h, PANEL, INK, 1.2, { slideNo, role: `metric panel: ${label}` });
-  addShape(slide, "rect", x, y, w, 8, accent, TRANSPARENT, 0, { slideNo, role: `metric accent: ${label}` });
+  addShape(slide, "rect", x + 6, y + 6, w - 12, 6, accent, TRANSPARENT, 0, { slideNo, role: `metric accent: ${label}` });
   addText(slide, slideNo, metric, x + 20, y + 18, w - 40, 40, {
     size: 31,
     color: INK,
@@ -601,7 +601,7 @@ function addMetricCard(slide, slideNo, x, y, w, h, metric, label, note, accent) 
 
 function addNode(slide, slideNo, x, y, w, h, title, body = "", accent = ACCENT, fill = WHITE, kind = "source") {
   addShape(slide, "roundRect", x, y, w, h, fill, INK, 1.1, { slideNo, role: `node panel: ${title}` });
-  addShape(slide, "rect", x, y, 7, h, accent, TRANSPARENT, 0, { slideNo, role: `node accent: ${title}` });
+  addShape(slide, "rect", x + 5, y + 5, 5, h - 10, accent, TRANSPARENT, 0, { slideNo, role: `node accent: ${title}` });
   if (kind === "query") {
     addPill(slide, slideNo, "query", x + 18, y + 16, 64, 24, MINT, ACCENT_DARK);
   } else if (kind === "concept") {
