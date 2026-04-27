@@ -513,13 +513,56 @@ function addHeader(slide, slideNo, kicker, idx, total) {
   addShape(slide, "ellipse", 57, 57, 16, 16, ACCENT, INK, 2, { slideNo, role: "header marker" });
 }
 
-function addFooter(slide, slideNo, text = "paper_collect / organoid collection / brain question chain") {
+function addFooter(slide, slideNo, text = "paper_collect / organoid collection / LLM-wiki workflow") {
   addText(slide, slideNo, text, 64, 684, 900, 18, {
     size: 10,
     color: MUTED,
     face: BODY_FACE,
     checkFit: false,
     role: "footer",
+  });
+}
+
+function addGraphPlaceholder(slide, slideNo, x, y, w, h, pagePath, note = "Insert Obsidian screenshot here") {
+  addShape(slide, "roundRect", x, y, w, h, PANEL_SOFT, INK, 1.2, { slideNo, role: "graph placeholder panel" });
+  addShape(slide, "rect", x + 6, y + 6, w - 12, 6, "#A9C9BB", TRANSPARENT, 0, {
+    slideNo,
+    role: "graph placeholder accent",
+  });
+  addText(slide, slideNo, "Obsidian Local Graph", x + 28, y + 34, w - 56, 28, {
+    size: 21,
+    color: INK,
+    bold: true,
+    face: TITLE_FACE,
+    align: "center",
+    role: "graph placeholder title",
+  });
+  addText(slide, slideNo, "Insert screenshot here", x + 28, y + 76, w - 56, 22, {
+    size: 12,
+    color: GRAPHITE,
+    face: MONO_FACE,
+    align: "center",
+    checkFit: false,
+    role: "graph placeholder subtitle",
+  });
+  addShape(slide, "roundRect", x + 32, y + 118, w - 64, h - 194, WHITE, "#B6C1C5", 1, {
+    slideNo,
+    role: "graph image frame",
+  });
+  addText(slide, slideNo, pagePath, x + 52, y + h - 84, w - 104, 34, {
+    size: 11,
+    color: ACCENT_DARK,
+    face: MONO_FACE,
+    align: "center",
+    role: "graph placeholder path",
+  });
+  addText(slide, slideNo, note, x + 32, y + h - 42, w - 64, 18, {
+    size: 10,
+    color: MUTED,
+    face: BODY_FACE,
+    align: "center",
+    checkFit: false,
+    role: "graph placeholder note",
   });
 }
 
