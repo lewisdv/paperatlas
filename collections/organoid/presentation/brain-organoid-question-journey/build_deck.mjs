@@ -674,7 +674,7 @@ async function slideProcess(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "gold");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7C8", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 720, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 720, { titleSize: 38, subtitleSize: 18 });
 
   addBanner(
     slide,
@@ -767,7 +767,7 @@ async function slideAnswerOne(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "gold");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
   addCard(
     slide,
@@ -826,7 +826,7 @@ async function slideLimitation(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "coral");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7D0", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
   addBanner(
     slide,
@@ -909,7 +909,7 @@ async function slideFramework(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "gold");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7D2", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
   addCard(slide, slideNo, 72, 220, 352, 146, "1. region identity", "어떤 brain region 또는 subregion을 만들고 있는가?\nanchor: Q1, Sloan, Atamian", ACCENT, PANEL);
   addCard(slide, slideNo, 464, 220, 352, 146, "2. reproducibility", "같은 protocol 안에서 cell composition variance가 얼마나 낮은가?\nanchor: Velasco, Yoon", GOLD, PANEL);
@@ -927,7 +927,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "green");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
   addCard(
     slide,
@@ -964,7 +964,7 @@ async function slideConclusion(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "gold");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
   addCard(slide, slideNo, 74, 220, 330, 176, "takeaway 1", "subregion comparison은 좋은 출발점이었다.\n질문을 broad brain에서 subregion choice로 좁혀줬다.", ACCENT, PANEL);
   addCard(slide, slideNo, 430, 220, 330, 176, "takeaway 2", "하지만 benchmark 축이 들어오자,\n같은 region 안에서도 다른 질문이 생겼다.", GOLD, PANEL);
