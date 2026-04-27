@@ -1,5 +1,7 @@
 const fs = await import("node:fs/promises");
 const path = await import("node:path");
+const { execFile } = await import("node:child_process");
+const { promisify } = await import("node:util");
 const { Presentation, PresentationFile } = await import("@oai/artifact-tool");
 
 const W = 1280;
@@ -36,6 +38,7 @@ const TITLE_FACE = "Malgun Gothic";
 const BODY_FACE = "Malgun Gothic";
 const MONO_FACE = "Aptos Mono";
 const LATIN_FACE = "Arial";
+const execFileAsync = promisify(execFile);
 
 const FALLBACK_PLATE_DATA_URL =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=";
@@ -1484,6 +1487,20 @@ async function saveBlobToFile(blob, filePath) {
   await fs.writeFile(filePath, bytes);
 }
 
+async function patchExportedPptxFonts(pptxPath) {
+  const patcherPath = "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/patch_pptx_theme_fonts.py";
+  await execFileAsync(process.env.PPTX_PYTHON || "python3", [
+    patcherPath,
+    pptxPath,
+    "--latin",
+    LATIN_FACE,
+    "--ea",
+    BODY_FACE,
+    "--cs",
+    LATIN_FACE,
+  ]);
+}
+
 async function writeInspectArtifact(presentation) {
   inspectRecords.unshift({
     kind: "deck",
@@ -1554,6 +1571,7 @@ async function verifyAndExport(presentation) {
   const pptxBlob = await PresentationFile.exportPptx(presentation);
   const pptxPath = path.join(OUT_DIR, "output.pptx");
   await pptxBlob.save(pptxPath);
+  await patchExportedPptxFonts(pptxPath);
   const loopRecord = await appendRenderVerifyLoop(presentation, previewPaths, pptxPath);
   return { pptxPath, loopRecord };
 }
