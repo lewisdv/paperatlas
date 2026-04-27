@@ -23,7 +23,7 @@ def shape_texts(shape):
 
 def normalize_joined_text(shape) -> str:
     parts = shape_texts(shape)
-    return "".join(parts).replace("\u00a0", " ").strip()
+    return "".join(parts).replace("\u00a0", " ").replace(" ", "").strip()
 
 
 def find_shape(slide_root, contains: str):
