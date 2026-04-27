@@ -783,7 +783,7 @@ async function slideCover(presentation, data, slideNo, idx) {
 
   addPill(slide, slideNo, "LLM-wiki", 86, 572, 104, 28, GOLD_TINT, "#7A5A14");
   addPill(slide, slideNo, "brain branch", 202, 572, 132, 28, MINT, ACCENT_DARK);
-  addFooter(slide, slideNo, "흐름: LLM-wiki 운영 -> subregion 질문 -> benchmark -> readout-first rule");
+  addFooter(slide, slideNo, "구성: LLM-wiki 운영 -> subregion 기준 -> benchmark 축 -> readout-first rule");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -797,7 +797,7 @@ async function slideProcess(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "collection 단위로 질문 범위를 제한해 관련 없는 지식 혼입을 줄이고, 같은 주제 안에서 source와 해석을 더 조밀하게 쌓아갔다.",
+    "collection 단위의 범위 제한을 통해 비관련 지식의 혼입을 줄이고, 동일 주제 내 source와 해석을 조밀하게 축적하였다.",
     64,
     174,
     1140,
@@ -814,7 +814,7 @@ async function slideProcess(presentation, data, slideNo, idx) {
     252,
     192,
     "collection 분리",
-    "organoid, single-cell, sequencing처럼 collection을 나눠 unrelated topic이 한 답변 안에 섞이지 않게 했다.",
+    "collection 분리를 통해 주제 간 문헌과 해석이 동일 응답 안에 혼입되지 않도록 구성하였다.",
     ACCENT,
     PANEL,
   );
@@ -826,7 +826,7 @@ async function slideProcess(presentation, data, slideNo, idx) {
     252,
     192,
     "raw / wiki 분리",
-    "raw는 원본으로 남겨 두고, wiki에서 source page와 concept page, query를 계속 갱신한다.",
+    "raw는 원본 보관 계층으로 유지하고, wiki에서 source page, concept page, query를 지속적으로 갱신한다.",
     GOLD,
     PANEL,
   );
@@ -838,7 +838,7 @@ async function slideProcess(presentation, data, slideNo, idx) {
     252,
     192,
     "질문 범위 제한",
-    "collection 질문은 그 collection의 wiki와 raw만 쓰도록 해서 hallucination과 topic drift를 줄인다.",
+    "collection 질의는 해당 collection의 wiki와 raw만을 근거로 제한하여 hallucination과 topic drift를 완화한다.",
     CORAL,
     PANEL,
   );
@@ -850,7 +850,7 @@ async function slideProcess(presentation, data, slideNo, idx) {
     252,
     192,
     "지식 밀도 축적",
-    "source -> concept -> query -> synthesis가 같은 공간에 연결되면서 주제별 정보 밀도가 높아진다.",
+    "source -> concept -> query -> synthesis 구조를 통해 동일 주제권 내 정보 밀도를 높인다.",
     "#517C95",
     PANEL,
   );
@@ -862,7 +862,7 @@ async function slideProcess(presentation, data, slideNo, idx) {
   addPill(slide, slideNo, "concept / entity", 620, 560, 162, 30, GOLD_TINT, "#7A5A14");
   addArrowBetween(slide, slideNo, 792, 564, 70);
   addPill(slide, slideNo, "query / synthesis", 878, 560, 178, 30, ROSE_TINT, CORAL);
-  addFooter(slide, slideNo, "운영 원리: topic boundary를 좁히고, 해석 가능한 지식을 같은 collection 안에 누적한다.");
+  addFooter(slide, slideNo, "운영 원리: 주제 경계를 축소하고, 해석 가능한 지식을 동일 collection 내에 누적한다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -876,7 +876,7 @@ async function slideScope(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "Markdown으로 저장한 위키를 정적 HTML로 렌더링하고, 로컬 뷰어와 GitHub Pages를 통해 계속 읽고 탐색할 수 있게 했다.",
+    "Markdown 기반 wiki를 정적 HTML로 렌더링하고, 로컬 뷰어 및 GitHub Pages를 통해 지속적 탐색과 접근을 가능하게 하였다.",
     64,
     174,
     1140,
@@ -893,7 +893,7 @@ async function slideScope(presentation, data, slideNo, idx) {
     268,
     202,
     "static HTML render",
-    "Markdown wiki를 collection별 HTML site로 바꾸고, top-level hub도 함께 갱신한다.",
+    "Markdown wiki를 collection별 HTML site로 변환하고, top-level hub를 함께 갱신한다.",
     ACCENT,
     PANEL,
   );
@@ -905,7 +905,7 @@ async function slideScope(presentation, data, slideNo, idx) {
     268,
     202,
     "local viewer",
-    "localhost viewer에서 검색, 태그 필터, 그래프 뷰를 통해 collection 내부 페이지를 빠르게 탐색한다.",
+    "localhost viewer에서 검색, 태그 필터, 그래프 뷰를 통해 collection 내부 페이지를 탐색한다.",
     GOLD,
     PANEL,
   );
@@ -917,7 +917,7 @@ async function slideScope(presentation, data, slideNo, idx) {
     268,
     202,
     "GitHub Pages",
-    "원격에서도 같은 구조로 읽을 수 있도록 public static site로 export하고 GitHub Pages에 배포한다.",
+    "원격 접근을 위해 public static site로 export하고 GitHub Pages에 배포한다.",
     CORAL,
     PANEL,
   );
@@ -929,7 +929,7 @@ async function slideScope(presentation, data, slideNo, idx) {
     248,
     202,
     "auto update",
-    "watcher와 deploy workflow를 붙여 collection 변경이 생기면 site도 함께 갱신되도록 만들었다.",
+    "watcher와 deploy workflow를 통해 collection 변경 시 site를 함께 갱신하도록 구성하였다.",
     "#517C95",
     PANEL,
   );
@@ -941,7 +941,7 @@ async function slideScope(presentation, data, slideNo, idx) {
   addPill(slide, slideNo, "local search", 556, 560, 132, 30, GOLD_TINT, "#7A5A14");
   addArrowBetween(slide, slideNo, 700, 564, 68);
   addPill(slide, slideNo, "GitHub Pages", 786, 560, 146, 30, ROSE_TINT, CORAL);
-  addFooter(slide, slideNo, "접근 계층: Markdown wiki를 읽기 쉬운 site로 바꿔 검색, 탐색, 공유가 가능하도록 했다.");
+  addFooter(slide, slideNo, "접근 계층: Markdown wiki를 site 형태로 전환하여 검색, 탐색, 공유가 가능하도록 구성하였다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -960,7 +960,7 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
     336,
     140,
     "출발 질문",
-    "whole, forebrain,\nposterior/niche 중\n어떤 branch가 맞는가?",
+    "whole, forebrain,\nposterior/niche 중\n연구 질문에 부합하는 branch의 선택",
     ACCENT,
     PANEL,
   );
@@ -972,7 +972,7 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
     336,
     140,
     "여기에 연결된 문헌",
-    "Lancaster, Sloan,\nFitzgerald,\nZagare 등 주요 protocol paper",
+    "Lancaster, Sloan,\nFitzgerald,\nZagare 등 주요 protocol 논문",
     GOLD,
     PANEL,
   );
@@ -984,7 +984,7 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
     336,
     120,
     "1차 해석",
-    "1차 결론:\n우선 subregion selection 문제로 읽었다.",
+    "1차 결론:\nsubregion selection을 우선적 비교 기준으로 설정",
     CORAL,
     PANEL,
   );
@@ -997,9 +997,9 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
     738,
     428,
     "collections/organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md",
-    "Insert the local graph for Q1 here",
+    "Q1 local graph",
   );
-  addFooter(slide, slideNo, "오른쪽에는 Q1 query note의 Obsidian local graph를 삽입하면 된다.");
+  addFooter(slide, slideNo, "우측 패널: Q1 query note의 Obsidian local graph 삽입 위치");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1018,7 +1018,7 @@ async function slideAnswerOne(presentation, data, slideNo, idx) {
     348,
     292,
     "broad cerebral baseline",
-    "자가조직화 기반.\nregional diversity가 넓고 emergent architecture를 보기 좋지만,\nbatch variability와 mixed identity가 커진다.\n대표 anchor: Lancaster 2014.",
+    "자가조직화 기반.\nregional diversity와 emergent architecture 관찰에 유리하나,\nbatch variability와 mixed identity가 증가한다.\n대표 anchor: Lancaster 2014.",
     ACCENT,
     PANEL,
   );
@@ -1030,7 +1030,7 @@ async function slideAnswerOne(presentation, data, slideNo, idx) {
     348,
     292,
     "forebrain / cortical control",
-    "dual SMAD 또는 semi-guided control을 통해\ncleaner regional identity와 더 높은 재현성을 노린다.\n대표 anchor: Sloan 2018, Fitzgerald 2024, Ullah 2025.",
+    "dual SMAD 또는 semi-guided control을 통해\nregional identity 정제와 재현성 향상을 지향한다.\n대표 anchor: Sloan 2018, Fitzgerald 2024, Ullah 2025.",
     GOLD,
     PANEL,
   );
@@ -1042,7 +1042,7 @@ async function slideAnswerOne(presentation, data, slideNo, idx) {
     348,
     292,
     "posterior / niche specialization",
-    "midbrain, brainstem, hindbrain, hippocampus, cerebellum처럼\n질문 특이적인 posterior or niche branch로 간다.\n대표 anchor: Zagare, Eura, Pomeshchik, Atamian.",
+    "midbrain, brainstem, hindbrain, hippocampus, cerebellum 등\n질문 특이적 posterior/niche branch로 분화한다.\n대표 anchor: Zagare, Eura, Pomeshchik, Atamian.",
     CORAL,
     PANEL,
   );
@@ -1050,7 +1050,7 @@ async function slideAnswerOne(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "1차 결론: 많은 brain organoid design 문제는 'brain vs brain'이 아니라 subregion selection 문제다.",
+    "1차 결론: brain organoid design의 1차 기준은 subregion selection이었다.",
     90,
     562,
     1110,
@@ -1058,7 +1058,7 @@ async function slideAnswerOne(presentation, data, slideNo, idx) {
     GOLD_TINT,
     GOLD,
   );
-  addFooter(slide, slideNo, "subregion logic는 출발점으로 강력했지만, 아직 quality question을 충분히 설명하지 못했다.");
+  addFooter(slide, slideNo, "subregion logic는 유효한 출발점이지만, 모델 평가 전반을 설명하지는 못하였다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1072,7 +1072,7 @@ async function slideLimitation(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "같은 forebrain branch 안에서도 어떤 protocol은 더 reproducible하고, 어떤 protocol은 primary fetal brain에 더 닮고, 어떤 protocol은 발달 timing 해석이 더 쉽다.",
+    "동일 forebrain branch 내에서도 protocol별 reproducibility, primary-like fidelity, developmental timing 해석 가능성은 서로 달랐다.",
     84,
     224,
     1112,
@@ -1088,7 +1088,7 @@ async function slideLimitation(presentation, data, slideNo, idx) {
     330,
     190,
     "reproducibility",
-    "같은 protocol을 여러 번 돌렸을 때\ncell composition과 success rate가 얼마나 안정적인가?",
+    "반복 배양 시\ncell composition과 success rate의 안정성",
     ACCENT,
     PANEL,
   );
@@ -1100,7 +1100,7 @@ async function slideLimitation(presentation, data, slideNo, idx) {
     330,
     190,
     "fidelity",
-    "organoid cell state가\nprimary fetal brain과 얼마나 가까운가?",
+    "organoid cell state의\nprimary fetal brain 근접성",
     GOLD,
     PANEL,
   );
@@ -1112,12 +1112,12 @@ async function slideLimitation(presentation, data, slideNo, idx) {
     330,
     190,
     "temporal mapping",
-    "day 30, day 60 같은 culture day가\n실제 human developmental stage와 어떻게 대응되는가?",
+    "culture day와\nhuman developmental stage 간 대응 관계",
     CORAL,
     PANEL,
   );
   addPill(slide, slideNo, "Q1 -> Q2", 1030, 582, 126, 28, MINT, ACCENT_DARK);
-  addFooter(slide, slideNo, "한계 발견의 순간: region question만으로는 모델의 믿을 만함을 설명할 수 없었다.");
+  addFooter(slide, slideNo, "region 중심 질문만으로는 모델의 신뢰도와 적합성을 충분히 설명하기 어려웠다.");
   addNotes(slide, data.notes, data.sources);
 }
 
