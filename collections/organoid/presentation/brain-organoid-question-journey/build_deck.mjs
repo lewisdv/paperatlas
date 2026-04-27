@@ -1262,7 +1262,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
     336,
     140,
     "최종 선택 규칙",
-    "먼저 가장 중요한 readout을 적고,\n그 readout을 가장 직접적으로\n뒷받침하는 branch를 고른다.",
+    "우선 핵심 readout을 명시하고,\n해당 readout을 가장 직접적으로\n뒷받침하는 branch를 선택한다.",
     ACCENT,
     MINT,
   );
@@ -1286,7 +1286,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
     336,
     126,
     "대표 anchor",
-    "Velasco, Bhaduri, He,\nFitzgerald, Kelley, Chen 등",
+    "Velasco, Bhaduri, He,\nFitzgerald, Kelley, Chen 등 주요 anchor",
     CORAL,
     PANEL,
   );
@@ -1299,9 +1299,9 @@ async function slideReadout(presentation, data, slideNo, idx) {
     738,
     428,
     "collections/organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md",
-    "Insert the local graph for Q3 here",
+    "Q3 local graph",
   );
-  addFooter(slide, slideNo, "오른쪽에는 Q3 query note의 Obsidian local graph를 삽입하면 된다.");
+  addFooter(slide, slideNo, "우측 패널: Q3 query note의 Obsidian local graph 삽입 위치");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1315,7 +1315,7 @@ async function slideReviewWriting(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "핵심은 paper-by-paper 요약이 아니라, 위키에서 질문이 이동한 순서대로 review의 장과 비교 기준을 세우는 것이다.",
+    "핵심은 개별 논문 나열이 아니라, 위키에서 확인된 질문 이동 순서에 따라 review의 장과 비교 기준을 구성하는 것이다.",
     74,
     182,
     1130,
@@ -1332,7 +1332,7 @@ async function slideReviewWriting(presentation, data, slideNo, idx) {
     320,
     220,
     "1장: protocol family",
-    "whole cerebral,\nforebrain/cortical,\nposterior/niche를 baseline family로 먼저 정리한다.",
+    "whole cerebral,\nforebrain/cortical,\nposterior/niche를 baseline family로 정리한다.",
     ACCENT,
     PANEL,
   );
@@ -1358,7 +1358,7 @@ async function slideReviewWriting(presentation, data, slideNo, idx) {
     278,
     220,
     "3장: design rule",
-    "마지막에는\nreadout-first selection rule로 protocol choice를 다시 묶는다.",
+    "마지막 단계에서\nreadout-first selection rule로 protocol choice를 재구성한다.",
     CORAL,
     PANEL,
   );
@@ -1366,7 +1366,7 @@ async function slideReviewWriting(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "따라서 리뷰논문의 중심 주장도 '어느 protocol이 최고인가'가 아니라 '어떤 질문과 readout이 어떤 protocol selection rule을 요구하는가'가 된다.",
+    "따라서 리뷰논문의 중심 주장도 '어느 protocol이 우월한가'가 아니라 '어떤 질문과 readout이 어떤 protocol selection rule을 요구하는가'로 정리된다.",
     74,
     562,
     1130,
@@ -1374,7 +1374,7 @@ async function slideReviewWriting(presentation, data, slideNo, idx) {
     MINT,
     ACCENT,
   );
-  addFooter(slide, slideNo, "이 연결고리가 발표의 질문 체인을 리뷰논문의 장 구조와 주장 구조로 바꿔준다.");
+  addFooter(slide, slideNo, "이 연결고리는 발표의 질문 체인을 리뷰논문의 장 구조와 주장 구조로 전환한다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1392,7 +1392,7 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
     242,
     332,
     236,
-    "protocol family가 보인다",
+    "protocol family의 연속성",
     "whole cerebral, forebrain/cortical, posterior/niche가 한 branch 안에서 연속적으로 정리된다.",
     ACCENT,
     PANEL,
@@ -1405,8 +1405,8 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
     242,
     332,
     236,
-    "benchmark가 붙는다",
-    "같은 branch 안에서도 reproducibility, fidelity, timing, atlas alignment를 따로 볼 수 있다.",
+    "benchmark 축의 확장",
+    "동일 branch 내에서도 reproducibility, fidelity, timing, atlas alignment를 분리하여 평가할 수 있다.",
     GOLD,
     PANEL,
   );
@@ -1418,8 +1418,8 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
     242,
     280,
     236,
-    "readout로 닫힌다",
-    "결국 protocol choice가 readout-first rule로 이동하면서 발표의 결론을 만들 수 있다.",
+    "readout 중심 정리",
+    "최종적으로 protocol choice가 readout-first rule로 이동하면서 발표의 결론 구조가 완성된다.",
     CORAL,
     PANEL,
   );
@@ -1427,7 +1427,7 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "brain branch는 protocol family -> benchmark -> readout이 한 흐름으로 이어져, 질문이 이동하는 과정을 가장 선명하게 보여준다.",
+    "brain branch는 protocol family -> benchmark -> readout의 흐름이 연속적으로 연결되어, 질문 체인의 이동을 가장 선명하게 드러낸다.",
     76,
     528,
     1128,
@@ -1435,7 +1435,7 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
     GOLD_TINT,
     GOLD,
   );
-  addFooter(slide, slideNo, "그래서 organoid collection 전체 중에서도 brain branch가 발표 사례로 가장 적합했다.");
+  addFooter(slide, slideNo, "따라서 organoid collection 전체에서 brain branch는 발표 사례로서 가장 높은 설명력을 제공한다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1446,13 +1446,13 @@ async function slideConclusion(presentation, data, slideNo, idx) {
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
   addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
-  addCard(slide, slideNo, 74, 220, 330, 176, "takeaway 1", "collection 단위의 LLM-wiki 운영은 질문 범위를 좁히고 문헌 해석을 더 조밀하게 쌓게 해줬다.", ACCENT, PANEL);
-  addCard(slide, slideNo, 430, 220, 330, 176, "takeaway 2", "brain branch에서는 질문이 subregion selection에서 benchmark question으로 확장됐다.", GOLD, PANEL);
-  addCard(slide, slideNo, 786, 220, 420, 176, "takeaway 3", "최종적으로 protocol choice는 region choice를 넘어 readout-first selection rule로 이동했다.", CORAL, PANEL);
+  addCard(slide, slideNo, 74, 220, 330, 176, "takeaway 1", "collection 단위의 LLM-wiki 운영은 질문 범위를 제한하고 문헌 해석의 밀도를 높였다.", ACCENT, PANEL);
+  addCard(slide, slideNo, 430, 220, 330, 176, "takeaway 2", "brain branch에서는 질문이 subregion selection에서 benchmark question으로 확장되었다.", GOLD, PANEL);
+  addCard(slide, slideNo, 786, 220, 420, 176, "takeaway 3", "최종적으로 protocol choice는 region choice를 넘어 readout-first selection rule로 이동하였다.", CORAL, PANEL);
 
-  addBanner(slide, slideNo, "토론용 질문: 왜 reproducibility와 fidelity를 분리해야 하는가? 어떤 readout을 먼저 적어야 하는가? host validation은 언제 필요한가?", 74, 430, 1132, 86, PANEL, ACCENT);
-  addBanner(slide, slideNo, "정리: 좋은 질문은 더 많은 논문을 나열해서가 아니라, 위키를 정리하면서 비교 기준을 다시 세울 때 생겨났다.", 74, 552, 1132, 82, GOLD_TINT, GOLD);
-  addFooter(slide, slideNo, "LLM-wiki 운영 방식이 질문의 정교화와 발표의 구조를 함께 만들었다.");
+  addBanner(slide, slideNo, "Q&A 주요 쟁점: reproducibility와 fidelity의 분리, readout 우선순위, host validation 적용 시점", 74, 430, 1132, 86, PANEL, ACCENT);
+  addBanner(slide, slideNo, "정리: 유의미한 질문은 문헌의 단순 축적이 아니라, 위키 기반 비교 기준의 재구성 과정에서 형성되었다.", 74, 552, 1132, 82, GOLD_TINT, GOLD);
+  addFooter(slide, slideNo, "LLM-wiki 운영 구조는 질문의 정교화와 발표의 구조 형성에 동시에 기여하였다.");
   addNotes(slide, data.notes, data.sources);
 }
 
