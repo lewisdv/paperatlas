@@ -1,8 +1,6 @@
 {
-  "passed": false,
-  "failures": [
-    "Reference art-plate count (9) does not match PPTX slide count (12)."
-  ],
+  "passed": true,
+  "failures": [],
   "warnings": [
     "Found 232 explicit text runs from 10pt to under 14pt; confirm table/card/callout text feels natural and aesthetically balanced, not shrunken to fit density.",
     "Found tight textbox geometry; inspect rendered previews: [{\"slide\":7,\"id\":\"44\",\"textPreview\":\"integrated atlas | alignment\",\"textLines\":2,\"bbox\":[856,582,220,26],\"bbox_height\":26,\"required_height\":28,\"reason\":\"multiline textbox height is below 14px per line\"}].",
@@ -1916,7 +1914,7 @@
         "pptxPath": "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/outputs/output.pptx"
       }
     },
-    "reference_count": 9,
+    "reference_count": 12,
     "preview_count": 12
   }
 }
