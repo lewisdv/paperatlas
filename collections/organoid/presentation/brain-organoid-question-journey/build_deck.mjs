@@ -205,6 +205,21 @@ const SLIDES = [
   },
 ];
 
+const SLIDE_ORDER = [
+  "cover",
+  "process",
+  "scope",
+  "review-implication",
+  "graph-subregion",
+  "answer-one",
+  "limitation",
+  "graph-benchmark",
+  "tension",
+  "framework",
+  "readout",
+  "conclusion",
+];
+
 const inspectRecords = [];
 
 async function pathExists(filePath) {
@@ -921,26 +936,56 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "green");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 720, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 640, { titleSize: 36, subtitleSize: 18 });
 
-  const q = addNode(slide, slideNo, 472, 312, 280, 116, "Q1 | brain subregion별 프로토콜 비교", "어느 region을 만들 것인가?", ACCENT_DARK, MINT, "query");
+  addCard(
+    slide,
+    slideNo,
+    72,
+    224,
+    336,
+    126,
+    "출발 질문",
+    "broad cerebral, forebrain/cortical, posterior/niche 중 어떤 branch를 먼저 비교해야 하는가?",
+    ACCENT,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    72,
+    370,
+    336,
+    146,
+    "여기에 연결된 문헌",
+    "Lancaster, Sloan, Fitzgerald, Zagare, Eura, Valiulahi, Pomeshchik, Atamian",
+    GOLD,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    72,
+    536,
+    336,
+    112,
+    "1차 해석",
+    "brain organoid 설계 문제는 우선 subregion selection 문제로 읽을 수 있었다.",
+    CORAL,
+    PANEL,
+  );
 
-  const n1 = addNode(slide, slideNo, 98, 236, 178, 112, "Lancaster 2014", "whole cerebral", "#5C8F74", WHITE, "source");
-  const n2 = addNode(slide, slideNo, 308, 196, 178, 112, "Sloan 2018", "dorsal / ventral\nforebrain", "#5C8F74", WHITE, "source");
-  const n3 = addNode(slide, slideNo, 798, 204, 182, 112, "Fitzgerald 2024", "semi-guided\ncortical", "#5C8F74", WHITE, "source");
-  const n4 = addNode(slide, slideNo, 1004, 286, 174, 112, "Zagare 2021", "midbrain", "#5C8F74", WHITE, "source");
-  const n5 = addNode(slide, slideNo, 994, 470, 182, 112, "Atamian 2024", "cerebellum", "#5C8F74", WHITE, "source");
-  const n6 = addNode(slide, slideNo, 746, 518, 182, 112, "Pomeshchik 2020", "hippocampus", "#5C8F74", WHITE, "source");
-  const n7 = addNode(slide, slideNo, 344, 520, 182, 112, "Valiulahi 2021", "hindbrain / 5-HT", "#5C8F74", WHITE, "source");
-  const n8 = addNode(slide, slideNo, 110, 430, 178, 112, "Eura 2020", "brainstem", "#5C8F74", WHITE, "source");
-
-  [n1, n2, n3, n4, n5, n6, n7, n8].forEach((node) => connectNodes(slide, slideNo, q, node));
-
-  addPill(slide, slideNo, "whole cerebral", 64, 642, 132, 28, NAVY_TINT, "#274D63");
-  addPill(slide, slideNo, "forebrain / cortical", 210, 642, 180, 28, NAVY_TINT, "#274D63");
-  addPill(slide, slideNo, "posterior / niche", 404, 642, 156, 28, NAVY_TINT, "#274D63");
-  addBanner(slide, slideNo, "1차 질문이 잘 풀어준 것: brain design 문제를 subregion selection 문제로 읽기 시작했다.", 726, 620, 490, 58, PANEL, ACCENT);
-  addFooter(slide, slideNo, "graph-style view: question note를 중심으로 source cluster가 확장되는 모습");
+  addGraphPlaceholder(
+    slide,
+    slideNo,
+    458,
+    204,
+    738,
+    428,
+    "collections/organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md",
+    "Insert the local graph for Q1 here",
+  );
+  addFooter(slide, slideNo, "오른쪽에는 Q1 query note의 Obsidian local graph를 삽입하면 된다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1067,22 +1112,56 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "green");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 37, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 640, { titleSize: 36, subtitleSize: 18 });
 
-  addPill(slide, slideNo, "Round 2-4 added", 878, 92, 162, 28, GOLD_TINT, "#7A5A14");
-  const q = addNode(slide, slideNo, 456, 274, 320, 124, "Q2 | 발달정도·동기화 비교 프레임워크", "어느 수준의 세분화가 필요한가?", ACCENT_DARK, MINT, "query");
+  addCard(
+    slide,
+    slideNo,
+    72,
+    224,
+    336,
+    126,
+    "새로 붙은 질문",
+    "같은 cortical branch라도 reproducibility, fidelity, timing을 따로 물어야 하지 않는가?",
+    ACCENT,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    72,
+    370,
+    336,
+    146,
+    "여기에 연결된 문헌",
+    "Velasco, Yoon, Bhaduri, Kanton, He",
+    GOLD,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    72,
+    536,
+    336,
+    112,
+    "질문의 변화",
+    "subregion map 위에 benchmark axis가 덧붙으면서 비교 기준이 완전히 달라졌다.",
+    CORAL,
+    PANEL,
+  );
 
-  const n1 = addNode(slide, slideNo, 102, 210, 204, 120, "Velasco 2019", "within-protocol\nreproducibility", ACCENT, WHITE, "source");
-  const n2 = addNode(slide, slideNo, 164, 412, 204, 120, "Yoon 2019", "cross-line\nreliability", ACCENT, WHITE, "source");
-  const n3 = addNode(slide, slideNo, 860, 164, 214, 128, "Bhaduri 2020", "fidelity versus\nstress", CORAL, WHITE, "source");
-  const n4 = addNode(slide, slideNo, 930, 336, 214, 128, "Kanton 2019", "temporal map", GOLD, WHITE, "source");
-  const n5 = addNode(slide, slideNo, 838, 510, 254, 110, "He 2024", "integrated atlas\nalignment", "#517C95", WHITE, "source");
-
-  [n1, n2, n3, n4, n5].forEach((node) => connectNodes(slide, slideNo, q, node));
-  addLegendItem(slide, slideNo, 64, 646, "query note", MINT);
-  addLegendItem(slide, slideNo, 214, 646, "benchmark source", WHITE);
-  addBanner(slide, slideNo, "새 논문이 추가되면서 '더 많이 안다'가 아니라 '무엇을 따로 질문해야 하는가'가 바뀌었다.", 636, 620, 580, 58, PANEL, ACCENT);
-  addFooter(slide, slideNo, "graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간");
+  addGraphPlaceholder(
+    slide,
+    slideNo,
+    458,
+    204,
+    738,
+    428,
+    "collections/organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md",
+    "Insert the local graph for Q2 here",
+  );
+  addFooter(slide, slideNo, "오른쪽에는 Q2 query note의 Obsidian local graph를 삽입하면 된다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1159,35 +1238,56 @@ async function slideReadout(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "green");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 640, { titleSize: 36, subtitleSize: 18 });
 
   addCard(
     slide,
     slideNo,
-    66,
-    218,
-    300,
-    374,
-    "readout-first rule",
-    "1. 먼저 가장 중요한 readout을 적는다.\n2. 그 readout을 가장 직접적으로 최적화한 branch를 고른다.\n3. region, benchmark, host validation은 그다음 순서로 붙인다.",
+    72,
+    224,
+    336,
+    126,
+    "최종 선택 규칙",
+    "먼저 가장 중요한 readout을 적고, 그 readout을 가장 직접적으로 뒷받침하는 protocol branch를 고른다.",
     ACCENT,
     MINT,
   );
+  addCard(
+    slide,
+    slideNo,
+    72,
+    370,
+    336,
+    126,
+    "대표 readout 묶음",
+    "composition stability, fidelity/atlas, dish function, host circuit, screening",
+    GOLD,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    72,
+    516,
+    336,
+    132,
+    "대표 anchor",
+    "Velasco, Yoon, Bhaduri, He, Fitzgerald, Kelley, Chen, Meng",
+    CORAL,
+    PANEL,
+  );
 
-  const nodes = [
-    [404, 222, "composition", "stability\nVelasco / Yoon", ACCENT],
-    [690, 222, "fidelity", "primary-like\nBhaduri / He", GOLD],
-    [976, 222, "timing", "maturation map\nKanton / Giandomenico", "#517C95"],
-    [404, 412, "MEA", "oscillation\nFitzgerald", CORAL],
-    [690, 412, "host circuit", "integration\nKelley", ACCENT_DARK],
-    [976, 412, "screening", "perturbation\nChen / Meng", "#7D6AA7"],
-  ];
-
-  for (const [x, y, title, body, accent] of nodes) {
-    addNode(slide, slideNo, x, y, 242, 132, title, body, accent, WHITE, "source");
-  }
-
-  addFooter(slide, slideNo, "최종 질문: 어느 region을 만들까? 보다 무엇을 먼저 믿고 싶은가?");
+  addGraphPlaceholder(
+    slide,
+    slideNo,
+    458,
+    204,
+    738,
+    428,
+    "collections/organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md",
+    "Insert the local graph for Q3 here",
+  );
+  addFooter(slide, slideNo, "오른쪽에는 Q3 query note의 Obsidian local graph를 삽입하면 된다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1202,11 +1302,11 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
     slide,
     slideNo,
     74,
-    232,
+    242,
     332,
-    252,
-    "리뷰 1장",
-    "brain organoid baseline family\nwhole cerebral -> forebrain / cortical -> posterior / niche routes",
+    236,
+    "protocol family가 보인다",
+    "whole cerebral, forebrain/cortical, posterior/niche가 한 branch 안에서 연속적으로 정리된다.",
     ACCENT,
     PANEL,
   );
@@ -1215,11 +1315,11 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
     slide,
     slideNo,
     500,
-    232,
+    242,
     332,
-    252,
-    "리뷰 2장",
-    "protocol benchmark axes\nreproducibility, fidelity, timing, atlas alignment",
+    236,
+    "benchmark가 붙는다",
+    "같은 branch 안에서도 reproducibility, fidelity, timing, atlas alignment를 따로 볼 수 있다.",
     GOLD,
     PANEL,
   );
@@ -1228,11 +1328,11 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
     slide,
     slideNo,
     926,
-    232,
+    242,
     280,
-    252,
-    "리뷰 3장",
-    "readout-first selection rule\nMEA, host, atlas, screening",
+    236,
+    "readout로 닫힌다",
+    "결국 protocol choice가 readout-first rule로 이동하면서 발표의 결론을 만들 수 있다.",
     CORAL,
     PANEL,
   );
@@ -1240,15 +1340,15 @@ async function slideReviewImplication(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "즉 발표는 질문이 변한 과정을 보여주고, 리뷰 논문은 그 과정이 남긴 organizing principle을 글의 장 구조로 고정한다.",
+    "brain branch는 protocol family -> benchmark -> readout이 한 흐름으로 이어져, 질문이 이동하는 과정을 가장 선명하게 보여준다.",
     76,
     528,
     1128,
-    86,
+    82,
     GOLD_TINT,
     GOLD,
   );
-  addFooter(slide, slideNo, "발표와 리뷰 논문이 따로 노는 것이 아니라, 같은 위키 체인의 서로 다른 출력물이라는 점을 보여준다.");
+  addFooter(slide, slideNo, "그래서 organoid collection 전체 중에서도 brain branch가 발표 사례로 가장 적합했다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1259,22 +1359,24 @@ async function slideConclusion(presentation, data, slideNo, idx) {
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
   addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
-  addCard(slide, slideNo, 74, 220, 330, 176, "takeaway 1", "subregion comparison은 좋은 출발점이었다.\n질문을 broad brain에서 subregion choice로 좁혀줬다.", ACCENT, PANEL);
-  addCard(slide, slideNo, 430, 220, 330, 176, "takeaway 2", "하지만 benchmark 축이 들어오자,\n같은 region 안에서도 다른 질문이 생겼다.", GOLD, PANEL);
-  addCard(slide, slideNo, 786, 220, 420, 176, "takeaway 3", "최종적으로 protocol choice는 region choice를 넘어\nreadout-first selection rule로 이동했다.", CORAL, PANEL);
+  addCard(slide, slideNo, 74, 220, 330, 176, "takeaway 1", "collection 단위의 LLM-wiki 운영은 질문 범위를 좁히고 문헌 해석을 더 조밀하게 쌓게 해줬다.", ACCENT, PANEL);
+  addCard(slide, slideNo, 430, 220, 330, 176, "takeaway 2", "brain branch에서는 질문이 subregion selection에서 benchmark question으로 확장됐다.", GOLD, PANEL);
+  addCard(slide, slideNo, 786, 220, 420, 176, "takeaway 3", "최종적으로 protocol choice는 region choice를 넘어 readout-first selection rule로 이동했다.", CORAL, PANEL);
 
-  addBanner(slide, slideNo, "토론용 질문: 왜 reproducibility와 fidelity를 분리해야 하는가? 어느 축을 먼저 봐야 하는가? host validation은 언제 필요한가?", 74, 430, 1132, 86, PANEL, ACCENT);
-  addBanner(slide, slideNo, "정리: 위키를 정리하자 질문이 바뀌었고, 질문이 바뀌자 비교 기준도 바뀌었다.", 74, 552, 1132, 82, GOLD_TINT, GOLD);
-  addFooter(slide, slideNo, "Q&A로 넘어가면 각 질문의 우선축과 validation 순서를 중심으로 답하면 된다.");
+  addBanner(slide, slideNo, "토론용 질문: 왜 reproducibility와 fidelity를 분리해야 하는가? 어떤 readout을 먼저 적어야 하는가? host validation은 언제 필요한가?", 74, 430, 1132, 86, PANEL, ACCENT);
+  addBanner(slide, slideNo, "정리: 좋은 질문은 더 많은 논문을 나열해서가 아니라, 위키를 정리하면서 비교 기준을 다시 세울 때 생겨났다.", 74, 552, 1132, 82, GOLD_TINT, GOLD);
+  addFooter(slide, slideNo, "LLM-wiki 운영 방식이 질문의 정교화와 발표의 구조를 함께 만들었다.");
   addNotes(slide, data.notes, data.sources);
 }
 
 async function createDeck() {
   await ensureDirs();
   const presentation = Presentation.create({ slideSize: { width: W, height: H } });
-  for (let idx = 0; idx < SLIDES.length; idx += 1) {
+  const slideMap = new Map(SLIDES.map((slide) => [slide.id, slide]));
+  for (let idx = 0; idx < SLIDE_ORDER.length; idx += 1) {
     const slideNo = idx + 1;
-    const data = SLIDES[idx];
+    const data = slideMap.get(SLIDE_ORDER[idx]);
+    if (!data) throw new Error(`Unknown slide id in order: ${SLIDE_ORDER[idx]}`);
     if (data.id === "cover") await slideCover(presentation, data, slideNo, slideNo);
     else if (data.id === "process") await slideProcess(presentation, data, slideNo, slideNo);
     else if (data.id === "scope") await slideScope(presentation, data, slideNo, slideNo);
