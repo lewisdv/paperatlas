@@ -92,6 +92,16 @@ const SLIDES = [
     sources: ["overview", "index", "q1", "q2", "q3"],
   },
   {
+    id: "scope",
+    kicker: "SCOPE",
+    title: "왜 이 corpus에서\nbrain branch를 먼저 잡았나",
+    subtitle:
+      "리뷰 질문으로서 brain organoid는\nsubregion, benchmark, readout 축이 모두 살아 있는 영역이었다.",
+    notes:
+      "발표 초반에 이 슬라이드를 넣으면 왜 하필 brain organoid를 사례로 잡았는지 설명하기 좋다.\nbrain cluster는 이 corpus에서 source 수가 가장 크고, broad cerebral에서 niche subregion까지 연속체가 있으며, benchmark 논문과 functional readout 논문도 함께 연결된다.\n즉 질문이 자라나는 과정을 보여주기에 가장 적합한 branch였다.",
+    sources: ["overview", "index", "conceptSubregion", "conceptBench", "q1", "q2", "q3"],
+  },
+  {
     id: "graph-subregion",
     kicker: "QUESTION 1",
     title: "1차 질문: brain subregion별\n프로토콜 비교",
@@ -143,6 +153,16 @@ const SLIDES = [
     sources: ["q2", "conceptBench", "velasco", "yoon", "bhaduri", "kanton", "he"],
   },
   {
+    id: "tension",
+    kicker: "KEY TENSION",
+    title: "재현성이 높다고\n더 faithful한 것은 아니다",
+    subtitle:
+      "이 발표에서 가장 중요한 전환은\nreproducibility와 fidelity를 분리한 순간이다.",
+    notes:
+      "이 슬라이드는 benchmark slide와 framework slide 사이의 다리 역할을 한다.\nVelasco와 Yoon은 잘 반복되는 cortical branch를 보여주지만, Bhaduri는 그 branch가 primary fetal cortex와 얼마나 다른지를 보여준다.\n즉 '잘 반복된다'와 '더 진짜 같다'는 다른 질문이며, 이 구분이 이후 5축 프레임워크의 핵심이 된다.",
+    sources: ["q2", "conceptBench", "velasco", "yoon", "bhaduri"],
+  },
+  {
     id: "framework",
     kicker: "FRAMEWORK",
     title: "최종적으로 얻은 5축 프레임워크",
@@ -161,6 +181,16 @@ const SLIDES = [
     notes:
       "세 번째 질문 노트에서는 protocol choice가 readout-first rule로 재정리된다.\ncomposition reproducibility를 원하면 Velasco or Yoon 계열, fidelity를 원하면 Bhaduri or He, timing을 원하면 Kanton, dish function을 원하면 Fitzgerald, host relevance를 원하면 Kelley, screening을 원하면 Chen or Meng이 우선 anchor가 된다.\n즉 최종 질문은 '어느 region을 만들까'보다 '무슨 readout을 먼저 믿고 싶은가'가 됐다.",
     sources: ["q3", "conceptPattern", "conceptBench", "fitzgerald", "kelley", "chen", "meng", "kanton", "he"],
+  },
+  {
+    id: "review-implication",
+    kicker: "REVIEW WRITING",
+    title: "이 질문 체인이\n리뷰 논문 구조에 준 영향",
+    subtitle:
+      "발표는 질문의 이동을 보여주고,\n리뷰 논문은 그 이동을 장 구조로 고정한다.",
+    notes:
+      "기말 과제가 리뷰 논문이므로, 발표가 글쓰기와 어떻게 연결되는지도 짚어주면 좋다.\n이 위키 체인을 따라가면 리뷰 글의 구조도 자연스럽게 나온다.\n예를 들어 첫 장은 subregion baseline, 다음은 benchmark axes, 마지막은 readout-first design rule처럼 배치할 수 있다.\n즉 발표는 process를, 리뷰는 그 process가 남긴 organizing principle을 보여준다.",
+    sources: ["q1", "q2", "q3", "synthBaseline", "conceptBench", "conceptPattern"],
   },
   {
     id: "conclusion",
@@ -734,6 +764,57 @@ async function slideProcess(presentation, data, slideNo, idx) {
   addNotes(slide, data.notes, data.sources);
 }
 
+async function slideScope(presentation, data, slideNo, idx) {
+  const slide = presentation.slides.add();
+  await addPlate(slide, slideNo, "green");
+  addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
+  addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 740, { titleSize: 38, subtitleSize: 18 });
+
+  addMetricCard(slide, slideNo, 72, 228, 344, 116, "17", "brain-related active sources", "overview.md cluster count", ACCENT);
+  addMetricCard(slide, slideNo, 440, 228, 344, 116, "3", "core question notes", "q1 -> q2 -> q3", GOLD);
+  addMetricCard(slide, slideNo, 808, 228, 344, 116, "5", "benchmark axes in final frame", "region / reproducibility / fidelity / timing / atlas", CORAL);
+
+  addCard(
+    slide,
+    slideNo,
+    82,
+    396,
+    330,
+    184,
+    "왜 brain인가",
+    "이 corpus에서 brain branch는 source 수가 크고, subregion protocol과 benchmark 논문, functional readout 논문이 동시에 연결돼 있다.",
+    ACCENT,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    474,
+    396,
+    330,
+    184,
+    "왜 좋은 발표 소재인가",
+    "질문이 subregion selection에서 benchmark question, 그리고 readout-first rule로 자라나는 과정이 가장 뚜렷하게 보인다.",
+    GOLD,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    866,
+    396,
+    330,
+    184,
+    "왜 리뷰 글과도 맞나",
+    "결론만 요약하는 대신, protocol family와 평가 기준이 분기되는 구조를 review article의 장 구조로 바꾸기 좋다.",
+    CORAL,
+    PANEL,
+  );
+  addFooter(slide, slideNo, "brain branch는 scope, benchmark, readout이 모두 살아 있어서 question journey를 보여주기 좋았다.");
+  addNotes(slide, data.notes, data.sources);
+}
+
 async function slideGraphSubregion(presentation, data, slideNo, idx) {
   const slide = presentation.slides.add();
   await addPlate(slide, slideNo, "green");
@@ -904,6 +985,56 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
   addNotes(slide, data.notes, data.sources);
 }
 
+async function slideTension(presentation, data, slideNo, idx) {
+  const slide = presentation.slides.add();
+  await addPlate(slide, slideNo, "coral");
+  addShape(slide, "rect", 0, 0, W, H, "#FFFCF7D0", TRANSPARENT, 0, { slideNo, role: "content overlay" });
+  addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+
+  addBanner(
+    slide,
+    slideNo,
+    "Velasco / Yoon이 보여준 것은 '잘 반복되는 cortical branch'이고, Bhaduri가 보여준 것은 '그 branch가 primary brain과 어디서 어긋나는가'이다.",
+    78,
+    210,
+    1124,
+    86,
+    ROSE_TINT,
+    CORAL,
+  );
+
+  addCard(
+    slide,
+    slideNo,
+    92,
+    344,
+    486,
+    240,
+    "reproducibility 쪽 질문",
+    "같은 protocol을 여러 번 돌렸을 때 organoid-to-organoid variance가 얼마나 낮은가?\n대표 anchor:\nVelasco 2019, Yoon 2019",
+    ACCENT,
+    PANEL,
+  );
+  addCard(
+    slide,
+    slideNo,
+    700,
+    344,
+    486,
+    240,
+    "fidelity 쪽 질문",
+    "그 organoid cell state가 primary fetal cortex와 얼마나 가까운가?\nstress-linked divergence는 없는가?\n대표 anchor:\nBhaduri 2020, He 2024",
+    GOLD,
+    PANEL,
+  );
+
+  addArrowBetween(slide, slideNo, 586, 456, 90);
+  addPill(slide, slideNo, "same region, different question", 468, 604, 268, 28, MINT, ACCENT_DARK);
+  addFooter(slide, slideNo, "이 구분이 있어야 5축 프레임워크가 단순 taxonomy가 아니라 실제 비교 도구가 된다.");
+  addNotes(slide, data.notes, data.sources);
+}
+
 async function slideFramework(presentation, data, slideNo, idx) {
   const slide = presentation.slides.add();
   await addPlate(slide, slideNo, "gold");
@@ -959,6 +1090,67 @@ async function slideReadout(presentation, data, slideNo, idx) {
   addNotes(slide, data.notes, data.sources);
 }
 
+async function slideReviewImplication(presentation, data, slideNo, idx) {
+  const slide = presentation.slides.add();
+  await addPlate(slide, slideNo, "gold");
+  addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
+  addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+
+  addCard(
+    slide,
+    slideNo,
+    74,
+    232,
+    332,
+    252,
+    "리뷰 1장",
+    "brain organoid baseline family\nwhole cerebral -> forebrain / cortical -> posterior / niche routes",
+    ACCENT,
+    PANEL,
+  );
+  addArrowBetween(slide, slideNo, 420, 342, 74);
+  addCard(
+    slide,
+    slideNo,
+    500,
+    232,
+    332,
+    252,
+    "리뷰 2장",
+    "protocol benchmark axes\nreproducibility, fidelity, timing, atlas alignment",
+    GOLD,
+    PANEL,
+  );
+  addArrowBetween(slide, slideNo, 846, 342, 74);
+  addCard(
+    slide,
+    slideNo,
+    926,
+    232,
+    280,
+    252,
+    "리뷰 3장",
+    "readout-first selection rule\nMEA, host, atlas, screening",
+    CORAL,
+    PANEL,
+  );
+
+  addBanner(
+    slide,
+    slideNo,
+    "즉 발표는 질문이 변한 과정을 보여주고, 리뷰 논문은 그 과정이 남긴 organizing principle을 글의 장 구조로 고정한다.",
+    76,
+    528,
+    1128,
+    86,
+    GOLD_TINT,
+    GOLD,
+  );
+  addFooter(slide, slideNo, "발표와 리뷰 논문이 따로 노는 것이 아니라, 같은 위키 체인의 서로 다른 출력물이라는 점을 보여준다.");
+  addNotes(slide, data.notes, data.sources);
+}
+
 async function slideConclusion(presentation, data, slideNo, idx) {
   const slide = presentation.slides.add();
   await addPlate(slide, slideNo, "gold");
@@ -984,12 +1176,15 @@ async function createDeck() {
     const data = SLIDES[idx];
     if (data.id === "cover") await slideCover(presentation, data, slideNo, slideNo);
     else if (data.id === "process") await slideProcess(presentation, data, slideNo, slideNo);
+    else if (data.id === "scope") await slideScope(presentation, data, slideNo, slideNo);
     else if (data.id === "graph-subregion") await slideGraphSubregion(presentation, data, slideNo, slideNo);
     else if (data.id === "answer-one") await slideAnswerOne(presentation, data, slideNo, slideNo);
     else if (data.id === "limitation") await slideLimitation(presentation, data, slideNo, slideNo);
     else if (data.id === "graph-benchmark") await slideGraphBenchmark(presentation, data, slideNo, slideNo);
+    else if (data.id === "tension") await slideTension(presentation, data, slideNo, slideNo);
     else if (data.id === "framework") await slideFramework(presentation, data, slideNo, slideNo);
     else if (data.id === "readout") await slideReadout(presentation, data, slideNo, slideNo);
+    else if (data.id === "review-implication") await slideReviewImplication(presentation, data, slideNo, slideNo);
     else if (data.id === "conclusion") await slideConclusion(presentation, data, slideNo, slideNo);
     else throw new Error(`Unknown slide id: ${data.id}`);
   }

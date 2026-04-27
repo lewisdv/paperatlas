@@ -16,19 +16,24 @@
 2. 첫 질문은 `brain subregion별 프로토콜 비교`였다.
 3. 그 정리만으로는 모델의 질을 설명하지 못하는 한계가 드러난다.
 4. 질문은 `reproducibility, fidelity, temporal mapping`을 묻는 benchmark question으로 확장된다.
-5. 최종적으로 protocol choice는 `readout-first rule`로 재정리된다.
+5. 특히 `reproducibility != fidelity`라는 긴장이 핵심 전환점이 된다.
+6. 최종적으로 protocol choice는 `readout-first rule`로 재정리된다.
+7. 이 질문 이동은 리뷰 논문 장 구조로 다시 고정된다.
 
 ## Slide List
 
 1. Cover: 발표 질문과 핵심 메시지
 2. Process framing: 교수님 가이드와 발표 구조
-3. Graph view 1: 첫 질문과 source cluster
-4. First answer: subregion logic로 얻은 1차 정리
-5. Limitation: 왜 첫 질문만으로는 부족했는가
-6. Graph view 2: benchmark question으로의 확장
-7. Framework: 5축 비교 프레임워크
-8. Readout-first rule: 최종 선택 기준
-9. Conclusion and Q&A prompts
+3. Scope: 왜 brain branch를 사례로 잡았는가
+4. Graph view 1: 첫 질문과 source cluster
+5. First answer: subregion logic로 얻은 1차 정리
+6. Limitation: 왜 첫 질문만으로는 부족했는가
+7. Graph view 2: benchmark question으로의 확장
+8. Tension: reproducibility와 fidelity의 분리
+9. Framework: 5축 비교 프레임워크
+10. Readout-first rule: 최종 선택 기준
+11. Review implication: 리뷰 논문 구조로의 연결
+12. Conclusion and Q&A prompts
 
 ## Source Plan
 
