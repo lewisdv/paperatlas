@@ -1,14 +1,12 @@
 {
   "passed": false,
   "failures": [
-    "No art-plate reference images found in /Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/references.",
-    "Found severe textbox overlaps that can render as stacked or colliding text: [{\"slide\":3,\"overlap\":{\"left\":314,\"top\":144,\"width\":68,\"height\":24,\"area\":1632},\"overlapRatio\":1,\"a\":{\"slide\":3,\"id\":\"13\",\"role\":\"title\",\"textPreview\":\"1차 질문: brain subregion별 | 프로토콜 비교\",\"bbox\":[64,88,720,118]},\"b\":{\"slide\":3,\"id\":\"27\",\"role\":\"pill\",\"textPreview\":\"source\",\"bbox\":[314,144,68,24]}},{\"slide\":3,\"overlap\":{\"left\":314,\"top\":174,\"width\":144,\"height\":24,\"area\":3456},\"overlapRatio\":1,\"a\":{\"slide\":3,\"id\":\"13\",\"role\":\"title\",\"textPreview\":\"1차 질문: brain subregion별 | 프로토콜 비교\",\"bbox\":[64,88,720,118]},\"b\":{\"slide\":3,\"id\":\"28\",\"role\":\"node title\",\"textPreview\":\"Sloan 2018\",\"bbox\":[314,174,144,24]}},{\"slide\":3,\"overlap\":{\"left\":116,\"top\":214,\"width\":68,\"height\":14,\"area\":952},\"overlapRatio\":0.583,\"a\":{\"slide\":3,\"id\":\"14\",\"role\":\"subtitle\",\"textPreview\":\"처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.\",\"bbox\":[66,214,720,66]},\"b\":{\"slide\":3,\"id\":\"22\",\"role\":\"pill\",\"textPreview\":\"source\",\"bbox\":[116,204,68,24]}},{\"slide\":3,\"overlap\":{\"left\":116,\"top\":234,\"width\":144,\"height\":24,\"area\":3456},\"overlapRatio\":1,\"a\":{\"slide\":3,\"id\":\"14\",\"role\":\"subtitle\",\"textPreview\":\"처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.\",\"bbox\":[66,214,720,66]},\"b\":{\"slide\":3,\"id\":\"23\",\"role\":\"node title\",\"textPreview\":\"Lancaster 2014\",\"bbox\":[116,234,144,24]}},{\"slide\":3,\"overlap\":{\"left\":116,\"top\":260,\"width\":144,\"height\":20,\"area\":2880},\"overlapRatio\":0.714,\"a\":{\"slide\":3,\"id\":\"14\",\"role\":\"subtitle\",\"textPreview\":\"처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.\",\"bbox\":[66,214,720,66]},\"b\":{\"slide\":3,\"id\":\"24\",\"role\":\"node body\",\"textPreview\":\"whole cerebral\",\"bbox\":[116,260,144,28]}}].",
-    "Found 16 chart-like inspect records but no native PPTX chart XML parts (ppt/**/charts/chart*.xml). Use slide.charts.add(...) for data charts/graphs instead of drawing them manually. Text samples: []. Shape samples: [{\"slide\":1,\"id\":\"35\",\"role\":\"graph connector\",\"shapeType\":\"rect\",\"bbox\":[839.8260017766563,253.5,155.3479964466874,3]},{\"slide\":1,\"id\":\"36\",\"role\":\"graph connector\",\"shapeType\":\"rect\",\"bbox\":[885.8146101515254,330.5,194.3707796969493,3]},{\"slide\":1,\"id\":\"37\",\"role\":\"graph connector\",\"shapeType\":\"rect\",\"bbox\":[826.5638808737284,410.5,183.87223825254318,3]},{\"slide\":3,\"id\":\"60\",\"role\":\"graph connector\",\"shapeType\":\"rect\",\"bbox\":[182.49251164994328,286.5,434.01497670011344,3]},{\"slide\":3,\"id\":\"61\",\"role\":\"graph connector\",\"shapeType\":\"rect\",\"bbox\":[363.00738027479133,256.5,270.9852394504173,3]}]."
+    "No art-plate reference images found in /Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/references."
   ],
   "warnings": [
     "Found 206 explicit text runs from 10pt to under 14pt; confirm table/card/callout text feels natural and aesthetically balanced, not shrunken to fit density.",
-    "Found tight textbox geometry; inspect rendered previews: [{\"slide\":6,\"id\":\"45\",\"textPreview\":\"integrated atlas | alignment\",\"textLines\":2,\"bbox\":[856,582,220,26],\"bbox_height\":26,\"required_height\":28,\"reason\":\"multiline textbox height is below 14px per line\"}].",
-    "Found 2 chart-like textbox copy samples but no native PPTX chart XML parts (ppt/**/charts/chart*.xml); confirm this deck truly has no chart/graph visual, otherwise use slide.charts.add(...). Samples: [{\"slide\":3,\"id\":\"74\",\"role\":\"footer\",\"textPreview\":\"graph-style view: question note를 중심으로 source cluster가 확장되는 모습\",\"bbox\":[64,684,900,18]},{\"slide\":6,\"id\":\"58\",\"role\":\"footer\",\"textPreview\":\"graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간\",\"bbox\":[64,684,900,18]}].",
+    "Found tight textbox geometry; inspect rendered previews: [{\"slide\":6,\"id\":\"44\",\"textPreview\":\"integrated atlas | alignment\",\"textLines\":2,\"bbox\":[856,582,220,26],\"bbox_height\":26,\"required_height\":28,\"reason\":\"multiline textbox height is below 14px per line\"}].",
+    "Found 2 chart-like textbox copy samples but no native PPTX chart XML parts (ppt/**/charts/chart*.xml); confirm this deck truly has no chart/graph visual, otherwise use slide.charts.add(...). Samples: [{\"slide\":3,\"id\":\"73\",\"role\":\"footer\",\"textPreview\":\"graph-style view: question note를 중심으로 source cluster가 확장되는 모습\",\"bbox\":[64,684,900,18]},{\"slide\":6,\"id\":\"57\",\"role\":\"footer\",\"textPreview\":\"graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간\",\"bbox\":[64,684,900,18]}].",
     "Found tight textbox spacing; inspect rendered previews: [{\"slide\":1,\"gapPx\":18,\"orientation\":\"vertical\",\"a\":{\"slide\":1,\"id\":\"10\",\"role\":\"kicker\",\"textPreview\":\"BRAIN ORGANOID QUESTION CHAIN\",\"bbox\":[86,88,520,24]},\"b\":{\"slide\":1,\"id\":\"11\",\"role\":\"cover title\",\"textPreview\":\"Brain organoid protocol 비교는 | 왜 subregion 비교만으로 끝나지 않는가\",\"bbox\":[82,130,690,152]}},{\"slide\":1,\"gapPx\":26,\"orientation\":\"vertical\",\"a\":{\"slide\":1,\"id\":\"11\",\"role\":\"cover title\",\"textPreview\":\"Brain organoid protocol 비교는 | 왜 subregion 비교만으로 끝나지 않는가\",\"bbox\":[82,130,690,152]},\"b\":{\"slide\":1,\"id\":\"12\",\"role\":\"cover subtitle\",\"textPreview\":\"organoid 위키를 정리하면서, 단순한 region 비교 질문이 | benchmark와 readout 중심 질문으로 어떻게 확장됐는지를 보여준다.\",\"bbox\":[86,308,620,82]}},{\"slide\":1,\"gapPx\":6,\"orientation\":\"vertical\",\"a\":{\"slide\":1,\"id\":\"17\",\"role\":\"pill\",\"textPreview\":\"concept\",\"bbox\":[860,142,76,24]},\"b\":{\"slide\":1,\"id\":\"18\",\"role\":\"node title\",\"textPreview\":\"subregion\",\"bbox\":[860,172,180,24]}},{\"slide\":1,\"gapPx\":2,\"orientation\":\"vertical\",\"a\":{\"slide\":1,\"id\":\"18\",\"role\":\"node title\",\"textPreview\":\"subregion\",\"bbox\":[860,172,180,24]},\"b\":{\"slide\":1,\"id\":\"19\",\"role\":\"node body\",\"textPreview\":\"whole cerebral, | forebrain, midbrain\",\"bbox\":[860,198,180,32]}},{\"slide\":1,\"gapPx\":6,\"orientation\":\"vertical\",\"a\":{\"slide\":1,\"id\":\"22\",\"role\":\"pill\",\"textPreview\":\"concept\",\"bbox\":[994,296,76,24]},\"b\":{\"slide\":1,\"id\":\"23\",\"role\":\"node title\",\"textPreview\":\"benchmark\",\"bbox\":[994,326,174,24]}}]."
   ],
   "pptx": "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/outputs/output.pptx",
@@ -137,10 +135,6 @@
         38,
         38,
         38,
-        18,
-        18,
-        18,
-        18,
         12,
         12,
         17,
@@ -301,10 +295,6 @@
         37,
         37,
         37,
-        18,
-        18,
-        18,
-        18,
         12,
         12,
         12,
@@ -625,10 +615,6 @@
         28.5,
         28.5,
         28.5,
-        13.5,
-        13.5,
-        13.5,
-        13.5,
         9,
         9,
         12.75,
@@ -789,10 +775,6 @@
         27.75,
         27.75,
         27.75,
-        13.5,
-        13.5,
-        13.5,
-        13.5,
         9,
         9,
         9,
@@ -1013,11 +995,11 @@
     },
     "inspect": {
       "exists": true,
-      "line_count": 571,
-      "textbox_count": 176,
-      "text_chars": 4519,
+      "line_count": 567,
+      "textbox_count": 174,
+      "text_chars": 4422,
       "image_count": 9,
-      "shape_count": 376,
+      "shape_count": 374,
       "manual_chart_textbox_count": 0,
       "manual_chart_textbox_samples": [],
       "native_chart_record_count": 0,
@@ -1026,7 +1008,7 @@
       "chartish_textbox_samples": [
         {
           "slide": 3,
-          "id": "74",
+          "id": "73",
           "role": "footer",
           "textPreview": "graph-style view: question note를 중심으로 source cluster가 확장되는 모습",
           "bbox": [
@@ -1038,7 +1020,7 @@
         },
         {
           "slide": 6,
-          "id": "58",
+          "id": "57",
           "role": "footer",
           "textPreview": "graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간",
           "bbox": [
@@ -1049,206 +1031,13 @@
           ]
         }
       ],
-      "manual_chart_shape_count": 16,
-      "manual_chart_shape_samples": [
-        {
-          "slide": 1,
-          "id": "35",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            839.8260017766563,
-            253.5,
-            155.3479964466874,
-            3
-          ]
-        },
-        {
-          "slide": 1,
-          "id": "36",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            885.8146101515254,
-            330.5,
-            194.3707796969493,
-            3
-          ]
-        },
-        {
-          "slide": 1,
-          "id": "37",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            826.5638808737284,
-            410.5,
-            183.87223825254318,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "60",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            182.49251164994328,
-            286.5,
-            434.01497670011344,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "61",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            363.00738027479133,
-            256.5,
-            270.9852394504173,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "62",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            594.7352369069257,
-            258.5,
-            317.52952618614853,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "63",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            609.7372030274303,
-            297.5,
-            483.5255939451396,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "64",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            605.7147461391481,
-            385.5,
-            487.5705077217038,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "65",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            568.4011036211465,
-            441.5,
-            326.1977927577071,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "66",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            366.0067341594239,
-            442.5,
-            296.98653168115214,
-            3
-          ]
-        },
-        {
-          "slide": 3,
-          "id": "67",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            189.04640870943925,
-            388.5,
-            430.9071825811215,
-            3
-          ]
-        },
-        {
-          "slide": 6,
-          "id": "46",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            201.37353954974935,
-            301.5,
-            417.2529209005013,
-            3
-          ]
-        },
-        {
-          "slide": 6,
-          "id": "47",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            253.2528295819082,
-            402.5,
-            375.4943408361836,
-            3
-          ]
-        },
-        {
-          "slide": 6,
-          "id": "48",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            607.8801481320716,
-            280.5,
-            367.23970373585695,
-            3
-          ]
-        },
-        {
-          "slide": 6,
-          "id": "49",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            613.5815883959303,
-            366.5,
-            425.8368232081392,
-            3
-          ]
-        },
-        {
-          "slide": 6,
-          "id": "50",
-          "role": "graph connector",
-          "shapeType": "rect",
-          "bbox": [
-            581.7884765998772,
-            449,
-            417.4230468002456,
-            3
-          ]
-        }
-      ],
+      "manual_chart_shape_count": 0,
+      "manual_chart_shape_samples": [],
       "text_fit_failures": [],
       "text_fit_warnings": [
         {
           "slide": 6,
-          "id": "45",
+          "id": "44",
           "textPreview": "integrated atlas | alignment",
           "textLines": 2,
           "bbox": [
@@ -1262,288 +1051,7 @@
           "reason": "multiline textbox height is below 14px per line"
         }
       ],
-      "textbox_overlap_failures": [
-        {
-          "slide": 3,
-          "overlap": {
-            "left": 314,
-            "top": 144,
-            "width": 68,
-            "height": 24,
-            "area": 1632
-          },
-          "overlapRatio": 1,
-          "a": {
-            "slide": 3,
-            "id": "13",
-            "role": "title",
-            "textPreview": "1차 질문: brain subregion별 | 프로토콜 비교",
-            "bbox": [
-              64,
-              88,
-              720,
-              118
-            ]
-          },
-          "b": {
-            "slide": 3,
-            "id": "27",
-            "role": "pill",
-            "textPreview": "source",
-            "bbox": [
-              314,
-              144,
-              68,
-              24
-            ]
-          }
-        },
-        {
-          "slide": 3,
-          "overlap": {
-            "left": 314,
-            "top": 174,
-            "width": 144,
-            "height": 24,
-            "area": 3456
-          },
-          "overlapRatio": 1,
-          "a": {
-            "slide": 3,
-            "id": "13",
-            "role": "title",
-            "textPreview": "1차 질문: brain subregion별 | 프로토콜 비교",
-            "bbox": [
-              64,
-              88,
-              720,
-              118
-            ]
-          },
-          "b": {
-            "slide": 3,
-            "id": "28",
-            "role": "node title",
-            "textPreview": "Sloan 2018",
-            "bbox": [
-              314,
-              174,
-              144,
-              24
-            ]
-          }
-        },
-        {
-          "slide": 3,
-          "overlap": {
-            "left": 116,
-            "top": 214,
-            "width": 68,
-            "height": 14,
-            "area": 952
-          },
-          "overlapRatio": 0.583,
-          "a": {
-            "slide": 3,
-            "id": "14",
-            "role": "subtitle",
-            "textPreview": "처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.",
-            "bbox": [
-              66,
-              214,
-              720,
-              66
-            ]
-          },
-          "b": {
-            "slide": 3,
-            "id": "22",
-            "role": "pill",
-            "textPreview": "source",
-            "bbox": [
-              116,
-              204,
-              68,
-              24
-            ]
-          }
-        },
-        {
-          "slide": 3,
-          "overlap": {
-            "left": 116,
-            "top": 234,
-            "width": 144,
-            "height": 24,
-            "area": 3456
-          },
-          "overlapRatio": 1,
-          "a": {
-            "slide": 3,
-            "id": "14",
-            "role": "subtitle",
-            "textPreview": "처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.",
-            "bbox": [
-              66,
-              214,
-              720,
-              66
-            ]
-          },
-          "b": {
-            "slide": 3,
-            "id": "23",
-            "role": "node title",
-            "textPreview": "Lancaster 2014",
-            "bbox": [
-              116,
-              234,
-              144,
-              24
-            ]
-          }
-        },
-        {
-          "slide": 3,
-          "overlap": {
-            "left": 116,
-            "top": 260,
-            "width": 144,
-            "height": 20,
-            "area": 2880
-          },
-          "overlapRatio": 0.714,
-          "a": {
-            "slide": 3,
-            "id": "14",
-            "role": "subtitle",
-            "textPreview": "처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.",
-            "bbox": [
-              66,
-              214,
-              720,
-              66
-            ]
-          },
-          "b": {
-            "slide": 3,
-            "id": "24",
-            "role": "node body",
-            "textPreview": "whole cerebral",
-            "bbox": [
-              116,
-              260,
-              144,
-              28
-            ]
-          }
-        },
-        {
-          "slide": 3,
-          "overlap": {
-            "left": 314,
-            "top": 214,
-            "width": 144,
-            "height": 14,
-            "area": 2016
-          },
-          "overlapRatio": 0.5,
-          "a": {
-            "slide": 3,
-            "id": "14",
-            "role": "subtitle",
-            "textPreview": "처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.",
-            "bbox": [
-              66,
-              214,
-              720,
-              66
-            ]
-          },
-          "b": {
-            "slide": 3,
-            "id": "29",
-            "role": "node body",
-            "textPreview": "dorsal / ventral | forebrain",
-            "bbox": [
-              314,
-              200,
-              144,
-              28
-            ]
-          }
-        },
-        {
-          "slide": 6,
-          "overlap": {
-            "left": 120,
-            "top": 226,
-            "width": 68,
-            "height": 24,
-            "area": 1632
-          },
-          "overlapRatio": 1,
-          "a": {
-            "slide": 6,
-            "id": "14",
-            "role": "subtitle",
-            "textPreview": "Round 2-4의 benchmark 논문들이 들어오면서, | 질문 자체가 새 프레임으로 재구성됐다.",
-            "bbox": [
-              66,
-              214,
-              720,
-              66
-            ]
-          },
-          "b": {
-            "slide": 6,
-            "id": "23",
-            "role": "pill",
-            "textPreview": "source",
-            "bbox": [
-              120,
-              226,
-              68,
-              24
-            ]
-          }
-        },
-        {
-          "slide": 6,
-          "overlap": {
-            "left": 120,
-            "top": 256,
-            "width": 170,
-            "height": 24,
-            "area": 4080
-          },
-          "overlapRatio": 1,
-          "a": {
-            "slide": 6,
-            "id": "14",
-            "role": "subtitle",
-            "textPreview": "Round 2-4의 benchmark 논문들이 들어오면서, | 질문 자체가 새 프레임으로 재구성됐다.",
-            "bbox": [
-              66,
-              214,
-              720,
-              66
-            ]
-          },
-          "b": {
-            "slide": 6,
-            "id": "24",
-            "role": "node title",
-            "textPreview": "Velasco 2019",
-            "bbox": [
-              120,
-              256,
-              170,
-              24
-            ]
-          }
-        }
-      ],
+      "textbox_overlap_failures": [],
       "textbox_edge_failures": [],
       "tight_gap_warnings": [
         {
@@ -2099,7 +1607,7 @@
         },
         {
           "slide": 3,
-          "gapPx": 8,
+          "gapPx": 6,
           "orientation": "vertical",
           "a": {
             "slide": 3,
@@ -2115,14 +1623,14 @@
           },
           "b": {
             "slide": 3,
-            "id": "14",
-            "role": "subtitle",
-            "textPreview": "처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.",
+            "id": "26",
+            "role": "pill",
+            "textPreview": "source",
             "bbox": [
-              66,
-              214,
-              720,
-              66
+              326,
+              212,
+              68,
+              24
             ]
           }
         }
@@ -2132,15 +1640,15 @@
     "render_verify_loops": {
       "path": "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/tmp/slides/brain-organoid-question-journey/verification/render_verify_loops.ndjson",
       "exists": true,
-      "loop_count": 2,
-      "latest_loop": 2,
+      "loop_count": 3,
+      "latest_loop": 3,
       "latest_record": {
         "kind": "render_verify_loop",
         "deckId": "brain-organoid-question-journey",
-        "loop": 2,
+        "loop": 3,
         "maxLoops": 3,
-        "capReached": false,
-        "timestamp": "2026-04-27T01:39:00.214Z",
+        "capReached": true,
+        "timestamp": "2026-04-27T01:40:37.704Z",
         "slideCount": 9,
         "previewCount": 9,
         "previewDir": "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/tmp/slides/brain-organoid-question-journey/preview",
