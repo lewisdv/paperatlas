@@ -76,36 +76,36 @@ const SLIDES = [
     kicker: "BRAIN ORGANOID QUESTION CHAIN",
     title: "Brain organoid protocol 비교는\n왜 subregion 비교만으로 끝나지 않는가",
     subtitle:
-      "organoid 위키를 정리하면서, 단순한 region 비교 질문이\nbenchmark와 readout 중심 질문으로 어떻게 확장됐는지를 보여준다.",
+      "LLM-wiki를 collection 단위로 운영한 뒤,\nbrain organoid 질문이 subregion 비교에서 readout-first rule로 어떻게 확장됐는지를 보여준다.",
     moment: "질문이 바뀌면 비교 기준도 바뀐다",
     notes:
-      "이 발표는 결론만 요약하는 발표가 아니라, 질문이 위키 안에서 어떻게 정교해졌는지를 보여주는 발표다.\n처음에는 brain subregion별 프로토콜 차이를 비교하고 싶었지만, 정리할수록 reproducibility, fidelity, timing, readout 문제가 분리되기 시작했다.\n오늘의 핵심 문장은 '질문이 바뀌면 비교 기준도 바뀐다'이다.",
+      "이 발표는 LLM-wiki 운영 방식을 짧게 소개한 뒤, 그 위에서 brain organoid 질문이 어떻게 정교해졌는지를 보여준다.\n처음에는 brain subregion별 프로토콜 차이를 비교하고 싶었지만, 정리할수록 reproducibility, fidelity, timing, readout 문제가 분리되기 시작했다.\n오늘의 핵심 문장은 '질문이 바뀌면 비교 기준도 바뀐다'이다.",
     sources: ["index", "q1", "q2", "q3"],
   },
   {
     id: "process",
-    kicker: "WHY THIS TALK",
-    title: "교수님 가이드에 맞춘\n발표 프레임",
+    kicker: "LLM-WIKI WORKFLOW",
+    title: "내가 LLM-wiki를\n운영하는 방식",
     subtitle:
-      "논문을 많이 읽었다는 사실보다,\n위키를 통해 질문이 어떻게 진화했는지를 중심에 둔다.",
+      "collection으로 문헌 범위를 나누고,\nraw와 wiki를 분리해 질문 범위를 좁혔다.",
     notes:
-      "발표의 목적은 brain organoid 리뷰를 완성형 결론으로 제시하는 것이 아니라, paper_collect 위키에서 질문이 확장되는 과정을 보여주는 것이다.\n이 컬렉션은 active source page 96개, 그중 brain cluster 17개를 갖고 있고, 오늘 발표는 그중 3개의 질문 노트를 핵심 체인으로 삼는다.\n즉 corpus -> 첫 질문 -> 질문 재정의의 흐름 자체가 발표 내용이다.",
+      "이 슬라이드에서는 문헌을 어떻게 구조화했는지 먼저 소개한다.\ncollections 단위로 주제를 분리하고, raw source와 wiki synthesis를 나눠서 질문 범위를 좁혔다.\n그 결과 관련 없는 topic drift를 줄이고, 같은 주제 안에서 source, concept, query를 더 조밀하게 연결할 수 있었다.",
     sources: ["overview", "index", "q1", "q2", "q3"],
   },
   {
     id: "scope",
-    kicker: "SCOPE",
-    title: "왜 이 corpus에서\nbrain branch를 먼저 잡았나",
+    kicker: "ACCESS LAYER",
+    title: "Markdown wiki를\n탐색 가능한 HTML로 열어두기",
     subtitle:
-      "리뷰 질문으로서 brain organoid는\nsubregion, benchmark, readout 축이 모두 살아 있는 영역이었다.",
+      "저장된 Markdown을 정적 HTML로 바꾸고,\n로컬 뷰어와 GitHub Pages로 계속 접근할 수 있게 했다.",
     notes:
-      "발표 초반에 이 슬라이드를 넣으면 왜 하필 brain organoid를 사례로 잡았는지 설명하기 좋다.\nbrain cluster는 이 corpus에서 source 수가 가장 크고, broad cerebral에서 niche subregion까지 연속체가 있으며, benchmark 논문과 functional readout 논문도 함께 연결된다.\n즉 질문이 자라나는 과정을 보여주기에 가장 적합한 branch였다.",
-    sources: ["overview", "index", "conceptSubregion", "conceptBench", "q1", "q2", "q3"],
+      "Markdown wiki를 그대로 두지 않고 HTML site로 렌더링해 읽기 쉬운 탐색 계층을 따로 운영했다.\nrender_wiki_html.py는 collection site와 top-level hub를 만들고, localhost viewer는 검색과 태그 필터, 그래프 뷰를 제공한다.\n또 GitHub Actions와 Pages를 붙여 원격에서도 같은 구조로 접근할 수 있게 했다.",
+    sources: ["index"],
   },
   {
     id: "graph-subregion",
     kicker: "QUESTION 1",
-    title: "1차 질문: brain subregion별\n프로토콜 비교",
+    title: "1차 질문: 어떤 brain subregion\n프로토콜을 비교해야 하는가",
     subtitle:
       "처음에는 '어느 뇌 영역을 만들 것인가'가\n가장 중요한 비교 기준처럼 보였다.",
     notes:
@@ -126,7 +126,7 @@ const SLIDES = [
   {
     id: "answer-one",
     kicker: "FIRST ANSWER",
-    title: "1차 정리에서 얻은 답",
+    title: "1차 정리: 질문은 subregion selection으로\n정리될 수 있었다",
     subtitle:
       "brain organoid 비교는 우선\nsubregion과 patterning logic의 문제로 정리할 수 있었다.",
     notes:
@@ -136,7 +136,7 @@ const SLIDES = [
   {
     id: "limitation",
     kicker: "LIMITATION",
-    title: "하지만 이 질문만으로는 부족했다",
+    title: "하지만 같은 subregion이어도\n같은 모델은 아니었다",
     subtitle:
       "같은 forebrain이어도 같은 모델이라고 말할 수는 없었다.\n질문은 region 밖으로 확장되기 시작했다.",
     notes:
@@ -146,7 +146,7 @@ const SLIDES = [
   {
     id: "graph-benchmark",
     kicker: "QUESTION 2",
-    title: "2차 질문: 발달정도·동기화 비교는\n어느 수준의 세분화가 필요한가",
+    title: "2차 질문: region 말고\n무엇을 따로 benchmark해야 하는가",
     subtitle:
       "Round 2-4의 benchmark 논문들이 들어오면서,\n질문 자체가 새 프레임으로 재구성됐다.",
     notes:
@@ -156,7 +156,7 @@ const SLIDES = [
   {
     id: "tension",
     kicker: "KEY TENSION",
-    title: "재현성이 높다고\n더 faithful한 것은 아니다",
+    title: "가장 중요한 분리:\nreproducibility와 fidelity",
     subtitle:
       "이 발표에서 가장 중요한 전환은\nreproducibility와 fidelity를 분리한 순간이다.",
     notes:
@@ -166,7 +166,7 @@ const SLIDES = [
   {
     id: "framework",
     kicker: "FRAMEWORK",
-    title: "최종적으로 얻은 5축 프레임워크",
+    title: "그래서 protocol 비교는\n5개의 축으로 나뉘었다",
     subtitle:
       "brain organoid protocol 비교는 한 축이 아니라,\n서로 다른 benchmark 축을 분리해서 봐야 했다.",
     notes:
@@ -176,7 +176,7 @@ const SLIDES = [
   {
     id: "readout",
     kicker: "QUESTION 3",
-    title: "다음 단계: 결국 무엇을\n먼저 믿고 싶은가",
+    title: "3차 질문: region보다\nreadout을 먼저 적어야 하는가",
     subtitle:
       "최종적으로 protocol choice는 region보다도\nreadout을 먼저 적는 문제에 가까워졌다.",
     notes:
@@ -185,20 +185,20 @@ const SLIDES = [
   },
   {
     id: "review-implication",
-    kicker: "REVIEW WRITING",
-    title: "이 질문 체인이\n리뷰 논문 구조에 준 영향",
+    kicker: "WHY BRAIN",
+    title: "왜 organoid collection에서\nbrain branch를 발표 사례로 골랐나",
     subtitle:
-      "발표는 질문의 이동을 보여주고,\n리뷰 논문은 그 이동을 장 구조로 고정한다.",
+      "protocol family, benchmark, readout이 한 branch 안에서\n연속적으로 이어져 질문의 이동을 보여주기 좋았다.",
     notes:
-      "기말 과제가 리뷰 논문이므로, 발표가 글쓰기와 어떻게 연결되는지도 짚어주면 좋다.\n이 위키 체인을 따라가면 리뷰 글의 구조도 자연스럽게 나온다.\n예를 들어 첫 장은 subregion baseline, 다음은 benchmark axes, 마지막은 readout-first design rule처럼 배치할 수 있다.\n즉 발표는 process를, 리뷰는 그 process가 남긴 organizing principle을 보여준다.",
-    sources: ["q1", "q2", "q3", "synthBaseline", "conceptBench", "conceptPattern"],
+      "brain branch는 broad cerebral baseline에서 niche subregion까지 이어지고, 그 위에 benchmark 논문과 functional readout 논문이 덧붙는다.\n그래서 단순 문헌 요약이 아니라 질문의 이동을 단계적으로 보여주기 좋다.\n즉 workflow를 설명한 뒤 실제 branch 사례로 넘어가기에 가장 적합한 축이었다.",
+    sources: ["overview", "index", "q1", "q2", "q3", "synthBaseline", "conceptBench", "conceptPattern"],
   },
   {
     id: "conclusion",
     kicker: "CLOSING",
-    title: "결론과 토론",
+    title: "정리: 좋은 질문은\n위키를 정리하면서 생겨났다",
     subtitle:
-      "이 발표의 핵심은 brain organoid 정답이 아니라,\n질문이 위키를 통해 어떻게 더 좋은 질문으로 변했는가이다.",
+      "LLM-wiki 운영에서 출발한 질문 제한이,\n결국 더 정교한 brain organoid 비교 기준으로 이어졌다.",
     notes:
       "마무리에서는 세 가지 takeaway를 다시 강조한다.\n첫째, subregion comparison은 출발점으로 유효했다.\n둘째, benchmark 축이 들어오면서 질문이 바뀌었다.\n셋째, 최종 rule은 readout-first protocol selection이다.\nQ and A에서는 reproducibility와 fidelity를 왜 분리해야 하는지, 어느 축을 먼저 볼지, host validation이 언제 필요한지를 중심으로 받으면 된다.",
     sources: ["q1", "q2", "q3", "conceptBench", "conceptPattern"],
