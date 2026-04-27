@@ -943,12 +943,12 @@ async function slideReadout(presentation, data, slideNo, idx) {
   );
 
   const nodes = [
-    [404, 222, "composition\nreproducibility", "Velasco / Yoon", ACCENT],
-    [690, 222, "primary tissue\nfidelity", "Bhaduri / He", GOLD],
-    [976, 222, "timing &\nmaturation", "Kanton /\nGiandomenico", "#517C95"],
-    [404, 412, "oscillation /\nMEA", "Fitzgerald", CORAL],
-    [690, 412, "host circuit\nintegration", "Kelley", ACCENT_DARK],
-    [976, 412, "screening /\nperturbation", "Chen / Meng", "#7D6AA7"],
+    [404, 222, "composition", "stability\nVelasco / Yoon", ACCENT],
+    [690, 222, "fidelity", "primary-like\nBhaduri / He", GOLD],
+    [976, 222, "timing", "maturation map\nKanton / Giandomenico", "#517C95"],
+    [404, 412, "MEA", "oscillation\nFitzgerald", CORAL],
+    [690, 412, "host circuit", "integration\nKelley", ACCENT_DARK],
+    [976, 412, "screening", "perturbation\nChen / Meng", "#7D6AA7"],
   ];
 
   for (const [x, y, title, body, accent] of nodes) {
