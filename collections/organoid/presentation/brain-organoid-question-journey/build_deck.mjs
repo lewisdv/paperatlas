@@ -958,7 +958,7 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
     336,
     140,
     "여기에 연결된 문헌",
-    "Lancaster, Sloan, Fitzgerald,\nZagare, Eura, Valiulahi,\nPomeshchik, Atamian",
+    "Lancaster, Sloan,\nFitzgerald,\nZagare 등 주요 protocol paper",
     GOLD,
     PANEL,
   );
@@ -1134,7 +1134,7 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
     336,
     120,
     "여기에 연결된 문헌",
-    "Velasco, Yoon, Bhaduri,\nKanton, He",
+    "Velasco, Yoon,\nBhaduri,\nKanton, He",
     GOLD,
     PANEL,
   );
@@ -1272,7 +1272,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
     336,
     126,
     "대표 anchor",
-    "Velasco, Yoon, Bhaduri, He,\nFitzgerald, Kelley,\nChen, Meng",
+    "Velasco, Bhaduri, He,\nFitzgerald, Kelley,\nChen 등",
     CORAL,
     PANEL,
   );
