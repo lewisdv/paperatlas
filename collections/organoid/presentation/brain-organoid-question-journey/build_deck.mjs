@@ -184,6 +184,16 @@ const SLIDES = [
     sources: ["q3", "conceptPattern", "conceptBench", "fitzgerald", "kelley", "chen", "meng", "kanton", "he"],
   },
   {
+    id: "review-writing",
+    kicker: "REVIEW WRITING",
+    title: "이 연결고리를 리뷰논문으로\n바꾸면 어떻게 쓰게 되는가",
+    subtitle:
+      "위키에서 질문이 이동한 순서가,\n리뷰논문의 장 구조와 핵심 주장 구조가 된다.",
+    notes:
+      "이 슬라이드는 발표의 마지막 부분에서 review paper writing과 직접 연결해 주는 역할을 한다.\n핵심은 논문을 하나씩 나열하는 리뷰가 아니라, 질문이 이동한 순서대로 chapter를 세우는 것이다.\n즉 protocol family에서 시작해 benchmark axes로 확장하고, 마지막에는 readout-first selection rule로 정리하는 구조가 된다.",
+    sources: ["q1", "q2", "q3", "synthBaseline", "conceptBench", "conceptPattern"],
+  },
+  {
     id: "review-implication",
     kicker: "WHY BRAIN",
     title: "왜 organoid collection에서\nbrain branch를 발표 사례로 골랐나",
@@ -217,6 +227,7 @@ const SLIDE_ORDER = [
   "tension",
   "framework",
   "readout",
+  "review-writing",
   "conclusion",
 ];
 
@@ -1288,6 +1299,79 @@ async function slideReadout(presentation, data, slideNo, idx) {
     "Insert the local graph for Q3 here",
   );
   addFooter(slide, slideNo, "오른쪽에는 Q3 query note의 Obsidian local graph를 삽입하면 된다.");
+  addNotes(slide, data.notes, data.sources);
+}
+
+async function slideReviewWriting(presentation, data, slideNo, idx) {
+  const slide = presentation.slides.add();
+  await addPlate(slide, slideNo, "gold");
+  addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
+  addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
+
+  addBanner(
+    slide,
+    slideNo,
+    "핵심은 paper-by-paper 요약이 아니라, 위키에서 질문이 이동한 순서대로 review의 장과 비교 기준을 세우는 것이다.",
+    74,
+    182,
+    1130,
+    76,
+    GOLD_TINT,
+    GOLD,
+  );
+
+  addCard(
+    slide,
+    slideNo,
+    74,
+    300,
+    320,
+    220,
+    "1장: protocol family",
+    "whole cerebral,\nforebrain/cortical,\nposterior/niche를 baseline family로 먼저 정리한다.",
+    ACCENT,
+    PANEL,
+  );
+  addArrowBetween(slide, slideNo, 410, 396, 74);
+  addCard(
+    slide,
+    slideNo,
+    500,
+    300,
+    320,
+    220,
+    "2장: benchmark axes",
+    "reproducibility,\nfidelity,\ntiming, atlas alignment를 비교 축으로 분리한다.",
+    GOLD,
+    PANEL,
+  );
+  addArrowBetween(slide, slideNo, 836, 396, 74);
+  addCard(
+    slide,
+    slideNo,
+    926,
+    300,
+    278,
+    220,
+    "3장: design rule",
+    "마지막에는\nreadout-first selection rule로 protocol choice를 다시 묶는다.",
+    CORAL,
+    PANEL,
+  );
+
+  addBanner(
+    slide,
+    slideNo,
+    "따라서 리뷰논문의 중심 주장도 '어느 protocol이 최고인가'가 아니라 '어떤 질문과 readout이 어떤 protocol selection rule을 요구하는가'가 된다.",
+    74,
+    562,
+    1130,
+    82,
+    MINT,
+    ACCENT,
+  );
+  addFooter(slide, slideNo, "이 연결고리가 발표의 질문 체인을 리뷰논문의 장 구조와 주장 구조로 바꿔준다.");
   addNotes(slide, data.notes, data.sources);
 }
 
