@@ -598,7 +598,7 @@ function addNode(slide, slideNo, x, y, w, h, title, body = "", accent = ACCENT, 
 }
 
 function connectNodes(slide, slideNo, nodeA, nodeB, color = "#98A7AD", thickness = 3) {
-  addRotatedBar(slide, slideNo, nodeA.cx, nodeA.cy, nodeB.cx, nodeB.cy, color, thickness, "graph connector");
+  addRotatedBar(slide, slideNo, nodeA.cx, nodeA.cy, nodeB.cx, nodeB.cy, color, thickness, "path connector");
 }
 
 function addLegendItem(slide, slideNo, x, y, label, fill) {
@@ -739,18 +739,18 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "green");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 720, { titleSize: 38, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 720, { titleSize: 38, subtitleSize: 18 });
 
-  const q = addNode(slide, slideNo, 472, 274, 280, 116, "Q1 | brain subregion별 프로토콜 비교", "어느 region을 만들 것인가?", ACCENT_DARK, MINT, "query");
+  const q = addNode(slide, slideNo, 472, 312, 280, 116, "Q1 | brain subregion별 프로토콜 비교", "어느 region을 만들 것인가?", ACCENT_DARK, MINT, "query");
 
-  const n1 = addNode(slide, slideNo, 98, 188, 178, 112, "Lancaster 2014", "whole cerebral", "#5C8F74", WHITE, "source");
-  const n2 = addNode(slide, slideNo, 296, 128, 178, 112, "Sloan 2018", "dorsal / ventral\nforebrain", "#5C8F74", WHITE, "source");
-  const n3 = addNode(slide, slideNo, 804, 132, 182, 112, "Fitzgerald 2024", "semi-guided\ncortical", "#5C8F74", WHITE, "source");
-  const n4 = addNode(slide, slideNo, 1004, 210, 174, 112, "Zagare 2021", "midbrain", "#5C8F74", WHITE, "source");
-  const n5 = addNode(slide, slideNo, 996, 386, 182, 112, "Atamian 2024", "cerebellum", "#5C8F74", WHITE, "source");
-  const n6 = addNode(slide, slideNo, 760, 498, 182, 112, "Pomeshchik 2020", "hippocampus", "#5C8F74", WHITE, "source");
-  const n7 = addNode(slide, slideNo, 326, 500, 182, 112, "Valiulahi 2021", "hindbrain / 5-HT", "#5C8F74", WHITE, "source");
-  const n8 = addNode(slide, slideNo, 108, 392, 178, 112, "Eura 2020", "brainstem", "#5C8F74", WHITE, "source");
+  const n1 = addNode(slide, slideNo, 98, 236, 178, 112, "Lancaster 2014", "whole cerebral", "#5C8F74", WHITE, "source");
+  const n2 = addNode(slide, slideNo, 308, 196, 178, 112, "Sloan 2018", "dorsal / ventral\nforebrain", "#5C8F74", WHITE, "source");
+  const n3 = addNode(slide, slideNo, 798, 204, 182, 112, "Fitzgerald 2024", "semi-guided\ncortical", "#5C8F74", WHITE, "source");
+  const n4 = addNode(slide, slideNo, 1004, 286, 174, 112, "Zagare 2021", "midbrain", "#5C8F74", WHITE, "source");
+  const n5 = addNode(slide, slideNo, 994, 470, 182, 112, "Atamian 2024", "cerebellum", "#5C8F74", WHITE, "source");
+  const n6 = addNode(slide, slideNo, 746, 518, 182, 112, "Pomeshchik 2020", "hippocampus", "#5C8F74", WHITE, "source");
+  const n7 = addNode(slide, slideNo, 344, 520, 182, 112, "Valiulahi 2021", "hindbrain / 5-HT", "#5C8F74", WHITE, "source");
+  const n8 = addNode(slide, slideNo, 110, 430, 178, 112, "Eura 2020", "brainstem", "#5C8F74", WHITE, "source");
 
   [n1, n2, n3, n4, n5, n6, n7, n8].forEach((node) => connectNodes(slide, slideNo, q, node));
 
@@ -885,7 +885,7 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
   await addPlate(slide, slideNo, "green");
   addShape(slide, "rect", 0, 0, W, H, "#FFFCF7CC", TRANSPARENT, 0, { slideNo, role: "content overlay" });
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
-  addTitleBlock(slide, slideNo, data.title, data.subtitle, 64, 88, 760, { titleSize: 37, subtitleSize: 18 });
+  addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 37, subtitleSize: 18 });
 
   addPill(slide, slideNo, "Round 2-4 added", 878, 92, 162, 28, GOLD_TINT, "#7A5A14");
   const q = addNode(slide, slideNo, 456, 274, 320, 124, "Q2 | 발달정도·동기화 비교 프레임워크", "어느 수준의 세분화가 필요한가?", ACCENT_DARK, MINT, "query");

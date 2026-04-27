@@ -1,13 +1,13 @@
 {"kind":"deck","id":"brain-organoid-question-journey","slideCount":9,"slideSize":{"width":1280,"height":720}}
-{"kind":"slide","slide":1,"id":"lo3yq6"}
-{"kind":"slide","slide":2,"id":"osmim4"}
-{"kind":"slide","slide":3,"id":"92b00a"}
-{"kind":"slide","slide":4,"id":"wzhanw"}
-{"kind":"slide","slide":5,"id":"sm0w7e"}
-{"kind":"slide","slide":6,"id":"krc8d6"}
-{"kind":"slide","slide":7,"id":"d4tmng"}
-{"kind":"slide","slide":8,"id":"zct6bv"}
-{"kind":"slide","slide":9,"id":"vq2i8w"}
+{"kind":"slide","slide":1,"id":"6dc4az"}
+{"kind":"slide","slide":2,"id":"6x2dc0"}
+{"kind":"slide","slide":3,"id":"b6di00"}
+{"kind":"slide","slide":4,"id":"f1xdbe"}
+{"kind":"slide","slide":5,"id":"cb07en"}
+{"kind":"slide","slide":6,"id":"tf7rve"}
+{"kind":"slide","slide":7,"id":"zajqqy"}
+{"kind":"slide","slide":8,"id":"o5bczk"}
+{"kind":"slide","slide":9,"id":"jbouk9"}
 {"kind":"image","slide":1,"id":"2","role":"fallback art plate","path":"fallback-data-url","bbox":[0,0,1280,720]}
 {"kind":"shape","slide":1,"id":"3","role":"background glow","shapeType":"ellipse","bbox":[826,82,382,382]}
 {"kind":"shape","slide":1,"id":"4","role":"background glow","shapeType":"ellipse","bbox":[968,436,206,206]}
@@ -57,9 +57,9 @@
 {"kind":"textbox","slide":1,"id":"33","role":"node title","text":"질문의 이동","textPreview":"질문의 이동","textChars":6,"textLines":1,"bbox":[794,320,186,24]}
 {"kind":"shape","slide":1,"id":"34","role":"node body","shapeType":"rect","bbox":[794,346,186,20]}
 {"kind":"textbox","slide":1,"id":"34","role":"node body","text":"what should I compare first?","textPreview":"what should I compare first?","textChars":28,"textLines":1,"bbox":[794,346,186,20]}
-{"kind":"shape","slide":1,"id":"35","role":"graph connector","shapeType":"rect","bbox":[839.8260017766563,253.5,155.3479964466874,3]}
-{"kind":"shape","slide":1,"id":"36","role":"graph connector","shapeType":"rect","bbox":[885.8146101515254,330.5,194.3707796969493,3]}
-{"kind":"shape","slide":1,"id":"37","role":"graph connector","shapeType":"rect","bbox":[826.5638808737284,410.5,183.87223825254318,3]}
+{"kind":"shape","slide":1,"id":"35","role":"path connector","shapeType":"rect","bbox":[839.8260017766563,253.5,155.3479964466874,3]}
+{"kind":"shape","slide":1,"id":"36","role":"path connector","shapeType":"rect","bbox":[885.8146101515254,330.5,194.3707796969493,3]}
+{"kind":"shape","slide":1,"id":"37","role":"path connector","shapeType":"rect","bbox":[826.5638808737284,410.5,183.87223825254318,3]}
 {"kind":"shape","slide":1,"id":"38","role":"pill","shapeType":"rect","bbox":[86,572,116,28]}
 {"kind":"textbox","slide":1,"id":"38","role":"pill","text":"15 min talk","textPreview":"15 min talk","textChars":11,"textLines":1,"bbox":[86,572,116,28]}
 {"kind":"shape","slide":1,"id":"39","role":"pill","shapeType":"rect","bbox":[214,572,164,28]}
@@ -146,100 +146,98 @@
 {"kind":"shape","slide":3,"id":"12","role":"header marker","shapeType":"ellipse","bbox":[57,57,16,16]}
 {"kind":"shape","slide":3,"id":"13","role":"title","shapeType":"rect","bbox":[64,88,720,118]}
 {"kind":"textbox","slide":3,"id":"13","role":"title","text":"1차 질문: brain subregion별\n프로토콜 비교","textPreview":"1차 질문: brain subregion별 | 프로토콜 비교","textChars":31,"textLines":2,"bbox":[64,88,720,118]}
-{"kind":"shape","slide":3,"id":"14","role":"subtitle","shapeType":"rect","bbox":[66,214,720,66]}
-{"kind":"textbox","slide":3,"id":"14","role":"subtitle","text":"처음에는 '어느 뇌 영역을 만들 것인가'가\n가장 중요한 비교 기준처럼 보였다.","textPreview":"처음에는 '어느 뇌 영역을 만들 것인가'가 | 가장 중요한 비교 기준처럼 보였다.","textChars":43,"textLines":2,"bbox":[66,214,720,66]}
-{"kind":"shape","slide":3,"id":"15","role":"node panel: Q1 | brain subregion별 프로토콜 비교","shapeType":"roundRect","bbox":[472,274,280,116]}
-{"kind":"shape","slide":3,"id":"16","role":"node accent: Q1 | brain subregion별 프로토콜 비교","shapeType":"rect","bbox":[472,274,7,116]}
-{"kind":"shape","slide":3,"id":"17","role":"pill","shapeType":"rect","bbox":[490,290,64,24]}
-{"kind":"textbox","slide":3,"id":"17","role":"pill","text":"query","textPreview":"query","textChars":5,"textLines":1,"bbox":[490,290,64,24]}
-{"kind":"shape","slide":3,"id":"18","role":"node title","shapeType":"rect","bbox":[490,320,246,24]}
-{"kind":"textbox","slide":3,"id":"18","role":"node title","text":"Q1 | brain subregion별 프로토콜 비교","textPreview":"Q1 | brain subregion별 프로토콜 비교","textChars":29,"textLines":1,"bbox":[490,320,246,24]}
-{"kind":"shape","slide":3,"id":"19","role":"node body","shapeType":"rect","bbox":[490,346,246,32]}
-{"kind":"textbox","slide":3,"id":"19","role":"node body","text":"어느 region을 만들 것인가?","textPreview":"어느 region을 만들 것인가?","textChars":18,"textLines":1,"bbox":[490,346,246,32]}
-{"kind":"shape","slide":3,"id":"20","role":"node panel: Lancaster 2014","shapeType":"roundRect","bbox":[98,188,178,112]}
-{"kind":"shape","slide":3,"id":"21","role":"node accent: Lancaster 2014","shapeType":"rect","bbox":[98,188,7,112]}
-{"kind":"shape","slide":3,"id":"22","role":"pill","shapeType":"rect","bbox":[116,204,68,24]}
-{"kind":"textbox","slide":3,"id":"22","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[116,204,68,24]}
-{"kind":"shape","slide":3,"id":"23","role":"node title","shapeType":"rect","bbox":[116,234,144,24]}
-{"kind":"textbox","slide":3,"id":"23","role":"node title","text":"Lancaster 2014","textPreview":"Lancaster 2014","textChars":14,"textLines":1,"bbox":[116,234,144,24]}
-{"kind":"shape","slide":3,"id":"24","role":"node body","shapeType":"rect","bbox":[116,260,144,28]}
-{"kind":"textbox","slide":3,"id":"24","role":"node body","text":"whole cerebral","textPreview":"whole cerebral","textChars":14,"textLines":1,"bbox":[116,260,144,28]}
-{"kind":"shape","slide":3,"id":"25","role":"node panel: Sloan 2018","shapeType":"roundRect","bbox":[296,128,178,112]}
-{"kind":"shape","slide":3,"id":"26","role":"node accent: Sloan 2018","shapeType":"rect","bbox":[296,128,7,112]}
-{"kind":"shape","slide":3,"id":"27","role":"pill","shapeType":"rect","bbox":[314,144,68,24]}
-{"kind":"textbox","slide":3,"id":"27","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[314,144,68,24]}
-{"kind":"shape","slide":3,"id":"28","role":"node title","shapeType":"rect","bbox":[314,174,144,24]}
-{"kind":"textbox","slide":3,"id":"28","role":"node title","text":"Sloan 2018","textPreview":"Sloan 2018","textChars":10,"textLines":1,"bbox":[314,174,144,24]}
-{"kind":"shape","slide":3,"id":"29","role":"node body","shapeType":"rect","bbox":[314,200,144,28]}
-{"kind":"textbox","slide":3,"id":"29","role":"node body","text":"dorsal / ventral\nforebrain","textPreview":"dorsal / ventral | forebrain","textChars":26,"textLines":2,"bbox":[314,200,144,28]}
-{"kind":"shape","slide":3,"id":"30","role":"node panel: Fitzgerald 2024","shapeType":"roundRect","bbox":[804,132,182,112]}
-{"kind":"shape","slide":3,"id":"31","role":"node accent: Fitzgerald 2024","shapeType":"rect","bbox":[804,132,7,112]}
-{"kind":"shape","slide":3,"id":"32","role":"pill","shapeType":"rect","bbox":[822,148,68,24]}
-{"kind":"textbox","slide":3,"id":"32","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[822,148,68,24]}
-{"kind":"shape","slide":3,"id":"33","role":"node title","shapeType":"rect","bbox":[822,178,148,24]}
-{"kind":"textbox","slide":3,"id":"33","role":"node title","text":"Fitzgerald 2024","textPreview":"Fitzgerald 2024","textChars":15,"textLines":1,"bbox":[822,178,148,24]}
-{"kind":"shape","slide":3,"id":"34","role":"node body","shapeType":"rect","bbox":[822,204,148,28]}
-{"kind":"textbox","slide":3,"id":"34","role":"node body","text":"semi-guided\ncortical","textPreview":"semi-guided | cortical","textChars":20,"textLines":2,"bbox":[822,204,148,28]}
-{"kind":"shape","slide":3,"id":"35","role":"node panel: Zagare 2021","shapeType":"roundRect","bbox":[1004,210,174,112]}
-{"kind":"shape","slide":3,"id":"36","role":"node accent: Zagare 2021","shapeType":"rect","bbox":[1004,210,7,112]}
-{"kind":"shape","slide":3,"id":"37","role":"pill","shapeType":"rect","bbox":[1022,226,68,24]}
-{"kind":"textbox","slide":3,"id":"37","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[1022,226,68,24]}
-{"kind":"shape","slide":3,"id":"38","role":"node title","shapeType":"rect","bbox":[1022,256,140,24]}
-{"kind":"textbox","slide":3,"id":"38","role":"node title","text":"Zagare 2021","textPreview":"Zagare 2021","textChars":11,"textLines":1,"bbox":[1022,256,140,24]}
-{"kind":"shape","slide":3,"id":"39","role":"node body","shapeType":"rect","bbox":[1022,282,140,28]}
-{"kind":"textbox","slide":3,"id":"39","role":"node body","text":"midbrain","textPreview":"midbrain","textChars":8,"textLines":1,"bbox":[1022,282,140,28]}
-{"kind":"shape","slide":3,"id":"40","role":"node panel: Atamian 2024","shapeType":"roundRect","bbox":[996,386,182,112]}
-{"kind":"shape","slide":3,"id":"41","role":"node accent: Atamian 2024","shapeType":"rect","bbox":[996,386,7,112]}
-{"kind":"shape","slide":3,"id":"42","role":"pill","shapeType":"rect","bbox":[1014,402,68,24]}
-{"kind":"textbox","slide":3,"id":"42","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[1014,402,68,24]}
-{"kind":"shape","slide":3,"id":"43","role":"node title","shapeType":"rect","bbox":[1014,432,148,24]}
-{"kind":"textbox","slide":3,"id":"43","role":"node title","text":"Atamian 2024","textPreview":"Atamian 2024","textChars":12,"textLines":1,"bbox":[1014,432,148,24]}
-{"kind":"shape","slide":3,"id":"44","role":"node body","shapeType":"rect","bbox":[1014,458,148,28]}
-{"kind":"textbox","slide":3,"id":"44","role":"node body","text":"cerebellum","textPreview":"cerebellum","textChars":10,"textLines":1,"bbox":[1014,458,148,28]}
-{"kind":"shape","slide":3,"id":"45","role":"node panel: Pomeshchik 2020","shapeType":"roundRect","bbox":[760,498,182,112]}
-{"kind":"shape","slide":3,"id":"46","role":"node accent: Pomeshchik 2020","shapeType":"rect","bbox":[760,498,7,112]}
-{"kind":"shape","slide":3,"id":"47","role":"pill","shapeType":"rect","bbox":[778,514,68,24]}
-{"kind":"textbox","slide":3,"id":"47","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[778,514,68,24]}
-{"kind":"shape","slide":3,"id":"48","role":"node title","shapeType":"rect","bbox":[778,544,148,24]}
-{"kind":"textbox","slide":3,"id":"48","role":"node title","text":"Pomeshchik 2020","textPreview":"Pomeshchik 2020","textChars":15,"textLines":1,"bbox":[778,544,148,24]}
-{"kind":"shape","slide":3,"id":"49","role":"node body","shapeType":"rect","bbox":[778,570,148,28]}
-{"kind":"textbox","slide":3,"id":"49","role":"node body","text":"hippocampus","textPreview":"hippocampus","textChars":11,"textLines":1,"bbox":[778,570,148,28]}
-{"kind":"shape","slide":3,"id":"50","role":"node panel: Valiulahi 2021","shapeType":"roundRect","bbox":[326,500,182,112]}
-{"kind":"shape","slide":3,"id":"51","role":"node accent: Valiulahi 2021","shapeType":"rect","bbox":[326,500,7,112]}
-{"kind":"shape","slide":3,"id":"52","role":"pill","shapeType":"rect","bbox":[344,516,68,24]}
-{"kind":"textbox","slide":3,"id":"52","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[344,516,68,24]}
-{"kind":"shape","slide":3,"id":"53","role":"node title","shapeType":"rect","bbox":[344,546,148,24]}
-{"kind":"textbox","slide":3,"id":"53","role":"node title","text":"Valiulahi 2021","textPreview":"Valiulahi 2021","textChars":14,"textLines":1,"bbox":[344,546,148,24]}
-{"kind":"shape","slide":3,"id":"54","role":"node body","shapeType":"rect","bbox":[344,572,148,28]}
-{"kind":"textbox","slide":3,"id":"54","role":"node body","text":"hindbrain / 5-HT","textPreview":"hindbrain / 5-HT","textChars":16,"textLines":1,"bbox":[344,572,148,28]}
-{"kind":"shape","slide":3,"id":"55","role":"node panel: Eura 2020","shapeType":"roundRect","bbox":[108,392,178,112]}
-{"kind":"shape","slide":3,"id":"56","role":"node accent: Eura 2020","shapeType":"rect","bbox":[108,392,7,112]}
-{"kind":"shape","slide":3,"id":"57","role":"pill","shapeType":"rect","bbox":[126,408,68,24]}
-{"kind":"textbox","slide":3,"id":"57","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[126,408,68,24]}
-{"kind":"shape","slide":3,"id":"58","role":"node title","shapeType":"rect","bbox":[126,438,144,24]}
-{"kind":"textbox","slide":3,"id":"58","role":"node title","text":"Eura 2020","textPreview":"Eura 2020","textChars":9,"textLines":1,"bbox":[126,438,144,24]}
-{"kind":"shape","slide":3,"id":"59","role":"node body","shapeType":"rect","bbox":[126,464,144,28]}
-{"kind":"textbox","slide":3,"id":"59","role":"node body","text":"brainstem","textPreview":"brainstem","textChars":9,"textLines":1,"bbox":[126,464,144,28]}
-{"kind":"shape","slide":3,"id":"60","role":"graph connector","shapeType":"rect","bbox":[182.49251164994328,286.5,434.01497670011344,3]}
-{"kind":"shape","slide":3,"id":"61","role":"graph connector","shapeType":"rect","bbox":[363.00738027479133,256.5,270.9852394504173,3]}
-{"kind":"shape","slide":3,"id":"62","role":"graph connector","shapeType":"rect","bbox":[594.7352369069257,258.5,317.52952618614853,3]}
-{"kind":"shape","slide":3,"id":"63","role":"graph connector","shapeType":"rect","bbox":[609.7372030274303,297.5,483.5255939451396,3]}
-{"kind":"shape","slide":3,"id":"64","role":"graph connector","shapeType":"rect","bbox":[605.7147461391481,385.5,487.5705077217038,3]}
-{"kind":"shape","slide":3,"id":"65","role":"graph connector","shapeType":"rect","bbox":[568.4011036211465,441.5,326.1977927577071,3]}
-{"kind":"shape","slide":3,"id":"66","role":"graph connector","shapeType":"rect","bbox":[366.0067341594239,442.5,296.98653168115214,3]}
-{"kind":"shape","slide":3,"id":"67","role":"graph connector","shapeType":"rect","bbox":[189.04640870943925,388.5,430.9071825811215,3]}
-{"kind":"shape","slide":3,"id":"68","role":"pill","shapeType":"rect","bbox":[64,642,132,28]}
-{"kind":"textbox","slide":3,"id":"68","role":"pill","text":"whole cerebral","textPreview":"whole cerebral","textChars":14,"textLines":1,"bbox":[64,642,132,28]}
-{"kind":"shape","slide":3,"id":"69","role":"pill","shapeType":"rect","bbox":[210,642,180,28]}
-{"kind":"textbox","slide":3,"id":"69","role":"pill","text":"forebrain / cortical","textPreview":"forebrain / cortical","textChars":20,"textLines":1,"bbox":[210,642,180,28]}
-{"kind":"shape","slide":3,"id":"70","role":"pill","shapeType":"rect","bbox":[404,642,156,28]}
-{"kind":"textbox","slide":3,"id":"70","role":"pill","text":"posterior / niche","textPreview":"posterior / niche","textChars":17,"textLines":1,"bbox":[404,642,156,28]}
-{"kind":"shape","slide":3,"id":"71","role":"banner panel","shapeType":"roundRect","bbox":[726,620,490,58]}
-{"kind":"shape","slide":3,"id":"72","role":"banner accent","shapeType":"rect","bbox":[726,620,8,58]}
-{"kind":"shape","slide":3,"id":"73","role":"banner text","shapeType":"rect","bbox":[748,636,450,30]}
-{"kind":"textbox","slide":3,"id":"73","role":"banner text","text":"1차 질문이 잘 풀어준 것: brain design 문제를 subregion selection 문제로 읽기 시작했다.","textPreview":"1차 질문이 잘 풀어준 것: brain design 문제를 subregion selection 문제로 읽기 시작했다.","textChars":65,"textLines":1,"bbox":[748,636,450,30]}
-{"kind":"shape","slide":3,"id":"74","role":"footer","shapeType":"rect","bbox":[64,684,900,18]}
-{"kind":"textbox","slide":3,"id":"74","role":"footer","text":"graph-style view: question note를 중심으로 source cluster가 확장되는 모습","textPreview":"graph-style view: question note를 중심으로 source cluster가 확장되는 모습","textChars":61,"textLines":1,"bbox":[64,684,900,18]}
+{"kind":"shape","slide":3,"id":"14","role":"node panel: Q1 | brain subregion별 프로토콜 비교","shapeType":"roundRect","bbox":[472,312,280,116]}
+{"kind":"shape","slide":3,"id":"15","role":"node accent: Q1 | brain subregion별 프로토콜 비교","shapeType":"rect","bbox":[472,312,7,116]}
+{"kind":"shape","slide":3,"id":"16","role":"pill","shapeType":"rect","bbox":[490,328,64,24]}
+{"kind":"textbox","slide":3,"id":"16","role":"pill","text":"query","textPreview":"query","textChars":5,"textLines":1,"bbox":[490,328,64,24]}
+{"kind":"shape","slide":3,"id":"17","role":"node title","shapeType":"rect","bbox":[490,358,246,24]}
+{"kind":"textbox","slide":3,"id":"17","role":"node title","text":"Q1 | brain subregion별 프로토콜 비교","textPreview":"Q1 | brain subregion별 프로토콜 비교","textChars":29,"textLines":1,"bbox":[490,358,246,24]}
+{"kind":"shape","slide":3,"id":"18","role":"node body","shapeType":"rect","bbox":[490,384,246,32]}
+{"kind":"textbox","slide":3,"id":"18","role":"node body","text":"어느 region을 만들 것인가?","textPreview":"어느 region을 만들 것인가?","textChars":18,"textLines":1,"bbox":[490,384,246,32]}
+{"kind":"shape","slide":3,"id":"19","role":"node panel: Lancaster 2014","shapeType":"roundRect","bbox":[98,236,178,112]}
+{"kind":"shape","slide":3,"id":"20","role":"node accent: Lancaster 2014","shapeType":"rect","bbox":[98,236,7,112]}
+{"kind":"shape","slide":3,"id":"21","role":"pill","shapeType":"rect","bbox":[116,252,68,24]}
+{"kind":"textbox","slide":3,"id":"21","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[116,252,68,24]}
+{"kind":"shape","slide":3,"id":"22","role":"node title","shapeType":"rect","bbox":[116,282,144,24]}
+{"kind":"textbox","slide":3,"id":"22","role":"node title","text":"Lancaster 2014","textPreview":"Lancaster 2014","textChars":14,"textLines":1,"bbox":[116,282,144,24]}
+{"kind":"shape","slide":3,"id":"23","role":"node body","shapeType":"rect","bbox":[116,308,144,28]}
+{"kind":"textbox","slide":3,"id":"23","role":"node body","text":"whole cerebral","textPreview":"whole cerebral","textChars":14,"textLines":1,"bbox":[116,308,144,28]}
+{"kind":"shape","slide":3,"id":"24","role":"node panel: Sloan 2018","shapeType":"roundRect","bbox":[308,196,178,112]}
+{"kind":"shape","slide":3,"id":"25","role":"node accent: Sloan 2018","shapeType":"rect","bbox":[308,196,7,112]}
+{"kind":"shape","slide":3,"id":"26","role":"pill","shapeType":"rect","bbox":[326,212,68,24]}
+{"kind":"textbox","slide":3,"id":"26","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[326,212,68,24]}
+{"kind":"shape","slide":3,"id":"27","role":"node title","shapeType":"rect","bbox":[326,242,144,24]}
+{"kind":"textbox","slide":3,"id":"27","role":"node title","text":"Sloan 2018","textPreview":"Sloan 2018","textChars":10,"textLines":1,"bbox":[326,242,144,24]}
+{"kind":"shape","slide":3,"id":"28","role":"node body","shapeType":"rect","bbox":[326,268,144,28]}
+{"kind":"textbox","slide":3,"id":"28","role":"node body","text":"dorsal / ventral\nforebrain","textPreview":"dorsal / ventral | forebrain","textChars":26,"textLines":2,"bbox":[326,268,144,28]}
+{"kind":"shape","slide":3,"id":"29","role":"node panel: Fitzgerald 2024","shapeType":"roundRect","bbox":[798,204,182,112]}
+{"kind":"shape","slide":3,"id":"30","role":"node accent: Fitzgerald 2024","shapeType":"rect","bbox":[798,204,7,112]}
+{"kind":"shape","slide":3,"id":"31","role":"pill","shapeType":"rect","bbox":[816,220,68,24]}
+{"kind":"textbox","slide":3,"id":"31","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[816,220,68,24]}
+{"kind":"shape","slide":3,"id":"32","role":"node title","shapeType":"rect","bbox":[816,250,148,24]}
+{"kind":"textbox","slide":3,"id":"32","role":"node title","text":"Fitzgerald 2024","textPreview":"Fitzgerald 2024","textChars":15,"textLines":1,"bbox":[816,250,148,24]}
+{"kind":"shape","slide":3,"id":"33","role":"node body","shapeType":"rect","bbox":[816,276,148,28]}
+{"kind":"textbox","slide":3,"id":"33","role":"node body","text":"semi-guided\ncortical","textPreview":"semi-guided | cortical","textChars":20,"textLines":2,"bbox":[816,276,148,28]}
+{"kind":"shape","slide":3,"id":"34","role":"node panel: Zagare 2021","shapeType":"roundRect","bbox":[1004,286,174,112]}
+{"kind":"shape","slide":3,"id":"35","role":"node accent: Zagare 2021","shapeType":"rect","bbox":[1004,286,7,112]}
+{"kind":"shape","slide":3,"id":"36","role":"pill","shapeType":"rect","bbox":[1022,302,68,24]}
+{"kind":"textbox","slide":3,"id":"36","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[1022,302,68,24]}
+{"kind":"shape","slide":3,"id":"37","role":"node title","shapeType":"rect","bbox":[1022,332,140,24]}
+{"kind":"textbox","slide":3,"id":"37","role":"node title","text":"Zagare 2021","textPreview":"Zagare 2021","textChars":11,"textLines":1,"bbox":[1022,332,140,24]}
+{"kind":"shape","slide":3,"id":"38","role":"node body","shapeType":"rect","bbox":[1022,358,140,28]}
+{"kind":"textbox","slide":3,"id":"38","role":"node body","text":"midbrain","textPreview":"midbrain","textChars":8,"textLines":1,"bbox":[1022,358,140,28]}
+{"kind":"shape","slide":3,"id":"39","role":"node panel: Atamian 2024","shapeType":"roundRect","bbox":[994,470,182,112]}
+{"kind":"shape","slide":3,"id":"40","role":"node accent: Atamian 2024","shapeType":"rect","bbox":[994,470,7,112]}
+{"kind":"shape","slide":3,"id":"41","role":"pill","shapeType":"rect","bbox":[1012,486,68,24]}
+{"kind":"textbox","slide":3,"id":"41","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[1012,486,68,24]}
+{"kind":"shape","slide":3,"id":"42","role":"node title","shapeType":"rect","bbox":[1012,516,148,24]}
+{"kind":"textbox","slide":3,"id":"42","role":"node title","text":"Atamian 2024","textPreview":"Atamian 2024","textChars":12,"textLines":1,"bbox":[1012,516,148,24]}
+{"kind":"shape","slide":3,"id":"43","role":"node body","shapeType":"rect","bbox":[1012,542,148,28]}
+{"kind":"textbox","slide":3,"id":"43","role":"node body","text":"cerebellum","textPreview":"cerebellum","textChars":10,"textLines":1,"bbox":[1012,542,148,28]}
+{"kind":"shape","slide":3,"id":"44","role":"node panel: Pomeshchik 2020","shapeType":"roundRect","bbox":[746,518,182,112]}
+{"kind":"shape","slide":3,"id":"45","role":"node accent: Pomeshchik 2020","shapeType":"rect","bbox":[746,518,7,112]}
+{"kind":"shape","slide":3,"id":"46","role":"pill","shapeType":"rect","bbox":[764,534,68,24]}
+{"kind":"textbox","slide":3,"id":"46","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[764,534,68,24]}
+{"kind":"shape","slide":3,"id":"47","role":"node title","shapeType":"rect","bbox":[764,564,148,24]}
+{"kind":"textbox","slide":3,"id":"47","role":"node title","text":"Pomeshchik 2020","textPreview":"Pomeshchik 2020","textChars":15,"textLines":1,"bbox":[764,564,148,24]}
+{"kind":"shape","slide":3,"id":"48","role":"node body","shapeType":"rect","bbox":[764,590,148,28]}
+{"kind":"textbox","slide":3,"id":"48","role":"node body","text":"hippocampus","textPreview":"hippocampus","textChars":11,"textLines":1,"bbox":[764,590,148,28]}
+{"kind":"shape","slide":3,"id":"49","role":"node panel: Valiulahi 2021","shapeType":"roundRect","bbox":[344,520,182,112]}
+{"kind":"shape","slide":3,"id":"50","role":"node accent: Valiulahi 2021","shapeType":"rect","bbox":[344,520,7,112]}
+{"kind":"shape","slide":3,"id":"51","role":"pill","shapeType":"rect","bbox":[362,536,68,24]}
+{"kind":"textbox","slide":3,"id":"51","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[362,536,68,24]}
+{"kind":"shape","slide":3,"id":"52","role":"node title","shapeType":"rect","bbox":[362,566,148,24]}
+{"kind":"textbox","slide":3,"id":"52","role":"node title","text":"Valiulahi 2021","textPreview":"Valiulahi 2021","textChars":14,"textLines":1,"bbox":[362,566,148,24]}
+{"kind":"shape","slide":3,"id":"53","role":"node body","shapeType":"rect","bbox":[362,592,148,28]}
+{"kind":"textbox","slide":3,"id":"53","role":"node body","text":"hindbrain / 5-HT","textPreview":"hindbrain / 5-HT","textChars":16,"textLines":1,"bbox":[362,592,148,28]}
+{"kind":"shape","slide":3,"id":"54","role":"node panel: Eura 2020","shapeType":"roundRect","bbox":[110,430,178,112]}
+{"kind":"shape","slide":3,"id":"55","role":"node accent: Eura 2020","shapeType":"rect","bbox":[110,430,7,112]}
+{"kind":"shape","slide":3,"id":"56","role":"pill","shapeType":"rect","bbox":[128,446,68,24]}
+{"kind":"textbox","slide":3,"id":"56","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[128,446,68,24]}
+{"kind":"shape","slide":3,"id":"57","role":"node title","shapeType":"rect","bbox":[128,476,144,24]}
+{"kind":"textbox","slide":3,"id":"57","role":"node title","text":"Eura 2020","textPreview":"Eura 2020","textChars":9,"textLines":1,"bbox":[128,476,144,24]}
+{"kind":"shape","slide":3,"id":"58","role":"node body","shapeType":"rect","bbox":[128,502,144,28]}
+{"kind":"textbox","slide":3,"id":"58","role":"node body","text":"brainstem","textPreview":"brainstem","textChars":9,"textLines":1,"bbox":[128,502,144,28]}
+{"kind":"shape","slide":3,"id":"59","role":"path connector","shapeType":"rect","bbox":[183.45081578492363,329.5,432.09836843015273,3]}
+{"kind":"shape","slide":3,"id":"60","role":"path connector","shapeType":"rect","bbox":[381.8735346672669,309.5,245.25293066546627,3]}
+{"kind":"shape","slide":3,"id":"61","role":"path connector","shapeType":"rect","bbox":[601.4790283215144,313.5,298.04194335697116,3]}
+{"kind":"shape","slide":3,"id":"62","role":"path connector","shapeType":"rect","bbox":[611.5911631473322,354.5,479.8176737053357,3]}
+{"kind":"shape","slide":3,"id":"63","role":"path connector","shapeType":"rect","bbox":[599.4693793928144,446.5,498.06124121437114,3]}
+{"kind":"shape","slide":3,"id":"64","role":"path connector","shapeType":"rect","bbox":[572.6439826677915,470.5,303.71203466441693,3]}
+{"kind":"shape","slide":3,"id":"65","role":"path connector","shapeType":"rect","bbox":[387.7014359427906,471.5,271.59712811441875,3]}
+{"kind":"shape","slide":3,"id":"66","role":"path connector","shapeType":"rect","bbox":[191.0093242119835,426.5,428.981351576033,3]}
+{"kind":"shape","slide":3,"id":"67","role":"pill","shapeType":"rect","bbox":[64,642,132,28]}
+{"kind":"textbox","slide":3,"id":"67","role":"pill","text":"whole cerebral","textPreview":"whole cerebral","textChars":14,"textLines":1,"bbox":[64,642,132,28]}
+{"kind":"shape","slide":3,"id":"68","role":"pill","shapeType":"rect","bbox":[210,642,180,28]}
+{"kind":"textbox","slide":3,"id":"68","role":"pill","text":"forebrain / cortical","textPreview":"forebrain / cortical","textChars":20,"textLines":1,"bbox":[210,642,180,28]}
+{"kind":"shape","slide":3,"id":"69","role":"pill","shapeType":"rect","bbox":[404,642,156,28]}
+{"kind":"textbox","slide":3,"id":"69","role":"pill","text":"posterior / niche","textPreview":"posterior / niche","textChars":17,"textLines":1,"bbox":[404,642,156,28]}
+{"kind":"shape","slide":3,"id":"70","role":"banner panel","shapeType":"roundRect","bbox":[726,620,490,58]}
+{"kind":"shape","slide":3,"id":"71","role":"banner accent","shapeType":"rect","bbox":[726,620,8,58]}
+{"kind":"shape","slide":3,"id":"72","role":"banner text","shapeType":"rect","bbox":[748,636,450,30]}
+{"kind":"textbox","slide":3,"id":"72","role":"banner text","text":"1차 질문이 잘 풀어준 것: brain design 문제를 subregion selection 문제로 읽기 시작했다.","textPreview":"1차 질문이 잘 풀어준 것: brain design 문제를 subregion selection 문제로 읽기 시작했다.","textChars":65,"textLines":1,"bbox":[748,636,450,30]}
+{"kind":"shape","slide":3,"id":"73","role":"footer","shapeType":"rect","bbox":[64,684,900,18]}
+{"kind":"textbox","slide":3,"id":"73","role":"footer","text":"graph-style view: question note를 중심으로 source cluster가 확장되는 모습","textPreview":"graph-style view: question note를 중심으로 source cluster가 확장되는 모습","textChars":61,"textLines":1,"bbox":[64,684,900,18]}
 {"kind":"image","slide":4,"id":"2","role":"fallback art plate","path":"fallback-data-url","bbox":[0,0,1280,720]}
 {"kind":"shape","slide":4,"id":"3","role":"background glow","shapeType":"ellipse","bbox":[826,82,382,382]}
 {"kind":"shape","slide":4,"id":"4","role":"background glow","shapeType":"ellipse","bbox":[968,436,206,206]}
@@ -335,75 +333,73 @@
 {"kind":"shape","slide":6,"id":"12","role":"header marker","shapeType":"ellipse","bbox":[57,57,16,16]}
 {"kind":"shape","slide":6,"id":"13","role":"title","shapeType":"rect","bbox":[64,88,760,118]}
 {"kind":"textbox","slide":6,"id":"13","role":"title","text":"2차 질문: 발달정도·동기화 비교는\n어느 수준의 세분화가 필요한가","textPreview":"2차 질문: 발달정도·동기화 비교는 | 어느 수준의 세분화가 필요한가","textChars":36,"textLines":2,"bbox":[64,88,760,118]}
-{"kind":"shape","slide":6,"id":"14","role":"subtitle","shapeType":"rect","bbox":[66,214,720,66]}
-{"kind":"textbox","slide":6,"id":"14","role":"subtitle","text":"Round 2-4의 benchmark 논문들이 들어오면서,\n질문 자체가 새 프레임으로 재구성됐다.","textPreview":"Round 2-4의 benchmark 논문들이 들어오면서, | 질문 자체가 새 프레임으로 재구성됐다.","textChars":54,"textLines":2,"bbox":[66,214,720,66]}
-{"kind":"shape","slide":6,"id":"15","role":"pill","shapeType":"rect","bbox":[878,92,162,28]}
-{"kind":"textbox","slide":6,"id":"15","role":"pill","text":"Round 2-4 added","textPreview":"Round 2-4 added","textChars":15,"textLines":1,"bbox":[878,92,162,28]}
-{"kind":"shape","slide":6,"id":"16","role":"node panel: Q2 | 발달정도·동기화 비교 프레임워크","shapeType":"roundRect","bbox":[456,274,320,124]}
-{"kind":"shape","slide":6,"id":"17","role":"node accent: Q2 | 발달정도·동기화 비교 프레임워크","shapeType":"rect","bbox":[456,274,7,124]}
-{"kind":"shape","slide":6,"id":"18","role":"pill","shapeType":"rect","bbox":[474,290,64,24]}
-{"kind":"textbox","slide":6,"id":"18","role":"pill","text":"query","textPreview":"query","textChars":5,"textLines":1,"bbox":[474,290,64,24]}
-{"kind":"shape","slide":6,"id":"19","role":"node title","shapeType":"rect","bbox":[474,320,286,24]}
-{"kind":"textbox","slide":6,"id":"19","role":"node title","text":"Q2 | 발달정도·동기화 비교 프레임워크","textPreview":"Q2 | 발달정도·동기화 비교 프레임워크","textChars":22,"textLines":1,"bbox":[474,320,286,24]}
-{"kind":"shape","slide":6,"id":"20","role":"node body","shapeType":"rect","bbox":[474,346,286,40]}
-{"kind":"textbox","slide":6,"id":"20","role":"node body","text":"어느 수준의 세분화가 필요한가?","textPreview":"어느 수준의 세분화가 필요한가?","textChars":17,"textLines":1,"bbox":[474,346,286,40]}
-{"kind":"shape","slide":6,"id":"21","role":"node panel: Velasco 2019","shapeType":"roundRect","bbox":[102,210,204,120]}
-{"kind":"shape","slide":6,"id":"22","role":"node accent: Velasco 2019","shapeType":"rect","bbox":[102,210,7,120]}
-{"kind":"shape","slide":6,"id":"23","role":"pill","shapeType":"rect","bbox":[120,226,68,24]}
-{"kind":"textbox","slide":6,"id":"23","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[120,226,68,24]}
-{"kind":"shape","slide":6,"id":"24","role":"node title","shapeType":"rect","bbox":[120,256,170,24]}
-{"kind":"textbox","slide":6,"id":"24","role":"node title","text":"Velasco 2019","textPreview":"Velasco 2019","textChars":12,"textLines":1,"bbox":[120,256,170,24]}
-{"kind":"shape","slide":6,"id":"25","role":"node body","shapeType":"rect","bbox":[120,282,170,36]}
-{"kind":"textbox","slide":6,"id":"25","role":"node body","text":"within-protocol\nreproducibility","textPreview":"within-protocol | reproducibility","textChars":31,"textLines":2,"bbox":[120,282,170,36]}
-{"kind":"shape","slide":6,"id":"26","role":"node panel: Yoon 2019","shapeType":"roundRect","bbox":[164,412,204,120]}
-{"kind":"shape","slide":6,"id":"27","role":"node accent: Yoon 2019","shapeType":"rect","bbox":[164,412,7,120]}
-{"kind":"shape","slide":6,"id":"28","role":"pill","shapeType":"rect","bbox":[182,428,68,24]}
-{"kind":"textbox","slide":6,"id":"28","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[182,428,68,24]}
-{"kind":"shape","slide":6,"id":"29","role":"node title","shapeType":"rect","bbox":[182,458,170,24]}
-{"kind":"textbox","slide":6,"id":"29","role":"node title","text":"Yoon 2019","textPreview":"Yoon 2019","textChars":9,"textLines":1,"bbox":[182,458,170,24]}
-{"kind":"shape","slide":6,"id":"30","role":"node body","shapeType":"rect","bbox":[182,484,170,36]}
-{"kind":"textbox","slide":6,"id":"30","role":"node body","text":"cross-line\nreliability","textPreview":"cross-line | reliability","textChars":22,"textLines":2,"bbox":[182,484,170,36]}
-{"kind":"shape","slide":6,"id":"31","role":"node panel: Bhaduri 2020","shapeType":"roundRect","bbox":[860,164,214,128]}
-{"kind":"shape","slide":6,"id":"32","role":"node accent: Bhaduri 2020","shapeType":"rect","bbox":[860,164,7,128]}
-{"kind":"shape","slide":6,"id":"33","role":"pill","shapeType":"rect","bbox":[878,180,68,24]}
-{"kind":"textbox","slide":6,"id":"33","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[878,180,68,24]}
-{"kind":"shape","slide":6,"id":"34","role":"node title","shapeType":"rect","bbox":[878,210,180,24]}
-{"kind":"textbox","slide":6,"id":"34","role":"node title","text":"Bhaduri 2020","textPreview":"Bhaduri 2020","textChars":12,"textLines":1,"bbox":[878,210,180,24]}
-{"kind":"shape","slide":6,"id":"35","role":"node body","shapeType":"rect","bbox":[878,236,180,44]}
-{"kind":"textbox","slide":6,"id":"35","role":"node body","text":"fidelity versus\nstress","textPreview":"fidelity versus | stress","textChars":22,"textLines":2,"bbox":[878,236,180,44]}
-{"kind":"shape","slide":6,"id":"36","role":"node panel: Kanton 2019","shapeType":"roundRect","bbox":[930,336,214,128]}
-{"kind":"shape","slide":6,"id":"37","role":"node accent: Kanton 2019","shapeType":"rect","bbox":[930,336,7,128]}
-{"kind":"shape","slide":6,"id":"38","role":"pill","shapeType":"rect","bbox":[948,352,68,24]}
-{"kind":"textbox","slide":6,"id":"38","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[948,352,68,24]}
-{"kind":"shape","slide":6,"id":"39","role":"node title","shapeType":"rect","bbox":[948,382,180,24]}
-{"kind":"textbox","slide":6,"id":"39","role":"node title","text":"Kanton 2019","textPreview":"Kanton 2019","textChars":11,"textLines":1,"bbox":[948,382,180,24]}
-{"kind":"shape","slide":6,"id":"40","role":"node body","shapeType":"rect","bbox":[948,408,180,44]}
-{"kind":"textbox","slide":6,"id":"40","role":"node body","text":"temporal map","textPreview":"temporal map","textChars":12,"textLines":1,"bbox":[948,408,180,44]}
-{"kind":"shape","slide":6,"id":"41","role":"node panel: He 2024","shapeType":"roundRect","bbox":[838,510,254,110]}
-{"kind":"shape","slide":6,"id":"42","role":"node accent: He 2024","shapeType":"rect","bbox":[838,510,7,110]}
-{"kind":"shape","slide":6,"id":"43","role":"pill","shapeType":"rect","bbox":[856,526,68,24]}
-{"kind":"textbox","slide":6,"id":"43","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[856,526,68,24]}
-{"kind":"shape","slide":6,"id":"44","role":"node title","shapeType":"rect","bbox":[856,556,220,24]}
-{"kind":"textbox","slide":6,"id":"44","role":"node title","text":"He 2024","textPreview":"He 2024","textChars":7,"textLines":1,"bbox":[856,556,220,24]}
-{"kind":"shape","slide":6,"id":"45","role":"node body","shapeType":"rect","bbox":[856,582,220,26]}
-{"kind":"textbox","slide":6,"id":"45","role":"node body","text":"integrated atlas\nalignment","textPreview":"integrated atlas | alignment","textChars":26,"textLines":2,"bbox":[856,582,220,26]}
-{"kind":"shape","slide":6,"id":"46","role":"graph connector","shapeType":"rect","bbox":[201.37353954974935,301.5,417.2529209005013,3]}
-{"kind":"shape","slide":6,"id":"47","role":"graph connector","shapeType":"rect","bbox":[253.2528295819082,402.5,375.4943408361836,3]}
-{"kind":"shape","slide":6,"id":"48","role":"graph connector","shapeType":"rect","bbox":[607.8801481320716,280.5,367.23970373585695,3]}
-{"kind":"shape","slide":6,"id":"49","role":"graph connector","shapeType":"rect","bbox":[613.5815883959303,366.5,425.8368232081392,3]}
-{"kind":"shape","slide":6,"id":"50","role":"graph connector","shapeType":"rect","bbox":[581.7884765998772,449,417.4230468002456,3]}
-{"kind":"shape","slide":6,"id":"51","role":"legend swatch","shapeType":"roundRect","bbox":[64,646,18,18]}
-{"kind":"shape","slide":6,"id":"52","role":"legend label","shapeType":"rect","bbox":[92,645,160,22]}
-{"kind":"textbox","slide":6,"id":"52","role":"legend label","text":"query note","textPreview":"query note","textChars":10,"textLines":1,"bbox":[92,645,160,22]}
-{"kind":"shape","slide":6,"id":"53","role":"legend swatch","shapeType":"roundRect","bbox":[214,646,18,18]}
-{"kind":"shape","slide":6,"id":"54","role":"legend label","shapeType":"rect","bbox":[242,645,160,22]}
-{"kind":"textbox","slide":6,"id":"54","role":"legend label","text":"benchmark source","textPreview":"benchmark source","textChars":16,"textLines":1,"bbox":[242,645,160,22]}
-{"kind":"shape","slide":6,"id":"55","role":"banner panel","shapeType":"roundRect","bbox":[636,620,580,58]}
-{"kind":"shape","slide":6,"id":"56","role":"banner accent","shapeType":"rect","bbox":[636,620,8,58]}
-{"kind":"shape","slide":6,"id":"57","role":"banner text","shapeType":"rect","bbox":[658,636,540,30]}
-{"kind":"textbox","slide":6,"id":"57","role":"banner text","text":"새 논문이 추가되면서 '더 많이 안다'가 아니라 '무엇을 따로 질문해야 하는가'가 바뀌었다.","textPreview":"새 논문이 추가되면서 '더 많이 안다'가 아니라 '무엇을 따로 질문해야 하는가'가 바뀌었다.","textChars":51,"textLines":1,"bbox":[658,636,540,30]}
-{"kind":"shape","slide":6,"id":"58","role":"footer","shapeType":"rect","bbox":[64,684,900,18]}
-{"kind":"textbox","slide":6,"id":"58","role":"footer","text":"graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간","textPreview":"graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간","textChars":61,"textLines":1,"bbox":[64,684,900,18]}
+{"kind":"shape","slide":6,"id":"14","role":"pill","shapeType":"rect","bbox":[878,92,162,28]}
+{"kind":"textbox","slide":6,"id":"14","role":"pill","text":"Round 2-4 added","textPreview":"Round 2-4 added","textChars":15,"textLines":1,"bbox":[878,92,162,28]}
+{"kind":"shape","slide":6,"id":"15","role":"node panel: Q2 | 발달정도·동기화 비교 프레임워크","shapeType":"roundRect","bbox":[456,274,320,124]}
+{"kind":"shape","slide":6,"id":"16","role":"node accent: Q2 | 발달정도·동기화 비교 프레임워크","shapeType":"rect","bbox":[456,274,7,124]}
+{"kind":"shape","slide":6,"id":"17","role":"pill","shapeType":"rect","bbox":[474,290,64,24]}
+{"kind":"textbox","slide":6,"id":"17","role":"pill","text":"query","textPreview":"query","textChars":5,"textLines":1,"bbox":[474,290,64,24]}
+{"kind":"shape","slide":6,"id":"18","role":"node title","shapeType":"rect","bbox":[474,320,286,24]}
+{"kind":"textbox","slide":6,"id":"18","role":"node title","text":"Q2 | 발달정도·동기화 비교 프레임워크","textPreview":"Q2 | 발달정도·동기화 비교 프레임워크","textChars":22,"textLines":1,"bbox":[474,320,286,24]}
+{"kind":"shape","slide":6,"id":"19","role":"node body","shapeType":"rect","bbox":[474,346,286,40]}
+{"kind":"textbox","slide":6,"id":"19","role":"node body","text":"어느 수준의 세분화가 필요한가?","textPreview":"어느 수준의 세분화가 필요한가?","textChars":17,"textLines":1,"bbox":[474,346,286,40]}
+{"kind":"shape","slide":6,"id":"20","role":"node panel: Velasco 2019","shapeType":"roundRect","bbox":[102,210,204,120]}
+{"kind":"shape","slide":6,"id":"21","role":"node accent: Velasco 2019","shapeType":"rect","bbox":[102,210,7,120]}
+{"kind":"shape","slide":6,"id":"22","role":"pill","shapeType":"rect","bbox":[120,226,68,24]}
+{"kind":"textbox","slide":6,"id":"22","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[120,226,68,24]}
+{"kind":"shape","slide":6,"id":"23","role":"node title","shapeType":"rect","bbox":[120,256,170,24]}
+{"kind":"textbox","slide":6,"id":"23","role":"node title","text":"Velasco 2019","textPreview":"Velasco 2019","textChars":12,"textLines":1,"bbox":[120,256,170,24]}
+{"kind":"shape","slide":6,"id":"24","role":"node body","shapeType":"rect","bbox":[120,282,170,36]}
+{"kind":"textbox","slide":6,"id":"24","role":"node body","text":"within-protocol\nreproducibility","textPreview":"within-protocol | reproducibility","textChars":31,"textLines":2,"bbox":[120,282,170,36]}
+{"kind":"shape","slide":6,"id":"25","role":"node panel: Yoon 2019","shapeType":"roundRect","bbox":[164,412,204,120]}
+{"kind":"shape","slide":6,"id":"26","role":"node accent: Yoon 2019","shapeType":"rect","bbox":[164,412,7,120]}
+{"kind":"shape","slide":6,"id":"27","role":"pill","shapeType":"rect","bbox":[182,428,68,24]}
+{"kind":"textbox","slide":6,"id":"27","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[182,428,68,24]}
+{"kind":"shape","slide":6,"id":"28","role":"node title","shapeType":"rect","bbox":[182,458,170,24]}
+{"kind":"textbox","slide":6,"id":"28","role":"node title","text":"Yoon 2019","textPreview":"Yoon 2019","textChars":9,"textLines":1,"bbox":[182,458,170,24]}
+{"kind":"shape","slide":6,"id":"29","role":"node body","shapeType":"rect","bbox":[182,484,170,36]}
+{"kind":"textbox","slide":6,"id":"29","role":"node body","text":"cross-line\nreliability","textPreview":"cross-line | reliability","textChars":22,"textLines":2,"bbox":[182,484,170,36]}
+{"kind":"shape","slide":6,"id":"30","role":"node panel: Bhaduri 2020","shapeType":"roundRect","bbox":[860,164,214,128]}
+{"kind":"shape","slide":6,"id":"31","role":"node accent: Bhaduri 2020","shapeType":"rect","bbox":[860,164,7,128]}
+{"kind":"shape","slide":6,"id":"32","role":"pill","shapeType":"rect","bbox":[878,180,68,24]}
+{"kind":"textbox","slide":6,"id":"32","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[878,180,68,24]}
+{"kind":"shape","slide":6,"id":"33","role":"node title","shapeType":"rect","bbox":[878,210,180,24]}
+{"kind":"textbox","slide":6,"id":"33","role":"node title","text":"Bhaduri 2020","textPreview":"Bhaduri 2020","textChars":12,"textLines":1,"bbox":[878,210,180,24]}
+{"kind":"shape","slide":6,"id":"34","role":"node body","shapeType":"rect","bbox":[878,236,180,44]}
+{"kind":"textbox","slide":6,"id":"34","role":"node body","text":"fidelity versus\nstress","textPreview":"fidelity versus | stress","textChars":22,"textLines":2,"bbox":[878,236,180,44]}
+{"kind":"shape","slide":6,"id":"35","role":"node panel: Kanton 2019","shapeType":"roundRect","bbox":[930,336,214,128]}
+{"kind":"shape","slide":6,"id":"36","role":"node accent: Kanton 2019","shapeType":"rect","bbox":[930,336,7,128]}
+{"kind":"shape","slide":6,"id":"37","role":"pill","shapeType":"rect","bbox":[948,352,68,24]}
+{"kind":"textbox","slide":6,"id":"37","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[948,352,68,24]}
+{"kind":"shape","slide":6,"id":"38","role":"node title","shapeType":"rect","bbox":[948,382,180,24]}
+{"kind":"textbox","slide":6,"id":"38","role":"node title","text":"Kanton 2019","textPreview":"Kanton 2019","textChars":11,"textLines":1,"bbox":[948,382,180,24]}
+{"kind":"shape","slide":6,"id":"39","role":"node body","shapeType":"rect","bbox":[948,408,180,44]}
+{"kind":"textbox","slide":6,"id":"39","role":"node body","text":"temporal map","textPreview":"temporal map","textChars":12,"textLines":1,"bbox":[948,408,180,44]}
+{"kind":"shape","slide":6,"id":"40","role":"node panel: He 2024","shapeType":"roundRect","bbox":[838,510,254,110]}
+{"kind":"shape","slide":6,"id":"41","role":"node accent: He 2024","shapeType":"rect","bbox":[838,510,7,110]}
+{"kind":"shape","slide":6,"id":"42","role":"pill","shapeType":"rect","bbox":[856,526,68,24]}
+{"kind":"textbox","slide":6,"id":"42","role":"pill","text":"source","textPreview":"source","textChars":6,"textLines":1,"bbox":[856,526,68,24]}
+{"kind":"shape","slide":6,"id":"43","role":"node title","shapeType":"rect","bbox":[856,556,220,24]}
+{"kind":"textbox","slide":6,"id":"43","role":"node title","text":"He 2024","textPreview":"He 2024","textChars":7,"textLines":1,"bbox":[856,556,220,24]}
+{"kind":"shape","slide":6,"id":"44","role":"node body","shapeType":"rect","bbox":[856,582,220,26]}
+{"kind":"textbox","slide":6,"id":"44","role":"node body","text":"integrated atlas\nalignment","textPreview":"integrated atlas | alignment","textChars":26,"textLines":2,"bbox":[856,582,220,26]}
+{"kind":"shape","slide":6,"id":"45","role":"path connector","shapeType":"rect","bbox":[201.37353954974935,301.5,417.2529209005013,3]}
+{"kind":"shape","slide":6,"id":"46","role":"path connector","shapeType":"rect","bbox":[253.2528295819082,402.5,375.4943408361836,3]}
+{"kind":"shape","slide":6,"id":"47","role":"path connector","shapeType":"rect","bbox":[607.8801481320716,280.5,367.23970373585695,3]}
+{"kind":"shape","slide":6,"id":"48","role":"path connector","shapeType":"rect","bbox":[613.5815883959303,366.5,425.8368232081392,3]}
+{"kind":"shape","slide":6,"id":"49","role":"path connector","shapeType":"rect","bbox":[581.7884765998772,449,417.4230468002456,3]}
+{"kind":"shape","slide":6,"id":"50","role":"legend swatch","shapeType":"roundRect","bbox":[64,646,18,18]}
+{"kind":"shape","slide":6,"id":"51","role":"legend label","shapeType":"rect","bbox":[92,645,160,22]}
+{"kind":"textbox","slide":6,"id":"51","role":"legend label","text":"query note","textPreview":"query note","textChars":10,"textLines":1,"bbox":[92,645,160,22]}
+{"kind":"shape","slide":6,"id":"52","role":"legend swatch","shapeType":"roundRect","bbox":[214,646,18,18]}
+{"kind":"shape","slide":6,"id":"53","role":"legend label","shapeType":"rect","bbox":[242,645,160,22]}
+{"kind":"textbox","slide":6,"id":"53","role":"legend label","text":"benchmark source","textPreview":"benchmark source","textChars":16,"textLines":1,"bbox":[242,645,160,22]}
+{"kind":"shape","slide":6,"id":"54","role":"banner panel","shapeType":"roundRect","bbox":[636,620,580,58]}
+{"kind":"shape","slide":6,"id":"55","role":"banner accent","shapeType":"rect","bbox":[636,620,8,58]}
+{"kind":"shape","slide":6,"id":"56","role":"banner text","shapeType":"rect","bbox":[658,636,540,30]}
+{"kind":"textbox","slide":6,"id":"56","role":"banner text","text":"새 논문이 추가되면서 '더 많이 안다'가 아니라 '무엇을 따로 질문해야 하는가'가 바뀌었다.","textPreview":"새 논문이 추가되면서 '더 많이 안다'가 아니라 '무엇을 따로 질문해야 하는가'가 바뀌었다.","textChars":51,"textLines":1,"bbox":[658,636,540,30]}
+{"kind":"shape","slide":6,"id":"57","role":"footer","shapeType":"rect","bbox":[64,684,900,18]}
+{"kind":"textbox","slide":6,"id":"57","role":"footer","text":"graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간","textPreview":"graph-style view: subregion map 위에 benchmark branch가 새로 얹힌 순간","textChars":61,"textLines":1,"bbox":[64,684,900,18]}
 {"kind":"image","slide":7,"id":"2","role":"fallback art plate","path":"fallback-data-url","bbox":[0,0,1280,720]}
 {"kind":"shape","slide":7,"id":"3","role":"background glow","shapeType":"ellipse","bbox":[826,82,382,382]}
 {"kind":"shape","slide":7,"id":"4","role":"background glow","shapeType":"ellipse","bbox":[968,436,206,206]}
