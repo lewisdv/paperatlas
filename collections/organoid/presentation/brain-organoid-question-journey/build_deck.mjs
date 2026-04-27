@@ -1286,7 +1286,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
     336,
     126,
     "대표 anchor",
-    "Velasco, Bhaduri, He,\nFitzgerald, Kelley, Chen 등 주요 anchor",
+    "Velasco, Bhaduri, He,\nFitzgerald, Kelley, Chen",
     CORAL,
     PANEL,
   );
