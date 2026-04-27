@@ -1136,7 +1136,7 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
     336,
     140,
     "새로 붙은 질문",
-    "같은 cortical branch라도\nreproducibility, fidelity, timing을\n따로 물어야 하지 않는가?",
+    "동일 cortical branch에 대해서도\nreproducibility, fidelity, timing의\n독립적 평가가 필요한가",
     ACCENT,
     PANEL,
   );
@@ -1159,8 +1159,8 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
     522,
     336,
     140,
-    "질문의 변화",
-    "subregion map 위에\nbenchmark axis가 덧붙으면서\n비교 기준이 완전히 달라졌다.",
+    "비교 프레임의 확장",
+    "subregion map 위에\nbenchmark axis가 추가되면서\n비교 기준이 다축 구조로 전환되었다.",
     CORAL,
     PANEL,
   );
@@ -1173,9 +1173,9 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
     738,
     428,
     "collections/organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md",
-    "Insert the local graph for Q2 here",
+    "Q2 local graph",
   );
-  addFooter(slide, slideNo, "오른쪽에는 Q2 query note의 Obsidian local graph를 삽입하면 된다.");
+  addFooter(slide, slideNo, "우측 패널: Q2 query note의 Obsidian local graph 삽입 위치");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1189,7 +1189,7 @@ async function slideTension(presentation, data, slideNo, idx) {
   addBanner(
     slide,
     slideNo,
-    "Velasco / Yoon이 보여준 것은 '잘 반복되는 cortical branch'이고, Bhaduri가 보여준 것은 '그 branch가 primary brain과 어디서 어긋나는가'이다.",
+    "Velasco/Yoon은 반복 가능한 cortical branch를 제시하고, Bhaduri는 해당 branch의 primary brain 대비 이탈 양상을 제시한다.",
     78,
     210,
     1124,
@@ -1205,8 +1205,8 @@ async function slideTension(presentation, data, slideNo, idx) {
     344,
     486,
     240,
-    "reproducibility 쪽 질문",
-    "같은 protocol을 여러 번 돌렸을 때 organoid-to-organoid variance가 얼마나 낮은가?\n대표 anchor:\nVelasco 2019, Yoon 2019",
+    "reproducibility 관점",
+    "반복 배양 시 organoid-to-organoid variance의 수준\n대표 anchor:\nVelasco 2019, Yoon 2019",
     ACCENT,
     PANEL,
   );
@@ -1217,15 +1217,15 @@ async function slideTension(presentation, data, slideNo, idx) {
     344,
     486,
     240,
-    "fidelity 쪽 질문",
-    "그 organoid cell state가 primary fetal cortex와 얼마나 가까운가?\nstress-linked divergence는 없는가?\n대표 anchor:\nBhaduri 2020, He 2024",
+    "fidelity 관점",
+    "organoid cell state의 primary fetal cortex 근접성과\nstress-linked divergence 여부\n대표 anchor:\nBhaduri 2020, He 2024",
     GOLD,
     PANEL,
   );
 
   addArrowBetween(slide, slideNo, 586, 456, 90);
   addPill(slide, slideNo, "same region, different question", 468, 604, 268, 28, MINT, ACCENT_DARK);
-  addFooter(slide, slideNo, "이 구분이 있어야 5축 프레임워크가 단순 taxonomy가 아니라 실제 비교 도구가 된다.");
+  addFooter(slide, slideNo, "이 구분은 5축 프레임워크를 단순 taxonomy가 아닌 실제 비교 도구로 전환한다.");
   addNotes(slide, data.notes, data.sources);
 }
 
@@ -1236,14 +1236,14 @@ async function slideFramework(presentation, data, slideNo, idx) {
   addHeader(slide, slideNo, data.kicker, idx, SLIDES.length);
   addTitleBlock(slide, slideNo, data.title, null, 64, 88, 760, { titleSize: 38, subtitleSize: 18 });
 
-  addCard(slide, slideNo, 72, 220, 352, 146, "1. region identity", "어떤 brain region 또는 subregion을 만들고 있는가?\nanchor: Q1, Sloan, Atamian", ACCENT, PANEL);
-  addCard(slide, slideNo, 464, 220, 352, 146, "2. reproducibility", "같은 protocol 안에서 cell composition variance가 얼마나 낮은가?\nanchor: Velasco, Yoon", GOLD, PANEL);
-  addCard(slide, slideNo, 856, 220, 352, 146, "3. fidelity", "primary fetal brain과의 distance를 어떻게 볼 것인가?\nanchor: Bhaduri, He", CORAL, PANEL);
-  addCard(slide, slideNo, 144, 398, 462, 150, "4. temporal mapping", "culture day를 developmental stage로 어떻게 읽을 것인가?\nanchor: Kanton, Giandomenico", "#517C95", PANEL);
-  addCard(slide, slideNo, 676, 398, 462, 150, "5. atlas alignment", "여러 protocol을 같은 reference atlas 좌표계에서 어떻게 정렬할 것인가?\nanchor: He 2024", ACCENT_DARK, PANEL);
+  addCard(slide, slideNo, 72, 220, 352, 146, "1. region identity", "생성되는 brain region 또는 subregion의 정체성\nanchor: Q1, Sloan, Atamian", ACCENT, PANEL);
+  addCard(slide, slideNo, 464, 220, 352, 146, "2. reproducibility", "동일 protocol 내 cell composition variance의 수준\nanchor: Velasco, Yoon", GOLD, PANEL);
+  addCard(slide, slideNo, 856, 220, 352, 146, "3. fidelity", "primary fetal brain 대비 분자적 거리의 평가\nanchor: Bhaduri, He", CORAL, PANEL);
+  addCard(slide, slideNo, 144, 398, 462, 150, "4. temporal mapping", "culture day와 developmental stage 간 대응 관계\nanchor: Kanton, Giandomenico", "#517C95", PANEL);
+  addCard(slide, slideNo, 676, 398, 462, 150, "5. atlas alignment", "reference atlas 좌표계에서의 cross-protocol 정렬\nanchor: He 2024", ACCENT_DARK, PANEL);
 
-  addBanner(slide, slideNo, "핵심 메시지: reproducibility와 fidelity는 같은 말이 아니다.", 214, 586, 852, 64, ROSE_TINT, CORAL);
-  addFooter(slide, slideNo, "5축은 서로 다른 benchmark question이며, 한 축의 강점이 다른 축의 답을 대신하지 않는다.");
+  addBanner(slide, slideNo, "핵심 메시지: reproducibility와 fidelity는 동일 지표가 아니다.", 214, 586, 852, 64, ROSE_TINT, CORAL);
+  addFooter(slide, slideNo, "5축은 상호 독립적인 benchmark question이며, 한 축의 강점이 다른 축의 답을 대체하지 않는다.");
   addNotes(slide, data.notes, data.sources);
 }
 
