@@ -77,10 +77,10 @@ const SLIDES = [
   {
     id: "cover",
     kicker: "BRAIN ORGANOID QUESTION CHAIN",
-    title: "Brain organoid protocol 비교는\n왜 subregion 비교만으로 끝나지 않는가",
+    title: "Brain organoid protocol 비교:\nsubregion에서 readout까지",
     subtitle:
-      "LLM-wiki를 collection 단위로 운영한 뒤,\nbrain organoid 질문이 subregion 비교에서 readout-first rule로 어떻게 확장됐는지를 보여준다.",
-    moment: "질문이 바뀌면 비교 기준도 바뀐다",
+      "collection 기반 LLM-wiki 운영을 바탕으로,\nbrain organoid protocol 비교 기준의 확장 과정을 제시한다.",
+    moment: "질문의 변화는 비교 기준의 변화를 요구한다",
     notes:
       "이 발표는 LLM-wiki 운영 방식을 짧게 소개한 뒤, 그 위에서 brain organoid 질문이 어떻게 정교해졌는지를 보여준다.\n처음에는 brain subregion별 프로토콜 차이를 비교하고 싶었지만, 정리할수록 reproducibility, fidelity, timing, readout 문제가 분리되기 시작했다.\n오늘의 핵심 문장은 '질문이 바뀌면 비교 기준도 바뀐다'이다.",
     sources: ["index", "q1", "q2", "q3"],
@@ -88,9 +88,9 @@ const SLIDES = [
   {
     id: "process",
     kicker: "LLM-WIKI WORKFLOW",
-    title: "내가 LLM-wiki를\n운영하는 방식",
+    title: "LLM-wiki\n운영 구조",
     subtitle:
-      "collection으로 문헌 범위를 나누고,\nraw와 wiki를 분리해 질문 범위를 좁혔다.",
+      "collection 기반 범위 제한과\nraw/wiki 분리를 중심으로 구성하였다.",
     notes:
       "이 슬라이드에서는 문헌을 어떻게 구조화했는지 먼저 소개한다.\ncollections 단위로 주제를 분리하고, raw source와 wiki synthesis를 나눠서 질문 범위를 좁혔다.\n그 결과 관련 없는 topic drift를 줄이고, 같은 주제 안에서 source, concept, query를 더 조밀하게 연결할 수 있었다.",
     sources: ["overview", "index", "q1", "q2", "q3"],
@@ -98,9 +98,9 @@ const SLIDES = [
   {
     id: "scope",
     kicker: "ACCESS LAYER",
-    title: "Markdown wiki를\n탐색 가능한 HTML로 열어두기",
+    title: "Markdown wiki의\nHTML 접근 계층",
     subtitle:
-      "저장된 Markdown을 정적 HTML로 바꾸고,\n로컬 뷰어와 GitHub Pages로 계속 접근할 수 있게 했다.",
+      "정적 HTML 변환, 로컬 뷰어, GitHub Pages를 통해\n지속적 탐색과 접근성을 확보하였다.",
     notes:
       "Markdown wiki를 그대로 두지 않고 HTML site로 렌더링해 읽기 쉬운 탐색 계층을 따로 운영했다.\nrender_wiki_html.py는 collection site와 top-level hub를 만들고, localhost viewer는 검색과 태그 필터, 그래프 뷰를 제공한다.\n또 GitHub Actions와 Pages를 붙여 원격에서도 같은 구조로 접근할 수 있게 했다.",
     sources: ["index"],
@@ -108,9 +108,9 @@ const SLIDES = [
   {
     id: "graph-subregion",
     kicker: "QUESTION 1",
-    title: "1차 질문: 어떤 brain subregion\n프로토콜을 비교해야 하는가",
+    title: "1차 질문: subregion 중심의\nprotocol 비교",
     subtitle:
-      "처음에는 '어느 뇌 영역을 만들 것인가'가\n가장 중요한 비교 기준처럼 보였다.",
+      "초기 비교 기준은 생성 대상 뇌 영역의 선택이었다.",
     notes:
       "첫 번째 질문 노트는 subregion 중심 비교다.\nLancaster는 broad cerebral baseline, Sloan과 Fitzgerald는 forebrain or cortical control, Zagare와 Eura와 Valiulahi는 posterior branch, Pomeshchik과 Atamian은 niche specialization으로 묶였다.\n이 단계에서는 brain organoid 설계 문제가 주로 subregion selection 문제처럼 보였다.",
     sources: [
@@ -129,9 +129,9 @@ const SLIDES = [
   {
     id: "answer-one",
     kicker: "FIRST ANSWER",
-    title: "1차 정리: 질문은 subregion selection으로\n정리될 수 있었다",
+    title: "1차 정리: subregion selection 중심의\nprotocol 분류",
     subtitle:
-      "brain organoid 비교는 우선\nsubregion과 patterning logic의 문제로 정리할 수 있었다.",
+      "brain organoid protocol은 우선\nsubregion과 patterning logic 기준으로 정리되었다.",
     notes:
       "첫 번째 정리에서 얻은 핵심은 세 갈래였다.\n첫째, broad cerebral baseline은 diversity가 크지만 variability도 크다.\n둘째, forebrain or cortical routes는 더 clean한 regional control을 준다.\n셋째, posterior or niche routes는 특정 biological question에 더 직접적이다.\n이 단계의 잠정 결론은 '많은 brain design 문제는 subregion selection 문제다'였다.",
     sources: ["q1", "conceptPattern", "synthBaseline", "lancaster", "sloan", "zagare", "atamian"],
@@ -139,9 +139,9 @@ const SLIDES = [
   {
     id: "limitation",
     kicker: "LIMITATION",
-    title: "하지만 같은 subregion이어도\n같은 모델은 아니었다",
+    title: "한계: 동일 subregion은\n동일 모델을 의미하지 않음",
     subtitle:
-      "같은 forebrain이어도 같은 모델이라고 말할 수는 없었다.\n질문은 region 밖으로 확장되기 시작했다.",
+      "동일 forebrain 계열 내에서도 모델의 특성은\n서로 다른 축에서 구분되었다.",
     notes:
       "subregion 비교는 useful한 출발점이었지만, 그것만으로는 모델의 quality를 설명하지 못했다.\n같은 cortical branch 안에서도 어떤 프로토콜은 더 reproducible하고, 어떤 것은 primary tissue와 더 닮고, 어떤 것은 timing mapping이 더 분명했다.\n그래서 질문이 '어떤 region인가'에서 '어떤 benchmark로 믿을 수 있는가'로 이동했다.",
     sources: ["q1", "q2", "conceptBench"],
@@ -149,9 +149,9 @@ const SLIDES = [
   {
     id: "graph-benchmark",
     kicker: "QUESTION 2",
-    title: "2차 질문: region 말고\n무엇을 따로 benchmark해야 하는가",
+    title: "2차 질문: region 외\nbenchmark 축의 분리",
     subtitle:
-      "Round 2-4의 benchmark 논문들이 들어오면서,\n질문 자체가 새 프레임으로 재구성됐다.",
+      "benchmark 논문군의 추가와 함께,\n비교 프레임이 region 중심에서 다축 구조로 확장되었다.",
     notes:
       "두 번째 질문 노트는 benchmark question이다.\nVelasco와 Yoon은 reproducibility, Bhaduri는 fidelity, Kanton은 timing, He는 cross-protocol atlas alignment를 제공했다.\n즉 새 논문이 추가되면서 더 많은 근거가 생긴 것이 아니라, 어떤 질문을 던져야 하는지 자체가 바뀌었다.",
     sources: ["q2", "conceptBench", "velasco", "yoon", "bhaduri", "kanton", "he"],
@@ -159,9 +159,9 @@ const SLIDES = [
   {
     id: "tension",
     kicker: "KEY TENSION",
-    title: "가장 중요한 분리:\nreproducibility와 fidelity",
+    title: "핵심 구분:\nreproducibility와 fidelity",
     subtitle:
-      "이 발표에서 가장 중요한 전환은\nreproducibility와 fidelity를 분리한 순간이다.",
+      "가장 중요한 전환은 두 지표의 분리였다.",
     notes:
       "이 슬라이드는 benchmark slide와 framework slide 사이의 다리 역할을 한다.\nVelasco와 Yoon은 잘 반복되는 cortical branch를 보여주지만, Bhaduri는 그 branch가 primary fetal cortex와 얼마나 다른지를 보여준다.\n즉 '잘 반복된다'와 '더 진짜 같다'는 다른 질문이며, 이 구분이 이후 5축 프레임워크의 핵심이 된다.",
     sources: ["q2", "conceptBench", "velasco", "yoon", "bhaduri"],
@@ -169,9 +169,9 @@ const SLIDES = [
   {
     id: "framework",
     kicker: "FRAMEWORK",
-    title: "그래서 protocol 비교는\n5개의 축으로 나뉘었다",
+    title: "Protocol 비교의\n5개 축",
     subtitle:
-      "brain organoid protocol 비교는 한 축이 아니라,\n서로 다른 benchmark 축을 분리해서 봐야 했다.",
+      "brain organoid protocol 비교는 단일 축이 아니라,\n상호 독립적인 benchmark 축의 조합으로 이해된다.",
     notes:
       "결국 이 컬렉션에서 brain organoid 비교는 다섯 축으로 정리됐다.\nregion identity, reproducibility, fidelity, temporal mapping, atlas alignment는 서로 다른 measurement question이다.\n여기서 가장 중요한 메시지는 reproducibility와 fidelity가 같은 말이 아니라는 점이다.",
     sources: ["q2", "conceptBench", "velasco", "yoon", "bhaduri", "kanton", "he"],
@@ -179,9 +179,9 @@ const SLIDES = [
   {
     id: "readout",
     kicker: "QUESTION 3",
-    title: "3차 질문: region보다\nreadout을 먼저 적어야 하는가",
+    title: "3차 질문: readout 우선의\nselection rule",
     subtitle:
-      "최종적으로 protocol choice는 region보다도\nreadout을 먼저 적는 문제에 가까워졌다.",
+      "최종적으로 protocol choice는 region보다\nreadout을 선행하는 설계 규칙으로 정리되었다.",
     notes:
       "세 번째 질문 노트에서는 protocol choice가 readout-first rule로 재정리된다.\ncomposition reproducibility를 원하면 Velasco or Yoon 계열, fidelity를 원하면 Bhaduri or He, timing을 원하면 Kanton, dish function을 원하면 Fitzgerald, host relevance를 원하면 Kelley, screening을 원하면 Chen or Meng이 우선 anchor가 된다.\n즉 최종 질문은 '어느 region을 만들까'보다 '무슨 readout을 먼저 믿고 싶은가'가 됐다.",
     sources: ["q3", "conceptPattern", "conceptBench", "fitzgerald", "kelley", "chen", "meng", "kanton", "he"],
@@ -189,9 +189,9 @@ const SLIDES = [
   {
     id: "review-writing",
     kicker: "REVIEW WRITING",
-    title: "이 연결고리를 리뷰논문으로\n바꾸면 어떻게 쓰게 되는가",
+    title: "리뷰논문 구조로의\n전환",
     subtitle:
-      "위키에서 질문이 이동한 순서가,\n리뷰논문의 장 구조와 핵심 주장 구조가 된다.",
+      "질문의 이동 순서는\n리뷰논문의 장 구조와 핵심 주장 구조로 전환된다.",
     notes:
       "이 슬라이드는 발표의 마지막 부분에서 review paper writing과 직접 연결해 주는 역할을 한다.\n핵심은 논문을 하나씩 나열하는 리뷰가 아니라, 질문이 이동한 순서대로 chapter를 세우는 것이다.\n즉 protocol family에서 시작해 benchmark axes로 확장하고, 마지막에는 readout-first selection rule로 정리하는 구조가 된다.",
     sources: ["q1", "q2", "q3", "synthBaseline", "conceptBench", "conceptPattern"],
@@ -199,9 +199,9 @@ const SLIDES = [
   {
     id: "review-implication",
     kicker: "WHY BRAIN",
-    title: "왜 organoid collection에서\nbrain branch를 발표 사례로 골랐나",
+    title: "Brain branch\n선택의 이유",
     subtitle:
-      "protocol family, benchmark, readout이 한 branch 안에서\n연속적으로 이어져 질문의 이동을 보여주기 좋았다.",
+      "protocol family, benchmark, readout이 연속적으로 연결되어\n질문 체인의 전개를 가장 선명하게 드러낸다.",
     notes:
       "brain branch는 broad cerebral baseline에서 niche subregion까지 이어지고, 그 위에 benchmark 논문과 functional readout 논문이 덧붙는다.\n그래서 단순 문헌 요약이 아니라 질문의 이동을 단계적으로 보여주기 좋다.\n즉 workflow를 설명한 뒤 실제 branch 사례로 넘어가기에 가장 적합한 축이었다.",
     sources: ["overview", "index", "q1", "q2", "q3", "synthBaseline", "conceptBench", "conceptPattern"],
@@ -209,9 +209,9 @@ const SLIDES = [
   {
     id: "conclusion",
     kicker: "CLOSING",
-    title: "정리: 좋은 질문은\n위키를 정리하면서 생겨났다",
+    title: "정리",
     subtitle:
-      "LLM-wiki 운영에서 출발한 질문 제한이,\n결국 더 정교한 brain organoid 비교 기준으로 이어졌다.",
+      "LLM-wiki 기반의 질문 제한은\nbrain organoid 비교 기준의 정교화로 이어졌다.",
     notes:
       "마무리에서는 세 가지 takeaway를 다시 강조한다.\n첫째, subregion comparison은 출발점으로 유효했다.\n둘째, benchmark 축이 들어오면서 질문이 바뀌었다.\n셋째, 최종 rule은 readout-first protocol selection이다.\nQ and A에서는 reproducibility와 fidelity를 왜 분리해야 하는지, 어느 축을 먼저 볼지, host validation이 언제 필요한지를 중심으로 받으면 된다.",
     sources: ["q1", "q2", "q3", "conceptBench", "conceptPattern"],
@@ -552,7 +552,7 @@ function addFooter(slide, slideNo, text = "paper_collect / organoid collection /
   });
 }
 
-function addGraphPlaceholder(slide, slideNo, x, y, w, h, pagePath, note = "Insert Obsidian screenshot here") {
+function addGraphPlaceholder(slide, slideNo, x, y, w, h, pagePath, note = "Obsidian local graph placeholder") {
   addShape(slide, "roundRect", x, y, w, h, PANEL_SOFT, INK, 1.2, { slideNo, role: "graph placeholder panel" });
   addShape(slide, "rect", x + 6, y + 6, w - 12, 6, "#A9C9BB", TRANSPARENT, 0, {
     slideNo,
@@ -566,7 +566,7 @@ function addGraphPlaceholder(slide, slideNo, x, y, w, h, pagePath, note = "Inser
     align: "center",
     role: "graph placeholder title",
   });
-  addText(slide, slideNo, "Insert screenshot here", x + 28, y + 76, w - 56, 22, {
+  addText(slide, slideNo, "Graph screenshot placeholder", x + 28, y + 76, w - 56, 22, {
     size: 12,
     color: GRAPHITE,
     face: MONO_FACE,
