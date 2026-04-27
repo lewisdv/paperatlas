@@ -1471,6 +1471,7 @@ async function createDeck() {
     else if (data.id === "tension") await slideTension(presentation, data, slideNo, slideNo);
     else if (data.id === "framework") await slideFramework(presentation, data, slideNo, slideNo);
     else if (data.id === "readout") await slideReadout(presentation, data, slideNo, slideNo);
+    else if (data.id === "review-writing") await slideReviewWriting(presentation, data, slideNo, slideNo);
     else if (data.id === "review-implication") await slideReviewImplication(presentation, data, slideNo, slideNo);
     else if (data.id === "conclusion") await slideConclusion(presentation, data, slideNo, slideNo);
     else throw new Error(`Unknown slide id: ${data.id}`);
