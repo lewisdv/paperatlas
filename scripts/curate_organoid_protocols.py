@@ -565,7 +565,7 @@ def build_parser():
     )
     parser.add_argument(
         "--collection",
-        default="organoid",
+        default="Organoid",
         help="Collection name under collections/. Defaults to organoid.",
     )
     parser.add_argument(
@@ -581,7 +581,7 @@ def main():
     workspace = resolve_workspace(
         collection=args.collection,
         workspace=args.workspace,
-        default_collection="organoid",
+        default_collection="Organoid",
     )
     configure_workspace(workspace.root)
 

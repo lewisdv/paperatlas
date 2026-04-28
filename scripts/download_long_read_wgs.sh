@@ -3,7 +3,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-COLLECTION_DIR="${1:-$ROOT_DIR/collections/longread-sequencing}"
+COLLECTION_DIR="${1:-$ROOT_DIR/collections/Multi_Omics}"
 MANIFEST="$COLLECTION_DIR/long_read_wgs_manifest.tsv"
 TARGET_DIR="$COLLECTION_DIR/raw/sources"
 

@@ -2,7 +2,7 @@
 # Round 2: Fill corpus gaps — retina, spinal cord, vascular, pancreas, inner ear, brain benchmarking
 set -euo pipefail
 
-RAW_DIR="$(cd "$(dirname "$0")/../collections/organoid/raw/sources" && pwd)"
+RAW_DIR="$(cd "$(dirname "$0")/../collections/Organoid/raw/sources" && pwd)"
 cd "$RAW_DIR"
 
 echo "=== Round 2 organoid paper collection ==="

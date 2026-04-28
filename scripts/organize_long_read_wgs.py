@@ -317,8 +317,8 @@ def build_parser():
     )
     parser.add_argument(
         "--collection",
-        default="longread-sequencing",
-        help="Collection name under collections/. Defaults to longread-sequencing.",
+        default="Multi_Omics",
+        help="Collection name under collections/. Defaults to Multi_Omics.",
     )
     parser.add_argument(
         "--workspace",
@@ -333,7 +333,7 @@ def main():
     workspace = resolve_workspace(
         collection=args.collection,
         workspace=args.workspace,
-        default_collection="longread-sequencing",
+        default_collection="Multi_Omics",
     )
     configure_workspace(workspace.root)
 

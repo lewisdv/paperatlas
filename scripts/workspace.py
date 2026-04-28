@@ -73,6 +73,34 @@ def build_workspace(root: Path) -> Workspace:
     return Workspace(root=root, key=key, title=title, description=description)
 
 
+def resolve_collection_root(value: str) -> Path:
+    direct = (COLLECTIONS_DIR / value).resolve()
+    if direct.exists():
+        return direct
+
+    normalized = value.strip()
+    normalized_casefold = normalized.casefold()
+    normalized_slug = slugify_collection(normalized)
+
+    for path in COLLECTIONS_DIR.iterdir():
+        if not path.is_dir():
+            continue
+        if path.name.casefold() == normalized_casefold:
+            return path.resolve()
+
+        meta = read_collection_metadata(path)
+        title = str(meta.get("title", "")).strip()
+        if title and title.casefold() == normalized_casefold:
+            return path.resolve()
+
+        if slugify_collection(path.name) == normalized_slug:
+            return path.resolve()
+        if title and slugify_collection(title) == normalized_slug:
+            return path.resolve()
+
+    return (COLLECTIONS_DIR / normalized_slug).resolve()
+
+
 def list_collection_workspaces() -> List[Workspace]:
     workspaces: List[Workspace] = []
     if not COLLECTIONS_DIR.exists():
@@ -101,14 +129,14 @@ def resolve_workspace(
         return build_workspace(root)
 
     if collection:
-        root = (COLLECTIONS_DIR / slugify_collection(collection)).resolve()
+        root = resolve_collection_root(collection)
         return build_workspace(root)
 
     if (PROJECT_ROOT / "raw").exists() and (PROJECT_ROOT / "wiki").exists():
         return build_workspace(PROJECT_ROOT)
 
     if default_collection:
-        root = (COLLECTIONS_DIR / slugify_collection(default_collection)).resolve()
+        root = resolve_collection_root(default_collection)
         return build_workspace(root)
 
     raise ValueError(

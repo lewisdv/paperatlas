@@ -38,17 +38,17 @@
 ## Source Plan
 
 - Core query notes:
-  - `collections/organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md`
-  - `collections/organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md`
-  - `collections/organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md`
+  - `collections/Organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md`
+  - `collections/Organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md`
+  - `collections/Organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md`
 - Supporting concept pages:
-  - `collections/organoid/wiki/concepts/brain-subregion-specific-organoid-protocols.md`
-  - `collections/organoid/wiki/concepts/brain-organoid-fidelity-reproducibility-and-atlases.md`
-  - `collections/organoid/wiki/concepts/brain-organoid-patterning-and-assembloids.md`
+  - `collections/Organoid/wiki/concepts/brain-subregion-specific-organoid-protocols.md`
+  - `collections/Organoid/wiki/concepts/brain-organoid-fidelity-reproducibility-and-atlases.md`
+  - `collections/Organoid/wiki/concepts/brain-organoid-patterning-and-assembloids.md`
 - Supporting synthesis:
-  - `collections/organoid/wiki/syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md`
+  - `collections/Organoid/wiki/syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md`
 - Overview counts:
-  - `collections/organoid/wiki/overview.md`
+  - `collections/Organoid/wiki/overview.md`
 
 ## Visual System
 

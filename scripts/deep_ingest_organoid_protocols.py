@@ -1247,14 +1247,14 @@ def read_rows(manifest_path: Path) -> list[dict]:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Deep ingest the organoid protocol corpus.")
-    parser.add_argument("--collection", default="organoid")
+    parser.add_argument("--collection", default="Organoid")
     parser.add_argument("--workspace")
     args = parser.parse_args()
 
     workspace = resolve_workspace(
         collection=args.collection,
         workspace=args.workspace,
-        default_collection="organoid",
+        default_collection="Organoid",
     )
     paths = configure_workspace(workspace.root)
     ensure_dirs(paths)

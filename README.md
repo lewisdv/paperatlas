@@ -9,7 +9,7 @@ This workspace is a lightweight starter for the "LLM wiki" pattern described in 
 
 The gist itself is not an installable app. This repo turns the idea into a local structure you can start using right away.
 
-For the current Long Read WGS starter corpus, see `collections/longread-sequencing/long_read_wgs_manifest.tsv`, `collections/longread-sequencing/long_read_wgs_papers.xlsx`, and `scripts/download_long_read_wgs.sh`.
+For the current Long Read WGS starter corpus, see `collections/Multi_Omics/long_read_wgs_manifest.tsv`, `collections/Multi_Omics/long_read_wgs_papers.xlsx`, and `scripts/download_long_read_wgs.sh`.
 
 ## Collections
 
@@ -17,10 +17,9 @@ You can keep separate research domains in separate collection workspaces under `
 
 ```text
 collections/
-├── longread-sequencing/
-├── organoid/
-├── single-cell-sequencing/
-└── single-cell-ai-models/
+├── Deeplearning_Model/
+├── Multi_Omics/
+└── Organoid/
 ```
 
 Each collection keeps its own `raw/`, `wiki/`, and `wiki_html/`, so unrelated topics do not mix.
@@ -52,19 +51,19 @@ paper_collect/
 Check the workspace status:
 
 ```bash
-python3 scripts/wiki.py --collection longread-sequencing status
+python3 scripts/wiki.py --collection Multi_Omics status
 ```
 
 Add a source file into the immutable raw collection:
 
 ```bash
-python3 scripts/wiki.py --collection organoid add-source /absolute/path/to/paper.pdf --title "Paper Title" --kind paper
+python3 scripts/wiki.py --collection Organoid add-source /absolute/path/to/paper.pdf --title "Paper Title" --kind paper
 ```
 
 Add a source and immediately create OpenDataLoader helper artifacts:
 
 ```bash
-python3 scripts/wiki.py --collection organoid add-source /absolute/path/to/paper.pdf \
+python3 scripts/wiki.py --collection Organoid add-source /absolute/path/to/paper.pdf \
   --title "Paper Title" \
   --kind paper \
   --parse-with-opendataloader \
@@ -74,21 +73,21 @@ python3 scripts/wiki.py --collection organoid add-source /absolute/path/to/paper
 Parse an existing raw source later:
 
 ```bash
-python3 scripts/wiki.py --collection organoid parse-source \
-  collections/organoid/raw/sources/example.pdf \
+python3 scripts/wiki.py --collection Organoid parse-source \
+  collections/Organoid/raw/sources/example.pdf \
   --parse-format json,markdown
 ```
 
 Parse every source in a collection and skip ones that are already done:
 
 ```bash
-python3 scripts/wiki.py --collection organoid parse-all-sources --only-missing
+python3 scripts/wiki.py --collection Organoid parse-all-sources --only-missing
 ```
 
 Create a query page for a research question:
 
 ```bash
-python3 scripts/wiki.py --collection single-cell-ai-models new-query "compare retrieval strategies" --question "How does persistent synthesis differ from plain RAG?"
+python3 scripts/wiki.py --collection Deeplearning_Model new-query "compare retrieval strategies" --question "How does persistent synthesis differ from plain RAG?"
 ```
 
 Then ask Codex to do the knowledge work, for example:
@@ -106,18 +105,18 @@ Re-download the curated Long Read WGS starter corpus:
 Normalize the Long Read WGS corpus filenames and rebuild the spreadsheet:
 
 ```bash
-python3 scripts/organize_long_read_wgs.py --collection longread-sequencing
+python3 scripts/organize_long_read_wgs.py --collection Multi_Omics
 ```
 
 Render the Markdown wiki as a static HTML site:
 
 ```bash
-python3 scripts/render_wiki_html.py --collection longread-sequencing
+python3 scripts/render_wiki_html.py --collection Multi_Omics
 ```
 
 This also refreshes the top-level `index.html` collection hub automatically.
 
-Then open `collections/longread-sequencing/wiki_html/index.html`.
+Then open `collections/Multi_Omics/wiki_html/index.html`.
 
 If your local HTML preview blocks navigation between pages, use the built-in localhost viewer instead:
 
@@ -199,14 +198,14 @@ If you also want each successful wiki update to be committed and pushed to GitHu
 python3 scripts/watch_wiki_html.py start --git-auto-sync
 ```
 
-This stages only the changed collection files, creates an automatic commit, and pushes it to the current branch's `origin` remote after a successful rerender.
+This stages only the changed collection source files, creates an automatic commit, and pushes it to the current branch's `origin` remote after a successful rerender. The GitHub Pages workflow then rebuilds the public site from those pushed sources.
 
 If you want a collection-scoped watcher instead:
 
 ```bash
-python3 scripts/watch_wiki_html.py --collection longread-sequencing start
-python3 scripts/watch_wiki_html.py --collection longread-sequencing status
-python3 scripts/watch_wiki_html.py --collection longread-sequencing stop
+python3 scripts/watch_wiki_html.py --collection Multi_Omics start
+python3 scripts/watch_wiki_html.py --collection Multi_Omics status
+python3 scripts/watch_wiki_html.py --collection Multi_Omics stop
 ```
 
 The root watcher writes logs to `.render_watcher.log`. Collection-scoped watchers write logs to `collections/<collection>/wiki_html/render_watcher.log`.
@@ -216,9 +215,9 @@ The localhost viewer writes its PID and log to `.wiki_html_server.pid` and `.wik
 Create a new empty collection scaffold:
 
 ```bash
-python3 scripts/wiki.py --collection organoid init
-python3 scripts/wiki.py --collection single-cell-sequencing init
-python3 scripts/wiki.py --collection single-cell-ai-models init
+python3 scripts/wiki.py --collection Organoid init
+python3 scripts/wiki.py --collection Multi_Omics init
+python3 scripts/wiki.py --collection Deeplearning_Model init
 ```
 
 ## Suggested Workflow
@@ -229,6 +228,19 @@ python3 scripts/wiki.py --collection single-cell-ai-models init
 4. Let Codex update `wiki/sources/`, `wiki/entities/`, `wiki/concepts/`, `wiki/index.md`, and `wiki/log.md`.
 5. Ask questions against the wiki and save good answers in `wiki/queries/` or `wiki/syntheses/`.
 6. Occasionally ask Codex to lint the wiki for stale claims, missing cross-links, and contradictions.
+
+## Resuming After Context Loss
+
+If a chat session loses context, use the collection-scoped resume view first:
+
+```bash
+python3 scripts/wiki.py --collection Organoid resume
+python3 scripts/wiki.py --collection Multi_Omics resume
+```
+
+The `resume` command prints the key wiki entry points, recent log entries, latest query/synthesis pages, and any backlog where `raw/sources/` has not yet been turned into `wiki/sources/` or OpenDataLoader helper artifacts.
+
+For a human-readable project handoff, also read `WORKFLOW_CHECKPOINT.md`.
 
 ## OpenDataLoader Integration
 

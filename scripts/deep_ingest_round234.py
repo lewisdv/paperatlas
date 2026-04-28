@@ -15,7 +15,8 @@ import tempfile
 from pathlib import Path
 from typing import Optional
 
-ROOT = Path("/Users/davin/paper_collect/collections/organoid")
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+ROOT = PROJECT_ROOT / "collections" / "organoid"
 RAW_DIR = ROOT / "raw" / "sources"
 CACHE_DIR = ROOT / "raw" / "ingest_cache_round234"
 CACHE_DIR.mkdir(exist_ok=True)

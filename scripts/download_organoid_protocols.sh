@@ -3,7 +3,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-COLLECTION_DIR="${1:-$ROOT_DIR/collections/organoid}"
+COLLECTION_DIR="${1:-$ROOT_DIR/collections/Organoid}"
 MANIFEST="$COLLECTION_DIR/organoid_protocols_manifest.tsv"
 TARGET_DIR="$COLLECTION_DIR/raw/sources"
 USER_AGENT="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0 Safari/537.36"

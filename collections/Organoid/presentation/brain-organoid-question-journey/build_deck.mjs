@@ -46,15 +46,15 @@ const FALLBACK_PLATE_DATA_URL =
   "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+/p9sAAAAASUVORK5CYII=";
 
 const SOURCES = {
-  overview: "collections/organoid/wiki/overview.md",
-  index: "collections/organoid/wiki/index.md",
-  q1: "collections/organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md",
-  q2: "collections/organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md",
-  q3: "collections/organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md",
-  conceptSubregion: "collections/organoid/wiki/concepts/brain-subregion-specific-organoid-protocols.md",
-  conceptBench: "collections/organoid/wiki/concepts/brain-organoid-fidelity-reproducibility-and-atlases.md",
-  conceptPattern: "collections/organoid/wiki/concepts/brain-organoid-patterning-and-assembloids.md",
-  synthBaseline: "collections/organoid/wiki/syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md",
+  overview: "collections/Organoid/wiki/overview.md",
+  index: "collections/Organoid/wiki/index.md",
+  q1: "collections/Organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md",
+  q2: "collections/Organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md",
+  q3: "collections/Organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md",
+  conceptSubregion: "collections/Organoid/wiki/concepts/brain-subregion-specific-organoid-protocols.md",
+  conceptBench: "collections/Organoid/wiki/concepts/brain-organoid-fidelity-reproducibility-and-atlases.md",
+  conceptPattern: "collections/Organoid/wiki/concepts/brain-organoid-patterning-and-assembloids.md",
+  synthBaseline: "collections/Organoid/wiki/syntheses/20260424_organoid-developmental-baseline-and-regionalization-playbook.md",
   lancaster: "Lancaster 2014 | Generation of cerebral organoids from human pluripotent stem cells",
   sloan: "Sloan 2018 | Generation and assembly of human brain region-specific three-dimensional cultures",
   fitzgerald: "Fitzgerald 2024 | Generation of semi-guided cortical organoids with complex neural oscillations",
@@ -544,7 +544,7 @@ function addHeader(slide, slideNo, kicker, idx, total) {
   addShape(slide, "ellipse", 57, 57, 16, 16, ACCENT, INK, 2, { slideNo, role: "header marker" });
 }
 
-function addFooter(slide, slideNo, text = "paper_collect / organoid collection / LLM-wiki workflow") {
+function addFooter(slide, slideNo, text = "paperatlas / Organoid collection / LLM-wiki workflow") {
   addText(slide, slideNo, text, 64, 684, 900, 18, {
     size: 10,
     color: MUTED,
@@ -998,7 +998,7 @@ async function slideGraphSubregion(presentation, data, slideNo, idx) {
     204,
     738,
     428,
-    "collections/organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md",
+    "collections/Organoid/wiki/queries/20260408_174047_brain-subregion-protocol-comparison.md",
     "Q1 local graph",
   );
   addFooter(slide, slideNo, "우측 패널: Q1 query note의 Obsidian local graph 삽입 위치");
@@ -1174,7 +1174,7 @@ async function slideGraphBenchmark(presentation, data, slideNo, idx) {
     204,
     738,
     428,
-    "collections/organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md",
+    "collections/Organoid/wiki/queries/20260409_brain-protocol-maturation-synchronization.md",
     "Q2 local graph",
   );
   addFooter(slide, slideNo, "우측 패널: Q2 query note의 Obsidian local graph 삽입 위치");
@@ -1300,7 +1300,7 @@ async function slideReadout(presentation, data, slideNo, idx) {
     204,
     738,
     428,
-    "collections/organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md",
+    "collections/Organoid/wiki/queries/20260420_172825_brain-functional-readout-selection.md",
     "Q3 local graph",
   );
   addFooter(slide, slideNo, "우측 패널: Q3 query note의 Obsidian local graph 삽입 위치");

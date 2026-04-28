@@ -5998,7 +5998,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument(
         "--collection",
-        help="Collection name under collections/, for example longread-sequencing or organoid.",
+        help="Collection name under collections/, for example Multi_Omics or Organoid.",
     )
     parser.add_argument(
         "--workspace",
@@ -6027,7 +6027,7 @@ def main():
     workspace = resolve_workspace(
         collection=args.collection,
         workspace=args.workspace,
-        default_collection="longread-sequencing",
+        default_collection="Multi_Omics",
     )
     if workspace.root == PROJECT_ROOT and not (workspace.root / "wiki").exists():
         output_path = render_root_hub()

@@ -51,8 +51,14 @@ def unique_preserving_order(items: Iterable[str]) -> List[str]:
     return ordered
 
 
-def project_sync_pathspecs(paths: List[str]) -> List[str]:
-    collection_specs = [f"collections/{key}" for key in sorted(changed_collections(paths))]
+def project_sync_pathspecs(paths: List[str], *, include_all_collections: bool = False) -> List[str]:
+    if include_all_collections:
+        collection_specs = [
+            f"collections/{workspace.key}" for workspace in list_collection_workspaces()
+        ]
+    else:
+        collection_specs = [f"collections/{key}" for key in sorted(changed_collections(paths))]
+
     return unique_preserving_order(collection_specs)
 
 
@@ -562,13 +568,14 @@ def watch_loop(interval: float, settle_seconds: float, git_auto_sync_enabled: bo
         paths = changed_paths(baseline, stabilized)
         baseline = stabilized
         if PROJECT_MODE:
-            sync_pathspecs = project_sync_pathspecs(paths)
             if needs_full_project_render(paths):
+                sync_pathspecs = project_sync_pathspecs(paths, include_all_collections=True)
                 render_result = render_project_site()
                 if git_auto_sync_enabled and render_result == 0:
                     git_auto_sync(sync_pathspecs)
                 continue
 
+            sync_pathspecs = project_sync_pathspecs(paths)
             touched_collections = changed_collections(paths)
             existing_workspaces = {workspace.key: workspace for workspace in list_collection_workspaces()}
             collection_failures = 0
@@ -676,7 +683,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--collection",
-        help="Collection name under collections/, for example longread-sequencing or organoid.",
+        help="Collection name under collections/, for example Multi_Omics or Organoid.",
     )
     parser.add_argument(
         "--workspace",
@@ -711,7 +718,7 @@ def main() -> int:
         workspace = resolve_workspace(
             collection=args.collection,
             workspace=args.workspace,
-            default_collection="longread-sequencing",
+            default_collection="Multi_Omics",
         )
         configure_workspace(workspace.root)
     else:

@@ -28,6 +28,7 @@ SYNTHESIS_DIR = WIKI_DIR / "syntheses"
 INDEX_PATH = WIKI_DIR / "index.md"
 LOG_PATH = WIKI_DIR / "log.md"
 OVERVIEW_PATH = WIKI_DIR / "overview.md"
+PRUNED_STATUS = "pruned"
 
 REQUIRED_DIRS = [
     SOURCE_DIR,
@@ -84,11 +85,34 @@ def repo_rel(path):
     return path.resolve().relative_to(ROOT)
 
 
+def display_rel(path):
+    resolved = Path(path).resolve()
+    try:
+        return repo_rel(resolved).as_posix()
+    except ValueError:
+        return str(path)
+
+
 def slugify(text):
     lowered = text.strip().lower()
     normalized = re.sub(r"[^a-z0-9]+", "-", lowered)
     normalized = normalized.strip("-")
     return normalized or "item"
+
+
+def parse_frontmatter(text):
+    if not text.startswith("---\n"):
+        return {}
+    parts = text.split("---\n", 2)
+    if len(parts) < 3:
+        return {}
+    data = {}
+    for line in parts[1].splitlines():
+        if ":" not in line:
+            continue
+        key, value = line.split(":", 1)
+        data[key.strip()] = value.strip()
+    return data
 
 
 def ensure_layout():
@@ -165,6 +189,89 @@ def append_log(kind, title, bullets):
 
 def count_files(directory, pattern="*"):
     return sum(1 for path in directory.rglob(pattern) if path.is_file())
+
+
+def recent_log_headers(limit=5):
+    if limit <= 0:
+        return []
+    log_lines = LOG_PATH.read_text(encoding="utf-8").splitlines()
+    return [line for line in log_lines if line.startswith("## [")][-limit:]
+
+
+def recent_markdown_pages(directory, limit=5):
+    if limit <= 0:
+        return []
+    pages = [path for path in directory.glob("*.md") if path.is_file()]
+    pages.sort(key=lambda path: (path.stat().st_mtime, path.name))
+    return pages[-limit:]
+
+
+def registered_source_markers():
+    registered = set()
+    for path in SOURCE_PAGES_DIR.glob("*.md"):
+        if not path.is_file():
+            continue
+        registered.add(path.stem)
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        match = re.search(r"^raw_source:\s*(.+?)\s*$", text, flags=re.MULTILINE)
+        if not match:
+            continue
+        raw_name = Path(match.group(1).strip()).name
+        if raw_name:
+            registered.add(raw_name)
+            registered.add(Path(raw_name).stem)
+    return registered
+
+
+def source_page_frontmatters():
+    rows = []
+    for path in sorted(SOURCE_PAGES_DIR.glob("*.md")):
+        if not path.is_file():
+            continue
+        try:
+            text = path.read_text(encoding="utf-8")
+        except OSError:
+            continue
+        rows.append((path, parse_frontmatter(text)))
+    return rows
+
+
+def active_and_pruned_source_counts():
+    active = 0
+    pruned = 0
+    for _path, frontmatter in source_page_frontmatters():
+        if frontmatter.get("status") == PRUNED_STATUS:
+            pruned += 1
+        else:
+            active += 1
+    return active, pruned
+
+
+def missing_source_pages():
+    registered = registered_source_markers()
+    missing = []
+    for path in sorted(SOURCE_DIR.iterdir(), key=lambda item: item.name.lower()):
+        if not path.is_file():
+            continue
+        if path.name not in registered and path.stem not in registered:
+            missing.append(path)
+    return missing
+
+
+def missing_parsed_sources():
+    parsed_stems = {path.name for path in OPENDATALOADER_DIR.iterdir() if path.is_dir()}
+    missing = []
+    for path in sorted(SOURCE_DIR.iterdir(), key=lambda item: item.name.lower()):
+        if not path.is_file():
+            continue
+        if path.suffix.lower() != ".pdf":
+            continue
+        if path.stem not in parsed_stems:
+            missing.append(path)
+    return missing
 
 
 def unique_path(path):
@@ -384,12 +491,32 @@ def run_opendataloader_parse(source_path, format_value, use_struct_tree=False, h
         json.dumps(manifest, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
+    command_display = " ".join(
+        [
+            display_rel(executable),
+            display_rel(source_path),
+            "-o",
+            display_rel(output_dir),
+            "-f",
+            format_value,
+            *(
+                ["--use-struct-tree"]
+                if use_struct_tree
+                else []
+            ),
+            *(
+                ["--hybrid", hybrid_backend]
+                if hybrid_backend
+                else []
+            ),
+        ]
+    )
 
     return {
         "output_dir": output_dir,
         "manifest_path": manifest_path,
         "generated_files": generated_files,
-        "command_text": " ".join(command),
+        "command_text": command_display,
     }
 
 
@@ -565,14 +692,13 @@ def command_status(_args):
 
     raw_count = count_files(SOURCE_DIR)
     parsed_dir_count = sum(1 for path in OPENDATALOADER_DIR.glob("*") if path.is_dir())
-    source_page_count = count_files(SOURCE_PAGES_DIR, "*.md")
+    source_page_count, pruned_source_count = active_and_pruned_source_counts()
     entity_count = count_files(ENTITY_DIR, "*.md")
     concept_count = count_files(CONCEPT_DIR, "*.md")
     query_count = count_files(QUERY_DIR, "*.md")
     synthesis_count = count_files(SYNTHESIS_DIR, "*.md")
 
-    log_lines = LOG_PATH.read_text(encoding="utf-8").splitlines()
-    recent = [line for line in log_lines if line.startswith("## [")][-5:]
+    recent = recent_log_headers(limit=5)
 
     print("paper_collect status")
     print("")
@@ -580,6 +706,7 @@ def command_status(_args):
     print("raw sources: %d" % raw_count)
     print("parsed sources (OpenDataLoader): %d" % parsed_dir_count)
     print("source pages: %d" % source_page_count)
+    print("pruned source pages: %d" % pruned_source_count)
     print("entity pages: %d" % entity_count)
     print("concept pages: %d" % concept_count)
     print("query pages: %d" % query_count)
@@ -595,6 +722,77 @@ def command_status(_args):
         print("recent log entries:")
         for line in recent:
             print("- %s" % line[3:])
+
+    return 0
+
+
+def command_resume(args):
+    ensure_layout()
+
+    limit = max(args.limit, 1)
+    recent = recent_log_headers(limit=limit)
+    recent_queries = recent_markdown_pages(QUERY_DIR, limit=limit)
+    recent_syntheses = recent_markdown_pages(SYNTHESIS_DIR, limit=limit)
+    pending_pages = missing_source_pages()
+    pending_parsed = missing_parsed_sources()
+    _active_source_count, pruned_source_count = active_and_pruned_source_counts()
+
+    print("paper_collect resume")
+    print("")
+    print("root: %s" % ROOT)
+    print("")
+    print("start here:")
+    print("- %s" % repo_rel(OVERVIEW_PATH))
+    print("- %s" % repo_rel(INDEX_PATH))
+    print("- %s" % repo_rel(LOG_PATH))
+
+    if recent_queries:
+        print("")
+        print("recent query pages:")
+        for path in recent_queries:
+            print("- %s" % repo_rel(path))
+
+    if recent_syntheses:
+        print("")
+        print("recent synthesis pages:")
+        for path in recent_syntheses:
+            print("- %s" % repo_rel(path))
+
+    if recent:
+        print("")
+        print("recent log entries:")
+        for line in recent:
+            print("- %s" % line[3:])
+
+    print("")
+    print("open backlog:")
+    print("- raw sources without wiki pages: %d" % len(pending_pages))
+    if pending_pages:
+        for path in pending_pages[:limit]:
+            print("  - %s" % repo_rel(path))
+        if len(pending_pages) > limit:
+            print("  - ... %d more" % (len(pending_pages) - limit))
+    print("- PDF sources without OpenDataLoader artifacts: %d" % len(pending_parsed))
+    if pending_parsed:
+        for path in pending_parsed[:limit]:
+            print("  - %s" % repo_rel(path))
+        if len(pending_parsed) > limit:
+            print("  - ... %d more" % (len(pending_parsed) - limit))
+    print("- pruned source pages excluded from the active corpus: %d" % pruned_source_count)
+
+    print("")
+    print("next moves:")
+    if pending_pages:
+        print("- Register and ingest the queued raw sources above before expanding concepts or new query layers.")
+        print("- After each ingest, update wiki/index.md, wiki/overview.md, and wiki/log.md if the collection picture changed.")
+    elif pending_parsed:
+        print("- Run parse-source or parse-all-sources --only-missing for the PDFs above when layout-sensitive extraction would help.")
+        print("- Then continue deepening concept/query pages from the refreshed source pages.")
+    elif recent_queries:
+        print("- Continue from the newest saved query pages above and fold stable decision rules back into concepts or a synthesis page.")
+        print("- Keep answers knowledge-base-first: use only this collection's wiki and raw sources unless explicitly told otherwise.")
+    else:
+        print("- Add a new source with add-source or create a saved question with new-query, depending on whether you are expanding corpus or analysis.")
 
     return 0
 
@@ -733,7 +931,7 @@ def build_parser():
     parser = argparse.ArgumentParser(description="Manage the paper_collect wiki workspace.")
     parser.add_argument(
         "--collection",
-        help="Collection name under collections/, for example longread-sequencing or organoid.",
+        help="Collection name under collections/, for example Multi_Omics or Organoid.",
     )
     parser.add_argument(
         "--workspace",
@@ -746,6 +944,18 @@ def build_parser():
 
     status_parser = subparsers.add_parser("status", help="Show workspace status.")
     status_parser.set_defaults(func=command_status)
+
+    resume_parser = subparsers.add_parser(
+        "resume",
+        help="Show the fastest way to recover context for the current workspace.",
+    )
+    resume_parser.add_argument(
+        "--limit",
+        type=int,
+        default=5,
+        help="Maximum number of recent or pending items to show per section.",
+    )
+    resume_parser.set_defaults(func=command_resume)
 
     add_source_parser = subparsers.add_parser("add-source", help="Copy a source into raw/sources and create a stub source page.")
     add_source_parser.add_argument("path", help="Path to a local file.")
@@ -880,7 +1090,7 @@ def main():
     workspace = resolve_workspace(
         collection=args.collection,
         workspace=args.workspace,
-        default_collection="longread-sequencing",
+        default_collection="Multi_Omics",
     )
     configure_workspace(workspace.root)
     return args.func(args)
