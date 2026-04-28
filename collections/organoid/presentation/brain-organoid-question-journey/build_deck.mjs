@@ -2,14 +2,16 @@ const fs = await import("node:fs/promises");
 const path = await import("node:path");
 const { execFile } = await import("node:child_process");
 const { promisify } = await import("node:util");
+const { fileURLToPath } = await import("node:url");
 const { Presentation, PresentationFile } = await import("@oai/artifact-tool");
 
 const W = 1280;
 const H = 720;
 
 const DECK_ID = "brain-organoid-question-journey";
-const OUT_DIR = "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/outputs";
-const REF_DIR = "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/references";
+const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
+const OUT_DIR = path.join(SCRIPT_DIR, "outputs");
+const REF_DIR = path.join(SCRIPT_DIR, "references");
 const SCRATCH_DIR = path.resolve(process.env.PPTX_SCRATCH_DIR || path.join("tmp", "slides", DECK_ID));
 const PREVIEW_DIR = path.join(SCRATCH_DIR, "preview");
 const VERIFICATION_DIR = path.join(SCRATCH_DIR, "verification");
@@ -1488,7 +1490,7 @@ async function saveBlobToFile(blob, filePath) {
 }
 
 async function patchExportedPptxFonts(pptxPath) {
-  const patcherPath = "/Users/davin/paper_collect/collections/organoid/presentation/brain-organoid-question-journey/patch_pptx_theme_fonts.py";
+  const patcherPath = path.join(SCRIPT_DIR, "patch_pptx_theme_fonts.py");
   await execFileAsync(process.env.PPTX_PYTHON || "python3", [
     patcherPath,
     pptxPath,
