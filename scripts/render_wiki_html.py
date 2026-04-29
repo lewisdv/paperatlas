@@ -10,7 +10,7 @@ import shutil
 from dataclasses import dataclass
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Dict, List, Optional, Set, Tuple
 
 from jinja2 import Template
 from workspace import PROJECT_ROOT, list_collection_workspaces, read_collection_metadata, resolve_workspace
@@ -34,6 +34,8 @@ GRAPH_VIEWBOX_WIDTH = 1080
 GRAPH_VIEWBOX_HEIGHT = 720
 PUBLIC_SITE_MODE = False
 PUBLIC_SITE_INCLUDE_PDFS = False
+ACTIVE_TAXONOMY_KEY = "generic"
+ACTIVE_TAXONOMY: Dict[str, object] = {}
 
 
 def configure_workspace(root: Path, title: str, description: str) -> None:
@@ -47,6 +49,7 @@ def configure_workspace(root: Path, title: str, description: str) -> None:
     STYLE_PATH = ASSETS_DIR / "style.css"
     WORKSPACE_TITLE = title
     WORKSPACE_DESCRIPTION = description
+    configure_collection_taxonomy(root)
 
 
 def configure_render_mode(*, public_site: bool, include_pdfs: bool) -> None:
@@ -281,7 +284,7 @@ UI_TRANSLATIONS = {
     },
 }
 
-LABEL_TRANSLATIONS = {
+COMMON_LABEL_TRANSLATIONS = {
     "ko": {
         "Overview": "개요",
         "Index Note": "인덱스 노트",
@@ -299,33 +302,7 @@ LABEL_TRANSLATIONS = {
         "Queued": "대기 중",
         "Open": "열림",
         "Ingested": "인제스트 완료",
-        "Brain": "뇌",
-        "Colon / Intestine": "대장 / 장",
-        "Kidney": "신장",
-        "Heart": "심장",
-        "Liver": "간",
-        "Pancreas / Biliary": "췌장 / 담도",
-        "Lung": "폐",
-        "Tumor / Cancer": "종양 / 암",
-        "Breast": "유방",
-        "Prostate": "전립선",
-        "Rare Disease": "희귀질환",
-        "Clinical": "임상",
-        "Population": "집단",
-        "Single Cell": "단일세포",
-        "Structural Variation": "구조변이",
-        "Benchmark": "벤치마크",
-        "Methylation": "메틸레이션",
-        "HiFi": "HiFi",
-        "ONT": "ONT",
-        "Biobank": "바이오뱅크",
-        "Assembloid": "어셈블로이드",
-        "Neuronal Migration": "신경세포 이동",
-        "ALI Slice Culture": "ALI 슬라이스 배양",
-        "Long-Term Maturation": "장기 성숙화",
-        "Gene Editing": "유전자 편집",
-        "Transplantation": "이식",
-        "Coculture": "공배양",
+        "Other": "기타",
         "Other Papers": "기타 논문",
         "Direct Wiki Link": "직접 위키 링크",
         "raw source": "원본 파일",
@@ -3996,46 +3973,7 @@ pre code {
 """
 
 
-KEYWORD_TAGS = [
-    ([r"\brare diseases?\b"], "Rare Disease"),
-    ([r"\bclinical\b", r"\bdiagnostic\b", r"\bpatients?\b"], "Clinical"),
-    ([r"\bpopulation\b", r"\bcohort\b", r"\batlas\b"], "Population"),
-    ([r"\bbiobank\b", r"\ball of us\b"], "Biobank"),
-    ([r"\bbenchmark\b", r"\bcomparative\b", r"\bcomparison\b", r"\bpilot\b"], "Benchmark"),
-    ([r"\bmethylation\b"], "Methylation"),
-    ([r"\bsingle-cell\b", r"\bsingle cell\b"], "Single Cell"),
-    ([r"\bhifi\b"], "HiFi"),
-    ([r"\bont\b", r"\bnanopore\b", r"\boxford nanopore\b"], "ONT"),
-    (
-        [r"\bstructural variation\b", r"\bstructural variants?\b", r"\bsvs?\b"],
-        "Structural Variation",
-    ),
-    ([r"\bbrain\b", r"\bcerebral\b", r"\bforebrain\b", r"\bcortical\b", r"\btelencephalic\b"], "Brain"),
-    (
-        [r"\bintestinal\b", r"\bgastrointestinal\b", r"\bcolon\b", r"\bcolonic\b", r"\bcolitis\b"],
-        "Colon / Intestine",
-    ),
-    ([r"\bkidney\b", r"\bnephron\b", r"\bnephric\b", r"\bproximal tubule\b", r"\bureteric bud\b"], "Kidney"),
-    ([r"\bheart\b", r"\bcardiac\b", r"\bheart-forming\b"], "Heart"),
-    ([r"\bliver\b", r"\bhepatic\b", r"\bhepatocyte\b"], "Liver"),
-    ([r"\bpancreas\b", r"\bpancreatic\b", r"\bbiliary\b"], "Pancreas / Biliary"),
-    ([r"\blung\b", r"\bpulmonary\b", r"\binterstitial lung disease\b"], "Lung"),
-    ([r"\bbreast\b"], "Breast"),
-    ([r"\bprostate\b"], "Prostate"),
-    ([r"\btumou?r\b", r"\bcancer\b", r"\bdrug screening\b", r"\bdrug-screening\b"], "Tumor / Cancer"),
-    ([r"\bassembloid\b", r"\bassembly\b"], "Assembloid"),
-    ([r"\bmigration\b", r"\binterneuron\b"], "Neuronal Migration"),
-    (
-        [r"\bair.?liquid interface\b", r"\bali(?:-co)?\b", r"\bslice culture\b"],
-        "ALI Slice Culture",
-    ),
-    ([r"\blong-term culture\b", r"\bneuronal maturation\b", r"\bmaturation\b"], "Long-Term Maturation"),
-    ([r"\bcrisp?r\b", r"\bknockin\b", r"\bknockout\b", r"\bgene editing\b"], "Gene Editing"),
-    ([r"\btransplantation\b", r"\bxenotransplantation\b"], "Transplantation"),
-    ([r"\bcoculture\b", r"\bco-culture\b", r"\bmicrobes?\b", r"\bt-cell\b"], "Coculture"),
-]
-
-GRAPH_TAG_EXCLUDES = {
+DEFAULT_GRAPH_TAG_EXCLUDES: Set[str] = {
     "Paper",
     "Article",
     "Book",
@@ -4050,37 +3988,7 @@ GRAPH_TAG_EXCLUDES = {
     "Synthesis",
 }
 
-GRAPH_GROUP_PRIORITY = [
-    "Brain",
-    "Colon / Intestine",
-    "Kidney",
-    "Heart",
-    "Liver",
-    "Pancreas / Biliary",
-    "Lung",
-    "Tumor / Cancer",
-    "Breast",
-    "Prostate",
-    "Rare Disease",
-    "Clinical",
-    "Population",
-    "Single Cell",
-    "Structural Variation",
-    "Benchmark",
-    "Methylation",
-    "HiFi",
-    "ONT",
-    "Biobank",
-    "Assembloid",
-    "Neuronal Migration",
-    "ALI Slice Culture",
-    "Long-Term Maturation",
-    "Gene Editing",
-    "Transplantation",
-    "Coculture",
-]
-
-GRAPH_GROUP_PALETTE = [
+DEFAULT_GRAPH_GROUP_PALETTE = [
     "#7a3c2d",
     "#35636b",
     "#6d5c2c",
@@ -4093,36 +4001,348 @@ GRAPH_GROUP_PALETTE = [
     "#4f5f2d",
 ]
 
-GRAPH_THEME_PHRASES = {
-    "Brain": {"en": "brain region or lineage focus", "ko": "뇌 영역 또는 계통 초점"},
-    "Colon / Intestine": {"en": "gut lineage or intestinal context", "ko": "장 계통 또는 장기 맥락"},
-    "Kidney": {"en": "kidney segment or nephron context", "ko": "신장 분절 또는 nephron 맥락"},
-    "Heart": {"en": "cardiac lineage or heart-forming context", "ko": "심장 계통 또는 심장 형성 맥락"},
-    "Liver": {"en": "hepatic differentiation context", "ko": "간 분화 맥락"},
-    "Pancreas / Biliary": {"en": "pancreatic or biliary lineage focus", "ko": "췌장 또는 담도 계통 초점"},
-    "Lung": {"en": "lung lineage or airway context", "ko": "폐 계통 또는 기도 맥락"},
-    "Tumor / Cancer": {"en": "tumor or patient-derived disease context", "ko": "종양 또는 환자 유래 질환 맥락"},
-    "Breast": {"en": "breast organoid context", "ko": "유방 오가노이드 맥락"},
-    "Prostate": {"en": "prostate organoid context", "ko": "전립선 오가노이드 맥락"},
-    "Rare Disease": {"en": "rare-disease diagnostic setting", "ko": "희귀질환 진단 맥락"},
-    "Clinical": {"en": "clinical interpretation", "ko": "임상 해석"},
-    "Population": {"en": "population or cohort scale", "ko": "집단 또는 코호트 규모"},
-    "Single Cell": {"en": "single-cell readout", "ko": "단일세포 분석"},
-    "Structural Variation": {"en": "structural-variation focus", "ko": "구조변이 초점"},
-    "Benchmark": {"en": "benchmark or comparison design", "ko": "벤치마크 또는 비교 설계"},
-    "Methylation": {"en": "methylation readout", "ko": "메틸레이션 readout"},
-    "HiFi": {"en": "PacBio HiFi platform choice", "ko": "PacBio HiFi 플랫폼 선택"},
-    "ONT": {"en": "Oxford Nanopore platform choice", "ko": "Oxford Nanopore 플랫폼 선택"},
-    "Biobank": {"en": "biobank-scale sampling", "ko": "바이오뱅크 규모 샘플링"},
-    "Assembloid": {"en": "assembloid architecture", "ko": "어셈블로이드 구조"},
-    "Neuronal Migration": {"en": "neuronal migration biology", "ko": "신경세포 이동 생물학"},
-    "ALI Slice Culture": {"en": "ALI or slice-culture maturation strategy", "ko": "ALI 또는 슬라이스 배양 성숙화 전략"},
-    "Long-Term Maturation": {"en": "long-term maturation strategy", "ko": "장기 성숙화 전략"},
-    "Gene Editing": {"en": "gene-editing workflow", "ko": "유전자 편집 워크플로"},
-    "Transplantation": {"en": "transplantation assay context", "ko": "이식 실험 맥락"},
-    "Coculture": {"en": "coculture or microenvironment setup", "ko": "공배양 또는 미세환경 설정"},
-    "Other Papers": {"en": "paper-specific shared context", "ko": "논문별 공통 맥락"},
+
+def taxonomy_profile(
+    *,
+    keyword_tags: List[Tuple[List[str], str]],
+    core_keyword_tags: Optional[List[Tuple[List[str], str]]] = None,
+    graph_group_priority: List[str],
+    graph_theme_phrases: Dict[str, Dict[str, str]],
+    label_translations: Dict[str, str],
+    related_tag_map: Optional[Dict[str, List[str]]] = None,
+) -> Dict[str, object]:
+    return {
+        "keyword_tags": keyword_tags,
+        "core_keyword_tags": core_keyword_tags or [],
+        "graph_tag_excludes": DEFAULT_GRAPH_TAG_EXCLUDES,
+        "graph_group_priority": graph_group_priority,
+        "graph_group_palette": DEFAULT_GRAPH_GROUP_PALETTE,
+        "graph_theme_phrases": {
+            **graph_theme_phrases,
+            "Other Papers": {"en": "paper-specific shared context", "ko": "논문별 공통 맥락"},
+        },
+        "label_translations": {
+            **label_translations,
+            "Other Papers": "기타 논문",
+            "Direct Wiki Link": "직접 위키 링크",
+        },
+        "related_tag_map": related_tag_map or {},
+    }
+
+
+GENERIC_TAXONOMY = taxonomy_profile(
+    keyword_tags=[],
+    graph_group_priority=[],
+    graph_theme_phrases={},
+    label_translations={},
+)
+
+ORGANOID_TAXONOMY = taxonomy_profile(
+    keyword_tags=[
+        ([r"\bsingle-cell\b", r"\bsingle cell\b"], "Single Cell"),
+        ([r"\bclinical\b", r"\bdiagnostic\b", r"\bpatients?\b"], "Clinical"),
+        ([r"\bpopulation\b", r"\bcohort\b", r"\batlas\b"], "Population"),
+        ([r"\bbenchmark\b", r"\bcomparative\b", r"\bcomparison\b", r"\bpilot\b"], "Benchmark"),
+        ([r"\bbrain\b", r"\bcerebral\b", r"\bforebrain\b", r"\bcortical\b", r"\btelencephalic\b"], "Brain"),
+        (
+            [r"\bintestinal\b", r"\bgastrointestinal\b", r"\bcolon\b", r"\bcolonic\b", r"\bcolitis\b"],
+            "Colon / Intestine",
+        ),
+        ([r"\bkidney\b", r"\bnephron\b", r"\bnephric\b", r"\bproximal tubule\b", r"\bureteric bud\b"], "Kidney"),
+        ([r"\bheart\b", r"\bcardiac\b", r"\bheart-forming\b"], "Heart"),
+        ([r"\bliver\b", r"\bhepatic\b", r"\bhepatocyte\b"], "Liver"),
+        ([r"\bpancreas\b", r"\bpancreatic\b", r"\bbiliary\b"], "Pancreas / Biliary"),
+        ([r"\blung\b", r"\bpulmonary\b", r"\binterstitial lung disease\b"], "Lung"),
+        ([r"\bbreast\b"], "Breast"),
+        ([r"\bprostate\b"], "Prostate"),
+        ([r"\btumou?r\b", r"\bcancer\b", r"\bdrug screening\b", r"\bdrug-screening\b"], "Tumor / Cancer"),
+        ([r"\bassembloid\b", r"\bassembly\b"], "Assembloid"),
+        ([r"\bmigration\b", r"\binterneuron\b"], "Neuronal Migration"),
+        ([r"\bair.?liquid interface\b", r"\bali(?:-co)?\b", r"\bslice culture\b"], "ALI Slice Culture"),
+        ([r"\blong-term culture\b", r"\bneuronal maturation\b", r"\bmaturation\b"], "Long-Term Maturation"),
+        ([r"\bcrisp?r\b", r"\bknockin\b", r"\bknockout\b", r"\bgene editing\b"], "Gene Editing"),
+        ([r"\btransplantation\b", r"\bxenotransplantation\b"], "Transplantation"),
+        ([r"\bcoculture\b", r"\bco-culture\b", r"\bmicrobes?\b", r"\bt-cell\b"], "Coculture"),
+    ],
+    graph_group_priority=[
+        "Brain",
+        "Colon / Intestine",
+        "Kidney",
+        "Heart",
+        "Liver",
+        "Pancreas / Biliary",
+        "Lung",
+        "Tumor / Cancer",
+        "Breast",
+        "Prostate",
+        "Population",
+        "Clinical",
+        "Single Cell",
+        "Benchmark",
+        "Assembloid",
+        "Neuronal Migration",
+        "ALI Slice Culture",
+        "Long-Term Maturation",
+        "Gene Editing",
+        "Transplantation",
+        "Coculture",
+    ],
+    graph_theme_phrases={
+        "Brain": {"en": "brain region or lineage focus", "ko": "뇌 영역 또는 계통 초점"},
+        "Colon / Intestine": {"en": "gut lineage or intestinal context", "ko": "장 계통 또는 장기 맥락"},
+        "Kidney": {"en": "kidney segment or nephron context", "ko": "신장 분절 또는 nephron 맥락"},
+        "Heart": {"en": "cardiac lineage or heart-forming context", "ko": "심장 계통 또는 심장 형성 맥락"},
+        "Liver": {"en": "hepatic differentiation context", "ko": "간 분화 맥락"},
+        "Pancreas / Biliary": {"en": "pancreatic or biliary lineage focus", "ko": "췌장 또는 담도 계통 초점"},
+        "Lung": {"en": "lung lineage or airway context", "ko": "폐 계통 또는 기도 맥락"},
+        "Tumor / Cancer": {"en": "tumor or patient-derived disease context", "ko": "종양 또는 환자 유래 질환 맥락"},
+        "Breast": {"en": "breast organoid context", "ko": "유방 오가노이드 맥락"},
+        "Prostate": {"en": "prostate organoid context", "ko": "전립선 오가노이드 맥락"},
+        "Population": {"en": "atlas or cohort evidence", "ko": "아틀라스 또는 코호트 근거"},
+        "Clinical": {"en": "clinical interpretation", "ko": "임상 해석"},
+        "Single Cell": {"en": "single-cell readout", "ko": "단일세포 분석"},
+        "Benchmark": {"en": "benchmark or comparison design", "ko": "벤치마크 또는 비교 설계"},
+        "Assembloid": {"en": "assembloid architecture", "ko": "어셈블로이드 구조"},
+        "Neuronal Migration": {"en": "neuronal migration biology", "ko": "신경세포 이동 생물학"},
+        "ALI Slice Culture": {"en": "ALI or slice-culture maturation strategy", "ko": "ALI 또는 슬라이스 배양 성숙화 전략"},
+        "Long-Term Maturation": {"en": "long-term maturation strategy", "ko": "장기 성숙화 전략"},
+        "Gene Editing": {"en": "gene-editing workflow", "ko": "유전자 편집 워크플로"},
+        "Transplantation": {"en": "transplantation assay context", "ko": "이식 실험 맥락"},
+        "Coculture": {"en": "coculture or microenvironment setup", "ko": "공배양 또는 미세환경 설정"},
+    },
+    label_translations={
+        "Single Cell": "단일세포",
+        "Clinical": "임상",
+        "Population": "집단",
+        "Benchmark": "벤치마크",
+        "Brain": "뇌",
+        "Colon / Intestine": "대장 / 장",
+        "Kidney": "신장",
+        "Heart": "심장",
+        "Liver": "간",
+        "Pancreas / Biliary": "췌장 / 담도",
+        "Lung": "폐",
+        "Tumor / Cancer": "종양 / 암",
+        "Breast": "유방",
+        "Prostate": "전립선",
+        "Assembloid": "어셈블로이드",
+        "Neuronal Migration": "신경세포 이동",
+        "ALI Slice Culture": "ALI 슬라이스 배양",
+        "Long-Term Maturation": "장기 성숙화",
+        "Gene Editing": "유전자 편집",
+        "Transplantation": "이식",
+        "Coculture": "공배양",
+    },
+)
+
+MULTI_OMICS_TAXONOMY = taxonomy_profile(
+    keyword_tags=[
+        ([r"\brare diseases?\b"], "Rare Disease"),
+        ([r"\bclinical\b", r"\bdiagnostic\b", r"\bpatients?\b"], "Clinical"),
+        ([r"\bpopulation\b", r"\bcohort\b", r"\batlas\b"], "Population"),
+        ([r"\bbiobank\b", r"\ball of us\b"], "Biobank"),
+        ([r"\bbenchmark\b", r"\bcomparative\b", r"\bcomparison\b", r"\bpilot\b"], "Benchmark"),
+        ([r"\bmethylation\b"], "Methylation"),
+        ([r"\bsingle-cell\b", r"\bsingle cell\b"], "Single Cell"),
+        ([r"\bhifi\b"], "HiFi"),
+        ([r"\bont\b", r"\bnanopore\b", r"\boxford nanopore\b"], "ONT"),
+        ([r"\bstructural variation\b", r"\bstructural variants?\b", r"\bsvs?\b"], "Structural Variation"),
+    ],
+    graph_group_priority=[
+        "Structural Variation",
+        "Rare Disease",
+        "Clinical",
+        "Population",
+        "Biobank",
+        "Benchmark",
+        "Single Cell",
+        "Methylation",
+        "HiFi",
+        "ONT",
+    ],
+    graph_theme_phrases={
+        "Structural Variation": {"en": "structural-variation focus", "ko": "구조변이 초점"},
+        "Rare Disease": {"en": "rare-disease diagnostic setting", "ko": "희귀질환 진단 맥락"},
+        "Clinical": {"en": "clinical interpretation", "ko": "임상 해석"},
+        "Population": {"en": "population or cohort scale", "ko": "집단 또는 코호트 규모"},
+        "Biobank": {"en": "biobank-scale sampling", "ko": "바이오뱅크 규모 샘플링"},
+        "Benchmark": {"en": "benchmark or comparison design", "ko": "벤치마크 또는 비교 설계"},
+        "Single Cell": {"en": "single-cell readout", "ko": "단일세포 분석"},
+        "Methylation": {"en": "methylation readout", "ko": "메틸레이션 readout"},
+        "HiFi": {"en": "PacBio HiFi platform choice", "ko": "PacBio HiFi 플랫폼 선택"},
+        "ONT": {"en": "Oxford Nanopore platform choice", "ko": "Oxford Nanopore 플랫폼 선택"},
+    },
+    label_translations={
+        "Structural Variation": "구조변이",
+        "Rare Disease": "희귀질환",
+        "Clinical": "임상",
+        "Population": "집단",
+        "Biobank": "바이오뱅크",
+        "Benchmark": "벤치마크",
+        "Single Cell": "단일세포",
+        "Methylation": "메틸레이션",
+        "HiFi": "HiFi",
+        "ONT": "ONT",
+    },
+)
+
+DEEPLEARNING_MODEL_TAXONOMY = taxonomy_profile(
+    keyword_tags=[
+        ([r"\bpopulation\b", r"\bcohort\b", r"\batlas\b", r"\bindividuals?\b", r"\b23\.4-million-cell\b"], "Population"),
+        ([r"\b50 million\b", r"\bmore than 50 million\b", r"\bover 50 million\b", r"\bmillions of cells\b"], "Population"),
+        ([r"\bclinical\b", r"\bdisease prediction\b", r"\bpatients?\b", r"\brisk predictors?\b"], "Clinical"),
+        ([r"\bbiobank\b", r"\ball of us\b", r"\buk biobank\b"], "Biobank"),
+        ([r"\bbenchmark(?:ing)?\b", r"\bheld-out\b", r"\bmacro f1\b", r"\bcomparison\b", r"\bcompared with\b"], "Benchmark"),
+        ([r"\bsingle-cell\b", r"\bsingle cell\b", r"\bscrna-seq\b", r"\bsnrna-seq\b"], "Single Cell"),
+    ],
+    core_keyword_tags=[
+        (
+            [
+                r"\bbuilding a foundation model\b",
+                r"\blarge-scale foundation model\b",
+                r"\bread-depth-aware pretraining\b",
+                r"\bgenerative pretraining\b",
+                r"\bpretraining objective\b",
+            ],
+            "Foundation Model",
+        ),
+        (
+            [
+                r"\bgenerative ai framework\b",
+                r"\bmulti-condition single-cell generation\b",
+                r"\bcross-modality generation\b",
+                r"\bconditional flow matching\b",
+                r"\bdiffusion\b",
+                r"\bmissing modalities?\b",
+            ],
+            "Generative Modeling",
+        ),
+        ([r"\bperturbation responses?\b", r"\bcounterfactual\b"], "Perturbation"),
+        ([r"\bretrieval\b", r"\bsearch of similar human cells\b", r"\bsimilar human cells\b", r"\bnearest neighbou?r\b", r"\bcell-state search\b"], "Retrieval"),
+        ([r"\brna velocity\b", r"\bvelocity modules?\b", r"\bspliced and unspliced\b"], "RNA Velocity"),
+        ([r"\bcell fate\b", r"\btrajectory\b", r"\btemporal dynamics\b", r"\btranscriptional dynamics\b", r"\bposterior time\b"], "Temporal Dynamics"),
+        ([r"\boptimal transport\b", r"\btransport map\b"], "Optimal Transport"),
+        ([r"\blarge language models?\b", r"\bcell sentences\b", r"\bnatural-language\b"], "LLM"),
+        ([r"\bmulti-omics\b", r"\bmultimodal\b", r"\bcross-modality\b", r"\bmultiple modalities\b"], "Multimodal"),
+        ([r"\bread-depth\b", r"\bread depth\b", r"\bdownsampled\b", r"\bsequencing depth\b"], "Read Depth"),
+    ],
+    graph_group_priority=[
+        "Foundation Model",
+        "Retrieval",
+        "RNA Velocity",
+        "Generative Modeling",
+        "Optimal Transport",
+        "Perturbation",
+        "Multimodal",
+        "LLM",
+        "Read Depth",
+        "Temporal Dynamics",
+        "Population",
+        "Clinical",
+        "Biobank",
+        "Benchmark",
+        "Single Cell",
+    ],
+    graph_theme_phrases={
+        "Single Cell": {"en": "single-cell analysis focus", "ko": "단일세포 분석 초점"},
+        "Foundation Model": {"en": "foundation-model pretraining", "ko": "파운데이션 모델 사전학습"},
+        "Generative Modeling": {"en": "generative modeling workflow", "ko": "생성 모델링 워크플로"},
+        "Perturbation": {"en": "perturbation-response modeling", "ko": "섭동 반응 모델링"},
+        "Retrieval": {"en": "retrieval or similarity search", "ko": "검색 또는 유사도 탐색"},
+        "RNA Velocity": {"en": "RNA-velocity inference", "ko": "RNA velocity 추론"},
+        "Temporal Dynamics": {"en": "temporal dynamics modeling", "ko": "시간 동역학 모델링"},
+        "Optimal Transport": {"en": "optimal-transport mapping", "ko": "최적 수송 매핑"},
+        "LLM": {"en": "LLM-style cell representation", "ko": "LLM 기반 세포 표현"},
+        "Multimodal": {"en": "multimodal integration", "ko": "멀티모달 통합"},
+        "Read Depth": {"en": "read-depth-aware modeling", "ko": "read depth 인지 모델링"},
+        "Population": {"en": "population or atlas scale", "ko": "집단 또는 아틀라스 규모"},
+        "Clinical": {"en": "clinical or disease-prediction setting", "ko": "임상 또는 질병 예측 맥락"},
+        "Biobank": {"en": "biobank-scale cohort context", "ko": "바이오뱅크 규모 코호트 맥락"},
+        "Benchmark": {"en": "benchmark or evaluation design", "ko": "벤치마크 또는 평가 설계"},
+    },
+    label_translations={
+        "Single Cell": "단일세포",
+        "Foundation Model": "파운데이션 모델",
+        "Generative Modeling": "생성 모델링",
+        "Perturbation": "섭동",
+        "Retrieval": "검색",
+        "RNA Velocity": "RNA Velocity",
+        "Temporal Dynamics": "시간 동역학",
+        "Optimal Transport": "최적 수송",
+        "LLM": "LLM",
+        "Multimodal": "멀티모달",
+        "Read Depth": "Read Depth",
+        "Population": "집단",
+        "Clinical": "임상",
+        "Biobank": "바이오뱅크",
+        "Benchmark": "벤치마크",
+    },
+    related_tag_map={
+        "Cell Sentences": ["LLM", "Single Cell"],
+        "Cell-State Similarity Search": ["Retrieval", "Single Cell"],
+        "Cross-modality Generation": ["Multimodal", "Generative Modeling"],
+        "Gene Block Attention": ["Generative Modeling"],
+        "Neural Optimal Transport": ["Optimal Transport", "Perturbation"],
+        "Read-Depth-Aware Pretraining": ["Read Depth", "Foundation Model"],
+        "RNA Velocity Modules": ["RNA Velocity", "Temporal Dynamics"],
+        "Single-Cell Generative Pretraining": ["Single Cell", "Foundation Model", "Generative Modeling"],
+    },
+)
+
+TAXONOMY_PROFILES = {
+    "generic": GENERIC_TAXONOMY,
+    "organoid": ORGANOID_TAXONOMY,
+    "multi_omics": MULTI_OMICS_TAXONOMY,
+    "deeplearning_model": DEEPLEARNING_MODEL_TAXONOMY,
 }
+
+COLLECTION_TAXONOMY_ALIASES = {
+    "organoid": "organoid",
+    "multi_omics": "multi_omics",
+    "multi-omics": "multi_omics",
+    "longread-sequencing": "multi_omics",
+    "deeplearning_model": "deeplearning_model",
+    "deeplearning-model": "deeplearning_model",
+    "single-cell-ai-models": "deeplearning_model",
+}
+
+
+def configure_collection_taxonomy(root: Path) -> None:
+    global ACTIVE_TAXONOMY_KEY, ACTIVE_TAXONOMY
+
+    metadata = read_collection_metadata(root)
+    requested_key = slugify(str(metadata.get("dashboard_taxonomy") or "")).replace("-", "_")
+    fallback_key = slugify(str(metadata.get("title") or root.name)).replace("-", "_")
+    taxonomy_key = (
+        COLLECTION_TAXONOMY_ALIASES.get(requested_key)
+        or COLLECTION_TAXONOMY_ALIASES.get(fallback_key)
+        or "generic"
+    )
+    ACTIVE_TAXONOMY_KEY = taxonomy_key
+    ACTIVE_TAXONOMY = TAXONOMY_PROFILES[taxonomy_key]
+
+
+def active_taxonomy() -> Dict[str, object]:
+    return ACTIVE_TAXONOMY or GENERIC_TAXONOMY
+
+
+def active_graph_group_priority() -> List[str]:
+    return list(active_taxonomy().get("graph_group_priority") or [])
+
+
+def active_graph_theme_phrases() -> Dict[str, Dict[str, str]]:
+    return dict(active_taxonomy().get("graph_theme_phrases") or {})
+
+
+def active_label_translations() -> Dict[str, Dict[str, str]]:
+    profile_labels = dict(active_taxonomy().get("label_translations") or {})
+    return {
+        "en": {},
+        "ko": {
+            **COMMON_LABEL_TRANSLATIONS["ko"],
+            **profile_labels,
+        },
+    }
 
 
 @dataclass
@@ -4434,19 +4654,27 @@ def extract_related_concept_tags(body: str) -> List[str]:
     return labels
 
 
-def infer_keyword_tags(text: str) -> List[str]:
+def infer_keyword_tags(text: str, *, keyword_field: str = "keyword_tags") -> List[str]:
     lowered = text.lower()
     tags = []
-    for patterns, label in KEYWORD_TAGS:
+    for patterns, label in active_taxonomy().get(keyword_field, []):
         if any(re.search(pattern, lowered) for pattern in patterns):
             tags.append(label)
     return tags
 
 
+def infer_related_taxonomy_tags(related_tags: List[str]) -> List[str]:
+    related_map = active_taxonomy().get("related_tag_map") or {}
+    inferred: List[str] = []
+    for label in related_tags:
+        inferred.extend(related_map.get(label, []))
+    return inferred
+
+
 def extract_graph_tags(tags: List[str]) -> List[str]:
     graph_tags = []
     for tag in tags:
-        if tag in GRAPH_TAG_EXCLUDES:
+        if tag in active_taxonomy().get("graph_tag_excludes", DEFAULT_GRAPH_TAG_EXCLUDES):
             continue
         if tag.isdigit():
             continue
@@ -4455,7 +4683,7 @@ def extract_graph_tags(tags: List[str]) -> List[str]:
 
 
 def choose_graph_group(graph_tags: List[str]) -> str:
-    for label in GRAPH_GROUP_PRIORITY:
+    for label in active_graph_group_priority():
         if label in graph_tags:
             return label
     if graph_tags:
@@ -4482,12 +4710,14 @@ def build_graph_copy(paper_pages: List[Dict[str, object]]) -> Dict[str, Dict[str
     if isinstance(graph_copy_meta, dict) and "en" in graph_copy_meta and "ko" in graph_copy_meta:
         return graph_copy_meta
 
+    theme_phrases = active_graph_theme_phrases()
+    graph_priority = active_graph_group_priority()
     theme_counts: Dict[str, int] = {}
     for page in paper_pages:
         for tag in set(page.get("graph_tags") or []):
             if tag == "Other Papers":
                 continue
-            if tag not in GRAPH_THEME_PHRASES:
+            if tag not in theme_phrases:
                 continue
             theme_counts[tag] = theme_counts.get(tag, 0) + 1
 
@@ -4495,7 +4725,11 @@ def build_graph_copy(paper_pages: List[Dict[str, object]]) -> Dict[str, Dict[str
         label
         for label, _count in sorted(
             theme_counts.items(),
-            key=lambda item: (-item[1], GRAPH_GROUP_PRIORITY.index(item[0]) if item[0] in GRAPH_GROUP_PRIORITY else 999, item[0].lower()),
+            key=lambda item: (
+                -item[1],
+                graph_priority.index(item[0]) if item[0] in graph_priority else 999,
+                item[0].lower(),
+            ),
         )
         if _count > 1
     ]
@@ -4507,11 +4741,11 @@ def build_graph_copy(paper_pages: List[Dict[str, object]]) -> Dict[str, Dict[str
         ]
 
     theme_phrases_en = [
-        GRAPH_THEME_PHRASES.get(label, {}).get("en", label.lower())
+        theme_phrases.get(label, {}).get("en", label.lower())
         for label in top_groups[:4]
     ]
     theme_phrases_ko = [
-        GRAPH_THEME_PHRASES.get(label, {}).get("ko", label)
+        theme_phrases.get(label, {}).get("ko", label)
         for label in top_groups[:4]
     ]
 
@@ -4664,7 +4898,10 @@ def build_page(path: Path) -> Page:
     if metadata.get("status"):
         tag_set.add(metadata["status"].title())
     tag_set.update(related_tags)
-    tag_set.update(infer_keyword_tags(" ".join([title, excerpt, scope_line, body])))
+    tag_set.update(infer_related_taxonomy_tags(related_tags))
+    core_tag_text = " ".join([title, excerpt, scope_line])
+    tag_set.update(infer_keyword_tags(core_tag_text, keyword_field="core_keyword_tags"))
+    tag_set.update(infer_keyword_tags(" ".join([core_tag_text, body])))
 
     year = extract_year(rel_source, metadata)
     if year:
@@ -4985,10 +5222,11 @@ def render_initial_graph_svg(
         degrees[str(edge["source"])] = degrees.get(str(edge["source"]), 0) + strength
         degrees[str(edge["target"])] = degrees.get(str(edge["target"]), 0) + strength
 
+    graph_priority = active_graph_group_priority()
     groups = sorted(
         {str(page.get("graph_group") or "Other Papers") for page in paper_pages},
         key=lambda label: (
-            GRAPH_GROUP_PRIORITY.index(label) if label in GRAPH_GROUP_PRIORITY else len(GRAPH_GROUP_PRIORITY),
+            graph_priority.index(label) if label in graph_priority else len(graph_priority),
             label.lower(),
         ),
     )
@@ -5102,17 +5340,17 @@ def build_dashboard_context(pages: List[Page]) -> Dict[str, object]:
         page["graph_group"] = choose_graph_group(page["graph_tags"])
     paper_pages = [page for page in serialized_pages if page["section"] == "sources"]
 
+    graph_priority = active_graph_group_priority()
+    graph_palette = active_taxonomy().get("graph_group_palette", DEFAULT_GRAPH_GROUP_PALETTE)
     graph_groups_sorted = sorted(
         {page["graph_group"] for page in paper_pages},
         key=lambda label: (
-            GRAPH_GROUP_PRIORITY.index(label)
-            if label in GRAPH_GROUP_PRIORITY
-            else len(GRAPH_GROUP_PRIORITY),
+            graph_priority.index(label) if label in graph_priority else len(graph_priority),
             label.lower(),
         ),
     )
     group_colors = {
-        label: GRAPH_GROUP_PALETTE[index % len(GRAPH_GROUP_PALETTE)]
+        label: graph_palette[index % len(graph_palette)]
         for index, label in enumerate(graph_groups_sorted)
     }
     for page in paper_pages:
@@ -5237,7 +5475,7 @@ def build_i18n_data_json(ui_overrides: Optional[Dict[str, Dict[str, str]]] = Non
     return json.dumps(
         {
             "ui": ui_payload,
-            "labels": {"en": {}, **LABEL_TRANSLATIONS},
+            "labels": active_label_translations(),
         },
         ensure_ascii=False,
     )
