@@ -1,6 +1,6 @@
 # Overview
 
-This collection now has seven deeply ingested anchors and is beginning to connect single-cell generative modeling, atlas-scale generative pretraining, read-depth-aware foundation embeddings, retrieval-style cell atlas foundation models, language-model-based transcriptomic reasoning, neural optimal-transport perturbation modeling, and broader multimodal human health modeling. The raw backlog is still much larger than the curated wiki, so the current picture is still early-stage.
+This collection now has eight deeply ingested anchors and is beginning to connect single-cell generative modeling, atlas-scale generative pretraining, read-depth-aware foundation embeddings, retrieval-style cell atlas foundation models, language-model-based transcriptomic reasoning, neural optimal-transport perturbation modeling, Bayesian RNA-velocity dynamics, and broader multimodal human health modeling. The raw backlog is still much larger than the curated wiki, so the current picture is still early-stage.
 
 ## Current Focus
 
@@ -10,8 +10,9 @@ This collection now has seven deeply ingested anchors and is beginning to connec
 - Retrieval-oriented foundation models for pan-body cell-state search and annotation.
 - Language-model-based single-cell analysis that treats transcriptomes and biological text as one multimodal token space.
 - Neural optimal transport for perturbation-response prediction from unpaired single-cell populations.
+- Bayesian RNA-velocity modeling and interpretable temporal module discovery.
 - Cross-modality reconstruction and intervention-aware modeling for broader human multi-omics.
-- Current anchor systems: [SAVE](entities/SAVE.md), [scGPT](entities/scGPT.md), [scFoundation](entities/scFoundation.md), [SCimilarity](entities/SCimilarity.md), [C2S-Scale](entities/C2S-Scale.md), [CellOT](entities/CellOT.md), and [AURORA](entities/AURORA.md).
+- Current anchor systems: [SAVE](entities/SAVE.md), [scGPT](entities/scGPT.md), [scFoundation](entities/scFoundation.md), [SCimilarity](entities/SCimilarity.md), [C2S-Scale](entities/C2S-Scale.md), [CellOT](entities/CellOT.md), [Cell2fate](entities/Cell2fate.md), and [AURORA](entities/AURORA.md).
 
 ## Emerging Themes
 
@@ -21,10 +22,11 @@ This collection now has seven deeply ingested anchors and is beginning to connec
 - Transcriptomes are increasingly being serialized into language-like sequences so frontier LLM scaling and prompting techniques can be reused for biology.
 - Fast nearest-neighbour retrieval over large pretrained atlases is emerging as a separate foundation-model pattern alongside generation and imputation.
 - Perturbation modeling in this collection now spans both generative/token-based approaches and explicit transport-map approaches that try to preserve full response distributions rather than only average shifts.
+- Some models are explicitly exposing interpretable temporal modules and posterior uncertainty, suggesting that dynamic single-cell modeling is not only about better prediction but also about better inspection of developmental programs.
 - Missing-data completion is becoming a core model function, either across unseen conditions or across unmeasured modalities.
 - Evaluation is moving beyond reconstruction toward downstream utility: cell-state retrieval, large-scale annotation, natural-language interpretation, perturbation response, virtual screening, aging clocks, and disease prediction.
 
 ## Collection State
 
-- Seven source pages have been deeply ingested so far.
+- Eight source pages have been deeply ingested so far.
 - The normalized raw-source backlog is still large, so future ingests may substantially refine or challenge the current synthesis.

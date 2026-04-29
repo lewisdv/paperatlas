@@ -142,3 +142,15 @@
 
 - Registered raw source raw/sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.pdf.
 - Created source page wiki/sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md.
+
+## [2026-04-29 15:08 KST] source parsed | Cell2fate infers RNA velocity modules to improve cell fate prediction
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/aivazidis_2025_cell2fate_infers_rna_velocity_modules/`.
+- Linked the helper artifact and manifest from `wiki/sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 15:09 KST] ingest completed | Cell2fate infers RNA velocity modules to improve cell fate prediction
+
+- Updated `wiki/sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/Cell2fate.md` and `wiki/concepts/rna-velocity-modules.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect Bayesian RNA-velocity dynamics as a distinct axis in this collection.
