@@ -1,4 +1,5 @@
 {
   "title": "Organoid",
-  "description": "Organoid papers, source pages, concepts, and syntheses."
+  "description": "Organoid papers, source pages, concepts, and syntheses.",
+  "dashboard_taxonomy": "organoid"
 }

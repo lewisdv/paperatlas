@@ -1,4 +1,5 @@
 {
   "title": "Multi_Omics",
-  "description": "Multi-omics papers, source pages, concepts, and syntheses. The current starter corpus focuses on long-read sequencing."
+  "description": "Multi-omics papers, source pages, concepts, and syntheses. The current starter corpus focuses on long-read sequencing.",
+  "dashboard_taxonomy": "multi_omics"
 }

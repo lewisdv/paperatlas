@@ -1,4 +1,5 @@
 {
   "title": "Deeplearning_Model",
-  "description": "Deep learning model papers, source pages, concepts, and syntheses."
+  "description": "Deep learning model papers, source pages, concepts, and syntheses.",
+  "dashboard_taxonomy": "deeplearning_model"
 }
