@@ -65,3 +65,8 @@
 - Updated `wiki/sources/heimberg_2025_a_cell_atlas_foundation_model.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/SCimilarity.md` and `wiki/concepts/cell-state-similarity-search.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect retrieval-oriented foundation modeling in this collection.
+
+## [2026-04-29 11:03 KST] ingest queued | Scaling Large Language Models for Next-Generation Single-Cell Analysis
+
+- Registered raw source raw/sources/rizvi_2025_scaling_large_language_models_for.pdf.
+- Created source page wiki/sources/rizvi_2025_scaling_large_language_models_for.md.
