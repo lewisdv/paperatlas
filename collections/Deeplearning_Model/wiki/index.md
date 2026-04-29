@@ -24,6 +24,7 @@
 - [Multimodal foundation transformer models for multiscale genomics](sources/khan_2025_multimodal_foundation_transformer_models_for.md) - Nature Methods perspective on a three-tier transformer taxonomy, multimodal genomics integration, and the proposed `Super Transformer` architecture.
 - [Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas](sources/rood_2024_toward_a_foundation_model_of.md) - Cell review on high-content perturbation screens, active-learning loops, and the `Perturbation Cell Atlas` roadmap for causal biology.
 - [Uncertainty-aware single-cell annotation with a hierarchical reject option](sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md) - paper source queued for ingest.
+- [GPerturb: Gaussian process modelling of single-cell perturbation data](sources/xing_2025_gperturb_gaussian_process_modelling_of.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.

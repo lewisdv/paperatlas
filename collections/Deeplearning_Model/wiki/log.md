@@ -321,3 +321,8 @@
 
 - Registered raw source raw/sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.pdf.
 - Created source page wiki/sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md.
+
+## [2026-04-29 22:01 KST] ingest queued | GPerturb: Gaussian process modelling of single-cell perturbation data
+
+- Registered raw source raw/sources/xing_2025_gperturb_gaussian_process_modelling_of.pdf.
+- Created source page wiki/sources/xing_2025_gperturb_gaussian_process_modelling_of.md.
