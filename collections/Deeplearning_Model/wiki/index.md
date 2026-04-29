@@ -16,7 +16,7 @@
 - [Cell2fate infers RNA velocity modules to improve cell fate prediction](sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md) - Nature Methods paper on Bayesian RNA velocity, interpretable module decomposition, uncertainty-aware fate inference, and spatial mapping of transcriptional dynamics.
 - [How to build the virtual cell with artificial intelligence: Priorities and opportunities](sources/bunne_2024_how_to_build_the_virtual.md) - Cell perspective on AI virtual cells, universal representations, virtual instruments, and a collaborative roadmap for multi-scale biological simulation.
 - [Towards multimodal foundation models in molecular cell biology](sources/cui_2025_towards_multimodal_foundation_models_in.md) - Perspective on multimodal foundation models, unified tokenization, lab-in-the-loop workflows, and promptable cross-modal biology modeling.
-- [Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters](sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md) - paper source queued for ingest.
+- [Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters](sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md) - Preprint on perturbation-rich single-cell foundation-model scaling, oncology-focused benchmarks, and compute-efficient training to 3B parameters.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -28,6 +28,7 @@
 - [CellOT](entities/CellOT.md) - Neural optimal transport model for predicting perturbation responses from unpaired single-cell populations.
 - [Cell2fate](entities/Cell2fate.md) - Fully Bayesian RNA-velocity model with interpretable dynamic modules and posterior uncertainty estimates.
 - [AIVC](entities/AIVC.md) - Proposed AI virtual cell framework for multi-scale, multi-modal biological representation and simulation.
+- [Tahoe-x1](entities/Tahoe-x1.md) - Perturbation-trained single-cell foundation model family scaled to 3B parameters for oncology-focused functional genomics.
 
 ## Concepts
 
@@ -42,6 +43,7 @@
 - [Universal Representation](concepts/universal-representation.md) - Shared biological state embedding intended to align modalities, contexts, and physical scales.
 - [Virtual Instruments](concepts/virtual-instruments.md) - Decoder and manipulator networks that operate on universal biological representations.
 - [Multimodal Foundation Models](concepts/multimodal-foundation-models.md) - Shared pretrained biological models that span multiple omics modalities and downstream tasks.
+- [Perturbation-Trained Foundation Models](concepts/perturbation-trained-foundation-models.md) - Foundation models whose pretraining corpus is explicitly enriched with intervention data.
 
 ## Queries
 

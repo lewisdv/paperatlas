@@ -193,3 +193,15 @@
 
 - Registered raw source raw/sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.pdf.
 - Created source page wiki/sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md.
+
+## [2026-04-29 16:15 KST] source parsed | Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation/`.
+- Linked the helper artifact and manifest from `wiki/sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 16:16 KST] ingest completed | Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters
+
+- Updated `wiki/sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/Tahoe-x1.md` and `wiki/concepts/perturbation-trained-foundation-models.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect perturbation-trained pretraining as a distinct axis in this collection.
