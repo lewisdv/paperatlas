@@ -83,3 +83,8 @@
 - Updated `wiki/sources/rizvi_2025_scaling_large_language_models_for.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/C2S-Scale.md` and `wiki/concepts/cell-sentences.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect the new LLM-based transcriptomic analysis axis in this collection.
+
+## [2026-04-29 11:17 KST] ingest queued | scGPT: toward building a foundation model for single-cell multi-omics using generative AI
+
+- Registered raw source raw/sources/cui_2024_scgpt_toward_building_a_foundation.pdf.
+- Created source page wiki/sources/cui_2024_scgpt_toward_building_a_foundation.md.

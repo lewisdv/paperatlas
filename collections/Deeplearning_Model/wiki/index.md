@@ -11,6 +11,7 @@
 - [A cell atlas foundation model for scalable search of similar human cells](sources/heimberg_2025_a_cell_atlas_foundation_model.md) - Nature paper on SCimilarity, metric-learning-based cell-state retrieval, large-scale annotation, and confidence-aware atlas search.
 - [Scaling Large Language Models for Next-Generation Single-Cell Analysis](sources/rizvi_2025_scaling_large_language_models_for.md) - 2025 preprint on C2S-Scale, cell sentences, multimodal LLM training, perturbation prediction, and natural-language single-cell reasoning.
 
+- [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](sources/cui_2024_scgpt_toward_building_a_foundation.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
