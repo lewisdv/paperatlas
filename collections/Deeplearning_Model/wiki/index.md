@@ -14,7 +14,7 @@
 - [Large-scale foundation model on single-cell transcriptomics](sources/hao_2024_large-scale_foundation_model_on_single-cell.md) - Nature Methods paper on scFoundation, read-depth-aware pretraining, large-scale embeddings, and broad downstream transfer.
 - [Learning single-cell perturbation responses using neural optimal transport](sources/bunne_2023_learning_single-cell_perturbation_responses_using.md) - Nature Methods paper on CellOT, neural optimal transport, unpaired perturbation-response prediction, and generalization across patients, species, and developmental settings.
 - [Cell2fate infers RNA velocity modules to improve cell fate prediction](sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md) - Nature Methods paper on Bayesian RNA velocity, interpretable module decomposition, uncertainty-aware fate inference, and spatial mapping of transcriptional dynamics.
-- [How to build the virtual cell with artificial intelligence: Priorities and opportunities](sources/bunne_2024_how_to_build_the_virtual.md) - paper source queued for ingest.
+- [How to build the virtual cell with artificial intelligence: Priorities and opportunities](sources/bunne_2024_how_to_build_the_virtual.md) - Cell perspective on AI virtual cells, universal representations, virtual instruments, and a collaborative roadmap for multi-scale biological simulation.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -25,6 +25,7 @@
 - [scFoundation](entities/scFoundation.md) - Large read-depth-aware foundation model for transcriptomic embeddings and lightweight downstream transfer.
 - [CellOT](entities/CellOT.md) - Neural optimal transport model for predicting perturbation responses from unpaired single-cell populations.
 - [Cell2fate](entities/Cell2fate.md) - Fully Bayesian RNA-velocity model with interpretable dynamic modules and posterior uncertainty estimates.
+- [AIVC](entities/AIVC.md) - Proposed AI virtual cell framework for multi-scale, multi-modal biological representation and simulation.
 
 ## Concepts
 
@@ -36,6 +37,8 @@
 - [Read-Depth-Aware Pretraining](concepts/read-depth-aware-pretraining.md) - Pretraining that explicitly models sequencing-depth variation with source and target count indicators.
 - [Neural Optimal Transport](concepts/neural-optimal-transport.md) - Learning perturbation maps between unpaired cell-state distributions by parameterizing optimal transport with neural networks.
 - [RNA Velocity Modules](concepts/rna-velocity-modules.md) - Interpretable dynamic programs derived from RNA-velocity modeling over spliced and unspliced counts.
+- [Universal Representation](concepts/universal-representation.md) - Shared biological state embedding intended to align modalities, contexts, and physical scales.
+- [Virtual Instruments](concepts/virtual-instruments.md) - Decoder and manipulator networks that operate on universal biological representations.
 
 ## Queries
 

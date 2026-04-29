@@ -159,3 +159,15 @@
 
 - Registered raw source raw/sources/bunne_2024_how_to_build_the_virtual.pdf.
 - Created source page wiki/sources/bunne_2024_how_to_build_the_virtual.md.
+
+## [2026-04-29 16:05 KST] source parsed | How to build the virtual cell with artificial intelligence: Priorities and opportunities
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/bunne_2024_how_to_build_the_virtual/`.
+- Linked the helper artifact and manifest from `wiki/sources/bunne_2024_how_to_build_the_virtual.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 16:06 KST] ingest completed | How to build the virtual cell with artificial intelligence: Priorities and opportunities
+
+- Updated `wiki/sources/bunne_2024_how_to_build_the_virtual.md` with roadmap summary, proposed architecture, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/AIVC.md`, `wiki/concepts/universal-representation.md`, and `wiki/concepts/virtual-instruments.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect AI virtual cell roadmapping as a distinct axis in this collection.
