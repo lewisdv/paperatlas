@@ -243,3 +243,8 @@
 ## [2026-04-29 21:23 KST] ingest cleanup | scRL and Squidiff
 
 - Removed leftover `Pending ingest` stub text from `wiki/sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md` and `wiki/sources/he_2025_squidiff_predicting_cellular_development_and.md`.
+
+## [2026-04-29 21:44 KST] ingest queued | Predicting transcriptional outcomes of novel multigene perturbations with GEARS
+
+- Registered raw source raw/sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.pdf.
+- Created source page wiki/sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md.

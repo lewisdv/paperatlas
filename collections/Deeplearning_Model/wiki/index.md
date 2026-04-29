@@ -19,6 +19,7 @@
 - [Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters](sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md) - Preprint on perturbation-rich single-cell foundation-model scaling, oncology-focused benchmarks, and compute-efficient training to 3B parameters.
 - [scRL: Utilizing Reinforcement Learning to Evaluate Fate Decisions in Single-Cell Data](sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md) - Biology paper on actor-critic trajectory analysis, early fate-decision localization, and regulator discovery in single-cell systems.
 - [Squidiff: predicting cellular development and responses to perturbations using a diffusion model](sources/he_2025_squidiff_predicting_cellular_development_and.md) - Nature Methods paper on conditional diffusion modeling for development, perturbation response, drug screening, and organoid injury dynamics.
+- [Predicting transcriptional outcomes of novel multigene perturbations with GEARS](sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
