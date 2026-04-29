@@ -1,19 +1,20 @@
 # Overview
 
-This collection has started ingesting deep learning papers for single-cell and multi-condition modeling, but the raw backlog is still much larger than the curated wiki.
+This collection now has two deeply ingested anchors and is beginning to connect single-cell generative modeling with broader multimodal human health modeling. The raw backlog is still much larger than the curated wiki, so the current picture is still early-stage.
 
 ## Current Focus
 
-- Multi-condition generative modeling for single-cell data.
-- First anchored system: [SAVE](entities/SAVE.md), a framework combining gene block attention, a VAE-style latent model, and conditional flow matching.
+- Conditional and generative modeling for single-cell data.
+- Cross-modality reconstruction and intervention-aware modeling for broader human multi-omics.
+- Current anchor systems: [SAVE](entities/SAVE.md) and [AURORA](entities/AURORA.md).
 
 ## Emerging Themes
 
-- Semantically constructed gene groupings from external gene descriptions.
-- Conditional generation under seen and unseen covariate combinations.
-- Evaluation that spans distribution fit, batch correction, and perturbation prediction.
+- Semantically structured representations, such as gene blocks or shared latent spaces, are used to compress biological complexity into model-ready tokens or embeddings.
+- Missing-data completion is becoming a core model function, either across unseen conditions or across unmeasured modalities.
+- Evaluation is moving beyond reconstruction toward downstream utility: aging clocks, disease prediction, perturbation response, and intervention simulation.
 
 ## Collection State
 
-- Current conclusions are preliminary because only one source page has been deeply ingested so far.
-- The raw queue remains large, so future ingests may refine or challenge the current picture.
+- Two source pages have been deeply ingested so far.
+- The normalized raw-source backlog is still large, so future ingests may substantially refine or challenge the current synthesis.

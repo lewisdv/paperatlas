@@ -29,3 +29,21 @@
 
 - Registered raw source raw/sources/chen_2026_a_generative_ai_framework_unifies.pdf.
 - Created source page wiki/sources/chen_2026_a_generative_ai_framework_unifies.md.
+
+## [2026-04-29 10:31 KST] filename normalized | Deeplearning_Model raw source backlog
+
+- Renamed 24 backlog PDFs in `raw/sources/` to the `first_author_year_first5words.pdf` convention.
+- Used a conservative fallback filename `unknown_2024_machine_learning_predicts_cellular_response.pdf` for a briefing-style PDF whose own author metadata was not present in the source.
+- Excluded the previously uploaded `AI_Reprogramming_Cellular_Destiny.pdf` because it was deleted during this session.
+
+## [2026-04-29 10:31 KST] source parsed | A generative AI framework unifies human multi-omics to model aging, metabolic health, and intervention response
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/chen_2026_a_generative_ai_framework_unifies/`.
+- Linked the helper artifact and manifest from `wiki/sources/chen_2026_a_generative_ai_framework_unifies.md`.
+- The default `json,markdown` parse path did not complete during ingest, so the persisted helper artifact is from a successful markdown-only scratch run with `--use-struct-tree`.
+
+## [2026-04-29 10:31 KST] ingest completed | A generative AI framework unifies human multi-omics to model aging, metabolic health, and intervention response
+
+- Updated `wiki/sources/chen_2026_a_generative_ai_framework_unifies.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/AURORA.md` and `wiki/concepts/cross-modality-generation.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect the broader multimodal scope now represented in this collection.
