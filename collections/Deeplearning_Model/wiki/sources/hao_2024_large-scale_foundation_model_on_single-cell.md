@@ -74,7 +74,3 @@ This paper introduces scFoundation, also named xTrimoScFoundation alpha, as a la
 
 These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
 <!-- opendataloader:end -->
-
-## Open Questions
-
-- Pending ingest.

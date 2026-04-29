@@ -119,8 +119,3 @@
 - Updated `wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/scFoundation.md` and `wiki/concepts/read-depth-aware-pretraining.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect read-depth-aware foundation embeddings as a distinct axis in this collection.
-
-## [2026-04-29 11:24 KST] ingest queued | Large-scale foundation model on single-cell transcriptomics
-
-- Registered raw source raw/sources/hao_2024_large-scale_foundation_model_on_single-cell.pdf.
-- Created source page wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md.
