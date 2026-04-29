@@ -22,6 +22,7 @@
 - [Predicting transcriptional outcomes of novel multigene perturbations with GEARS](sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md) - Nature Biotechnology paper on knowledge-graph-guided prediction of unseen multigene perturbations and genetic interaction ranking.
 - [scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis](sources/liu_2023_scelmo_embeddings_from_language_models.md) - Manuscript on GPT-derived metadata embeddings, zero-shot single-cell analysis, and lightweight adaptor-based downstream modeling.
 - [Multimodal foundation transformer models for multiscale genomics](sources/khan_2025_multimodal_foundation_transformer_models_for.md) - paper source queued for ingest.
+- [Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas](sources/rood_2024_toward_a_foundation_model_of.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.

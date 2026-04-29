@@ -282,3 +282,8 @@
 
 - Registered raw source raw/sources/khan_2025_multimodal_foundation_transformer_models_for.pdf.
 - Created source page wiki/sources/khan_2025_multimodal_foundation_transformer_models_for.md.
+
+## [2026-04-29 21:53 KST] ingest queued | Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas
+
+- Registered raw source raw/sources/rood_2024_toward_a_foundation_model_of.pdf.
+- Created source page wiki/sources/rood_2024_toward_a_foundation_model_of.md.
