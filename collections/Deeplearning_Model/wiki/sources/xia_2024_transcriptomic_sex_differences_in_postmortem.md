@@ -73,7 +73,3 @@ This paper analyzes sex differences in transcriptomic dysfunction across schizop
 
 These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
 <!-- opendataloader:end -->
-
-## Open Questions
-
-- Pending ingest.
