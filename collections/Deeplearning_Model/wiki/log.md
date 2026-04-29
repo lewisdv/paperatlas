@@ -277,3 +277,8 @@
 - Updated `wiki/sources/liu_2023_scelmo_embeddings_from_language_models.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/scELMo.md` and `wiki/concepts/llm-derived-feature-embeddings.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect lightweight LLM-derived embedding reuse as a distinct axis in this collection.
+
+## [2026-04-29 21:53 KST] ingest queued | Multimodal foundation transformer models for multiscale genomics
+
+- Registered raw source raw/sources/khan_2025_multimodal_foundation_transformer_models_for.pdf.
+- Created source page wiki/sources/khan_2025_multimodal_foundation_transformer_models_for.md.
