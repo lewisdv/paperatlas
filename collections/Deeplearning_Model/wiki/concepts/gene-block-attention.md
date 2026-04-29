@@ -29,4 +29,4 @@
 
 ## Sources
 
-- [SAVE: A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention](../sources/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention.md)
+- [SAVE: A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention](../sources/li_2026_save_a_generalizable_framework_for.md)

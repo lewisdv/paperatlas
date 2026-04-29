@@ -3,14 +3,14 @@ title: SAVE: A Generalizable Framework for Multi-Condition Single-Cell Generatio
 kind: paper
 status: ingested
 added: 2026-04-29T10:07:55+09:00
-raw_source: raw/sources/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention.pdf
+raw_source: raw/sources/li_2026_save_a_generalizable_framework_for.pdf
 ---
 
 # SAVE: A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention
 
 ## Source
 
-- File: [raw/sources/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention.pdf](../../raw/sources/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention.pdf)
+- File: [raw/sources/li_2026_save_a_generalizable_framework_for.pdf](../../raw/sources/li_2026_save_a_generalizable_framework_for.pdf)
 - Added: 2026-04-29T10:07:55+09:00
 - Venue/status: ICLR 2026 conference paper; arXiv:2604.16776v1
 - Authors: Jiahao Li, Jiayi Dong, Peng Ye, Xiaochi Zhou, Haohai Lu, Fei Wang
@@ -62,9 +62,9 @@ SAVE is a conditional generative framework for scRNA-seq data that combines sema
 
 - Parser: OpenDataLoader PDF
 - Generated: 2026-04-29T10:12:03+09:00
-- Command: `.venv-opendataloader/bin/opendataloader-pdf raw/sources/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention.pdf -o raw/derived/opendataloader/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention -f markdown --image-output off -q`
-- Manifest: [raw/derived/opendataloader/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention/opendataloader-run.json](../../raw/derived/opendataloader/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention/opendataloader-run.json)
-- Output: [raw/derived/opendataloader/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention.md](../../raw/derived/opendataloader/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention/SAVE A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention.md)
+- Command: `.venv-opendataloader/bin/opendataloader-pdf raw/sources/li_2026_save_a_generalizable_framework_for.pdf -o raw/derived/opendataloader/li_2026_save_a_generalizable_framework_for -f markdown --image-output off -q`
+- Manifest: [raw/derived/opendataloader/li_2026_save_a_generalizable_framework_for/opendataloader-run.json](../../raw/derived/opendataloader/li_2026_save_a_generalizable_framework_for/opendataloader-run.json)
+- Output: [raw/derived/opendataloader/li_2026_save_a_generalizable_framework_for/li_2026_save_a_generalizable_framework_for.md](../../raw/derived/opendataloader/li_2026_save_a_generalizable_framework_for/li_2026_save_a_generalizable_framework_for.md)
 
 These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
 <!-- opendataloader:end -->
