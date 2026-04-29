@@ -12,6 +12,7 @@
 - [Scaling Large Language Models for Next-Generation Single-Cell Analysis](sources/rizvi_2025_scaling_large_language_models_for.md) - 2025 preprint on C2S-Scale, cell sentences, multimodal LLM training, perturbation prediction, and natural-language single-cell reasoning.
 - [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](sources/cui_2024_scgpt_toward_building_a_foundation.md) - Nature Methods paper on generative pretraining over 33 million cells for annotation, integration, perturbation prediction, and gene-network inference.
 - [Large-scale foundation model on single-cell transcriptomics](sources/hao_2024_large-scale_foundation_model_on_single-cell.md) - Nature Methods paper on scFoundation, read-depth-aware pretraining, large-scale embeddings, and broad downstream transfer.
+- [Learning single-cell perturbation responses using neural optimal transport](sources/bunne_2023_learning_single-cell_perturbation_responses_using.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
