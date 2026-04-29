@@ -107,3 +107,20 @@
 
 - Registered raw source raw/sources/hao_2024_large-scale_foundation_model_on_single-cell.pdf.
 - Created source page wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md.
+
+## [2026-04-29 11:25 KST] source parsed | Large-scale foundation model on single-cell transcriptomics
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/hao_2024_large-scale_foundation_model_on_single-cell/`.
+- Linked the helper artifact and manifest from `wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 11:25 KST] ingest completed | Large-scale foundation model on single-cell transcriptomics
+
+- Updated `wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/scFoundation.md` and `wiki/concepts/read-depth-aware-pretraining.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect read-depth-aware foundation embeddings as a distinct axis in this collection.
+
+## [2026-04-29 11:24 KST] ingest queued | Large-scale foundation model on single-cell transcriptomics
+
+- Registered raw source raw/sources/hao_2024_large-scale_foundation_model_on_single-cell.pdf.
+- Created source page wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md.
