@@ -188,3 +188,8 @@
 - Updated `wiki/sources/cui_2025_towards_multimodal_foundation_models_in.md` with summary, proposed architecture, evidence, limitations, and parsed-artifact links.
 - Created `wiki/concepts/multimodal-foundation-models.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect multimodal foundation-model blueprints as a collection-level axis.
+
+## [2026-04-29 16:13 KST] ingest queued | Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters
+
+- Registered raw source raw/sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.pdf.
+- Created source page wiki/sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md.
