@@ -4189,7 +4189,7 @@ MULTI_OMICS_TAXONOMY = taxonomy_profile(
 DEEPLEARNING_MODEL_TAXONOMY = taxonomy_profile(
     keyword_tags=[
         ([r"\bpopulation\b", r"\bcohort\b", r"\batlas\b", r"\bindividuals?\b", r"\b23\.4-million-cell\b"], "Population"),
-        ([r"\b50 million\b", r"\bmore than 50 million\b", r"\bover 50 million\b", r"\bmillions of cells\b"], "Population"),
+        ([r"\b50\b.{0,16}\bmillion\b", r"\bfifty million\b", r"\bmore than 50 million\b", r"\bover 50 million\b", r"\bmillions of cells\b"], "Population"),
         ([r"\bclinical\b", r"\bdisease prediction\b", r"\bpatients?\b", r"\brisk predictors?\b"], "Clinical"),
         ([r"\bbiobank\b", r"\ball of us\b", r"\buk biobank\b"], "Biobank"),
         ([r"\bbenchmark(?:ing)?\b", r"\bheld-out\b", r"\bmacro f1\b", r"\bcomparison\b", r"\bcompared with\b"], "Benchmark"),
