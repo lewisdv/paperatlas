@@ -248,3 +248,8 @@
 
 - Registered raw source raw/sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.pdf.
 - Created source page wiki/sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md.
+
+## [2026-04-29 21:44 KST] ingest queued | scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis
+
+- Registered raw source raw/sources/liu_2023_scelmo_embeddings_from_language_models.pdf.
+- Created source page wiki/sources/liu_2023_scelmo_embeddings_from_language_models.md.

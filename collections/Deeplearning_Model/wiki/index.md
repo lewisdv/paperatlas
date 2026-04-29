@@ -20,6 +20,7 @@
 - [scRL: Utilizing Reinforcement Learning to Evaluate Fate Decisions in Single-Cell Data](sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md) - Biology paper on actor-critic trajectory analysis, early fate-decision localization, and regulator discovery in single-cell systems.
 - [Squidiff: predicting cellular development and responses to perturbations using a diffusion model](sources/he_2025_squidiff_predicting_cellular_development_and.md) - Nature Methods paper on conditional diffusion modeling for development, perturbation response, drug screening, and organoid injury dynamics.
 - [Predicting transcriptional outcomes of novel multigene perturbations with GEARS](sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md) - paper source queued for ingest.
+- [scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis](sources/liu_2023_scelmo_embeddings_from_language_models.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
