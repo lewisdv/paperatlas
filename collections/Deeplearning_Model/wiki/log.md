@@ -287,3 +287,32 @@
 
 - Registered raw source raw/sources/rood_2024_toward_a_foundation_model_of.pdf.
 - Created source page wiki/sources/rood_2024_toward_a_foundation_model_of.md.
+
+## [2026-04-29 21:54 KST] cleanup | GEARS and scELMo source-page stubs
+
+- Removed leftover `Pending ingest` stub sections from the finalized GEARS and scELMo source pages.
+- This cleanup did not change the sourced claims; it only finalized the page structure after deep ingest.
+
+## [2026-04-29 21:54 KST] source parsed | Multimodal foundation transformer models for multiscale genomics
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/khan_2025_multimodal_foundation_transformer_models_for/`.
+- Linked the helper artifact and manifest from `wiki/sources/khan_2025_multimodal_foundation_transformer_models_for.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 21:54 KST] source parsed | Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/rood_2024_toward_a_foundation_model_of/`.
+- Linked the helper artifact and manifest from `wiki/sources/rood_2024_toward_a_foundation_model_of.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 21:54 KST] ingest completed | Multimodal foundation transformer models for multiscale genomics
+
+- Updated `wiki/sources/khan_2025_multimodal_foundation_transformer_models_for.md` with summary, taxonomy, blueprint, evidence, limitations, and parsed-artifact links.
+- Created `wiki/concepts/super-transformer-architecture.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect the new multiscale transformer-architecture roadmap thread in this collection.
+
+## [2026-04-29 21:54 KST] ingest completed | Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas
+
+- Updated `wiki/sources/rood_2024_toward_a_foundation_model_of.md` with review synthesis, evidence, roadmap, limitations, and parsed-artifact links.
+- Created `wiki/concepts/perturbation-cell-atlas.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect the new perturbation-atlas and causal-biology roadmap thread in this collection.
