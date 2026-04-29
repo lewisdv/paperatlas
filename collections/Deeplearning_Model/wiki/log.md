@@ -176,3 +176,15 @@
 
 - Registered raw source raw/sources/cui_2025_towards_multimodal_foundation_models_in.pdf.
 - Created source page wiki/sources/cui_2025_towards_multimodal_foundation_models_in.md.
+
+## [2026-04-29 16:11 KST] source parsed | Towards multimodal foundation models in molecular cell biology
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/cui_2025_towards_multimodal_foundation_models_in/`.
+- Linked the helper artifact and manifest from `wiki/sources/cui_2025_towards_multimodal_foundation_models_in.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 16:12 KST] ingest completed | Towards multimodal foundation models in molecular cell biology
+
+- Updated `wiki/sources/cui_2025_towards_multimodal_foundation_models_in.md` with summary, proposed architecture, evidence, limitations, and parsed-artifact links.
+- Created `wiki/concepts/multimodal-foundation-models.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect multimodal foundation-model blueprints as a collection-level axis.

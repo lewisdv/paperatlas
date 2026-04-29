@@ -15,7 +15,7 @@
 - [Learning single-cell perturbation responses using neural optimal transport](sources/bunne_2023_learning_single-cell_perturbation_responses_using.md) - Nature Methods paper on CellOT, neural optimal transport, unpaired perturbation-response prediction, and generalization across patients, species, and developmental settings.
 - [Cell2fate infers RNA velocity modules to improve cell fate prediction](sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md) - Nature Methods paper on Bayesian RNA velocity, interpretable module decomposition, uncertainty-aware fate inference, and spatial mapping of transcriptional dynamics.
 - [How to build the virtual cell with artificial intelligence: Priorities and opportunities](sources/bunne_2024_how_to_build_the_virtual.md) - Cell perspective on AI virtual cells, universal representations, virtual instruments, and a collaborative roadmap for multi-scale biological simulation.
-- [Towards multimodal foundation models in molecular cell biology](sources/cui_2025_towards_multimodal_foundation_models_in.md) - paper source queued for ingest.
+- [Towards multimodal foundation models in molecular cell biology](sources/cui_2025_towards_multimodal_foundation_models_in.md) - Perspective on multimodal foundation models, unified tokenization, lab-in-the-loop workflows, and promptable cross-modal biology modeling.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -40,6 +40,7 @@
 - [RNA Velocity Modules](concepts/rna-velocity-modules.md) - Interpretable dynamic programs derived from RNA-velocity modeling over spliced and unspliced counts.
 - [Universal Representation](concepts/universal-representation.md) - Shared biological state embedding intended to align modalities, contexts, and physical scales.
 - [Virtual Instruments](concepts/virtual-instruments.md) - Decoder and manipulator networks that operate on universal biological representations.
+- [Multimodal Foundation Models](concepts/multimodal-foundation-models.md) - Shared pretrained biological models that span multiple omics modalities and downstream tasks.
 
 ## Queries
 
