@@ -154,3 +154,8 @@
 - Updated `wiki/sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/Cell2fate.md` and `wiki/concepts/rna-velocity-modules.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect Bayesian RNA-velocity dynamics as a distinct axis in this collection.
+
+## [2026-04-29 16:04 KST] ingest queued | How to build the virtual cell with artificial intelligence: Priorities and opportunities
+
+- Registered raw source raw/sources/bunne_2024_how_to_build_the_virtual.pdf.
+- Created source page wiki/sources/bunne_2024_how_to_build_the_virtual.md.
