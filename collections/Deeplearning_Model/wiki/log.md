@@ -52,3 +52,16 @@
 
 - Registered raw source raw/sources/heimberg_2025_a_cell_atlas_foundation_model.pdf.
 - Created source page wiki/sources/heimberg_2025_a_cell_atlas_foundation_model.md.
+
+## [2026-04-29 11:01 KST] source parsed | A cell atlas foundation model for scalable search of similar human cells
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/heimberg_2025_a_cell_atlas_foundation_model/`.
+- Linked the helper artifact and manifest from `wiki/sources/heimberg_2025_a_cell_atlas_foundation_model.md`.
+- The saved helper artifact was copied from a previously successful scratch OpenDataLoader markdown run used during extraction-quality verification.
+- A direct rerun from the current shell could not start because Java Runtime was unavailable.
+
+## [2026-04-29 11:01 KST] ingest completed | A cell atlas foundation model for scalable search of similar human cells
+
+- Updated `wiki/sources/heimberg_2025_a_cell_atlas_foundation_model.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/SCimilarity.md` and `wiki/concepts/cell-state-similarity-search.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect retrieval-oriented foundation modeling in this collection.
