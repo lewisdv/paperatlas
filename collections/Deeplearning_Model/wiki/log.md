@@ -253,3 +253,27 @@
 
 - Registered raw source raw/sources/liu_2023_scelmo_embeddings_from_language_models.pdf.
 - Created source page wiki/sources/liu_2023_scelmo_embeddings_from_language_models.md.
+
+## [2026-04-29 21:45 KST] source parsed | Predicting transcriptional outcomes of novel multigene perturbations with GEARS
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/roohani_2024_predicting_transcriptional_outcomes_of_novel/`.
+- Linked the helper artifact and manifest from `wiki/sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 21:45 KST] source parsed | scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/liu_2023_scelmo_embeddings_from_language_models/`.
+- Linked the helper artifact and manifest from `wiki/sources/liu_2023_scelmo_embeddings_from_language_models.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 21:45 KST] ingest completed | Predicting transcriptional outcomes of novel multigene perturbations with GEARS
+
+- Updated `wiki/sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/GEARS.md` and `wiki/concepts/combinatorial-perturbation-generalization.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect knowledge-graph-guided combinatorial perturbation prediction as a distinct axis in this collection.
+
+## [2026-04-29 21:45 KST] ingest completed | scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis
+
+- Updated `wiki/sources/liu_2023_scelmo_embeddings_from_language_models.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/scELMo.md` and `wiki/concepts/llm-derived-feature-embeddings.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect lightweight LLM-derived embedding reuse as a distinct axis in this collection.

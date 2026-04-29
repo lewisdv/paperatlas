@@ -19,8 +19,8 @@
 - [Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters](sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md) - Preprint on perturbation-rich single-cell foundation-model scaling, oncology-focused benchmarks, and compute-efficient training to 3B parameters.
 - [scRL: Utilizing Reinforcement Learning to Evaluate Fate Decisions in Single-Cell Data](sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md) - Biology paper on actor-critic trajectory analysis, early fate-decision localization, and regulator discovery in single-cell systems.
 - [Squidiff: predicting cellular development and responses to perturbations using a diffusion model](sources/he_2025_squidiff_predicting_cellular_development_and.md) - Nature Methods paper on conditional diffusion modeling for development, perturbation response, drug screening, and organoid injury dynamics.
-- [Predicting transcriptional outcomes of novel multigene perturbations with GEARS](sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md) - paper source queued for ingest.
-- [scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis](sources/liu_2023_scelmo_embeddings_from_language_models.md) - paper source queued for ingest.
+- [Predicting transcriptional outcomes of novel multigene perturbations with GEARS](sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.md) - Nature Biotechnology paper on knowledge-graph-guided prediction of unseen multigene perturbations and genetic interaction ranking.
+- [scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis](sources/liu_2023_scelmo_embeddings_from_language_models.md) - Manuscript on GPT-derived metadata embeddings, zero-shot single-cell analysis, and lightweight adaptor-based downstream modeling.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -35,6 +35,8 @@
 - [Tahoe-x1](entities/Tahoe-x1.md) - Perturbation-trained single-cell foundation model family scaled to 3B parameters for oncology-focused functional genomics.
 - [scRL](entities/scRL.md) - Actor-critic reinforcement-learning framework for identifying early fate-decision states in single-cell trajectories.
 - [Squidiff](entities/Squidiff.md) - Conditional diffusion model for transcriptomic state transitions under development, perturbation, and environmental stimuli.
+- [GEARS](entities/GEARS.md) - Knowledge-graph-guided model for predicting unseen single-gene and multigene perturbation responses.
+- [scELMo](entities/scELMo.md) - Pipeline that reuses GPT-derived biological metadata embeddings for zero-shot and adaptor-based single-cell analysis.
 
 ## Concepts
 
@@ -52,6 +54,8 @@
 - [Perturbation-Trained Foundation Models](concepts/perturbation-trained-foundation-models.md) - Foundation models whose pretraining corpus is explicitly enriched with intervention data.
 - [Fate Decision Intensity](concepts/fate-decision-intensity.md) - A model-derived score for early commitment pressure before overt lineage commitment.
 - [Stimulus-Response Diffusion Modeling](concepts/stimulus-response-diffusion-modeling.md) - Conditional diffusion-based generation of transcriptomic state changes under stimuli.
+- [Combinatorial Perturbation Generalization](concepts/combinatorial-perturbation-generalization.md) - Predicting unseen multigene intervention effects beyond directly observed perturbation combinations.
+- [LLM-Derived Feature Embeddings](concepts/llm-derived-feature-embeddings.md) - Reusing LLM-generated biological descriptions and their embeddings as feature priors.
 
 ## Queries
 
