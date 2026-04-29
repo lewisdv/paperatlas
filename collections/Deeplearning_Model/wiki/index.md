@@ -17,7 +17,8 @@
 - [How to build the virtual cell with artificial intelligence: Priorities and opportunities](sources/bunne_2024_how_to_build_the_virtual.md) - Cell perspective on AI virtual cells, universal representations, virtual instruments, and a collaborative roadmap for multi-scale biological simulation.
 - [Towards multimodal foundation models in molecular cell biology](sources/cui_2025_towards_multimodal_foundation_models_in.md) - Perspective on multimodal foundation models, unified tokenization, lab-in-the-loop workflows, and promptable cross-modal biology modeling.
 - [Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters](sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md) - Preprint on perturbation-rich single-cell foundation-model scaling, oncology-focused benchmarks, and compute-efficient training to 3B parameters.
-- [Squidiff: predicting cellular development and responses to perturbations using a diffusion model](sources/he_2025_squidiff_predicting_cellular_development_and.md) - paper source queued for ingest.
+- [scRL: Utilizing Reinforcement Learning to Evaluate Fate Decisions in Single-Cell Data](sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md) - Biology paper on actor-critic trajectory analysis, early fate-decision localization, and regulator discovery in single-cell systems.
+- [Squidiff: predicting cellular development and responses to perturbations using a diffusion model](sources/he_2025_squidiff_predicting_cellular_development_and.md) - Nature Methods paper on conditional diffusion modeling for development, perturbation response, drug screening, and organoid injury dynamics.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -30,6 +31,8 @@
 - [Cell2fate](entities/Cell2fate.md) - Fully Bayesian RNA-velocity model with interpretable dynamic modules and posterior uncertainty estimates.
 - [AIVC](entities/AIVC.md) - Proposed AI virtual cell framework for multi-scale, multi-modal biological representation and simulation.
 - [Tahoe-x1](entities/Tahoe-x1.md) - Perturbation-trained single-cell foundation model family scaled to 3B parameters for oncology-focused functional genomics.
+- [scRL](entities/scRL.md) - Actor-critic reinforcement-learning framework for identifying early fate-decision states in single-cell trajectories.
+- [Squidiff](entities/Squidiff.md) - Conditional diffusion model for transcriptomic state transitions under development, perturbation, and environmental stimuli.
 
 ## Concepts
 
@@ -45,6 +48,8 @@
 - [Virtual Instruments](concepts/virtual-instruments.md) - Decoder and manipulator networks that operate on universal biological representations.
 - [Multimodal Foundation Models](concepts/multimodal-foundation-models.md) - Shared pretrained biological models that span multiple omics modalities and downstream tasks.
 - [Perturbation-Trained Foundation Models](concepts/perturbation-trained-foundation-models.md) - Foundation models whose pretraining corpus is explicitly enriched with intervention data.
+- [Fate Decision Intensity](concepts/fate-decision-intensity.md) - A model-derived score for early commitment pressure before overt lineage commitment.
+- [Stimulus-Response Diffusion Modeling](concepts/stimulus-response-diffusion-modeling.md) - Conditional diffusion-based generation of transcriptomic state changes under stimuli.
 
 ## Queries
 

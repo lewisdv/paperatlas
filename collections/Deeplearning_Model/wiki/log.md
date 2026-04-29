@@ -210,3 +210,32 @@
 
 - Registered raw source raw/sources/he_2025_squidiff_predicting_cellular_development_and.pdf.
 - Created source page wiki/sources/he_2025_squidiff_predicting_cellular_development_and.md.
+
+## [2026-04-29 21:20 KST] ingest queued | scRL: Utilizing Reinforcement Learning to Evaluate Fate Decisions in Single-Cell Data
+
+- Registered raw source raw/sources/fu_2025_scrl_utilizing_reinforcement_learning_to.pdf.
+- Created source page wiki/sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md.
+
+## [2026-04-29 21:21 KST] source parsed | scRL: Utilizing Reinforcement Learning to Evaluate Fate Decisions in Single-Cell Data
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/fu_2025_scrl_utilizing_reinforcement_learning_to/`.
+- Linked the helper artifact and manifest from `wiki/sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 21:21 KST] source parsed | Squidiff: predicting cellular development and responses to perturbations using a diffusion model
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/he_2025_squidiff_predicting_cellular_development_and/`.
+- Linked the helper artifact and manifest from `wiki/sources/he_2025_squidiff_predicting_cellular_development_and.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 21:22 KST] ingest completed | scRL: Utilizing Reinforcement Learning to Evaluate Fate Decisions in Single-Cell Data
+
+- Updated `wiki/sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/scRL.md` and `wiki/concepts/fate-decision-intensity.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect reinforcement-learning-based fate-decision analysis as a distinct axis in this collection.
+
+## [2026-04-29 21:22 KST] ingest completed | Squidiff: predicting cellular development and responses to perturbations using a diffusion model
+
+- Updated `wiki/sources/he_2025_squidiff_predicting_cellular_development_and.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/Squidiff.md` and `wiki/concepts/stimulus-response-diffusion-modeling.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect diffusion-based stimulus-response modeling as a distinct axis in this collection.
