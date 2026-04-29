@@ -33,3 +33,13 @@
 - Updated `wiki/sources/he_2024_an_integrated_transcriptomic_cell_atlas.md` with summary, integration pipeline, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/HNOCA.md` and `wiki/concepts/transcriptomic-fidelity-benchmarking.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect atlas-based fidelity benchmarking and queryable reference resources as a distinct axis in this collection.
+
+## [2026-04-29 22:28 KST] ingest queued | A multi-omic atlas of human embryonic skeletal development
+
+- Registered raw source raw/sources/to_2024_a_multi-omic_atlas_of_human.pdf.
+- Created source page wiki/sources/to_2024_a_multi-omic_atlas_of_human.md.
+
+## [2026-04-29 22:28 KST] ingest queued | Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus
+
+- Registered raw source raw/sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.pdf.
+- Created source page wiki/sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md.

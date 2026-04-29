@@ -27,6 +27,8 @@
 - [GPerturb: Gaussian process modelling of single-cell perturbation data](sources/xing_2025_gperturb_gaussian_process_modelling_of.md) - Nature Communications paper on sparse Bayesian Gaussian-process perturbation regression, dosage sensitivity, and interpretable gene-level effects.
 - [Orthrus: toward evolutionary and functional RNA foundation models](sources/Philip_2026_Orthrus_toward_ evolutionary_and_functional.md) - Nature Methods paper on biologically motivated contrastive RNA pretraining, Mamba-based mature RNA embeddings, and low-data transfer.
 - [An integrated transcriptomic cell atlas of human neural organoids](sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) - Nature atlas paper on HNOCA, protocol benchmarking, primary-reference mapping, and queryable organoid fidelity assessment.
+- [A multi-omic atlas of human embryonic skeletal development](sources/to_2024_a_multi-omic_atlas_of_human.md) - paper source queued for ingest.
+- [Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus](sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
