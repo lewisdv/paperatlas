@@ -47,3 +47,8 @@
 - Updated `wiki/sources/chen_2026_a_generative_ai_framework_unifies.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/AURORA.md` and `wiki/concepts/cross-modality-generation.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect the broader multimodal scope now represented in this collection.
+
+## [2026-04-29 10:56 KST] ingest queued | A cell atlas foundation model for scalable search of similar human cells
+
+- Registered raw source raw/sources/heimberg_2025_a_cell_atlas_foundation_model.pdf.
+- Created source page wiki/sources/heimberg_2025_a_cell_atlas_foundation_model.md.
