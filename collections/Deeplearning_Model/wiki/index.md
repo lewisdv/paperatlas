@@ -17,6 +17,7 @@
 - [How to build the virtual cell with artificial intelligence: Priorities and opportunities](sources/bunne_2024_how_to_build_the_virtual.md) - Cell perspective on AI virtual cells, universal representations, virtual instruments, and a collaborative roadmap for multi-scale biological simulation.
 - [Towards multimodal foundation models in molecular cell biology](sources/cui_2025_towards_multimodal_foundation_models_in.md) - Perspective on multimodal foundation models, unified tokenization, lab-in-the-loop workflows, and promptable cross-modal biology modeling.
 - [Tahoe-x1: Scaling Perturbation-Trained Single-Cell Foundation Models to 3 Billion Parameters](sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md) - Preprint on perturbation-rich single-cell foundation-model scaling, oncology-focused benchmarks, and compute-efficient training to 3B parameters.
+- [Squidiff: predicting cellular development and responses to perturbations using a diffusion model](sources/he_2025_squidiff_predicting_cellular_development_and.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.

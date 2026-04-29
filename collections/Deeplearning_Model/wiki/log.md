@@ -205,3 +205,8 @@
 - Updated `wiki/sources/gandhi_2025_tahoe-x1_scaling_perturbation-trained_single-cell_foundation.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/Tahoe-x1.md` and `wiki/concepts/perturbation-trained-foundation-models.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect perturbation-trained pretraining as a distinct axis in this collection.
+
+## [2026-04-29 21:20 KST] ingest queued | Squidiff: predicting cellular development and responses to perturbations using a diffusion model
+
+- Registered raw source raw/sources/he_2025_squidiff_predicting_cellular_development_and.pdf.
+- Created source page wiki/sources/he_2025_squidiff_predicting_cellular_development_and.md.
