@@ -171,3 +171,8 @@
 - Updated `wiki/sources/bunne_2024_how_to_build_the_virtual.md` with roadmap summary, proposed architecture, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/AIVC.md`, `wiki/concepts/universal-representation.md`, and `wiki/concepts/virtual-instruments.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect AI virtual cell roadmapping as a distinct axis in this collection.
+
+## [2026-04-29 16:08 KST] ingest queued | Towards multimodal foundation models in molecular cell biology
+
+- Registered raw source raw/sources/cui_2025_towards_multimodal_foundation_models_in.pdf.
+- Created source page wiki/sources/cui_2025_towards_multimodal_foundation_models_in.md.
