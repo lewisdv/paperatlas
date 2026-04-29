@@ -88,3 +88,16 @@
 
 - Registered raw source raw/sources/cui_2024_scgpt_toward_building_a_foundation.pdf.
 - Created source page wiki/sources/cui_2024_scgpt_toward_building_a_foundation.md.
+
+## [2026-04-29 11:20 KST] source parsed | scGPT: toward building a foundation model for single-cell multi-omics using generative AI
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/cui_2024_scgpt_toward_building_a_foundation/`.
+- Linked the helper artifact and manifest from `wiki/sources/cui_2024_scgpt_toward_building_a_foundation.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree` after setting `JAVA_HOME` to the Homebrew OpenJDK path.
+- A direct `scripts/wiki.py parse-source ... --parse-format json,markdown --use-struct-tree` attempt did not complete within the session, so the persisted artifact is markdown-only.
+
+## [2026-04-29 11:20 KST] ingest completed | scGPT: toward building a foundation model for single-cell multi-omics using generative AI
+
+- Updated `wiki/sources/cui_2024_scgpt_toward_building_a_foundation.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/scGPT.md` and `wiki/concepts/single-cell-generative-pretraining.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect atlas-scale generative pretraining as a central axis in this collection.
