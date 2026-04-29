@@ -25,7 +25,8 @@
 - [Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas](sources/rood_2024_toward_a_foundation_model_of.md) - Cell review on high-content perturbation screens, active-learning loops, and the `Perturbation Cell Atlas` roadmap for causal biology.
 - [Uncertainty-aware single-cell annotation with a hierarchical reject option](sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md) - Bioinformatics paper on annotation uncertainty, accuracy-rejection curves, and hierarchy-aware partial rejection.
 - [GPerturb: Gaussian process modelling of single-cell perturbation data](sources/xing_2025_gperturb_gaussian_process_modelling_of.md) - Nature Communications paper on sparse Bayesian Gaussian-process perturbation regression, dosage sensitivity, and interpretable gene-level effects.
-- [Orthrus: toward evolutionary and functional RNA foundation models](sources/Philip_2026_Orthrus_toward_ evolutionary_and_functional.md) - paper source queued for ingest.
+- [Orthrus: toward evolutionary and functional RNA foundation models](sources/Philip_2026_Orthrus_toward_ evolutionary_and_functional.md) - Nature Methods paper on biologically motivated contrastive RNA pretraining, Mamba-based mature RNA embeddings, and low-data transfer.
+- [An integrated transcriptomic cell atlas of human neural organoids](sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) - Nature atlas paper on HNOCA, protocol benchmarking, primary-reference mapping, and queryable organoid fidelity assessment.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -43,6 +44,8 @@
 - [GEARS](entities/GEARS.md) - Knowledge-graph-guided model for predicting unseen single-gene and multigene perturbation responses.
 - [scELMo](entities/scELMo.md) - Pipeline that reuses GPT-derived biological metadata embeddings for zero-shot and adaptor-based single-cell analysis.
 - [GPerturb](entities/GPerturb.md) - Sparse additive Gaussian-process model for interpretable gene-level perturbation-effect estimation.
+- [Orthrus](entities/Orthrus.md) - Mature RNA foundation model pretrained with biologically motivated contrastive objectives over isoforms and orthologs.
+- [HNOCA](entities/HNOCA.md) - Integrated Human Neural Organoid Cell Atlas used for reference mapping, protocol comparison, and disease-model projection.
 
 ## Concepts
 
@@ -65,6 +68,8 @@
 - [Super Transformer Architecture](concepts/super-transformer-architecture.md) - A modular multimodal transformer blueprint with modality-specific encoders, shared embeddings, and cross-attention across genomic scales.
 - [Perturbation Cell Atlas](concepts/perturbation-cell-atlas.md) - A proposed atlas of high-content perturbation states meant to support causal and generative foundation models of cells and tissues.
 - [Hierarchical Partial Rejection](concepts/hierarchical-partial-rejection.md) - Returning an intermediate cell-type label under uncertainty instead of forcing either a leaf prediction or a full rejection.
+- [Evolutionary Contrastive RNA Pretraining](concepts/evolutionary-contrastive-rna-pretraining.md) - Learning RNA representations from splice-isoform and orthology-derived positive pairs instead of generic reconstruction alone.
+- [Transcriptomic Fidelity Benchmarking](concepts/transcriptomic-fidelity-benchmarking.md) - Assessing how closely generated or in vitro states match primary references using atlas-based transcriptomic comparisons.
 
 ## Queries
 
