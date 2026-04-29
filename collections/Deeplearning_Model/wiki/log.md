@@ -316,3 +316,8 @@
 - Updated `wiki/sources/rood_2024_toward_a_foundation_model_of.md` with review synthesis, evidence, roadmap, limitations, and parsed-artifact links.
 - Created `wiki/concepts/perturbation-cell-atlas.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect the new perturbation-atlas and causal-biology roadmap thread in this collection.
+
+## [2026-04-29 22:01 KST] ingest queued | Uncertainty-aware single-cell annotation with a hierarchical reject option
+
+- Registered raw source raw/sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.pdf.
+- Created source page wiki/sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md.
