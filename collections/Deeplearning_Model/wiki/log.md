@@ -137,3 +137,8 @@
 - Updated `wiki/sources/bunne_2023_learning_single-cell_perturbation_responses_using.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/CellOT.md` and `wiki/concepts/neural-optimal-transport.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect neural optimal-transport perturbation modeling as a distinct axis in this collection.
+
+## [2026-04-29 15:08 KST] ingest queued | Cell2fate infers RNA velocity modules to improve cell fate prediction
+
+- Registered raw source raw/sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.pdf.
+- Created source page wiki/sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md.
