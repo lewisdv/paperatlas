@@ -74,7 +74,3 @@ This paper presents scRL, an actor-critic reinforcement-learning framework for i
 
 These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
 <!-- opendataloader:end -->
-
-## Open Questions
-
-- Pending ingest.

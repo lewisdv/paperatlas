@@ -239,3 +239,7 @@
 - Updated `wiki/sources/he_2025_squidiff_predicting_cellular_development_and.md` with summary, methods, benchmark evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/Squidiff.md` and `wiki/concepts/stimulus-response-diffusion-modeling.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect diffusion-based stimulus-response modeling as a distinct axis in this collection.
+
+## [2026-04-29 21:23 KST] ingest cleanup | scRL and Squidiff
+
+- Removed leftover `Pending ingest` stub text from `wiki/sources/fu_2025_scrl_utilizing_reinforcement_learning_to.md` and `wiki/sources/he_2025_squidiff_predicting_cellular_development_and.md`.

@@ -74,7 +74,3 @@ This paper presents Squidiff, a conditional diffusion-model framework for predic
 
 These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
 <!-- opendataloader:end -->
-
-## Open Questions
-
-- Pending ingest.
