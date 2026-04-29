@@ -29,6 +29,8 @@
 - [An integrated transcriptomic cell atlas of human neural organoids](sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) - Nature atlas paper on HNOCA, protocol benchmarking, primary-reference mapping, and queryable organoid fidelity assessment.
 - [A multi-omic atlas of human embryonic skeletal development](sources/to_2024_a_multi-omic_atlas_of_human.md) - Nature article on paired multi-omic and spatial atlas building for embryonic skeletal trajectories, regulatory networks, and in silico disease perturbation.
 - [Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus](sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md) - Science Advances atlas of prenatal-to-adult hypothalamic trajectories, 108 robust neuronal subtypes, and cross-species developmental comparisons.
+- [Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes](sources/frommeyer_2025_reinforcement_learning_and_its_clinical.md) - Healthcare systematic review of RL for precision medicine and dynamic treatment regimes, emphasizing clinical translation barriers, specialty spread, and workflow integration.
+- [Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders](sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md) - Science Translational Medicine study of sex-stratified psychiatric transcriptomic burden across 2,160 PsychENCODE postmortem brain samples and coexpression networks.
 - [Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders](sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md) - paper source queued for ingest.
 ## Entities
 
@@ -75,6 +77,8 @@
 - [Transcriptomic Fidelity Benchmarking](concepts/transcriptomic-fidelity-benchmarking.md) - Assessing how closely generated or in vitro states match primary references using atlas-based transcriptomic comparisons.
 - [Multi-Omic Developmental Atlases](concepts/multi-omic-developmental-atlases.md) - Integrated developmental references that combine multiple molecular layers and spatial context as benchmarking and inference substrates.
 - [Region-Specific Developmental Trajectories](concepts/region-specific-developmental-trajectories.md) - Developmental paths whose regulatory programs diverge by anatomical region and provide trajectory-aware reference structure.
+- [Clinical Reinforcement-Learning Translation](concepts/clinical-reinforcement-learning-translation.md) - Deploying RL for patient-level sequential decision support under reward-design, interpretability, and workflow constraints.
+- [Sex-Stratified Transcriptomic Burden](concepts/sex-stratified-transcriptomic-burden.md) - Sex-specific differences in the magnitude and network organization of disease-associated transcriptomic dysregulation.
 
 ## Queries
 

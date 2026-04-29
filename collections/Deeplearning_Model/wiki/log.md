@@ -68,8 +68,36 @@
 - Created `wiki/concepts/region-specific-developmental-trajectories.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect region-specific developmental trajectory atlases as a distinct thread in this collection.
 
+## [2026-04-29 22:36 KST] ingest queued | Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes
+
+- Registered raw source raw/sources/frommeyer_2025_reinforcement_learning_and_its_clinical.pdf.
+- Created source page wiki/sources/frommeyer_2025_reinforcement_learning_and_its_clinical.md.
+
 ## [2026-04-29 22:36 KST] ingest queued | Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders
 
 - Registered raw source raw/sources/xia_2024_transcriptomic_sex_differences_in_postmortem.pdf.
 - Created source page wiki/sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md.
-5_reinforcement_learning_and_its_clinical.md.
+
+## [2026-04-29 22:37 KST] source parsed | Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes
+
+- Saved OpenDataLoader markdown and JSON helper artifacts under `raw/derived/opendataloader/frommeyer_2025_reinforcement_learning_and_its_clinical/`.
+- Linked the helper artifact and manifest from `wiki/sources/frommeyer_2025_reinforcement_learning_and_its_clinical.md`.
+- The saved helper artifacts came from a successful scratch OpenDataLoader `json,markdown` run with `--use-struct-tree`.
+
+## [2026-04-29 22:37 KST] source parsed | Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders
+
+- Saved OpenDataLoader markdown and JSON helper artifacts under `raw/derived/opendataloader/xia_2024_transcriptomic_sex_differences_in_postmortem/`.
+- Linked the helper artifact and manifest from `wiki/sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md`.
+- The saved helper artifacts came from a successful scratch OpenDataLoader `json,markdown` run with `--use-struct-tree`.
+
+## [2026-04-29 22:38 KST] ingest completed | Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes
+
+- Updated `wiki/sources/frommeyer_2025_reinforcement_learning_and_its_clinical.md` with review scope, specialty distribution, translation barriers, limitations, and parsed-artifact links.
+- Created `wiki/concepts/clinical-reinforcement-learning-translation.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect patient-level RL translation as a distinct thread in this collection.
+
+## [2026-04-29 22:38 KST] ingest completed | Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders
+
+- Updated `wiki/sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/concepts/sex-stratified-transcriptomic-burden.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect sex-stratified transcriptomic burden as a heterogeneity-focused reference thread in this collection.

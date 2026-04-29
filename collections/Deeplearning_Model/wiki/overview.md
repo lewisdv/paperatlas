@@ -1,6 +1,6 @@
 # Overview
 
-This collection now has twenty-three deeply ingested anchors and is beginning to connect single-cell generative modeling, atlas-scale generative pretraining, read-depth-aware foundation embeddings, retrieval-style cell atlas foundation models, language-model-based transcriptomic reasoning, lightweight LLM-derived metadata embedding reuse, uncertainty-aware hierarchical annotation, neural optimal-transport perturbation modeling, Gaussian-process-based perturbation regression, biologically motivated mature-RNA foundation modeling, combinatorial perturbation generalization, Bayesian RNA-velocity dynamics, reinforcement-learning-based fate-decision analysis, diffusion-based stimulus-response generation, AI-virtual-cell roadmapping, broader multimodal human health modeling, explicit multimodal foundation-model blueprints for molecular cell biology, multiscale transformer architecture proposals, perturbation-atlas roadmaps for causal biology, atlas-based transcriptomic fidelity benchmarking, developmental multi-omic atlas substrates, region-specific developmental trajectory maps, and perturbation-trained single-cell scaling for oncology. The raw backlog is still much larger than the curated wiki, so the current picture is still early-stage.
+This collection now has twenty-five deeply ingested anchors and is beginning to connect single-cell generative modeling, atlas-scale generative pretraining, read-depth-aware foundation embeddings, retrieval-style cell atlas foundation models, language-model-based transcriptomic reasoning, lightweight LLM-derived metadata embedding reuse, uncertainty-aware hierarchical annotation, neural optimal-transport perturbation modeling, Gaussian-process-based perturbation regression, biologically motivated mature-RNA foundation modeling, combinatorial perturbation generalization, Bayesian RNA-velocity dynamics, reinforcement-learning-based fate-decision analysis, clinical reinforcement-learning translation for dynamic treatment regimes, diffusion-based stimulus-response generation, AI-virtual-cell roadmapping, broader multimodal human health modeling, explicit multimodal foundation-model blueprints for molecular cell biology, multiscale transformer architecture proposals, perturbation-atlas roadmaps for causal biology, atlas-based transcriptomic fidelity benchmarking, developmental multi-omic atlas substrates, region-specific developmental trajectory maps, sex-stratified psychiatric transcriptomic burden, and perturbation-trained single-cell scaling for oncology. The raw backlog is still much larger than the curated wiki, so the current picture is still early-stage.
 
 ## Current Focus
 
@@ -17,6 +17,7 @@ This collection now has twenty-three deeply ingested anchors and is beginning to
 - Knowledge-graph-guided prediction of unseen combinatorial perturbations and genetic interactions.
 - Bayesian RNA-velocity modeling and interpretable temporal module discovery.
 - Reinforcement-learning-based trajectory analysis that tries to localize early commitment states rather than only order cells along pseudotime.
+- Clinical translation of reinforcement learning for precision medicine and dynamic treatment regimes, with emphasis on reward design, interpretability, offline validation, and EHR-compatible workflows.
 - Diffusion-based generation of transient cell states across differentiation, perturbation, drug response, and injury-response settings.
 - Multi-scale virtual-cell simulation roadmaps built around shared biological representations and in silico experimentation.
 - Cross-modality reconstruction and intervention-aware modeling for broader human multi-omics.
@@ -26,6 +27,7 @@ This collection now has twenty-three deeply ingested anchors and is beginning to
 - Queryable atlas resources for projecting new datasets, benchmarking protocol fidelity, and comparing diseased versus reference in vitro states.
 - Multi-omic developmental atlases that combine transcriptomic, epigenomic, and spatial signals into reusable substrates for lineage modeling and disease-oriented inference.
 - Region-specific developmental trajectory maps that can benchmark whether future models preserve anatomically grounded maturation logic rather than only endpoint labels.
+- Sex-stratified transcriptomic burden analysis as a heterogeneity-aware reference axis for psychiatric disease modeling.
 - Perturbation-trained scaling strategies that use explicitly interventional pretraining corpora to improve zero-shot or few-shot response prediction in new contexts.
 - Current anchor systems: [SAVE](entities/SAVE.md), [scGPT](entities/scGPT.md), [scFoundation](entities/scFoundation.md), [SCimilarity](entities/SCimilarity.md), [C2S-Scale](entities/C2S-Scale.md), [scELMo](entities/scELMo.md), [CellOT](entities/CellOT.md), [GEARS](entities/GEARS.md), [GPerturb](entities/GPerturb.md), [Orthrus](entities/Orthrus.md), [Cell2fate](entities/Cell2fate.md), [scRL](entities/scRL.md), [Squidiff](entities/Squidiff.md), [AIVC](entities/AIVC.md), [AURORA](entities/AURORA.md), and [Tahoe-x1](entities/Tahoe-x1.md). Supporting reference resource: [HNOCA](entities/HNOCA.md).
 
@@ -53,10 +55,12 @@ This collection now has twenty-three deeply ingested anchors and is beginning to
 - Atlas infrastructure is emerging as its own modeling substrate: HNOCA acts less like a predictor and more like a queryable reference and fidelity benchmark that future generative or retrieval systems could train against or evaluate against.
 - Reference atlases in this collection are increasingly acting as modeling substrates rather than only descriptive resources, with skeletal, organoid, and hypothalamic atlases all contributing different supervision or evaluation scaffolds.
 - Developmental trajectory resources now span organoids, hypothalamus, and embryonic skeletal development, which strengthens the collection's ability to benchmark region-aware and stage-aware future models.
+- Reinforcement learning in this collection now spans both cell-state analysis and patient-level decision support, but the clinical side raises translation constraints around reward alignment, transparency, retrospective bias, and workflow fit.
+- Some useful reference sources here are not predictive models at all; sex-stratified burden studies can supply heterogeneity targets that future psychiatric or multimodal models may need to preserve.
 - Missing-data completion is becoming a core model function, either across unseen conditions or across unmeasured modalities.
 - Evaluation is moving beyond reconstruction toward downstream utility: cell-state retrieval, large-scale annotation, natural-language interpretation, perturbation response, virtual screening, aging clocks, and disease prediction.
 
 ## Collection State
 
-- Twenty-three source pages have been deeply ingested so far.
+- Twenty-five source pages have been deeply ingested so far.
 - The normalized raw-source backlog is still large, so future ingests may substantially refine or challenge the current synthesis.
