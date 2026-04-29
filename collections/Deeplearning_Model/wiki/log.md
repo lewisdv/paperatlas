@@ -119,3 +119,4 @@
 - Updated `wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/entities/scFoundation.md` and `wiki/concepts/read-depth-aware-pretraining.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect read-depth-aware foundation embeddings as a distinct axis in this collection.
+- Removed leftover queued stub text from the scFoundation source page and duplicate queued catalog entries after finalizing the ingest.
