@@ -24,3 +24,8 @@
 - Renamed the source page to `wiki/sources/li_2026_save_a_generalizable_framework_for.md`.
 - Renamed the OpenDataLoader helper artifact folder to `raw/derived/opendataloader/li_2026_save_a_generalizable_framework_for/`.
 - Updated wiki links and `raw_source` references to the corrected filenames.
+
+## [2026-04-29 10:28 KST] ingest queued | A generative AI framework unifies human multi-omics to model aging, metabolic health, and intervention response
+
+- Registered raw source raw/sources/chen_2026_a_generative_ai_framework_unifies.pdf.
+- Created source page wiki/sources/chen_2026_a_generative_ai_framework_unifies.md.
