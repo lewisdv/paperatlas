@@ -27,8 +27,8 @@
 - [GPerturb: Gaussian process modelling of single-cell perturbation data](sources/xing_2025_gperturb_gaussian_process_modelling_of.md) - Nature Communications paper on sparse Bayesian Gaussian-process perturbation regression, dosage sensitivity, and interpretable gene-level effects.
 - [Orthrus: toward evolutionary and functional RNA foundation models](sources/Philip_2026_Orthrus_toward_ evolutionary_and_functional.md) - Nature Methods paper on biologically motivated contrastive RNA pretraining, Mamba-based mature RNA embeddings, and low-data transfer.
 - [An integrated transcriptomic cell atlas of human neural organoids](sources/he_2024_an_integrated_transcriptomic_cell_atlas.md) - Nature atlas paper on HNOCA, protocol benchmarking, primary-reference mapping, and queryable organoid fidelity assessment.
-- [A multi-omic atlas of human embryonic skeletal development](sources/to_2024_a_multi-omic_atlas_of_human.md) - paper source queued for ingest.
-- [Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus](sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md) - paper source queued for ingest.
+- [A multi-omic atlas of human embryonic skeletal development](sources/to_2024_a_multi-omic_atlas_of_human.md) - Nature article on paired multi-omic and spatial atlas building for embryonic skeletal trajectories, regulatory networks, and in silico disease perturbation.
+- [Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus](sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md) - Science Advances atlas of prenatal-to-adult hypothalamic trajectories, 108 robust neuronal subtypes, and cross-species developmental comparisons.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -72,6 +72,8 @@
 - [Hierarchical Partial Rejection](concepts/hierarchical-partial-rejection.md) - Returning an intermediate cell-type label under uncertainty instead of forcing either a leaf prediction or a full rejection.
 - [Evolutionary Contrastive RNA Pretraining](concepts/evolutionary-contrastive-rna-pretraining.md) - Learning RNA representations from splice-isoform and orthology-derived positive pairs instead of generic reconstruction alone.
 - [Transcriptomic Fidelity Benchmarking](concepts/transcriptomic-fidelity-benchmarking.md) - Assessing how closely generated or in vitro states match primary references using atlas-based transcriptomic comparisons.
+- [Multi-Omic Developmental Atlases](concepts/multi-omic-developmental-atlases.md) - Integrated developmental references that combine multiple molecular layers and spatial context as benchmarking and inference substrates.
+- [Region-Specific Developmental Trajectories](concepts/region-specific-developmental-trajectories.md) - Developmental paths whose regulatory programs diverge by anatomical region and provide trajectory-aware reference structure.
 
 ## Queries
 

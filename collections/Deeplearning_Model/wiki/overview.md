@@ -1,6 +1,6 @@
 # Overview
 
-This collection now has twenty-one deeply ingested anchors and is beginning to connect single-cell generative modeling, atlas-scale generative pretraining, read-depth-aware foundation embeddings, retrieval-style cell atlas foundation models, language-model-based transcriptomic reasoning, lightweight LLM-derived metadata embedding reuse, uncertainty-aware hierarchical annotation, neural optimal-transport perturbation modeling, Gaussian-process-based perturbation regression, biologically motivated mature-RNA foundation modeling, combinatorial perturbation generalization, Bayesian RNA-velocity dynamics, reinforcement-learning-based fate-decision analysis, diffusion-based stimulus-response generation, AI-virtual-cell roadmapping, broader multimodal human health modeling, explicit multimodal foundation-model blueprints for molecular cell biology, multiscale transformer architecture proposals, perturbation-atlas roadmaps for causal biology, atlas-based transcriptomic fidelity benchmarking, and perturbation-trained single-cell scaling for oncology. The raw backlog is still much larger than the curated wiki, so the current picture is still early-stage.
+This collection now has twenty-three deeply ingested anchors and is beginning to connect single-cell generative modeling, atlas-scale generative pretraining, read-depth-aware foundation embeddings, retrieval-style cell atlas foundation models, language-model-based transcriptomic reasoning, lightweight LLM-derived metadata embedding reuse, uncertainty-aware hierarchical annotation, neural optimal-transport perturbation modeling, Gaussian-process-based perturbation regression, biologically motivated mature-RNA foundation modeling, combinatorial perturbation generalization, Bayesian RNA-velocity dynamics, reinforcement-learning-based fate-decision analysis, diffusion-based stimulus-response generation, AI-virtual-cell roadmapping, broader multimodal human health modeling, explicit multimodal foundation-model blueprints for molecular cell biology, multiscale transformer architecture proposals, perturbation-atlas roadmaps for causal biology, atlas-based transcriptomic fidelity benchmarking, developmental multi-omic atlas substrates, region-specific developmental trajectory maps, and perturbation-trained single-cell scaling for oncology. The raw backlog is still much larger than the curated wiki, so the current picture is still early-stage.
 
 ## Current Focus
 
@@ -24,6 +24,8 @@ This collection now has twenty-one deeply ingested anchors and is beginning to c
 - Multiscale transformer blueprints that combine modality-specific encoders, shared embedding spaces, and cross-attention across DNA, RNA, spatial, proteomic, image, and text modalities.
 - Causal perturbation-atlas roadmaps that treat high-content pooled screens, compressed experimentation, and active-learning loops as foundation-model infrastructure.
 - Queryable atlas resources for projecting new datasets, benchmarking protocol fidelity, and comparing diseased versus reference in vitro states.
+- Multi-omic developmental atlases that combine transcriptomic, epigenomic, and spatial signals into reusable substrates for lineage modeling and disease-oriented inference.
+- Region-specific developmental trajectory maps that can benchmark whether future models preserve anatomically grounded maturation logic rather than only endpoint labels.
 - Perturbation-trained scaling strategies that use explicitly interventional pretraining corpora to improve zero-shot or few-shot response prediction in new contexts.
 - Current anchor systems: [SAVE](entities/SAVE.md), [scGPT](entities/scGPT.md), [scFoundation](entities/scFoundation.md), [SCimilarity](entities/SCimilarity.md), [C2S-Scale](entities/C2S-Scale.md), [scELMo](entities/scELMo.md), [CellOT](entities/CellOT.md), [GEARS](entities/GEARS.md), [GPerturb](entities/GPerturb.md), [Orthrus](entities/Orthrus.md), [Cell2fate](entities/Cell2fate.md), [scRL](entities/scRL.md), [Squidiff](entities/Squidiff.md), [AIVC](entities/AIVC.md), [AURORA](entities/AURORA.md), and [Tahoe-x1](entities/Tahoe-x1.md). Supporting reference resource: [HNOCA](entities/HNOCA.md).
 
@@ -49,10 +51,12 @@ This collection now has twenty-one deeply ingested anchors and is beginning to c
 - Annotation quality is increasingly tied to uncertainty handling: hierarchy-aware partial rejection can preserve useful label information, but only when the hierarchy tracks transcriptomic structure rather than ontology structure alone.
 - Sequence foundation modeling in this collection now branches beyond cell-state modeling: Orthrus suggests that mature RNA representations may benefit more from biologically motivated contrastive pairing than from generic reconstruction-heavy genomic pretraining.
 - Atlas infrastructure is emerging as its own modeling substrate: HNOCA acts less like a predictor and more like a queryable reference and fidelity benchmark that future generative or retrieval systems could train against or evaluate against.
+- Reference atlases in this collection are increasingly acting as modeling substrates rather than only descriptive resources, with skeletal, organoid, and hypothalamic atlases all contributing different supervision or evaluation scaffolds.
+- Developmental trajectory resources now span organoids, hypothalamus, and embryonic skeletal development, which strengthens the collection's ability to benchmark region-aware and stage-aware future models.
 - Missing-data completion is becoming a core model function, either across unseen conditions or across unmeasured modalities.
 - Evaluation is moving beyond reconstruction toward downstream utility: cell-state retrieval, large-scale annotation, natural-language interpretation, perturbation response, virtual screening, aging clocks, and disease prediction.
 
 ## Collection State
 
-- Twenty-one source pages have been deeply ingested so far.
+- Twenty-three source pages have been deeply ingested so far.
 - The normalized raw-source backlog is still large, so future ingests may substantially refine or challenge the current synthesis.

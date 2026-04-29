@@ -43,3 +43,27 @@
 
 - Registered raw source raw/sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.pdf.
 - Created source page wiki/sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md.
+
+## [2026-04-29 22:29 KST] source parsed | A multi-omic atlas of human embryonic skeletal development
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/to_2024_a_multi-omic_atlas_of_human/`.
+- Linked the helper artifact and manifest from `wiki/sources/to_2024_a_multi-omic_atlas_of_human.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 22:29 KST] source parsed | Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/herb_2023_single-cell_genomics_reveals_region-specific_developmental/`.
+- Linked the helper artifact and manifest from `wiki/sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 22:29 KST] ingest completed | A multi-omic atlas of human embryonic skeletal development
+
+- Updated `wiki/sources/to_2024_a_multi-omic_atlas_of_human.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/concepts/multi-omic-developmental-atlases.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect developmental multi-omic atlas substrates as a distinct thread in this collection.
+
+## [2026-04-29 22:29 KST] ingest completed | Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus
+
+- Updated `wiki/sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/concepts/region-specific-developmental-trajectories.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect region-specific developmental trajectory atlases as a distinct thread in this collection.
