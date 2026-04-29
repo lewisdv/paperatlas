@@ -67,3 +67,9 @@
 - Updated `wiki/sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/concepts/region-specific-developmental-trajectories.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect region-specific developmental trajectory atlases as a distinct thread in this collection.
+
+## [2026-04-29 22:36 KST] ingest queued | Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders
+
+- Registered raw source raw/sources/xia_2024_transcriptomic_sex_differences_in_postmortem.pdf.
+- Created source page wiki/sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md.
+5_reinforcement_learning_and_its_clinical.md.
