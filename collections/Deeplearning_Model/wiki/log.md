@@ -102,3 +102,8 @@
 - Created `wiki/entities/scGPT.md` and `wiki/concepts/single-cell-generative-pretraining.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect atlas-scale generative pretraining as a central axis in this collection.
 - Removed the leftover queued index entry for the scGPT source after finalizing the deep-ingested catalog entry.
+
+## [2026-04-29 11:24 KST] ingest queued | Large-scale foundation model on single-cell transcriptomics
+
+- Registered raw source raw/sources/hao_2024_large-scale_foundation_model_on_single-cell.pdf.
+- Created source page wiki/sources/hao_2024_large-scale_foundation_model_on_single-cell.md.
