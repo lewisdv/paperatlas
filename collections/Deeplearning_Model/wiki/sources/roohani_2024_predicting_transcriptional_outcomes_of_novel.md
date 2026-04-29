@@ -74,7 +74,3 @@ This paper presents GEARS, a graph-enhanced deep learning model for predicting t
 
 These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
 <!-- opendataloader:end -->
-
-## Open Questions
-
-- Pending ingest.

@@ -73,7 +73,3 @@ This paper presents scELMo, a lightweight pipeline that uses large language mode
 
 These parsed files are helper artifacts. Treat the original raw PDF as the source of truth.
 <!-- opendataloader:end -->
-
-## Open Questions
-
-- Pending ingest.
