@@ -70,3 +70,16 @@
 
 - Registered raw source raw/sources/rizvi_2025_scaling_large_language_models_for.pdf.
 - Created source page wiki/sources/rizvi_2025_scaling_large_language_models_for.md.
+
+## [2026-04-29 11:04 KST] source parsed | Scaling Large Language Models for Next-Generation Single-Cell Analysis
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/rizvi_2025_scaling_large_language_models_for/`.
+- Linked the helper artifact and manifest from `wiki/sources/rizvi_2025_scaling_large_language_models_for.md`.
+- The saved helper artifact was copied from a previously successful scratch OpenDataLoader markdown run used during extraction-quality verification.
+- A direct rerun from the current shell could not start because Java Runtime was unavailable.
+
+## [2026-04-29 11:04 KST] ingest completed | Scaling Large Language Models for Next-Generation Single-Cell Analysis
+
+- Updated `wiki/sources/rizvi_2025_scaling_large_language_models_for.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/C2S-Scale.md` and `wiki/concepts/cell-sentences.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect the new LLM-based transcriptomic analysis axis in this collection.
