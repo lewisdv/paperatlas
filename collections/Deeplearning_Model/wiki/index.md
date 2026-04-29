@@ -23,8 +23,8 @@
 - [scELMo: Embeddings from Language Models are Good Learners for Single-cell Data Analysis](sources/liu_2023_scelmo_embeddings_from_language_models.md) - Manuscript on GPT-derived metadata embeddings, zero-shot single-cell analysis, and lightweight adaptor-based downstream modeling.
 - [Multimodal foundation transformer models for multiscale genomics](sources/khan_2025_multimodal_foundation_transformer_models_for.md) - Nature Methods perspective on a three-tier transformer taxonomy, multimodal genomics integration, and the proposed `Super Transformer` architecture.
 - [Toward a foundation model of causal cell and tissue biology with a Perturbation Cell and Tissue Atlas](sources/rood_2024_toward_a_foundation_model_of.md) - Cell review on high-content perturbation screens, active-learning loops, and the `Perturbation Cell Atlas` roadmap for causal biology.
-- [Uncertainty-aware single-cell annotation with a hierarchical reject option](sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md) - paper source queued for ingest.
-- [GPerturb: Gaussian process modelling of single-cell perturbation data](sources/xing_2025_gperturb_gaussian_process_modelling_of.md) - paper source queued for ingest.
+- [Uncertainty-aware single-cell annotation with a hierarchical reject option](sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md) - Bioinformatics paper on annotation uncertainty, accuracy-rejection curves, and hierarchy-aware partial rejection.
+- [GPerturb: Gaussian process modelling of single-cell perturbation data](sources/xing_2025_gperturb_gaussian_process_modelling_of.md) - Nature Communications paper on sparse Bayesian Gaussian-process perturbation regression, dosage sensitivity, and interpretable gene-level effects.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -41,6 +41,7 @@
 - [Squidiff](entities/Squidiff.md) - Conditional diffusion model for transcriptomic state transitions under development, perturbation, and environmental stimuli.
 - [GEARS](entities/GEARS.md) - Knowledge-graph-guided model for predicting unseen single-gene and multigene perturbation responses.
 - [scELMo](entities/scELMo.md) - Pipeline that reuses GPT-derived biological metadata embeddings for zero-shot and adaptor-based single-cell analysis.
+- [GPerturb](entities/GPerturb.md) - Sparse additive Gaussian-process model for interpretable gene-level perturbation-effect estimation.
 
 ## Concepts
 
@@ -62,6 +63,7 @@
 - [LLM-Derived Feature Embeddings](concepts/llm-derived-feature-embeddings.md) - Reusing LLM-generated biological descriptions and their embeddings as feature priors.
 - [Super Transformer Architecture](concepts/super-transformer-architecture.md) - A modular multimodal transformer blueprint with modality-specific encoders, shared embeddings, and cross-attention across genomic scales.
 - [Perturbation Cell Atlas](concepts/perturbation-cell-atlas.md) - A proposed atlas of high-content perturbation states meant to support causal and generative foundation models of cells and tissues.
+- [Hierarchical Partial Rejection](concepts/hierarchical-partial-rejection.md) - Returning an intermediate cell-type label under uncertainty instead of forcing either a leaf prediction or a full rejection.
 
 ## Queries
 

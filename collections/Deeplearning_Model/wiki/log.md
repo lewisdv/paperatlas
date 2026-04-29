@@ -326,3 +326,31 @@
 
 - Registered raw source raw/sources/xing_2025_gperturb_gaussian_process_modelling_of.pdf.
 - Created source page wiki/sources/xing_2025_gperturb_gaussian_process_modelling_of.md.
+
+## [2026-04-29 22:02 KST] source parsed | Uncertainty-aware single-cell annotation with a hierarchical reject option
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a/`.
+- Linked the helper artifact and manifest from `wiki/sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 22:02 KST] source parsed | GPerturb: Gaussian process modelling of single-cell perturbation data
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/xing_2025_gperturb_gaussian_process_modelling_of/`.
+- Linked the helper artifact and manifest from `wiki/sources/xing_2025_gperturb_gaussian_process_modelling_of.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 22:02 KST] ingest completed | Uncertainty-aware single-cell annotation with a hierarchical reject option
+
+- Updated `wiki/sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/concepts/hierarchical-partial-rejection.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect uncertainty-aware hierarchical rejection as a distinct axis in this collection.
+
+## [2026-04-29 22:02 KST] ingest completed | GPerturb: Gaussian process modelling of single-cell perturbation data
+
+- Updated `wiki/sources/xing_2025_gperturb_gaussian_process_modelling_of.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/GPerturb.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect Gaussian-process-based perturbation regression as a distinct axis in this collection.
+
+## [2026-04-29 22:02 KST] ingest cleanup | Theunissen and GPerturb source-page stubs
+
+- Replaced the default queued stubs in the Theunissen and GPerturb source pages with finalized deep-ingest content and parsed-artifact sections.
