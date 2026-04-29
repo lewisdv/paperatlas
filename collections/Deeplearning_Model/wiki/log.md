@@ -125,3 +125,15 @@
 
 - Registered raw source raw/sources/bunne_2023_learning_single-cell_perturbation_responses_using.pdf.
 - Created source page wiki/sources/bunne_2023_learning_single-cell_perturbation_responses_using.md.
+
+## [2026-04-29 15:05 KST] source parsed | Learning single-cell perturbation responses using neural optimal transport
+
+- Saved a markdown OpenDataLoader helper artifact under `raw/derived/opendataloader/bunne_2023_learning_single-cell_perturbation_responses_using/`.
+- Linked the helper artifact and manifest from `wiki/sources/bunne_2023_learning_single-cell_perturbation_responses_using.md`.
+- The saved helper artifact came from a successful scratch OpenDataLoader markdown run with `--use-struct-tree`.
+
+## [2026-04-29 15:06 KST] ingest completed | Learning single-cell perturbation responses using neural optimal transport
+
+- Updated `wiki/sources/bunne_2023_learning_single-cell_perturbation_responses_using.md` with summary, methods, evidence, limitations, and parsed-artifact links.
+- Created `wiki/entities/CellOT.md` and `wiki/concepts/neural-optimal-transport.md`.
+- Updated `wiki/overview.md` and `wiki/index.md` to reflect neural optimal-transport perturbation modeling as a distinct axis in this collection.
