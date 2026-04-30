@@ -16,6 +16,8 @@
 - Embed the summaries with `text-embedding-ada-002`.
 - Use an iterative optimal transport procedure to assign genes into equal-sized semantic blocks.
 - Reshape the input expression matrix into an `N x L x K` tensor and run Transformer-style attention over the block dimension.
+- Compared with [Cell Sentences](cell-sentences.md), the text-derived semantics are used to cluster genes into biologically motivated blocks rather than to linearize the whole cell as a language sequence.
+- Compared with [LLM-Derived Feature Embeddings](llm-derived-feature-embeddings.md), text annotations here define the model's internal tokenization scheme instead of serving mainly as external reusable priors.
 
 ## Claimed Benefits
 

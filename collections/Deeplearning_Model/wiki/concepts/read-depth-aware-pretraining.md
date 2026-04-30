@@ -10,6 +10,8 @@
 - The RDA objective extends masked prediction by conditioning on a low-depth or duplicated input sample plus two total-count indicators, `S` and `T`.
 - This lets the model learn both within-cell gene relationships and relationships between cells observed at different effective read depths.
 - At inference time, setting `T` above `S` is used to generate read-depth-enhanced embeddings or expression estimates from low-depth cells.
+- Compared with [Cell Sentences](cell-sentences.md), the representation stays closer to the original expression matrix and treats read depth as a first-class signal instead of translating cells into ranked language-like tokens.
+- Compared with [Single-Cell Generative Pretraining](single-cell-generative-pretraining.md), the main differentiator is not only atlas-scale pretraining but the explicit technical abstraction for depth variation.
 
 ## Claimed Benefits
 

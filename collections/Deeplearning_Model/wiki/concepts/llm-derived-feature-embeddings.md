@@ -10,6 +10,8 @@
 - [scELMo](../entities/scELMo.md) is the main example, using GPT 3.5 to generate descriptions and embeddings for genes, proteins, and cell-related metadata.
 - Compared with [C2S-Scale](../entities/C2S-Scale.md), which serializes cells into gene-token sentences and trains a large biological LLM directly, scELMo keeps the LLM mostly external and lightweight.
 - The paper also contrasts this strategy with GenePT-style embeddings derived from curated text sources such as NCBI.
+- Compared with [Single-Cell Generative Pretraining](single-cell-generative-pretraining.md), this path imports semantic priors from an outside LLM instead of pretraining a large biological model over tens of millions of cells.
+- Compared with [Gene Block Attention](gene-block-attention.md), it uses text mainly to define reusable feature semantics, not to restructure the whole generative architecture around semantically grouped expression blocks.
 
 ## Claimed Benefits
 

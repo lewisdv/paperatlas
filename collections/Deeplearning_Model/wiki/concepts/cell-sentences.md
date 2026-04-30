@@ -10,6 +10,9 @@
 - For each cell, the top expressed genes are rank-ordered and serialized into a token sequence.
 - Metadata, papers, and other biological text can then be mixed with these sequences in the same prompt or training corpus.
 - The paper reports that the relationship between expression rank and original normalized expression remains strong enough that a fitted linear model can recover expression with `R2 = 0.85`.
+- Compared with [Gene Block Attention](gene-block-attention.md), this keeps a flat token stream and borrows language-model ordering rather than grouping genes into semantically balanced modules.
+- Compared with [Read-Depth-Aware Pretraining](read-depth-aware-pretraining.md), the emphasis is not on modeling technical count variation explicitly but on translating transcriptomes into a language-native representation.
+- Compared with [LLM-Derived Feature Embeddings](llm-derived-feature-embeddings.md), the model trains directly on transcriptome-as-language sequences rather than importing an external semantic embedding space.
 
 ## Claimed Benefits
 

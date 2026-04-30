@@ -131,3 +131,14 @@
 - Created `wiki/queries/uncertainty-coverage-and-low-confidence-state-assignment.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares hierarchical partial rejection, SCimilarity confidence scoring, and HNOCA-style fidelity benchmarking using only collection-supported evidence.
+
+## [2026-04-30 13:47 KST] lint refinement | representation-unit cross-links
+
+- Strengthened comparisons among `wiki/concepts/cell-sentences.md`, `wiki/concepts/read-depth-aware-pretraining.md`, `wiki/concepts/llm-derived-feature-embeddings.md`, and `wiki/concepts/gene-block-attention.md`.
+- Clarified that this collection's single-cell model family is splitting not only by task but also by what each paper treats as the basic representation unit.
+
+## [2026-04-30 13:48 KST] query saved | How do the main single-cell foundation-model papers in this collection differ in their basic representation units?
+
+- Created `wiki/queries/representation-units-in-single-cell-foundation-models.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares gene blocks, gene-plus-expression tokenization, ranked cell sentences, read-depth-aware matrix modeling, external LLM-derived feature embeddings, and retrieval embeddings using only collection-supported evidence.
