@@ -205,6 +205,42 @@ UI_TRANSLATIONS = {
         "graph_metric_relations": "Visible Relations",
         "graph_metric_year": "Year",
         "recommended_start": "Recommended Start",
+        "root_hub_title": "Research Collection Hub",
+        "root_tagline": "Collection-specific workspaces for raw sources, source pages, concepts, queries, and syntheses.",
+        "root_open_primary_collection": "Open Primary Collection",
+        "root_contract_heading": "Collection Contract",
+        "root_contract_1_tail": "stays immutable source material.",
+        "root_contract_2_tail": "accumulates linked collection knowledge.",
+        "root_contract_3": "Queries and syntheses stay inside the current collection boundary.",
+        "root_hero_copy": "A persistent LLM wiki for papers and methods, organized as independent collections that can keep growing without mixing knowledge boundaries.",
+        "root_status_summary": "{pages} linked wiki pages across {collections} collections",
+        "root_status_detail": "Counts include source pages, concepts, queries, and syntheses rendered from each collection workspace.",
+        "root_active_chip": "{count} active",
+        "root_scaffold_chip": "{count} scaffold",
+        "root_analysis_chip": "{count} saved analyses",
+        "root_active_collections_chip": "{count} active collections",
+        "root_scaffold_collections_chip": "{count} scaffold collections",
+        "root_guide_1_title": "Pick a collection first",
+        "root_guide_1_copy": "Each collection is a separate knowledge base. Start with the one that matches your current question so concepts and source evidence stay in the right boundary.",
+        "root_guide_2_title": "Read the overview before the papers",
+        "root_guide_2_copy": "The overview page is the fastest way to understand scope, major themes, and what is already synthesized in the collection.",
+        "root_guide_3_title": "Use maturity signals to decide depth",
+        "root_guide_3_copy": "Reference collections are good for immediate answers, while starter or scaffold collections usually need more source ingest and concept building first.",
+        "root_active_workspaces": "Active Research Workspaces",
+        "root_snapshot_suffix": "{generated_at} snapshot of rendered collection state.",
+        "root_open_primary_workspace": "Open Primary Workspace",
+        "root_sources_short": "sources",
+        "root_open_dashboard": "Open Dashboard",
+        "root_open_overview": "Open Overview",
+        "root_dashboard_pending": "Dashboard Pending",
+        "root_overview_pending": "Overview Pending",
+        "root_build_signals": "Build Signals",
+        "root_active_collections": "Active Collections",
+        "root_scaffold_collections": "Scaffold Collections",
+        "root_total_pages": "Total Pages",
+        "root_analyses": "Analyses",
+        "root_sync_heading": "How This Stays in Sync",
+        "root_sync_copy": "Whenever collection HTML is re-rendered, this root hub is regenerated from current collection metadata and wiki counts so the top-level index stays aligned with the collection dashboards.",
     },
     "ko": {
         "language": "언어",
@@ -321,6 +357,42 @@ UI_TRANSLATIONS = {
         "graph_metric_relations": "보이는 관계",
         "graph_metric_year": "연도",
         "recommended_start": "추천 시작점",
+        "root_hub_title": "연구 컬렉션 허브",
+        "root_tagline": "원본 소스, source page, 개념, 질의, synthesis를 컬렉션별로 분리해 관리하는 작업 공간입니다.",
+        "root_open_primary_collection": "대표 컬렉션 열기",
+        "root_contract_heading": "컬렉션 계약",
+        "root_contract_1_tail": "는 수정하지 않는 원본 소스입니다.",
+        "root_contract_2_tail": "는 연결된 컬렉션 지식을 계속 축적합니다.",
+        "root_contract_3": "질의와 synthesis는 현재 컬렉션 경계를 넘지 않습니다.",
+        "root_hero_copy": "논문과 방법 지식을 위한 지속형 LLM 위키로, 컬렉션별 경계를 유지한 채 계속 확장할 수 있도록 구성되어 있습니다.",
+        "root_status_summary": "{collections}개 컬렉션에 연결된 위키 페이지 {pages}개",
+        "root_status_detail": "카운트에는 각 컬렉션 작업공간에서 렌더된 source page, 개념, 질의, synthesis가 포함됩니다.",
+        "root_active_chip": "활성 {count}개",
+        "root_scaffold_chip": "스캐폴드 {count}개",
+        "root_analysis_chip": "저장된 분석 {count}개",
+        "root_active_collections_chip": "활성 컬렉션 {count}개",
+        "root_scaffold_collections_chip": "스캐폴드 컬렉션 {count}개",
+        "root_guide_1_title": "먼저 컬렉션을 고르세요",
+        "root_guide_1_copy": "각 컬렉션은 분리된 지식 베이스입니다. 현재 질문과 가장 맞는 컬렉션부터 열어야 개념과 근거가 섞이지 않습니다.",
+        "root_guide_2_title": "논문보다 먼저 overview를 읽으세요",
+        "root_guide_2_copy": "overview 페이지가 이 컬렉션의 범위, 핵심 주제, 이미 종합된 내용을 가장 빠르게 이해하는 출발점입니다.",
+        "root_guide_3_title": "성숙도 신호로 깊이를 조절하세요",
+        "root_guide_3_copy": "Reference 컬렉션은 바로 답을 찾기 좋고, starter나 scaffold 컬렉션은 소스 ingest와 개념 구축이 더 필요할 가능성이 큽니다.",
+        "root_active_workspaces": "활성 연구 작업공간",
+        "root_snapshot_suffix": "{generated_at} 기준 렌더된 컬렉션 상태 스냅샷입니다.",
+        "root_open_primary_workspace": "대표 작업공간 열기",
+        "root_sources_short": "소스",
+        "root_open_dashboard": "대시보드 열기",
+        "root_open_overview": "개요 열기",
+        "root_dashboard_pending": "대시보드 준비 중",
+        "root_overview_pending": "개요 준비 중",
+        "root_build_signals": "구축 신호",
+        "root_active_collections": "활성 컬렉션",
+        "root_scaffold_collections": "스캐폴드 컬렉션",
+        "root_total_pages": "전체 페이지",
+        "root_analyses": "분석",
+        "root_sync_heading": "동기화 방식",
+        "root_sync_copy": "collection HTML이 다시 렌더될 때마다 현재 collection 메타데이터와 wiki 카운트를 기준으로 이 루트 허브도 함께 재생성되어 최상위 index가 collection 대시보드와 계속 맞춰집니다.",
     },
 }
 
@@ -331,6 +403,15 @@ COMMON_LABEL_TRANSLATIONS = {
         "Log": "로그",
         "Latest Synthesis": "최신 종합 정리",
         "Latest Query": "최신 질의 분석",
+        "Dashboard": "대시보드",
+        "Reference": "레퍼런스",
+        "Growing": "성장 중",
+        "Starter": "스타터",
+        "Scaffold": "스캐폴드",
+        "Active": "활성",
+        "Collection": "컬렉션",
+        "Total Pages": "전체 페이지",
+        "Analyses": "분석",
         "Core": "코어",
         "Sources": "소스",
         "Concepts": "개념",
@@ -3512,7 +3593,8 @@ pre code {
 .page-body ul,
 .page-body ol,
 .page-body pre,
-.page-body blockquote {
+.page-body blockquote,
+.page-body .markdown-table-wrap {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
 }
@@ -3532,6 +3614,44 @@ pre code {
   border-left: 4px solid var(--accent);
   background: rgba(var(--accent-rgb), 0.06);
   border-radius: 0 0.7rem 0.7rem 0;
+}
+
+.page-body .markdown-table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 0.95rem;
+  background: rgba(255, 255, 252, 0.92);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+}
+
+.page-body table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+}
+
+.page-body th,
+.page-body td {
+  padding: 0.82rem 0.9rem;
+  border-bottom: 1px solid rgba(98, 84, 68, 0.1);
+  vertical-align: top;
+}
+
+.page-body th {
+  background: var(--surface-soft);
+  color: var(--muted);
+  text-align: left;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.page-body tbody tr:last-child td {
+  border-bottom: none;
 }
 
 .dashboard-hero {
@@ -5104,6 +5224,86 @@ def render_inline(text: str) -> str:
     return "".join(rendered)
 
 
+def split_markdown_table_cells(line: str) -> List[str]:
+    stripped = line.strip()
+    if stripped.startswith("|"):
+        stripped = stripped[1:]
+    if stripped.endswith("|"):
+        stripped = stripped[:-1]
+    return [cell.strip() for cell in stripped.split("|")]
+
+
+def is_markdown_table_separator(line: str) -> bool:
+    if "|" not in line:
+        return False
+    cells = split_markdown_table_cells(line)
+    if not cells:
+        return False
+    for cell in cells:
+        compact = cell.replace(" ", "")
+        if not compact:
+            return False
+        if set(compact) - {"-", ":"}:
+            return False
+        if compact.count("-") < 3:
+            return False
+    return True
+
+
+def table_alignment(cell: str) -> str:
+    compact = cell.strip().replace(" ", "")
+    if compact.startswith(":") and compact.endswith(":"):
+        return "center"
+    if compact.endswith(":"):
+        return "right"
+    if compact.startswith(":"):
+        return "left"
+    return ""
+
+
+def render_markdown_table(header_line: str, separator_line: str, row_lines: List[str]) -> str:
+    headers = split_markdown_table_cells(header_line)
+    alignments = split_markdown_table_cells(separator_line)
+    rows = [split_markdown_table_cells(line) for line in row_lines]
+    column_count = max([len(headers), len(alignments)] + [len(row) for row in rows] or [0])
+    if not column_count:
+        return "<p>%s</p>" % render_inline(header_line)
+
+    def padded(cells: List[str]) -> List[str]:
+        return cells + [""] * max(0, column_count - len(cells))
+
+    headers = padded(headers)
+    alignments = padded(alignments)
+    rows = [padded(row) for row in rows]
+
+    header_html = "".join(
+        '<th%s>%s</th>'
+        % (
+            f' style="text-align: {table_alignment(alignments[index])}"' if table_alignment(alignments[index]) else "",
+            render_inline(cell),
+        )
+        for index, cell in enumerate(headers)
+    )
+    body_html = "".join(
+        "<tr>%s</tr>"
+        % "".join(
+            '<td%s>%s</td>'
+            % (
+                f' style="text-align: {table_alignment(alignments[index])}"' if table_alignment(alignments[index]) else "",
+                render_inline(cell),
+            )
+            for index, cell in enumerate(row)
+        )
+        for row in rows
+    )
+    return (
+        '<div class="markdown-table-wrap"><table>'
+        f"<thead><tr>{header_html}</tr></thead>"
+        f"<tbody>{body_html}</tbody>"
+        "</table></div>"
+    )
+
+
 def render_markdown(body: str) -> str:
     html_parts: List[str] = []
     paragraph_lines: List[str] = []
@@ -5135,7 +5335,10 @@ def render_markdown(body: str) -> str:
             html_parts.append("<pre><code>%s</code></pre>" % code_text)
             code_lines = []
 
-    for raw_line in body.splitlines():
+    lines = body.splitlines()
+    index = 0
+    while index < len(lines):
+        raw_line = lines[index]
         line = raw_line.rstrip("\n")
         stripped = line.strip()
 
@@ -5148,15 +5351,33 @@ def render_markdown(body: str) -> str:
             else:
                 in_code = True
                 code_lines = []
+            index += 1
             continue
 
         if in_code:
             code_lines.append(line)
+            index += 1
             continue
 
         if not stripped:
             flush_paragraph()
             flush_list()
+            index += 1
+            continue
+
+        next_stripped = lines[index + 1].strip() if index + 1 < len(lines) else ""
+        if "|" in stripped and is_markdown_table_separator(next_stripped):
+            flush_paragraph()
+            flush_list()
+            table_rows: List[str] = []
+            index += 2
+            while index < len(lines):
+                row_candidate = lines[index].strip()
+                if not row_candidate or "|" not in row_candidate:
+                    break
+                table_rows.append(row_candidate)
+                index += 1
+            html_parts.append(render_markdown_table(stripped, next_stripped, table_rows))
             continue
 
         heading_match = HEADING_RE.match(stripped)
@@ -5170,12 +5391,14 @@ def render_markdown(body: str) -> str:
                 "<h%s id=\"%s\">%s</h%s>"
                 % (level, heading_id, render_inline(heading_text), level)
             )
+            index += 1
             continue
 
         if stripped.startswith("> "):
             flush_paragraph()
             flush_list()
             html_parts.append("<blockquote><p>%s</p></blockquote>" % render_inline(stripped[2:]))
+            index += 1
             continue
 
         unordered_match = UNORDERED_LIST_RE.match(stripped)
@@ -5185,6 +5408,7 @@ def render_markdown(body: str) -> str:
                 flush_list()
             list_type = "ul"
             list_items.append(render_inline(unordered_match.group(1)))
+            index += 1
             continue
 
         ordered_match = ORDERED_LIST_RE.match(stripped)
@@ -5194,9 +5418,11 @@ def render_markdown(body: str) -> str:
                 flush_list()
             list_type = "ol"
             list_items.append(render_inline(ordered_match.group(1)))
+            index += 1
             continue
 
         paragraph_lines.append(stripped)
+        index += 1
 
     flush_paragraph()
     flush_list()
@@ -6716,11 +6942,18 @@ ROOT_HUB_TEMPLATE = Template(
           </a>
           <p class="eyebrow">{{ site_brand }}</p>
         </div>
-        <h1>Research Collection Hub</h1>
-        <p class="subtle">Collection-specific workspaces for raw sources, source pages, concepts, queries, and syntheses.</p>
+        <h1 data-i18n-key="root_hub_title">Research Collection Hub</h1>
+        <p class="subtle" data-i18n-key="root_tagline">Collection-specific workspaces for raw sources, source pages, concepts, queries, and syntheses.</p>
+        <div class="language-toggle" role="group" aria-label="Language toggle">
+          <span class="control-label" data-i18n-key="language">Language</span>
+          <div class="language-buttons">
+            <button class="lang-button active" type="button" data-lang="en" data-i18n-key="english">English</button>
+            <button class="lang-button" type="button" data-lang="ko" data-i18n-key="korean">한국어</button>
+          </div>
+        </div>
         <div class="brand-actions">
           {% if primary_collection %}
-          <a class="dashboard-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}">Open {{ primary_collection.title }}</a>
+          <a class="dashboard-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}" data-i18n-key="root_open_primary_collection">Open Primary Collection</a>
           {% endif %}
           {% if show_local_viewer_link %}
           <a class="dashboard-link secondary-link" href="{{ local_viewer_href }}" data-i18n-key="open_local_viewer">Open Local Viewer</a>
@@ -6729,7 +6962,7 @@ ROOT_HUB_TEMPLATE = Template(
       </div>
 
       <section class="side-block">
-        <p class="control-label">Collections</p>
+        <p class="control-label" data-i18n-key="collections">Collections</p>
         <ul class="root-quick-links">
           {% for collection in collections %}
           <li>
@@ -6740,7 +6973,7 @@ ROOT_HUB_TEMPLATE = Template(
             {% endif %}
               <span class="root-link-copy">
                 <strong>{{ collection.title }}</strong>
-                <span>{{ collection.stage }} · {{ collection.source_pages }} sources</span>
+                <span><span data-i18n-label="{{ collection.stage }}">{{ collection.stage }}</span> · {{ collection.source_pages }} <span data-i18n-key="root_sources_short">sources</span></span>
               </span>
               <span class="root-count-pill">{{ collection.page_count }}</span>
             </a>
@@ -6749,14 +6982,14 @@ ROOT_HUB_TEMPLATE = Template(
         </ul>
       </section>
 
-      <section class="side-block">
-        <p class="control-label">Collection Contract</p>
-        <ul class="contract-list">
-          <li><code>raw/</code> stays immutable source material.</li>
-          <li><code>wiki/</code> accumulates linked collection knowledge.</li>
-          <li>Queries and syntheses stay inside the current collection boundary.</li>
-        </ul>
-      </section>
+        <section class="side-block">
+          <p class="control-label" data-i18n-key="root_contract_heading">Collection Contract</p>
+          <ul class="contract-list">
+          <li><code>raw/</code> <span data-i18n-key="root_contract_1_tail">stays immutable source material.</span></li>
+          <li><code>wiki/</code> <span data-i18n-key="root_contract_2_tail">accumulates linked collection knowledge.</span></li>
+          <li data-i18n-key="root_contract_3">Queries and syntheses stay inside the current collection boundary.</li>
+          </ul>
+        </section>
     </aside>
 
     <main class="content root-content">
@@ -6764,15 +6997,15 @@ ROOT_HUB_TEMPLATE = Template(
         <div class="root-hero-top">
           <div class="root-hero-copy">
             <p class="eyebrow">{{ site_brand }}</p>
-            <h1>Research Collection Hub</h1>
-            <p class="hero-copy">
+            <h1 data-i18n-key="root_hub_title">Research Collection Hub</h1>
+            <p class="hero-copy" data-i18n-key="root_hero_copy">
               A persistent LLM wiki for papers and methods, organized as independent collections that can keep growing without mixing knowledge boundaries.
             </p>
             <div class="root-hero-actions">
               {% if primary_collection %}
-              <a class="card-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}">Open Primary Workspace</a>
+              <a class="card-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}" data-i18n-key="root_open_primary_workspace">Open Primary Workspace</a>
               {% endif %}
-              <span class="meta-chip">Generated {{ generated_at }}</span>
+              <span class="meta-chip"><span data-i18n-key="generated_label">Generated</span> {{ generated_at }}</span>
             </div>
           </div>
         </div>
@@ -6780,46 +7013,46 @@ ROOT_HUB_TEMPLATE = Template(
 
       <section class="status-bar">
         <div class="status-copy root-status-copy">
-          <strong>{{ totals.pages }} linked wiki pages across {{ totals.collections }} collections</strong>
-          <span class="subtle">Counts include source pages, concepts, queries, and syntheses rendered from each collection workspace.</span>
+          <strong id="root-status-summary" data-pages="{{ totals.pages }}" data-collections="{{ totals.collections }}">{{ totals.pages }} linked wiki pages across {{ totals.collections }} collections</strong>
+          <span id="root-status-detail" class="subtle" data-i18n-key="root_status_detail">Counts include source pages, concepts, queries, and syntheses rendered from each collection workspace.</span>
         </div>
         <div class="active-filters">
-          <span class="active-chip">{{ active_collections }} active</span>
-          <span class="mini-chip">{{ scaffold_collections }} scaffold</span>
-          <span class="mini-chip">{{ totals.saved_analyses }} saved analyses</span>
+          <span id="root-active-chip" class="active-chip" data-count="{{ active_collections }}">{{ active_collections }} active</span>
+          <span id="root-scaffold-chip" class="mini-chip" data-count="{{ scaffold_collections }}">{{ scaffold_collections }} scaffold</span>
+          <span id="root-analysis-chip" class="mini-chip" data-count="{{ totals.saved_analyses }}">{{ totals.saved_analyses }} saved analyses</span>
         </div>
       </section>
 
       <section class="guide-grid">
         <article class="guide-card">
-          <span class="guide-step">Step 1</span>
-          <h2>Pick a collection first</h2>
-          <p class="guide-copy">Each collection is a separate knowledge base. Start with the one that matches your current question so concepts and source evidence stay in the right boundary.</p>
+          <span class="guide-step" data-i18n-key="guide_step_label_1">Step 1</span>
+          <h2 data-i18n-key="root_guide_1_title">Pick a collection first</h2>
+          <p class="guide-copy" data-i18n-key="root_guide_1_copy">Each collection is a separate knowledge base. Start with the one that matches your current question so concepts and source evidence stay in the right boundary.</p>
           <div class="guide-actions">
             {% if primary_collection %}
-            <a class="card-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}">Open {{ primary_collection.title }}</a>
+            <a class="card-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}" data-i18n-key="root_open_primary_collection">Open Primary Collection</a>
             {% endif %}
           </div>
         </article>
 
         <article class="guide-card">
-          <span class="guide-step">Step 2</span>
-          <h2>Read the overview before the papers</h2>
-          <p class="guide-copy">The overview page is the fastest way to understand scope, major themes, and what is already synthesized in the collection.</p>
+          <span class="guide-step" data-i18n-key="guide_step_label_2">Step 2</span>
+          <h2 data-i18n-key="root_guide_2_title">Read the overview before the papers</h2>
+          <p class="guide-copy" data-i18n-key="root_guide_2_copy">The overview page is the fastest way to understand scope, major themes, and what is already synthesized in the collection.</p>
           <div class="guide-actions">
             {% if primary_collection %}
-            <a class="card-link" href="{{ primary_collection.start_href }}" data-file-href="{{ primary_collection.start_file_href }}" data-http-href="{{ primary_collection.start_http_href }}">{{ primary_collection.start_label }}</a>
+            <a class="card-link" href="{{ primary_collection.start_href }}" data-file-href="{{ primary_collection.start_file_href }}" data-http-href="{{ primary_collection.start_http_href }}" data-i18n-label="{{ primary_collection.start_label }}">{{ primary_collection.start_label }}</a>
             {% endif %}
           </div>
         </article>
 
         <article class="guide-card">
-          <span class="guide-step">Step 3</span>
-          <h2>Use maturity signals to decide depth</h2>
-          <p class="guide-copy">Reference collections are good for immediate answers, while starter or scaffold collections usually need more source ingest and concept building first.</p>
+          <span class="guide-step" data-i18n-key="guide_step_label_3">Step 3</span>
+          <h2 data-i18n-key="root_guide_3_title">Use maturity signals to decide depth</h2>
+          <p class="guide-copy" data-i18n-key="root_guide_3_copy">Reference collections are good for immediate answers, while starter or scaffold collections usually need more source ingest and concept building first.</p>
           <div class="guide-actions">
-            <span class="card-link tertiary disabled">{{ active_collections }} active collections</span>
-            <span class="card-link tertiary disabled">{{ scaffold_collections }} scaffold collections</span>
+            <span class="card-link tertiary disabled"><span id="root-active-collections-label" data-count="{{ active_collections }}">{{ active_collections }} active collections</span></span>
+            <span class="card-link tertiary disabled"><span id="root-scaffold-collections-label" data-count="{{ scaffold_collections }}">{{ scaffold_collections }} scaffold collections</span></span>
           </div>
         </article>
       </section>
@@ -6827,51 +7060,51 @@ ROOT_HUB_TEMPLATE = Template(
       <section>
         <div class="root-section-heading">
           <div>
-            <p class="eyebrow">Collections</p>
-            <h2>Active Research Workspaces</h2>
+            <p class="eyebrow" data-i18n-key="collections">Collections</p>
+            <h2 data-i18n-key="root_active_workspaces">Active Research Workspaces</h2>
           </div>
-          <p>{{ generated_at }} snapshot of rendered collection state.</p>
+          <p id="root-snapshot-copy" data-generated-at="{{ generated_at }}">{{ generated_at }} snapshot of rendered collection state.</p>
         </div>
 
         <div class="root-collection-grid">
           {% for collection in collections %}
           <article class="paper-card collection-hub-card{% if not collection.dashboard_exists %} disabled{% endif %}">
             <div class="card-topline">
-              <span class="section-pill section-core">Collection</span>
-              <span class="badge {% if not collection.is_active %}scaffold{% endif %}">{{ collection.stage }}</span>
+              <span class="section-pill section-core" data-i18n-label="Collection">Collection</span>
+              <span class="badge {% if not collection.is_active %}scaffold{% endif %}" data-i18n-label="{{ collection.stage }}">{{ collection.stage }}</span>
             </div>
             <h2>{{ collection.title }}</h2>
             <p class="card-excerpt">{{ collection.summary }}</p>
             <div class="card-tags">
-              <span class="mini-chip">{{ collection.source_pages }} sources</span>
-              <span class="mini-chip">{{ collection.concept_pages }} concepts</span>
-              <span class="mini-chip">{{ collection.saved_analyses }} analyses</span>
-              <span class="mini-chip">{{ collection.activity_label }}</span>
+              <span class="mini-chip">{{ collection.source_pages }} <span data-i18n-label="Sources">Sources</span></span>
+              <span class="mini-chip">{{ collection.concept_pages }} <span data-i18n-label="Concepts">Concepts</span></span>
+              <span class="mini-chip">{{ collection.saved_analyses }} <span data-i18n-label="Analyses">Analyses</span></span>
+              <span class="mini-chip" data-i18n-label="{{ collection.activity_label }}">{{ collection.activity_label }}</span>
             </div>
             <div class="collection-hub-stats">
               <div class="collection-hub-stat">
                 <strong>{{ collection.source_pages }}</strong>
-                <span>Sources</span>
+                <span data-i18n-label="Sources">Sources</span>
               </div>
               <div class="collection-hub-stat">
                 <strong>{{ collection.concept_pages }}</strong>
-                <span>Concepts</span>
+                <span data-i18n-label="Concepts">Concepts</span>
               </div>
               <div class="collection-hub-stat">
                 <strong>{{ collection.page_count }}</strong>
-                <span>Total Pages</span>
+                <span data-i18n-label="Total Pages">Total Pages</span>
               </div>
             </div>
             <div class="root-actions">
               {% if collection.dashboard_exists %}
-              <a class="card-link" href="{{ collection.href }}" data-file-href="{{ collection.file_href }}" data-http-href="{{ collection.http_href }}">Open Dashboard</a>
+              <a class="card-link" href="{{ collection.href }}" data-file-href="{{ collection.file_href }}" data-http-href="{{ collection.http_href }}" data-i18n-key="root_open_dashboard">Open Dashboard</a>
               {% else %}
-              <span class="card-link disabled">Dashboard Pending</span>
+              <span class="card-link disabled" data-i18n-key="root_dashboard_pending">Dashboard Pending</span>
               {% endif %}
               {% if collection.overview_exists %}
-              <a class="card-link secondary" href="{{ collection.overview_href }}" data-file-href="{{ collection.overview_file_href }}" data-http-href="{{ collection.overview_http_href }}">Open Overview</a>
+              <a class="card-link secondary" href="{{ collection.overview_href }}" data-file-href="{{ collection.overview_file_href }}" data-http-href="{{ collection.overview_http_href }}" data-i18n-key="root_open_overview">Open Overview</a>
               {% else %}
-              <span class="card-link tertiary disabled">Overview Pending</span>
+              <span class="card-link tertiary disabled" data-i18n-key="root_overview_pending">Overview Pending</span>
               {% endif %}
             </div>
           </article>
@@ -6882,65 +7115,97 @@ ROOT_HUB_TEMPLATE = Template(
 
     <aside class="rightbar root-rail">
       <section class="rail-block">
-        <p class="control-label">Collection Snapshot</p>
+        <p class="control-label" data-i18n-key="collection_snapshot">Collection Snapshot</p>
         <div class="rail-stats">
           <article class="stat-card rail-stat">
-            <span class="stat-label">Collections</span>
+            <span class="stat-label" data-i18n-key="collections">Collections</span>
             <strong>{{ totals.collections }}</strong>
           </article>
           <article class="stat-card rail-stat">
-            <span class="stat-label">Sources</span>
+            <span class="stat-label" data-i18n-label="Sources">Sources</span>
             <strong>{{ totals.sources }}</strong>
           </article>
           <article class="stat-card rail-stat">
-            <span class="stat-label">Concepts</span>
+            <span class="stat-label" data-i18n-label="Concepts">Concepts</span>
             <strong>{{ totals.concepts }}</strong>
           </article>
           <article class="stat-card rail-stat">
-            <span class="stat-label">Analyses</span>
+            <span class="stat-label" data-i18n-label="Analyses">Analyses</span>
             <strong>{{ totals.saved_analyses }}</strong>
           </article>
         </div>
       </section>
 
       <section class="rail-block">
-        <p class="control-label">Build Signals</p>
+        <p class="control-label" data-i18n-key="root_build_signals">Build Signals</p>
         <div class="legend-list">
           <div class="legend-row">
             <span class="legend-dot" style="background: var(--section-core)"></span>
-            <span>Active Collections</span>
+            <span data-i18n-key="root_active_collections">Active Collections</span>
             <span class="legend-count">{{ active_collections }}</span>
           </div>
           <div class="legend-row">
             <span class="legend-dot" style="background: var(--section-queries)"></span>
-            <span>Scaffold Collections</span>
+            <span data-i18n-key="root_scaffold_collections">Scaffold Collections</span>
             <span class="legend-count">{{ scaffold_collections }}</span>
           </div>
           <div class="legend-row">
             <span class="legend-dot" style="background: var(--section-concepts)"></span>
-            <span>Total Pages</span>
+            <span data-i18n-key="root_total_pages">Total Pages</span>
             <span class="legend-count">{{ totals.pages }}</span>
           </div>
           <div class="legend-row">
             <span class="legend-dot" style="background: var(--section-syntheses)"></span>
-            <span>Saved Analyses</span>
+            <span data-i18n-key="root_analyses">Analyses</span>
             <span class="legend-count">{{ totals.saved_analyses }}</span>
           </div>
         </div>
       </section>
 
       <section class="rail-block">
-        <p class="control-label">How This Stays in Sync</p>
-        <p class="root-rail-note">
+        <p class="control-label" data-i18n-key="root_sync_heading">How This Stays in Sync</p>
+        <p class="root-rail-note" data-i18n-key="root_sync_copy">
           Whenever collection HTML is re-rendered, this root hub is regenerated from current collection metadata and wiki counts so the top-level index stays aligned with the collection dashboards.
         </p>
       </section>
     </aside>
   </div>
 </body>
+<script id="root-i18n-data" type="application/json">{{ root_i18n_data_json | safe }}</script>
 <script>
   (() => {
+    const i18nData = JSON.parse(document.getElementById("root-i18n-data").textContent);
+    const langButtons = Array.from(document.querySelectorAll(".lang-button"));
+    const state = {
+      language: localStorage.getItem("paperatlas_lang") || "en",
+    };
     let localViewerProbe = null;
+    const rootStatusSummary = document.getElementById("root-status-summary");
+    const rootActiveChip = document.getElementById("root-active-chip");
+    const rootScaffoldChip = document.getElementById("root-scaffold-chip");
+    const rootAnalysisChip = document.getElementById("root-analysis-chip");
+    const rootActiveCollectionsLabel = document.getElementById("root-active-collections-label");
+    const rootScaffoldCollectionsLabel = document.getElementById("root-scaffold-collections-label");
+    const rootSnapshotCopy = document.getElementById("root-snapshot-copy");
+
+    function t(key) {
+      return (i18nData.ui[state.language] || {})[key]
+        || (i18nData.ui.en || {})[key]
+        || key;
+    }
+
+    function translateLabel(label) {
+      return (i18nData.labels[state.language] || {})[label]
+        || (i18nData.labels.en || {})[label]
+        || label;
+    }
+
+    function formatTemplate(template, variables) {
+      return String(template).replace(/\{(\w+)\}/g, (_, key) => {
+        return Object.prototype.hasOwnProperty.call(variables, key) ? String(variables[key]) : "";
+      });
+    }
+
     const isFileModeNavigation = () => window.location.protocol === "file:" || !/^https?:$/.test(window.location.protocol);
     const getLocalViewerOrigin = (httpHref) => {
       try {
@@ -7013,6 +7278,65 @@ ROOT_HUB_TEMPLATE = Template(
         window.location.assign(target);
       }
     });
+
+    function applyLanguage() {
+      document.documentElement.lang = state.language === "ko" ? "ko" : "en";
+      document.querySelectorAll("[data-i18n-key]").forEach((element) => {
+        element.textContent = t(element.dataset.i18nKey);
+      });
+      document.querySelectorAll("[data-i18n-label]").forEach((element) => {
+        element.textContent = translateLabel(element.dataset.i18nLabel);
+      });
+      langButtons.forEach((button) => {
+        button.classList.toggle("active", button.dataset.lang === state.language);
+      });
+      if (rootStatusSummary) {
+        rootStatusSummary.textContent = formatTemplate(t("root_status_summary"), {
+          pages: rootStatusSummary.dataset.pages || "0",
+          collections: rootStatusSummary.dataset.collections || "0",
+        });
+      }
+      if (rootActiveChip) {
+        rootActiveChip.textContent = formatTemplate(t("root_active_chip"), {
+          count: rootActiveChip.dataset.count || "0",
+        });
+      }
+      if (rootScaffoldChip) {
+        rootScaffoldChip.textContent = formatTemplate(t("root_scaffold_chip"), {
+          count: rootScaffoldChip.dataset.count || "0",
+        });
+      }
+      if (rootAnalysisChip) {
+        rootAnalysisChip.textContent = formatTemplate(t("root_analysis_chip"), {
+          count: rootAnalysisChip.dataset.count || "0",
+        });
+      }
+      if (rootActiveCollectionsLabel) {
+        rootActiveCollectionsLabel.textContent = formatTemplate(t("root_active_collections_chip"), {
+          count: rootActiveCollectionsLabel.dataset.count || "0",
+        });
+      }
+      if (rootScaffoldCollectionsLabel) {
+        rootScaffoldCollectionsLabel.textContent = formatTemplate(t("root_scaffold_collections_chip"), {
+          count: rootScaffoldCollectionsLabel.dataset.count || "0",
+        });
+      }
+      if (rootSnapshotCopy) {
+        rootSnapshotCopy.textContent = formatTemplate(t("root_snapshot_suffix"), {
+          generated_at: rootSnapshotCopy.dataset.generatedAt || "",
+        });
+      }
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        state.language = button.dataset.lang;
+        localStorage.setItem("paperatlas_lang", state.language);
+        applyLanguage();
+      });
+    });
+
+    applyLanguage();
   })();
 </script>
 </html>
@@ -7104,7 +7428,14 @@ def render_root_hub() -> Path:
     output_path = PROJECT_ROOT / "index.html"
     SOURCE_ASSETS_DIR.mkdir(parents=True, exist_ok=True)
     (SOURCE_ASSETS_DIR / "style.css").write_text(STYLE_TEXT.strip() + "\n", encoding="utf-8")
-    output_path.write_text(ROOT_HUB_TEMPLATE.render(site_brand=SITE_BRAND, **context), encoding="utf-8")
+    output_path.write_text(
+        ROOT_HUB_TEMPLATE.render(
+            site_brand=SITE_BRAND,
+            root_i18n_data_json=build_i18n_data_json(),
+            **context,
+        ),
+        encoding="utf-8",
+    )
     return output_path
 
 
