@@ -13,6 +13,7 @@ wiki_html/render_watcher.log
 collections/*/.wiki_html_watcher.pid
 collections/*/wiki_html/render_watcher.log
 index.html
+assets/style.css
 collections/*/wiki_html/
 collections/*/raw/sources/
 collections/*/raw/derived/

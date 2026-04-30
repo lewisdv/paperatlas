@@ -82,11 +82,11 @@ SECTION_TAGS = {
     "syntheses": "Synthesis",
 }
 SECTION_COLORS = {
-    "": "#946448",
-    "sources": "#8e3c27",
-    "concepts": "#275d5d",
-    "queries": "#755f24",
-    "syntheses": "#4f3a77",
+    "": "#8a6a55",
+    "sources": "#a4533c",
+    "concepts": "#577169",
+    "queries": "#8f7a49",
+    "syntheses": "#6c5a7f",
 }
 
 UI_TRANSLATIONS = {
@@ -349,7 +349,7 @@ PAGE_TEMPLATE = Template(
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | {{ workspace_title }} wiki | {{ site_brand }}</title>
-    <meta name="theme-color" content="#7a3520">
+    <meta name="theme-color" content="#8a4b35">
     <link rel="icon" href="{{ logo_href }}" type="image/svg+xml" sizes="any">
     <link rel="shortcut icon" href="{{ logo_href }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ logo_href }}">
@@ -659,7 +659,7 @@ DASHBOARD_TEMPLATE = Template(
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ workspace_title }} Dashboard | {{ site_brand }}</title>
-    <meta name="theme-color" content="#7a3520">
+    <meta name="theme-color" content="#8a4b35">
     <link rel="icon" href="{{ logo_href }}" type="image/svg+xml" sizes="any">
     <link rel="shortcut icon" href="{{ logo_href }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ logo_href }}">
@@ -1725,7 +1725,7 @@ DASHBOARD_TEMPLATE = Template(
 
         function colorWithAlpha(color, alpha) {
           if (!color) {
-            return `rgba(39, 95, 122, ${alpha})`;
+            return `rgba(138, 75, 53, ${alpha})`;
           }
           const normalized = color.replace("#", "");
           if (normalized.length !== 6) {
@@ -1753,7 +1753,7 @@ DASHBOARD_TEMPLATE = Template(
           const base = parseHexColor(baseColor);
           const target = parseHexColor(targetColor);
           if (!base || !target) {
-            return baseColor || targetColor || "#8ea2b5";
+            return baseColor || targetColor || "#a4533c";
           }
           const mix = clamp(ratio, 0, 1);
           const red = Math.round(base.red + ((target.red - base.red) * mix));
@@ -2782,15 +2782,25 @@ DASHBOARD_TEMPLATE = Template(
 
 STYLE_TEXT = """
 :root {
-  --paper: #f7f7f3;
-  --panel: rgba(255, 255, 252, 0.96);
-  --panel-strong: rgba(255, 255, 255, 0.98);
-  --ink: #1f2933;
-  --muted: #667085;
-  --accent: #275f7a;
-  --accent-soft: #eef5f8;
-  --line: rgba(122, 133, 153, 0.22);
-  --shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  --paper: #f5efe6;
+  --panel: rgba(255, 252, 247, 0.94);
+  --panel-strong: rgba(255, 255, 252, 0.98);
+  --ink: #24303a;
+  --muted: #69727c;
+  --accent: #8a4b35;
+  --accent-soft: #f3e5dd;
+  --accent-rgb: 138, 75, 53;
+  --accent-strong: #6f3b2a;
+  --accent-gradient: linear-gradient(135deg, #6f3b2a 0%, #a86144 100%);
+  --line: rgba(98, 84, 68, 0.16);
+  --line-strong: rgba(98, 84, 68, 0.24);
+  --surface-soft: rgba(247, 243, 237, 0.96);
+  --section-core: #8a6a55;
+  --section-sources: #a4533c;
+  --section-concepts: #577169;
+  --section-queries: #8f7a49;
+  --section-syntheses: #6c5a7f;
+  --shadow: 0 10px 28px rgba(47, 36, 28, 0.06);
   --font-sans: "Avenir Next", "Segoe UI Variable Text", "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
   --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
@@ -2801,7 +2811,7 @@ STYLE_TEXT = """
 
 html {
   min-height: 100%;
-  background: #f7f7f3;
+  background: #f5efe6;
 }
 
 body {
@@ -2810,7 +2820,9 @@ body {
   font-family: var(--font-sans);
   line-height: 1.65;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(247, 247, 243, 0.92) 100%),
+    radial-gradient(circle at top left, rgba(var(--accent-rgb), 0.07), transparent 32%),
+    radial-gradient(circle at top right, rgba(87, 113, 105, 0.07), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 252, 0.7) 0%, rgba(245, 239, 230, 0.96) 100%),
     var(--paper);
 }
 
@@ -2825,7 +2837,7 @@ a:hover {
 
 code {
   font-family: "SFMono-Regular", "Menlo", "Consolas", monospace;
-  background: rgba(39, 95, 122, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   border-radius: 0.25rem;
   padding: 0.15rem 0.35rem;
   font-size: 0.92em;
@@ -2909,7 +2921,7 @@ pre code {
   gap: 0.58rem;
   padding: 0.42rem 0.68rem 0.42rem 0.48rem;
   border-radius: 999px;
-  border: 1px solid rgba(39, 95, 122, 0.16);
+  border: 1px solid rgba(var(--accent-rgb), 0.16);
   background: rgba(255, 255, 255, 0.9);
   color: var(--accent);
   font-size: 0.84rem;
@@ -2993,7 +3005,7 @@ pre code {
 
 .dashboard-link:hover {
   text-decoration: none;
-  background: #e2eef4;
+  background: rgba(var(--accent-rgb), 0.12);
 }
 
 .brand-actions {
@@ -3009,7 +3021,7 @@ pre code {
 
 .dashboard-link.secondary-link {
   background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(39, 95, 122, 0.16);
+  border: 1px solid rgba(var(--accent-rgb), 0.16);
 }
 
 .dashboard-link.secondary-link:hover {
@@ -3085,7 +3097,7 @@ pre code {
 
 .nav-group a:hover,
 .quick-links a:hover {
-  background: rgba(39, 95, 122, 0.07);
+  background: rgba(var(--accent-rgb), 0.07);
   text-decoration: none;
 }
 
@@ -3262,7 +3274,7 @@ pre code {
   min-width: 1.8rem;
   padding: 0.12rem 0.4rem;
   border-radius: 999px;
-  background: rgba(39, 95, 122, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   color: var(--accent);
   font-size: 0.74rem;
   font-weight: 700;
@@ -3392,7 +3404,7 @@ pre code {
   margin-left: 0;
   padding: 0.8rem 1rem;
   border-left: 4px solid var(--accent);
-  background: rgba(39, 95, 122, 0.05);
+  background: rgba(var(--accent-rgb), 0.06);
   border-radius: 0 0.7rem 0.7rem 0;
 }
 
@@ -3466,8 +3478,8 @@ pre code {
 }
 
 .search-input:focus {
-  outline: 2px solid rgba(39, 95, 122, 0.18);
-  border-color: rgba(39, 95, 122, 0.34);
+  outline: 2px solid rgba(var(--accent-rgb), 0.18);
+  border-color: rgba(var(--accent-rgb), 0.34);
 }
 
 .small-note {
@@ -3516,9 +3528,9 @@ pre code {
 }
 
 .view-button.active {
-  background: var(--accent);
+  background: var(--accent-gradient);
   color: white;
-  border-color: rgba(39, 95, 122, 0.78);
+  border-color: rgba(var(--accent-rgb), 0.72);
 }
 
 .ghost-button {
@@ -3571,7 +3583,7 @@ pre code {
 
 .tag-chip.active {
   background: var(--accent-soft);
-  border-color: rgba(39, 95, 122, 0.34);
+  border-color: rgba(var(--accent-rgb), 0.34);
   color: var(--accent);
 }
 
@@ -3626,10 +3638,10 @@ pre code {
 
 .active-chip,
 .mini-chip {
-  background: rgba(39, 95, 122, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   padding: 0.28rem 0.55rem;
   font-size: 0.82rem;
-  color: #51606f;
+  color: var(--accent);
 }
 
 .section-pill {
@@ -3640,11 +3652,11 @@ pre code {
   color: white;
 }
 
-.section-core { background: #946448; }
-.section-sources { background: #8e3c27; }
-.section-concepts { background: #275d5d; }
-.section-queries { background: #755f24; }
-.section-syntheses { background: #4f3a77; }
+.section-core { background: var(--section-core); }
+.section-sources { background: var(--section-sources); }
+.section-concepts { background: var(--section-concepts); }
+.section-queries { background: var(--section-queries); }
+.section-syntheses { background: var(--section-syntheses); }
 
 .year-pill {
   background: rgba(122, 133, 153, 0.08);
@@ -3680,9 +3692,9 @@ pre code {
 #view-tab-database:checked ~ .dashboard-sidebar .view-button[data-view="database"],
 #view-tab-pages:checked ~ .dashboard-sidebar .view-button[data-view="pages"],
 #view-tab-graph:checked ~ .dashboard-sidebar .view-button[data-view="graph"] {
-  background: linear-gradient(135deg, #8e3c27 0%, #b96845 100%);
+  background: var(--accent-gradient);
   color: white;
-  border-color: rgba(142, 60, 39, 0.78);
+  border-color: rgba(var(--accent-rgb), 0.72);
 }
 
 .paper-grid {
@@ -3726,7 +3738,7 @@ pre code {
 .page-row-excerpt,
 .graph-excerpt {
   margin: 0;
-  color: #4e4740;
+  color: #544d46;
 }
 
 .card-actions {
@@ -3749,7 +3761,7 @@ pre code {
 }
 
 .card-link.tertiary {
-  background: rgba(39, 95, 122, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   color: var(--accent);
 }
 
@@ -3815,7 +3827,7 @@ pre code {
 
 .database-control select {
   appearance: none;
-  border: 1px solid rgba(77, 60, 44, 0.18);
+  border: 1px solid var(--line-strong);
   border-radius: 0.85rem;
   background: rgba(255, 255, 255, 0.9);
   color: var(--ink);
@@ -3902,7 +3914,7 @@ pre code {
 .database-table th,
 .database-table td {
   padding: 0.9rem 0.85rem;
-  border-bottom: 1px solid rgba(77, 60, 44, 0.1);
+  border-bottom: 1px solid rgba(98, 84, 68, 0.1);
   vertical-align: top;
   text-align: left;
 }
@@ -3924,7 +3936,7 @@ pre code {
 }
 
 .database-table tbody tr:hover {
-  background: rgba(39, 95, 122, 0.04);
+  background: rgba(var(--accent-rgb), 0.04);
 }
 
 .database-title-cell {
@@ -3969,7 +3981,7 @@ pre code {
 }
 
 .table-action.tertiary {
-  background: rgba(39, 95, 122, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   color: var(--accent);
 }
 
@@ -3990,7 +4002,7 @@ pre code {
 .empty-state {
   margin: 1rem 0 0;
   padding: 1rem 1.1rem;
-  border: 1px dashed rgba(77, 60, 44, 0.22);
+  border: 1px dashed rgba(98, 84, 68, 0.22);
   border-radius: 1rem;
   color: var(--muted);
   background: rgba(255, 255, 255, 0.55);
@@ -4091,8 +4103,9 @@ pre code {
   position: relative;
   height: clamp(420px, 68vh, 720px);
   background:
-    radial-gradient(circle at top left, rgba(39, 95, 122, 0.05), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(247, 247, 243, 0.98) 100%);
+    radial-gradient(circle at top left, rgba(var(--accent-rgb), 0.06), transparent 28%),
+    radial-gradient(circle at top right, rgba(87, 113, 105, 0.06), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 252, 0.98) 0%, rgba(245, 239, 230, 0.98) 100%);
   border: 1px solid var(--line);
   border-radius: 1rem;
   overflow: hidden;
@@ -4143,8 +4156,8 @@ pre code {
   padding: 0.34rem 0.65rem;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.84);
-  border: 1px solid rgba(77, 60, 44, 0.14);
-  color: #73412c;
+  border: 1px solid var(--line-strong);
+  color: var(--accent-strong);
   font-size: 0.76rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -4164,9 +4177,9 @@ pre code {
   gap: 0.48rem;
   padding: 0.42rem 0.66rem;
   border-radius: 999px;
-  border: 1px solid rgba(77, 60, 44, 0.14);
+  border: 1px solid var(--line-strong);
   background: rgba(255, 255, 255, 0.78);
-  color: #4e433b;
+  color: #51463f;
   font-size: 0.82rem;
   box-shadow: 0 10px 18px rgba(55, 33, 18, 0.05);
 }
@@ -4207,7 +4220,7 @@ pre code {
 }
 
 .graph-edge {
-  stroke: rgba(77, 60, 44, 0.26);
+  stroke: rgba(98, 84, 68, 0.28);
   stroke-linecap: round;
   transition: opacity 160ms ease, stroke 160ms ease;
 }
@@ -4217,7 +4230,7 @@ pre code {
 }
 
 .graph-edge.related {
-  stroke: rgba(122, 53, 32, 0.5);
+  stroke: rgba(var(--accent-rgb), 0.52);
 }
 
 .graph-node {
@@ -4274,7 +4287,7 @@ pre code {
 .graph-detail {
   padding: 1.15rem 1.15rem 1.2rem;
   border-radius: 1rem;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 252, 0.96);
   box-shadow: none;
 }
 
@@ -4300,7 +4313,7 @@ pre code {
   padding: 0.72rem 0.78rem;
   border-radius: 0.8rem;
   border: 1px solid var(--line);
-  background: rgba(247, 249, 251, 0.96);
+  background: var(--surface-soft);
 }
 
 .graph-metric-chip span {
@@ -4313,7 +4326,7 @@ pre code {
 .graph-metric-chip strong {
   font-size: 0.98rem;
   line-height: 1.2;
-  color: #30261f;
+  color: #3a3029;
 }
 
 .detail-links {
@@ -4328,7 +4341,7 @@ pre code {
   padding: 0.82rem 0.88rem;
   border-radius: 0.85rem;
   border: 1px solid var(--line);
-  background: rgba(247, 249, 251, 0.96);
+  background: var(--surface-soft);
 }
 
 .detail-link-title {
@@ -4348,7 +4361,7 @@ pre code {
   align-items: center;
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
-  background: rgba(39, 95, 122, 0.08);
+  background: rgba(var(--accent-rgb), 0.08);
   color: var(--ink);
   font-size: 0.78rem;
   font-family: var(--font-sans);
@@ -5964,7 +5977,7 @@ def render_initial_graph_svg(
                 [
                     f'<a {href_attrs}>',
                     f'  <g class="graph-node static-node" transform="translate({x:.1f}, {y:.1f})">',
-                    f'    <circle r="{radius:.2f}" fill="{html.escape(str(page.get("graph_color") or "#8e3c27"))}"></circle>',
+                    f'    <circle r="{radius:.2f}" fill="{html.escape(str(page.get("graph_color") or SECTION_COLORS["sources"]))}"></circle>',
                     f"    <title>{title}</title>",
                     "  </g>",
                     "</a>",
@@ -6210,530 +6223,449 @@ def render_site(pages: List[Page]):
 
 ROOT_HUB_TEMPLATE = Template(
     """<!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site_brand }} | Research Collection Hub</title>
-  <meta name="theme-color" content="#7a3520">
+  <meta name="theme-color" content="#8a4b35">
   <link rel="icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml" sizes="any">
   <link rel="shortcut icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/paper_atlas_logo.svg">
+  <link rel="stylesheet" href="assets/style.css">
   <style>
-    :root {
-      --paper: #f7f2e7;
-      --panel: rgba(255, 252, 245, 0.88);
-      --panel-strong: rgba(255, 250, 241, 0.95);
-      --ink: #221d18;
-      --muted: #6a6259;
-      --accent: #7a3520;
-      --accent-soft: #edd8c4;
-      --line: rgba(77, 60, 44, 0.16);
-      --shadow: 0 22px 60px rgba(45, 30, 17, 0.12);
-      --font-sans: Arial, "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+    .root-shell {
+      grid-template-columns: minmax(250px, 290px) minmax(0, 1fr) minmax(250px, 310px);
+      align-items: start;
     }
 
-    * { box-sizing: border-box; }
-
-    html {
-      min-height: 100%;
-      background:
-        radial-gradient(circle at top left, rgba(195, 128, 86, 0.18), transparent 28%),
-        radial-gradient(circle at top right, rgba(117, 72, 52, 0.12), transparent 22%),
-        linear-gradient(180deg, #f5ead9 0%, #efe3d0 100%);
-    }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      font-family: var(--font-sans);
-      line-height: 1.65;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    code {
-      font-family: "SFMono-Regular", "Menlo", "Consolas", monospace;
-      background: rgba(122, 53, 32, 0.08);
-      border-radius: 0.35rem;
-      padding: 0.15rem 0.35rem;
-      font-size: 0.92em;
-    }
-
-    .page-shell {
-      max-width: 1520px;
-      margin: 0 auto;
-      padding: 1.5rem;
-    }
-
-    .hub {
+    .root-sidebar,
+    .root-rail {
       display: grid;
-      gap: 1.35rem;
-    }
-
-    .panel {
-      backdrop-filter: blur(8px);
-      background: var(--panel);
-      border: 1px solid var(--line);
-      border-radius: 1.4rem;
-      box-shadow: var(--shadow);
-    }
-
-    .eyebrow {
-      margin: 0 0 0.45rem;
-      color: var(--muted);
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-    }
-
-    h1, h2, h3 {
-      margin: 0;
-      line-height: 1.08;
-      font-weight: 700;
-    }
-
-    .hero {
-      display: grid;
-      grid-template-columns: minmax(0, 1.18fr) minmax(320px, 0.82fr);
-      gap: 1.25rem;
-      padding: 1.65rem 1.8rem;
-    }
-
-    .hero-brand {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.78rem;
-      margin-bottom: 0.9rem;
-      padding: 0.42rem 0.62rem 0.42rem 0.46rem;
-      width: fit-content;
-      border-radius: 999px;
-      border: 1px solid rgba(77, 60, 44, 0.14);
-      background: rgba(255, 255, 255, 0.78);
-      box-shadow: 0 14px 28px rgba(53, 34, 19, 0.08);
-      color: inherit;
-    }
-
-    .hero-brand:hover {
-      text-decoration: none;
-      background: rgba(255, 255, 255, 0.9);
-    }
-
-    .hero-brand img {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 0.7rem;
-      flex: 0 0 auto;
-    }
-
-    .hero-brand-copy {
-      display: grid;
-      gap: 0.08rem;
-      line-height: 1.1;
-    }
-
-    .hero-brand-copy strong {
-      font-size: 0.92rem;
-      letter-spacing: 0.04em;
-    }
-
-    .hero-brand-copy span {
-      color: var(--muted);
-      font-size: 0.7rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
-
-    .hero h1 {
-      font-size: clamp(2.45rem, 4vw, 4rem);
-      letter-spacing: -0.03em;
-    }
-
-    .lede {
-      margin: 0.9rem 0 0;
-      max-width: 62ch;
-      color: #4e4740;
-      font-size: 1.04rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.7rem;
-      margin-top: 1rem;
-    }
-
-    .hero-button {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.68rem 0.96rem;
-      border-radius: 999px;
-      background: rgba(122, 53, 32, 0.1);
-      border: 1px solid rgba(122, 53, 32, 0.16);
-      color: #5d2618;
-      font-weight: 700;
-      text-decoration: none;
-    }
-
-    .hero-button:hover {
-      text-decoration: none;
-      background: rgba(122, 53, 32, 0.16);
-    }
-
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.9rem;
-    }
-
-    .stat-card, .collection-card, .note-panel {
-      background: var(--panel-strong);
-      border: 1px solid var(--line);
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
-    }
-
-    .stat-card {
-      border-radius: 1.1rem;
-      padding: 1rem 1.05rem;
-    }
-
-    .stat-label {
-      display: block;
-      color: var(--muted);
-      font-size: 0.82rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-    }
-
-    .stat-card strong {
-      display: block;
-      margin-top: 0.35rem;
-      font-size: 2rem;
-      line-height: 1;
-    }
-
-    .section-panel {
-      padding: 1.45rem 1.5rem 1.6rem;
-    }
-
-    .section-heading {
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 1rem;
-      margin-bottom: 1.1rem;
-    }
-
-    .section-heading h2 {
-      font-size: 1.9rem;
-      letter-spacing: -0.02em;
-    }
-
-    .section-heading p, .subtle {
-      margin: 0;
-      color: var(--muted);
-    }
-
-    .collections {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-      gap: 1rem;
-    }
-
-    .collection-card {
-      display: flex;
-      flex-direction: column;
       gap: 0.95rem;
-      padding: 1.2rem 1.2rem 1.15rem;
-      border-radius: 1.2rem;
-      color: inherit;
-      position: relative;
-      overflow: hidden;
-      transition: transform 140ms ease, border-color 140ms ease, background 140ms ease;
     }
 
-    .collection-card::before {
-      content: "";
-      position: absolute;
-      inset: 0 auto auto 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, #8e3c27 0%, #b96845 100%);
-      opacity: 0.95;
+    .root-sidebar .brand {
+      margin-bottom: 0;
     }
 
-    a.collection-card:hover {
-      transform: translateY(-2px);
-      border-color: rgba(122, 53, 32, 0.34);
-      background: rgba(255, 250, 241, 0.99);
-      text-decoration: none;
+    .root-content {
+      min-height: calc(100vh - 3rem);
     }
 
-    .collection-card.disabled {
-      opacity: 0.76;
+    .root-hero {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
     }
 
-    .card-header {
+    .root-hero-top {
       display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      gap: 0.75rem;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
-    .card-title {
-      display: grid;
-      gap: 0.22rem;
+    .root-hero-copy {
+      max-width: 72ch;
     }
 
-    .card-title h3 {
-      font-size: 1.2rem;
-      letter-spacing: -0.01em;
+    .root-hero-actions {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      margin-top: 1rem;
     }
 
-    .card-title p {
+    .root-quick-links {
+      list-style: none;
       margin: 0;
-      color: var(--muted);
-      font-size: 0.92rem;
+      padding: 0;
+      display: grid;
+      gap: 0.35rem;
     }
 
+    .root-quick-links a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.5rem 0.6rem;
+      border-radius: 0.72rem;
+      color: var(--ink);
+    }
+
+    .root-quick-links a:hover {
+      background: rgba(var(--accent-rgb), 0.07);
+      text-decoration: none;
+    }
+
+    .root-quick-links a[aria-disabled="true"] {
+      opacity: 0.62;
+      pointer-events: none;
+    }
+
+    .root-link-copy {
+      display: grid;
+      gap: 0.08rem;
+      min-width: 0;
+    }
+
+    .root-link-copy strong {
+      font-size: 0.96rem;
+      line-height: 1.24;
+    }
+
+    .root-link-copy span {
+      color: var(--muted);
+      font-size: 0.84rem;
+    }
+
+    .root-count-pill,
     .badge {
       display: inline-flex;
       align-items: center;
-      padding: 0.28rem 0.62rem;
+      justify-content: center;
+      padding: 0.16rem 0.48rem;
       border-radius: 999px;
-      border: 1px solid rgba(122, 53, 32, 0.18);
-      background: rgba(122, 53, 32, 0.08);
-      color: #6d2d1c;
+      background: rgba(var(--accent-rgb), 0.08);
+      border: 1px solid rgba(var(--accent-rgb), 0.18);
+      color: var(--accent);
       font-size: 0.76rem;
       font-weight: 700;
       white-space: nowrap;
     }
 
+    .root-count-pill {
+      min-width: 2rem;
+    }
+
     .badge.scaffold {
-      background: rgba(77, 60, 44, 0.07);
+      background: rgba(98, 84, 68, 0.07);
+      border-color: var(--line);
       color: var(--muted);
-      border-color: rgba(77, 60, 44, 0.16);
     }
 
-    .card-summary {
+    .contract-list {
       margin: 0;
-      min-height: 3.4em;
-      color: #4e4740;
-      font-size: 0.97rem;
+      padding-left: 1.1rem;
+      color: var(--muted);
     }
 
-    .card-stats {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 0.55rem;
-      padding-top: 0.95rem;
-      border-top: 1px solid var(--line);
+    .contract-list li + li {
+      margin-top: 0.36rem;
     }
 
-    .card-stat {
-      padding: 0.68rem 0.75rem;
-      border-radius: 0.9rem;
-      border: 1px solid rgba(77, 60, 44, 0.14);
-      background: rgba(255, 255, 255, 0.66);
-    }
-
-    .card-stat strong {
+    .root-status-copy strong {
       display: block;
-      font-size: 1.12rem;
+      font-size: 1rem;
+    }
+
+    .root-section-heading {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .root-section-heading h2 {
+      margin: 0;
+      font-size: 1.85rem;
+      letter-spacing: -0.02em;
+    }
+
+    .root-section-heading p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .root-collection-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 1rem;
+    }
+
+    .collection-hub-card {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .collection-hub-card::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto 0;
+      height: 4px;
+      background: var(--accent-gradient);
+    }
+
+    .collection-hub-card.disabled {
+      opacity: 0.82;
+    }
+
+    .collection-hub-card .card-excerpt {
+      min-height: 4.2em;
+    }
+
+    .collection-hub-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.55rem;
+      margin-top: 0.15rem;
+    }
+
+    .collection-hub-stat {
+      padding: 0.68rem 0.72rem;
+      border-radius: 0.82rem;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.84);
+    }
+
+    .collection-hub-stat strong {
+      display: block;
+      font-size: 1.04rem;
       line-height: 1.1;
     }
 
-    .card-stat span {
+    .collection-hub-stat span {
       display: block;
-      margin-top: 0.18rem;
+      margin-top: 0.14rem;
       color: var(--muted);
-      font-size: 0.82rem;
+      font-size: 0.8rem;
     }
 
-    .note-panel {
-      padding: 1.2rem 1.25rem;
-      border-radius: 1.2rem;
-    }
-
-    .note-panel h2 {
-      font-size: 1.18rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .note-panel p {
-      margin: 0.35rem 0 0;
-      color: #4e4740;
-    }
-
-    .footer {
+    .root-actions {
       display: flex;
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 0.1rem 0.2rem 0;
-      color: var(--muted);
-      font-size: 0.92rem;
+      gap: 0.55rem;
+      margin-top: auto;
     }
 
-    @media (max-width: 980px) {
-      .hero {
+    .root-rail-note {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    @media (max-width: 1180px) {
+      .root-shell {
         grid-template-columns: 1fr;
       }
 
-      .section-heading {
-        flex-direction: column;
-        align-items: start;
+      .root-sidebar,
+      .root-rail {
+        position: static;
+        max-height: none;
+        overflow: visible;
       }
     }
 
     @media (max-width: 760px) {
-      .page-shell {
-        padding: 1rem;
+      .root-hero-top {
+        flex-direction: column;
       }
 
-      .hero, .section-panel {
-        padding: 1.2rem;
-      }
-
-      .hero-stats, .card-stats {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .hero h1 {
-        font-size: 2.15rem;
-      }
-    }
-
-    @media (max-width: 560px) {
-      .hero-stats, .card-stats, .collections {
+      .root-collection-grid,
+      .collection-hub-stats {
         grid-template-columns: 1fr;
-      }
-
-      .badge {
-        font-size: 0.88rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="page-shell">
-    <main class="hub">
-      <section class="panel hero">
-        <div>
-          <a class="hero-brand" href="index.html">
-            <img src="assets/paper_atlas_logo.svg" alt="">
-            <span class="hero-brand-copy">
-              <strong>{{ site_brand }}</strong>
-              <span>research atlas</span>
-            </span>
+  <div class="shell root-shell">
+    <aside class="sidebar root-sidebar">
+      <div class="brand">
+        <div class="brand-topbar">
+          <a class="home-logo-link" href="index.html">
+            <img class="home-logo-mark" src="assets/paper_atlas_logo.svg" alt="">
+            <span class="home-logo-text">{{ site_brand }}</span>
           </a>
           <p class="eyebrow">{{ site_brand }}</p>
-          <h1>Research Collection Hub</h1>
-          <p class="lede">
-            Karpathy <code>LLM wiki</code> 패턴을 바탕으로 만든 연구용 지식 허브입니다.
-            각 주제는 독립된 collection으로 관리되고, collection 안에서는 논문 PDF, source page, concept page, query, synthesis가 함께 연결됩니다.
-          </p>
-          <div class="hero-actions">
-            {% if show_local_viewer_link %}
-            <a class="hero-button" href="{{ local_viewer_href }}">Open Local Viewer</a>
+        </div>
+        <h1>Research Collection Hub</h1>
+        <p class="subtle">Collection-specific workspaces for raw sources, source pages, concepts, queries, and syntheses.</p>
+        <div class="brand-actions">
+          {% if primary_collection %}
+          <a class="dashboard-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}">Open {{ primary_collection.title }}</a>
+          {% endif %}
+          {% if show_local_viewer_link %}
+          <a class="dashboard-link secondary-link" href="{{ local_viewer_href }}" data-i18n-key="open_local_viewer">Open Local Viewer</a>
+          {% endif %}
+        </div>
+      </div>
+
+      <section class="side-block">
+        <p class="control-label">Collections</p>
+        <ul class="root-quick-links">
+          {% for collection in collections %}
+          <li>
+            {% if collection.dashboard_exists %}
+            <a href="{{ collection.href }}" data-file-href="{{ collection.file_href }}" data-http-href="{{ collection.http_href }}">
+            {% else %}
+            <a href="#" aria-disabled="true">
             {% endif %}
+              <span class="root-link-copy">
+                <strong>{{ collection.title }}</strong>
+                <span>{{ collection.badge }} · {{ collection.source_pages }} sources</span>
+              </span>
+              <span class="root-count-pill">{{ collection.page_count }}</span>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+
+      <section class="side-block">
+        <p class="control-label">Collection Contract</p>
+        <ul class="contract-list">
+          <li><code>raw/</code> stays immutable source material.</li>
+          <li><code>wiki/</code> accumulates linked collection knowledge.</li>
+          <li>Queries and syntheses stay inside the current collection boundary.</li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="content root-content">
+      <header class="dashboard-hero root-hero">
+        <div class="root-hero-top">
+          <div class="root-hero-copy">
+            <p class="eyebrow">{{ site_brand }}</p>
+            <h1>Research Collection Hub</h1>
+            <p class="hero-copy">
+              A persistent LLM wiki for papers and methods, organized as independent collections that can keep growing without mixing knowledge boundaries.
+            </p>
+            <div class="root-hero-actions">
+              {% if primary_collection %}
+              <a class="card-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}">Open Primary Workspace</a>
+              {% endif %}
+              <span class="meta-chip">Generated {{ generated_at }}</span>
+            </div>
           </div>
         </div>
+      </header>
 
-        <div class="hero-stats">
-          <article class="stat-card">
+      <section class="status-bar">
+        <div class="status-copy root-status-copy">
+          <strong>{{ totals.pages }} linked wiki pages across {{ totals.collections }} collections</strong>
+          <span class="subtle">Counts include source pages, concepts, queries, and syntheses rendered from each collection workspace.</span>
+        </div>
+        <div class="active-filters">
+          <span class="active-chip">{{ active_collections }} active</span>
+          <span class="mini-chip">{{ scaffold_collections }} scaffold</span>
+          <span class="mini-chip">{{ totals.saved_analyses }} saved analyses</span>
+        </div>
+      </section>
+
+      <section>
+        <div class="root-section-heading">
+          <div>
+            <p class="eyebrow">Collections</p>
+            <h2>Active Research Workspaces</h2>
+          </div>
+          <p>{{ generated_at }} snapshot of rendered collection state.</p>
+        </div>
+
+        <div class="root-collection-grid">
+          {% for collection in collections %}
+          <article class="paper-card collection-hub-card{% if not collection.dashboard_exists %} disabled{% endif %}">
+            <div class="card-topline">
+              <span class="section-pill section-core">Collection</span>
+              <span class="badge {% if not collection.is_active %}scaffold{% endif %}">{{ collection.badge }}</span>
+            </div>
+            <h2>{{ collection.title }}</h2>
+            <p class="card-excerpt">{{ collection.summary }}</p>
+            <div class="card-tags">
+              <span class="mini-chip">{{ collection.source_pages }} sources</span>
+              <span class="mini-chip">{{ collection.concept_pages }} concepts</span>
+              <span class="mini-chip">{{ collection.saved_analyses }} analyses</span>
+            </div>
+            <div class="collection-hub-stats">
+              <div class="collection-hub-stat">
+                <strong>{{ collection.source_pages }}</strong>
+                <span>Sources</span>
+              </div>
+              <div class="collection-hub-stat">
+                <strong>{{ collection.concept_pages }}</strong>
+                <span>Concepts</span>
+              </div>
+              <div class="collection-hub-stat">
+                <strong>{{ collection.page_count }}</strong>
+                <span>Total Pages</span>
+              </div>
+            </div>
+            <div class="root-actions">
+              {% if collection.dashboard_exists %}
+              <a class="card-link" href="{{ collection.href }}" data-file-href="{{ collection.file_href }}" data-http-href="{{ collection.http_href }}">Open Dashboard</a>
+              {% else %}
+              <span class="card-link disabled">Dashboard Pending</span>
+              {% endif %}
+              <span class="card-link tertiary disabled">{{ collection.saved_analyses }} analyses</span>
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
+    </main>
+
+    <aside class="rightbar root-rail">
+      <section class="rail-block">
+        <p class="control-label">Collection Snapshot</p>
+        <div class="rail-stats">
+          <article class="stat-card rail-stat">
             <span class="stat-label">Collections</span>
             <strong>{{ totals.collections }}</strong>
           </article>
-          <article class="stat-card">
+          <article class="stat-card rail-stat">
             <span class="stat-label">Sources</span>
             <strong>{{ totals.sources }}</strong>
           </article>
-          <article class="stat-card">
+          <article class="stat-card rail-stat">
             <span class="stat-label">Concepts</span>
             <strong>{{ totals.concepts }}</strong>
           </article>
-          <article class="stat-card">
-            <span class="stat-label">Saved Analyses</span>
+          <article class="stat-card rail-stat">
+            <span class="stat-label">Analyses</span>
             <strong>{{ totals.saved_analyses }}</strong>
           </article>
         </div>
       </section>
 
-      <section class="panel section-panel">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Collections</p>
-            <h2>Active Research Workspaces</h2>
+      <section class="rail-block">
+        <p class="control-label">Build Signals</p>
+        <div class="legend-list">
+          <div class="legend-row">
+            <span class="legend-dot" style="background: var(--section-core)"></span>
+            <span>Active Collections</span>
+            <span class="legend-count">{{ active_collections }}</span>
           </div>
-          <p class="subtle">
-            {{ generated_at }} 기준으로 모든 collection 상태를 자동 집계합니다.
-          </p>
-        </div>
-
-        <div class="collections">
-          {% for collection in collections %}
-          {% if collection.dashboard_exists %}
-          <a class="collection-card" href="{{ collection.href }}" data-file-href="{{ collection.file_href }}" data-http-href="{{ collection.http_href }}">
-          {% else %}
-          <article class="collection-card disabled">
-          {% endif %}
-            <div class="card-header">
-              <div class="card-title">
-                <h3>{{ collection.title }}</h3>
-                <p>{{ collection.subtitle }}</p>
-              </div>
-              <span class="badge {% if not collection.is_active %}scaffold{% endif %}">{{ collection.badge }}</span>
-            </div>
-            <p class="card-summary">{{ collection.summary }}</p>
-            <div class="card-stats">
-              <div class="card-stat">
-                <strong>{{ collection.source_pages }}</strong>
-                <span>sources</span>
-              </div>
-              <div class="card-stat">
-                <strong>{{ collection.concept_pages }}</strong>
-                <span>concepts</span>
-              </div>
-              <div class="card-stat">
-                <strong>{{ collection.query_pages }}</strong>
-                <span>queries</span>
-              </div>
-              <div class="card-stat">
-                <strong>{{ collection.synthesis_pages }}</strong>
-                <span>syntheses</span>
-              </div>
-            </div>
-          {% if collection.dashboard_exists %}
-          </a>
-          {% else %}
-          </article>
-          {% endif %}
-          {% endfor %}
+          <div class="legend-row">
+            <span class="legend-dot" style="background: var(--section-queries)"></span>
+            <span>Scaffold Collections</span>
+            <span class="legend-count">{{ scaffold_collections }}</span>
+          </div>
+          <div class="legend-row">
+            <span class="legend-dot" style="background: var(--section-concepts)"></span>
+            <span>Total Pages</span>
+            <span class="legend-count">{{ totals.pages }}</span>
+          </div>
+          <div class="legend-row">
+            <span class="legend-dot" style="background: var(--section-syntheses)"></span>
+            <span>Saved Analyses</span>
+            <span class="legend-count">{{ totals.saved_analyses }}</span>
+          </div>
         </div>
       </section>
 
-      <section class="note-panel">
-        <h2>How this stays in sync</h2>
-        <p>
-          각 collection HTML을 다시 렌더할 때 최상위 허브도 함께 재생성됩니다.
-          루트 watcher를 사용하면 어떤 collection이 바뀌어도, 그리고 새 collection이 추가돼도 이 페이지가 자동으로 갱신됩니다.
+      <section class="rail-block">
+        <p class="control-label">How This Stays in Sync</p>
+        <p class="root-rail-note">
+          Whenever collection HTML is re-rendered, this root hub is regenerated from current collection metadata and wiki counts so the top-level index stays aligned with the collection dashboards.
         </p>
       </section>
-
-      <footer class="footer">
-        <span>Generated from collection metadata and current wiki counts.</span>
-      </footer>
-    </main>
+    </aside>
   </div>
 </body>
 <script>
@@ -6831,6 +6763,8 @@ def build_root_hub_context() -> Dict[str, object]:
         concept_pages = count_files(workspace.wiki_dir / "concepts", "*.md")
         query_pages = count_files(workspace.wiki_dir / "queries", "*.md")
         synthesis_pages = count_files(workspace.wiki_dir / "syntheses", "*.md")
+        saved_analyses = query_pages + synthesis_pages
+        page_count = source_pages + concept_pages + saved_analyses
         dashboard_exists = (workspace.wiki_html_dir / "index.html").exists()
         is_active = any((source_pages, concept_pages, query_pages, synthesis_pages))
         collections.append(
@@ -6849,21 +6783,31 @@ def build_root_hub_context() -> Dict[str, object]:
                 "concept_pages": concept_pages,
                 "query_pages": query_pages,
                 "synthesis_pages": synthesis_pages,
+                "saved_analyses": saved_analyses,
+                "page_count": page_count,
             }
         )
 
-    collections.sort(key=lambda item: (not item["is_active"], item["title"].lower()))
+    collections.sort(key=lambda item: (not item["is_active"], -item["page_count"], item["title"].lower()))
     totals = {
         "collections": len(collections),
         "sources": sum(item["source_pages"] for item in collections),
         "concepts": sum(item["concept_pages"] for item in collections),
         "saved_analyses": sum(item["query_pages"] + item["synthesis_pages"] for item in collections),
+        "pages": sum(item["page_count"] for item in collections),
     }
-    primary_collection = next((item for item in collections if item["dashboard_exists"]), None)
+    active_collections = sum(1 for item in collections if item["is_active"])
+    scaffold_collections = len(collections) - active_collections
+    primary_collection = next(
+        (item for item in collections if item["dashboard_exists"] and item["is_active"]),
+        None,
+    ) or next((item for item in collections if item["dashboard_exists"]), None)
     generated_at = datetime.now().astimezone().strftime("%Y-%m-%d %H:%M %Z")
     return {
         "collections": collections,
         "totals": totals,
+        "active_collections": active_collections,
+        "scaffold_collections": scaffold_collections,
         "primary_collection": primary_collection,
         "local_viewer_href": http_href_for_path(PROJECT_ROOT / "index.html"),
         "show_local_viewer_link": not PUBLIC_SITE_MODE,
@@ -6874,6 +6818,8 @@ def build_root_hub_context() -> Dict[str, object]:
 def render_root_hub() -> Path:
     context = build_root_hub_context()
     output_path = PROJECT_ROOT / "index.html"
+    SOURCE_ASSETS_DIR.mkdir(parents=True, exist_ok=True)
+    (SOURCE_ASSETS_DIR / "style.css").write_text(STYLE_TEXT.strip() + "\n", encoding="utf-8")
     output_path.write_text(ROOT_HUB_TEMPLATE.render(site_brand=SITE_BRAND, **context), encoding="utf-8")
     return output_path
 
