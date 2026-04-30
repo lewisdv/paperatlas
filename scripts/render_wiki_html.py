@@ -392,21 +392,23 @@ PAGE_TEMPLATE = Template(
         </div>
         <section class="rail-block explorer-block">
           <p class="control-label" data-i18n-key="explorer">Explorer</p>
-          {% for section in navigation %}
-          <details class="explorer-group"{% if section.open_by_default %} open{% endif %}>
-            <summary class="explorer-summary">
-              <span class="explorer-summary-label" data-i18n-label="{{ section.label }}">{{ section.label }}</span>
-              <span class="explorer-count">{{ section.count }}</span>
-            </summary>
-            <ul class="explorer-list">
-              {% for item in section.entries %}
-              <li class="{% if item.current %}current{% endif %}">
-                <a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a>
-              </li>
-              {% endfor %}
-            </ul>
-          </details>
-          {% endfor %}
+          <div class="explorer-panel-scroller">
+            {% for section in navigation %}
+            <details class="explorer-group"{% if section.open_by_default %} open{% endif %}>
+              <summary class="explorer-summary">
+                <span class="explorer-summary-label" data-i18n-label="{{ section.label }}">{{ section.label }}</span>
+                <span class="explorer-count">{{ section.count }}</span>
+              </summary>
+              <ul class="explorer-list">
+                {% for item in section.entries %}
+                <li class="{% if item.current %}current{% endif %}">
+                  <a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </details>
+            {% endfor %}
+          </div>
         </section>
       </aside>
 
@@ -670,75 +672,79 @@ DASHBOARD_TEMPLATE = Template(
       <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-pages" data-view="pages">
       <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-graph" data-view="graph">
       <aside class="sidebar dashboard-sidebar">
-        <div class="brand">
-          <div class="brand-topbar">
-            <a
-              class="home-logo-link"
-              href="{{ home_href }}"
-              data-file-href="{{ home_file_href }}"
-              data-http-href="{{ home_http_href }}"
-              data-i18n-title="home"
-            >
-              <img class="home-logo-mark" src="{{ logo_href }}" alt="">
-              <span class="home-logo-text">{{ site_brand }}</span>
-            </a>
-            <p class="eyebrow">{{ site_brand }}</p>
-          </div>
-          <h1><span>{{ workspace_title }}</span><span data-i18n-key="wiki_suffix"> Wiki</span></h1>
-          <p class="subtle" data-i18n-key="workspace_description">{{ workspace_description }}</p>
-          <div class="language-toggle" role="group" aria-label="Language toggle">
-            <span class="control-label" data-i18n-key="language">Language</span>
-            <div class="language-buttons">
-              <button class="lang-button active" type="button" data-lang="en" data-i18n-key="english">English</button>
-              <button class="lang-button" type="button" data-lang="ko" data-i18n-key="korean">한국어</button>
+        <div class="dashboard-sidebar-utility">
+          <div class="brand">
+            <div class="brand-topbar">
+              <a
+                class="home-logo-link"
+                href="{{ home_href }}"
+                data-file-href="{{ home_file_href }}"
+                data-http-href="{{ home_http_href }}"
+                data-i18n-title="home"
+              >
+                <img class="home-logo-mark" src="{{ logo_href }}" alt="">
+                <span class="home-logo-text">{{ site_brand }}</span>
+              </a>
+              <p class="eyebrow">{{ site_brand }}</p>
+            </div>
+            <h1><span>{{ workspace_title }}</span><span data-i18n-key="wiki_suffix"> Wiki</span></h1>
+            <p class="subtle" data-i18n-key="workspace_description">{{ workspace_description }}</p>
+            <div class="language-toggle" role="group" aria-label="Language toggle">
+              <span class="control-label" data-i18n-key="language">Language</span>
+              <div class="language-buttons">
+                <button class="lang-button active" type="button" data-lang="en" data-i18n-key="english">English</button>
+                <button class="lang-button" type="button" data-lang="ko" data-i18n-key="korean">한국어</button>
+              </div>
+            </div>
+            <div class="brand-actions">
+              {% if show_local_viewer_link %}
+              <a class="dashboard-link secondary-link" href="{{ dashboard_http_href }}" data-i18n-key="open_local_viewer">Open Local Viewer</a>
+              {% endif %}
             </div>
           </div>
-          <div class="brand-actions">
-            {% if show_local_viewer_link %}
-            <a class="dashboard-link secondary-link" href="{{ dashboard_http_href }}" data-i18n-key="open_local_viewer">Open Local Viewer</a>
-            {% endif %}
-          </div>
+
+          <section class="side-block">
+            <label class="control-label" for="search-input" data-i18n-key="search">Search</label>
+            <input id="search-input" class="search-input" type="search" placeholder="Search titles, summaries, tags, and page text" data-i18n-placeholder="search_placeholder">
+            <p class="subtle small-note" data-i18n-key="search_help">Works across all pages, then narrows papers, list view, and graph view together.</p>
+          </section>
+
+          <section class="side-block">
+            <p class="control-label" data-i18n-key="views">Views</p>
+            <div class="view-switch" id="view-switch">
+              <label class="view-button" data-view="papers" for="view-tab-papers" role="button" tabindex="0" data-i18n-key="view_papers">Paper Cards</label>
+              <label class="view-button" data-view="database" for="view-tab-database" role="button" tabindex="0" data-i18n-key="view_database">Database</label>
+              <label class="view-button" data-view="pages" for="view-tab-pages" role="button" tabindex="0" data-i18n-key="view_pages">All Pages</label>
+              <label class="view-button" data-view="graph" for="view-tab-graph" role="button" tabindex="0" data-i18n-key="view_graph">Graph View</label>
+            </div>
+          </section>
+
+          <section class="side-block">
+            <div class="side-header">
+              <p class="control-label" data-i18n-key="tag_filter">Tag Filter</p>
+              <button id="clear-filters" class="ghost-button" type="button" data-i18n-key="clear">Clear</button>
+            </div>
+            <div id="tag-chips" class="chip-list"></div>
+          </section>
         </div>
-
-        <section class="side-block">
-          <label class="control-label" for="search-input" data-i18n-key="search">Search</label>
-          <input id="search-input" class="search-input" type="search" placeholder="Search titles, summaries, tags, and page text" data-i18n-placeholder="search_placeholder">
-          <p class="subtle small-note" data-i18n-key="search_help">Works across all pages, then narrows papers, list view, and graph view together.</p>
-        </section>
-
-        <section class="side-block">
-          <p class="control-label" data-i18n-key="views">Views</p>
-          <div class="view-switch" id="view-switch">
-            <label class="view-button" data-view="papers" for="view-tab-papers" role="button" tabindex="0" data-i18n-key="view_papers">Paper Cards</label>
-            <label class="view-button" data-view="database" for="view-tab-database" role="button" tabindex="0" data-i18n-key="view_database">Database</label>
-            <label class="view-button" data-view="pages" for="view-tab-pages" role="button" tabindex="0" data-i18n-key="view_pages">All Pages</label>
-            <label class="view-button" data-view="graph" for="view-tab-graph" role="button" tabindex="0" data-i18n-key="view_graph">Graph View</label>
-          </div>
-        </section>
-
-        <section class="side-block">
-          <div class="side-header">
-            <p class="control-label" data-i18n-key="tag_filter">Tag Filter</p>
-            <button id="clear-filters" class="ghost-button" type="button" data-i18n-key="clear">Clear</button>
-          </div>
-          <div id="tag-chips" class="chip-list"></div>
-        </section>
 
         <section class="side-block explorer-dashboard-block">
           <p class="control-label" data-i18n-key="explorer">Explorer</p>
-          {% for section in explorer_groups %}
-          <details class="explorer-group"{% if section.open_by_default %} open{% endif %}>
-            <summary class="explorer-summary">
-              <span class="explorer-summary-label" data-i18n-label="{{ section.label }}">{{ section.label }}</span>
-              <span class="explorer-count">{{ section.count }}</span>
-            </summary>
-            <ul class="explorer-list compact">
-              {% for item in section.entries %}
-              <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </details>
-          {% endfor %}
+          <div class="explorer-panel-scroller">
+            {% for section in explorer_groups %}
+            <details class="explorer-group"{% if section.open_by_default %} open{% endif %}>
+              <summary class="explorer-summary">
+                <span class="explorer-summary-label" data-i18n-label="{{ section.label }}">{{ section.label }}</span>
+                <span class="explorer-count">{{ section.count }}</span>
+              </summary>
+              <ul class="explorer-list compact">
+                {% for item in section.entries %}
+                <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </details>
+            {% endfor %}
+          </div>
         </section>
       </aside>
 
@@ -2867,6 +2873,13 @@ pre code {
   overflow-y: auto;
 }
 
+.dashboard-sidebar,
+.explorer-sidebar {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
 .content {
   padding: 1.7rem 2rem 2.4rem;
   min-width: 0;
@@ -3159,6 +3172,17 @@ pre code {
   gap: 0.9rem;
 }
 
+.dashboard-sidebar-utility {
+  display: grid;
+  gap: 0.95rem;
+  flex: 0 0 auto;
+}
+
+.dashboard-sidebar-utility .brand,
+.dashboard-sidebar-utility .side-block {
+  margin-bottom: 0;
+}
+
 .rail-block {
   padding: 0.95rem 1rem;
   border: 1px solid var(--line);
@@ -3168,10 +3192,19 @@ pre code {
 
 .explorer-block {
   padding-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .explorer-dashboard-block {
   margin-top: 0.2rem;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 .explorer-group {
@@ -3238,6 +3271,14 @@ pre code {
 .explorer-group[open] .explorer-summary {
   border-bottom: 1px solid var(--line);
   background: rgba(247, 249, 251, 0.92);
+}
+
+.explorer-panel-scroller {
+  display: grid;
+  gap: 0.45rem;
+  min-height: 0;
+  overflow-y: auto;
+  padding-right: 0.08rem;
 }
 
 .explorer-list,
@@ -4329,6 +4370,15 @@ pre code {
   .rightbar {
     position: static;
     max-height: none;
+  }
+
+  .dashboard-sidebar,
+  .explorer-sidebar {
+    overflow: visible;
+  }
+
+  .explorer-panel-scroller {
+    overflow: visible;
   }
 
   .dashboard-hero,
