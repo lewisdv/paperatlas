@@ -8,7 +8,7 @@
 
 ## 1. Sequence Foundation Model: Orthrus
 
-- [Orthrus: toward evolutionary and functional RNA foundation models](../sources/Philip_2026_Orthrus_toward_%20evolutionary_and_functional.md) is the clearest sequence branch in this collection.
+- [Orthrus: toward evolutionary and functional RNA foundation models](../sources/Philip_2026_Orthrus_toward_ evolutionary_and_functional.md) is the clearest sequence branch in this collection.
 - Through [Evolutionary Contrastive RNA Pretraining](../concepts/evolutionary-contrastive-rna-pretraining.md), it treats the basic pretrained object as a mature RNA transcript sequence.
 - Its contrastive positives come from splice isoforms and orthologous transcripts, and its downstream targets are mature RNA properties such as half-life, localization, translational efficiency, and isoform function.
 - In other words, the learned representation is organized around sequence-level functional similarity, not around cell identity, tissue context, or atlas-scale state neighborhoods.
@@ -50,7 +50,7 @@
 
 ## Pages Used
 
-- [Orthrus: toward evolutionary and functional RNA foundation models](../sources/Philip_2026_Orthrus_toward_%20evolutionary_and_functional.md)
+- [Orthrus: toward evolutionary and functional RNA foundation models](../sources/Philip_2026_Orthrus_toward_ evolutionary_and_functional.md)
 - [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](../sources/cui_2024_scgpt_toward_building_a_foundation.md)
 - [Large-scale foundation model on single-cell transcriptomics](../sources/hao_2024_large-scale_foundation_model_on_single-cell.md)
 - [Scaling Large Language Models for Next-Generation Single-Cell Analysis](../sources/rizvi_2025_scaling_large_language_models_for.md)
