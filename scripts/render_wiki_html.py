@@ -393,8 +393,11 @@ PAGE_TEMPLATE = Template(
         <section class="rail-block explorer-block">
           <p class="control-label" data-i18n-key="explorer">Explorer</p>
           {% for section in navigation %}
-          <section class="nav-group">
-            <h2 data-i18n-label="{{ section.label }}">{{ section.label }}</h2>
+          <details class="explorer-group"{% if section.open_by_default %} open{% endif %}>
+            <summary class="explorer-summary">
+              <span class="explorer-summary-label" data-i18n-label="{{ section.label }}">{{ section.label }}</span>
+              <span class="explorer-count">{{ section.count }}</span>
+            </summary>
             <ul class="explorer-list">
               {% for item in section.entries %}
               <li class="{% if item.current %}current{% endif %}">
@@ -402,7 +405,7 @@ PAGE_TEMPLATE = Template(
               </li>
               {% endfor %}
             </ul>
-          </section>
+          </details>
           {% endfor %}
         </section>
       </aside>
@@ -704,20 +707,6 @@ DASHBOARD_TEMPLATE = Template(
         </section>
 
         <section class="side-block">
-          <p class="control-label" data-i18n-key="explorer">Explorer</p>
-          {% for section in explorer_groups %}
-          <section class="nav-group">
-            <h2 data-i18n-label="{{ section.label }}">{{ section.label }}</h2>
-            <ul class="explorer-list compact">
-              {% for item in section.entries %}
-              <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a></li>
-              {% endfor %}
-            </ul>
-          </section>
-          {% endfor %}
-        </section>
-
-        <section class="side-block">
           <p class="control-label" data-i18n-key="views">Views</p>
           <div class="view-switch" id="view-switch">
             <label class="view-button" data-view="papers" for="view-tab-papers" role="button" tabindex="0" data-i18n-key="view_papers">Paper Cards</label>
@@ -733,6 +722,23 @@ DASHBOARD_TEMPLATE = Template(
             <button id="clear-filters" class="ghost-button" type="button" data-i18n-key="clear">Clear</button>
           </div>
           <div id="tag-chips" class="chip-list"></div>
+        </section>
+
+        <section class="side-block explorer-dashboard-block">
+          <p class="control-label" data-i18n-key="explorer">Explorer</p>
+          {% for section in explorer_groups %}
+          <details class="explorer-group"{% if section.open_by_default %} open{% endif %}>
+            <summary class="explorer-summary">
+              <span class="explorer-summary-label" data-i18n-label="{{ section.label }}">{{ section.label }}</span>
+              <span class="explorer-count">{{ section.count }}</span>
+            </summary>
+            <ul class="explorer-list compact">
+              {% for item in section.entries %}
+              <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </details>
+          {% endfor %}
         </section>
       </aside>
 
@@ -3164,12 +3170,88 @@ pre code {
   padding-top: 0.9rem;
 }
 
+.explorer-dashboard-block {
+  margin-top: 0.2rem;
+}
+
+.explorer-group {
+  margin-top: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.82);
+  overflow: hidden;
+}
+
+.explorer-group:first-of-type {
+  margin-top: 0;
+}
+
+.explorer-summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  padding: 0.62rem 0.72rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-sans);
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.explorer-summary::-webkit-details-marker {
+  display: none;
+}
+
+.explorer-summary::before {
+  content: "▸";
+  margin-right: 0.45rem;
+  color: var(--muted);
+  transition: transform 140ms ease;
+}
+
+.explorer-group[open] .explorer-summary::before {
+  transform: rotate(90deg);
+}
+
+.explorer-summary-label {
+  display: inline-flex;
+  align-items: center;
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.explorer-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.8rem;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  background: rgba(39, 95, 122, 0.08);
+  color: var(--accent);
+  font-size: 0.74rem;
+  font-weight: 700;
+}
+
+.explorer-group[open] .explorer-summary {
+  border-bottom: 1px solid var(--line);
+  background: rgba(247, 249, 251, 0.92);
+}
+
 .explorer-list,
 .toc-list,
 .link-stack {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.explorer-list {
+  max-height: min(32vh, 420px);
+  overflow-y: auto;
+  padding: 0.28rem;
 }
 
 .explorer-list.compact {
@@ -5367,7 +5449,14 @@ def build_navigation(pages: List[Page], current_page: Page):
                     "current": page.output_path == current_page.output_path,
                 }
             )
-        grouped.append({"label": SECTION_LABELS[section], "entries": section_items})
+        grouped.append(
+            {
+                "label": SECTION_LABELS[section],
+                "entries": section_items,
+                "count": len(section_items),
+                "open_by_default": section == "" or any(item.get("current") for item in section_items),
+            }
+        )
     return grouped
 
 
@@ -5380,6 +5469,8 @@ def build_explorer_groups(pages: List[Page]) -> List[Dict[str, object]]:
         groups.append(
             {
                 "label": SECTION_LABELS[section],
+                "count": len(items),
+                "open_by_default": section == "",
                 "entries": [
                     {
                         "title": page.title,
