@@ -176,6 +176,7 @@ UI_TRANSLATIONS = {
         "open": "Open",
         "open_pdf": "Open PDF",
         "open_article": "Journal Page",
+        "open_article_unavailable": "Journal Page unavailable",
         "no_relationship_tags": "No inferred relationship tags yet",
         "related_papers": "Related Papers",
         "no_related_papers": "No paper-to-paper relationships are visible for this paper under the current filters.",
@@ -272,6 +273,7 @@ UI_TRANSLATIONS = {
         "open": "열기",
         "open_pdf": "PDF 열기",
         "open_article": "저널 페이지",
+        "open_article_unavailable": "저널 페이지 링크 없음",
         "no_relationship_tags": "아직 추론된 관계 태그가 없습니다",
         "related_papers": "연관 논문",
         "no_related_papers": "현재 필터 기준으로 이 논문과 연결된 다른 논문이 보이지 않습니다.",
@@ -1263,7 +1265,7 @@ DASHBOARD_TEMPLATE = Template(
                 : "";
               const articleLink = paper.article_href
                 ? `<a class="card-link tertiary" ${renderExternalHrefAttributes(paper.article_href)}>${escapeHtml(t("open_article"))}</a>`
-                : "";
+                : `<span class="card-link tertiary disabled" aria-disabled="true" title="${escapeHtml(t("open_article_unavailable"))}">${escapeHtml(t("open_article"))}</span>`;
 
               return `
                 <article class="paper-card">
@@ -1359,7 +1361,7 @@ DASHBOARD_TEMPLATE = Template(
                 : "";
               const articleLink = page.article_href
                 ? `<a class="table-action tertiary" ${renderExternalHrefAttributes(page.article_href)}>${escapeHtml(t("open_article"))}</a>`
-                : "";
+                : `<span class="table-action tertiary disabled" aria-disabled="true" title="${escapeHtml(t("open_article_unavailable"))}">${escapeHtml(t("open_article"))}</span>`;
               return `
                 <tr>
                   <td class="database-title-cell">
@@ -2265,7 +2267,7 @@ DASHBOARD_TEMPLATE = Template(
             : "";
           const articleLink = page.article_href
             ? `<a class="card-link tertiary" ${renderExternalHrefAttributes(page.article_href)}>${escapeHtml(t("open_article"))}</a>`
-            : "";
+            : `<span class="card-link tertiary disabled" aria-disabled="true" title="${escapeHtml(t("open_article_unavailable"))}">${escapeHtml(t("open_article"))}</span>`;
 
           const availableEdges = graphRuntime ? graphRuntime.edges : data.paper_edges;
           const linkedTitles = availableEdges
@@ -3096,6 +3098,20 @@ pre code {
 .lang-button:hover,
 .card-link:hover {
   transform: translateY(-1px);
+  text-decoration: none;
+}
+
+.card-link.disabled,
+.table-action.disabled {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.48;
+  transform: none;
+}
+
+.card-link.disabled:hover,
+.table-action.disabled:hover {
+  transform: none;
   text-decoration: none;
 }
 
@@ -4577,6 +4593,37 @@ def strip_markdown_syntax(text: str) -> str:
     return text.strip()
 
 
+def strip_enclosing_markup(text: str) -> str:
+    cleaned = text.strip()
+    cleaned = cleaned.strip("`")
+    cleaned = cleaned.strip()
+    return cleaned.strip("[]()<>\"'")
+
+
+def extract_external_url(text: str) -> str:
+    for _, target in LINK_RE.findall(text):
+        candidate = target.strip()
+        if candidate.startswith(("http://", "https://")):
+            return candidate
+
+    url_match = re.search(r"https?://[^\s>]+", text)
+    if not url_match:
+        return ""
+    return url_match.group(0).rstrip(".,;")
+
+
+def normalize_doi(value: str) -> str:
+    text = strip_enclosing_markup(value)
+    doi_url_match = re.search(r"https?://(?:dx\.)?doi\.org/([^\s)>]+)", text, re.IGNORECASE)
+    if doi_url_match:
+        return doi_url_match.group(1).rstrip(".,;")
+
+    doi_match = re.search(r"(10\.\d{4,9}/[^\s`]+)", text, re.IGNORECASE)
+    if not doi_match:
+        return ""
+    return doi_match.group(1).rstrip(".,;")
+
+
 def extract_section_block(body: str, section_title: str) -> str:
     capture = False
     captured: List[str] = []
@@ -4599,6 +4646,46 @@ def extract_section_block(body: str, section_title: str) -> str:
             captured.append(raw_line)
 
     return "\n".join(captured).strip()
+
+
+def extract_source_metadata(source_block: str) -> Dict[str, str]:
+    extracted: Dict[str, str] = {}
+
+    for raw_line in source_block.splitlines():
+        stripped = raw_line.strip()
+        if not stripped.startswith("- ") or ":" not in stripped:
+            continue
+
+        label, value = stripped[2:].split(":", 1)
+        label = label.strip().lower()
+        value = value.strip()
+        external_url = extract_external_url(value)
+
+        if label == "article":
+            article_url = external_url or strip_enclosing_markup(value)
+            if article_url.startswith(("http://", "https://")):
+                extracted.setdefault("article_url", article_url)
+            continue
+
+        if label == "doi":
+            if external_url and "doi.org/" in external_url.lower():
+                extracted.setdefault("doi_url", external_url)
+            doi = normalize_doi(external_url or value)
+            if doi:
+                extracted.setdefault("doi", doi)
+
+    return extracted
+
+
+def merge_source_metadata(metadata: Dict[str, str], source_block: str) -> Dict[str, str]:
+    if not source_block:
+        return metadata
+
+    merged = dict(metadata)
+    for key, value in extract_source_metadata(source_block).items():
+        if not merged.get(key):
+            merged[key] = value
+    return merged
 
 
 def extract_excerpt(body: str, title: str) -> str:
@@ -4843,6 +4930,10 @@ def extract_year(rel_source: Path, metadata: Optional[Dict[str, str]] = None) ->
 
 
 def resolve_article_href(metadata: Dict[str, str]) -> str:
+    article_url = metadata.get("article_url", "").strip()
+    if article_url:
+        return article_url
+
     doi_url = metadata.get("doi_url", "").strip()
     if doi_url:
         return doi_url
@@ -4850,10 +4941,6 @@ def resolve_article_href(metadata: Dict[str, str]) -> str:
     doi = metadata.get("doi", "").strip()
     if doi:
         return f"https://doi.org/{doi}"
-
-    article_url = metadata.get("article_url", "").strip()
-    if article_url:
-        return article_url
 
     return ""
 
@@ -4867,6 +4954,8 @@ def build_page(path: Path) -> Page:
 
     text = path.read_text(encoding="utf-8")
     metadata, body = parse_frontmatter(text)
+    source_block = extract_section_block(body, "Source")
+    metadata = merge_source_metadata(metadata, source_block)
     title = extract_title(metadata, body, path)
 
     body_lines = body.splitlines()
@@ -4881,7 +4970,6 @@ def build_page(path: Path) -> Page:
 
     meta_items = [(key.replace("_", " "), value) for key, value in metadata.items()]
 
-    source_block = extract_section_block(body, "Source")
     scope_line = ""
     for line in source_block.splitlines():
         stripped = line.strip()
@@ -5079,6 +5167,11 @@ def render_initial_paper_grid(paper_pages: List[Dict[str, object]]) -> str:
                 f'{render_external_link_attrs(str(paper.get("article_href", "")))}>'
                 f'Journal Page</a>'
             )
+        else:
+            article_link = (
+                '<span class="card-link tertiary disabled" aria-disabled="true" '
+                'title="Journal Page unavailable">Journal Page</span>'
+            )
         cards.append(
             "\n".join(
                 [
@@ -5168,6 +5261,11 @@ def render_initial_database(serialized_pages: List[Dict[str, object]]) -> Tuple[
                 f'<a class="table-action tertiary" '
                 f'{render_external_link_attrs(str(page.get("article_href", "")))}>'
                 f'Journal Page</a>'
+            )
+        else:
+            article_link = (
+                '<span class="table-action tertiary disabled" aria-disabled="true" '
+                'title="Journal Page unavailable">Journal Page</span>'
             )
         row_html.append(
             "\n".join(
