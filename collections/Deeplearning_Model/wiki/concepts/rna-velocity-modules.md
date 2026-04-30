@@ -10,6 +10,8 @@
 - Cell2fate linearizes the derivative of the transcription rate into individually integrable basis functions called modules.
 - Each module has ON and OFF behavior, activation or deactivation rates, and a contribution to gene-specific transcription-rate changes.
 - Module activations can be visualized over inferred time, linked to marker genes, and projected back onto spatial transcriptomics data.
+- Compared with [Fate Decision Intensity](fate-decision-intensity.md), the aim here is to recover interpretable transcriptional dynamics rather than score where commitment pressure is highest on a manifold.
+- Compared with [Stimulus-Response Diffusion Modeling](stimulus-response-diffusion-modeling.md), this concept is tied to explicit splicing-based temporal structure rather than generative latent interpolation between conditions.
 
 ## Claimed Benefits
 

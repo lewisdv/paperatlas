@@ -10,6 +10,8 @@
 - [Squidiff](../entities/Squidiff.md) is the main example, combining semantic latent variables with conditional DDIM generation to predict future, past, and perturbed cell states.
 - Compared with [CellOT](../entities/CellOT.md), which models perturbation as transport between distributions, Squidiff emphasizes iterative denoising and latent semantic manipulation.
 - The paper also connects naturally to [AIVC](../entities/AIVC.md), because it treats in silico generation of dynamic cell states as a practical ingredient for broader virtual-cell-style experimentation.
+- Compared with [RNA Velocity Modules](rna-velocity-modules.md), the transition signal here comes from a generative latent process rather than spliced and unspliced kinetic inference.
+- Compared with [Combinatorial Perturbation Generalization](combinatorial-perturbation-generalization.md), Squidiff aims to model smooth paths and intermediate states, not only the final endpoint of unseen perturbation combinations.
 
 ## Claimed Benefits
 

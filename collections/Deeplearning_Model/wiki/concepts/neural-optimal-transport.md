@@ -13,6 +13,8 @@
 - For scRNA-seq, the published workflow applies the transport map in an autoencoder latent space.
 - Compared with [Cell-State Similarity Search](cell-state-similarity-search.md), the main question is not whether two profiles are nearest neighbors but whether one population can be plausibly transported into another while preserving heterogeneous response structure.
 - Compared with [Cross-modality Generation](cross-modality-generation.md), the model aligns source and target conditions through transport geometry rather than by making multiple modalities interchangeable inside one shared latent representation.
+- Compared with [Fate Decision Intensity](fate-decision-intensity.md), this concept is about moving between observed source and target distributions rather than identifying early commitment hotspots inside one lineage landscape.
+- Compared with [Combinatorial Perturbation Generalization](combinatorial-perturbation-generalization.md), the method is stronger on distributional source-target mapping than on extrapolating unseen multigene endpoints through graph priors.
 
 ## Claimed Benefits
 

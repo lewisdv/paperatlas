@@ -197,3 +197,14 @@
 - Created `wiki/queries/what-similarity-means-across-the-collection.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares retrieval similarity, RNA contrastive similarity, multimodal latent equivalence, neural transport geometry, and atlas-fidelity similarity using only collection-supported evidence.
+
+## [2026-04-30 14:28 KST] lint refinement | transition-model cross-links
+
+- Strengthened comparisons among `wiki/concepts/rna-velocity-modules.md`, `wiki/concepts/fate-decision-intensity.md`, `wiki/concepts/stimulus-response-diffusion-modeling.md`, `wiki/concepts/neural-optimal-transport.md`, and `wiki/concepts/combinatorial-perturbation-generalization.md`.
+- Clarified that this collection's transition-oriented papers disagree productively about what a cell-state transition is: kinetic dynamics, decision landscapes, distribution transport, generative interpolation, or unseen perturbation endpoints.
+
+## [2026-04-30 14:29 KST] query saved | How do transition-oriented models in this collection differ in what they think a cell-state transition is?
+
+- Created `wiki/queries/how-do-transition-oriented-models-differ-in-what-they-think-a-cell-state-transition-is.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares Cell2fate, scRL, CellOT, Squidiff, and GEARS as five different transition formalisms using only collection-supported evidence.

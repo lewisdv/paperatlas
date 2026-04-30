@@ -10,6 +10,8 @@
 - [GEARS](../entities/GEARS.md) is the clearest example: it uses knowledge-graph priors to extrapolate to unseen multigene combinations.
 - [Squidiff](../entities/Squidiff.md) tackles a related compositional question through latent-vector arithmetic for gene and drug perturbations.
 - [Tahoe-x1](../entities/Tahoe-x1.md) approaches generalization differently, by scaling perturbation-rich pretraining rather than using explicit knowledge-graph structure.
+- Compared with [Neural Optimal Transport](neural-optimal-transport.md), the emphasis here is unseen intervention composition, not learning a minimal-effort map between observed control and treated populations.
+- Compared with [Stimulus-Response Diffusion Modeling](stimulus-response-diffusion-modeling.md), the main target is the final transcriptional outcome of new perturbation combinations rather than a smooth generative path through intermediate states.
 
 ## Claimed Benefits
 

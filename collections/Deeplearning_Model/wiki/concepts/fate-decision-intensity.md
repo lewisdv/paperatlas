@@ -10,6 +10,8 @@
 - [scRL](../entities/scRL.md) is the main source for this concept, deriving decision intensity from the critic's learned state values under an early-biased reward scheme.
 - [Cell2fate](../entities/Cell2fate.md) addresses a neighboring problem through RNA-velocity modules and posterior uncertainty, but with a different model family and a different notion of developmental evidence.
 - Compared with [Clinical Reinforcement-Learning Translation](clinical-reinforcement-learning-translation.md), this is not a treatment-policy problem but a cell-state scoring problem: RL is used here to localize developmental commitment pressure rather than to recommend actions in patient care.
+- Compared with [RNA Velocity Modules](rna-velocity-modules.md), this concept prioritizes early branch-point salience rather than explicit kinetic decomposition of transcriptional change.
+- Compared with [Neural Optimal Transport](neural-optimal-transport.md), the main output is a commitment landscape over one developmental manifold, not a map that transports one observed population into another.
 
 ## Claimed Benefits
 
