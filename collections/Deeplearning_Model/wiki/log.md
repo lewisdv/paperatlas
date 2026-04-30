@@ -265,3 +265,9 @@
 - Created `wiki/syntheses/evaluation-task-families-and-success-criteria.md`.
 - Updated `wiki/index.md` to catalog the saved synthesis and `wiki/overview.md` to surface the new task-family framing at the collection level.
 - The synthesis reorganizes the collection around retrieval and annotation, transferable representations, perturbation prediction, transition analysis, multimodal completion, reference benchmarking, and roadmap or translation work.
+
+## [2026-04-30 15:28 KST] query saved | What does failure look like across the main evaluation task families in this collection?
+
+- Created `wiki/queries/failure-modes-across-evaluation-task-families.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query argues that failure is not one scalar in this collection and instead differs across retrieval, transfer, perturbation, transition, multimodal, reference-substrate, and roadmap or translation families.

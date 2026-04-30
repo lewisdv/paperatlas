@@ -94,6 +94,7 @@
 - [How does this collection distinguish sequence foundation models from cell-state foundation models?](queries/sequence-foundation-models-vs-cell-state-foundation-models.md) - Comparison of Orthrus-style transcript-sequence pretraining against atlas-scale cell-state foundation-model branches such as scGPT, scFoundation, C2S-Scale, and SCimilarity.
 - [How should this collection distinguish retrieval-first and generative-first single-cell models?](queries/retrieval-first-vs-generative-first-single-cell-models.md) - Comparison of SCimilarity-style atlas retrieval against scGPT, scFoundation, and C2S-Scale-style task-transfer and generative single-cell modeling.
 - [What different kinds of uncertainty are explicit in this collection, and what do they trigger?](queries/uncertainty-types-and-what-they-trigger.md) - Comparison of fallback-label, atlas-coverage, reference-coverage, dynamical-posterior, and perturbation-effect uncertainty modes in this collection.
+- [What does failure look like across the main evaluation task families in this collection?](queries/failure-modes-across-evaluation-task-families.md) - Comparison of task-family-specific failure modes across retrieval, transfer, perturbation, transition, multimodal, reference, and roadmap branches in the collection.
 
 ## Syntheses
 
