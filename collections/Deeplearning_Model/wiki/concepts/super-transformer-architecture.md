@@ -10,6 +10,7 @@
 - [Multimodal foundation transformer models for multiscale genomics](../sources/khan_2025_multimodal_foundation_transformer_models_for.md) is the direct source for this concept and presents it as a practical roadmap for integrating DNA, single-cell, spatial, proteomic, image, and text modalities.
 - [Multimodal Foundation Models](multimodal-foundation-models.md) gives the broader umbrella paradigm; Super Transformer Architecture is one concrete architectural language proposed for that paradigm.
 - Existing systems in this collection such as [scGPT](../entities/scGPT.md), [scFoundation](../entities/scFoundation.md), [C2S-Scale](../entities/C2S-Scale.md), and [AURORA](../entities/AURORA.md) can be read as partial slices of the larger blueprint rather than full realizations of it.
+- Compared with [Universal Representation](universal-representation.md), this is much more concrete about tokenizers, shared embeddings, and fusion operators, but less explicit about the broader virtual-instrument ecosystem that would sit on top of the shared space.
 
 ## Proposed Ingredients
 

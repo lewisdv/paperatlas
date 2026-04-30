@@ -164,3 +164,14 @@
 - Created `wiki/queries/what-multimodal-means-across-the-collection.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query separates multimodal completion, foundation-model roadmaps, developmental atlas substrates, and virtual-cell-scale ambitions using only collection-supported evidence.
+
+## [2026-04-30 14:17 KST] lint refinement | virtual-cell and multimodal-roadmap links
+
+- Strengthened comparisons among `wiki/concepts/universal-representation.md`, `wiki/concepts/virtual-instruments.md`, and `wiki/concepts/super-transformer-architecture.md`.
+- Clarified that this collection distinguishes between broader virtual-cell state-space ambitions and more concrete multimodal tokenizer or fusion blueprints.
+
+## [2026-04-30 14:18 KST] query saved | How do virtual-cell roadmaps differ from multimodal foundation-model roadmaps in this collection?
+
+- Created `wiki/queries/virtual-cell-vs-multimodal-foundation-roadmaps.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares AIVC-style universal-representation and virtual-instrument roadmaps against multimodal foundation-model and Super Transformer agendas using only collection-supported evidence.

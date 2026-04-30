@@ -10,6 +10,8 @@
 - Decoder VIs take a universal representation as input and produce human-readable outputs such as labels, images, structures, or predicted measurements.
 - Manipulator VIs take a universal representation as input and output another universal representation, for example a predicted post-perturbation or future cell state.
 - Because multiple VIs operate over the same shared representation, the paper argues that they could be reused across datasets, assays, and scientific questions.
+- Compared with [Cross-modality Generation](cross-modality-generation.md), VIs are a broader interface idea: missing-modality reconstruction is only one possible decoder behavior among many.
+- Compared with [Stimulus-Response Diffusion Modeling](stimulus-response-diffusion-modeling.md) and [Neural Optimal Transport](neural-optimal-transport.md), VIs are a roadmap abstraction rather than one fixed perturbation engine; those models can be read as partial examples of manipulator-like behavior inside a narrower task scope.
 
 ## Claimed Benefits
 

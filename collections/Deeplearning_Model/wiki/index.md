@@ -86,6 +86,7 @@
 - [How do the main single-cell foundation-model papers in this collection differ in their basic representation units?](queries/representation-units-in-single-cell-foundation-models.md) - Comparison of gene blocks, gene tokens with expression/context, ranked cell sentences, read-depth-aware expression modeling, external semantic feature embeddings, and retrieval embeddings.
 - [How does reinforcement learning appear at different scales in this collection?](queries/reinforcement-learning-at-different-scales.md) - Comparison of RL as developmental trajectory scoring in scRL versus patient-level dynamic treatment optimization in the clinical review literature.
 - [What does `multimodal` actually mean across this collection?](queries/what-multimodal-means-across-the-collection.md) - Comparison of multimodal completion, multimodal foundation-model roadmaps, atlas-style multimodal reference substrates, and virtual-cell-level multi-scale ambitions.
+- [How do virtual-cell roadmaps differ from multimodal foundation-model roadmaps in this collection?](queries/virtual-cell-vs-multimodal-foundation-roadmaps.md) - Comparison of AIVC-style universal-representation plus virtual-instrument roadmaps against Super Transformer and multimodal foundation-model architecture agendas.
 
 ## Syntheses
 

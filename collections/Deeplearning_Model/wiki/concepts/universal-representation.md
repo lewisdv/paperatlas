@@ -10,6 +10,8 @@
 - The AIVC maps biological data into UR spaces that span molecular, cellular, and multicellular scales.
 - These embeddings are intended to be modality-agnostic enough that the same biological entity can be represented consistently from different measurement technologies.
 - URs are also intended to generalize to previously unseen cell states, perturbations, or contexts and to act as the common interface for decoder and manipulator virtual instruments.
+- Compared with [Multimodal Foundation Models](multimodal-foundation-models.md), universal representation is the broader state-space ambition behind many possible models rather than one pretraining recipe or model family.
+- Compared with [Super Transformer Architecture](super-transformer-architecture.md), the focus here is not a concrete tokenizer-and-fusion stack but the desired biological latent state that a future architecture would need to support across scales.
 
 ## Claimed Benefits
 
