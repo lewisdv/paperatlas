@@ -68,6 +68,7 @@
 - [Fate Decision Intensity](concepts/fate-decision-intensity.md) - A model-derived score for early commitment pressure before overt lineage commitment.
 - [Stimulus-Response Diffusion Modeling](concepts/stimulus-response-diffusion-modeling.md) - Conditional diffusion-based generation of transcriptomic state changes under stimuli.
 - [Combinatorial Perturbation Generalization](concepts/combinatorial-perturbation-generalization.md) - Predicting unseen multigene intervention effects beyond directly observed perturbation combinations.
+- [Gene-Level Perturbation Uncertainty](concepts/gene-level-perturbation-uncertainty.md) - Uncertainty about whether predicted perturbation effects are present, directional, and strong enough to interpret biologically.
 - [LLM-Derived Feature Embeddings](concepts/llm-derived-feature-embeddings.md) - Reusing LLM-generated biological descriptions and their embeddings as feature priors.
 - [Super Transformer Architecture](concepts/super-transformer-architecture.md) - A modular multimodal transformer blueprint with modality-specific encoders, shared embeddings, and cross-attention across genomic scales.
 - [Perturbation Cell Atlas](concepts/perturbation-cell-atlas.md) - A proposed atlas of high-content perturbation states meant to support causal and generative foundation models of cells and tissues.
@@ -92,6 +93,7 @@
 - [How do transition-oriented models in this collection differ in what they think a cell-state transition is?](queries/how-do-transition-oriented-models-differ-in-what-they-think-a-cell-state-transition-is.md) - Comparison of kinetic, decision-landscape, transport, diffusion, and combinatorial-endpoint views of cell-state change.
 - [How does this collection distinguish sequence foundation models from cell-state foundation models?](queries/sequence-foundation-models-vs-cell-state-foundation-models.md) - Comparison of Orthrus-style transcript-sequence pretraining against atlas-scale cell-state foundation-model branches such as scGPT, scFoundation, C2S-Scale, and SCimilarity.
 - [How should this collection distinguish retrieval-first and generative-first single-cell models?](queries/retrieval-first-vs-generative-first-single-cell-models.md) - Comparison of SCimilarity-style atlas retrieval against scGPT, scFoundation, and C2S-Scale-style task-transfer and generative single-cell modeling.
+- [What different kinds of uncertainty are explicit in this collection, and what do they trigger?](queries/uncertainty-types-and-what-they-trigger.md) - Comparison of fallback-label, atlas-coverage, reference-coverage, dynamical-posterior, and perturbation-effect uncertainty modes in this collection.
 
 ## Syntheses
 

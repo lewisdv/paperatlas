@@ -12,6 +12,7 @@
 - Module activations can be visualized over inferred time, linked to marker genes, and projected back onto spatial transcriptomics data.
 - Compared with [Fate Decision Intensity](fate-decision-intensity.md), the aim here is to recover interpretable transcriptional dynamics rather than score where commitment pressure is highest on a manifold.
 - Compared with [Stimulus-Response Diffusion Modeling](stimulus-response-diffusion-modeling.md), this concept is tied to explicit splicing-based temporal structure rather than generative latent interpolation between conditions.
+- Compared with [Gene-Level Perturbation Uncertainty](gene-level-perturbation-uncertainty.md), the uncertainty role here is posterior quality control over temporal dynamics, not confidence over intervention-effect presence or magnitude.
 
 ## Claimed Benefits
 

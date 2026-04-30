@@ -31,6 +31,7 @@
 
 ## Related
 
+- [Gene-Level Perturbation Uncertainty](../concepts/gene-level-perturbation-uncertainty.md)
 - [Combinatorial Perturbation Generalization](../concepts/combinatorial-perturbation-generalization.md)
 - [GEARS](../entities/GEARS.md)
 - [CellOT](../entities/CellOT.md)

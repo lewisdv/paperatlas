@@ -15,6 +15,7 @@
 - Compared with [Cross-modality Generation](cross-modality-generation.md), the goal is to find a nearby reference state, not to treat different modalities as interchangeable views of one latent biological condition.
 - Compared with [Single-Cell Generative Pretraining](single-cell-generative-pretraining.md), the representation is still cell-state-level, but the downstream center of gravity is retrieval and confidence-aware atlas search rather than task-by-task generative fine-tuning.
 - Compared with [Cell Sentences](cell-sentences.md), the output remains bounded by explicit reference neighbors and their provenance rather than extending into open-ended language-native interpretation or generation.
+- Compared with [Gene-Level Perturbation Uncertainty](gene-level-perturbation-uncertainty.md), the uncertainty signal here is about reference coverage for a query cell, not about confidence in a predicted intervention effect on a gene.
 
 ## Claimed Benefits
 

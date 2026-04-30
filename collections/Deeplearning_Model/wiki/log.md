@@ -230,3 +230,20 @@
 - Created `wiki/queries/retrieval-first-vs-generative-first-single-cell-models.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares SCimilarity against scGPT, scFoundation, and C2S-Scale while distinguishing nearest-neighbour atlas lookup from broader predictive and generative single-cell modeling.
+
+## [2026-04-30 14:43 KST] concept added | Gene-Level Perturbation Uncertainty
+
+- Created `wiki/concepts/gene-level-perturbation-uncertainty.md`.
+- Linked GPerturb-style probabilistic effect uncertainty and GEARS-style graph-support uncertainty into the broader collection uncertainty thread.
+- Updated `wiki/index.md` and `wiki/entities/GPerturb.md` to surface the new concept.
+
+## [2026-04-30 14:44 KST] lint refinement | uncertainty-mode cross-links
+
+- Strengthened comparisons among `wiki/concepts/hierarchical-partial-rejection.md`, `wiki/concepts/cell-state-similarity-search.md`, `wiki/concepts/transcriptomic-fidelity-benchmarking.md`, `wiki/concepts/rna-velocity-modules.md`, and `wiki/concepts/gene-level-perturbation-uncertainty.md`.
+- Clarified that this collection's uncertainty signals act on different objects, including labels, atlas queries, reference systems, trajectory inferences, and predicted perturbation effects.
+
+## [2026-04-30 14:45 KST] query saved | What different kinds of uncertainty are explicit in this collection, and what do they trigger?
+
+- Created `wiki/queries/uncertainty-types-and-what-they-trigger.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query expands the earlier uncertainty thread by adding posterior dynamical uncertainty and perturbation-effect uncertainty to the already documented fallback-label, atlas-coverage, and reference-coverage modes.

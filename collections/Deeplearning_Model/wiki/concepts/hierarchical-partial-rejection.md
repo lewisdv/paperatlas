@@ -13,6 +13,7 @@
 - [SCimilarity](../entities/SCimilarity.md) addresses a neighboring uncertainty problem through low-confidence retrieval flags; unlike partial rejection, it responds to weak atlas coverage by downgrading confidence rather than backing off to an internal label node.
 - [HNOCA](../entities/HNOCA.md) provides a third adjacent mode, where uncertainty appears as missing or weakly matched reference coverage during fidelity benchmarking rather than as a per-cell fallback label.
 - Generative-first model families in this collection, such as [scGPT](../entities/scGPT.md) and [C2S-Scale](../entities/C2S-Scale.md), are broader in task scope but are not currently represented here by one comparably explicit fallback-label mechanism.
+- Compared with [Gene-Level Perturbation Uncertainty](gene-level-perturbation-uncertainty.md), the uncertainty object here is label depth in a hierarchy, not whether an intervention effect estimate is directionally and quantitatively trustworthy.
 
 ## Claimed Benefits
 

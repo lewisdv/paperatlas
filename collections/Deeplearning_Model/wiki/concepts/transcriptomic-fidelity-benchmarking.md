@@ -12,6 +12,7 @@
 - Compared with [Cell-State Similarity Search](cell-state-similarity-search.md) and [Hierarchical Partial Rejection](hierarchical-partial-rejection.md), the emphasis here is not a per-cell confidence threshold but diagnosis of where an entire in vitro system falls outside strong primary-reference coverage.
 - Compared with [Region-Specific Developmental Trajectories](region-specific-developmental-trajectories.md), fidelity benchmarking is the system-level question of whether those trajectories and regional states are actually covered or developmentally matched.
 - Compared with [Sex-Stratified Transcriptomic Burden](sex-stratified-transcriptomic-burden.md), this concept tracks reference mismatch and missing-state coverage rather than subgroup-specific disease asymmetry.
+- Compared with [Gene-Level Perturbation Uncertainty](gene-level-perturbation-uncertainty.md), the uncertainty unit here is the overall system or protocol relative to a primary reference, not the credibility of one predicted perturbation effect.
 
 ## Claimed Benefits
 
