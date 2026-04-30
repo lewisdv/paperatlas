@@ -12,6 +12,8 @@
 - [AURORA](../entities/AURORA.md) sits at the broader human multi-omics end of the design space, showing how shared latent or integrative systems can span modalities for downstream reasoning.
 - Compared with [Cross-modality Generation](cross-modality-generation.md), these atlases are primarily reference scaffolds rather than modality-imputation engines.
 - Compared with [Multimodal Foundation Models](multimodal-foundation-models.md), they are closer to infrastructure and biological substrate than to a reusable pretrained model family.
+- Compared with [Transcriptomic Fidelity Benchmarking](transcriptomic-fidelity-benchmarking.md), these atlases can supply richer reference structure by adding epigenetic and spatial context instead of relying on transcriptomic matching alone.
+- Compared with [Sex-Stratified Transcriptomic Burden](sex-stratified-transcriptomic-burden.md), the heterogeneity emphasis here is developmental, regulatory, and spatial rather than case-control burden asymmetry.
 
 ## Claimed Benefits
 

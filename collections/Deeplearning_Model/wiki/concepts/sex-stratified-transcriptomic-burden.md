@@ -9,6 +9,8 @@
 
 - [Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders](../sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md) is the direct example, showing stronger female burden across psychiatric case-control contrasts and coexpression-network disruption.
 - The collection does not yet contain many other explicit sex-stratified disease references, so this paper currently functions as an anchor for the theme rather than as part of a dense cluster.
+- Compared with [Region-Specific Developmental Trajectories](region-specific-developmental-trajectories.md), this is population-stratified disease heterogeneity rather than anatomical or lineage divergence.
+- Compared with [Transcriptomic Fidelity Benchmarking](transcriptomic-fidelity-benchmarking.md), the main issue is not whether an in vitro system matches a primary reference, but whether pooled disease summaries hide subgroup-specific burden structure.
 
 ## Claimed Benefits
 
