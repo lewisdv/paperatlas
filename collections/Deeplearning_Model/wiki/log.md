@@ -142,3 +142,14 @@
 - Created `wiki/queries/representation-units-in-single-cell-foundation-models.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares gene blocks, gene-plus-expression tokenization, ranked cell sentences, read-depth-aware matrix modeling, external LLM-derived feature embeddings, and retrieval embeddings using only collection-supported evidence.
+
+## [2026-04-30 14:00 KST] lint refinement | reinforcement-learning scale links
+
+- Strengthened the contrast between `wiki/concepts/clinical-reinforcement-learning-translation.md` and `wiki/concepts/fate-decision-intensity.md`.
+- Clarified that this collection currently uses reinforcement learning in at least two different ways: patient-level sequential treatment optimization and cell-state trajectory scoring.
+
+## [2026-04-30 14:01 KST] query saved | How does reinforcement learning appear at different scales in this collection?
+
+- Created `wiki/queries/reinforcement-learning-at-different-scales.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares scRL and the clinical RL review while distinguishing direct RL applications from broader adjacent roadmap ideas.

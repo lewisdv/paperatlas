@@ -9,6 +9,7 @@
 
 - [Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes](../sources/frommeyer_2025_reinforcement_learning_and_its_clinical.md) is the direct source for this concept, framing RL around precision medicine and dynamic treatment regimes.
 - [scRL](../entities/scRL.md) is a useful methodological cousin rather than a clinical example: it shows RL being used on cell trajectories, but without the workflow, regulatory, and patient-safety constraints that dominate bedside deployment.
+- Compared with [Fate Decision Intensity](fate-decision-intensity.md), the main shift is scale and consequence: both use sequential decision ideas, but clinical RL optimizes treatment policies over patients while scRL scores developmental commitment landscapes inside cell-state manifolds.
 
 ## Claimed Benefits
 

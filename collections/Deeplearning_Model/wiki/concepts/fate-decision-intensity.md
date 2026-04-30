@@ -9,6 +9,7 @@
 
 - [scRL](../entities/scRL.md) is the main source for this concept, deriving decision intensity from the critic's learned state values under an early-biased reward scheme.
 - [Cell2fate](../entities/Cell2fate.md) addresses a neighboring problem through RNA-velocity modules and posterior uncertainty, but with a different model family and a different notion of developmental evidence.
+- Compared with [Clinical Reinforcement-Learning Translation](clinical-reinforcement-learning-translation.md), this is not a treatment-policy problem but a cell-state scoring problem: RL is used here to localize developmental commitment pressure rather than to recommend actions in patient care.
 
 ## Claimed Benefits
 
