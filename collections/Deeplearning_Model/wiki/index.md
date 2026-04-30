@@ -81,9 +81,8 @@
 
 ## Queries
 
-## Syntheses
-ference structure.
-
-## Queries
+- [What perturbation modeling families are emerging in this collection, and what tradeoffs do they claim?](queries/perturbation-modeling-families-and-tradeoffs.md) - Comparison of transport, graph-guided, diffusion, probabilistic, and perturbation-pretrained approaches to perturbation prediction in this collection.
 
 ## Syntheses
+
+- [Predictive Models, Reference Substrates, and Roadmaps in Deeplearning_Model](syntheses/predictive-models-reference-substrates-and-roadmaps.md) - Collection map that separates direct predictive systems from atlas substrates, heterogeneity references, and roadmap papers.

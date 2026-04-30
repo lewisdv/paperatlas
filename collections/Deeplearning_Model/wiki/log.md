@@ -101,3 +101,22 @@
 - Updated `wiki/sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md` with summary, methods, evidence, limitations, and parsed-artifact links.
 - Created `wiki/concepts/sex-stratified-transcriptomic-burden.md`.
 - Updated `wiki/overview.md` and `wiki/index.md` to reflect sex-stratified transcriptomic burden as a heterogeneity-focused reference thread in this collection.
+
+## [2026-04-30 12:54 KST] lint pass | Deeplearning_Model structure
+
+- Fixed duplicated footer corruption in `wiki/index.md` under the `Queries` and `Syntheses` sections.
+- Fixed broken relative links to the Orthrus source page in `wiki/entities/Orthrus.md` and `wiki/concepts/evolutionary-contrastive-rna-pretraining.md`.
+- Updated stale backlog language in `wiki/overview.md` now that the ingest backlog is effectively exhausted.
+- Residual note: `wiki/concepts/hierarchical-partial-rejection.md` remains comparatively lightly connected inside the concept graph and may need richer cross-links if more annotation-uncertainty sources are added.
+
+## [2026-04-30 12:55 KST] synthesis saved | Predictive Models, Reference Substrates, and Roadmaps in Deeplearning_Model
+
+- Created `wiki/syntheses/predictive-models-reference-substrates-and-roadmaps.md`.
+- Updated `wiki/index.md` to catalog the saved synthesis.
+- The synthesis separates direct predictive systems from reference substrates, heterogeneity anchors, and roadmap or infrastructure papers.
+
+## [2026-04-30 12:56 KST] query saved | What perturbation modeling families are emerging in this collection, and what tradeoffs do they claim?
+
+- Created `wiki/queries/perturbation-modeling-families-and-tradeoffs.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares transport, graph-guided, diffusion, probabilistic, and perturbation-pretrained model families using only this collection's source and concept pages.

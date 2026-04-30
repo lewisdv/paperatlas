@@ -32,4 +32,4 @@
 ## Related
 
 - [Evolutionary Contrastive RNA Pretraining](../concepts/evolutionary-contrastive-rna-pretraining.md)
-- [Source: Orthrus: toward evolutionary and functional RNA foundation models](../sources/Philip_2026_Orthrus_toward_%20evolutionary_and_functional.md)
+- [Source: Orthrus: toward evolutionary and functional RNA foundation models](../sources/Philip_2026_Orthrus_toward_ evolutionary_and_functional.md)
