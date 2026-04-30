@@ -247,3 +247,9 @@
 - Created `wiki/queries/uncertainty-types-and-what-they-trigger.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query expands the earlier uncertainty thread by adding posterior dynamical uncertainty and perturbation-effect uncertainty to the already documented fallback-label, atlas-coverage, and reference-coverage modes.
+
+## [2026-04-30 15:07 KST] synthesis saved | Reference Substrates, Heterogeneity, and Uncertainty as Evaluation Constraints in Deeplearning_Model
+
+- Created `wiki/syntheses/reference-substrates-heterogeneity-and-uncertainty-as-evaluation-constraints.md`.
+- Updated `wiki/index.md` to catalog the saved synthesis.
+- The synthesis argues that this collection's atlas substrates, heterogeneity anchors, and uncertainty mechanisms now function as evaluation constraints on predictive model claims rather than as side topics.
