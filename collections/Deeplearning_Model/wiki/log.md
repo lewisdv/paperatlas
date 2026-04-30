@@ -186,3 +186,14 @@
 - Created `wiki/queries/which-heterogeneity-axes-do-the-reference-papers-make-hard-to-ignore.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares sex-stratified psychiatric burden, region-specific developmental references, atlas-based fidelity diagnosis, and multi-omic developmental substrates using only collection-supported evidence.
+
+## [2026-04-30 14:25 KST] lint refinement | similarity-sense cross-links
+
+- Strengthened comparisons among `wiki/concepts/cell-state-similarity-search.md`, `wiki/concepts/evolutionary-contrastive-rna-pretraining.md`, `wiki/concepts/cross-modality-generation.md`, and `wiki/concepts/neural-optimal-transport.md`.
+- Clarified that this collection uses `similarity` in several non-equivalent senses, including nearest-neighbour retrieval, contrastive biological relatedness, shared-latent alignment, and transportable state geometry.
+
+## [2026-04-30 14:26 KST] query saved | What does `similarity` mean across this collection?
+
+- Created `wiki/queries/what-similarity-means-across-the-collection.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares retrieval similarity, RNA contrastive similarity, multimodal latent equivalence, neural transport geometry, and atlas-fidelity similarity using only collection-supported evidence.

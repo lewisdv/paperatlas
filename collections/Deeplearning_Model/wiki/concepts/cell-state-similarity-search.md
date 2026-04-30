@@ -11,6 +11,8 @@
 - The query is embedded into the shared latent space and compared against precomputed nearest-neighbour indices over annotated or full-reference cells.
 - Results remain traceable to original study, tissue, and disease metadata, which lets the search output function as both retrieval and hypothesis-generation support.
 - Compared with [Hierarchical Partial Rejection](hierarchical-partial-rejection.md), SCimilarity handles uncertainty through coverage-aware confidence scoring rather than by returning a broader fallback label.
+- Compared with [Evolutionary Contrastive RNA Pretraining](evolutionary-contrastive-rna-pretraining.md), this similarity notion is cell-state retrieval in atlas space rather than curated functional proximity between transcript sequences.
+- Compared with [Cross-modality Generation](cross-modality-generation.md), the goal is to find a nearby reference state, not to treat different modalities as interchangeable views of one latent biological condition.
 
 ## Claimed Benefits
 

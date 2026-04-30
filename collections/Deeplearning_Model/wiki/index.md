@@ -88,6 +88,7 @@
 - [What does `multimodal` actually mean across this collection?](queries/what-multimodal-means-across-the-collection.md) - Comparison of multimodal completion, multimodal foundation-model roadmaps, atlas-style multimodal reference substrates, and virtual-cell-level multi-scale ambitions.
 - [How do virtual-cell roadmaps differ from multimodal foundation-model roadmaps in this collection?](queries/virtual-cell-vs-multimodal-foundation-roadmaps.md) - Comparison of AIVC-style universal-representation plus virtual-instrument roadmaps against Super Transformer and multimodal foundation-model architecture agendas.
 - [Which heterogeneity axes do the reference papers in this collection make hard to ignore?](queries/which-heterogeneity-axes-do-the-reference-papers-make-hard-to-ignore.md) - Comparison of sex-stratified burden, region-specific development, atlas fidelity, and multi-omic reference structure as evaluation constraints for later models.
+- [What does `similarity` mean across this collection?](queries/what-similarity-means-across-the-collection.md) - Comparison of retrieval similarity, contrastive RNA similarity, cross-modal latent equivalence, transport geometry, and reference fidelity.
 
 ## Syntheses
 

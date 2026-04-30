@@ -9,6 +9,8 @@
 
 - [Orthrus](../entities/Orthrus.md) is the direct example and uses splice isoforms from ten species plus orthologous transcripts from more than `400` mammals as contrastive positives.
 - The source argues that these augmentations preserve function better than random sequence variation and therefore structure the latent space more usefully for RNA-property transfer.
+- Compared with [Cell-State Similarity Search](cell-state-similarity-search.md), the similarity target here is functional or evolutionary relatedness between transcripts, not nearest-neighbour resemblance between single-cell states.
+- Compared with [Cross-modality Generation](cross-modality-generation.md), this concept is sequence-centric and does not try to align multiple assay types into one interchangeable shared latent state.
 
 ## Claimed Benefits
 

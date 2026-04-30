@@ -12,6 +12,8 @@
 - The generated outputs are then reused for downstream tasks such as aging clocks, disease prediction, and perturbation simulation.
 - Compared with [Multimodal Foundation Models](multimodal-foundation-models.md), this is a narrower operational function inside a broader multimodal paradigm: the focus is specifically reconstructing missing modalities rather than defining the whole pretraining agenda.
 - Compared with [Multi-Omic Developmental Atlases](multi-omic-developmental-atlases.md), the goal here is generation from partial observations, not building a reference substrate for developmental mapping and benchmarking.
+- Compared with [Cell-State Similarity Search](cell-state-similarity-search.md), similarity here means cross-modal equivalence in one latent space rather than nearest-neighbour retrieval over a reference atlas.
+- Compared with [Neural Optimal Transport](neural-optimal-transport.md), the objective is modality completion from shared embeddings rather than learning a minimal-effort map between source and target state distributions.
 
 ## Claimed Benefits
 

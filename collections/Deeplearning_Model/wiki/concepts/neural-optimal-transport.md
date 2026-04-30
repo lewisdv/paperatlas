@@ -11,6 +11,8 @@
 - It parameterizes dual potentials `f` and `g` with input convex neural networks.
 - The transport map is recovered as `nabla g_k` and then applied to previously unseen control cells.
 - For scRNA-seq, the published workflow applies the transport map in an autoencoder latent space.
+- Compared with [Cell-State Similarity Search](cell-state-similarity-search.md), the main question is not whether two profiles are nearest neighbors but whether one population can be plausibly transported into another while preserving heterogeneous response structure.
+- Compared with [Cross-modality Generation](cross-modality-generation.md), the model aligns source and target conditions through transport geometry rather than by making multiple modalities interchangeable inside one shared latent representation.
 
 ## Claimed Benefits
 
