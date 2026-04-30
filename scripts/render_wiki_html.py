@@ -177,6 +177,14 @@ UI_TRANSLATIONS = {
         "open_pdf": "Open PDF",
         "open_article": "Journal Page",
         "open_article_unavailable": "Journal Page unavailable",
+        "explorer": "Explorer",
+        "collection_snapshot": "Collection Snapshot",
+        "theme_groups": "Theme Groups",
+        "on_this_page": "On This Page",
+        "backlinks": "Backlinks",
+        "outgoing_links": "Outgoing Links",
+        "no_backlinks": "No backlinks yet",
+        "no_outgoing_links": "No outgoing links yet",
         "no_relationship_tags": "No inferred relationship tags yet",
         "related_papers": "Related Papers",
         "no_related_papers": "No paper-to-paper relationships are visible for this paper under the current filters.",
@@ -274,6 +282,14 @@ UI_TRANSLATIONS = {
         "open_pdf": "PDF 열기",
         "open_article": "저널 페이지",
         "open_article_unavailable": "저널 페이지 링크 없음",
+        "explorer": "탐색기",
+        "collection_snapshot": "컬렉션 스냅샷",
+        "theme_groups": "주제 그룹",
+        "on_this_page": "이 페이지에서",
+        "backlinks": "백링크",
+        "outgoing_links": "나가는 링크",
+        "no_backlinks": "아직 백링크가 없습니다",
+        "no_outgoing_links": "아직 나가는 링크가 없습니다",
         "no_relationship_tags": "아직 추론된 관계 태그가 없습니다",
         "related_papers": "연관 논문",
         "no_related_papers": "현재 필터 기준으로 이 논문과 연결된 다른 논문이 보이지 않습니다.",
@@ -340,8 +356,8 @@ PAGE_TEMPLATE = Template(
     <link rel="stylesheet" href="{{ stylesheet_href }}">
   </head>
   <body>
-    <div class="shell">
-      <aside class="sidebar">
+    <div class="shell page-shell">
+      <aside class="sidebar explorer-sidebar">
         <div class="brand">
           <div class="brand-topbar">
             <a
@@ -374,20 +390,24 @@ PAGE_TEMPLATE = Template(
             {% endif %}
           </div>
         </div>
-        {% for section in navigation %}
-        <section class="nav-group">
-          <h2 data-i18n-label="{{ section.label }}">{{ section.label }}</h2>
-          <ul>
-            {% for item in section.entries %}
-            <li class="{% if item.current %}current{% endif %}">
-              <a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a>
-            </li>
-            {% endfor %}
-          </ul>
+        <section class="rail-block explorer-block">
+          <p class="control-label" data-i18n-key="explorer">Explorer</p>
+          {% for section in navigation %}
+          <section class="nav-group">
+            <h2 data-i18n-label="{{ section.label }}">{{ section.label }}</h2>
+            <ul class="explorer-list">
+              {% for item in section.entries %}
+              <li class="{% if item.current %}current{% endif %}">
+                <a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a>
+              </li>
+              {% endfor %}
+            </ul>
+          </section>
+          {% endfor %}
         </section>
-        {% endfor %}
       </aside>
-      <main class="content">
+
+      <main class="content page-content">
         <header class="page-header">
           <div>
             <p class="eyebrow" data-i18n-label="{{ page.section_label }}">{{ page.section_label }}</p>
@@ -416,6 +436,53 @@ PAGE_TEMPLATE = Template(
           {{ page.content | safe }}
         </article>
       </main>
+
+      <aside class="rightbar page-rail">
+        {% if toc_items %}
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="on_this_page">On This Page</p>
+          <ul class="toc-list">
+            {% for item in toc_items %}
+            <li class="toc-level-{{ item.level }}">
+              <a href="#{{ item.id }}">{{ item.text }}</a>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        {% endif %}
+
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="backlinks">Backlinks</p>
+          {% if incoming_links %}
+          <ul class="link-stack">
+            {% for item in incoming_links %}
+            <li>
+              <a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a>
+              <small data-i18n-label="{{ item.section_label }}">{{ item.section_label }}</small>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="subtle empty-note" data-i18n-key="no_backlinks">No backlinks yet</p>
+          {% endif %}
+        </section>
+
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="outgoing_links">Outgoing Links</p>
+          {% if outgoing_links %}
+          <ul class="link-stack">
+            {% for item in outgoing_links %}
+            <li>
+              <a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a>
+              <small data-i18n-label="{{ item.section_label }}">{{ item.section_label }}</small>
+            </li>
+            {% endfor %}
+          </ul>
+          {% else %}
+          <p class="subtle empty-note" data-i18n-key="no_outgoing_links">No outgoing links yet</p>
+          {% endif %}
+        </section>
+      </aside>
     </div>
     <script id="page-i18n-data" type="application/json">{{ i18n_data_json | safe }}</script>
     <script>
@@ -609,6 +676,20 @@ DASHBOARD_TEMPLATE = Template(
         </section>
 
         <section class="side-block">
+          <p class="control-label" data-i18n-key="explorer">Explorer</p>
+          {% for section in explorer_groups %}
+          <section class="nav-group">
+            <h2 data-i18n-label="{{ section.label }}">{{ section.label }}</h2>
+            <ul class="explorer-list compact">
+              {% for item in section.entries %}
+              <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </section>
+          {% endfor %}
+        </section>
+
+        <section class="side-block">
           <p class="control-label" data-i18n-key="views">Views</p>
           <div class="view-switch" id="view-switch">
             <label class="view-button" data-view="papers" for="view-tab-papers" role="button" tabindex="0" data-i18n-key="view_papers">Paper Cards</label>
@@ -625,28 +706,6 @@ DASHBOARD_TEMPLATE = Template(
           </div>
           <div id="tag-chips" class="chip-list"></div>
         </section>
-
-        <section class="side-block">
-          <p class="control-label" data-i18n-key="quick_links">Quick Links</p>
-          <ul class="quick-links">
-            {% for item in quick_links %}
-            <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}" data-i18n-label="{{ item.label }}">{{ item.label }}</a></li>
-            {% endfor %}
-          </ul>
-        </section>
-
-        <section class="side-block">
-          <p class="control-label" data-i18n-key="sections">Sections</p>
-          <div class="legend-list">
-            {% for section in section_legend %}
-            <div class="legend-row">
-              <span class="legend-dot" style="background: {{ section.color }}"></span>
-              <span data-i18n-label="{{ section.label }}">{{ section.label }}</span>
-              <span class="legend-count">{{ section.count }}</span>
-            </div>
-            {% endfor %}
-          </div>
-        </section>
       </aside>
 
       <main class="content dashboard-content">
@@ -657,24 +716,6 @@ DASHBOARD_TEMPLATE = Template(
             <p class="hero-copy" data-i18n-key="hero_copy">
               One page for paper cards, full-page browsing, search, tag filters, and a graph of how the Markdown wiki links together.
             </p>
-          </div>
-          <div class="hero-stats">
-            <article class="stat-card">
-              <span class="stat-label" data-i18n-key="pages">Pages</span>
-              <strong>{{ counts.pages }}</strong>
-            </article>
-            <article class="stat-card">
-              <span class="stat-label" data-i18n-key="papers">Papers</span>
-              <strong>{{ counts.papers }}</strong>
-            </article>
-            <article class="stat-card">
-              <span class="stat-label" data-i18n-key="concepts">Concepts</span>
-              <strong>{{ counts.concepts }}</strong>
-            </article>
-            <article class="stat-card">
-              <span class="stat-label" data-i18n-key="relations">Relations</span>
-              <strong>{{ counts.edges }}</strong>
-            </article>
           </div>
         </header>
 
@@ -822,6 +863,65 @@ DASHBOARD_TEMPLATE = Template(
           </div>
         </section>
       </main>
+
+      <aside class="rightbar dashboard-rail">
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="collection_snapshot">Collection Snapshot</p>
+          <div class="rail-stats">
+            <article class="stat-card rail-stat">
+              <span class="stat-label" data-i18n-key="pages">Pages</span>
+              <strong>{{ counts.pages }}</strong>
+            </article>
+            <article class="stat-card rail-stat">
+              <span class="stat-label" data-i18n-key="papers">Papers</span>
+              <strong>{{ counts.papers }}</strong>
+            </article>
+            <article class="stat-card rail-stat">
+              <span class="stat-label" data-i18n-key="concepts">Concepts</span>
+              <strong>{{ counts.concepts }}</strong>
+            </article>
+            <article class="stat-card rail-stat">
+              <span class="stat-label" data-i18n-key="relations">Relations</span>
+              <strong>{{ counts.edges }}</strong>
+            </article>
+          </div>
+        </section>
+
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="quick_links">Quick Links</p>
+          <ul class="quick-links">
+            {% for item in quick_links %}
+            <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}" data-i18n-label="{{ item.label }}">{{ item.label }}</a></li>
+            {% endfor %}
+          </ul>
+        </section>
+
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="sections">Sections</p>
+          <div class="legend-list">
+            {% for section in section_legend %}
+            <div class="legend-row">
+              <span class="legend-dot" style="background: {{ section.color }}"></span>
+              <span data-i18n-label="{{ section.label }}">{{ section.label }}</span>
+              <span class="legend-count">{{ section.count }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="theme_groups">Theme Groups</p>
+          <div class="legend-list">
+            {% for group in graph_groups %}
+            <div class="legend-row">
+              <span class="legend-dot" style="background: {{ group.color }}"></span>
+              <span data-i18n-label="{{ group.label }}">{{ group.label }}</span>
+              <span class="legend-count">{{ group.count }}</span>
+            </div>
+            {% endfor %}
+          </div>
+        </section>
+      </aside>
     </div>
 
     <script id="wiki-data" type="application/json">{{ dashboard_data_json | safe }}</script>
@@ -2537,16 +2637,17 @@ DASHBOARD_TEMPLATE = Template(
 
 STYLE_TEXT = """
 :root {
-  --paper: #f7f2e7;
-  --panel: rgba(255, 252, 245, 0.88);
-  --panel-strong: rgba(255, 250, 241, 0.95);
-  --ink: #221d18;
-  --muted: #6a6259;
-  --accent: #7a3520;
-  --accent-soft: #edd8c4;
-  --line: rgba(77, 60, 44, 0.16);
-  --shadow: 0 22px 60px rgba(45, 30, 17, 0.12);
-  --font-sans: Arial, "Malgun Gothic", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --paper: #f7f7f3;
+  --panel: rgba(255, 255, 252, 0.96);
+  --panel-strong: rgba(255, 255, 255, 0.98);
+  --ink: #1f2933;
+  --muted: #667085;
+  --accent: #275f7a;
+  --accent-soft: #eef5f8;
+  --line: rgba(122, 133, 153, 0.22);
+  --shadow: 0 8px 24px rgba(15, 23, 42, 0.04);
+  --font-sans: "Avenir Next", "Segoe UI Variable Text", "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 }
 
 * {
@@ -2555,10 +2656,7 @@ STYLE_TEXT = """
 
 html {
   min-height: 100%;
-  background:
-    radial-gradient(circle at top left, rgba(195, 128, 86, 0.18), transparent 28%),
-    radial-gradient(circle at top right, rgba(117, 72, 52, 0.12), transparent 22%),
-    linear-gradient(180deg, #f5ead9 0%, #efe3d0 100%);
+  background: #f7f7f3;
 }
 
 body {
@@ -2566,6 +2664,9 @@ body {
   color: var(--ink);
   font-family: var(--font-sans);
   line-height: 1.65;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.65) 0%, rgba(247, 247, 243, 0.92) 100%),
+    var(--paper);
 }
 
 a {
@@ -2579,16 +2680,16 @@ a:hover {
 
 code {
   font-family: "SFMono-Regular", "Menlo", "Consolas", monospace;
-  background: rgba(122, 53, 32, 0.08);
-  border-radius: 0.35rem;
+  background: rgba(39, 95, 122, 0.08);
+  border-radius: 0.25rem;
   padding: 0.15rem 0.35rem;
   font-size: 0.92em;
 }
 
 pre {
-  background: #201a17;
-  color: #f7efe4;
-  border-radius: 1rem;
+  background: #101820;
+  color: #ecf2f8;
+  border-radius: 0.85rem;
   padding: 1rem 1.1rem;
   overflow-x: auto;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
@@ -2602,32 +2703,34 @@ pre code {
 
 .shell {
   display: grid;
-  grid-template-columns: minmax(250px, 300px) minmax(0, 1fr);
+  grid-template-columns: minmax(260px, 290px) minmax(0, 1fr);
   gap: 1.5rem;
-  max-width: 1600px;
+  max-width: 1720px;
   margin: 0 auto;
   padding: 1.5rem;
 }
 
 .sidebar,
-.content {
-  backdrop-filter: blur(8px);
+.content,
+.rightbar {
   background: var(--panel);
   border: 1px solid var(--line);
-  border-radius: 1.4rem;
+  border-radius: 1rem;
   box-shadow: var(--shadow);
 }
 
-.sidebar {
-  padding: 1.25rem 1rem;
+.sidebar,
+.rightbar {
+  padding: 1.1rem 0.95rem;
   position: sticky;
-  top: 1rem;
-  height: calc(100vh - 2rem);
+  top: 1.1rem;
+  max-height: calc(100vh - 2.2rem);
   overflow-y: auto;
 }
 
 .content {
-  padding: 1.6rem 1.8rem 2rem;
+  padding: 1.7rem 2rem 2.4rem;
+  min-width: 0;
 }
 
 .brand {
@@ -2654,18 +2757,18 @@ pre code {
   gap: 0.58rem;
   padding: 0.42rem 0.68rem 0.42rem 0.48rem;
   border-radius: 999px;
-  border: 1px solid rgba(122, 53, 32, 0.16);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.94) 0%, rgba(248, 240, 229, 0.92) 100%);
-  color: #5d2618;
+  border: 1px solid rgba(39, 95, 122, 0.16);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--accent);
   font-size: 0.84rem;
   font-weight: 700;
   line-height: 1;
-  box-shadow: 0 12px 24px rgba(75, 45, 24, 0.08);
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
 }
 
 .home-logo-link:hover {
   text-decoration: none;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(249, 242, 232, 0.96) 100%);
+  background: #ffffff;
 }
 
 .home-logo-mark {
@@ -2690,7 +2793,8 @@ pre code {
 }
 
 .brand h1 {
-  font-size: 1.75rem;
+  font-size: 1.45rem;
+  letter-spacing: -0.02em;
 }
 
 .subtle,
@@ -2730,14 +2834,14 @@ pre code {
   padding: 0.55rem 0.82rem;
   border-radius: 999px;
   background: var(--accent-soft);
-  color: #4f1f12;
+  color: var(--accent);
   font-size: 0.92rem;
   font-weight: 700;
 }
 
 .dashboard-link:hover {
   text-decoration: none;
-  background: #e4c6ac;
+  background: #e2eef4;
 }
 
 .brand-actions {
@@ -2752,8 +2856,8 @@ pre code {
 }
 
 .dashboard-link.secondary-link {
-  background: rgba(255, 255, 255, 0.76);
-  border: 1px solid rgba(122, 53, 32, 0.16);
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(39, 95, 122, 0.16);
 }
 
 .dashboard-link.secondary-link:hover {
@@ -2771,8 +2875,8 @@ pre code {
 }
 
 .lang-button {
-  border: 1px solid rgba(77, 60, 44, 0.16);
-  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.92);
   color: var(--ink);
   border-radius: 999px;
   padding: 0.42rem 0.78rem;
@@ -2782,7 +2886,7 @@ pre code {
 }
 
 .lang-button.active {
-  background: linear-gradient(135deg, #8e3c27 0%, #b96845 100%);
+  background: var(--accent);
   color: white;
   border-color: transparent;
 }
@@ -2817,19 +2921,19 @@ pre code {
 .quick-links a {
   display: block;
   padding: 0.42rem 0.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.55rem;
   color: var(--ink);
 }
 
 .nav-group li.current a {
   background: var(--accent-soft);
-  color: #4f1f12;
+  color: var(--accent);
   font-weight: 700;
 }
 
 .nav-group a:hover,
 .quick-links a:hover {
-  background: rgba(122, 53, 32, 0.07);
+  background: rgba(39, 95, 122, 0.07);
   text-decoration: none;
 }
 
@@ -2843,14 +2947,14 @@ pre code {
 
 .page-header h1,
 .dashboard-hero h1 {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: clamp(2rem, 3vw, 2.65rem);
 }
 
 .meta-chip {
   padding: 0.55rem 0.85rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.92);
   white-space: nowrap;
   font-family: var(--font-sans);
   font-size: 0.9rem;
@@ -2859,9 +2963,9 @@ pre code {
 .meta-panel {
   margin: 0 0 1.5rem;
   padding: 1rem 1.1rem;
-  background: rgba(255, 255, 255, 0.66);
+  background: rgba(255, 255, 255, 0.94);
   border: 1px solid var(--line);
-  border-radius: 1rem;
+  border-radius: 0.9rem;
 }
 
 .meta-panel h2 {
@@ -2893,6 +2997,100 @@ pre code {
   margin-top: 0;
 }
 
+.page-content {
+  min-width: 0;
+}
+
+.page-shell {
+  grid-template-columns: minmax(250px, 290px) minmax(0, 880px) minmax(240px, 300px);
+  align-items: start;
+}
+
+.dashboard-shell {
+  grid-template-columns: minmax(250px, 290px) minmax(0, 1fr) minmax(250px, 310px);
+  align-items: start;
+}
+
+.dashboard-content {
+  min-height: calc(100vh - 3rem);
+}
+
+.rightbar {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.rail-block {
+  padding: 0.95rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 0.9rem;
+  background: var(--panel-strong);
+}
+
+.explorer-block {
+  padding-top: 0.9rem;
+}
+
+.explorer-list,
+.toc-list,
+.link-stack {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.explorer-list.compact {
+  display: grid;
+  gap: 0.1rem;
+}
+
+.toc-list {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.toc-list li a,
+.link-stack li a {
+  color: var(--ink);
+}
+
+.toc-list li a:hover,
+.link-stack li a:hover {
+  color: var(--accent);
+}
+
+.toc-level-3 {
+  padding-left: 0.85rem;
+}
+
+.link-stack {
+  display: grid;
+  gap: 0.7rem;
+}
+
+.link-stack li {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.link-stack small {
+  color: var(--muted);
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.empty-note {
+  margin: 0;
+}
+
+.page-body {
+  max-width: 74ch;
+  font-family: var(--font-serif);
+  font-size: 1.03rem;
+}
+
 .page-body h1,
 .page-body h2,
 .page-body h3,
@@ -2902,16 +3100,18 @@ pre code {
   margin-top: 1.6rem;
   margin-bottom: 0.6rem;
   line-height: 1.18;
+  font-family: var(--font-sans);
+  letter-spacing: -0.02em;
 }
 
 .page-body h2 {
-  font-size: 1.55rem;
+  font-size: 1.45rem;
   border-bottom: 1px solid var(--line);
   padding-bottom: 0.35rem;
 }
 
 .page-body h3 {
-  font-size: 1.2rem;
+  font-size: 1.14rem;
 }
 
 .page-body p,
@@ -2936,42 +3136,20 @@ pre code {
   margin-left: 0;
   padding: 0.8rem 1rem;
   border-left: 4px solid var(--accent);
-  background: rgba(122, 53, 32, 0.06);
-  border-radius: 0 0.8rem 0.8rem 0;
-}
-
-.dashboard-shell {
-  align-items: start;
-}
-
-.dashboard-sidebar {
-  background:
-    linear-gradient(180deg, rgba(255, 250, 241, 0.97) 0%, rgba(247, 242, 231, 0.88) 100%);
-}
-
-.dashboard-content {
-  min-height: calc(100vh - 3rem);
+  background: rgba(39, 95, 122, 0.05);
+  border-radius: 0 0.7rem 0.7rem 0;
 }
 
 .dashboard-hero {
-  display: grid;
-  grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
-  gap: 1.25rem;
-  align-items: start;
+  display: block;
   margin-bottom: 1.2rem;
 }
 
 .hero-copy {
   margin: 0.8rem 0 0;
-  max-width: 58ch;
-  color: #4e4740;
-  font-size: 1.02rem;
-}
-
-.hero-stats {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.9rem;
+  max-width: 62ch;
+  color: var(--muted);
+  font-size: 1rem;
 }
 
 .stat-card,
@@ -2982,12 +3160,12 @@ pre code {
 .graph-detail {
   background: var(--panel-strong);
   border: 1px solid var(--line);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+  box-shadow: none;
 }
 
 .stat-card {
-  border-radius: 1.1rem;
-  padding: 1rem 1.05rem;
+  border-radius: 0.85rem;
+  padding: 0.9rem 0.95rem;
 }
 
 .stat-label {
@@ -3002,13 +3180,13 @@ pre code {
 .stat-card strong {
   display: block;
   margin-top: 0.35rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1;
 }
 
 .side-block {
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 0.95rem;
+  border-radius: 0.9rem;
   margin-bottom: 1rem;
 }
 
@@ -3023,17 +3201,17 @@ pre code {
 .search-input {
   width: 100%;
   appearance: none;
-  border: 1px solid rgba(77, 60, 44, 0.24);
-  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
   color: var(--ink);
-  border-radius: 0.9rem;
-  padding: 0.82rem 0.9rem;
+  border-radius: 0.7rem;
+  padding: 0.78rem 0.88rem;
   font-size: 1rem;
 }
 
 .search-input:focus {
-  outline: 2px solid rgba(122, 53, 32, 0.28);
-  border-color: rgba(122, 53, 32, 0.38);
+  outline: 2px solid rgba(39, 95, 122, 0.18);
+  border-color: rgba(39, 95, 122, 0.34);
 }
 
 .small-note {
@@ -3059,8 +3237,8 @@ pre code {
 .lang-button,
 .card-link {
   appearance: none;
-  border: 1px solid rgba(77, 60, 44, 0.18);
-  border-radius: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
   cursor: pointer;
   transition: transform 140ms ease, background 140ms ease, border-color 140ms ease;
 }
@@ -3082,9 +3260,9 @@ pre code {
 }
 
 .view-button.active {
-  background: linear-gradient(135deg, #8e3c27 0%, #b96845 100%);
+  background: var(--accent);
   color: white;
-  border-color: rgba(142, 60, 39, 0.78);
+  border-color: rgba(39, 95, 122, 0.78);
 }
 
 .ghost-button {
@@ -3137,8 +3315,8 @@ pre code {
 
 .tag-chip.active {
   background: var(--accent-soft);
-  border-color: rgba(122, 53, 32, 0.34);
-  color: #4f1f12;
+  border-color: rgba(39, 95, 122, 0.34);
+  color: var(--accent);
 }
 
 .legend-list {
@@ -3192,10 +3370,10 @@ pre code {
 
 .active-chip,
 .mini-chip {
-  background: rgba(122, 53, 32, 0.08);
+  background: rgba(39, 95, 122, 0.08);
   padding: 0.28rem 0.55rem;
   font-size: 0.82rem;
-  color: #5a463b;
+  color: #51606f;
 }
 
 .section-pill {
@@ -3213,10 +3391,20 @@ pre code {
 .section-syntheses { background: #4f3a77; }
 
 .year-pill {
-  background: rgba(77, 60, 44, 0.08);
+  background: rgba(122, 133, 153, 0.08);
   color: var(--muted);
   padding: 0.28rem 0.55rem;
   font-size: 0.82rem;
+}
+
+.rail-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.rail-stat strong {
+  font-size: 1.35rem;
 }
 
 .dashboard-view,
@@ -3293,7 +3481,7 @@ pre code {
   display: inline-flex;
   justify-content: center;
   padding: 0.55rem 0.82rem;
-  background: linear-gradient(135deg, #8e3c27 0%, #b96845 100%);
+  background: var(--accent);
   color: white;
   font-size: 0.92rem;
   font-weight: 700;
@@ -3305,8 +3493,8 @@ pre code {
 }
 
 .card-link.tertiary {
-  background: rgba(122, 53, 32, 0.08);
-  color: #6e2e1d;
+  background: rgba(39, 95, 122, 0.08);
+  color: var(--accent);
 }
 
 .page-list {
@@ -3471,7 +3659,7 @@ pre code {
 .database-table th {
   position: sticky;
   top: 0;
-  background: rgba(247, 242, 231, 0.96);
+  background: rgba(248, 249, 251, 0.98);
   color: var(--muted);
   font-size: 0.78rem;
   letter-spacing: 0.08em;
@@ -3480,7 +3668,7 @@ pre code {
 }
 
 .database-table tbody tr:hover {
-  background: rgba(122, 53, 32, 0.04);
+  background: rgba(39, 95, 122, 0.04);
 }
 
 .database-title-cell {
@@ -3513,7 +3701,7 @@ pre code {
   justify-content: center;
   padding: 0.48rem 0.72rem;
   border-radius: 0.78rem;
-  background: linear-gradient(135deg, #8e3c27 0%, #b96845 100%);
+  background: var(--accent);
   color: white;
   font-size: 0.88rem;
   font-weight: 700;
@@ -3525,8 +3713,8 @@ pre code {
 }
 
 .table-action.tertiary {
-  background: rgba(122, 53, 32, 0.08);
-  color: #6e2e1d;
+  background: rgba(39, 95, 122, 0.08);
+  color: var(--accent);
 }
 
 .page-row {
@@ -3931,6 +4119,17 @@ pre code {
 }
 
 @media (max-width: 1180px) {
+  .page-shell,
+  .dashboard-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar,
+  .rightbar {
+    position: static;
+    max-height: none;
+  }
+
   .dashboard-hero,
   .graph-layout {
     grid-template-columns: 1fr;
@@ -3944,11 +4143,7 @@ pre code {
 @media (max-width: 980px) {
   .shell {
     grid-template-columns: 1fr;
-  }
-
-  .sidebar {
-    position: static;
-    height: auto;
+    padding: 1rem;
   }
 
   .page-header,
@@ -5057,6 +5252,95 @@ def build_navigation(pages: List[Page], current_page: Page):
     return grouped
 
 
+def build_explorer_groups(pages: List[Page]) -> List[Dict[str, object]]:
+    groups = []
+    for section in SECTION_ORDER:
+        items = [page for page in pages if page.section == section]
+        if not items and section != "":
+            continue
+        groups.append(
+            {
+                "label": SECTION_LABELS[section],
+                "entries": [
+                    {
+                        "title": page.title,
+                        "href": page.rel_output.as_posix(),
+                        "file_href": page.output_path.resolve().as_uri(),
+                        "http_href": http_href_for_path(page.output_path),
+                    }
+                    for page in items
+                ],
+            }
+        )
+    return groups
+
+
+def extract_page_toc(body: str) -> List[Dict[str, object]]:
+    items: List[Dict[str, object]] = []
+    in_code = False
+    for raw_line in body.splitlines():
+        stripped = raw_line.strip()
+        if stripped.startswith("```"):
+            in_code = not in_code
+            continue
+        if in_code:
+            continue
+        heading_match = HEADING_RE.match(stripped)
+        if not heading_match:
+            continue
+        level = len(heading_match.group(1))
+        if level < 2 or level > 3:
+            continue
+        heading_text = heading_match.group(2).strip()
+        items.append(
+            {
+                "level": level,
+                "text": heading_text,
+                "id": slugify(re.sub(r"[\[\]]", "", heading_text)),
+            }
+        )
+    return items
+
+
+def build_page_link_relations(current_page: Page, pages: List[Page]) -> Dict[str, List[Dict[str, str]]]:
+    pages_by_source = {page.rel_source.as_posix(): page for page in pages}
+    current_id = current_page.rel_source.as_posix()
+
+    incoming_pages = sorted(
+        [
+            page
+            for page in pages
+            if page.rel_source != current_page.rel_source and current_id in page.outgoing_links
+        ],
+        key=lambda item: (item.section, item.title.lower()),
+    )
+    outgoing_pages = sorted(
+        [
+            pages_by_source[target]
+            for target in current_page.outgoing_links
+            if target in pages_by_source and target != current_id
+        ],
+        key=lambda item: (item.section, item.title.lower()),
+    )
+
+    def serialize(items: List[Page]) -> List[Dict[str, str]]:
+        return [
+            {
+                "title": item.title,
+                "href": Path(os.path.relpath(item.output_path, current_page.output_path.parent)).as_posix(),
+                "file_href": item.output_path.resolve().as_uri(),
+                "http_href": http_href_for_path(item.output_path),
+                "section_label": item.section_label,
+            }
+            for item in items
+        ]
+
+    return {
+        "incoming": serialize(incoming_pages),
+        "outgoing": serialize(outgoing_pages),
+    }
+
+
 def serialize_page(page: Page) -> Dict[str, object]:
     raw_source = page.meta_dict.get("raw_source", "")
     article_href = resolve_article_href(page.meta_dict)
@@ -5552,6 +5836,7 @@ def build_dashboard_context(pages: List[Page]) -> Dict[str, object]:
         "counts": counts,
         "section_legend": section_legend,
         "graph_groups": dashboard_data["graph_groups"],
+        "explorer_groups": build_explorer_groups(pages),
         "dashboard_data_json": json.dumps(dashboard_data, ensure_ascii=False),
         "quick_links": quick_links,
         "graph_copy": build_graph_copy(paper_pages),
@@ -5588,6 +5873,7 @@ def render_dashboard(pages: List[Page], generated_at: str):
         counts=context["counts"],
         section_legend=context["section_legend"],
         graph_groups=context["graph_groups"],
+        explorer_groups=context["explorer_groups"],
         dashboard_data_json=context["dashboard_data_json"],
         quick_links=context["quick_links"],
         initial_paper_grid_html=context["initial_paper_grid_html"],
@@ -5622,9 +5908,13 @@ def render_page(page: Page, pages: List[Page], generated_at: str):
     home_path = PROJECT_ROOT / "index.html"
     home_href = Path(os.path.relpath(home_path, page.output_path.parent)).as_posix()
     navigation = build_navigation(pages, page)
+    page_relations = build_page_link_relations(page, pages)
     html_text = PAGE_TEMPLATE.render(
         page=page,
         navigation=navigation,
+        toc_items=extract_page_toc(page.raw_body),
+        incoming_links=page_relations["incoming"],
+        outgoing_links=page_relations["outgoing"],
         stylesheet_href=stylesheet_href,
         dashboard_href=dashboard_href,
         dashboard_file_href=dashboard_file_href,
