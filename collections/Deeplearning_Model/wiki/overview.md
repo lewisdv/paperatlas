@@ -59,6 +59,7 @@ This collection now has twenty-five deeply ingested anchors and is beginning to 
 - Some useful reference sources here are not predictive models at all; sex-stratified burden studies can supply heterogeneity targets that future psychiatric or multimodal models may need to preserve.
 - Missing-data completion is becoming a core model function, either across unseen conditions or across unmeasured modalities.
 - Evaluation is moving beyond reconstruction toward downstream utility: cell-state retrieval, large-scale annotation, natural-language interpretation, perturbation response, virtual screening, aging clocks, and disease prediction.
+- The cleanest first-pass map is now by evaluation task family rather than by architecture label alone: retrieval and annotation, transferable foundation representations, perturbation prediction, transition analysis, multimodal completion, reference benchmarking, and roadmap or translation work.
 
 ## Collection State
 

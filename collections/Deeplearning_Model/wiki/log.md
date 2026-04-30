@@ -259,3 +259,9 @@
 - Created `wiki/syntheses/reference-substrates-and-queryable-biological-spaces.md`.
 - Updated `wiki/index.md` to catalog the saved synthesis.
 - The synthesis separates HNOCA-style projection substrates, skeletal multi-omic developmental scaffolds, hypothalamic primary trajectory references, and Perturbation Cell Atlas roadmaps instead of collapsing them into one generic reference-paper bucket.
+
+## [2026-04-30 15:23 KST] synthesis saved | Evaluation Task Families and Success Criteria in Deeplearning_Model
+
+- Created `wiki/syntheses/evaluation-task-families-and-success-criteria.md`.
+- Updated `wiki/index.md` to catalog the saved synthesis and `wiki/overview.md` to surface the new task-family framing at the collection level.
+- The synthesis reorganizes the collection around retrieval and annotation, transferable representations, perturbation prediction, transition analysis, multimodal completion, reference benchmarking, and roadmap or translation work.
