@@ -355,7 +355,7 @@ PAGE_TEMPLATE = Template(
     <link rel="apple-touch-icon" href="{{ logo_href }}">
     <link rel="stylesheet" href="{{ stylesheet_href }}">
   </head>
-  <body>
+  <body data-page-id="{{ page.rel_source.as_posix() }}">
     <div class="shell page-shell">
       <aside class="sidebar explorer-sidebar">
         <div class="brand">
@@ -488,6 +488,7 @@ PAGE_TEMPLATE = Template(
     <script>
       (() => {
         const i18nData = JSON.parse(document.getElementById("page-i18n-data").textContent);
+        const VISITED_PAGES_STORAGE_KEY = "paperatlas_visited_pages_v1";
         const state = {
           language: localStorage.getItem("paperatlas_lang") || "en",
         };
@@ -506,6 +507,32 @@ PAGE_TEMPLATE = Template(
         }
 
         let localViewerProbe = null;
+
+        function loadVisitedPageIds() {
+          try {
+            const parsed = JSON.parse(localStorage.getItem(VISITED_PAGES_STORAGE_KEY) || "[]");
+            if (!Array.isArray(parsed)) {
+              return new Set();
+            }
+            return new Set(parsed.filter((item) => typeof item === "string" && item));
+          } catch (_error) {
+            return new Set();
+          }
+        }
+
+        function saveVisitedPageIds(ids) {
+          localStorage.setItem(VISITED_PAGES_STORAGE_KEY, JSON.stringify(Array.from(ids).slice(-240)));
+        }
+
+        function markCurrentPageVisited() {
+          const pageId = document.body.dataset.pageId || "";
+          if (!pageId) {
+            return;
+          }
+          const visited = loadVisitedPageIds();
+          visited.add(pageId);
+          saveVisitedPageIds(visited);
+        }
 
         function isFileModeNavigation() {
           return window.location.protocol === "file:" || !/^https?:$/.test(window.location.protocol);
@@ -611,6 +638,7 @@ PAGE_TEMPLATE = Template(
         });
 
         applyLanguage();
+        markCurrentPageVisited();
       })();
     </script>
   </body>
@@ -838,20 +866,6 @@ DASHBOARD_TEMPLATE = Template(
           </div>
           <div class="graph-layout">
             <div class="graph-stage">
-              <div class="graph-stage-header">
-                <div class="graph-stage-copy">
-                  <span class="graph-stage-pill" data-i18n-key="graph_theme_legend">Theme Legend</span>
-                  <div class="graph-legend">
-                    {% for group in graph_groups %}
-                    <span class="graph-legend-chip">
-                      <span class="graph-legend-dot" style="background: {{ group.color }}"></span>
-                      <span data-i18n-label="{{ group.label }}">{{ group.label }}</span>
-                      <small>{{ group.count }}</small>
-                    </span>
-                    {% endfor %}
-                  </div>
-                </div>
-              </div>
               <canvas id="graph-canvas" class="graph-canvas" aria-hidden="true"></canvas>
               <svg id="graph-svg" class="graph-svg" viewBox="0 0 1080 720" role="img" aria-label="Paper relationship graph">{{ initial_graph_svg_html | safe }}</svg>
             </div>
@@ -977,6 +991,7 @@ DASHBOARD_TEMPLATE = Template(
         const GRAPH_TARGET_FPS = 36;
         const GRAPH_ACTIVE_EDGE_BUDGET = 180;
         const GRAPH_SETTINGS_STORAGE_KEY = "paperatlas_graph_settings_v1";
+        const VISITED_PAGES_STORAGE_KEY = "paperatlas_visited_pages_v1";
         const DEFAULT_GRAPH_SETTINGS = Object.freeze({
           nodeScale: 0.72,
           edgeScale: 0.95,
@@ -997,7 +1012,9 @@ DASHBOARD_TEMPLATE = Template(
           tags: new Set(),
           view: "papers",
           selectedNodeId: null,
+          hoveredNodeId: null,
           language: localStorage.getItem("paperatlas_lang") || "en",
+          visitedPageIds: loadVisitedPageIds(),
           graphSettings: loadGraphSettings(),
           databaseSettings: loadDatabaseSettings(),
         };
@@ -1016,6 +1033,18 @@ DASHBOARD_TEMPLATE = Template(
         }
 
         let localViewerProbe = null;
+
+        function loadVisitedPageIds() {
+          try {
+            const parsed = JSON.parse(localStorage.getItem(VISITED_PAGES_STORAGE_KEY) || "[]");
+            if (!Array.isArray(parsed)) {
+              return new Set();
+            }
+            return new Set(parsed.filter((item) => typeof item === "string" && item));
+          } catch (_error) {
+            return new Set();
+          }
+        }
 
         function isFileModeNavigation() {
           return window.location.protocol === "file:" || !/^https?:$/.test(window.location.protocol);
@@ -1077,6 +1106,30 @@ DASHBOARD_TEMPLATE = Template(
             return httpHref;
           }
           return fileHref || href || httpHref || "#";
+        }
+
+        async function navigateToInternalTarget(href, fileHref, httpHref) {
+          if (!href && !fileHref && !httpHref) {
+            return;
+          }
+          if (!isFileModeNavigation()) {
+            window.location.assign(href || httpHref || fileHref || "#");
+            return;
+          }
+          const probe = document.createElement("a");
+          if (href) {
+            probe.setAttribute("href", href);
+          }
+          if (fileHref) {
+            probe.setAttribute("data-file-href", fileHref);
+          }
+          if (httpHref) {
+            probe.setAttribute("data-http-href", httpHref);
+          }
+          const target = await preferredNavigationTarget(probe);
+          if (target) {
+            window.location.assign(target);
+          }
         }
 
         function renderHrefAttributes(href, fileHref, httpHref) {
@@ -1646,11 +1699,11 @@ DASHBOARD_TEMPLATE = Template(
         }
 
         function currentGraphNodeRadius(node) {
-          return Math.max(4.2, node.baseRadius * state.graphSettings.nodeScale);
+          return Math.max(3.8, node.baseRadius * state.graphSettings.nodeScale);
         }
 
         function currentGraphEdgeWidth(edge) {
-          const baseWidth = 0.8 + Math.min(edge.strength || 1, 7) * 0.42;
+          const baseWidth = 0.55 + Math.min(edge.strength || 1, 7) * 0.32;
           return baseWidth * state.graphSettings.edgeScale;
         }
 
@@ -1660,7 +1713,7 @@ DASHBOARD_TEMPLATE = Template(
 
         function colorWithAlpha(color, alpha) {
           if (!color) {
-            return `rgba(122, 53, 32, ${alpha})`;
+            return `rgba(39, 95, 122, ${alpha})`;
           }
           const normalized = color.replace("#", "");
           if (normalized.length !== 6) {
@@ -1670,6 +1723,68 @@ DASHBOARD_TEMPLATE = Template(
           const green = parseInt(normalized.slice(2, 4), 16);
           const blue = parseInt(normalized.slice(4, 6), 16);
           return `rgba(${red}, ${green}, ${blue}, ${alpha})`;
+        }
+
+        function parseHexColor(color) {
+          const normalized = (color || "").replace("#", "");
+          if (normalized.length !== 6) {
+            return null;
+          }
+          return {
+            red: parseInt(normalized.slice(0, 2), 16),
+            green: parseInt(normalized.slice(2, 4), 16),
+            blue: parseInt(normalized.slice(4, 6), 16),
+          };
+        }
+
+        function blendHexColors(baseColor, targetColor, ratio) {
+          const base = parseHexColor(baseColor);
+          const target = parseHexColor(targetColor);
+          if (!base || !target) {
+            return baseColor || targetColor || "#8ea2b5";
+          }
+          const mix = clamp(ratio, 0, 1);
+          const red = Math.round(base.red + ((target.red - base.red) * mix));
+          const green = Math.round(base.green + ((target.green - base.green) * mix));
+          const blue = Math.round(base.blue + ((target.blue - base.blue) * mix));
+          return `rgb(${red}, ${green}, ${blue})`;
+        }
+
+        function activeGraphFocusId() {
+          return state.hoveredNodeId || state.selectedNodeId;
+        }
+
+        function visibleGraphDetailPage() {
+          return pagesById.get(activeGraphFocusId()) || pagesById.get(state.selectedNodeId) || null;
+        }
+
+        function setHoveredNodeId(nodeId) {
+          const nextId = nodeId || null;
+          if (state.hoveredNodeId === nextId) {
+            return;
+          }
+          state.hoveredNodeId = nextId;
+          if (graphRuntime) {
+            updateGraphScene();
+          }
+          renderGraphDetail(visibleGraphDetailPage());
+        }
+
+        function graphNodeFill(node, { selected = false, hovered = false, connected = false, dimmed = false } = {}) {
+          const baseColor = node.page.graph_color || "#7c93a8";
+          if (selected || hovered) {
+            return blendHexColors(baseColor, "#ffffff", 0.08);
+          }
+          if (connected) {
+            return blendHexColors(baseColor, "#ffffff", 0.22);
+          }
+          if (state.visitedPageIds.has(node.id)) {
+            return blendHexColors(baseColor, "#f6fbff", 0.36);
+          }
+          if (dimmed) {
+            return blendHexColors(baseColor, "#d6dee6", 0.64);
+          }
+          return blendHexColors(baseColor, "#d6dee6", 0.48);
         }
 
         function drawRoundedRect(context, x, y, width, height, radius) {
@@ -1688,24 +1803,15 @@ DASHBOARD_TEMPLATE = Template(
         }
 
         function drawGraphLabel(context, text, x, y) {
-          context.font = "10.5px Arial, 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif";
-          const metrics = context.measureText(text);
-          const paddingX = 8;
-          const width = metrics.width + paddingX * 2;
-          const height = 22;
-          const left = x - width / 2;
-          const top = y;
           context.save();
-          drawRoundedRect(context, left, top, width, height, 11);
-          context.fillStyle = "rgba(255, 252, 247, 0.92)";
-          context.fill();
-          context.strokeStyle = "rgba(77, 60, 44, 0.1)";
-          context.lineWidth = 1;
-          context.stroke();
-          context.fillStyle = "#3b3028";
+          context.font = "600 10px 'Avenir Next', 'Segoe UI Variable Text', 'Helvetica Neue', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif";
           context.textAlign = "center";
           context.textBaseline = "middle";
-          context.fillText(text, x, top + height / 2 + 0.5);
+          context.lineWidth = 4;
+          context.strokeStyle = "rgba(247, 247, 243, 0.96)";
+          context.strokeText(text, x, y);
+          context.fillStyle = "rgba(30, 41, 59, 0.92)";
+          context.fillText(text, x, y);
           context.restore();
         }
 
@@ -1737,17 +1843,15 @@ DASHBOARD_TEMPLATE = Template(
             return anchors;
           }
 
-          const columns = Math.max(2, Math.ceil(Math.sqrt(labels.length)));
-          const rows = Math.max(1, Math.ceil(labels.length / columns));
-          const xSpacing = GRAPH_WIDTH / (columns + 1);
-          const ySpacing = GRAPH_HEIGHT / (rows + 1);
+          const centerX = GRAPH_WIDTH / 2;
+          const centerY = GRAPH_HEIGHT / 2;
+          const outerRadius = Math.min(GRAPH_WIDTH, GRAPH_HEIGHT) * (labels.length > 7 ? 0.34 : 0.3);
           labels.forEach((label, index) => {
-            const row = Math.floor(index / columns);
-            const column = index % columns;
-            const rowOffset = row % 2 === 0 ? 0 : xSpacing * 0.18;
+            const angle = (-Math.PI / 2) + ((Math.PI * 2 * index) / labels.length);
+            const radius = outerRadius - (labels.length > 8 && index % 2 ? 28 : 0);
             anchors.set(label, {
-              x: clamp(xSpacing * (column + 1) + rowOffset, 140, GRAPH_WIDTH - 140),
-              y: clamp(ySpacing * (row + 1), 120, GRAPH_HEIGHT - 120),
+              x: clamp(centerX + (Math.cos(angle) * radius), 138, GRAPH_WIDTH - 138),
+              y: clamp(centerY + (Math.sin(angle) * radius), 118, GRAPH_HEIGHT - 118),
             });
           });
           return anchors;
@@ -1844,7 +1948,9 @@ DASHBOARD_TEMPLATE = Template(
             }
 
             const point = graphPointFromEvent(event);
-            graphSvg.style.cursor = graphNodeAtPoint(point) ? "pointer" : "grab";
+            const hoveredNode = graphNodeAtPoint(point);
+            graphSvg.style.cursor = hoveredNode ? "pointer" : "grab";
+            setHoveredNodeId(hoveredNode ? hoveredNode.id : null);
           });
 
           graphSvg.addEventListener("pointerup", (event) => {
@@ -1852,6 +1958,7 @@ DASHBOARD_TEMPLATE = Template(
           });
 
           graphSvg.addEventListener("pointerleave", (event) => {
+            setHoveredNodeId(null);
             if (event.buttons === 0) {
               finishGraphPointer(event);
             }
@@ -1886,9 +1993,17 @@ DASHBOARD_TEMPLATE = Template(
           if (graphRuntime.draggingNode && graphRuntime.draggingNode.pointerId === event.pointerId) {
             const dragged = graphRuntime.draggingNode;
             if (!dragged.moved) {
-              state.selectedNodeId = dragged.node.id;
-              updateGraphScene();
-              renderGraphDetail(pagesById.get(state.selectedNodeId));
+              if (state.selectedNodeId === dragged.node.id) {
+                navigateToInternalTarget(
+                  dragged.node.page.href,
+                  dragged.node.page.file_href,
+                  dragged.node.page.http_href,
+                );
+              } else {
+                state.selectedNodeId = dragged.node.id;
+                updateGraphScene();
+                renderGraphDetail(visibleGraphDetailPage());
+              }
             }
             dragged.node.fx = null;
             dragged.node.fy = null;
@@ -1935,7 +2050,7 @@ DASHBOARD_TEMPLATE = Template(
               page,
               graph_group: page.graph_group,
               degree,
-              baseRadius: 6 + Math.min(5, Math.sqrt(Math.max(degree, 1)) * 1.2),
+              baseRadius: 4.6 + Math.min(4.2, Math.sqrt(Math.max(degree, 1)) * 0.95),
               x: anchor.x + Math.cos(angle) * jitterRadius,
               y: anchor.y + Math.sin(angle) * jitterRadius,
               vx: 0,
@@ -2026,6 +2141,8 @@ DASHBOARD_TEMPLATE = Template(
           }
 
           const selectedId = state.selectedNodeId;
+          const hoveredId = state.hoveredNodeId;
+          const focusId = activeGraphFocusId();
           context.setTransform(graphCanvasPixelRatio, 0, 0, graphCanvasPixelRatio, 0, 0);
           context.clearRect(0, 0, GRAPH_WIDTH, GRAPH_HEIGHT);
           context.save();
@@ -2035,14 +2152,14 @@ DASHBOARD_TEMPLATE = Template(
 
           const isInteractionActive = Boolean(graphRuntime.draggingNode || graphRuntime.panning);
           const isActiveMotion = Boolean(isInteractionActive || graphRuntime.rafId);
-          const relatedIds = selectedId ? connectedIds(selectedId) : new Set();
+          const relatedIds = focusId ? connectedIds(focusId) : new Set();
           const labelIds = visibleGraphLabelIds();
           let edgesToDraw = graphRuntime.edges;
           if (isActiveMotion && graphRuntime.drawEdges.length > GRAPH_ACTIVE_EDGE_BUDGET) {
             const relatedEdges = [];
             const otherEdges = [];
             graphRuntime.drawEdges.forEach((edge) => {
-              const related = selectedId && (edge.source === selectedId || edge.target === selectedId);
+              const related = focusId && (edge.source === focusId || edge.target === focusId);
               if (related) {
                 relatedEdges.push(edge);
               } else {
@@ -2054,50 +2171,57 @@ DASHBOARD_TEMPLATE = Template(
           }
 
           edgesToDraw.forEach((edge) => {
-            const related = selectedId && (edge.source === selectedId || edge.target === selectedId);
-            const dimmed = selectedId && !related;
+            const related = focusId && (edge.source === focusId || edge.target === focusId);
+            const dimmed = focusId && !related;
+            const baseEdgeColor = edge.sourceNode.page.graph_color || "#6e879a";
             const edgeColor = related
-              ? colorWithAlpha(edge.sourceNode.page.graph_color || "#8e3c27", 0.44)
-              : colorWithAlpha(edge.sourceNode.page.graph_color || "#8e3c27", 0.18);
+              ? colorWithAlpha(baseEdgeColor, 0.3)
+              : colorWithAlpha(baseEdgeColor, 0.12);
             context.beginPath();
             context.moveTo(edge.sourceNode.x, edge.sourceNode.y);
             context.lineTo(edge.targetNode.x, edge.targetNode.y);
             context.lineWidth = currentGraphEdgeWidth(edge);
             context.strokeStyle = edgeColor;
-            context.globalAlpha = dimmed ? 0.12 : Math.min(0.22 + (edge.strength || 1) * 0.08, 0.82);
+            context.globalAlpha = dimmed ? 0.08 : Math.min(0.12 + (edge.strength || 1) * 0.07, related ? 0.9 : 0.52);
             context.stroke();
           });
 
           graphRuntime.nodes.forEach((node) => {
             const radius = currentGraphNodeRadius(node);
             const selected = selectedId === node.id;
-            const dimmed = selectedId && !relatedIds.has(node.id);
-            const nodeColor = node.page.graph_color || "#8e3c27";
-            context.globalAlpha = dimmed ? 0.28 : 1;
-            context.shadowColor = colorWithAlpha(nodeColor, selected ? 0.34 : 0.16);
-            context.shadowBlur = selected ? 18 : 10;
+            const hovered = hoveredId === node.id;
+            const connected = focusId ? relatedIds.has(node.id) : false;
+            const dimmed = focusId && !connected;
+            const nodeColor = graphNodeFill(node, { selected, hovered, connected, dimmed });
+            const nodeRadius = hovered ? radius + 1.2 : radius;
+            context.globalAlpha = dimmed ? 0.32 : 1;
+            context.shadowColor = colorWithAlpha(node.page.graph_color || "#6e879a", selected || hovered ? 0.26 : 0.08);
+            context.shadowBlur = selected || hovered ? 12 : 4;
             context.shadowOffsetX = 0;
-            context.shadowOffsetY = selected ? 6 : 3;
+            context.shadowOffsetY = selected || hovered ? 4 : 1;
             context.beginPath();
-            context.arc(node.x, node.y, radius, 0, Math.PI * 2);
+            context.arc(node.x, node.y, nodeRadius, 0, Math.PI * 2);
             context.fillStyle = nodeColor;
             context.fill();
             context.shadowBlur = 0;
             context.shadowOffsetX = 0;
             context.shadowOffsetY = 0;
-            context.lineWidth = selected ? 3 : 2;
-            context.strokeStyle = "rgba(255, 255, 255, 0.82)";
+            context.lineWidth = selected ? 2.2 : hovered ? 1.8 : 1.1;
+            context.strokeStyle = selected || hovered
+              ? "rgba(247, 247, 243, 0.96)"
+              : "rgba(247, 247, 243, 0.62)";
             context.stroke();
             if (selected) {
               context.beginPath();
-              context.arc(node.x, node.y, radius + 6, 0, Math.PI * 2);
-              context.lineWidth = 1.6;
-              context.strokeStyle = colorWithAlpha(nodeColor, 0.36);
+              context.arc(node.x, node.y, nodeRadius + 4.5, 0, Math.PI * 2);
+              context.lineWidth = 1.2;
+              context.strokeStyle = colorWithAlpha(node.page.graph_color || "#6e879a", 0.22);
               context.stroke();
             }
 
-            if (state.graphSettings.showLabels && (labelIds.has(node.id) || selected) && !isInteractionActive) {
-              drawGraphLabel(context, node.page.short_title, node.x, node.y + radius + 8);
+            if (state.graphSettings.showLabels && (labelIds.has(node.id) || selected || hovered) && !isInteractionActive) {
+              context.globalAlpha = hovered || selected ? 0.98 : connected ? 0.92 : 0.74;
+              drawGraphLabel(context, node.page.short_title, node.x, node.y + nodeRadius + 9);
             }
           });
 
@@ -2113,6 +2237,8 @@ DASHBOARD_TEMPLATE = Template(
             return new Set();
           }
 
+          const focusId = activeGraphFocusId();
+
           const nodesByDegree = [...graphRuntime.nodes].sort((left, right) => {
             if (left.degree !== right.degree) {
               return right.degree - left.degree;
@@ -2120,17 +2246,20 @@ DASHBOARD_TEMPLATE = Template(
             return left.page.title.localeCompare(right.page.title);
           });
 
+          const zoomBoost = graphRuntime.transform.k > 1
+            ? Math.round((graphRuntime.transform.k - 1) * 10)
+            : 0;
           const baseLimit = graphRuntime.nodes.length > 24
             ? 8
             : Math.max(6, Math.ceil(graphRuntime.nodes.length * 0.68));
           const limit = clamp(
-            Math.round(baseLimit * state.graphSettings.labelDensity),
+            Math.round((baseLimit + zoomBoost) * state.graphSettings.labelDensity),
             3,
             graphRuntime.nodes.length,
           );
           const visibleIds = new Set(nodesByDegree.slice(0, limit).map((node) => node.id));
-          if (state.selectedNodeId) {
-            connectedIds(state.selectedNodeId).forEach((id) => visibleIds.add(id));
+          if (focusId) {
+            connectedIds(focusId).forEach((id) => visibleIds.add(id));
           }
           return visibleIds;
         }
@@ -2209,7 +2338,7 @@ DASHBOARD_TEMPLATE = Template(
           }
           updateGraphScene();
           kickGraphSimulation();
-          renderGraphDetail(pagesById.get(state.selectedNodeId));
+          renderGraphDetail(visibleGraphDetailPage());
           requestAnimationFrame(() => {
             if (state.view === "graph") {
               updateGraphScene();
@@ -2242,7 +2371,7 @@ DASHBOARD_TEMPLATE = Template(
           if (graphRuntime && !needsRebuild) {
             updateGraphScene();
             if (state.view === "graph") {
-              renderGraphDetail(pagesById.get(state.selectedNodeId));
+              renderGraphDetail(visibleGraphDetailPage());
             }
           }
           refreshGraphFromControls(needsRebuild);
@@ -2269,10 +2398,10 @@ DASHBOARD_TEMPLATE = Template(
             if (runtime.draggingNode && runtime.draggingNode.node.id === node.id) {
               return;
             }
-            node.vx += (anchor.x - node.x) * 0.0032;
-            node.vy += (anchor.y - node.y) * 0.0032;
-            node.vx += ((GRAPH_WIDTH / 2) - node.x) * 0.00055;
-            node.vy += ((GRAPH_HEIGHT / 2) - node.y) * 0.00055;
+            node.vx += (anchor.x - node.x) * 0.0044;
+            node.vy += (anchor.y - node.y) * 0.0044;
+            node.vx += ((GRAPH_WIDTH / 2) - node.x) * 0.00022;
+            node.vy += ((GRAPH_HEIGHT / 2) - node.y) * 0.00022;
           });
 
           for (let i = 0; i < nodes.length; i += 1) {
@@ -2285,7 +2414,7 @@ DASHBOARD_TEMPLATE = Template(
               const distance = Math.sqrt(distanceSquared);
               dx /= distance;
               dy /= distance;
-              const repulsion = (1180 * state.graphSettings.repulsionScale) / distanceSquared;
+              const repulsion = (1040 * state.graphSettings.repulsionScale) / distanceSquared;
               left.vx -= dx * repulsion;
               left.vy -= dy * repulsion;
               right.vx += dx * repulsion;
@@ -2316,10 +2445,10 @@ DASHBOARD_TEMPLATE = Template(
               return;
             }
 
-            node.vx *= 0.84;
-            node.vy *= 0.84;
-            node.vx = clamp(node.vx, -10, 10);
-            node.vy = clamp(node.vy, -10, 10);
+            node.vx *= 0.87;
+            node.vy *= 0.87;
+            node.vx = clamp(node.vx, -9, 9);
+            node.vy = clamp(node.vy, -9, 9);
             node.x = clamp(node.x + node.vx, 42, GRAPH_WIDTH - 42);
             node.y = clamp(node.y + node.vy, 42, GRAPH_HEIGHT - 42);
             totalMotion += Math.abs(node.vx) + Math.abs(node.vy);
@@ -2427,6 +2556,7 @@ DASHBOARD_TEMPLATE = Template(
         }
 
         function renderGraph() {
+          state.visitedPageIds = loadVisitedPageIds();
           const visiblePages = filteredPapers();
           const visibleIds = new Set(visiblePages.map((page) => page.id));
           const visibleEdges = data.paper_edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target));
@@ -2444,6 +2574,9 @@ DASHBOARD_TEMPLATE = Template(
           if (!state.selectedNodeId || !visibleIds.has(state.selectedNodeId)) {
             state.selectedNodeId = visiblePages[0].id;
           }
+          if (state.hoveredNodeId && !visibleIds.has(state.hoveredNodeId)) {
+            state.hoveredNodeId = null;
+          }
 
           const nextKey = graphLayoutKey(visiblePages, visibleEdges);
           if (!graphRuntime || graphRuntime.key !== nextKey) {
@@ -2455,7 +2588,7 @@ DASHBOARD_TEMPLATE = Template(
             updateGraphScene();
           }
 
-          renderGraphDetail(pagesById.get(state.selectedNodeId));
+          renderGraphDetail(visibleGraphDetailPage());
         }
 
         function setView(view) {
@@ -3755,11 +3888,10 @@ pre code {
   display: grid;
   gap: 0.7rem;
   padding: 1rem 1.05rem;
-  border-radius: 1.15rem;
-  border: 1px solid rgba(77, 60, 44, 0.12);
-  background:
-    linear-gradient(180deg, rgba(255, 253, 249, 0.92) 0%, rgba(249, 240, 229, 0.88) 100%);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  border-radius: 0.95rem;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.94);
+  box-shadow: none;
 }
 
 .graph-controls-heading {
@@ -3801,7 +3933,7 @@ pre code {
 .graph-range {
   width: 100%;
   margin: 0;
-  accent-color: #8e3c27;
+  accent-color: var(--accent);
 }
 
 .graph-control-action {
@@ -3822,7 +3954,7 @@ pre code {
   width: 100%;
   height: 1.2rem;
   margin: 0.1rem 0 0;
-  accent-color: #8e3c27;
+  accent-color: var(--accent);
 }
 
 .graph-layout {
@@ -3836,16 +3968,12 @@ pre code {
   position: relative;
   height: clamp(420px, 68vh, 720px);
   background:
-    radial-gradient(circle at 18% 18%, rgba(250, 209, 174, 0.42), transparent 26%),
-    radial-gradient(circle at 82% 20%, rgba(214, 155, 120, 0.24), transparent 22%),
-    radial-gradient(circle at 50% 82%, rgba(255, 255, 255, 0.68), transparent 28%),
-    linear-gradient(180deg, rgba(255, 251, 246, 0.98) 0%, rgba(245, 236, 224, 0.94) 100%);
-  border: 1px solid rgba(77, 60, 44, 0.15);
-  border-radius: 1.35rem;
+    radial-gradient(circle at top left, rgba(39, 95, 122, 0.05), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(247, 247, 243, 0.98) 100%);
+  border: 1px solid var(--line);
+  border-radius: 1rem;
   overflow: hidden;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.72),
-    0 18px 40px rgba(58, 37, 20, 0.08);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
 }
 
 .graph-stage::before,
@@ -3858,19 +3986,13 @@ pre code {
 
 .graph-stage::before {
   background-image:
-    linear-gradient(rgba(122, 53, 32, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(122, 53, 32, 0.04) 1px, transparent 1px);
-  background-size: 32px 32px;
-  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5), transparent 92%);
+    radial-gradient(circle, rgba(31, 41, 51, 0.05) 0.7px, transparent 0.7px);
+  background-size: 22px 22px;
+  opacity: 0.75;
 }
 
 .graph-stage::after {
-  inset: auto 1.1rem 1rem 1.1rem;
-  height: 22%;
-  border-radius: 999px;
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.72), transparent 72%);
-  filter: blur(30px);
-  opacity: 0.7;
+  display: none;
 }
 
 .graph-stage-header {
@@ -4021,19 +4143,16 @@ pre code {
 }
 
 .graph-empty {
-  fill: #6a6259;
-  font-size: 18px;
+  fill: #667085;
+  font-size: 16px;
   font-family: var(--font-sans);
 }
 
 .graph-detail {
   padding: 1.15rem 1.15rem 1.2rem;
-  border-radius: 1.35rem;
-  background:
-    linear-gradient(180deg, rgba(255, 254, 250, 0.96) 0%, rgba(248, 240, 228, 0.92) 100%);
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.75),
-    0 18px 40px rgba(58, 37, 20, 0.08);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: none;
 }
 
 .graph-detail h2,
@@ -4056,9 +4175,9 @@ pre code {
   display: grid;
   gap: 0.18rem;
   padding: 0.72rem 0.78rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(77, 60, 44, 0.12);
-  background: rgba(255, 255, 255, 0.78);
+  border-radius: 0.8rem;
+  border: 1px solid var(--line);
+  background: rgba(247, 249, 251, 0.96);
 }
 
 .graph-metric-chip span {
@@ -4084,9 +4203,9 @@ pre code {
 
 .detail-links li {
   padding: 0.82rem 0.88rem;
-  border-radius: 1rem;
-  border: 1px solid rgba(77, 60, 44, 0.1);
-  background: rgba(255, 255, 255, 0.76);
+  border-radius: 0.85rem;
+  border: 1px solid var(--line);
+  background: rgba(247, 249, 251, 0.96);
 }
 
 .detail-link-title {
@@ -4106,7 +4225,7 @@ pre code {
   align-items: center;
   padding: 0.2rem 0.5rem;
   border-radius: 999px;
-  background: rgba(122, 53, 32, 0.08);
+  background: rgba(39, 95, 122, 0.08);
   color: var(--ink);
   font-size: 0.78rem;
   font-family: var(--font-sans);
