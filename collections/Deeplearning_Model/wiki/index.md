@@ -82,6 +82,7 @@
 ## Queries
 
 - [What perturbation modeling families are emerging in this collection, and what tradeoffs do they claim?](queries/perturbation-modeling-families-and-tradeoffs.md) - Comparison of transport, graph-guided, diffusion, probabilistic, and perturbation-pretrained approaches to perturbation prediction in this collection.
+- [How does this collection handle uncertainty, weak reference coverage, and low-confidence biological state assignment?](queries/uncertainty-coverage-and-low-confidence-state-assignment.md) - Comparison of fallback labels, retrieval confidence, and fidelity benchmarking as three different responses to weakly supported biological state assignment.
 
 ## Syntheses
 

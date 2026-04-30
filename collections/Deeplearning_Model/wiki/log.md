@@ -120,3 +120,14 @@
 - Created `wiki/queries/perturbation-modeling-families-and-tradeoffs.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares transport, graph-guided, diffusion, probabilistic, and perturbation-pretrained model families using only this collection's source and concept pages.
+
+## [2026-04-30 13:39 KST] lint refinement | uncertainty and coverage links
+
+- Strengthened cross-links among `wiki/concepts/hierarchical-partial-rejection.md`, `wiki/concepts/cell-state-similarity-search.md`, and `wiki/concepts/transcriptomic-fidelity-benchmarking.md`.
+- Clarified that this collection currently handles weak support in at least three different ways: fallback labels, low-confidence retrieval flags, and atlas-level fidelity or coverage diagnosis.
+
+## [2026-04-30 13:40 KST] query saved | How does this collection handle uncertainty, weak reference coverage, and low-confidence biological state assignment?
+
+- Created `wiki/queries/uncertainty-coverage-and-low-confidence-state-assignment.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares hierarchical partial rejection, SCimilarity confidence scoring, and HNOCA-style fidelity benchmarking using only collection-supported evidence.

@@ -10,6 +10,8 @@
 - [Uncertainty-aware single-cell annotation with a hierarchical reject option](../sources/theunissen_2024_uncertainty-aware_single-cell_annotation_with_a.md) is the direct source and compares partial rejection against full rejection and no rejection.
 - Compared with full rejection, the method aims to preserve more label information by exploiting transcriptomically meaningful cell-type hierarchies.
 - The paper also notes that bottom-up partial rejection can be layered on top of flat classifiers if reliable class-probability outputs are available.
+- [SCimilarity](../entities/SCimilarity.md) addresses a neighboring uncertainty problem through low-confidence retrieval flags; unlike partial rejection, it responds to weak atlas coverage by downgrading confidence rather than backing off to an internal label node.
+- [HNOCA](../entities/HNOCA.md) provides a third adjacent mode, where uncertainty appears as missing or weakly matched reference coverage during fidelity benchmarking rather than as a per-cell fallback label.
 
 ## Claimed Benefits
 

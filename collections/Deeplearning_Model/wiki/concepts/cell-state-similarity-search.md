@@ -10,6 +10,7 @@
 - A query can be either an individual cell profile or a centroid representing a target state.
 - The query is embedded into the shared latent space and compared against precomputed nearest-neighbour indices over annotated or full-reference cells.
 - Results remain traceable to original study, tissue, and disease metadata, which lets the search output function as both retrieval and hypothesis-generation support.
+- Compared with [Hierarchical Partial Rejection](hierarchical-partial-rejection.md), SCimilarity handles uncertainty through coverage-aware confidence scoring rather than by returning a broader fallback label.
 
 ## Claimed Benefits
 
