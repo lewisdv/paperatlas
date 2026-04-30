@@ -90,6 +90,7 @@
 - [Which heterogeneity axes do the reference papers in this collection make hard to ignore?](queries/which-heterogeneity-axes-do-the-reference-papers-make-hard-to-ignore.md) - Comparison of sex-stratified burden, region-specific development, atlas fidelity, and multi-omic reference structure as evaluation constraints for later models.
 - [What does `similarity` mean across this collection?](queries/what-similarity-means-across-the-collection.md) - Comparison of retrieval similarity, contrastive RNA similarity, cross-modal latent equivalence, transport geometry, and reference fidelity.
 - [How do transition-oriented models in this collection differ in what they think a cell-state transition is?](queries/how-do-transition-oriented-models-differ-in-what-they-think-a-cell-state-transition-is.md) - Comparison of kinetic, decision-landscape, transport, diffusion, and combinatorial-endpoint views of cell-state change.
+- [How does this collection distinguish sequence foundation models from cell-state foundation models?](queries/sequence-foundation-models-vs-cell-state-foundation-models.md) - Comparison of Orthrus-style transcript-sequence pretraining against atlas-scale cell-state foundation-model branches such as scGPT, scFoundation, C2S-Scale, and SCimilarity.
 
 ## Syntheses
 

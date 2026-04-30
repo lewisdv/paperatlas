@@ -12,6 +12,7 @@
 - At inference time, setting `T` above `S` is used to generate read-depth-enhanced embeddings or expression estimates from low-depth cells.
 - Compared with [Cell Sentences](cell-sentences.md), the representation stays closer to the original expression matrix and treats read depth as a first-class signal instead of translating cells into ranked language-like tokens.
 - Compared with [Single-Cell Generative Pretraining](single-cell-generative-pretraining.md), the main differentiator is not only atlas-scale pretraining but the explicit technical abstraction for depth variation.
+- Compared with [Evolutionary Contrastive RNA Pretraining](evolutionary-contrastive-rna-pretraining.md), this concept remains cell-profile-centric and technical-noise-aware rather than sequence-centric and function-pair-aware.
 
 ## Claimed Benefits
 

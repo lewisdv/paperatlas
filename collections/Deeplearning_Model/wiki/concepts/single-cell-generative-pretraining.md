@@ -15,6 +15,8 @@
 
 - The same broad pattern reappears in an LLM setting: a large base model is pretrained on over `50` million transcriptomes plus associated text, then adapted to interpretation and perturbation tasks.
 - Compared with scGPT, the representation is more language-native because transcriptomes are serialized into cell sentences.
+- Compared with [Evolutionary Contrastive RNA Pretraining](evolutionary-contrastive-rna-pretraining.md), both are foundation-model strategies, but this branch pretrains over cell states rather than mature RNA transcript sequences.
+- Compared with [Cell-State Similarity Search](cell-state-similarity-search.md), the usual goal is reusable generative transfer across tasks rather than retrieval-first atlas search from one learned embedding space.
 
 ## Claimed Benefits
 

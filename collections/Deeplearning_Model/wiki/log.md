@@ -208,3 +208,14 @@
 - Created `wiki/queries/how-do-transition-oriented-models-differ-in-what-they-think-a-cell-state-transition-is.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares Cell2fate, scRL, CellOT, Squidiff, and GEARS as five different transition formalisms using only collection-supported evidence.
+
+## [2026-04-30 14:32 KST] lint refinement | foundation-model substrate cross-links
+
+- Strengthened comparisons among `wiki/concepts/evolutionary-contrastive-rna-pretraining.md`, `wiki/concepts/single-cell-generative-pretraining.md`, `wiki/concepts/read-depth-aware-pretraining.md`, `wiki/concepts/cell-sentences.md`, and `wiki/concepts/cell-state-similarity-search.md`.
+- Clarified that this collection uses `foundation model` across at least two different biological substrates: mature RNA transcript sequences and atlas-scale cell states.
+
+## [2026-04-30 14:33 KST] query saved | How does this collection distinguish sequence foundation models from cell-state foundation models?
+
+- Created `wiki/queries/sequence-foundation-models-vs-cell-state-foundation-models.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares Orthrus against scGPT, scFoundation, C2S-Scale, and SCimilarity while keeping sequence-property transfer separate from cell-state transfer and retrieval.

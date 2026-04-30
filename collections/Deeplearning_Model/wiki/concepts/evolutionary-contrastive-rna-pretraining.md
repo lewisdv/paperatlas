@@ -11,6 +11,8 @@
 - The source argues that these augmentations preserve function better than random sequence variation and therefore structure the latent space more usefully for RNA-property transfer.
 - Compared with [Cell-State Similarity Search](cell-state-similarity-search.md), the similarity target here is functional or evolutionary relatedness between transcripts, not nearest-neighbour resemblance between single-cell states.
 - Compared with [Cross-modality Generation](cross-modality-generation.md), this concept is sequence-centric and does not try to align multiple assay types into one interchangeable shared latent state.
+- Compared with [Single-Cell Generative Pretraining](single-cell-generative-pretraining.md), the pretrained object here is the mature RNA transcript rather than the atlas-scale cell profile.
+- Compared with [Cell Sentences](cell-sentences.md), the sequence is a biological RNA sequence with splice and orthology structure, not a language-like serialization of a whole-cell expression profile.
 
 ## Claimed Benefits
 
