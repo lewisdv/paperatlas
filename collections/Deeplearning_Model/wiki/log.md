@@ -253,3 +253,9 @@
 - Created `wiki/syntheses/reference-substrates-heterogeneity-and-uncertainty-as-evaluation-constraints.md`.
 - Updated `wiki/index.md` to catalog the saved synthesis.
 - The synthesis argues that this collection's atlas substrates, heterogeneity anchors, and uncertainty mechanisms now function as evaluation constraints on predictive model claims rather than as side topics.
+
+## [2026-04-30 15:08 KST] synthesis saved | Reference Substrates and Queryable Biological Spaces in Deeplearning_Model
+
+- Created `wiki/syntheses/reference-substrates-and-queryable-biological-spaces.md`.
+- Updated `wiki/index.md` to catalog the saved synthesis.
+- The synthesis separates HNOCA-style projection substrates, skeletal multi-omic developmental scaffolds, hypothalamic primary trajectory references, and Perturbation Cell Atlas roadmaps instead of collapsing them into one generic reference-paper bucket.

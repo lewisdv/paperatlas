@@ -99,3 +99,4 @@
 
 - [Predictive Models, Reference Substrates, and Roadmaps in Deeplearning_Model](syntheses/predictive-models-reference-substrates-and-roadmaps.md) - Collection map that separates direct predictive systems from atlas substrates, heterogeneity references, and roadmap papers.
 - [Reference Substrates, Heterogeneity, and Uncertainty as Evaluation Constraints in Deeplearning_Model](syntheses/reference-substrates-heterogeneity-and-uncertainty-as-evaluation-constraints.md) - Synthesis arguing that atlas substrates, heterogeneity anchors, and uncertainty policies now act as evaluation constraints on the predictive model papers.
+- [Reference Substrates and Queryable Biological Spaces in Deeplearning_Model](syntheses/reference-substrates-and-queryable-biological-spaces.md) - Focused synthesis separating queryable projection atlases, multi-omic developmental scaffolds, primary trajectory references, and perturbation-atlas roadmaps.
