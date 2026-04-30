@@ -153,3 +153,14 @@
 - Created `wiki/queries/reinforcement-learning-at-different-scales.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares scRL and the clinical RL review while distinguishing direct RL applications from broader adjacent roadmap ideas.
+
+## [2026-04-30 14:03 KST] lint refinement | multimodal meaning links
+
+- Strengthened comparisons among `wiki/concepts/cross-modality-generation.md`, `wiki/concepts/multimodal-foundation-models.md`, and `wiki/concepts/multi-omic-developmental-atlases.md`.
+- Clarified that `multimodal` currently refers to at least three distinct roles in this collection: missing-modality generation, reusable foundation-model paradigms, and multimodal reference substrates.
+
+## [2026-04-30 14:04 KST] query saved | What does `multimodal` actually mean across this collection?
+
+- Created `wiki/queries/what-multimodal-means-across-the-collection.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query separates multimodal completion, foundation-model roadmaps, developmental atlas substrates, and virtual-cell-scale ambitions using only collection-supported evidence.

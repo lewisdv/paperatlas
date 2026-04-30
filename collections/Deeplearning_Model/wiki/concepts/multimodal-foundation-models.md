@@ -11,6 +11,7 @@
 - [scGPT](../entities/scGPT.md) and [scFoundation](../entities/scFoundation.md) represent single-cell-heavy foundation-model ingredients that emphasize large-scale pretraining and transfer.
 - [AURORA](../entities/AURORA.md) shows a broader human multi-omics generative system that uses a shared latent space to reconstruct missing modalities and support downstream prediction.
 - [AIVC](../entities/AIVC.md) extends the idea upward into a field-level roadmap for multi-scale virtual-cell simulation rather than only one molecular foundation model.
+- [Multi-Omic Developmental Atlases](multi-omic-developmental-atlases.md) are adjacent but distinct: they supply multimodal biological reference structure even when they are not themselves pretrained foundation models.
 
 ## Claimed Benefits
 

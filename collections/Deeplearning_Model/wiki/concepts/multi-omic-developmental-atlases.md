@@ -10,6 +10,8 @@
 - [A multi-omic atlas of human embryonic skeletal development](../sources/to_2024_a_multi-omic_atlas_of_human.md) is the clearest example, combining paired transcriptional and epigenetic profiling with spatial localization to map osteogenic and chondrogenic development.
 - [HNOCA](../entities/HNOCA.md) is not fully multi-omic, but it shows a related atlas-as-infrastructure pattern for organoid benchmarking and projection.
 - [AURORA](../entities/AURORA.md) sits at the broader human multi-omics end of the design space, showing how shared latent or integrative systems can span modalities for downstream reasoning.
+- Compared with [Cross-modality Generation](cross-modality-generation.md), these atlases are primarily reference scaffolds rather than modality-imputation engines.
+- Compared with [Multimodal Foundation Models](multimodal-foundation-models.md), they are closer to infrastructure and biological substrate than to a reusable pretrained model family.
 
 ## Claimed Benefits
 

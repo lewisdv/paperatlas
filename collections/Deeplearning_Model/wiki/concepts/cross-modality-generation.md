@@ -10,6 +10,8 @@
 - Seven modalities are aligned into a common latent space across fragmented and partially paired datasets.
 - Missing modalities are decoded from the shared embedding, allowing one measured modality to stand in for others.
 - The generated outputs are then reused for downstream tasks such as aging clocks, disease prediction, and perturbation simulation.
+- Compared with [Multimodal Foundation Models](multimodal-foundation-models.md), this is a narrower operational function inside a broader multimodal paradigm: the focus is specifically reconstructing missing modalities rather than defining the whole pretraining agenda.
+- Compared with [Multi-Omic Developmental Atlases](multi-omic-developmental-atlases.md), the goal here is generation from partial observations, not building a reference substrate for developmental mapping and benchmarking.
 
 ## Claimed Benefits
 
