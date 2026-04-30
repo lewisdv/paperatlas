@@ -14,6 +14,7 @@
 - Compared with [Read-Depth-Aware Pretraining](read-depth-aware-pretraining.md), the emphasis is not on modeling technical count variation explicitly but on translating transcriptomes into a language-native representation.
 - Compared with [LLM-Derived Feature Embeddings](llm-derived-feature-embeddings.md), the model trains directly on transcriptome-as-language sequences rather than importing an external semantic embedding space.
 - Compared with [Evolutionary Contrastive RNA Pretraining](evolutionary-contrastive-rna-pretraining.md), the sequence here is not the molecular RNA transcript itself but an ordered rendering of whole-cell expression into a token list.
+- Compared with [Cell-State Similarity Search](cell-state-similarity-search.md), this concept opens the door to open-ended generation and natural-language reasoning rather than constraining outputs to atlas neighbors and confidence-aware retrieval.
 
 ## Claimed Benefits
 

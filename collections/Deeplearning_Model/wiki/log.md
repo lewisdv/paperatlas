@@ -219,3 +219,14 @@
 - Created `wiki/queries/sequence-foundation-models-vs-cell-state-foundation-models.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares Orthrus against scGPT, scFoundation, C2S-Scale, and SCimilarity while keeping sequence-property transfer separate from cell-state transfer and retrieval.
+
+## [2026-04-30 14:37 KST] lint refinement | retrieval-first versus generative-first links
+
+- Strengthened comparisons among `wiki/concepts/cell-state-similarity-search.md`, `wiki/concepts/single-cell-generative-pretraining.md`, `wiki/concepts/read-depth-aware-pretraining.md`, `wiki/concepts/cell-sentences.md`, and `wiki/concepts/hierarchical-partial-rejection.md`.
+- Clarified that this collection separates atlas-bounded retrieval workflows from broader generative or task-transfer workflows, while also leaving room for embedding-first middle cases such as scFoundation.
+
+## [2026-04-30 14:38 KST] query saved | How should this collection distinguish retrieval-first and generative-first single-cell models?
+
+- Created `wiki/queries/retrieval-first-vs-generative-first-single-cell-models.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares SCimilarity against scGPT, scFoundation, and C2S-Scale while distinguishing nearest-neighbour atlas lookup from broader predictive and generative single-cell modeling.

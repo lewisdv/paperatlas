@@ -91,6 +91,7 @@
 - [What does `similarity` mean across this collection?](queries/what-similarity-means-across-the-collection.md) - Comparison of retrieval similarity, contrastive RNA similarity, cross-modal latent equivalence, transport geometry, and reference fidelity.
 - [How do transition-oriented models in this collection differ in what they think a cell-state transition is?](queries/how-do-transition-oriented-models-differ-in-what-they-think-a-cell-state-transition-is.md) - Comparison of kinetic, decision-landscape, transport, diffusion, and combinatorial-endpoint views of cell-state change.
 - [How does this collection distinguish sequence foundation models from cell-state foundation models?](queries/sequence-foundation-models-vs-cell-state-foundation-models.md) - Comparison of Orthrus-style transcript-sequence pretraining against atlas-scale cell-state foundation-model branches such as scGPT, scFoundation, C2S-Scale, and SCimilarity.
+- [How should this collection distinguish retrieval-first and generative-first single-cell models?](queries/retrieval-first-vs-generative-first-single-cell-models.md) - Comparison of SCimilarity-style atlas retrieval against scGPT, scFoundation, and C2S-Scale-style task-transfer and generative single-cell modeling.
 
 ## Syntheses
 
