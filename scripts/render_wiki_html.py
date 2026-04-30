@@ -116,6 +116,16 @@ UI_TRANSLATIONS = {
         "sections": "Sections",
         "interactive_dashboard": "Interactive Dashboard",
         "hero_copy": "One page for paper cards, full-page browsing, search, tag filters, and a graph of how the Markdown wiki links together.",
+        "guide_heading": "Guided Paths",
+        "guide_step_label_1": "Step 1",
+        "guide_step_label_2": "Step 2",
+        "guide_step_label_3": "Step 3",
+        "guide_step_1_title": "Start with the collection map",
+        "guide_step_1_copy": "Open the overview or index note first to understand scope, vocabulary, and what this collection already knows.",
+        "guide_step_2_title": "Browse source papers quickly",
+        "guide_step_2_copy": "Use paper cards for a fast scan, or switch to the database when you want sorting and grouping.",
+        "guide_step_3_title": "Follow themes and relationships",
+        "guide_step_3_copy": "Use the graph when you want to spot clusters, trace connected papers, and jump into related pages.",
         "pages": "Pages",
         "papers": "Papers",
         "concepts": "Concepts",
@@ -170,7 +180,7 @@ UI_TRANSLATIONS = {
         "database_unspecified": "Unspecified",
         "database_group_untitled": "Other",
         "database_export_filename": "paper-collect-view",
-        "match_detail": "Search and tag filters apply across cards, database view, list view, and the paper relationship graph.",
+        "match_detail": "Start with Overview or the latest synthesis, then use search and tags across cards, the database, the page list, and the graph.",
         "search_prefix": "Search",
         "open_page": "Open Page",
         "open": "Open",
@@ -194,6 +204,7 @@ UI_TRANSLATIONS = {
         "graph_metric_theme": "Theme",
         "graph_metric_relations": "Visible Relations",
         "graph_metric_year": "Year",
+        "recommended_start": "Recommended Start",
     },
     "ko": {
         "language": "언어",
@@ -221,6 +232,16 @@ UI_TRANSLATIONS = {
         "sections": "섹션",
         "interactive_dashboard": "인터랙티브 대시보드",
         "hero_copy": "논문 카드, 전체 페이지 탐색, 검색, 태그 필터, 그리고 Markdown 위키의 연결 관계를 한 화면에서 볼 수 있습니다.",
+        "guide_heading": "추천 시작 경로",
+        "guide_step_label_1": "1단계",
+        "guide_step_label_2": "2단계",
+        "guide_step_label_3": "3단계",
+        "guide_step_1_title": "먼저 컬렉션 지도를 보세요",
+        "guide_step_1_copy": "개요나 인덱스 노트부터 열어 현재 범위, 용어, 그리고 이미 구축된 지식 지형을 먼저 파악하세요.",
+        "guide_step_2_title": "소스 논문을 빠르게 훑어보세요",
+        "guide_step_2_copy": "빠르게 감을 잡을 때는 논문 카드, 정렬과 그룹화가 필요할 때는 데이터베이스 뷰를 사용하세요.",
+        "guide_step_3_title": "주제 연결과 관계를 따라가세요",
+        "guide_step_3_copy": "그래프 뷰에서는 논문 군집과 연결 관계를 보고, 이어지는 관련 페이지로 바로 이동할 수 있습니다.",
         "pages": "페이지",
         "papers": "논문",
         "concepts": "개념",
@@ -275,7 +296,7 @@ UI_TRANSLATIONS = {
         "database_unspecified": "미지정",
         "database_group_untitled": "기타",
         "database_export_filename": "paper-collect-view",
-        "match_detail": "검색과 태그 필터는 카드, 데이터베이스, 목록, 논문 관계 그래프에 함께 적용됩니다.",
+        "match_detail": "먼저 개요나 최신 종합 정리를 보고, 이후 검색과 태그 필터를 카드, 데이터베이스, 목록, 그래프에 함께 적용해 보세요.",
         "search_prefix": "검색",
         "open_page": "페이지 열기",
         "open": "열기",
@@ -299,6 +320,7 @@ UI_TRANSLATIONS = {
         "graph_metric_theme": "주제",
         "graph_metric_relations": "보이는 관계",
         "graph_metric_year": "연도",
+        "recommended_start": "추천 시작점",
     },
 }
 
@@ -308,6 +330,7 @@ COMMON_LABEL_TRANSLATIONS = {
         "Index Note": "인덱스 노트",
         "Log": "로그",
         "Latest Synthesis": "최신 종합 정리",
+        "Latest Query": "최신 질의 분석",
         "Core": "코어",
         "Sources": "소스",
         "Concepts": "개념",
@@ -756,6 +779,20 @@ DASHBOARD_TEMPLATE = Template(
             <p class="hero-copy" data-i18n-key="hero_copy">
               One page for paper cards, full-page browsing, search, tag filters, and a graph of how the Markdown wiki links together.
             </p>
+            <div class="hero-actions">
+              {% if overview_link %}
+              <a class="card-link" href="{{ overview_link.href }}" data-file-href="{{ overview_link.file_href }}" data-http-href="{{ overview_link.http_href }}" data-i18n-label="{{ overview_link.label }}">{{ overview_link.label }}</a>
+              {% elif index_link %}
+              <a class="card-link" href="{{ index_link.href }}" data-file-href="{{ index_link.file_href }}" data-http-href="{{ index_link.http_href }}" data-i18n-label="{{ index_link.label }}">{{ index_link.label }}</a>
+              {% endif %}
+              {% if latest_synthesis_link %}
+              <a class="card-link secondary" href="{{ latest_synthesis_link.href }}" data-file-href="{{ latest_synthesis_link.file_href }}" data-http-href="{{ latest_synthesis_link.http_href }}" data-i18n-label="{{ latest_synthesis_link.label }}">{{ latest_synthesis_link.label }}</a>
+              {% elif latest_query_link %}
+              <a class="card-link secondary" href="{{ latest_query_link.href }}" data-file-href="{{ latest_query_link.file_href }}" data-http-href="{{ latest_query_link.http_href }}" data-i18n-label="{{ latest_query_link.label }}">{{ latest_query_link.label }}</a>
+              {% endif %}
+              <label class="card-link tertiary" for="view-tab-papers" role="button" tabindex="0" data-i18n-key="view_papers">Paper Cards</label>
+              <label class="card-link tertiary" for="view-tab-graph" role="button" tabindex="0" data-i18n-key="view_graph">Graph View</label>
+            </div>
           </div>
         </header>
 
@@ -765,6 +802,48 @@ DASHBOARD_TEMPLATE = Template(
             <span id="match-detail" class="subtle"></span>
           </div>
           <div id="active-filters" class="active-filters"></div>
+        </section>
+
+        <section class="guide-grid">
+          <article class="guide-card">
+            <span class="guide-step" data-i18n-key="guide_step_label_1">Step 1</span>
+            <h2 data-i18n-key="guide_step_1_title">Start with the collection map</h2>
+            <p class="guide-copy" data-i18n-key="guide_step_1_copy">Open the overview or index note first to understand scope, vocabulary, and what this collection already knows.</p>
+            <div class="guide-actions">
+              {% if overview_link %}
+              <a class="card-link" href="{{ overview_link.href }}" data-file-href="{{ overview_link.file_href }}" data-http-href="{{ overview_link.http_href }}" data-i18n-label="{{ overview_link.label }}">{{ overview_link.label }}</a>
+              {% elif index_link %}
+              <a class="card-link" href="{{ index_link.href }}" data-file-href="{{ index_link.file_href }}" data-http-href="{{ index_link.http_href }}" data-i18n-label="{{ index_link.label }}">{{ index_link.label }}</a>
+              {% endif %}
+              {% if latest_synthesis_link %}
+              <a class="card-link secondary" href="{{ latest_synthesis_link.href }}" data-file-href="{{ latest_synthesis_link.file_href }}" data-http-href="{{ latest_synthesis_link.http_href }}" data-i18n-label="{{ latest_synthesis_link.label }}">{{ latest_synthesis_link.label }}</a>
+              {% elif latest_query_link %}
+              <a class="card-link secondary" href="{{ latest_query_link.href }}" data-file-href="{{ latest_query_link.file_href }}" data-http-href="{{ latest_query_link.http_href }}" data-i18n-label="{{ latest_query_link.label }}">{{ latest_query_link.label }}</a>
+              {% elif log_link %}
+              <a class="card-link secondary" href="{{ log_link.href }}" data-file-href="{{ log_link.file_href }}" data-http-href="{{ log_link.http_href }}" data-i18n-label="{{ log_link.label }}">{{ log_link.label }}</a>
+              {% endif %}
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <span class="guide-step" data-i18n-key="guide_step_label_2">Step 2</span>
+            <h2 data-i18n-key="guide_step_2_title">Browse source papers quickly</h2>
+            <p class="guide-copy" data-i18n-key="guide_step_2_copy">Use paper cards for a fast scan, or switch to the database when you want sorting and grouping.</p>
+            <div class="guide-actions">
+              <label class="card-link" for="view-tab-papers" role="button" tabindex="0" data-i18n-key="view_papers">Paper Cards</label>
+              <label class="card-link secondary" for="view-tab-database" role="button" tabindex="0" data-i18n-key="view_database">Database</label>
+            </div>
+          </article>
+
+          <article class="guide-card">
+            <span class="guide-step" data-i18n-key="guide_step_label_3">Step 3</span>
+            <h2 data-i18n-key="guide_step_3_title">Follow themes and relationships</h2>
+            <p class="guide-copy" data-i18n-key="guide_step_3_copy">Use the graph when you want to spot clusters, trace connected papers, and jump into related pages.</p>
+            <div class="guide-actions">
+              <label class="card-link" for="view-tab-graph" role="button" tabindex="0" data-i18n-key="view_graph">Graph View</label>
+              <label class="card-link secondary" for="view-tab-pages" role="button" tabindex="0" data-i18n-key="view_pages">All Pages</label>
+            </div>
+          </article>
         </section>
 
         <section id="papers-view" class="dashboard-view active">
@@ -891,6 +970,23 @@ DASHBOARD_TEMPLATE = Template(
       </main>
 
       <aside class="rightbar dashboard-rail">
+        <section class="rail-block">
+          <p class="control-label" data-i18n-key="recommended_start">Recommended Start</p>
+          <ul class="quick-links">
+            {% if overview_link %}
+            <li><a href="{{ overview_link.href }}" data-file-href="{{ overview_link.file_href }}" data-http-href="{{ overview_link.http_href }}" data-i18n-label="{{ overview_link.label }}">{{ overview_link.label }}</a></li>
+            {% elif index_link %}
+            <li><a href="{{ index_link.href }}" data-file-href="{{ index_link.file_href }}" data-http-href="{{ index_link.http_href }}" data-i18n-label="{{ index_link.label }}">{{ index_link.label }}</a></li>
+            {% endif %}
+            {% if latest_synthesis_link %}
+            <li><a href="{{ latest_synthesis_link.href }}" data-file-href="{{ latest_synthesis_link.file_href }}" data-http-href="{{ latest_synthesis_link.http_href }}" data-i18n-label="{{ latest_synthesis_link.label }}">{{ latest_synthesis_link.label }}</a></li>
+            {% elif latest_query_link %}
+            <li><a href="{{ latest_query_link.href }}" data-file-href="{{ latest_query_link.file_href }}" data-http-href="{{ latest_query_link.http_href }}" data-i18n-label="{{ latest_query_link.label }}">{{ latest_query_link.label }}</a></li>
+            {% endif %}
+            <li><a href="#graph-view" onclick="document.getElementById('view-tab-graph').checked = true; return false;" data-i18n-key="view_graph">Graph View</a></li>
+          </ul>
+        </section>
+
         <section class="rail-block">
           <p class="control-label" data-i18n-key="collection_snapshot">Collection Snapshot</p>
           <div class="rail-stats">
@@ -1452,10 +1548,40 @@ DASHBOARD_TEMPLATE = Template(
             .join("");
         }
 
+        function pageSectionRank(section) {
+          const order = ["", "sources", "concepts", "queries", "syntheses"];
+          const index = order.indexOf(section || "");
+          return index === -1 ? order.length : index;
+        }
+
+        function pageCorePriority(page) {
+          if (page.id === "overview.md") {
+            return 0;
+          }
+          if (page.id === "index.md") {
+            return 1;
+          }
+          if (page.id === "log.md") {
+            return 2;
+          }
+          return 50;
+        }
+
         function renderPages() {
           const pages = filteredPages().sort((a, b) => {
-            if (a.section_label !== b.section_label) {
-              return a.section_label.localeCompare(b.section_label);
+            const sectionDelta = pageSectionRank(a.section) - pageSectionRank(b.section);
+            if (sectionDelta !== 0) {
+              return sectionDelta;
+            }
+            const coreDelta = pageCorePriority(a) - pageCorePriority(b);
+            if (coreDelta !== 0) {
+              return coreDelta;
+            }
+            if ((a.section || "") === "sources" && (b.section || "") === "sources") {
+              const yearDelta = (Number(b.year) || 0) - (Number(a.year) || 0);
+              if (yearDelta !== 0) {
+                return yearDelta;
+              }
             }
             return a.title.localeCompare(b.title);
           });
@@ -3418,6 +3544,59 @@ pre code {
   max-width: 62ch;
   color: var(--muted);
   font-size: 1rem;
+}
+
+.hero-actions,
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.hero-actions {
+  margin-top: 1rem;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.guide-card {
+  display: grid;
+  gap: 0.7rem;
+  padding: 1rem 1.05rem 1.05rem;
+  border-radius: 1rem;
+  background: var(--panel-strong);
+  border: 1px solid var(--line);
+}
+
+.guide-card h2 {
+  margin: 0;
+  font-size: 1.08rem;
+  line-height: 1.25;
+}
+
+.guide-step {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.24rem 0.56rem;
+  border-radius: 999px;
+  background: rgba(var(--accent-rgb), 0.08);
+  color: var(--accent);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.guide-copy {
+  margin: 0;
+  color: var(--muted);
 }
 
 .stat-card,
@@ -5672,6 +5851,53 @@ def serialize_page(page: Page) -> Dict[str, object]:
     }
 
 
+def page_link_payload(page: Optional[Page], label: str) -> Optional[Dict[str, str]]:
+    if page is None:
+        return None
+    return {
+        "href": page.rel_output.as_posix(),
+        "file_href": page.output_path.resolve().as_uri(),
+        "http_href": http_href_for_path(page.output_path),
+        "label": label,
+    }
+
+
+def dashboard_page_sort_key(page: Dict[str, object]) -> Tuple[int, int, int, str]:
+    section = str(page.get("section") or "")
+    section_rank = SECTION_ORDER.index(section) if section in SECTION_ORDER else len(SECTION_ORDER)
+    source_id = str(page.get("id") or "")
+    title = str(page.get("title") or "").lower()
+
+    core_priority = 50
+    if source_id == "overview.md":
+        core_priority = 0
+    elif source_id == "index.md":
+        core_priority = 1
+    elif source_id == "log.md":
+        core_priority = 2
+
+    if section == "sources":
+        return (section_rank, core_priority, -(int(page.get("year") or 0)), title)
+    return (section_rank, core_priority, 0, title)
+
+
+def classify_collection_stage(
+    source_pages: int,
+    concept_pages: int,
+    query_pages: int,
+    synthesis_pages: int,
+) -> str:
+    saved_analyses = query_pages + synthesis_pages
+    page_count = source_pages + concept_pages + saved_analyses
+    if source_pages >= 80 or page_count >= 140 or saved_analyses >= 20:
+        return "Reference"
+    if source_pages >= 12 or page_count >= 35 or saved_analyses >= 5 or concept_pages >= 6:
+        return "Growing"
+    if page_count > 0:
+        return "Starter"
+    return "Scaffold"
+
+
 def render_dashboard_link_attrs(href: str, file_href: str = "", http_href: str = "") -> str:
     attrs = [f'href="{html.escape(href or "#", quote=True)}"']
     if file_href:
@@ -5754,10 +5980,7 @@ def render_initial_paper_grid(paper_pages: List[Dict[str, object]]) -> str:
 
 def render_initial_page_list(serialized_pages: List[Dict[str, object]]) -> str:
     rows = []
-    sorted_pages = sorted(
-        serialized_pages,
-        key=lambda page: (str(page.get("section_label") or ""), str(page.get("title") or "").lower()),
-    )
+    sorted_pages = sorted(serialized_pages, key=dashboard_page_sort_key)
     for page in sorted_pages:
         tag_html = "".join(
             f'<span class="mini-chip">{html.escape(str(tag))}</span>'
@@ -6071,37 +6294,35 @@ def build_dashboard_context(pages: List[Page]) -> Dict[str, object]:
     }
 
     page_by_source = {page.rel_source.as_posix(): page for page in pages}
-    quick_links = []
-    for rel_source, label in [
-        ("overview.md", "Overview"),
-        ("index.md", "Index Note"),
-        ("log.md", "Log"),
-    ]:
-        page = page_by_source.get(rel_source)
-        if page is not None:
-            quick_links.append(
-                {
-                    "href": page.rel_output.as_posix(),
-                    "file_href": page.output_path.resolve().as_uri(),
-                    "http_href": http_href_for_path(page.output_path),
-                    "label": label,
-                }
-            )
+    overview_link = page_link_payload(page_by_source.get("overview.md"), "Overview")
+    index_link = page_link_payload(page_by_source.get("index.md"), "Index Note")
+    log_link = page_link_payload(page_by_source.get("log.md"), "Log")
 
     syntheses = sorted(
         [page for page in pages if page.section == "syntheses"],
         key=lambda item: item.rel_output.as_posix(),
         reverse=True,
     )
-    if syntheses:
-        quick_links.append(
-            {
-                "href": syntheses[0].rel_output.as_posix(),
-                "file_href": syntheses[0].output_path.resolve().as_uri(),
-                "http_href": http_href_for_path(syntheses[0].output_path),
-                "label": "Latest Synthesis",
-            }
-        )
+    latest_synthesis_link = page_link_payload(syntheses[0], "Latest Synthesis") if syntheses else None
+
+    queries = sorted(
+        [page for page in pages if page.section == "queries"],
+        key=lambda item: item.rel_output.as_posix(),
+        reverse=True,
+    )
+    latest_query_link = page_link_payload(queries[0], "Latest Query") if queries else None
+
+    quick_links = [
+        link
+        for link in [
+            overview_link,
+            latest_synthesis_link,
+            latest_query_link,
+            index_link,
+            log_link,
+        ]
+        if link is not None
+    ]
 
     initial_database_summary_html, initial_database_groups_html = render_initial_database(serialized_pages)
 
@@ -6112,6 +6333,11 @@ def build_dashboard_context(pages: List[Page]) -> Dict[str, object]:
         "explorer_groups": build_explorer_groups(pages),
         "dashboard_data_json": json.dumps(dashboard_data, ensure_ascii=False),
         "quick_links": quick_links,
+        "overview_link": overview_link,
+        "index_link": index_link,
+        "log_link": log_link,
+        "latest_synthesis_link": latest_synthesis_link,
+        "latest_query_link": latest_query_link,
         "graph_copy": build_graph_copy(paper_pages),
         "initial_paper_grid_html": render_initial_paper_grid(paper_pages),
         "initial_page_list_html": render_initial_page_list(serialized_pages),
@@ -6149,6 +6375,11 @@ def render_dashboard(pages: List[Page], generated_at: str):
         explorer_groups=context["explorer_groups"],
         dashboard_data_json=context["dashboard_data_json"],
         quick_links=context["quick_links"],
+        overview_link=context["overview_link"],
+        index_link=context["index_link"],
+        log_link=context["log_link"],
+        latest_synthesis_link=context["latest_synthesis_link"],
+        latest_query_link=context["latest_query_link"],
         initial_paper_grid_html=context["initial_paper_grid_html"],
         initial_page_list_html=context["initial_page_list_html"],
         initial_database_summary_html=context["initial_database_summary_html"],
@@ -6509,7 +6740,7 @@ ROOT_HUB_TEMPLATE = Template(
             {% endif %}
               <span class="root-link-copy">
                 <strong>{{ collection.title }}</strong>
-                <span>{{ collection.badge }} · {{ collection.source_pages }} sources</span>
+                <span>{{ collection.stage }} · {{ collection.source_pages }} sources</span>
               </span>
               <span class="root-count-pill">{{ collection.page_count }}</span>
             </a>
@@ -6559,6 +6790,40 @@ ROOT_HUB_TEMPLATE = Template(
         </div>
       </section>
 
+      <section class="guide-grid">
+        <article class="guide-card">
+          <span class="guide-step">Step 1</span>
+          <h2>Pick a collection first</h2>
+          <p class="guide-copy">Each collection is a separate knowledge base. Start with the one that matches your current question so concepts and source evidence stay in the right boundary.</p>
+          <div class="guide-actions">
+            {% if primary_collection %}
+            <a class="card-link" href="{{ primary_collection.href }}" data-file-href="{{ primary_collection.file_href }}" data-http-href="{{ primary_collection.http_href }}">Open {{ primary_collection.title }}</a>
+            {% endif %}
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <span class="guide-step">Step 2</span>
+          <h2>Read the overview before the papers</h2>
+          <p class="guide-copy">The overview page is the fastest way to understand scope, major themes, and what is already synthesized in the collection.</p>
+          <div class="guide-actions">
+            {% if primary_collection %}
+            <a class="card-link" href="{{ primary_collection.start_href }}" data-file-href="{{ primary_collection.start_file_href }}" data-http-href="{{ primary_collection.start_http_href }}">{{ primary_collection.start_label }}</a>
+            {% endif %}
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <span class="guide-step">Step 3</span>
+          <h2>Use maturity signals to decide depth</h2>
+          <p class="guide-copy">Reference collections are good for immediate answers, while starter or scaffold collections usually need more source ingest and concept building first.</p>
+          <div class="guide-actions">
+            <span class="card-link tertiary disabled">{{ active_collections }} active collections</span>
+            <span class="card-link tertiary disabled">{{ scaffold_collections }} scaffold collections</span>
+          </div>
+        </article>
+      </section>
+
       <section>
         <div class="root-section-heading">
           <div>
@@ -6573,7 +6838,7 @@ ROOT_HUB_TEMPLATE = Template(
           <article class="paper-card collection-hub-card{% if not collection.dashboard_exists %} disabled{% endif %}">
             <div class="card-topline">
               <span class="section-pill section-core">Collection</span>
-              <span class="badge {% if not collection.is_active %}scaffold{% endif %}">{{ collection.badge }}</span>
+              <span class="badge {% if not collection.is_active %}scaffold{% endif %}">{{ collection.stage }}</span>
             </div>
             <h2>{{ collection.title }}</h2>
             <p class="card-excerpt">{{ collection.summary }}</p>
@@ -6581,6 +6846,7 @@ ROOT_HUB_TEMPLATE = Template(
               <span class="mini-chip">{{ collection.source_pages }} sources</span>
               <span class="mini-chip">{{ collection.concept_pages }} concepts</span>
               <span class="mini-chip">{{ collection.saved_analyses }} analyses</span>
+              <span class="mini-chip">{{ collection.activity_label }}</span>
             </div>
             <div class="collection-hub-stats">
               <div class="collection-hub-stat">
@@ -6602,7 +6868,11 @@ ROOT_HUB_TEMPLATE = Template(
               {% else %}
               <span class="card-link disabled">Dashboard Pending</span>
               {% endif %}
-              <span class="card-link tertiary disabled">{{ collection.saved_analyses }} analyses</span>
+              {% if collection.overview_exists %}
+              <a class="card-link secondary" href="{{ collection.overview_href }}" data-file-href="{{ collection.overview_file_href }}" data-http-href="{{ collection.overview_http_href }}">Open Overview</a>
+              {% else %}
+              <span class="card-link tertiary disabled">Overview Pending</span>
+              {% endif %}
             </div>
           </article>
           {% endfor %}
@@ -6765,8 +7035,12 @@ def build_root_hub_context() -> Dict[str, object]:
         synthesis_pages = count_files(workspace.wiki_dir / "syntheses", "*.md")
         saved_analyses = query_pages + synthesis_pages
         page_count = source_pages + concept_pages + saved_analyses
-        dashboard_exists = (workspace.wiki_html_dir / "index.html").exists()
+        dashboard_path = workspace.wiki_html_dir / "index.html"
+        overview_path = workspace.wiki_html_dir / "overview.html"
+        dashboard_exists = dashboard_path.exists()
+        overview_exists = overview_path.exists()
         is_active = any((source_pages, concept_pages, query_pages, synthesis_pages))
+        stage = classify_collection_stage(source_pages, concept_pages, query_pages, synthesis_pages)
         collections.append(
             {
                 "key": workspace.key,
@@ -6774,17 +7048,27 @@ def build_root_hub_context() -> Dict[str, object]:
                 "subtitle": workspace.description,
                 "summary": workspace.description,
                 "href": f"collections/{workspace.key}/wiki_html/index.html",
-                "file_href": (workspace.wiki_html_dir / "index.html").resolve().as_uri(),
-                "http_href": http_href_for_path(workspace.wiki_html_dir / "index.html"),
+                "file_href": dashboard_path.resolve().as_uri(),
+                "http_href": http_href_for_path(dashboard_path),
                 "dashboard_exists": dashboard_exists,
+                "overview_exists": overview_exists,
+                "overview_href": f"collections/{workspace.key}/wiki_html/overview.html",
+                "overview_file_href": overview_path.resolve().as_uri(),
+                "overview_http_href": http_href_for_path(overview_path),
                 "is_active": is_active,
-                "badge": "Active" if is_active else "Scaffold",
+                "badge": stage,
+                "activity_label": "Active" if is_active else "Scaffold",
+                "stage": stage,
                 "source_pages": source_pages,
                 "concept_pages": concept_pages,
                 "query_pages": query_pages,
                 "synthesis_pages": synthesis_pages,
                 "saved_analyses": saved_analyses,
                 "page_count": page_count,
+                "start_href": f"collections/{workspace.key}/wiki_html/overview.html" if overview_exists else f"collections/{workspace.key}/wiki_html/index.html",
+                "start_file_href": overview_path.resolve().as_uri() if overview_exists else dashboard_path.resolve().as_uri(),
+                "start_http_href": http_href_for_path(overview_path if overview_exists else dashboard_path),
+                "start_label": "Overview" if overview_exists else "Dashboard",
             }
         )
 
