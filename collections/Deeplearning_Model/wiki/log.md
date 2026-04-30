@@ -175,3 +175,14 @@
 - Created `wiki/queries/virtual-cell-vs-multimodal-foundation-roadmaps.md`.
 - Updated `wiki/index.md` to catalog the saved query.
 - The query compares AIVC-style universal-representation and virtual-instrument roadmaps against multimodal foundation-model and Super Transformer agendas using only collection-supported evidence.
+
+## [2026-04-30 14:21 KST] lint refinement | heterogeneity-axis cross-links
+
+- Strengthened comparisons among `wiki/concepts/sex-stratified-transcriptomic-burden.md`, `wiki/concepts/region-specific-developmental-trajectories.md`, `wiki/concepts/transcriptomic-fidelity-benchmarking.md`, and `wiki/concepts/multi-omic-developmental-atlases.md`.
+- Clarified that this collection's reference papers expose several non-equivalent heterogeneity axes, including subgroup burden, regional developmental divergence, reference coverage, and multimodal regulatory structure.
+
+## [2026-04-30 14:22 KST] query saved | Which heterogeneity axes do the reference papers in this collection make hard to ignore?
+
+- Created `wiki/queries/which-heterogeneity-axes-do-the-reference-papers-make-hard-to-ignore.md`.
+- Updated `wiki/index.md` to catalog the saved query.
+- The query compares sex-stratified psychiatric burden, region-specific developmental references, atlas-based fidelity diagnosis, and multi-omic developmental substrates using only collection-supported evidence.
