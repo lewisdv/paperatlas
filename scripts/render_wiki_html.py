@@ -5436,7 +5436,8 @@ def discover_markdown_files() -> List[Path]:
     return sorted(
         path
         for path in WIKI_DIR.rglob("*.md")
-        if path.is_file() and not any(part.startswith(".") for part in path.parts)
+        if path.is_file()
+        and not any(part.startswith(".") for part in path.relative_to(WIKI_DIR).parts)
     )
 
 

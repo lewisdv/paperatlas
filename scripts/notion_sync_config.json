@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "description": "Maps Notion '참고 논문 및 아이디어' hubs to wiki collections. Edit to add/remove hubs or reroute. Used by scripts/notion_sync.py.",
+  "unpaywall_email": "davin260@gmail.com",
+  "hubs": [
+    {
+      "notion_page_id": "344302d9-c598-8188-8a05-d5041134fb3d",
+      "label": "한미암 / 표적항암치료제 멀티오믹스 (폐암 후향적 코호트)",
+      "collection": "Cancer_Multiomics"
+    },
+    {
+      "notion_page_id": "351302d9-c598-8068-b2e2-d9b658336dee",
+      "label": "NRL2.0 타겟 발굴",
+      "collection": "Cancer_Multiomics"
+    },
+    {
+      "notion_page_id": "351302d9-c598-8039-af28-c94316fe75d7",
+      "label": "VITAL 디지털세포",
+      "collection": "Deeplearning_Model"
+    },
+    {
+      "notion_page_id": "344302d9-c598-81f0-b880-ce07bba5e6d4",
+      "label": "인간 뇌 싱글셀 아틀라스",
+      "collection": "Deeplearning_Model"
+    },
+    {
+      "notion_page_id": "344302d9-c598-81dd-957c-d066e23c3688",
+      "label": "데기디바 발달장애",
+      "collection": "Neuro_Genomics"
+    },
+    {
+      "notion_page_id": "344302d9-c598-8181-8fc9-f96bb656b36b",
+      "label": "한국인 ASD 유전체",
+      "collection": "Neuro_Genomics"
+    },
+    {
+      "notion_page_id": "344302d9-c598-8132-9ec5-fea47d0f97e6",
+      "label": "유전체 각인과 자폐 성차",
+      "collection": "Neuro_Genomics"
+    },
+    {
+      "notion_page_id": "344302d9-c598-819f-b4d6-e53e6aaf7b40",
+      "label": "국통바빅 WGS 파이프라인",
+      "collection": "Multi_Omics"
+    }
+  ]
+}

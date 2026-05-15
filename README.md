@@ -300,6 +300,48 @@ Save this answer as a query page in the wiki.
 Review this collection for duplicate or overlapping wiki pages and suggest what to merge.
 ```
 
+## Notion Hub Sync
+
+You can keep a Notion "참고 논문 및 아이디어" page as a paper inbox and have new entries flow into the wiki automatically. The mapping from Notion hub → wiki collection lives in `scripts/notion_sync_config.json` (committed; edit to change routes).
+
+End-to-end flow:
+
+1. Drop a paper subpage into the configured Notion hub (with DOI in the `논문 정보` section, plus optional `한 줄 요약 / 과제 관련성 / 주요 결과`).
+2. In a Claude Code session, run the `sync-notion-papers` skill (or say "노션에서 새 논문 가져와"). Claude reads each configured hub via the notion MCP server, dedups against `scripts/.notion_sync_state.json`, and ingests new entries.
+3. For each new entry the `notion_sync.py ingest` CLI tries to download the OA PDF via `fetch_paper_by_doi.py` (arXiv shortcut → bioRxiv/medRxiv → Unpaywall → Europe PMC → Crossref), saves it under `collections/<C>/raw/sources/`, and creates a `wiki/sources/*.md` page enriched with Notion metadata.
+
+Manual one-shot ingest:
+
+```bash
+python3 scripts/notion_sync.py ingest \
+  --page-id <notion-uuid> \
+  --collection Cancer_Multiomics \
+  --title "Paper Title" \
+  --doi 10.1101/2024.10.07.616876 \
+  --notion-url https://www.notion.so/<id> \
+  --hub-label "한미암 / 표적항암치료제 멀티오믹스" \
+  --one-line "..." --task-relevance "..." --key-results "..."
+```
+
+Add `--git-sync` to stage the new `wiki/sources/<slug>.md` and `wiki/log.md`, commit them with `<Collection>: ingest <title> from Notion`, and push to `origin/<current-branch>`. The PDF in `raw/sources/` is `.gitignore`d so it stays local. Git failures (no remote, no upstream, push rejected) are reported in the JSON `"git"` field but don't fail the ingest itself.
+
+Status and dedup:
+
+```bash
+python3 scripts/notion_sync.py status                          # ingested counts per hub
+python3 scripts/notion_sync.py is-ingested --page-id <uuid>    # exit 0 if known
+python3 scripts/notion_sync.py forget --page-id <uuid>         # re-allow ingest
+```
+
+Standalone OA PDF fetch by DOI:
+
+```bash
+python3 scripts/fetch_paper_by_doi.py --doi 10.1101/2023.09.05.556372 \
+  --out /tmp/paper.pdf --email you@example.com
+```
+
+The fetcher only writes a file when the response is a real PDF (rejects HTML landing pages and Cloudflare/PoW challenges).
+
 ## Notes
 
 - The CLI uses only the Python standard library. No extra install step is required.
