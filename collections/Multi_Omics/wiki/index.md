@@ -16,6 +16,14 @@
 - [Long-read sequencing of 945 Han individuals identifies structural variants associated with phenotypic diversity and disease susceptibility](sources/2025_gong_long-read-sequencing-945-han-individuals.md) - deep-ingested population interpretation source page.
 - [Long read sequencing enhances pathogenic and novel variation discovery in patients with rare diseases](sources/2025_sinha_long-read-sequencing-rare-diseases.md) - deep-ingested rare-disease workflow source page.
 - [Structural variation in 1,019 diverse humans based on long-read sequencing](sources/2025_schloissnig_structural-variation-1019-diverse-humans-long-read-sequencing.md) - deep-ingested diverse population atlas source page.
+- [Li 2026 ChinaMeth 106 Chinese nanopore long read DNA methylation atlas](sources/Li_2026_ChinaMeth_106_Chinese_nanopore_long_read_DNA.md) - paper source queued for ingest.
+- [Vroland 2026 WGS control ATAC seq peak calling DNA dosage correction](sources/Vroland_2026_WGS_control_ATAC_seq_peak_calling_DNA_dosage.md) - paper source queued for ingest.
+- [Genome in a Bottle 2026 HuRef2 ONT diploid assembly long read WGS reference](sources/Genome_in_a_Bottle_2026_HuRef2_ONT_diploid_assembly_long.md) - paper source queued for ingest.
+- [Wang 2026 long read RNA seq small variant calling benchmark](sources/Wang_2026_long_read_RNA_seq_small_variant_calling_benchmark.md) - paper source queued for ingest.
+- [Cheng 2026 22q11.2 genome wide tandem repeat expansions schizophrenia WGS entry](sources/Cheng_2026_22q11_2_genome_wide_tandem_repeat_expansions.md) - paper source queued for ingest.
+- [Ormond 2026 OCD multiplex WGS workflow BICEP PECAN samplot WGS entry](sources/Ormond_2026_OCD_multiplex_WGS_workflow_BICEP_PECAN_samplot.md) - paper source queued for ingest.
+- [Song 2026 CACNA1C tandem repeat long read repeat detection method WGS entry](sources/Song_2026_CACNA1C_tandem_repeat_long_read_repeat_detection.md) - paper source queued for ingest.
+- [Nguyen 2026 UKBB exome 8 mask baseline gene burden WGS entry](sources/Nguyen_2026_UKBB_exome_8_mask_baseline_gene_burden_WGS_entry.md) - paper source queued for ingest.
 ## Entities
 
 ## Concepts

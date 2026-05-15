@@ -75,3 +75,67 @@
 - Deep-ingested all 10 source pages with study design, key findings, strengths, caveats, and concept links.
 - Added 6 concept pages covering structural variation, platform tradeoffs, rare disease diagnostics, population SV atlases, and hard genomic regions.
 - Updated the overview, index, and corpus synthesis to reflect the current cross-paper claims and open tensions.
+
+## 2026-05-15T15:15:51+09:00 – notion-sync ingest: Li 2026 ChinaMeth 106 Chinese nanopore long read DNA methylation atlas
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/350302d9c598812b8940cfad2ac8cb8d
+- DOI: 10.64898/2026.04.20.719515
+- PDF: not_found
+- Source page: wiki/sources/Li_2026_ChinaMeth_106_Chinese_nanopore_long_read_DNA.md
+
+## 2026-05-15T15:15:53+09:00 – notion-sync ingest: Vroland 2026 WGS control ATAC seq peak calling DNA dosage correction
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/354302d9c59881dab81cfa488f67190a
+- DOI: 10.64898/2026.04.23.720296
+- PDF: not_found
+- Source page: wiki/sources/Vroland_2026_WGS_control_ATAC_seq_peak_calling_DNA_dosage.md
+
+## 2026-05-15T15:15:57+09:00 – notion-sync ingest: Genome in a Bottle 2026 HuRef2 ONT diploid assembly long read WGS reference
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/35b302d9c5988193b149c5adbee906d3
+- DOI: 10.1101/2026.04.29.721554
+- PDF: not_found
+- Source page: wiki/sources/Genome_in_a_Bottle_2026_HuRef2_ONT_diploid_assembly_long.md
+
+## 2026-05-15T15:16:01+09:00 – notion-sync ingest: Wang 2026 long read RNA seq small variant calling benchmark
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/35b302d9c5988153a98bc1680c60fe99
+- DOI: 10.1101/2026.04.29.721619
+- PDF: not_found
+- Source page: wiki/sources/Wang_2026_long_read_RNA_seq_small_variant_calling_benchmark.md
+
+## 2026-05-15T15:19:23+09:00 – notion-sync ingest: Cheng 2026 22q11.2 genome wide tandem repeat expansions schizophrenia WGS entry
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/34a302d9c59881f092e5f3a950468695
+- DOI: (none)
+- PDF: no_doi
+- Source page: wiki/sources/Cheng_2026_22q11_2_genome_wide_tandem_repeat_expansions.md
+
+## 2026-05-15T15:19:23+09:00 – notion-sync ingest: Ormond 2026 OCD multiplex WGS workflow BICEP PECAN samplot WGS entry
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/350302d9c59881eabf58f47be0e1c00d
+- DOI: (none)
+- PDF: no_doi
+- Source page: wiki/sources/Ormond_2026_OCD_multiplex_WGS_workflow_BICEP_PECAN_samplot.md
+
+## 2026-05-15T15:20:10+09:00 – notion-sync ingest: Song 2026 CACNA1C tandem repeat long read repeat detection method WGS entry
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/350302d9c598819893e9e35b3fc02eab
+- DOI: (none)
+- PDF: no_doi
+- Source page: wiki/sources/Song_2026_CACNA1C_tandem_repeat_long_read_repeat_detection.md
+
+## 2026-05-15T15:20:10+09:00 – notion-sync ingest: Nguyen 2026 UKBB exome 8 mask baseline gene burden WGS entry
+
+- Hub: 국통바빅 WGS 파이프라인
+- Notion: https://www.notion.so/35b302d9c59881c89dddcfefbfe4c558
+- DOI: (none)
+- PDF: no_doi
+- Source page: wiki/sources/Nguyen_2026_UKBB_exome_8_mask_baseline_gene_burden_WGS_entry.md

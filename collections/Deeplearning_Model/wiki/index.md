@@ -31,6 +31,42 @@
 - [Single-cell genomics reveals region-specific developmental trajectories underlying neuronal diversity in the human hypothalamus](sources/herb_2023_single-cell_genomics_reveals_region-specific_developmental.md) - Science Advances atlas of prenatal-to-adult hypothalamic trajectories, 108 robust neuronal subtypes, and cross-species developmental comparisons.
 - [Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes](sources/frommeyer_2025_reinforcement_learning_and_its_clinical.md) - Healthcare systematic review of RL for precision medicine and dynamic treatment regimes, emphasizing clinical translation barriers, specialty spread, and workflow integration.
 - [Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders](sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md) - Science Translational Medicine study of sex-stratified psychiatric transcriptomic burden across 2,160 PsychENCODE postmortem brain samples and coexpression networks.
+- [Tahoe-x1 Gandhi 2025 drug token perturbation scFM 3B parameter](sources/Tahoe_x1_Gandhi_2025_drug_token_perturbation_scFM_3B.md) - paper source queued for ingest.
+- [scLAMBDA Wang 2024 CRISPR perturbation multi gene response prediction](sources/scLAMBDA_Wang_2024_CRISPR_perturbation_multi_gene_response.md) - paper source queued for ingest.
+- [CellFM Zeng 2025 100M cells RetNet atlas scale baseline](sources/CellFM_Zeng_2025_100M_cells_RetNet_atlas_scale_baseline.md) - paper source queued for ingest.
+- [scPRINT 2 Kalfon 2025 benchmark first scFM 350M cells 16 organisms](sources/scPRINT_2_Kalfon_2025_benchmark_first_scFM_350M_cells_16.md) - paper source queued for ingest.
+- [Nicheformer Schaar 2024 spatial dissociated scFM SpatialCorpus 110M](sources/Nicheformer_Schaar_2024_spatial_dissociated_scFM.md) - paper source queued for ingest.
+- [TEDDY Chevalier 2025 disease ontology supervision scFM 116M cells](sources/TEDDY_Chevalier_2025_disease_ontology_supervision_scFM_116M.md) - paper source queued for ingest.
+- [Zhang 2026 Science iGOF Perturb seq astrocyte transcription factor](sources/Zhang_2026_Science_iGOF_Perturb_seq_astrocyte_transcription.md) - paper source queued for ingest.
+- [Guttman 2026 CYP3A4 native promoter MPRA variant effect](sources/Guttman_2026_CYP3A4_native_promoter_MPRA_variant_effect.md) - paper source queued for ingest.
+- [Benjamin Zador 2026 TissueFormer cross cell self attention sample phenotype](sources/Benjamin_Zador_2026_TissueFormer_cross_cell_self_attention.md) - paper source queued for ingest.
+- [TxPert Wenkel Tu 2026 Nat Biotech multi KG transcriptomic perturbation](sources/TxPert_Wenkel_Tu_2026_Nat_Biotech_multi_KG_transcriptomic.md) - paper source queued for ingest.
+- [Pearce 2026 TranscriptFormer cross species atlas digital cell 1.5 billion years](sources/Pearce_2026_TranscriptFormer_cross_species_atlas_digital.md) - paper source queued for ingest.
+- [cellNexus 2026 HCA quality control annotation aggregation VITAL corpus](sources/cellNexus_2026_HCA_quality_control_annotation_aggregation.md) - paper source queued for ingest.
+- [Karbalayghareh 2026 DoFormer causal transformer gene perturbation](sources/Karbalayghareh_2026_DoFormer_causal_transformer_gene.md) - paper source queued for ingest.
+- [Zahid 2026 coordinated transcription cell types immune organization state](sources/Zahid_2026_coordinated_transcription_cell_types_immune.md) - paper source queued for ingest.
+- [Liu 2026 in vivo cell type resolved noncoding variant effects human immunity](sources/Liu_2026_in_vivo_cell_type_resolved_noncoding_variant.md) - paper source queued for ingest.
+- [Zhao 2026 lupus nephritis single cell multiomics regulatory architecture](sources/Zhao_2026_lupus_nephritis_single_cell_multiomics_regulatory.md) - paper source queued for ingest.
+- [Chazarra Gil 2026 transcript usage remodeling antiviral immune](sources/Chazarra_Gil_2026_transcript_usage_remodeling_antiviral.md) - paper source queued for ingest.
+- [Shim 2026 combinatorial epigenomic programs disease heterogeneity](sources/Shim_2026_combinatorial_epigenomic_programs_disease.md) - paper source queued for ingest.
+- [Radig 2026 scArchon scalable benchmarking single cell perturbation models](sources/Radig_2026_scArchon_scalable_benchmarking_single_cell.md) - paper source queued for ingest.
+- [Mbouamboua 2026 Nat Commun Human Fetal Olfactory Atlas snRNA MERFISH PCW 7 12](sources/Mbouamboua_2026_Nat_Commun_Human_Fetal_Olfactory_Atlas.md) - paper source queued for ingest.
+- [Yang 2026 GeCCo gene first identity construction hierarchical consistency](sources/Yang_2026_GeCCo_gene_first_identity_construction.md) - paper source queued for ingest.
+- [Chen Li 2026 scConcept neural topic LLM concept level single cell](sources/Chen_Li_2026_scConcept_neural_topic_LLM_concept_level.md) - paper source queued for ingest.
+- [Yan 2026 BIOMINER multi modal LLM agent protein ligand bioactivity extraction](sources/Yan_2026_BIOMINER_multi_modal_LLM_agent_protein_ligand.md) - paper source queued for ingest.
+- [Hemminger 2026 CIPHER spatial transcriptomics compressed experiment design](sources/Hemminger_2026_CIPHER_spatial_transcriptomics_compressed.md) - paper source queued for ingest.
+- [Chang 2026 SCIGMA scalable generalized spatial multi omics integration uncertainty](sources/Chang_2026_SCIGMA_scalable_generalized_spatial_multi_omics.md) - paper source queued for ingest.
+- [Mishra 2026 HMCVelo adult mouse cortex neuron maturation hydroxymethylation](sources/Mishra_2026_HMCVelo_adult_mouse_cortex_neuron_maturation.md) - paper source queued for ingest.
+- [An 2026 SpatialQuery spatial omics multicellular motif discovery](sources/An_2026_SpatialQuery_spatial_omics_multicellular_motif.md) - paper source queued for ingest.
+- [Zhang 2026 MIA ASD spatial snRNA seq senescence atlas microglia endothelial](sources/Zhang_2026_MIA_ASD_spatial_snRNA_seq_senescence_atlas.md) - paper source queued for ingest.
+- [NYGC ALS Consortium 2026 postmortem tissue transcriptomics WGS resource](sources/NYGC_ALS_Consortium_2026_postmortem_tissue_transcriptomics.md) - paper source queued for ingest.
+- [Kamzina 2026 TREM2 R47H forebrain organoid co culture broader network](sources/Kamzina_2026_TREM2_R47H_forebrain_organoid_co_culture.md) - paper source queued for ingest.
+- [Zhang 2026 ISSAC single cell splicing QTLs neurological disorders](sources/Zhang_2026_ISSAC_single_cell_splicing_QTLs_neurological.md) - paper source queued for ingest.
+- [Ohlan 2025 MolGene E VITAL entry](sources/Ohlan_2025_MolGene_E_VITAL_entry.md) - paper source queued for ingest.
+- [Cui 2026 Haiku digital cell interface VITAL entry](sources/Cui_2026_Haiku_digital_cell_interface_VITAL_entry.md) - paper source queued for ingest.
+- [Zhang 2026 iGOF Perturb seq mouse astrocyte Brain Atlas entry](sources/Zhang_2026_iGOF_Perturb_seq_mouse_astrocyte_Brain_Atlas.md) - paper source queued for ingest.
+- [Benjamin Zador 2026 TissueFormer Brain Atlas entry](sources/Benjamin_Zador_2026_TissueFormer_Brain_Atlas_entry.md) - paper source queued for ingest.
+- [cellNexus 2026 HCA QC annotation Brain Atlas entry](sources/cellNexus_2026_HCA_QC_annotation_Brain_Atlas_entry.md) - paper source queued for ingest.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
