@@ -8,7 +8,7 @@ pmid: 32526163
 authors: Xiang Y et al.
 journal: Molecular cell (2020)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Dysregulation of BRD4 Function Underlies the Functional Abnormalities of MeCP2 Mutant Neurons.

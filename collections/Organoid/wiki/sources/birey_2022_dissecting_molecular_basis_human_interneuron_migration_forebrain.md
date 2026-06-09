@@ -8,7 +8,7 @@ pmid: 34990580
 authors: Birey F et al.
 journal: Cell stem cell (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Dissecting the molecular basis of human interneuron migration in forebrain assembloids from Timothy syndrome.

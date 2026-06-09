@@ -8,7 +8,7 @@ pmid: 18940588
 authors: Sessa A et al.
 journal: Neuron (2008)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Tbr2 directs conversion of radial glia into basal precursors and guides neuronal amplification by indirect neurogenesis in the developing neocortex.

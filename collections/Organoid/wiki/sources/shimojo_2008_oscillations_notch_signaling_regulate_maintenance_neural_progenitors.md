@@ -8,7 +8,7 @@ pmid: 18400163
 authors: Shimojo H et al.
 journal: Neuron (2008)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Oscillations in notch signaling regulate maintenance of neural progenitors.

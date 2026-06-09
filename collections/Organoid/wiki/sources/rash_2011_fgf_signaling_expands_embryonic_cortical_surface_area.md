@@ -8,7 +8,8 @@ pmid: 22031906
 authors: Rash BG et al.
 journal: The Journal of neuroscience : the official journal of the Society for Neuroscience (2011)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/rash_2011_fgf_signaling_expands_embryonic_cortical_surface_area.pdf
+pdf_status: downloaded
 ---
 
 # FGF signaling expands embryonic cortical surface area by regulating Notch-dependent neurogenesis.

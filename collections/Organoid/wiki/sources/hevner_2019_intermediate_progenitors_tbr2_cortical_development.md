@@ -8,7 +8,7 @@ pmid: 30677129
 authors: Hevner RF
 journal: Journal of anatomy (2019)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Intermediate progenitors and Tbr2 in cortical development.

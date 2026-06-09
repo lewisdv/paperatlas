@@ -8,7 +8,8 @@ pmid: 34433918
 authors: Urresti J et al.
 journal: Molecular psychiatry (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/urresti_2021_cortical_organoids_model_early_brain_development_disrupted.pdf
+pdf_status: downloaded
 ---
 
 # Cortical organoids model early brain development disrupted by 16p11.2 copy number variants in autism.
