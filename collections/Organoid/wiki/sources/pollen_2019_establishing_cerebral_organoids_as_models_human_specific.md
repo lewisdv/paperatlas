@@ -8,7 +8,7 @@ pmid: 30735633
 authors: Pollen AA et al.
 journal: Cell (2019)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Establishing Cerebral Organoids as Models of Human-Specific Brain Evolution.

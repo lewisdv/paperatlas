@@ -8,7 +8,8 @@ pmid: 34413513
 authors: Kang Y et al.
 journal: Nature neuroscience (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/kang_2021_human_forebrain_organoid_model_fragile_x_syndrome.pdf
+pdf_status: downloaded
 ---
 
 # A human forebrain organoid model of fragile X syndrome exhibits altered neurogenesis and highlights new treatment strategies.

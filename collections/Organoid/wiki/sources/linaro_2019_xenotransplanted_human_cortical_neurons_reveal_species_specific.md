@@ -8,7 +8,7 @@ pmid: 31761708
 authors: Linaro D et al.
 journal: Neuron (2019)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Xenotransplanted Human Cortical Neurons Reveal Species-Specific Development and Functional Integration into Mouse Visual Circuits.

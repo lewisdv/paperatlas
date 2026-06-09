@@ -8,7 +8,7 @@ pmid: 33470930
 authors: Schörnig M et al.
 journal: eLife (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Comparison of induced neurons reveals slower structural and functional maturation in humans than in apes.
