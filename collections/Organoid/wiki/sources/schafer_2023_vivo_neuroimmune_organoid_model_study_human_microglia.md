@@ -8,7 +8,7 @@ pmid: 37172564
 authors: Schafer ST et al.
 journal: Cell (2023)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # An in vivo neuroimmune organoid model to study human microglia phenotypes.

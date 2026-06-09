@@ -8,7 +8,7 @@ pmid: 30545853
 authors: Amiri A et al.
 journal: Science (New York, N.Y.) (2018)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Transcriptome and epigenome landscape of human cortical development modeled in organoids.

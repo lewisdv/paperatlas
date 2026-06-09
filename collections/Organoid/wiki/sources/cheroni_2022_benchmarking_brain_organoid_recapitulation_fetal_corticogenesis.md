@@ -8,7 +8,8 @@ pmid: 36539399
 authors: Cheroni C et al.
 journal: Translational psychiatry (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/cheroni_2022_benchmarking_brain_organoid_recapitulation_fetal_corticogenesis.pdf
+pdf_status: downloaded
 ---
 
 # Benchmarking brain organoid recapitulation of fetal corticogenesis.

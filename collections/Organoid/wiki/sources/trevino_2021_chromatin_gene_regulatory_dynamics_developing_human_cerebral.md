@@ -8,7 +8,7 @@ pmid: 34390642
 authors: Trevino AE et al.
 journal: Cell (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Chromatin and gene-regulatory dynamics of the developing human cerebral cortex at single-cell resolution.

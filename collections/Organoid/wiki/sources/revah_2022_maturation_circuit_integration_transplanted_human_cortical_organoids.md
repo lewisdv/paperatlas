@@ -8,7 +8,8 @@ pmid: 36224417
 authors: Revah O et al.
 journal: Nature (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/revah_2022_maturation_circuit_integration_transplanted_human_cortical_organoids.pdf
+pdf_status: downloaded
 ---
 
 # Maturation and circuit integration of transplanted human cortical organoids.

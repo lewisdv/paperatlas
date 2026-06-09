@@ -8,7 +8,8 @@ pmid: 29658944
 authors: Mansour AA et al.
 journal: Nature biotechnology (2018)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/mansour_2018_vivo_model_functional_vascularized_human_brain_organoids.pdf
+pdf_status: downloaded
 ---
 
 # An in vivo model of functional and vascularized human brain organoids.

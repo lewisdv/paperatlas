@@ -8,7 +8,7 @@ pmid: 26644564
 authors: Camp JG et al.
 journal: Proceedings of the National Academy of Sciences of the United States of America (2015)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Human cerebral organoids recapitulate gene expression programs of fetal neocortex development.

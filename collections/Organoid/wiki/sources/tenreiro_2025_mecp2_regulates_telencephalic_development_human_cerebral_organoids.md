@@ -8,7 +8,8 @@ pmid: 41391149
 authors: Tenreiro MF et al.
 journal: Cell reports (2025)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/tenreiro_2025_mecp2_regulates_telencephalic_development_human_cerebral_organoids.pdf
+pdf_status: downloaded
 ---
 
 # MeCP2 regulates telencephalic development in human cerebral organoids.
