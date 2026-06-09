@@ -8,7 +8,8 @@ pmid: 25363760
 authors: De Rubeis S et al.
 journal: Nature (2014)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/De_2014_Synaptic_transcriptional_chromatin_genes_disrupted_autism.pdf
+pdf_status: downloaded
 ---
 
 # Synaptic, transcriptional and chromatin genes disrupted in autism.
