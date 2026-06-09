@@ -8,7 +8,7 @@ pmid: 37733863
 authors: Cheng J et al.
 journal: Science (New York, N.Y.) (2023)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Accurate proteome-wide missense variant effect prediction with AlphaMissense.

@@ -8,7 +8,8 @@ pmid: 28445465
 authors: Birey F et al.
 journal: Nature (2017)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/birey_2017_assembly_functionally_integrated_human_forebrain_spheroids.pdf
+pdf_status: downloaded
 ---
 
 # Assembly of functionally integrated human forebrain spheroids.

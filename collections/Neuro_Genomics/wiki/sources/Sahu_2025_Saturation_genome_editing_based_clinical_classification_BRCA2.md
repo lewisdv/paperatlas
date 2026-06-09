@@ -8,7 +8,8 @@ pmid: 39779848
 authors: Sahu S et al.
 journal: Nature (2025)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Sahu_2025_Saturation_genome_editing_based_clinical_classification_BRCA2.pdf
+pdf_status: downloaded
 ---
 
 # Saturation genome editing-based clinical classification of BRCA2 variants.

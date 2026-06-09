@@ -8,7 +8,8 @@ pmid: 39779847
 authors: Beltran A et al.
 journal: Nature (2025)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Beltran_2025_Site_saturation_mutagenesis_500_human_protein_domains.pdf
+pdf_status: downloaded
 ---
 
 # Site-saturation mutagenesis of 500 human protein domains.

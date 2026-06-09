@@ -8,7 +8,7 @@ pmid: 26186191
 authors: Mariani J et al.
 journal: Cell (2015)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # FOXG1-Dependent Dysregulation of GABA/Glutamate Neuron Differentiation in Autism Spectrum Disorders.

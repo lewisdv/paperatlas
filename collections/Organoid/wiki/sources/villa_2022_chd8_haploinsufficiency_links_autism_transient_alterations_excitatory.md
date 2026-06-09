@@ -8,7 +8,7 @@ pmid: 35385734
 authors: Villa CE et al.
 journal: Cell reports (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # CHD8 haploinsufficiency links autism to transient alterations in excitatory and inhibitory trajectories.

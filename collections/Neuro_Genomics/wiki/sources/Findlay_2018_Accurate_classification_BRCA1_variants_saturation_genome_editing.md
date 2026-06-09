@@ -8,7 +8,8 @@ pmid: 30209399
 authors: Findlay GM et al.
 journal: Nature (2018)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Findlay_2018_Accurate_classification_BRCA1_variants_saturation_genome_editing.pdf
+pdf_status: downloaded
 ---
 
 # Accurate classification of BRCA1 variants with saturation genome editing.
