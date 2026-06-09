@@ -232,9 +232,9 @@ Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA ful
 - · [Sessa 2008 — Tbr2 directs conversion of radial glia into basal precursors and guides neu](sources/sessa_2008_tbr2_directs_conversion_radial_glia_into_basal.md)
 - 📄 [Hansen 2010 — Neurogenic radial glia in the outer subventricular zone of human neocortex.](sources/hansen_2010_neurogenic_radial_glia_outer_subventricular_zone_human.md)
 - 📄 [Rash 2011 — FGF signaling expands embryonic cortical surface area by regulating Notch-d](sources/rash_2011_fgf_signaling_expands_embryonic_cortical_surface_area.md)
-- 📄 [Lancaster 2013 — Cerebral organoids model human brain development and microcephaly.](sources/lancaster_2013_cerebral_organoids_model_human_brain_development_microcephaly.md)
+- 📄 [Lancaster 2013 — Cerebral organoids model human brain development and microcephaly.](sources/lancaster_2013_cerebral_organoids_model_human_brain_development_microcephaly.md) - deeply ingested; founding unguided cerebral-organoid protocol, oRG/OSVZ, CDK5RAP2 microcephaly model.
 - 📄 [Shcheglovitov 2013 — SHANK3 and IGF1 restore synaptic deficits in neurons from 22q13 deletion sy](sources/shcheglovitov_2013_shank3_igf1_restore_synaptic_deficits_neurons_22q13.md) - deeply ingested; SHANK3/22q13 iPSC-neuron synaptopathy + IGF-1 rescue.
-- 📄 [Paşca 2015 — Functional cortical neurons and astrocytes from human pluripotent stem cell](sources/paca_2015_functional_cortical_neurons_astrocytes_human_pluripotent_stem.md)
+- 📄 [Paşca 2015 — Functional cortical neurons and astrocytes from human pluripotent stem cell](sources/paca_2015_functional_cortical_neurons_astrocytes_human_pluripotent_stem.md) - deeply ingested; founding guided cortical-spheroid (hCS) protocol, functional neurons + astrocytes.
 - · [Mariani 2015 — FOXG1-Dependent Dysregulation of GABA/Glutamate Neuron Differentiation in A](sources/mariani_2015_foxg1_dependent_dysregulation_gaba_glutamate_neuron_differentiation.md)
 - · [Pollen 2015 — Molecular identity of human outer radial glia during cortical development.](sources/pollen_2015_molecular_identity_human_outer_radial_glia_during.md)
 - · [Camp 2015 — Human cerebral organoids recapitulate gene expression programs of fetal neo](sources/camp_2015_human_cerebral_organoids_recapitulate_gene_expression_programs.md)
@@ -271,7 +271,7 @@ Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA ful
 - 📄 [Cheroni 2022 — Benchmarking brain organoid recapitulation of fetal corticogenesis.](sources/cheroni_2022_benchmarking_brain_organoid_recapitulation_fetal_corticogenesis.md)
 - · [Uzquiano 2022 — Proper acquisition of cell class identity in organoids allows definition of](sources/uzquiano_2022_proper_acquisition_cell_class_identity_organoids_allows.md)
 - 📄 [Eichmüller 2022 — Human cerebral organoids - a new tool for clinical neurology research.](sources/eichmller_2022_human_cerebral_organoids_new_tool_clinical_neurology.md)
-- 📄 [Li 2023 — Single-cell brain organoid screening identifies developmental defects in au](sources/li_2023_single_cell_brain_organoid_screening_identifies_developmental.md)
+- 📄 [Li 2023 — Single-cell brain organoid screening identifies developmental defects in au](sources/li_2023_single_cell_brain_organoid_screening_identifies_developmental.md) - deeply ingested; CHOOSE in-organoid pooled CRISPR screen, 36 ASD genes, ARID1B/OPC.
 - 📄 [Meng 2023 — Assembloid CRISPR screens reveal impact of disease genes in human neurodeve](sources/meng_2023_assembloid_crispr_screens_reveal_impact_disease_genes.md) - deeply ingested; pooled CRISPR screen of 425 NDD genes in forebrain assembloids.
 - · [Fu 2023 — Autism-specific PTEN p.Ile135Leu variant and an autism genetic background c](sources/fu_2023_autism_specific_pten_p_ile135leu_variant_autism.md)
 - 📄 [St 2023 — Loss of CNTNAP2 Alters Human Cortical Excitatory Neuron Differentiation and](sources/st_2023_loss_cntnap2_alters_human_cortical_excitatory_neuron.md)
