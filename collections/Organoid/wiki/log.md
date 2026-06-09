@@ -1697,3 +1697,5 @@
 - Added direct `Related syntheses` links from the most relevant developmental concept pages and drill-down query pages back to `20260424_organoid-developmental-baseline-and-regionalization-playbook.md`.
 - Kept the older developmental queries intact as detailed references while making the newer synthesis the default starting point for developmental route choice.
 - Updated `wiki/overview.md` and collection checkpointing so the developmental branch is now more clearly routed through the synthesis layer first.
+
+- 2026-06-09: imported 53 manuscript-cited references (source_ref: manuscript_brain_organoid_v6); 26 OA PDFs downloaded, 27 abstract-level; all created as pending_ingest source pages.

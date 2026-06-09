@@ -519,3 +519,5 @@
 - DOI: (none)
 - PDF: no_doi
 - Source page: wiki/sources/Boix_2020_EpiMap_Degidiba_regulatory_circuit_interpretation.md
+
+- 2026-06-09: imported 25 manuscript-cited references (source_ref: manuscript_brain_organoid_v6); 17 OA PDFs downloaded, 8 abstract-level; all created as pending_ingest source pages.
