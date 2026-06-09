@@ -1699,3 +1699,11 @@
 - Updated `wiki/overview.md` and collection checkpointing so the developmental branch is now more clearly routed through the synthesis layer first.
 
 - 2026-06-09: imported 53 manuscript-cited references (source_ref: manuscript_brain_organoid_v6); 26 OA PDFs downloaded, 27 abstract-level; all created as pending_ingest source pages.
+
+## [2026-06-09] deep ingest | 3 brain-organoid ASD-review references
+
+- Deep-ingested 3 manuscript_brain_organoid_v6 references from PDF full text (status `pending_ingest` -> `ingested`, added `deep_ingested: 2026-06-09`); rewrote each `wiki/sources/` page with Key findings / Methods / Relevance to the brain-organoid ASD review / Open questions sections plus verified `Related` cross-links. Frontmatter, `# Title`, `## Source`, `## Abstract` preserved; `raw/` untouched.
+  - Meng 2023 (Nature; doi:10.1038/s41586-023-06564-w) - assembloid CRISPR screen of 425 NDD genes; 13 interneuron-generation hits (CSDE1, SMAD4, FOXG1) + 33 migration hits (NCKAP1, SEMA5A, RAC1, TERF2, LNPK); ER displacement before nucleokinesis. Supports assembloid CRISPR / perturbation-in-3D theme; linked to companion protocol Meng 2025.
+  - Shcheglovitov 2013 (Nature; doi:10.1038/nature12618) - SHANK3/22q13.3 (~1 Mb deletion) iPSC-neuron model; selective excitatory synaptic deficit; rescue by SHANK3 re-expression (43% full evoked-EPSC rescue) and IGF-1 (20 ng/mL). Supports synaptic-disease-modeling theme + IGF-1 therapeutic angle.
+  - Andrews 2020 (eLife; doi:10.7554/eLife.58737) - mTORC1 active selectively in HOPX+ oRG; bimodal mTOR dysregulation truncates oRG basal process and impairs migration via CDC42/RAC1/actin (CN04 rescue, 250 nM rapamycin). Supports oRG-biology/mTOR vulnerability theme.
+- Updated `wiki/index.md` (added "deeply ingested" descriptors to the three manuscript-reference entries). No new entity/concept pages created; reused existing pages for cross-links.
