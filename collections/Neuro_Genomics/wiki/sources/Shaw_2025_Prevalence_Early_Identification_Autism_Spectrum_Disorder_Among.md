@@ -8,7 +8,8 @@ pmid: 40232988
 authors: Shaw KA et al.
 journal: Morbidity and mortality weekly report. Surveillance summaries (Washington, D.C. : 2002) (2025)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Shaw_2025_Prevalence_Early_Identification_Autism_Spectrum_Disorder_Among.pdf
+pdf_status: downloaded
 ---
 
 # Prevalence and Early Identification of Autism Spectrum Disorder Among Children Aged 4 and 8 Years - Autism and Developmental Disabilities Monitoring Network, 16 Sites, United States, 2022.
