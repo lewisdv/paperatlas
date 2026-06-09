@@ -8,7 +8,8 @@ pmid: 40634707
 authors: Litman A et al.
 journal: Nature genetics (2025)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Litman_2025_Decomposition_phenotypic_heterogeneity_autism_reveals_underlying_genetic.pdf
+pdf_status: downloaded
 ---
 
 # Decomposition of phenotypic heterogeneity in autism reveals underlying genetic programs.

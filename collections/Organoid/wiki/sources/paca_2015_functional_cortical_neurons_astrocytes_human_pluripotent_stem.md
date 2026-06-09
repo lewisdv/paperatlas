@@ -8,7 +8,8 @@ pmid: 26005811
 authors: Paşca AM et al.
 journal: Nature methods (2015)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/paca_2015_functional_cortical_neurons_astrocytes_human_pluripotent_stem.pdf
+pdf_status: downloaded
 ---
 
 # Functional cortical neurons and astrocytes from human pluripotent stem cells in 3D culture.

@@ -8,7 +8,7 @@ pmid: 26796689
 authors: Silbereis JC et al.
 journal: Neuron (2016)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # The Cellular and Molecular Landscapes of the Developing Human Central Nervous System.

@@ -8,7 +8,8 @@ pmid: 35110736
 authors: Paulsen B et al.
 journal: Nature (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/paulsen_2022_autism_genes_converge_asynchronous_development_shared_neuron.pdf
+pdf_status: downloaded
 ---
 
 # Autism genes converge on asynchronous development of shared neuron classes.

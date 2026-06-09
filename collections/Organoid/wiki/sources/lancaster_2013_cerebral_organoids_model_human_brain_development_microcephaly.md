@@ -8,7 +8,8 @@ pmid: 23995685
 authors: Lancaster MA et al.
 journal: Nature (2013)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/lancaster_2013_cerebral_organoids_model_human_brain_development_microcephaly.pdf
+pdf_status: downloaded
 ---
 
 # Cerebral organoids model human brain development and microcephaly.

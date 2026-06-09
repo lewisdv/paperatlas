@@ -8,7 +8,8 @@ pmid: 19029900
 authors: Brunetti-Pierri N et al.
 journal: Nature genetics (2008)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/BrunettiPierri_2008_Recurrent_reciprocal_1q21_1_deletions_duplications_associated.pdf
+pdf_status: downloaded
 ---
 
 # Recurrent reciprocal 1q21.1 deletions and duplications associated with microcephaly or macrocephaly and developmental and behavioral abnormalities.

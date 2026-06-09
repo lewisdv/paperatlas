@@ -8,7 +8,7 @@ pmid: 29856955
 authors: Suzuki IK et al.
 journal: Cell (2018)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Human-Specific NOTCH2NL Genes Expand Cortical Neurogenesis through Delta/Notch Regulation.
