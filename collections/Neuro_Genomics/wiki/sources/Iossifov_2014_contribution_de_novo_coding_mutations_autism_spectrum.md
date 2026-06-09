@@ -8,7 +8,8 @@ pmid: 25363768
 authors: Iossifov I et al.
 journal: Nature (2014)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Iossifov_2014_contribution_de_novo_coding_mutations_autism_spectrum.pdf
+pdf_status: downloaded
 ---
 
 # The contribution of de novo coding mutations to autism spectrum disorder.

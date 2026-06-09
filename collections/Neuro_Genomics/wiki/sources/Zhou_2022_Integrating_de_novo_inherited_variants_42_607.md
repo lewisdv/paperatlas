@@ -8,7 +8,8 @@ pmid: 35982159
 authors: Zhou X et al.
 journal: Nature genetics (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Zhou_2022_Integrating_de_novo_inherited_variants_42_607.pdf
+pdf_status: downloaded
 ---
 
 # Integrating de novo and inherited variants in 42,607 autism cases identifies mutations in new moderate-risk genes.

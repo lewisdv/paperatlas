@@ -8,7 +8,8 @@ pmid: 31981491
 authors: Satterstrom FK et al.
 journal: Cell (2020)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Satterstrom_2020_Large_Scale_Exome_Sequencing_Study_Implicates_Both.pdf
+pdf_status: downloaded
 ---
 
 # Large-Scale Exome Sequencing Study Implicates Both Developmental and Functional Changes in the Neurobiology of Autism.
