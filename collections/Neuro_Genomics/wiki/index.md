@@ -81,30 +81,30 @@
 
 ## Manuscript reference ingest — brain-organoid ASD review (2026-06-09)
 
-Imported 25 cited references from `manuscript_brain_organoid_v6` (17 with OA full text, rest abstract-level). status: pending_ingest until deep-ingested.
+Imported 25 cited references from `manuscript_brain_organoid_v6`, all **deep-ingested 2026-06-09** (17 via automatic OA fetch + 8 via manually-supplied PDFs). Full structured notes on each page.
 
 - ✅ [Brunetti-Pierri 2008 — Recurrent reciprocal 1q21.1 deletions and duplications associated with micr](sources/BrunettiPierri_2008_Recurrent_reciprocal_1q21_1_deletions_duplications_associated.md) — deep-ingested 2026-06-09 (1q21.1 reciprocal CNV; dosage→head size; HYDIN paralog candidate).
-- · [Christensen 2013 — Prenatal valproate exposure and risk of autism spectrum disorders and child](sources/Christensen_2013_Prenatal_valproate_exposure_risk_autism_spectrum_disorders.md)
-- · [Willsey 2013 — Coexpression networks implicate human midfetal deep cortical projection neu](sources/Willsey_2013_Coexpression_networks_implicate_human_midfetal_deep_cortical.md)
-- · [Parikshak 2013 — Integrative functional genomic analyses implicate specific molecular pathwa](sources/Parikshak_2013_Integrative_functional_genomic_analyses_implicate_specific_molecular.md)
+- 📄 [Christensen 2013 — Prenatal valproate exposure and risk of autism spectrum disorders and child](sources/Christensen_2013_Prenatal_valproate_exposure_risk_autism_spectrum_disorders.md)
+- 📄 [Willsey 2013 — Coexpression networks implicate human midfetal deep cortical projection neu](sources/Willsey_2013_Coexpression_networks_implicate_human_midfetal_deep_cortical.md)
+- 📄 [Parikshak 2013 — Integrative functional genomic analyses implicate specific molecular pathwa](sources/Parikshak_2013_Integrative_functional_genomic_analyses_implicate_specific_molecular.md)
 - 📄 [Iossifov 2014 — The contribution of de novo coding mutations to autism spectrum disorder.](sources/Iossifov_2014_contribution_de_novo_coding_mutations_autism_spectrum.md)
 - 📄 [De 2014 — Synaptic, transcriptional and chromatin genes disrupted in autism.](sources/De_2014_Synaptic_transcriptional_chromatin_genes_disrupted_autism.md)
 - 📄 [Lim 2017 — Rates, distribution and implications of postzygotic mosaic mutations in aut](sources/Lim_2017_Rates_distribution_implications_postzygotic_mosaic_mutations_autism.md)
 - 📄 [Stessman 2017 — Targeted sequencing identifies 91 neurodevelopmental-disorder risk genes wi](sources/Stessman_2017_Targeted_sequencing_identifies_91_neurodevelopmental_disorder_risk.md)
 - 📄 [Findlay 2018 — Accurate classification of BRCA1 variants with saturation genome editing.](sources/Findlay_2018_Accurate_classification_BRCA1_variants_saturation_genome_editing.md)
-- · [Gandal 2018 — Transcriptome-wide isoform-level dysregulation in ASD, schizophrenia, and b](sources/Gandal_2018_Transcriptome_wide_isoform_level_dysregulation_ASD_schizophrenia.md)
+- 📄 [Gandal 2018 — Transcriptome-wide isoform-level dysregulation in ASD, schizophrenia, and b](sources/Gandal_2018_Transcriptome_wide_isoform_level_dysregulation_ASD_schizophrenia.md)
 - 📄 [Grove 2019 — Identification of common genetic risk variants for autism spectrum disorder](sources/Grove_2019_Identification_common_genetic_risk_variants_autism_spectrum.md)
-- · [Jaganathan 2019 — Predicting Splicing from Primary Sequence with Deep Learning.](sources/Jaganathan_2019_Predicting_Splicing_Primary_Sequence_Deep_Learning.md)
+- 📄 [Jaganathan 2019 — Predicting Splicing from Primary Sequence with Deep Learning.](sources/Jaganathan_2019_Predicting_Splicing_Primary_Sequence_Deep_Learning.md)
 - ✅ [Kircher 2019 — Saturation mutagenesis of twenty disease-associated regulatory elements at ](sources/Kircher_2019_Saturation_mutagenesis_twenty_disease_associated_regulatory_elements.md) — deep-ingested 2026-06-09 (saturation MPRA, 21 elements, 31,243 variants; non-coding prioritization; computational scores predict poorly, mean R²≈0.03).
 - 📄 [Brnich 2019 — Recommendations for application of the functional evidence PS3/BS3 criterio](sources/Brnich_2019_Recommendations_application_functional_evidence_PS3_BS3_criterion.md)
 - 📄 [Satterstrom 2020 — Large-Scale Exome Sequencing Study Implicates Both Developmental and Functi](sources/Satterstrom_2020_Large_Scale_Exome_Sequencing_Study_Implicates_Both.md)
 - ✅ [Frazer 2021 — Disease variant prediction with deep generative models of evolutionary data](sources/Frazer_2021_Disease_variant_prediction_deep_generative_models_evolutionary.md) — deep-ingested 2026-06-09 (EVE; unsupervised Bayesian VAE; ClinVar AUC 0.91; 36M variants; Stage-1 prioritization tool).
 - 📄 [Zhou 2022 — Integrating de novo and inherited variants in 42,607 autism cases identifie](sources/Zhou_2022_Integrating_de_novo_inherited_variants_42_607.md)
-- · [Cheng 2023 — Accurate proteome-wide missense variant effect prediction with AlphaMissens](sources/Cheng_2023_Accurate_proteome_wide_missense_variant_effect_prediction.md)
+- 📄 [Cheng 2023 — Accurate proteome-wide missense variant effect prediction with AlphaMissens](sources/Cheng_2023_Accurate_proteome_wide_missense_variant_effect_prediction.md)
 - 📄 [Shaw 2025 — Prevalence and Early Identification of Autism Spectrum Disorder Among Child](sources/Shaw_2025_Prevalence_Early_Identification_Autism_Spectrum_Disorder_Among.md)
 - 📄 [Litman 2025 — Decomposition of phenotypic heterogeneity in autism reveals underlying gene](sources/Litman_2025_Decomposition_phenotypic_heterogeneity_autism_reveals_underlying_genetic.md)
 - ✅ [Sahu 2025 — Saturation genome editing-based clinical classification of BRCA2 variants.](sources/Sahu_2025_Saturation_genome_editing_based_clinical_classification_BRCA2.md) — deep-ingested 2026-06-09 (BRCA2 CTDB SGE; 6,551 SNVs; ACMG/AMP map; SGE template).
 - ✅ [Beltran 2025 — Site-saturation mutagenesis of 500 human protein domains.](sources/Beltran_2025_Site_saturation_mutagenesis_500_human_protein_domains.md) — deep-ingested 2026-06-09 (Human Domainome 1; 563,534 variants / 522 domains; MaveDB-style stability reference).
-- · [Hemker 2025 — Saturation mapping of MUTYH variant effects using DNA repair reporters.](sources/Hemker_2025_Saturation_mapping_MUTYH_variant_effects_DNA_repair.md)
-- · [Herger 2025 — High-throughput screening of human genetic variants by pooled prime editing](sources/Herger_2025_High_throughput_screening_human_genetic_variants_by.md)
+- 📄 [Hemker 2025 — Saturation mapping of MUTYH variant effects using DNA repair reporters.](sources/Hemker_2025_Saturation_mapping_MUTYH_variant_effects_DNA_repair.md)
+- 📄 [Herger 2025 — High-throughput screening of human genetic variants by pooled prime editing](sources/Herger_2025_High_throughput_screening_human_genetic_variants_by.md)
 - ✅ [Tangermann 2026 — Saturation mutagenesis identifies activating and resistance-inducing FGFR k](sources/Tangermann_2026_Saturation_mutagenesis_identifies_activating_resistance_inducing_FGFR.md) — deep-ingested 2026-06-09 (FGFR1-4 kinase saturation; 474 activating / 738 resistance / 301 druggable; variant-class stratification; strong PS3/BS3).
