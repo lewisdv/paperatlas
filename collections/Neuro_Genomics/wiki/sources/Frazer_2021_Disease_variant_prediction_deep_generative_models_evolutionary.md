@@ -8,7 +8,8 @@ pmid: 34707284
 authors: Frazer J et al.
 journal: Nature (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Frazer_2021_Disease_variant_prediction_deep_generative_models_evolutionary.pdf
+pdf_status: downloaded
 ---
 
 # Disease variant prediction with deep generative models of evolutionary data.
