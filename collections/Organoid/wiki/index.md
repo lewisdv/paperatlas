@@ -227,7 +227,7 @@ Background corpus synthesis:
 Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA full text, rest abstract-level). status: pending_ingest until deep-ingested.
 
 - · [Sur 2005 — Patterning and plasticity of the cerebral cortex.](sources/sur_2005_patterning_plasticity_cerebral_cortex.md)
-- 📄 [Hébert 2008 — The genetics of early telencephalon patterning: some assembly required.](sources/hbert_2008_genetics_early_telencephalon_patterning_some_assembly_required.md)
+- 📄 [Hébert 2008 — The genetics of early telencephalon patterning: some assembly required.](sources/hbert_2008_genetics_early_telencephalon_patterning_some_assembly_required.md) — deeply ingested; mouse FGF/WNT/SHH/BMP patterning-gradient background for guided organoid regionalization.
 - · [Shimojo 2008 — Oscillations in notch signaling regulate maintenance of neural progenitors.](sources/shimojo_2008_oscillations_notch_signaling_regulate_maintenance_neural_progenitors.md)
 - · [Sessa 2008 — Tbr2 directs conversion of radial glia into basal precursors and guides neu](sources/sessa_2008_tbr2_directs_conversion_radial_glia_into_basal.md)
 - 📄 [Hansen 2010 — Neurogenic radial glia in the outer subventricular zone of human neocortex.](sources/hansen_2010_neurogenic_radial_glia_outer_subventricular_zone_human.md) - deeply ingested; defines human oRG/OSVZ progenitors (MST, self-renewal, Notch); human-specific oRG basis for the ASD review.
@@ -259,7 +259,7 @@ Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA ful
 - · [Hyun 2020 — Ethical issues related to brain organoid research.](sources/hyun_2020_ethical_issues_related_brain_organoid_research.md)
 - · [Benito-Kwiecinski 2021 — An early cell shape transition drives evolutionary expansion of the human f](sources/benitokwiecinski_2021_early_cell_shape_transition_drives_evolutionary_expansion.md)
 - · [Schörnig 2021 — Comparison of induced neurons reveals slower structural and functional matu](sources/schrnig_2021_comparison_induced_neurons_reveals_slower_structural_functional.md)
-- 📄 [Kang 2021 — A human forebrain organoid model of fragile X syndrome exhibits altered neu](sources/kang_2021_human_forebrain_organoid_model_fragile_x_syndrome.md)
+- 📄 [Kang 2021 — A human forebrain organoid model of fragile X syndrome exhibits altered neu](sources/kang_2021_human_forebrain_organoid_model_fragile_x_syndrome.md) — deeply ingested; FMR1/FXS forebrain-organoid model, neurogenesis + PI3K (not mGluR5) rescue, human-specific FMRP targets.
 - 📄 [Urresti 2021 — Cortical organoids model early brain development disrupted by 16p11.2 copy ](sources/urresti_2021_cortical_organoids_model_early_brain_development_disrupted.md)
 - · [Trevino 2021 — Chromatin and gene-regulatory dynamics of the developing human cerebral cor](sources/trevino_2021_chromatin_gene_regulatory_dynamics_developing_human_cerebral.md)
 - 📄 [Cho 2021 — Microfluidic device with brain extracellular matrix promotes structural and](sources/cho_2021_microfluidic_device_brain_extracellular_matrix_promotes_structural.md)
@@ -274,7 +274,7 @@ Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA ful
 - 📄 [Li 2023 — Single-cell brain organoid screening identifies developmental defects in au](sources/li_2023_single_cell_brain_organoid_screening_identifies_developmental.md) - deeply ingested; CHOOSE in-organoid pooled CRISPR screen, 36 ASD genes, ARID1B/OPC.
 - 📄 [Meng 2023 — Assembloid CRISPR screens reveal impact of disease genes in human neurodeve](sources/meng_2023_assembloid_crispr_screens_reveal_impact_disease_genes.md) - deeply ingested; pooled CRISPR screen of 425 NDD genes in forebrain assembloids.
 - · [Fu 2023 — Autism-specific PTEN p.Ile135Leu variant and an autism genetic background c](sources/fu_2023_autism_specific_pten_p_ile135leu_variant_autism.md)
-- 📄 [St 2023 — Loss of CNTNAP2 Alters Human Cortical Excitatory Neuron Differentiation and](sources/st_2023_loss_cntnap2_alters_human_cortical_excitatory_neuron.md)
+- 📄 [St 2023 — Loss of CNTNAP2 Alters Human Cortical Excitatory Neuron Differentiation and](sources/st_2023_loss_cntnap2_alters_human_cortical_excitatory_neuron.md) — deeply ingested; CNTNAP2-null isogenic cortical model, excitatory-subtype shift + triphasic network hyperexcitability.
 - · [Schafer 2023 — An in vivo neuroimmune organoid model to study human microglia phenotypes.](sources/schafer_2023_vivo_neuroimmune_organoid_model_study_human_microglia.md)
 - 📄 [Fleck 2023 — Inferring and perturbing cell fate regulomes in human brain organoids.](sources/fleck_2023_inferring_perturbing_cell_fate_regulomes_human_brain.md)
 - 📄 [Kang 2024 — Germline PTEN genotype-dependent phenotypic divergence during the early neu](sources/kang_2024_germline_pten_genotype_dependent_phenotypic_divergence_during.md) - deeply ingested; isogenic PTEN G132D (ASD) vs M134R (cancer) forebrain organoids, AKT-graded early-stage divergence, partial Perifosine rescue (Table-1 PTEN gene×background).
