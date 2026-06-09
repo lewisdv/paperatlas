@@ -8,7 +8,8 @@ pmid: 37704762
 authors: Li C et al.
 journal: Nature (2023)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/li_2023_single_cell_brain_organoid_screening_identifies_developmental.pdf
+pdf_status: downloaded
 ---
 
 # Single-cell brain organoid screening identifies developmental defects in autism.

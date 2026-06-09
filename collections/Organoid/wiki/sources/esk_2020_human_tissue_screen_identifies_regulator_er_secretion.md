@@ -8,7 +8,7 @@ pmid: 33122427
 authors: Esk C et al.
 journal: Science (New York, N.Y.) (2020)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # A human tissue screen identifies a regulator of ER secretion as a brain-size determinant.

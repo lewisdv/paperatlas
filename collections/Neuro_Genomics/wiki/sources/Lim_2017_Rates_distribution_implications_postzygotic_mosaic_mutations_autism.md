@@ -8,7 +8,8 @@ pmid: 28714951
 authors: Lim ET et al.
 journal: Nature neuroscience (2017)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Lim_2017_Rates_distribution_implications_postzygotic_mosaic_mutations_autism.pdf
+pdf_status: downloaded
 ---
 
 # Rates, distribution and implications of postzygotic mosaic mutations in autism spectrum disorder.

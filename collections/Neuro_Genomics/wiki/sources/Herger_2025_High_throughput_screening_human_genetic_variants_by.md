@@ -8,7 +8,7 @@ pmid: 40120586
 authors: Herger M et al.
 journal: Cell genomics (2025)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # High-throughput screening of human genetic variants by pooled prime editing.

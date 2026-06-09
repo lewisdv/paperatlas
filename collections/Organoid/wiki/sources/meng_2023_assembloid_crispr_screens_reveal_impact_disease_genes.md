@@ -8,7 +8,8 @@ pmid: 37758944
 authors: Meng X et al.
 journal: Nature (2023)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/meng_2023_assembloid_crispr_screens_reveal_impact_disease_genes.pdf
+pdf_status: downloaded
 ---
 
 # Assembloid CRISPR screens reveal impact of disease genes in human neurodevelopment.
