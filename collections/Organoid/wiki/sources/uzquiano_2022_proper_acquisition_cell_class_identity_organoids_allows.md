@@ -8,7 +8,7 @@ pmid: 36179669
 authors: Uzquiano A et al.
 journal: Cell (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Proper acquisition of cell class identity in organoids allows definition of fate specification programs of the human cerebral cortex.

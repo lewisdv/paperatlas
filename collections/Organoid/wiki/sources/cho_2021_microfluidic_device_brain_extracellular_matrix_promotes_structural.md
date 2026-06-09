@@ -8,7 +8,8 @@ pmid: 34354063
 authors: Cho AN et al.
 journal: Nature communications (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/cho_2021_microfluidic_device_brain_extracellular_matrix_promotes_structural.pdf
+pdf_status: downloaded
 ---
 
 # Microfluidic device with brain extracellular matrix promotes structural and functional maturation of human brain organoids.

@@ -8,7 +8,8 @@ pmid: 36253568
 authors: Eichmüller OL et al.
 journal: Nature reviews. Neurology (2022)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/eichmller_2022_human_cerebral_organoids_new_tool_clinical_neurology.pdf
+pdf_status: downloaded
 ---
 
 # Human cerebral organoids - a new tool for clinical neurology research.

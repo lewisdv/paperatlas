@@ -8,7 +8,8 @@ pmid: 30886407
 authors: Giandomenico SL et al.
 journal: Nature neuroscience (2019)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/giandomenico_2019_cerebral_organoids_at_air_liquid_interface_generate.pdf
+pdf_status: downloaded
 ---
 
 # Cerebral organoids at the air-liquid interface generate diverse nerve tracts with functional output.

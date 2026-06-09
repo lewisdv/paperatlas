@@ -8,7 +8,7 @@ pmid: 32017900
 authors: Hyun I et al.
 journal: Brain research (2020)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Ethical issues related to brain organoid research.
