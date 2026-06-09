@@ -8,7 +8,7 @@ pmid: 23613074
 authors: Christensen J et al.
 journal: JAMA (2013)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Prenatal valproate exposure and risk of autism spectrum disorders and childhood autism.

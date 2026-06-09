@@ -8,7 +8,7 @@ pmid: 26406371
 authors: Pollen AA et al.
 journal: Cell (2015)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Molecular identity of human outer radial glia during cortical development.

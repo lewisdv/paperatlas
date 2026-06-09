@@ -8,7 +8,7 @@ pmid: 28111201
 authors: Bershteyn M et al.
 journal: Cell stem cell (2017)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Human iPSC-Derived Cerebral Organoids Model Cellular Features of Lissencephaly and Reveal Prolonged Mitosis of Outer Radial Glia.

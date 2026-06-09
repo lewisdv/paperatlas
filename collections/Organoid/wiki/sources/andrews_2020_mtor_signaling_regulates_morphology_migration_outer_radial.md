@@ -8,7 +8,8 @@ pmid: 32876565
 authors: Andrews MG et al.
 journal: eLife (2020)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/andrews_2020_mtor_signaling_regulates_morphology_migration_outer_radial.pdf
+pdf_status: downloaded
 ---
 
 # mTOR signaling regulates the morphology and migration of outer radial glia in developing human cortex.

@@ -8,7 +8,7 @@ pmid: 24267887
 authors: Parikshak NN et al.
 journal: Cell (2013)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Integrative functional genomic analyses implicate specific molecular pathways and circuits in autism.

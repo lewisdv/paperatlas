@@ -8,7 +8,8 @@ pmid: 24132240
 authors: Shcheglovitov A et al.
 journal: Nature (2013)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/shcheglovitov_2013_shank3_igf1_restore_synaptic_deficits_neurons_22q13.pdf
+pdf_status: downloaded
 ---
 
 # SHANK3 and IGF1 restore synaptic deficits in neurons from 22q13 deletion syndrome patients.

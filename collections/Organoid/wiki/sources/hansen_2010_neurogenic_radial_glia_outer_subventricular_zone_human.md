@@ -8,7 +8,8 @@ pmid: 20154730
 authors: Hansen DV et al.
 journal: Nature (2010)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/hansen_2010_neurogenic_radial_glia_outer_subventricular_zone_human.pdf
+pdf_status: downloaded
 ---
 
 # Neurogenic radial glia in the outer subventricular zone of human neocortex.
