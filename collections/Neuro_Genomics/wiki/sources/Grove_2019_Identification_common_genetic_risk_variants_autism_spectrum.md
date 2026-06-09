@@ -8,7 +8,8 @@ pmid: 30804558
 authors: Grove J et al.
 journal: Nature genetics (2019)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Grove_2019_Identification_common_genetic_risk_variants_autism_spectrum.pdf
+pdf_status: downloaded
 ---
 
 # Identification of common genetic risk variants for autism spectrum disorder.
