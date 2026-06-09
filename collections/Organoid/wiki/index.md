@@ -230,7 +230,7 @@ Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA ful
 - 📄 [Hébert 2008 — The genetics of early telencephalon patterning: some assembly required.](sources/hbert_2008_genetics_early_telencephalon_patterning_some_assembly_required.md)
 - · [Shimojo 2008 — Oscillations in notch signaling regulate maintenance of neural progenitors.](sources/shimojo_2008_oscillations_notch_signaling_regulate_maintenance_neural_progenitors.md)
 - · [Sessa 2008 — Tbr2 directs conversion of radial glia into basal precursors and guides neu](sources/sessa_2008_tbr2_directs_conversion_radial_glia_into_basal.md)
-- 📄 [Hansen 2010 — Neurogenic radial glia in the outer subventricular zone of human neocortex.](sources/hansen_2010_neurogenic_radial_glia_outer_subventricular_zone_human.md)
+- 📄 [Hansen 2010 — Neurogenic radial glia in the outer subventricular zone of human neocortex.](sources/hansen_2010_neurogenic_radial_glia_outer_subventricular_zone_human.md) - deeply ingested; defines human oRG/OSVZ progenitors (MST, self-renewal, Notch); human-specific oRG basis for the ASD review.
 - 📄 [Rash 2011 — FGF signaling expands embryonic cortical surface area by regulating Notch-d](sources/rash_2011_fgf_signaling_expands_embryonic_cortical_surface_area.md)
 - 📄 [Lancaster 2013 — Cerebral organoids model human brain development and microcephaly.](sources/lancaster_2013_cerebral_organoids_model_human_brain_development_microcephaly.md) - deeply ingested; founding unguided cerebral-organoid protocol, oRG/OSVZ, CDK5RAP2 microcephaly model.
 - 📄 [Shcheglovitov 2013 — SHANK3 and IGF1 restore synaptic deficits in neurons from 22q13 deletion sy](sources/shcheglovitov_2013_shank3_igf1_restore_synaptic_deficits_neurons_22q13.md) - deeply ingested; SHANK3/22q13 iPSC-neuron synaptopathy + IGF-1 rescue.
@@ -246,7 +246,7 @@ Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA ful
 - 📄 [Quadrato 2017 — Cell diversity and network dynamics in photosensitive human brain organoids](sources/quadrato_2017_cell_diversity_network_dynamics_photosensitive_human_brain.md)
 - · [Fiddes 2018 — Human-Specific NOTCH2NL Genes Affect Notch Signaling and Cortical Neurogene](sources/fiddes_2018_human_specific_notch2nl_genes_affect_notch_signaling.md)
 - · [Suzuki 2018 — Human-Specific NOTCH2NL Genes Expand Cortical Neurogenesis through Delta/No](sources/suzuki_2018_human_specific_notch2nl_genes_expand_cortical_neurogenesis.md)
-- 📄 [Blair 2018 — Genetically engineered human cortical spheroid models of tuberous sclerosis](sources/blair_2018_genetically_engineered_human_cortical_spheroid_models_tuberous.md)
+- 📄 [Blair 2018 — Genetically engineered human cortical spheroid models of tuberous sclerosis](sources/blair_2018_genetically_engineered_human_cortical_spheroid_models_tuberous.md) - deeply ingested; TSC1/2 CRISPR cortical spheroids, mTORC1/STAT3 glial bias, second-hit tuber cells, window-dependent rapamycin rescue (Table-1 TSC + drug-screening proof-of-concept).
 - · [Amiri 2018 — Transcriptome and epigenome landscape of human cortical development modeled](sources/amiri_2018_transcriptome_epigenome_landscape_human_cortical_development_modeled.md)
 - 📄 [Mansour 2018 — An in vivo model of functional and vascularized human brain organoids.](sources/mansour_2018_vivo_model_functional_vascularized_human_brain_organoids.md)
 - · [Pollen 2019 — Establishing Cerebral Organoids as Models of Human-Specific Brain Evolution](sources/pollen_2019_establishing_cerebral_organoids_as_models_human_specific.md)
@@ -277,5 +277,5 @@ Imported 53 cited references from `manuscript_brain_organoid_v6` (26 with OA ful
 - 📄 [St 2023 — Loss of CNTNAP2 Alters Human Cortical Excitatory Neuron Differentiation and](sources/st_2023_loss_cntnap2_alters_human_cortical_excitatory_neuron.md)
 - · [Schafer 2023 — An in vivo neuroimmune organoid model to study human microglia phenotypes.](sources/schafer_2023_vivo_neuroimmune_organoid_model_study_human_microglia.md)
 - 📄 [Fleck 2023 — Inferring and perturbing cell fate regulomes in human brain organoids.](sources/fleck_2023_inferring_perturbing_cell_fate_regulomes_human_brain.md)
-- 📄 [Kang 2024 — Germline PTEN genotype-dependent phenotypic divergence during the early neu](sources/kang_2024_germline_pten_genotype_dependent_phenotypic_divergence_during.md)
+- 📄 [Kang 2024 — Germline PTEN genotype-dependent phenotypic divergence during the early neu](sources/kang_2024_germline_pten_genotype_dependent_phenotypic_divergence_during.md) - deeply ingested; isogenic PTEN G132D (ASD) vs M134R (cancer) forebrain organoids, AKT-graded early-stage divergence, partial Perifosine rescue (Table-1 PTEN gene×background).
 - 📄 [Tenreiro 2025 — MeCP2 regulates telencephalic development in human cerebral organoids.](sources/tenreiro_2025_mecp2_regulates_telencephalic_development_human_cerebral_organoids.md)
