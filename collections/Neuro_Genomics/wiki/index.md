@@ -83,7 +83,7 @@
 
 Imported 25 cited references from `manuscript_brain_organoid_v6` (17 with OA full text, rest abstract-level). status: pending_ingest until deep-ingested.
 
-- 📄 [Brunetti-Pierri 2008 — Recurrent reciprocal 1q21.1 deletions and duplications associated with micr](sources/BrunettiPierri_2008_Recurrent_reciprocal_1q21_1_deletions_duplications_associated.md)
+- ✅ [Brunetti-Pierri 2008 — Recurrent reciprocal 1q21.1 deletions and duplications associated with micr](sources/BrunettiPierri_2008_Recurrent_reciprocal_1q21_1_deletions_duplications_associated.md) — deep-ingested 2026-06-09 (1q21.1 reciprocal CNV; dosage→head size; HYDIN paralog candidate).
 - · [Christensen 2013 — Prenatal valproate exposure and risk of autism spectrum disorders and child](sources/Christensen_2013_Prenatal_valproate_exposure_risk_autism_spectrum_disorders.md)
 - · [Willsey 2013 — Coexpression networks implicate human midfetal deep cortical projection neu](sources/Willsey_2013_Coexpression_networks_implicate_human_midfetal_deep_cortical.md)
 - · [Parikshak 2013 — Integrative functional genomic analyses implicate specific molecular pathwa](sources/Parikshak_2013_Integrative_functional_genomic_analyses_implicate_specific_molecular.md)
@@ -103,8 +103,8 @@ Imported 25 cited references from `manuscript_brain_organoid_v6` (17 with OA ful
 - · [Cheng 2023 — Accurate proteome-wide missense variant effect prediction with AlphaMissens](sources/Cheng_2023_Accurate_proteome_wide_missense_variant_effect_prediction.md)
 - 📄 [Shaw 2025 — Prevalence and Early Identification of Autism Spectrum Disorder Among Child](sources/Shaw_2025_Prevalence_Early_Identification_Autism_Spectrum_Disorder_Among.md)
 - 📄 [Litman 2025 — Decomposition of phenotypic heterogeneity in autism reveals underlying gene](sources/Litman_2025_Decomposition_phenotypic_heterogeneity_autism_reveals_underlying_genetic.md)
-- 📄 [Sahu 2025 — Saturation genome editing-based clinical classification of BRCA2 variants.](sources/Sahu_2025_Saturation_genome_editing_based_clinical_classification_BRCA2.md)
-- 📄 [Beltran 2025 — Site-saturation mutagenesis of 500 human protein domains.](sources/Beltran_2025_Site_saturation_mutagenesis_500_human_protein_domains.md)
+- ✅ [Sahu 2025 — Saturation genome editing-based clinical classification of BRCA2 variants.](sources/Sahu_2025_Saturation_genome_editing_based_clinical_classification_BRCA2.md) — deep-ingested 2026-06-09 (BRCA2 CTDB SGE; 6,551 SNVs; ACMG/AMP map; SGE template).
+- ✅ [Beltran 2025 — Site-saturation mutagenesis of 500 human protein domains.](sources/Beltran_2025_Site_saturation_mutagenesis_500_human_protein_domains.md) — deep-ingested 2026-06-09 (Human Domainome 1; 563,534 variants / 522 domains; MaveDB-style stability reference).
 - · [Hemker 2025 — Saturation mapping of MUTYH variant effects using DNA repair reporters.](sources/Hemker_2025_Saturation_mapping_MUTYH_variant_effects_DNA_repair.md)
 - · [Herger 2025 — High-throughput screening of human genetic variants by pooled prime editing](sources/Herger_2025_High_throughput_screening_human_genetic_variants_by.md)
 - 📄 [Tangermann 2026 — Saturation mutagenesis identifies activating and resistance-inducing FGFR k](sources/Tangermann_2026_Saturation_mutagenesis_identifies_activating_resistance_inducing_FGFR.md)
