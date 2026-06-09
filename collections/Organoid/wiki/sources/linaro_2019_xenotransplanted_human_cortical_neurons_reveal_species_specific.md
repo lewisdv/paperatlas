@@ -68,7 +68,7 @@ How neural circuits develop in the human brain has remained almost impossible to
 ## Related
 
 - [mansour_2018](mansour_2018_vivo_model_functional_vascularized_human_brain_organoids.md) — in vivo engraftment of whole human brain organoids into mouse (vascularization/integration); complementary transplantation approach with more synchronous activity.
-- [host-context-transplantation-and-repair-validation](../concepts/host-context-transplantation-and-repair-validation.md)
+- [host-context-transplantation-and-repair-validation](../entities/host-context-transplantation-and-repair-validation.md)
 - [host-circuit-engagement](../entities/host-circuit-engagement.md)
 - [organoid-functional-assays-transplantation-and-coculture](../concepts/organoid-functional-assays-transplantation-and-coculture.md)
 - [calcium-imaging-readouts](../entities/calcium-imaging-readouts.md)
