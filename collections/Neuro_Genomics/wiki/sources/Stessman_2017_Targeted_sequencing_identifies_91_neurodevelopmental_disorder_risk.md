@@ -8,7 +8,8 @@ pmid: 28191889
 authors: Stessman HA et al.
 journal: Nature genetics (2017)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Stessman_2017_Targeted_sequencing_identifies_91_neurodevelopmental_disorder_risk.pdf
+pdf_status: downloaded
 ---
 
 # Targeted sequencing identifies 91 neurodevelopmental-disorder risk genes with autism and developmental-disability biases.

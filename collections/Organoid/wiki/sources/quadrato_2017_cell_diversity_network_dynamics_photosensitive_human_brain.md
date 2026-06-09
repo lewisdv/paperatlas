@@ -8,7 +8,8 @@ pmid: 28445462
 authors: Quadrato G et al.
 journal: Nature (2017)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/quadrato_2017_cell_diversity_network_dynamics_photosensitive_human_brain.pdf
+pdf_status: downloaded
 ---
 
 # Cell diversity and network dynamics in photosensitive human brain organoids.

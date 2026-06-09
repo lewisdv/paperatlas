@@ -8,7 +8,7 @@ pmid: 27064148
 authors: Garcez PP et al.
 journal: Science (New York, N.Y.) (2016)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Zika virus impairs growth in human neurospheres and brain organoids.
