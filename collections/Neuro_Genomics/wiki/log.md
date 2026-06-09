@@ -521,3 +521,11 @@
 - Source page: wiki/sources/Boix_2020_EpiMap_Degidiba_regulatory_circuit_interpretation.md
 
 - 2026-06-09: imported 25 manuscript-cited references (source_ref: manuscript_brain_organoid_v6); 17 OA PDFs downloaded, 8 abstract-level; all created as pending_ingest source pages.
+
+## 2026-06-09 – deep ingest: 3 papers supporting "Programmable Brain Organoids for Proactive Autism Genetics" review
+
+Themes: postzygotic/mosaic mutations; ACMG/ClinGen PS3/BS3 functional-evidence calibration; targeted NDD gene discovery. Read full text via pdftotext from raw PDFs. Each page: frontmatter `status: pending_ingest`→`ingested` + `deep_ingested: 2026-06-09`; kept Title/Source/Abstract; replaced Summary stub with Key findings / Methods / Relevance to the brain-organoid ASD review / Open questions·limitations; cross-linked the three pages.
+
+- Lim 2017 (PZMs in ASD) — ~7.5% of detectable DNMs are postzygotic (9.7% × 0.84 × 0.92; WES-limited floor); 5,947 trios; Group A/B/C = 4,846/1,113/468; 83.3% of Group C novel; KLF16, MSANTD2 genome-wide; SCN2A/HNRNPU/SMARCA4. wiki/sources/Lim_2017_Rates_distribution_implications_postzygotic_mosaic_mutations_autism.md
+- Brnich 2019 (PS3/BS3) — OddsPath calibration (PS3_supporting >2.1, PS3_moderate >4.3, PS3 >18.7, PS3_very_strong >350; BS3 <0.053); ≥11 mixed controls → moderate, ≤10 → supporting, strong needs statistical OddsPath; 4-step framework. wiki/sources/Brnich_2019_Recommendations_application_functional_evidence_PS3_BS3_criterion.md
+- Stessman 2017 (targeted NDD seq) — 208 genes via smMIPs in >11,730 cases; 91 risk genes (38 new), 5.7% of cases; 78 de novo-significant (32 novel); 25 ASD-vs-ID-biased; NAA15/KMT5B/ASH1L follow-up; Drosophila habituation assay. wiki/sources/Stessman_2017_Targeted_sequencing_identifies_91_neurodevelopmental_disorder_risk.md
