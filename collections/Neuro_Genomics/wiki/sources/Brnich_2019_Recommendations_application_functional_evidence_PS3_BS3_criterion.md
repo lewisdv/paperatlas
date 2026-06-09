@@ -8,7 +8,8 @@ pmid: 31892348
 authors: Brnich SE et al.
 journal: Genome medicine (2019)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Brnich_2019_Recommendations_application_functional_evidence_PS3_BS3_criterion.pdf
+pdf_status: downloaded
 ---
 
 # Recommendations for application of the functional evidence PS3/BS3 criterion using the ACMG/AMP sequence variant interpretation framework.

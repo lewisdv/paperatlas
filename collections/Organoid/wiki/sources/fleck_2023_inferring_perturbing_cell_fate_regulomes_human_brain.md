@@ -8,7 +8,8 @@ pmid: 36198796
 authors: Fleck JS et al.
 journal: Nature (2023)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/fleck_2023_inferring_perturbing_cell_fate_regulomes_human_brain.pdf
+pdf_status: downloaded
 ---
 
 # Inferring and perturbing cell fate regulomes in human brain organoids.

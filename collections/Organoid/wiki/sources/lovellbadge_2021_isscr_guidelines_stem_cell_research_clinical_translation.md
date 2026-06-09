@@ -8,7 +8,8 @@ pmid: 34048692
 authors: Lovell-Badge R et al.
 journal: Stem cell reports (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/lovellbadge_2021_isscr_guidelines_stem_cell_research_clinical_translation.pdf
+pdf_status: downloaded
 ---
 
 # ISSCR Guidelines for Stem Cell Research and Clinical Translation: The 2021 update.
