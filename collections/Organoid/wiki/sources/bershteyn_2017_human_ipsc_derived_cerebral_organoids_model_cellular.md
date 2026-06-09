@@ -65,5 +65,5 @@ Disease model: Miller-Dieker syndrome (MDS), the most severe classical lissencep
 
 ## Related
 
-- [pollen_2015_molecular_identity_of_human_outer_radial_glia_during_cortical_development](pollen_2015_molecular_identity_of_human_outer_radial_glia_during_cortical_development.md) — source of the oRG molecular signature used to identify organoid oRG-like cells.
-- [camp_2015_human_cerebral_organoids_recapitulate_gene_expression](camp_2015_human_cerebral_organoids_recapitulate_gene_expression.md) — organoid-vs-fetal transcriptomic concordance cited as basis for trusting organoid RG identity.
+- [pollen_2015_molecular_identity_human_outer_radial_glia_during](pollen_2015_molecular_identity_human_outer_radial_glia_during.md) — source of the oRG molecular signature used to identify organoid oRG-like cells.
+- [camp_2015_human_cerebral_organoids_recapitulate_gene_expression_programs](camp_2015_human_cerebral_organoids_recapitulate_gene_expression_programs.md) — organoid-vs-fetal transcriptomic concordance cited as basis for trusting organoid RG identity.
