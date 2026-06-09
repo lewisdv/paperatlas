@@ -8,7 +8,7 @@ pmid: 40093110
 authors: Hemker SL et al.
 journal: bioRxiv : the preprint server for biology (2025)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Saturation mapping of MUTYH variant effects using DNA repair reporters.

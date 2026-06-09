@@ -8,7 +8,8 @@ pmid: 41361008
 authors: Tangermann C et al.
 journal: Nature genetics (2026)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Tangermann_2026_Saturation_mutagenesis_identifies_activating_resistance_inducing_FGFR.pdf
+pdf_status: downloaded
 ---
 
 # Saturation mutagenesis identifies activating and resistance-inducing FGFR kinase domain mutations.

@@ -8,7 +8,8 @@ pmid: 31395865
 authors: Kircher M et al.
 journal: Nature communications (2019)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Neuro_Genomics/raw/sources/Kircher_2019_Saturation_mutagenesis_twenty_disease_associated_regulatory_elements.pdf
+pdf_status: downloaded
 ---
 
 # Saturation mutagenesis of twenty disease-associated regulatory elements at single base-pair resolution.
