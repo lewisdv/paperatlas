@@ -8,7 +8,8 @@ pmid: 37001843
 authors: St George-Hyslop F et al.
 journal: Biological psychiatry (2023)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/st_2023_loss_cntnap2_alters_human_cortical_excitatory_neuron.pdf
+pdf_status: downloaded
 ---
 
 # Loss of CNTNAP2 Alters Human Cortical Excitatory Neuron Differentiation and Neural Network Development.

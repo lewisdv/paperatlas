@@ -8,7 +8,8 @@ pmid: 19143049
 authors: Hébert JM et al.
 journal: Nature reviews. Neuroscience (2008)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/hbert_2008_genetics_early_telencephalon_patterning_some_assembly_required.pdf
+pdf_status: downloaded
 ---
 
 # The genetics of early telencephalon patterning: some assembly required.
