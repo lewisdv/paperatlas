@@ -8,7 +8,7 @@ pmid: 33765444
 authors: Benito-Kwiecinski S et al.
 journal: Cell (2021)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # An early cell shape transition drives evolutionary expansion of the human forebrain.

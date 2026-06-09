@@ -8,7 +8,8 @@ pmid: 30127391
 authors: Blair JD et al.
 journal: Nature medicine (2018)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/blair_2018_genetically_engineered_human_cortical_spheroid_models_tuberous.pdf
+pdf_status: downloaded
 ---
 
 # Genetically engineered human cortical spheroid models of tuberous sclerosis.

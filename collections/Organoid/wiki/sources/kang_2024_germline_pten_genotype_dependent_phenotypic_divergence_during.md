@@ -8,7 +8,8 @@ pmid: 38030818
 authors: Kang SC et al.
 journal: Molecular psychiatry (2024)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+raw_source: collections/Organoid/raw/sources/kang_2024_germline_pten_genotype_dependent_phenotypic_divergence_during.pdf
+pdf_status: downloaded
 ---
 
 # Germline PTEN genotype-dependent phenotypic divergence during the early neural developmental process of forebrain organoids.

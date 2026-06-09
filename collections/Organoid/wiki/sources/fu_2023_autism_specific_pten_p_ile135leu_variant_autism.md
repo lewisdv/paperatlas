@@ -8,7 +8,7 @@ pmid: 37098352
 authors: Fu S et al.
 journal: American journal of human genetics (2023)
 source_ref: manuscript_brain_organoid_v6
-pdf_status: pending
+pdf_status: not_found
 ---
 
 # Autism-specific PTEN p.Ile135Leu variant and an autism genetic background combine to dysregulate cortical neurogenesis.
