@@ -9,9 +9,12 @@
 - [SAVE: A Generalizable Framework for Multi-Condition Single-Cell Generation with Gene Block Attention](sources/li_2026_save_a_generalizable_framework_for.md) - ICLR 2026 paper on gene block attention, conditional flow matching, and multi-condition scRNA-seq generation.
 - [A generative AI framework unifies human multi-omics to model aging, metabolic health, and intervention response](sources/chen_2026_a_generative_ai_framework_unifies.md) - Cell Metabolism 2026 paper on AURORA, multimodal aging clocks, disease prediction, and perturbation-aware health modeling.
 - [A cell atlas foundation model for scalable search of similar human cells](sources/heimberg_2025_a_cell_atlas_foundation_model.md) - Nature paper on SCimilarity, metric-learning-based cell-state retrieval, large-scale annotation, and confidence-aware atlas search.
+- [Cell2Sentence: Teaching Large Language Models the Language of Biology](sources/levine_2024_cell2sentence_teaching_llms_biology.md) - ICML 2024 paper introducing rank-ordered cell sentences for LLM-based cell generation, label prediction, and text generation.
 - [Scaling Large Language Models for Next-Generation Single-Cell Analysis](sources/rizvi_2025_scaling_large_language_models_for.md) - 2025 preprint on C2S-Scale, cell sentences, multimodal LLM training, perturbation prediction, and natural-language single-cell reasoning.
 - [scGPT: toward building a foundation model for single-cell multi-omics using generative AI](sources/cui_2024_scgpt_toward_building_a_foundation.md) - Nature Methods paper on generative pretraining over 33 million cells for annotation, integration, perturbation prediction, and gene-network inference.
 - [Large-scale foundation model on single-cell transcriptomics](sources/hao_2024_large-scale_foundation_model_on_single-cell.md) - Nature Methods paper on scFoundation, read-depth-aware pretraining, large-scale embeddings, and broad downstream transfer.
+- [Transfer learning enables predictions in network biology](sources/theodoris_2023_transfer_learning_network_biology_Geneformer.md) - Nature paper on Geneformer, corpus-normalized rank-value encoding, low-data network transfer, and experimentally tested cardiomyopathy targets.
+- [CellFM: a large-scale foundation model pre-trained on transcriptomics of 100 million human cells](sources/CellFM_Zeng_2025_100M_cells_RetNet_atlas_scale_baseline.md) - Nature Communications paper on 102.3M-cell pretraining, continuous value projection, ERetNet scaling, and multi-task transfer.
 - [Learning single-cell perturbation responses using neural optimal transport](sources/bunne_2023_learning_single-cell_perturbation_responses_using.md) - Nature Methods paper on CellOT, neural optimal transport, unpaired perturbation-response prediction, and generalization across patients, species, and developmental settings.
 - [Cell2fate infers RNA velocity modules to improve cell fate prediction](sources/aivazidis_2025_cell2fate_infers_rna_velocity_modules.md) - Nature Methods paper on Bayesian RNA velocity, interpretable module decomposition, uncertainty-aware fate inference, and spatial mapping of transcriptional dynamics.
 - [How to build the virtual cell with artificial intelligence: Priorities and opportunities](sources/bunne_2024_how_to_build_the_virtual.md) - Cell perspective on AI virtual cells, universal representations, virtual instruments, and a collaborative roadmap for multi-scale biological simulation.
@@ -33,7 +36,6 @@
 - [Transcriptomic sex differences in postmortem brain samples from patients with psychiatric disorders](sources/xia_2024_transcriptomic_sex_differences_in_postmortem.md) - Science Translational Medicine study of sex-stratified psychiatric transcriptomic burden across 2,160 PsychENCODE postmortem brain samples and coexpression networks.
 - [Tahoe-x1 Gandhi 2025 drug token perturbation scFM 3B parameter](sources/Tahoe_x1_Gandhi_2025_drug_token_perturbation_scFM_3B.md) - paper source queued for ingest.
 - [scLAMBDA Wang 2024 CRISPR perturbation multi gene response prediction](sources/scLAMBDA_Wang_2024_CRISPR_perturbation_multi_gene_response.md) - paper source queued for ingest.
-- [CellFM Zeng 2025 100M cells RetNet atlas scale baseline](sources/CellFM_Zeng_2025_100M_cells_RetNet_atlas_scale_baseline.md) - paper source queued for ingest.
 - [scPRINT 2 Kalfon 2025 benchmark first scFM 350M cells 16 organisms](sources/scPRINT_2_Kalfon_2025_benchmark_first_scFM_350M_cells_16.md) - paper source queued for ingest.
 - [Nicheformer Schaar 2024 spatial dissociated scFM SpatialCorpus 110M](sources/Nicheformer_Schaar_2024_spatial_dissociated_scFM.md) - paper source queued for ingest.
 - [TEDDY Chevalier 2025 disease ontology supervision scFM 116M cells](sources/TEDDY_Chevalier_2025_disease_ontology_supervision_scFM_116M.md) - paper source queued for ingest.
@@ -67,14 +69,24 @@
 - [Zhang 2026 iGOF Perturb seq mouse astrocyte Brain Atlas entry](sources/Zhang_2026_iGOF_Perturb_seq_mouse_astrocyte_Brain_Atlas.md) - paper source queued for ingest.
 - [Benjamin Zador 2026 TissueFormer Brain Atlas entry](sources/Benjamin_Zador_2026_TissueFormer_Brain_Atlas_entry.md) - paper source queued for ingest.
 - [cellNexus 2026 HCA QC annotation Brain Atlas entry](sources/cellNexus_2026_HCA_QC_annotation_Brain_Atlas_entry.md) - paper source queued for ingest.
+
+- [Mosaic integration and knowledge transfer of single-cell multimodal data with MIDAS](sources/he_2024_midas_mosaic_integration_knowledge_transfer.md) - Nature Biotechnology 2024 paper on probabilistic mosaic RNA/ATAC/ADT integration, missing-modality imputation, and reference transfer.
+- [Multi-omics single-cell data integration and regulatory inference with graph-linked embedding](sources/cao_2022_glue_multi-omics_integration_regulatory_inference.md) - Nature Biotechnology 2022 paper on graph-guided unpaired integration and cross-omics regulatory inference.
+- [MultiVI: deep generative model for the integration of multimodal data](sources/ashuach_2023_multivi_deep_generative_multimodal_integration.md) - Nature Methods 2023 paper on uncertainty-aware probabilistic integration and imputation across paired and single-modality data.
+- [scMODAL: a general deep learning framework for comprehensive single-cell multi-omics data alignment with feature links](sources/wang_2025_scmodal_alignment_with_feature_links.md) - Nature Communications 2025 paper on feature-link-guided adversarial alignment of unpaired single-cell modalities.
+- [scMultiMap: Cell-type-specific mapping of enhancers and target genes from single-cell multimodal data](sources/su_2025_scmultimap_enhancer_target_gene_mapping.md) - Nature Communications 2025 paper on analytic enhancer-gene association testing from paired RNA and ATAC counts.
+- [scooby: Modeling multi-modal genomic profiles from DNA sequence at single-cell resolution](sources/hingerl_2024_scooby_multimodal_genomic_profiles.md) - 2024 preprint on Borzoi-based DNA-to-single-cell RNA and ATAC profile prediction.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
 - [AURORA](entities/AURORA.md) - Generative framework for unifying fragmented multi-omics and phenotypic data into shared digital human representations.
 - [SCimilarity](entities/SCimilarity.md) - Metric-learning foundation model for pan-body retrieval of transcriptionally similar cells.
+- [Cell2Sentence](entities/Cell2Sentence.md) - Framework that serializes expression-ranked gene names as text for LLM-based single-cell modeling.
 - [C2S-Scale](entities/C2S-Scale.md) - LLM family that treats transcriptomes as language-like sequences for multimodal single-cell analysis.
 - [scGPT](entities/scGPT.md) - Generative pretrained transformer foundation model for single-cell omics and transfer learning across downstream tasks.
 - [scFoundation](entities/scFoundation.md) - Large read-depth-aware foundation model for transcriptomic embeddings and lightweight downstream transfer.
+- [Geneformer](entities/Geneformer.md) - Rank-value-encoded Transformer for low-data, context-specific network biology and disease-target transfer.
+- [CellFM](entities/CellFM.md) - 800M-parameter continuous-value, retention-based model pretrained on 102.3M human cells.
 - [CellOT](entities/CellOT.md) - Neural optimal transport model for predicting perturbation responses from unpaired single-cell populations.
 - [Cell2fate](entities/Cell2fate.md) - Fully Bayesian RNA-velocity model with interpretable dynamic modules and posterior uncertainty estimates.
 - [AIVC](entities/AIVC.md) - Proposed AI virtual cell framework for multi-scale, multi-modal biological representation and simulation.
@@ -86,6 +98,12 @@
 - [GPerturb](entities/GPerturb.md) - Sparse additive Gaussian-process model for interpretable gene-level perturbation-effect estimation.
 - [Orthrus](entities/Orthrus.md) - Mature RNA foundation model pretrained with biologically motivated contrastive objectives over isoforms and orthologs.
 - [HNOCA](entities/HNOCA.md) - Integrated Human Neural Organoid Cell Atlas used for reference mapping, protocol comparison, and disease-model projection.
+- [MIDAS](entities/MIDAS.md) - Deep generative framework for mosaic RNA/ATAC/ADT integration, imputation, batch correction, and model transfer.
+- [GLUE](entities/GLUE.md) - Graph-guided framework for unpaired single-cell multi-omics integration and regulatory inference.
+- [MultiVI](entities/MultiVI.md) - Probabilistic model for paired, unpaired, and mosaic multimodal integration with uncertainty-aware imputation.
+- [scMODAL](entities/scMODAL.md) - Feature-link-guided adversarial framework for aligning unpaired single-cell modalities.
+- [scMultiMap](entities/scMultiMap.md) - Statistical method for cell-type-specific enhancer-gene association from paired RNA and ATAC counts.
+- [scooby](entities/scooby.md) - Cell-conditioned sequence-to-function model for single-cell RNA and ATAC profile prediction.
 
 ## Concepts
 
@@ -95,6 +113,10 @@
 - [Cell Sentences](concepts/cell-sentences.md) - Serializing transcriptomes into ranked gene-token sequences so standard LLMs can operate on them.
 - [Single-Cell Generative Pretraining](concepts/single-cell-generative-pretraining.md) - Pretraining large generative models on cell atlases before adapting them to multiple single-cell tasks.
 - [Read-Depth-Aware Pretraining](concepts/read-depth-aware-pretraining.md) - Pretraining that explicitly models sequencing-depth variation with source and target count indicators.
+- [Rank-Value Encoding](concepts/rank-value-encoding.md) - Corpus-normalized ordering of expressed genes by cell-state distinctiveness.
+- [Continuous Expression Value Projection](concepts/continuous-expression-value-projection.md) - Mapping scalar expression values directly into dense vectors while retaining quantitative resolution.
+- [Retention-Based Single-Cell Modeling](concepts/retention-based-single-cell-modeling.md) - Efficient retention architectures for processing long gene-token inputs at atlas scale.
+- [Embedding-Space In Silico Perturbation](concepts/embedding-space-in-silico-perturbation.md) - Deleting or repositioning gene tokens and measuring movement in learned gene or cell representations.
 - [Neural Optimal Transport](concepts/neural-optimal-transport.md) - Learning perturbation maps between unpaired cell-state distributions by parameterizing optimal transport with neural networks.
 - [RNA Velocity Modules](concepts/rna-velocity-modules.md) - Interpretable dynamic programs derived from RNA-velocity modeling over spliced and unspliced counts.
 - [Universal Representation](concepts/universal-representation.md) - Shared biological state embedding intended to align modalities, contexts, and physical scales.
@@ -115,6 +137,9 @@
 - [Region-Specific Developmental Trajectories](concepts/region-specific-developmental-trajectories.md) - Developmental paths whose regulatory programs diverge by anatomical region and provide trajectory-aware reference structure.
 - [Clinical Reinforcement-Learning Translation](concepts/clinical-reinforcement-learning-translation.md) - Deploying RL for patient-level sequential decision support under reward-design, interpretability, and workflow constraints.
 - [Sex-Stratified Transcriptomic Burden](concepts/sex-stratified-transcriptomic-burden.md) - Sex-specific differences in the magnitude and network organization of disease-associated transcriptomic dysregulation.
+- [Single-Cell Multimodal Integration Regimes](concepts/single-cell-multimodal-integration-regimes.md) - Distinguishing paired, unpaired, and mosaic integration by the correspondence available across modalities.
+- [Cell-Type-Specific Enhancer-Gene Mapping](concepts/cell-type-specific-enhancer-gene-mapping.md) - Linking accessible noncoding regions to target-gene expression within specific cell types or states.
+- [Sequence-to-Single-Cell Profile Modeling](concepts/sequence-to-single-cell-profile-modeling.md) - Predicting cell-specific molecular profiles from genomic sequence and a continuous cell representation.
 
 ## Queries
 
@@ -122,7 +147,7 @@
 - [How does this collection handle uncertainty, weak reference coverage, and low-confidence biological state assignment?](queries/uncertainty-coverage-and-low-confidence-state-assignment.md) - Comparison of fallback labels, retrieval confidence, and fidelity benchmarking as three different responses to weakly supported biological state assignment.
 - [How do the main single-cell foundation-model papers in this collection differ in their basic representation units?](queries/representation-units-in-single-cell-foundation-models.md) - Comparison of gene blocks, gene tokens with expression/context, ranked cell sentences, read-depth-aware expression modeling, external semantic feature embeddings, and retrieval embeddings.
 - [How does reinforcement learning appear at different scales in this collection?](queries/reinforcement-learning-at-different-scales.md) - Comparison of RL as developmental trajectory scoring in scRL versus patient-level dynamic treatment optimization in the clinical review literature.
-- [What does `multimodal` actually mean across this collection?](queries/what-multimodal-means-across-the-collection.md) - Comparison of multimodal completion, multimodal foundation-model roadmaps, atlas-style multimodal reference substrates, and virtual-cell-level multi-scale ambitions.
+- [What does `multimodal` actually mean across this collection?](queries/what-multimodal-means-across-the-collection.md) - Comparison of integration regimes, missing-modality completion, regulatory inference, sequence-to-profile prediction, foundation-model roadmaps, atlas substrates, and virtual-cell ambitions.
 - [How do virtual-cell roadmaps differ from multimodal foundation-model roadmaps in this collection?](queries/virtual-cell-vs-multimodal-foundation-roadmaps.md) - Comparison of AIVC-style universal-representation plus virtual-instrument roadmaps against Super Transformer and multimodal foundation-model architecture agendas.
 - [Which heterogeneity axes do the reference papers in this collection make hard to ignore?](queries/which-heterogeneity-axes-do-the-reference-papers-make-hard-to-ignore.md) - Comparison of sex-stratified burden, region-specific development, atlas fidelity, and multi-omic reference structure as evaluation constraints for later models.
 - [What does `similarity` mean across this collection?](queries/what-similarity-means-across-the-collection.md) - Comparison of retrieval similarity, contrastive RNA similarity, cross-modal latent equivalence, transport geometry, and reference fidelity.
@@ -138,3 +163,4 @@
 - [Reference Substrates, Heterogeneity, and Uncertainty as Evaluation Constraints in Deeplearning_Model](syntheses/reference-substrates-heterogeneity-and-uncertainty-as-evaluation-constraints.md) - Synthesis arguing that atlas substrates, heterogeneity anchors, and uncertainty policies now act as evaluation constraints on the predictive model papers.
 - [Reference Substrates and Queryable Biological Spaces in Deeplearning_Model](syntheses/reference-substrates-and-queryable-biological-spaces.md) - Focused synthesis separating queryable projection atlases, multi-omic developmental scaffolds, primary trajectory references, and perturbation-atlas roadmaps.
 - [Evaluation Task Families and Success Criteria in Deeplearning_Model](syntheses/evaluation-task-families-and-success-criteria.md) - Synthesis arguing that the collection is now best organized by evaluation task family rather than by shared architecture labels alone.
+- [Study Guide: scGPT, scFoundation, Geneformer, and CellFM](syntheses/scgpt-scfoundation-geneformer-cellfm-study-guide.md) - Four-model comparison organized by representation, pretraining target, adaptation style, perturbation semantics, and validation strength.

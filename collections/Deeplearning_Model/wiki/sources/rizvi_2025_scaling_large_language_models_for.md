@@ -52,8 +52,10 @@ This paper introduces C2S-Scale, a family of large language models for single-ce
 
 ## Related Pages
 
+- [Cell2Sentence](../entities/Cell2Sentence.md)
 - [C2S-Scale](../entities/C2S-Scale.md)
 - [Cell Sentences](../concepts/cell-sentences.md)
+- [Cell2Sentence: Teaching Large Language Models the Language of Biology](levine_2024_cell2sentence_teaching_llms_biology.md)
 
 ## Open Questions
 

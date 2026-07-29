@@ -34,3 +34,4 @@
 
 - [Single-Cell Generative Pretraining](../concepts/single-cell-generative-pretraining.md)
 - [Source: scGPT: toward building a foundation model for single-cell multi-omics using generative AI](../sources/cui_2024_scgpt_toward_building_a_foundation.md)
+- [Study Guide: scGPT, scFoundation, Geneformer, and CellFM](../syntheses/scgpt-scfoundation-geneformer-cellfm-study-guide.md)

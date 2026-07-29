@@ -8,6 +8,7 @@
 
 - C2S-Scale is a family of large language models for single-cell analysis built on the Cell2Sentence framework.
 - The source presents it as a general-purpose biological LLM that jointly models transcriptomic cell profiles, metadata, and natural-language biological context in one token space.
+- It extends the original 2024 [Cell2Sentence](Cell2Sentence.md) proof of concept from GPT-2/Pythia experiments to a larger, multi-task model family.
 
 ## Core Architecture
 
@@ -32,5 +33,7 @@
 
 ## Related
 
+- [Cell2Sentence](Cell2Sentence.md)
 - [Cell Sentences](../concepts/cell-sentences.md)
+- [Source: Cell2Sentence: Teaching Large Language Models the Language of Biology](../sources/levine_2024_cell2sentence_teaching_llms_biology.md)
 - [Source: Scaling Large Language Models for Next-Generation Single-Cell Analysis](../sources/rizvi_2025_scaling_large_language_models_for.md)

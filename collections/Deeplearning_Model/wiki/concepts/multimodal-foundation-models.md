@@ -12,6 +12,8 @@
 - [AURORA](../entities/AURORA.md) shows a broader human multi-omics generative system that uses a shared latent space to reconstruct missing modalities and support downstream prediction.
 - [AIVC](../entities/AIVC.md) extends the idea upward into a field-level roadmap for multi-scale virtual-cell simulation rather than only one molecular foundation model.
 - [Multi-Omic Developmental Atlases](multi-omic-developmental-atlases.md) are adjacent but distinct: they supply multimodal biological reference structure even when they are not themselves pretrained foundation models.
+- [MIDAS](../entities/MIDAS.md), [GLUE](../entities/GLUE.md), [MultiVI](../entities/MultiVI.md), and [scMODAL](../entities/scMODAL.md) are concrete multimodal integration systems rather than broad foundation models. Together they expose the paired, unpaired, and mosaic data constraints that a future MFM would need to absorb.
+- [scMultiMap](../entities/scMultiMap.md) and [scooby](../entities/scooby.md) cover two additional MFM ambitions without unifying the whole agenda: cross-modal regulatory inference and cell-conditioned sequence-to-profile prediction.
 
 ## Claimed Benefits
 
@@ -30,6 +32,7 @@
 
 - The collection currently contains more partial implementations and roadmaps than fully validated end-to-end MFMs.
 - Paired multimodal data remain scarce relative to the scale envisioned by the paradigm.
+- Unpaired and mosaic methods can reduce the need for cell-level pairing, but they replace it with guidance graphs, feature links, reference datasets, or model assumptions rather than eliminating supervision requirements.
 - Interpretability, hallucination control, uncertainty reporting, benchmarking, privacy, and compute access remain central open problems.
 
 ## Sources
@@ -37,3 +40,9 @@
 - [Towards multimodal foundation models in molecular cell biology](../sources/cui_2025_towards_multimodal_foundation_models_in.md)
 - [A generative AI framework unifies human multi-omics to model aging, metabolic health, and intervention response](../sources/chen_2026_a_generative_ai_framework_unifies.md)
 - [How to build the virtual cell with artificial intelligence: Priorities and opportunities](../sources/bunne_2024_how_to_build_the_virtual.md)
+- [Mosaic integration and knowledge transfer of single-cell multimodal data with MIDAS](../sources/he_2024_midas_mosaic_integration_knowledge_transfer.md)
+- [Multi-omics single-cell data integration and regulatory inference with graph-linked embedding](../sources/cao_2022_glue_multi-omics_integration_regulatory_inference.md)
+- [MultiVI: deep generative model for the integration of multimodal data](../sources/ashuach_2023_multivi_deep_generative_multimodal_integration.md)
+- [scMODAL: a general deep learning framework for comprehensive single-cell multi-omics data alignment with feature links](../sources/wang_2025_scmodal_alignment_with_feature_links.md)
+- [scMultiMap: Cell-type-specific mapping of enhancers and target genes from single-cell multimodal data](../sources/su_2025_scmultimap_enhancer_target_gene_mapping.md)
+- [scooby: Modeling multi-modal genomic profiles from DNA sequence at single-cell resolution](../sources/hingerl_2024_scooby_multimodal_genomic_profiles.md)

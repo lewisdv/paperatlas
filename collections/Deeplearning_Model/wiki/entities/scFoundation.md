@@ -34,3 +34,4 @@
 
 - [Read-Depth-Aware Pretraining](../concepts/read-depth-aware-pretraining.md)
 - [Source: Large-scale foundation model on single-cell transcriptomics](../sources/hao_2024_large-scale_foundation_model_on_single-cell.md)
+- [Study Guide: scGPT, scFoundation, Geneformer, and CellFM](../syntheses/scgpt-scfoundation-geneformer-cellfm-study-guide.md)

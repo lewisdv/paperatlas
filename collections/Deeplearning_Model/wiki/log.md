@@ -559,3 +559,77 @@
 - DOI: 10.1101/2026.04.14.718336
 - PDF: not_found
 - Source page: wiki/sources/cellNexus_2026_HCA_QC_annotation_Brain_Atlas_entry.md
+
+## [2026-07-29 14:43 KST] ingest queued | Transfer learning enables predictions in network biology
+
+- Registered raw source raw/sources/theodoris_2023_transfer_learning_network_biology_Geneformer.pdf.
+- Created source page wiki/sources/theodoris_2023_transfer_learning_network_biology_Geneformer.md.
+
+## [2026-07-29 14:59 KST] deep ingest | Geneformer and CellFM
+
+- Preserved the supplied PDFs as immutable sources under `raw/sources/`.
+- Verified source checksums, metadata, page counts, and representative page renders.
+- Installed Java 21 to enable OpenDataLoader PDF extraction.
+- Parsed both papers with OpenDataLoader using image output disabled and two active Java processors; also saved Poppler layout-text helpers under `raw/derived/pdftext/`.
+- Replaced the queued Geneformer and CellFM stubs with deeply ingested source pages covering corpus, representation, architecture, evidence, interpretation, limitations, and open questions.
+- Created entity pages for Geneformer and CellFM.
+- Created concept pages for rank-value encoding, continuous expression value projection, retention-based single-cell modeling, and embedding-space in silico perturbation.
+- Updated the representation-unit query and combinatorial-perturbation concept with the new evidence.
+- Added a four-model study guide comparing scGPT, scFoundation, Geneformer, and CellFM.
+- Refreshed `wiki/overview.md`, `wiki/index.md`, and related scGPT/scFoundation cross-links.
+
+## [2026-07-29 16:32 KST] ingest queued | Cell2Sentence: Teaching Large Language Models the Language of Biology
+
+- Registered raw source raw/sources/levine_2024_cell2sentence_teaching_llms_biology.pdf.
+- Created source page wiki/sources/levine_2024_cell2sentence_teaching_llms_biology.md.
+
+## [2026-07-29 16:35 KST] deep ingest | Cell2Sentence and GEARS duplicate verification
+
+- Preserved the supplied Cell2Sentence PDF as immutable `raw/sources/levine_2024_cell2sentence_teaching_llms_biology.pdf`; SHA-256: `0fda151a04d938a8299a231dbbd4af71f68cfc25003b4a6e991f200ad0789504`.
+- Parsed all 27 pages with OpenDataLoader and Poppler layout text, and visually checked a full-document contact sheet for extraction and layout problems.
+- Replaced the queued Cell2Sentence stub with a deep source page covering representation, datasets, tasks, evidence, interpretation, limitations, and the boundary between original C2S and later C2S-Scale.
+- Created a Cell2Sentence entity page and refreshed the Cell Sentences concept, C2S-Scale lineage, representation-unit query, overview, index, and related-source cross-links.
+- Verified that the supplied GEARS PDF is byte-for-byte identical to existing `raw/sources/roohani_2024_predicting_transcriptional_outcomes_of_novel.pdf`; both have SHA-256 `13ba4d9f8557d30a36503e31cb4759295777b2f97da139ee3497668b597bb9df`.
+- Kept the existing deeply ingested GEARS source and did not create a duplicate raw file or wiki page.
+
+## [2026-07-29 17:52 KST] ingest queued | Mosaic integration and knowledge transfer of single-cell multimodal data with MIDAS
+
+- Registered raw source raw/sources/he_2024_midas_mosaic_integration_knowledge_transfer.pdf.
+- Created source page wiki/sources/he_2024_midas_mosaic_integration_knowledge_transfer.md.
+
+## [2026-07-29 17:52 KST] ingest queued | Multi-omics single-cell data integration and regulatory inference with graph-linked embedding
+
+- Registered raw source raw/sources/cao_2022_glue_multi-omics_integration_regulatory_inference.pdf.
+- Created source page wiki/sources/cao_2022_glue_multi-omics_integration_regulatory_inference.md.
+
+## [2026-07-29 17:52 KST] ingest queued | MultiVI: deep generative model for the integration of multimodal data
+
+- Registered raw source raw/sources/ashuach_2023_multivi_deep_generative_multimodal_integration.pdf.
+- Created source page wiki/sources/ashuach_2023_multivi_deep_generative_multimodal_integration.md.
+
+## [2026-07-29 17:52 KST] ingest queued | scMODAL: a general deep learning framework for comprehensive single-cell multi-omics data alignment with feature links
+
+- Registered raw source raw/sources/wang_2025_scmodal_alignment_with_feature_links.pdf.
+- Created source page wiki/sources/wang_2025_scmodal_alignment_with_feature_links.md.
+
+## [2026-07-29 17:52 KST] ingest queued | scMultiMap: Cell-type-specific mapping of enhancers and target genes from single-cell multimodal data
+
+- Registered raw source raw/sources/su_2025_scmultimap_enhancer_target_gene_mapping.pdf.
+- Created source page wiki/sources/su_2025_scmultimap_enhancer_target_gene_mapping.md.
+
+## [2026-07-29 17:52 KST] ingest queued | scooby: Modeling multi-modal genomic profiles from DNA sequence at single-cell resolution
+
+- Registered raw source raw/sources/hingerl_2024_scooby_multimodal_genomic_profiles.pdf.
+- Created source page wiki/sources/hingerl_2024_scooby_multimodal_genomic_profiles.md.
+
+## [2026-07-29 18:12 KST] deep ingest | MIDAS, GLUE, MultiVI, scMODAL, scMultiMap, and scooby
+
+- Preserved all six supplied PDFs as immutable sources under `raw/sources/` and verified their SHA-256 checksums, metadata, and page counts.
+- Parsed the papers with OpenDataLoader under the existing Java 21 runtime and saved Poppler layout-text helpers under `raw/derived/pdftext/`.
+- A concurrent OpenDataLoader attempt caused a process collision, so extraction was rerun sequentially with two active Java processors; all six runs completed successfully.
+- Rendered and visually checked all 116 PDF pages for blank, corrupt, clipped, or otherwise abnormal pages.
+- Replaced the six queued stubs with deep source pages covering data configuration, architecture or statistical method, reported evidence, limitations, interpretation boundaries, and open questions.
+- Created entity pages for MIDAS, GLUE, MultiVI, scMODAL, scMultiMap, and scooby.
+- Created concepts for single-cell multimodal integration regimes, cell-type-specific enhancer-gene mapping, and sequence-to-single-cell profile modeling.
+- Expanded cross-modality generation, multimodal foundation models, and the collection-wide multimodal query to distinguish paired, unpaired, and mosaic integration; imputation; regulatory inference; paired feature association; and sequence-conditioned profile generation.
+- Refreshed `wiki/overview.md` and `wiki/index.md`.

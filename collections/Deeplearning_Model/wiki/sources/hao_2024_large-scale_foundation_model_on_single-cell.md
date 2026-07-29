@@ -56,6 +56,7 @@ This paper introduces scFoundation, also named xTrimoScFoundation alpha, as a la
 
 - [scFoundation](../entities/scFoundation.md)
 - [Read-Depth-Aware Pretraining](../concepts/read-depth-aware-pretraining.md)
+- [Study Guide: scGPT, scFoundation, Geneformer, and CellFM](../syntheses/scgpt-scfoundation-geneformer-cellfm-study-guide.md)
 
 ## Open Questions
 

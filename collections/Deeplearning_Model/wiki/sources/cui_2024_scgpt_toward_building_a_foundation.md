@@ -56,6 +56,7 @@ This paper presents scGPT, a generative pretrained transformer for single-cell b
 
 - [scGPT](../entities/scGPT.md)
 - [Single-Cell Generative Pretraining](../concepts/single-cell-generative-pretraining.md)
+- [Study Guide: scGPT, scFoundation, Geneformer, and CellFM](../syntheses/scgpt-scfoundation-geneformer-cellfm-study-guide.md)
 
 ## Open Questions
 
