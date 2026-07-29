@@ -23,6 +23,7 @@ ASSETS_DIR = OUTPUT_DIR / "assets"
 STYLE_PATH = ASSETS_DIR / "style.css"
 SOURCE_ASSETS_DIR = PROJECT_ROOT / "assets"
 LOGO_FILENAME = "paper_atlas_logo.svg"
+LOGO_VERSION = "2"
 LOGO_SOURCE_PATH = SOURCE_ASSETS_DIR / LOGO_FILENAME
 WORKSPACE_TITLE = "Research Collection"
 WORKSPACE_DESCRIPTION = "Static HTML view of the Markdown research wiki."
@@ -7377,7 +7378,7 @@ def render_dashboard(pages: List[Page], generated_at: str):
         dashboard_http_href=http_href_for_path(dashboard_path),
         generated_at=generated_at,
         site_brand=SITE_BRAND,
-        logo_href=f"assets/{LOGO_FILENAME}",
+        logo_href=f"assets/{LOGO_FILENAME}?v={LOGO_VERSION}",
     )
     dashboard_path.write_text(html_text, encoding="utf-8")
 
@@ -7385,7 +7386,10 @@ def render_dashboard(pages: List[Page], generated_at: str):
 def render_page(page: Page, pages: List[Page], generated_at: str):
     page.output_path.parent.mkdir(parents=True, exist_ok=True)
     stylesheet_href = Path(os.path.relpath(STYLE_PATH, page.output_path.parent)).as_posix()
-    logo_href = Path(os.path.relpath(ASSETS_DIR / LOGO_FILENAME, page.output_path.parent)).as_posix()
+    logo_href = (
+        Path(os.path.relpath(ASSETS_DIR / LOGO_FILENAME, page.output_path.parent)).as_posix()
+        + f"?v={LOGO_VERSION}"
+    )
     dashboard_href = Path(os.path.relpath(OUTPUT_DIR / "index.html", page.output_path.parent)).as_posix()
     dashboard_file_href = (OUTPUT_DIR / "index.html").resolve().as_uri()
     dashboard_http_href = http_href_for_path(OUTPUT_DIR / "index.html")
@@ -7441,9 +7445,9 @@ ROOT_HUB_TEMPLATE = Template(
   <title>PaperAtlas | Living Research Wiki</title>
   <meta name="description" content="논문, 개념, 질문과 종합을 연결해 계속 자라는 LLM 연구 위키입니다.">
   <meta name="theme-color" content="#4d865f">
-  <link rel="icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml" sizes="any">
-  <link rel="shortcut icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="assets/paper_atlas_logo.svg">
+  <link rel="icon" href="assets/paper_atlas_logo.svg?v=2" type="image/svg+xml" sizes="any">
+  <link rel="shortcut icon" href="assets/paper_atlas_logo.svg?v=2" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/paper_atlas_logo.svg?v=2">
   <link rel="stylesheet" href="assets/style.css">
   <style>
     .root-shell {
@@ -8163,7 +8167,7 @@ ROOT_HUB_TEMPLATE = Template(
       <div class="brand">
         <div class="brand-topbar">
           <a class="home-logo-link" href="index.html">
-            <img class="home-logo-mark" src="assets/paper_atlas_logo.svg" alt="">
+            <img class="home-logo-mark" src="assets/paper_atlas_logo.svg?v=2" alt="">
             <span class="home-logo-text">{{ site_brand }}</span>
           </a>
           <p class="eyebrow">{{ site_brand }}</p>
