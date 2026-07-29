@@ -82,11 +82,11 @@ SECTION_TAGS = {
     "syntheses": "Synthesis",
 }
 SECTION_COLORS = {
-    "": "#8a6a55",
-    "sources": "#a4533c",
-    "concepts": "#577169",
-    "queries": "#8f7a49",
-    "syntheses": "#6c5a7f",
+    "": "#9b563f",
+    "sources": "#b65c40",
+    "concepts": "#4d865f",
+    "queries": "#b58232",
+    "syntheses": "#70445f",
 }
 
 UI_TRANSLATIONS = {
@@ -212,7 +212,7 @@ UI_TRANSLATIONS = {
         "root_contract_1_tail": "stays immutable source material.",
         "root_contract_2_tail": "accumulates linked collection knowledge.",
         "root_contract_3": "Queries and syntheses stay inside the current collection boundary.",
-        "root_hero_copy": "A persistent LLM wiki for papers and methods, organized as independent collections that can keep growing without mixing knowledge boundaries.",
+        "root_hero_copy": "A living research atlas where immutable source files become linked evidence, concepts, questions, and syntheses. Each collection grows independently, so accumulated knowledge stays reusable without losing its boundary.",
         "root_status_summary": "{pages} linked wiki pages across {collections} collections",
         "root_status_detail": "Counts include source pages, concepts, queries, and syntheses rendered from each collection workspace.",
         "root_active_chip": "{count} active",
@@ -220,14 +220,14 @@ UI_TRANSLATIONS = {
         "root_analysis_chip": "{count} saved analyses",
         "root_active_collections_chip": "{count} active collections",
         "root_scaffold_collections_chip": "{count} scaffold collections",
-        "root_guide_1_title": "Pick a collection first",
-        "root_guide_1_copy": "Each collection is a separate knowledge base. Start with the one that matches your current question so concepts and source evidence stay in the right boundary.",
-        "root_guide_2_title": "Read the overview before the papers",
-        "root_guide_2_copy": "The overview page is the fastest way to understand scope, major themes, and what is already synthesized in the collection.",
-        "root_guide_3_title": "Use maturity signals to decide depth",
-        "root_guide_3_copy": "Reference collections are good for immediate answers, while starter or scaffold collections usually need more source ingest and concept building first.",
-        "root_active_workspaces": "Active Research Workspaces",
-        "root_snapshot_suffix": "{generated_at} snapshot of rendered collection state.",
+        "root_guide_1_title": "Keep the evidence intact",
+        "root_guide_1_copy": "Original files remain immutable in raw/. Every claim in the wiki can be traced back to the material it came from.",
+        "root_guide_2_title": "Let links do the compounding",
+        "root_guide_2_copy": "Source notes connect to concepts, entities, and related papers. Each new ingest strengthens the map that already exists.",
+        "root_guide_3_title": "Turn questions into synthesis",
+        "root_guide_3_copy": "Queries and syntheses preserve substantial answers as reusable research assets instead of letting them disappear in chat history.",
+        "root_active_workspaces": "Living Research Collections",
+        "root_snapshot_suffix": "Current collection state · {generated_at}",
         "root_open_primary_workspace": "Open Primary Workspace",
         "root_sources_short": "sources",
         "root_open_dashboard": "Open Dashboard",
@@ -364,7 +364,7 @@ UI_TRANSLATIONS = {
         "root_contract_1_tail": "는 수정하지 않는 원본 소스입니다.",
         "root_contract_2_tail": "는 연결된 컬렉션 지식을 계속 축적합니다.",
         "root_contract_3": "질의와 synthesis는 현재 컬렉션 경계를 넘지 않습니다.",
-        "root_hero_copy": "논문과 방법 지식을 위한 지속형 LLM 위키로, 컬렉션별 경계를 유지한 채 계속 확장할 수 있도록 구성되어 있습니다.",
+        "root_hero_copy": "원본 논문과 자료에서 근거·개념·질문·종합으로 이어지는 살아 있는 연구 아틀라스입니다. 컬렉션별 지식 경계는 지키면서, 새로 읽은 내용이 이전 지식 위에 계속 쌓이도록 설계했습니다.",
         "root_status_summary": "{collections}개 컬렉션에 연결된 위키 페이지 {pages}개",
         "root_status_detail": "카운트에는 각 컬렉션 작업공간에서 렌더된 source page, 개념, 질의, synthesis가 포함됩니다.",
         "root_active_chip": "활성 {count}개",
@@ -372,14 +372,14 @@ UI_TRANSLATIONS = {
         "root_analysis_chip": "저장된 분석 {count}개",
         "root_active_collections_chip": "활성 컬렉션 {count}개",
         "root_scaffold_collections_chip": "스캐폴드 컬렉션 {count}개",
-        "root_guide_1_title": "먼저 컬렉션을 고르세요",
-        "root_guide_1_copy": "각 컬렉션은 분리된 지식 베이스입니다. 현재 질문과 가장 맞는 컬렉션부터 열어야 개념과 근거가 섞이지 않습니다.",
-        "root_guide_2_title": "논문보다 먼저 overview를 읽으세요",
-        "root_guide_2_copy": "overview 페이지가 이 컬렉션의 범위, 핵심 주제, 이미 종합된 내용을 가장 빠르게 이해하는 출발점입니다.",
-        "root_guide_3_title": "성숙도 신호로 깊이를 조절하세요",
-        "root_guide_3_copy": "Reference 컬렉션은 바로 답을 찾기 좋고, starter나 scaffold 컬렉션은 소스 ingest와 개념 구축이 더 필요할 가능성이 큽니다.",
-        "root_active_workspaces": "활성 연구 작업공간",
-        "root_snapshot_suffix": "{generated_at} 기준 렌더된 컬렉션 상태 스냅샷입니다.",
+        "root_guide_1_title": "원본 근거는 그대로 둡니다",
+        "root_guide_1_copy": "raw/의 원본은 수정하지 않습니다. 위키의 모든 주장은 언제든 출발점이 된 자료로 거슬러 올라갈 수 있습니다.",
+        "root_guide_2_title": "링크가 지식을 누적시킵니다",
+        "root_guide_2_copy": "소스 노트가 개념·엔티티·관련 논문과 연결됩니다. 새 논문 한 편이 들어올 때마다 기존 지식 지도도 함께 단단해집니다.",
+        "root_guide_3_title": "질문을 종합 자산으로 바꿉니다",
+        "root_guide_3_copy": "중요한 답변은 채팅 기록에서 사라지지 않게 query와 synthesis로 남겨, 다음 연구와 글쓰기에서 다시 사용합니다.",
+        "root_active_workspaces": "살아 있는 연구 컬렉션",
+        "root_snapshot_suffix": "현재 컬렉션 상태 · {generated_at}",
         "root_open_primary_workspace": "대표 작업공간 열기",
         "root_sources_short": "소스",
         "root_open_dashboard": "대시보드 열기",
@@ -453,7 +453,7 @@ PAGE_TEMPLATE = Template(
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | {{ workspace_title }} wiki | {{ site_brand }}</title>
-    <meta name="theme-color" content="#8a4b35">
+    <meta name="theme-color" content="#4d865f">
     <link rel="icon" href="{{ logo_href }}" type="image/svg+xml" sizes="any">
     <link rel="shortcut icon" href="{{ logo_href }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ logo_href }}">
@@ -763,7 +763,7 @@ DASHBOARD_TEMPLATE = Template(
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ workspace_title }} Dashboard | {{ site_brand }}</title>
-    <meta name="theme-color" content="#8a4b35">
+    <meta name="theme-color" content="#4d865f">
     <link rel="icon" href="{{ logo_href }}" type="image/svg+xml" sizes="any">
     <link rel="shortcut icon" href="{{ logo_href }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ logo_href }}">
@@ -1960,7 +1960,7 @@ DASHBOARD_TEMPLATE = Template(
           const base = parseHexColor(baseColor);
           const target = parseHexColor(targetColor);
           if (!base || !target) {
-            return baseColor || targetColor || "#a4533c";
+            return baseColor || targetColor || "#b65c40";
           }
           const mix = clamp(ratio, 0, 1);
           const red = Math.round(base.red + ((target.red - base.red) * mix));
@@ -2988,28 +2988,31 @@ DASHBOARD_TEMPLATE = Template(
 
 
 STYLE_TEXT = """
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap");
+
 :root {
-  --paper: #f5efe6;
-  --panel: rgba(255, 252, 247, 0.94);
-  --panel-strong: rgba(255, 255, 252, 0.98);
-  --ink: #24303a;
-  --muted: #69727c;
-  --accent: #8a4b35;
-  --accent-soft: #f3e5dd;
-  --accent-rgb: 138, 75, 53;
-  --accent-strong: #6f3b2a;
-  --accent-gradient: linear-gradient(135deg, #6f3b2a 0%, #a86144 100%);
-  --line: rgba(98, 84, 68, 0.16);
-  --line-strong: rgba(98, 84, 68, 0.24);
-  --surface-soft: rgba(247, 243, 237, 0.96);
-  --section-core: #8a6a55;
-  --section-sources: #a4533c;
-  --section-concepts: #577169;
-  --section-queries: #8f7a49;
-  --section-syntheses: #6c5a7f;
-  --shadow: 0 10px 28px rgba(47, 36, 28, 0.06);
-  --font-sans: "Avenir Next", "Segoe UI Variable Text", "Helvetica Neue", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --paper: #f2ecdf;
+  --panel: rgba(250, 247, 238, 0.94);
+  --panel-strong: rgba(255, 253, 247, 0.98);
+  --ink: #1d211d;
+  --muted: #696b61;
+  --accent: #4d865f;
+  --accent-soft: #e1ebdf;
+  --accent-rgb: 77, 134, 95;
+  --accent-strong: #356b49;
+  --accent-gradient: linear-gradient(135deg, #3f7b55 0%, #78a46f 100%);
+  --line: rgba(60, 65, 52, 0.16);
+  --line-strong: rgba(60, 65, 52, 0.26);
+  --surface-soft: rgba(246, 241, 230, 0.96);
+  --section-core: #9b563f;
+  --section-sources: #b65c40;
+  --section-concepts: #4d865f;
+  --section-queries: #b58232;
+  --section-syntheses: #70445f;
+  --shadow: 0 3px 12px rgba(48, 44, 34, 0.055);
+  --font-sans: "IBM Plex Sans KR", "IBM Plex Sans", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", "Menlo", monospace;
 }
 
 * {
@@ -3018,7 +3021,7 @@ STYLE_TEXT = """
 
 html {
   min-height: 100%;
-  background: #f5efe6;
+  background: var(--paper);
 }
 
 body {
@@ -3027,9 +3030,9 @@ body {
   font-family: var(--font-sans);
   line-height: 1.65;
   background:
-    radial-gradient(circle at top left, rgba(var(--accent-rgb), 0.07), transparent 32%),
-    radial-gradient(circle at top right, rgba(87, 113, 105, 0.07), transparent 28%),
-    linear-gradient(180deg, rgba(255, 255, 252, 0.7) 0%, rgba(245, 239, 230, 0.96) 100%),
+    radial-gradient(circle at 10% 0%, rgba(181, 130, 50, 0.07), transparent 27rem),
+    radial-gradient(circle at 92% 8%, rgba(var(--accent-rgb), 0.07), transparent 28rem),
+    linear-gradient(180deg, rgba(255, 253, 247, 0.34) 0%, rgba(242, 236, 223, 0.92) 100%),
     var(--paper);
 }
 
@@ -3043,7 +3046,7 @@ a:hover {
 }
 
 code {
-  font-family: "SFMono-Regular", "Menlo", "Consolas", monospace;
+  font-family: var(--font-mono);
   background: rgba(var(--accent-rgb), 0.08);
   border-radius: 0.25rem;
   padding: 0.15rem 0.35rem;
@@ -4670,6 +4673,71 @@ pre code {
   margin-top: 0.65rem;
   font-size: 0.9rem;
   color: var(--muted);
+}
+
+/* Editorial system shared by the hub and every collection workspace. */
+.content,
+.sidebar,
+.rightbar {
+  border-radius: 0.72rem;
+  backdrop-filter: blur(10px);
+}
+
+.content {
+  padding: clamp(1.45rem, 2.7vw, 2.55rem);
+}
+
+.brand h1,
+.page-header h1,
+.dashboard-hero h1,
+.paper-card h2,
+.guide-card h2,
+.section-heading h2 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+}
+
+.page-header h1,
+.dashboard-hero h1 {
+  letter-spacing: -0.035em;
+}
+
+.eyebrow,
+.control-label,
+.meta-chip,
+.section-pill,
+.mini-chip,
+.stat-label,
+.guide-step,
+.badge {
+  font-family: var(--font-mono);
+  letter-spacing: 0.055em;
+}
+
+.paper-card,
+.guide-card,
+.stat-card,
+.status-bar,
+.rail-block,
+.side-block {
+  border-radius: 0.64rem;
+}
+
+.paper-card,
+.guide-card {
+  box-shadow: 0 1px 0 rgba(60, 65, 52, 0.04);
+}
+
+.card-link,
+.dashboard-link,
+.ghost-button,
+.view-button {
+  border-radius: 999px;
+}
+
+.card-link,
+.dashboard-link {
+  letter-spacing: 0.01em;
 }
 
 @media (max-width: 1180px) {
@@ -6681,12 +6749,13 @@ def render_site(pages: List[Page]):
 
 ROOT_HUB_TEMPLATE = Template(
     """<!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site_brand }} | Research Collection Hub</title>
-  <meta name="theme-color" content="#8a4b35">
+  <title>PaperAtlas | Living Research Wiki</title>
+  <meta name="description" content="논문, 개념, 질문과 종합을 연결해 계속 자라는 LLM 연구 위키입니다.">
+  <meta name="theme-color" content="#4d865f">
   <link rel="icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml" sizes="any">
   <link rel="shortcut icon" href="assets/paper_atlas_logo.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="assets/paper_atlas_logo.svg">
@@ -6930,6 +6999,477 @@ ROOT_HUB_TEMPLATE = Template(
         grid-template-columns: 1fr;
       }
     }
+
+    /* Root hub: quiet editorial landing page inspired by research field notes. */
+    body {
+      min-height: 100vh;
+    }
+
+    .root-shell {
+      display: block;
+      width: min(100% - 2rem, 1080px);
+      max-width: none;
+      margin: 0 auto;
+      padding: 1.45rem 0 5rem;
+    }
+
+    .root-sidebar {
+      display: block;
+      position: static;
+      max-height: none;
+      overflow: visible;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .root-sidebar .brand {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin: 0;
+      padding: 0 0 1.15rem;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .root-sidebar .brand-topbar {
+      margin: 0;
+    }
+
+    .root-sidebar .brand-topbar .eyebrow,
+    .root-sidebar .brand > h1,
+    .root-sidebar .brand > .subtle,
+    .root-sidebar .brand-actions,
+    .root-sidebar > .side-block,
+    .root-rail {
+      display: none;
+    }
+
+    .root-sidebar .home-logo-link {
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      color: var(--ink);
+    }
+
+    .root-sidebar .home-logo-mark {
+      width: 1.45rem;
+      height: 1.45rem;
+      border-radius: 0.28rem;
+    }
+
+    .root-sidebar .home-logo-text {
+      font-family: var(--font-mono);
+      font-size: 0.73rem;
+      font-weight: 600;
+      letter-spacing: 0.13em;
+      text-transform: uppercase;
+    }
+
+    .root-sidebar .language-toggle {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin: 0;
+    }
+
+    .root-sidebar .language-toggle .control-label {
+      display: none;
+    }
+
+    .root-sidebar .language-buttons {
+      gap: 0.2rem;
+      margin: 0;
+      padding: 0.16rem;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 253, 247, 0.58);
+    }
+
+    .root-sidebar .lang-button {
+      padding: 0.3rem 0.62rem;
+      border: 0;
+      font-family: var(--font-mono);
+      font-size: 0.68rem;
+      letter-spacing: 0.04em;
+    }
+
+    .root-content {
+      min-height: 0;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+      backdrop-filter: none;
+    }
+
+    .root-hero {
+      display: block;
+      margin: 0;
+      padding: clamp(4.3rem, 9vw, 7.2rem) 0 clamp(3.5rem, 7vw, 5.7rem);
+    }
+
+    .root-hero-copy {
+      max-width: 760px;
+    }
+
+    .root-hero .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      margin-bottom: 1.15rem;
+      color: #707167;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
+
+    .root-hero .eyebrow::before {
+      content: "";
+      width: 1.55rem;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .root-hero h1 {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: clamp(4.2rem, 10vw, 7.8rem);
+      font-weight: 500;
+      line-height: 0.86;
+      letter-spacing: -0.065em;
+    }
+
+    .root-hero h1 em {
+      color: var(--accent);
+      font-weight: 400;
+    }
+
+    .root-hero .hero-copy {
+      max-width: 690px;
+      margin: 2rem 0 0;
+      color: #4f524c;
+      font-size: clamp(1rem, 1.8vw, 1.16rem);
+      line-height: 1.85;
+    }
+
+    .root-hero-actions {
+      margin-top: 2rem;
+    }
+
+    .root-hero-actions .meta-chip {
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 0.68rem;
+    }
+
+    .root-hero-actions .card-link {
+      padding: 0.7rem 1rem;
+      background: var(--ink);
+      color: #fffdf7;
+      border-color: var(--ink);
+    }
+
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      margin: 0 0 clamp(4rem, 8vw, 6.5rem);
+      padding: 1.15rem 0;
+      border-width: 1px 0;
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .root-status-copy strong {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    .root-status-copy .subtle {
+      font-size: 0.84rem;
+    }
+
+    .active-filters {
+      justify-content: flex-end;
+    }
+
+    .active-filters .active-chip,
+    .active-filters .mini-chip {
+      border: 0;
+      background: transparent;
+      font-family: var(--font-mono);
+      font-size: 0.66rem;
+      letter-spacing: 0.04em;
+    }
+
+    .guide-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(1.2rem, 3vw, 2.4rem);
+      margin: 0 0 clamp(5rem, 10vw, 8.5rem);
+    }
+
+    .guide-card {
+      min-height: 0;
+      padding: 1.3rem 0 0;
+      border: 0;
+      border-top: 2px solid var(--line-strong);
+      border-radius: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .guide-card:nth-child(1) {
+      border-top-color: var(--section-sources);
+    }
+
+    .guide-card:nth-child(2) {
+      border-top-color: var(--section-concepts);
+    }
+
+    .guide-card:nth-child(3) {
+      border-top-color: var(--section-queries);
+    }
+
+    .guide-card .guide-step {
+      color: var(--muted);
+      font-size: 0.64rem;
+    }
+
+    .guide-card h2 {
+      margin-top: 0.72rem;
+      font-size: 1.45rem;
+      line-height: 1.08;
+    }
+
+    .guide-card .guide-copy {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .guide-card .guide-actions {
+      display: none;
+    }
+
+    .root-section-heading {
+      align-items: end;
+      margin-bottom: 1.25rem;
+      padding-bottom: 0.8rem;
+      border-bottom: 1px solid var(--line-strong);
+    }
+
+    .root-section-heading h2 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.15rem, 5vw, 3.45rem);
+      font-weight: 500;
+      letter-spacing: -0.045em;
+    }
+
+    .root-section-heading p {
+      max-width: 390px;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      line-height: 1.65;
+      text-align: right;
+    }
+
+    .root-collection-grid {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .collection-hub-card {
+      padding: clamp(1.45rem, 3.5vw, 2.25rem);
+      border: 1px solid var(--line);
+      border-left: 4px solid var(--accent);
+      border-radius: 0.72rem;
+      background:
+        radial-gradient(circle at 94% 0%, rgba(var(--accent-rgb), 0.08), transparent 17rem),
+        rgba(255, 253, 247, 0.68);
+      box-shadow: 0 2px 7px rgba(48, 44, 34, 0.045);
+      transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+    }
+
+    .collection-hub-card:nth-child(2n) {
+      border-left-color: var(--section-sources);
+      background:
+        radial-gradient(circle at 94% 0%, rgba(182, 92, 64, 0.07), transparent 17rem),
+        rgba(255, 253, 247, 0.68);
+    }
+
+    .collection-hub-card:nth-child(3n) {
+      border-left-color: var(--section-queries);
+    }
+
+    .collection-hub-card:nth-child(4n) {
+      border-left-color: var(--section-syntheses);
+    }
+
+    .collection-hub-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--line-strong);
+      box-shadow: 0 8px 22px rgba(48, 44, 34, 0.075);
+    }
+
+    .collection-hub-card::before {
+      display: none;
+    }
+
+    .collection-hub-card .card-topline {
+      margin-bottom: 0.6rem;
+      font-family: var(--font-mono);
+    }
+
+    .collection-hub-card .section-pill,
+    .collection-hub-card .badge {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      font-size: 0.64rem;
+      text-transform: uppercase;
+    }
+
+    .collection-hub-card .badge::before {
+      content: "·";
+      margin-right: 0.55rem;
+    }
+
+    .collection-hub-card h2 {
+      margin: 0;
+      font-size: clamp(2rem, 4.5vw, 3.15rem);
+      line-height: 1;
+      letter-spacing: -0.04em;
+    }
+
+    .collection-hub-card .card-excerpt {
+      min-height: 0;
+      max-width: 780px;
+      margin: 1rem 0 1.2rem;
+      color: #52554e;
+      font-size: 0.98rem;
+      line-height: 1.72;
+    }
+
+    .collection-hub-card .card-tags {
+      gap: 0.35rem;
+    }
+
+    .collection-hub-card .mini-chip {
+      border: 0;
+      background: var(--accent-soft);
+      color: var(--accent-strong);
+      font-family: var(--font-mono);
+      font-size: 0.62rem;
+      font-weight: 500;
+    }
+
+    .collection-hub-stats {
+      display: flex;
+      gap: 1.7rem;
+      margin: 1.3rem 0 0;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+    }
+
+    .collection-hub-stat {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      padding: 0;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+    }
+
+    .collection-hub-stat strong {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      font-weight: 500;
+    }
+
+    .collection-hub-stat span {
+      margin: 0;
+      font-family: var(--font-mono);
+      font-size: 0.61rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .root-actions {
+      margin-top: 1.25rem;
+    }
+
+    .root-actions .card-link {
+      padding: 0.58rem 0.86rem;
+      font-size: 0.78rem;
+    }
+
+    .root-actions .card-link:first-child {
+      background: var(--ink);
+      border-color: var(--ink);
+      color: #fffdf7;
+    }
+
+    @media (max-width: 760px) {
+      .root-shell {
+        width: min(100% - 1.25rem, 1080px);
+        padding-top: 0.8rem;
+      }
+
+      .root-sidebar .brand {
+        padding-bottom: 0.8rem;
+      }
+
+      .root-hero {
+        padding: 3.5rem 0;
+      }
+
+      .root-hero h1 {
+        font-size: clamp(3.7rem, 20vw, 5.2rem);
+      }
+
+      .status-bar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .active-filters {
+        justify-content: flex-start;
+      }
+
+      .guide-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .root-section-heading {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .root-section-heading p {
+        text-align: left;
+      }
+
+      .collection-hub-stats {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.75rem;
+      }
+
+      .collection-hub-stat {
+        display: block;
+      }
+    }
   </style>
 </head>
 <body>
@@ -6997,8 +7537,8 @@ ROOT_HUB_TEMPLATE = Template(
       <header class="dashboard-hero root-hero">
         <div class="root-hero-top">
           <div class="root-hero-copy">
-            <p class="eyebrow">{{ site_brand }}</p>
-            <h1 data-i18n-key="root_hub_title">Research Collection Hub</h1>
+            <p class="eyebrow">PAPERATLAS · LIVING RESEARCH SYSTEMS</p>
+            <h1>Paper<em>Atlas</em></h1>
             <p class="hero-copy" data-i18n-key="root_hero_copy">
               A persistent LLM wiki for papers and methods, organized as independent collections that can keep growing without mixing knowledge boundaries.
             </p>
@@ -7178,7 +7718,7 @@ ROOT_HUB_TEMPLATE = Template(
     const i18nData = JSON.parse(document.getElementById("root-i18n-data").textContent);
     const langButtons = Array.from(document.querySelectorAll(".lang-button"));
     const state = {
-      language: localStorage.getItem("paperatlas_lang") || "en",
+      language: localStorage.getItem("paperatlas_lang") || "ko",
     };
     let localViewerProbe = null;
     const rootStatusSummary = document.getElementById("root-status-summary");
