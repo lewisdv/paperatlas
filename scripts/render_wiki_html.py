@@ -103,7 +103,7 @@ UI_TRANSLATIONS = {
         "generated_label": "Generated",
         "metadata": "Metadata",
         "search": "Search",
-        "search_placeholder": "Search titles, summaries, tags, and page text",
+        "search_placeholder": "Search titles, summaries, tags, and key content",
         "search_help": "Works across all pages, then narrows paper cards, database view, list view, and graph view together.",
         "views": "Views",
         "view_papers": "Paper Cards",
@@ -111,6 +111,8 @@ UI_TRANSLATIONS = {
         "view_pages": "All Pages",
         "view_graph": "Graph View",
         "tag_filter": "Tag Filter",
+        "tag_show_more": "Show more tags",
+        "tag_show_less": "Show fewer tags",
         "clear": "Clear",
         "quick_links": "Quick Links",
         "sections": "Sections",
@@ -180,6 +182,9 @@ UI_TRANSLATIONS = {
         "database_unspecified": "Unspecified",
         "database_group_untitled": "Other",
         "database_export_filename": "paper-collect-view",
+        "pagination_previous": "Previous",
+        "pagination_next": "Next",
+        "pagination_showing": "Showing {start}–{end} of {total}",
         "match_detail": "Start with Overview or the latest synthesis, then use search and tags across cards, the database, the page list, and the graph.",
         "search_prefix": "Search",
         "open_page": "Open Page",
@@ -204,6 +209,10 @@ UI_TRANSLATIONS = {
         "graph_metric_theme": "Theme",
         "graph_metric_relations": "Visible Relations",
         "graph_metric_year": "Year",
+        "graph_result_limit": "Map size",
+        "graph_result_summary": "Showing {nodes} of {total} papers · {edges} strongest relationships",
+        "graph_advanced_controls": "Display controls",
+        "explorer_more": "Browse {count} more in All Pages",
         "recommended_start": "Recommended Start",
         "root_hub_title": "Research Collection Hub",
         "root_tagline": "Collection-specific workspaces for raw sources, source pages, concepts, queries, and syntheses.",
@@ -255,7 +264,7 @@ UI_TRANSLATIONS = {
         "generated_label": "생성 시각",
         "metadata": "메타데이터",
         "search": "검색",
-        "search_placeholder": "제목, 요약, 태그, 페이지 본문 검색",
+        "search_placeholder": "제목, 요약, 태그, 핵심 내용 검색",
         "search_help": "모든 페이지를 대상으로 검색한 뒤, 논문 카드, 데이터베이스, 전체 목록, 그래프 뷰에 함께 적용됩니다.",
         "views": "보기",
         "view_papers": "논문 카드",
@@ -263,6 +272,8 @@ UI_TRANSLATIONS = {
         "view_pages": "전체 페이지",
         "view_graph": "그래프 뷰",
         "tag_filter": "태그 필터",
+        "tag_show_more": "태그 더 보기",
+        "tag_show_less": "태그 접기",
         "clear": "초기화",
         "quick_links": "바로가기",
         "sections": "섹션",
@@ -332,6 +343,9 @@ UI_TRANSLATIONS = {
         "database_unspecified": "미지정",
         "database_group_untitled": "기타",
         "database_export_filename": "paper-collect-view",
+        "pagination_previous": "이전",
+        "pagination_next": "다음",
+        "pagination_showing": "전체 {total}개 중 {start}–{end}",
         "match_detail": "먼저 개요나 최신 종합 정리를 보고, 이후 검색과 태그 필터를 카드, 데이터베이스, 목록, 그래프에 함께 적용해 보세요.",
         "search_prefix": "검색",
         "open_page": "페이지 열기",
@@ -356,6 +370,10 @@ UI_TRANSLATIONS = {
         "graph_metric_theme": "주제",
         "graph_metric_relations": "보이는 관계",
         "graph_metric_year": "연도",
+        "graph_result_limit": "그래프 규모",
+        "graph_result_summary": "논문 {total}편 중 {nodes}편 · 강한 관계 {edges}개 표시",
+        "graph_advanced_controls": "표시 세부 조절",
+        "explorer_more": "전체 페이지에서 {count}개 더 보기",
         "recommended_start": "추천 시작점",
         "root_hub_title": "연구 컬렉션 허브",
         "root_tagline": "원본 소스, source page, 개념, 질의, synthesis를 컬렉션별로 분리해 관리하는 작업 공간입니다.",
@@ -448,7 +466,7 @@ UNORDERED_LIST_RE = re.compile(r"^-\s+(.*)$")
 
 PAGE_TEMPLATE = Template(
     """<!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -599,7 +617,7 @@ PAGE_TEMPLATE = Template(
         const i18nData = JSON.parse(document.getElementById("page-i18n-data").textContent);
         const VISITED_PAGES_STORAGE_KEY = "paperatlas_visited_pages_v1";
         const state = {
-          language: localStorage.getItem("paperatlas_lang") || "en",
+          language: localStorage.getItem("paperatlas_lang") || "ko",
         };
         const langButtons = Array.from(document.querySelectorAll(".lang-button"));
 
@@ -758,7 +776,7 @@ PAGE_TEMPLATE = Template(
 
 DASHBOARD_TEMPLATE = Template(
     """<!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -771,8 +789,8 @@ DASHBOARD_TEMPLATE = Template(
   </head>
   <body>
     <div class="shell dashboard-shell">
-      <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-papers" data-view="papers" checked>
-      <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-database" data-view="database">
+      <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-papers" data-view="papers">
+      <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-database" data-view="database" checked>
       <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-pages" data-view="pages">
       <input class="view-state-toggle" type="radio" name="dashboard-view-state" id="view-tab-graph" data-view="graph">
       <aside class="sidebar dashboard-sidebar">
@@ -809,7 +827,7 @@ DASHBOARD_TEMPLATE = Template(
 
           <section class="side-block">
             <label class="control-label" for="search-input" data-i18n-key="search">Search</label>
-            <input id="search-input" class="search-input" type="search" placeholder="Search titles, summaries, tags, and page text" data-i18n-placeholder="search_placeholder">
+            <input id="search-input" class="search-input" type="search" placeholder="Search titles, summaries, tags, and key content" data-i18n-placeholder="search_placeholder">
             <p class="subtle small-note" data-i18n-key="search_help">Works across all pages, then narrows papers, list view, and graph view together.</p>
           </section>
 
@@ -829,6 +847,7 @@ DASHBOARD_TEMPLATE = Template(
               <button id="clear-filters" class="ghost-button" type="button" data-i18n-key="clear">Clear</button>
             </div>
             <div id="tag-chips" class="chip-list"></div>
+            <button id="tag-toggle" class="tag-toggle ghost-button hidden" type="button" data-i18n-key="tag_show_more">Show more tags</button>
           </section>
         </div>
 
@@ -845,6 +864,11 @@ DASHBOARD_TEMPLATE = Template(
                 {% for item in section.entries %}
                 <li><a href="{{ item.href }}" data-file-href="{{ item.file_href }}" data-http-href="{{ item.http_href }}">{{ item.title }}</a></li>
                 {% endfor %}
+                {% if section.more_count %}
+                <li class="explorer-more">
+                  <label for="view-tab-pages" role="button" tabindex="0" data-explorer-more="{{ section.more_count }}">+ {{ section.more_count }} more</label>
+                </li>
+                {% endif %}
               </ul>
             </details>
             {% endfor %}
@@ -873,6 +897,24 @@ DASHBOARD_TEMPLATE = Template(
               {% endif %}
               <label class="card-link tertiary" for="view-tab-papers" role="button" tabindex="0" data-i18n-key="view_papers">Paper Cards</label>
               <label class="card-link tertiary" for="view-tab-graph" role="button" tabindex="0" data-i18n-key="view_graph">Graph View</label>
+            </div>
+            <div class="dashboard-metrics" aria-label="Collection snapshot">
+              <div class="dashboard-metric">
+                <strong>{{ counts.papers }}</strong>
+                <span data-i18n-key="papers">Papers</span>
+              </div>
+              <div class="dashboard-metric">
+                <strong>{{ counts.pages }}</strong>
+                <span data-i18n-key="pages">Pages</span>
+              </div>
+              <div class="dashboard-metric">
+                <strong>{{ counts.concepts }}</strong>
+                <span data-i18n-key="concepts">Concepts</span>
+              </div>
+              <div class="dashboard-metric">
+                <strong>{{ counts.edges }}</strong>
+                <span data-i18n-key="relations">Relations</span>
+              </div>
             </div>
           </div>
         </header>
@@ -927,12 +969,13 @@ DASHBOARD_TEMPLATE = Template(
           </article>
         </section>
 
-        <section id="papers-view" class="dashboard-view active">
-          <div id="paper-grid" class="paper-grid">{{ initial_paper_grid_html | safe }}</div>
+        <section id="papers-view" class="dashboard-view hidden">
+          <div id="paper-grid" class="paper-grid"></div>
+          <div id="papers-pagination" class="pagination-bar"></div>
           <p id="papers-empty" class="empty-state hidden" data-i18n-key="no_papers_match">No papers match the current search and tags.</p>
         </section>
 
-        <section id="database-view" class="dashboard-view hidden">
+        <section id="database-view" class="dashboard-view active">
           <div class="database-toolbar">
             <div class="database-toolbar-head">
               <p class="control-label" data-i18n-key="database_controls">Database Controls</p>
@@ -971,22 +1014,36 @@ DASHBOARD_TEMPLATE = Template(
                 </select>
               </label>
             </div>
-            <div id="database-summary" class="database-summary">{{ initial_database_summary_html | safe }}</div>
+            <div id="database-summary" class="database-summary"></div>
           </div>
-          <div id="database-groups" class="database-groups">{{ initial_database_groups_html | safe }}</div>
+          <div id="database-groups" class="database-groups"></div>
+          <div id="database-pagination" class="pagination-bar"></div>
           <p id="database-empty" class="empty-state hidden" data-i18n-key="database_empty">No rows match the current search and filters.</p>
         </section>
 
         <section id="pages-view" class="dashboard-view hidden">
-          <div id="page-list" class="page-list">{{ initial_page_list_html | safe }}</div>
+          <div id="page-list" class="page-list"></div>
+          <div id="pages-pagination" class="pagination-bar"></div>
           <p id="pages-empty" class="empty-state hidden" data-i18n-key="no_pages_match">No pages match the current search and tags.</p>
         </section>
 
         <section id="graph-view" class="dashboard-view hidden">
           <div class="graph-toolbar">
-            <div class="graph-toolbar-copy subtle" data-i18n-key="graph_toolbar">{{ graph_toolbar_default }}</div>
-            <div class="graph-controls-panel">
-              <p class="control-label graph-controls-heading" data-i18n-key="graph_controls">Graph Controls</p>
+            <div class="graph-toolbar-head">
+              <div class="graph-toolbar-copy subtle" data-i18n-key="graph_toolbar">{{ graph_toolbar_default }}</div>
+              <label class="graph-limit-control" for="graph-result-limit">
+                <span data-i18n-key="graph_result_limit">Map size</span>
+                <select id="graph-result-limit">
+                  <option value="30">30</option>
+                  <option value="60" selected>60</option>
+                  <option value="100">100</option>
+                </select>
+              </label>
+            </div>
+            <div id="graph-result-summary" class="graph-result-summary"></div>
+            <details class="graph-advanced">
+              <summary data-i18n-key="graph_advanced_controls">Display controls</summary>
+              <div class="graph-controls-panel">
               <div class="graph-controls">
                 <label class="graph-control" for="graph-node-scale">
                   <span class="graph-control-row">
@@ -1034,12 +1091,13 @@ DASHBOARD_TEMPLATE = Template(
                   <button id="graph-reset-controls" class="ghost-button" type="button" data-i18n-key="graph_reset">Reset Graph</button>
                 </div>
               </div>
-            </div>
+              </div>
+            </details>
           </div>
           <div class="graph-layout">
             <div class="graph-stage">
               <canvas id="graph-canvas" class="graph-canvas" aria-hidden="true"></canvas>
-              <svg id="graph-svg" class="graph-svg" viewBox="0 0 1080 720" role="img" aria-label="Paper relationship graph">{{ initial_graph_svg_html | safe }}</svg>
+              <svg id="graph-svg" class="graph-svg" viewBox="0 0 1080 720" role="img" aria-label="Paper relationship graph"></svg>
             </div>
             <aside id="graph-detail" class="graph-detail">
               <p class="eyebrow" data-i18n-key="graph_detail">Graph Detail</p>
@@ -1131,16 +1189,20 @@ DASHBOARD_TEMPLATE = Template(
     <script id="dashboard-i18n-data" type="application/json">{{ i18n_data_json | safe }}</script>
     <script>
       (() => {
+        try {
         const data = JSON.parse(document.getElementById("wiki-data").textContent);
         const i18nData = JSON.parse(document.getElementById("dashboard-i18n-data").textContent);
         const searchInput = document.getElementById("search-input");
         const tagChips = document.getElementById("tag-chips");
+        const tagToggleButton = document.getElementById("tag-toggle");
         const clearFiltersButton = document.getElementById("clear-filters");
         const matchSummary = document.getElementById("match-summary");
         const matchDetail = document.getElementById("match-detail");
         const activeFilters = document.getElementById("active-filters");
         const paperGrid = document.getElementById("paper-grid");
+        const papersPagination = document.getElementById("papers-pagination");
         const databaseGroups = document.getElementById("database-groups");
+        const databasePagination = document.getElementById("database-pagination");
         const databaseEmpty = document.getElementById("database-empty");
         const databaseSummary = document.getElementById("database-summary");
         const databaseSortSelect = document.getElementById("database-sort");
@@ -1149,6 +1211,7 @@ DASHBOARD_TEMPLATE = Template(
         const databaseDensitySelect = document.getElementById("database-density");
         const databaseExportButton = document.getElementById("database-export");
         const pageList = document.getElementById("page-list");
+        const pagesPagination = document.getElementById("pages-pagination");
         const papersEmpty = document.getElementById("papers-empty");
         const pagesEmpty = document.getElementById("pages-empty");
         const graphCanvas = document.getElementById("graph-canvas");
@@ -1167,6 +1230,8 @@ DASHBOARD_TEMPLATE = Template(
         const graphLinkDistanceScaleValue = document.getElementById("graph-link-distance-scale-value");
         const graphShowLabelsValue = document.getElementById("graph-show-labels-value");
         const graphResetButton = document.getElementById("graph-reset-controls");
+        const graphResultLimitSelect = document.getElementById("graph-result-limit");
+        const graphResultSummary = document.getElementById("graph-result-summary");
         const viewButtons = Array.from(document.querySelectorAll(".view-button"));
         const viewStateInputs = Array.from(document.querySelectorAll(".view-state-toggle"));
         const viewStateByView = Object.fromEntries(viewStateInputs.map((input) => [input.dataset.view, input]));
@@ -1177,8 +1242,13 @@ DASHBOARD_TEMPLATE = Template(
         const GRAPH_WIDTH = 1080;
         const GRAPH_HEIGHT = 720;
         const GRAPH_MAX_PIXEL_RATIO = 1.75;
-        const GRAPH_TARGET_FPS = 36;
-        const GRAPH_ACTIVE_EDGE_BUDGET = 180;
+        const GRAPH_TARGET_FPS = 30;
+        const GRAPH_ACTIVE_EDGE_BUDGET = 140;
+        const GRAPH_MAX_EDGE_BUDGET = 360;
+        const PAPER_PAGE_SIZE = 18;
+        const PAGE_LIST_PAGE_SIZE = 30;
+        const DATABASE_PAGE_SIZE = 30;
+        const TAG_COLLAPSED_LIMIT = 18;
         const GRAPH_SETTINGS_STORAGE_KEY = "paperatlas_graph_settings_v1";
         const VISITED_PAGES_STORAGE_KEY = "paperatlas_visited_pages_v1";
         const DEFAULT_GRAPH_SETTINGS = Object.freeze({
@@ -1199,10 +1269,15 @@ DASHBOARD_TEMPLATE = Template(
         const state = {
           search: "",
           tags: new Set(),
-          view: "papers",
+          tagsExpanded: false,
+          view: "database",
+          paperPage: 1,
+          pageListPage: 1,
+          databasePage: 1,
+          graphResultLimit: 60,
           selectedNodeId: null,
           hoveredNodeId: null,
-          language: localStorage.getItem("paperatlas_lang") || "en",
+          language: localStorage.getItem("paperatlas_lang") || "ko",
           visitedPageIds: loadVisitedPageIds(),
           graphSettings: loadGraphSettings(),
           databaseSettings: loadDatabaseSettings(),
@@ -1354,6 +1429,12 @@ DASHBOARD_TEMPLATE = Template(
             || key;
         }
 
+        function formatTemplate(template, variables) {
+          return String(template).replace(/\{(\w+)\}/g, (_, key) => (
+            Object.prototype.hasOwnProperty.call(variables, key) ? String(variables[key]) : ""
+          ));
+        }
+
         function translateLabel(label) {
           return (i18nData.labels[state.language] || {})[label]
             || (i18nData.labels.en || {})[label]
@@ -1441,6 +1522,10 @@ DASHBOARD_TEMPLATE = Template(
           });
           langButtons.forEach((button) => {
             button.classList.toggle("active", button.dataset.lang === state.language);
+          });
+          document.querySelectorAll("[data-explorer-more]").forEach((element) => {
+            const count = element.dataset.explorerMore || "0";
+            element.textContent = `+ ${formatTemplate(t("explorer_more"), { count })}`;
           });
           syncGraphControlInputs();
           syncDatabaseControlInputs();
@@ -1542,8 +1627,24 @@ DASHBOARD_TEMPLATE = Template(
           return [...filteredPages()].sort(compareDatabasePages);
         }
 
+        function resetPagination() {
+          state.paperPage = 1;
+          state.pageListPage = 1;
+          state.databasePage = 1;
+        }
+
         function renderTagChips() {
-          tagChips.innerHTML = data.tags
+          const visibleTags = state.tagsExpanded
+            ? [...data.tags]
+            : data.tags.slice(0, TAG_COLLAPSED_LIMIT);
+          state.tags.forEach((slug) => {
+            const selectedTag = data.tags.find((tag) => tag.slug === slug);
+            if (selectedTag && !visibleTags.some((tag) => tag.slug === slug)) {
+              visibleTags.push(selectedTag);
+            }
+          });
+
+          tagChips.innerHTML = visibleTags
             .map((tag) => {
               const active = state.tags.has(tag.slug) ? " active" : "";
               return `
@@ -1563,9 +1664,14 @@ DASHBOARD_TEMPLATE = Template(
               } else {
                 state.tags.add(slug);
               }
+              resetPagination();
               renderAll();
             });
           });
+
+          const hasMoreTags = data.tags.length > TAG_COLLAPSED_LIMIT;
+          tagToggleButton.classList.toggle("hidden", !hasMoreTags);
+          tagToggleButton.textContent = t(state.tagsExpanded ? "tag_show_less" : "tag_show_more");
         }
 
         function renderActiveFilters() {
@@ -1592,10 +1698,51 @@ DASHBOARD_TEMPLATE = Template(
           matchDetail.textContent = t("match_detail");
         }
 
+        function renderPagination(container, total, requestedPage, pageSize, onPageChange) {
+          const totalPages = Math.max(1, Math.ceil(total / pageSize));
+          const currentPage = clamp(requestedPage, 1, totalPages);
+          const start = total ? ((currentPage - 1) * pageSize) + 1 : 0;
+          const end = Math.min(total, currentPage * pageSize);
+          container.classList.toggle("hidden", total <= pageSize);
+          container.innerHTML = `
+            <span class="pagination-summary">${escapeHtml(formatTemplate(t("pagination_showing"), { start, end, total }))}</span>
+            <div class="pagination-actions">
+              <button class="ghost-button" type="button" data-page-action="previous"${currentPage <= 1 ? " disabled" : ""}>${escapeHtml(t("pagination_previous"))}</button>
+              <span class="pagination-index">${currentPage} / ${totalPages}</span>
+              <button class="ghost-button" type="button" data-page-action="next"${currentPage >= totalPages ? " disabled" : ""}>${escapeHtml(t("pagination_next"))}</button>
+            </div>
+          `;
+          container.querySelectorAll("[data-page-action]").forEach((button) => {
+            button.addEventListener("click", () => {
+              const nextPage = button.dataset.pageAction === "previous"
+                ? currentPage - 1
+                : currentPage + 1;
+              onPageChange(clamp(nextPage, 1, totalPages));
+              const view = container.closest(".dashboard-view");
+              if (view) {
+                view.scrollIntoView({ block: "start", behavior: "smooth" });
+              }
+            });
+          });
+          return currentPage;
+        }
+
         function renderPapers() {
           const papers = filteredPapers();
           papersEmpty.classList.toggle("hidden", papers.length !== 0);
+          state.paperPage = renderPagination(
+            papersPagination,
+            papers.length,
+            state.paperPage,
+            PAPER_PAGE_SIZE,
+            (page) => {
+              state.paperPage = page;
+              renderPapers();
+            },
+          );
+          const pageStart = (state.paperPage - 1) * PAPER_PAGE_SIZE;
           paperGrid.innerHTML = papers
+            .slice(pageStart, pageStart + PAPER_PAGE_SIZE)
             .map((paper) => {
               const tagHtml = paper.tags
                 .slice(0, 8)
@@ -1668,7 +1815,19 @@ DASHBOARD_TEMPLATE = Template(
           });
 
           pagesEmpty.classList.toggle("hidden", pages.length !== 0);
+          state.pageListPage = renderPagination(
+            pagesPagination,
+            pages.length,
+            state.pageListPage,
+            PAGE_LIST_PAGE_SIZE,
+            (page) => {
+              state.pageListPage = page;
+              renderPages();
+            },
+          );
+          const pageStart = (state.pageListPage - 1) * PAGE_LIST_PAGE_SIZE;
           pageList.innerHTML = pages
+            .slice(pageStart, pageStart + PAGE_LIST_PAGE_SIZE)
             .map((page) => {
               const tagHtml = page.tags
                 .slice(0, 6)
@@ -1739,10 +1898,12 @@ DASHBOARD_TEMPLATE = Template(
                   <td class="database-title-cell">
                     <a class="database-title-link" ${renderHrefAttributes(page.href, page.file_href, page.http_href)}>${escapeHtml(page.title)}</a>
                     <p class="database-subtle">${escapeHtml(page.excerpt)}</p>
+                    <div class="database-meta-line">
+                      <span class="section-pill section-${escapeHtml(page.section || "core")}">${escapeHtml(translateLabel(page.section_label))}</span>
+                      <span class="mini-chip">${escapeHtml(translateLabel(pageStatusLabel(page)))}</span>
+                    </div>
                   </td>
-                  <td><span class="section-pill section-${escapeHtml(page.section || "core")}">${escapeHtml(translateLabel(page.section_label))}</span></td>
                   <td>${escapeHtml(pageYearLabel(page))}</td>
-                  <td>${escapeHtml(translateLabel(pageStatusLabel(page)))}</td>
                   <td>${escapeHtml(translateLabel(pageThemeLabel(page)))}</td>
                   <td>${page.relation_count || 0}</td>
                   <td><div class="database-tag-cell">${tags}</div></td>
@@ -1764,9 +1925,7 @@ DASHBOARD_TEMPLATE = Template(
                 <thead>
                   <tr>
                     <th data-i18n-key="database_column_title">${escapeHtml(t("database_column_title"))}</th>
-                    <th data-i18n-key="database_column_section">${escapeHtml(t("database_column_section"))}</th>
                     <th data-i18n-key="database_column_year">${escapeHtml(t("database_column_year"))}</th>
-                    <th data-i18n-key="database_column_status">${escapeHtml(t("database_column_status"))}</th>
                     <th data-i18n-key="database_column_theme">${escapeHtml(t("database_column_theme"))}</th>
                     <th data-i18n-key="database_column_relations">${escapeHtml(t("database_column_relations"))}</th>
                     <th data-i18n-key="database_column_tags">${escapeHtml(t("database_column_tags"))}</th>
@@ -1785,14 +1944,29 @@ DASHBOARD_TEMPLATE = Template(
           databaseEmpty.classList.toggle("hidden", rows.length !== 0);
           if (!rows.length) {
             databaseGroups.innerHTML = "";
+            databasePagination.innerHTML = "";
+            databasePagination.classList.add("hidden");
             return;
           }
 
+          state.databasePage = renderPagination(
+            databasePagination,
+            rows.length,
+            state.databasePage,
+            DATABASE_PAGE_SIZE,
+            (page) => {
+              state.databasePage = page;
+              renderDatabase();
+            },
+          );
+          const pageStart = (state.databasePage - 1) * DATABASE_PAGE_SIZE;
+          const visibleRows = rows.slice(pageStart, pageStart + DATABASE_PAGE_SIZE);
+
           const grouped = new Map();
           if (state.databaseSettings.groupKey === "none") {
-            grouped.set("", rows);
+            grouped.set("", visibleRows);
           } else {
-            rows.forEach((page) => {
+            visibleRows.forEach((page) => {
               const groupLabel = databaseGroupLabel(state.databaseSettings.groupKey, page);
               if (!grouped.has(groupLabel)) {
                 grouped.set(groupLabel, []);
@@ -2509,10 +2683,40 @@ DASHBOARD_TEMPLATE = Template(
           return window.getComputedStyle(graphView).display !== "none";
         }
 
-        function rebuildGraphRuntime() {
-          const visiblePages = filteredPapers();
+        function graphDisplayData() {
+          const allPages = filteredPapers();
+          const rankedPages = [...allPages].sort((left, right) => {
+            const relationDelta = (right.relation_count || 0) - (left.relation_count || 0);
+            if (relationDelta !== 0) {
+              return relationDelta;
+            }
+            const yearDelta = (right.year || 0) - (left.year || 0);
+            return yearDelta || left.title.localeCompare(right.title);
+          });
+          const visiblePages = rankedPages.slice(0, state.graphResultLimit);
+          if (state.selectedNodeId) {
+            const selectedPage = allPages.find((page) => page.id === state.selectedNodeId);
+            const selectedVisible = visiblePages.some((page) => page.id === state.selectedNodeId);
+            if (selectedPage && !selectedVisible && visiblePages.length) {
+              visiblePages[visiblePages.length - 1] = selectedPage;
+            }
+          }
           const visibleIds = new Set(visiblePages.map((page) => page.id));
-          const visibleEdges = data.paper_edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target));
+          const visibleEdges = data.paper_edges
+            .filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target))
+            .sort((left, right) => (right.strength || 1) - (left.strength || 1))
+            .slice(0, GRAPH_MAX_EDGE_BUDGET);
+
+          graphResultSummary.textContent = formatTemplate(t("graph_result_summary"), {
+            nodes: visiblePages.length,
+            total: allPages.length,
+            edges: visibleEdges.length,
+          });
+          return { allPages, visiblePages, visibleEdges, visibleIds };
+        }
+
+        function rebuildGraphRuntime() {
+          const { visiblePages, visibleEdges } = graphDisplayData();
           const previousTransform = graphRuntime ? { ...graphRuntime.transform } : { x: 0, y: 0, k: 1 };
           const previousPositions = new Map(
             graphRuntime
@@ -2776,9 +2980,7 @@ DASHBOARD_TEMPLATE = Template(
 
         function renderGraph() {
           state.visitedPageIds = loadVisitedPageIds();
-          const visiblePages = filteredPapers();
-          const visibleIds = new Set(visiblePages.map((page) => page.id));
-          const visibleEdges = data.paper_edges.filter((edge) => visibleIds.has(edge.source) && visibleIds.has(edge.target));
+          const { visiblePages, visibleEdges, visibleIds } = graphDisplayData();
 
           if (!visiblePages.length) {
             stopGraphAnimation(true);
@@ -2826,30 +3028,51 @@ DASHBOARD_TEMPLATE = Template(
             return;
           }
           stopGraphAnimation(false);
+          if (view === "papers") {
+            renderPapers();
+          } else if (view === "database") {
+            renderDatabase();
+          } else if (view === "pages") {
+            renderPages();
+          }
         }
 
         function renderAll() {
           renderTagChips();
           renderActiveFilters();
           renderCounts();
-          renderPapers();
-          renderDatabase();
-          renderPages();
-          if (state.view === "graph") {
+          if (state.view === "papers") {
+            renderPapers();
+          } else if (state.view === "database") {
+            renderDatabase();
+          } else if (state.view === "pages") {
+            renderPages();
+          } else if (state.view === "graph") {
             renderGraph();
           }
         }
 
+        let searchRenderTimer = null;
         searchInput.addEventListener("input", () => {
-          state.search = searchInput.value;
-          renderAll();
+          window.clearTimeout(searchRenderTimer);
+          searchRenderTimer = window.setTimeout(() => {
+            state.search = searchInput.value;
+            resetPagination();
+            renderAll();
+          }, 120);
         });
 
         clearFiltersButton.addEventListener("click", () => {
           state.search = "";
           state.tags.clear();
           searchInput.value = "";
+          resetPagination();
           renderAll();
+        });
+
+        tagToggleButton.addEventListener("click", () => {
+          state.tagsExpanded = !state.tagsExpanded;
+          renderTagChips();
         });
 
         function bindGraphRangeInput(input, handler) {
@@ -2914,6 +3137,7 @@ DASHBOARD_TEMPLATE = Template(
 
         databaseSortSelect.addEventListener("change", () => {
           state.databaseSettings.sortKey = databaseSortSelect.value;
+          state.databasePage = 1;
           saveDatabaseSettings();
           syncDatabaseControlInputs();
           renderDatabase();
@@ -2921,6 +3145,7 @@ DASHBOARD_TEMPLATE = Template(
 
         databaseSortDirectionButton.addEventListener("click", () => {
           state.databaseSettings.sortDirection = state.databaseSettings.sortDirection === "asc" ? "desc" : "asc";
+          state.databasePage = 1;
           saveDatabaseSettings();
           syncDatabaseControlInputs();
           renderDatabase();
@@ -2928,6 +3153,7 @@ DASHBOARD_TEMPLATE = Template(
 
         databaseGroupSelect.addEventListener("change", () => {
           state.databaseSettings.groupKey = databaseGroupSelect.value;
+          state.databasePage = 1;
           saveDatabaseSettings();
           syncDatabaseControlInputs();
           renderDatabase();
@@ -2944,10 +3170,17 @@ DASHBOARD_TEMPLATE = Template(
           exportDatabaseCsv();
         });
 
+        graphResultLimitSelect.addEventListener("change", () => {
+          state.graphResultLimit = Number(graphResultLimitSelect.value) || 60;
+          if (state.view === "graph") {
+            rebuildGraphRuntime();
+            renderGraphDetail(visibleGraphDetailPage());
+          }
+        });
+
         viewButtons.forEach((button) => {
           button.addEventListener("click", () => {
             setView(button.dataset.view);
-            renderAll();
           });
           button.addEventListener("keydown", (event) => {
             if (event.key !== "Enter" && event.key !== " ") {
@@ -2978,7 +3211,14 @@ DASHBOARD_TEMPLATE = Template(
 
         applyLanguage();
         renderAll();
-        setView("papers");
+        setView("database");
+        } catch (error) {
+          document.documentElement.setAttribute(
+            "data-dashboard-error",
+            error && error.stack ? error.stack : String(error),
+          );
+          console.error("paperatlas dashboard initialization failed", error);
+        }
       })();
     </script>
   </body>
@@ -4740,9 +4980,345 @@ pre code {
   letter-spacing: 0.01em;
 }
 
+/* Collection dashboard: library-first, bounded, and responsive. */
+.dashboard-shell {
+  grid-template-columns: minmax(240px, 270px) minmax(0, 1fr);
+  gap: 1rem;
+  max-width: 1560px;
+  padding: 1rem;
+}
+
+.dashboard-rail {
+  display: none;
+}
+
+.dashboard-sidebar {
+  top: 1rem;
+  max-height: calc(100vh - 2rem);
+}
+
+.dashboard-content {
+  min-height: calc(100vh - 2rem);
+  padding: clamp(1.25rem, 2.4vw, 2.2rem);
+}
+
+.dashboard-content > .guide-grid {
+  display: none;
+}
+
+.dashboard-hero {
+  margin: 0 0 1rem;
+  padding: 0 0 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.dashboard-hero h1 {
+  font-size: clamp(2rem, 3.4vw, 3.15rem);
+}
+
+.dashboard-hero .hero-copy {
+  max-width: 760px;
+}
+
+.dashboard-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  margin-top: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: 0.64rem;
+  background: rgba(255, 253, 247, 0.58);
+  overflow: hidden;
+}
+
+.dashboard-metric {
+  display: grid;
+  gap: 0.12rem;
+  padding: 0.82rem 0.95rem;
+  border-right: 1px solid var(--line);
+}
+
+.dashboard-metric:last-child {
+  border-right: 0;
+}
+
+.dashboard-metric strong {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.dashboard-metric span {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dashboard-content > .status-bar {
+  position: sticky;
+  top: 0.5rem;
+  z-index: 8;
+  margin-bottom: 1rem;
+  border: 1px solid var(--line);
+  background: rgba(250, 247, 238, 0.92);
+  box-shadow: 0 6px 18px rgba(48, 44, 34, 0.06);
+  backdrop-filter: blur(14px);
+}
+
+.dashboard-content > .status-bar .subtle {
+  font-size: 0.82rem;
+}
+
+.dashboard-sidebar .brand {
+  padding-bottom: 0.8rem;
+}
+
+.dashboard-sidebar .brand h1 {
+  font-size: 1.25rem;
+}
+
+.dashboard-sidebar .brand > .subtle {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-size: 0.84rem;
+}
+
+.dashboard-sidebar .side-block {
+  padding: 0.78rem;
+  margin-bottom: 0;
+}
+
+.dashboard-sidebar .small-note {
+  display: none;
+}
+
+.dashboard-sidebar .search-input {
+  padding: 0.68rem 0.75rem;
+  font-size: 0.92rem;
+}
+
+.dashboard-sidebar .view-switch {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.38rem;
+}
+
+.dashboard-sidebar .view-button {
+  padding: 0.58rem 0.62rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.dashboard-sidebar .chip-list {
+  max-height: 220px;
+  overflow-y: auto;
+  padding-right: 0.15rem;
+}
+
+.dashboard-sidebar .tag-chip {
+  padding: 0.34rem 0.52rem;
+  font-size: 0.76rem;
+}
+
+.tag-toggle {
+  width: 100%;
+  margin-top: 0.65rem;
+}
+
+.explorer-more label {
+  display: block;
+  padding: 0.5rem 0.55rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.paper-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.paper-card {
+  min-height: 250px;
+  padding: 1rem;
+}
+
+.paper-card .card-excerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.paper-card .card-tags {
+  max-height: 4.3rem;
+  overflow: hidden;
+}
+
+.pagination-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 0.8rem 0;
+  border-top: 1px solid var(--line);
+}
+
+.pagination-summary,
+.pagination-index {
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.pagination-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.pagination-actions .ghost-button:disabled {
+  opacity: 0.42;
+  cursor: default;
+  transform: none;
+}
+
+.database-controls {
+  grid-template-columns: repeat(3, minmax(150px, 1fr));
+}
+
+.database-control {
+  padding: 0.65rem 0.72rem;
+  border-radius: 0.6rem;
+}
+
+.database-control select {
+  padding: 0.52rem 0.68rem;
+  border-radius: 0.55rem;
+  font-size: 0.86rem;
+}
+
+.database-table {
+  min-width: 820px;
+}
+
+#database-view {
+  overflow-x: visible;
+}
+
+.database-table th,
+.database-table td {
+  padding: 0.72rem 0.68rem;
+}
+
+.database-title-cell {
+  width: 44%;
+  min-width: 300px;
+}
+
+.database-title-link {
+  font-size: 0.94rem;
+}
+
+.database-subtle {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  font-size: 0.8rem;
+}
+
+.database-meta-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.52rem;
+}
+
+.database-meta-line .section-pill,
+.database-meta-line .mini-chip {
+  padding: 0.2rem 0.42rem;
+  font-size: 0.58rem;
+}
+
+.database-tag-cell {
+  min-width: 140px;
+}
+
+.database-actions {
+  min-width: 110px;
+}
+
+.graph-toolbar-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.graph-limit-control {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+}
+
+.graph-limit-control select {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel-strong);
+  color: var(--ink);
+  padding: 0.42rem 1.6rem 0.42rem 0.65rem;
+}
+
+.graph-result-summary {
+  color: var(--accent-strong);
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+}
+
+.graph-advanced {
+  border: 1px solid var(--line);
+  border-radius: 0.64rem;
+  background: rgba(255, 253, 247, 0.52);
+}
+
+.graph-advanced > summary {
+  padding: 0.7rem 0.85rem;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  cursor: pointer;
+}
+
+.graph-advanced[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.graph-advanced .graph-controls-panel {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+}
+
+.graph-controls {
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+}
+
+.graph-stage {
+  height: clamp(440px, 66vh, 680px);
+}
+
 @media (max-width: 1180px) {
-  .page-shell,
-  .dashboard-shell {
+  .page-shell {
     grid-template-columns: 1fr;
   }
 
@@ -4791,9 +5367,40 @@ pre code {
   .database-controls {
     grid-template-columns: 1fr;
   }
+
+  .dashboard-sidebar {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+
+  .dashboard-sidebar-utility {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-sidebar-utility .brand {
+    grid-column: 1 / -1;
+  }
+
+  .explorer-dashboard-block {
+    display: none;
+  }
+
+  .paper-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .graph-controls {
+    grid-template-columns: repeat(2, minmax(140px, 1fr));
+  }
 }
 
 @media (max-width: 720px) {
+  .dashboard-hero h1 {
+    font-size: 1.75rem;
+    line-height: 1.08;
+  }
+
   .graph-stage {
     height: clamp(360px, 56vh, 560px);
   }
@@ -4809,7 +5416,51 @@ pre code {
   }
 
   .database-table {
-    min-width: 880px;
+    min-width: 760px;
+  }
+
+  .database-title-cell {
+    width: 260px;
+    min-width: 260px;
+    max-width: 260px;
+  }
+
+  .dashboard-sidebar-utility {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-sidebar-utility .brand {
+    grid-column: auto;
+  }
+
+  .dashboard-sidebar .chip-list {
+    max-height: 8rem;
+  }
+
+  .dashboard-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dashboard-metric:nth-child(2) {
+    border-right: 0;
+  }
+
+  .dashboard-metric:nth-child(-n + 2) {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .paper-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pagination-bar,
+  .graph-toolbar-head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .graph-controls {
+    grid-template-columns: 1fr;
   }
 }
 """
@@ -5838,10 +6489,46 @@ def build_paper_relationships(serialized_pages: List[Dict[str, object]]) -> List
                 }
             )
 
-    return sorted(
+    ranked_edges = sorted(
         edges,
         key=lambda item: (-item["strength"], item["source"], item["target"]),
     )
+
+    # A complete tag-overlap graph quickly becomes unreadable and expensive:
+    # the Organoid collection previously produced 11k+ edges for 184 papers.
+    # Prioritize explicit wiki links, then keep only the strongest local
+    # neighbourhood around each paper with a conservative global ceiling.
+    max_edges = min(600, max(120, len(papers) * 3))
+    max_neighbours = 5
+    selected: List[Dict[str, object]] = []
+    selected_keys: Set[Tuple[str, str]] = set()
+    neighbour_counts: Dict[str, int] = {str(page["id"]): 0 for page in papers}
+
+    def add_edge(edge: Dict[str, object]) -> None:
+        key = (str(edge["source"]), str(edge["target"]))
+        if key in selected_keys:
+            return
+        selected_keys.add(key)
+        selected.append(edge)
+        neighbour_counts[key[0]] = neighbour_counts.get(key[0], 0) + 1
+        neighbour_counts[key[1]] = neighbour_counts.get(key[1], 0) + 1
+
+    for edge in ranked_edges:
+        if "Direct Wiki Link" in edge.get("reasons", []):
+            add_edge(edge)
+
+    for edge in ranked_edges:
+        if len(selected) >= max_edges:
+            break
+        source_id = str(edge["source"])
+        target_id = str(edge["target"])
+        if (
+            neighbour_counts.get(source_id, 0) < max_neighbours
+            or neighbour_counts.get(target_id, 0) < max_neighbours
+        ):
+            add_edge(edge)
+
+    return selected[:max_edges]
 
 
 def extract_year(rel_source: Path, metadata: Optional[Dict[str, str]] = None) -> Optional[int]:
@@ -6003,11 +6690,17 @@ def build_explorer_groups(pages: List[Page]) -> List[Dict[str, object]]:
         items = [page for page in pages if page.section == section]
         if not items and section != "":
             continue
+        if section == "sources":
+            items = sorted(items, key=lambda page: (-(page.year or 0), page.title.lower()))
+        else:
+            items = sorted(items, key=lambda page: page.title.lower())
+        visible_items = items[:12]
         groups.append(
             {
                 "label": SECTION_LABELS[section],
                 "count": len(items),
                 "open_by_default": section == "",
+                "more_count": max(0, len(items) - len(visible_items)),
                 "entries": [
                     {
                         "title": page.title,
@@ -6015,7 +6708,7 @@ def build_explorer_groups(pages: List[Page]) -> List[Dict[str, object]]:
                         "file_href": page.output_path.resolve().as_uri(),
                         "http_href": http_href_for_path(page.output_path),
                     }
-                    for page in items
+                    for page in visible_items
                 ],
             }
         )
@@ -6103,12 +6796,16 @@ def serialize_page(page: Page) -> Dict[str, object]:
     if len(short_title) > 28:
         short_title = short_title[:25].rstrip() + "..."
 
+    # Keep the client-side search index intentionally compact. Full Markdown
+    # bodies made large collection dashboards exceed 10 MB and delayed every
+    # interaction even though most searches target titles, tags, and summaries.
+    body_search_preview = strip_markdown_syntax(page.raw_body)[:1600]
     search_blob = " ".join(
         [
             page.title,
             page.excerpt,
             " ".join(page.tags),
-            strip_markdown_syntax(page.raw_body),
+            body_search_preview,
             " ".join(value for _, value in page.meta_items),
         ]
     ).lower()
@@ -6619,8 +7316,6 @@ def build_dashboard_context(pages: List[Page]) -> Dict[str, object]:
         if link is not None
     ]
 
-    initial_database_summary_html, initial_database_groups_html = render_initial_database(serialized_pages)
-
     return {
         "counts": counts,
         "section_legend": section_legend,
@@ -6634,11 +7329,6 @@ def build_dashboard_context(pages: List[Page]) -> Dict[str, object]:
         "latest_synthesis_link": latest_synthesis_link,
         "latest_query_link": latest_query_link,
         "graph_copy": build_graph_copy(paper_pages),
-        "initial_paper_grid_html": render_initial_paper_grid(paper_pages),
-        "initial_page_list_html": render_initial_page_list(serialized_pages),
-        "initial_database_summary_html": initial_database_summary_html,
-        "initial_database_groups_html": initial_database_groups_html,
-        "initial_graph_svg_html": render_initial_graph_svg(paper_pages, paper_edges),
     }
 
 
@@ -6675,11 +7365,6 @@ def render_dashboard(pages: List[Page], generated_at: str):
         log_link=context["log_link"],
         latest_synthesis_link=context["latest_synthesis_link"],
         latest_query_link=context["latest_query_link"],
-        initial_paper_grid_html=context["initial_paper_grid_html"],
-        initial_page_list_html=context["initial_page_list_html"],
-        initial_database_summary_html=context["initial_database_summary_html"],
-        initial_database_groups_html=context["initial_database_groups_html"],
-        initial_graph_svg_html=context["initial_graph_svg_html"],
         workspace_title=WORKSPACE_TITLE,
         workspace_description=WORKSPACE_DESCRIPTION,
         show_local_viewer_link=not PUBLIC_SITE_MODE,
