@@ -17,9 +17,11 @@
 ## 1. Multimodal As A Data-Integration Regime
 
 - [Single-Cell Multimodal Integration Regimes](../concepts/single-cell-multimodal-integration-regimes.md) separates `vertical` paired measurements, `horizontal` same-modality alignment across groups, `diagonal` unpaired datasets with distinct feature spaces, and `mosaic` mixtures of paired and single-modality blocks.
+- [scMVP](../entities/scMVP.md) and [totalVI](../entities/totalVI.md) are paired-data specialists: scMVP targets same-cell RNA+ATAC, whereas totalVI targets same-cell RNA+protein and explicitly models antibody background.
 - [MultiVI](../entities/MultiVI.md) is anchored by paired cells and extends that latent representation to single-modality cells.
 - [MIDAS](../entities/MIDAS.md) targets flexible RNA/ATAC/ADT mosaic blocks.
 - [scVAEIT](../entities/scVAEIT.md) learns arbitrary mosaic missingness through explicit masks and conditional variational prediction.
+- [StabMap](../entities/StabMap.md) uses a different mosaic logic: pairwise feature overlaps form a connected graph, and reference coordinates are projected through intermediate bridge datasets even when no feature is global.
 - [GLUE](../entities/GLUE.md) and [scMODAL](../entities/scMODAL.md) align fully unpaired modalities, but GLUE uses a signed regulatory guidance graph whereas scMODAL constructs cross-modal cell anchors from linked features.
 - Here `multimodal` is first a statement about which correspondences were measured and which assumptions must replace the missing correspondences.
 - [Multi-Omics Integration Method Taxonomy](../concepts/multi-omics-integration-method-taxonomy.md) keeps this data geometry separate from the choice of correlation, factorization, probabilistic, kernel, network, or deep-generative machinery.
@@ -28,7 +30,8 @@
 
 - [Cross-modality Generation](../concepts/cross-modality-generation.md) is the clearest direct example through [AURORA](../entities/AURORA.md).
 - Here multimodality means aligning several assay or phenotype types into one latent space so an observed modality can stand in for an unmeasured one.
-- MultiVI, MIDAS, scVAEIT, and scMODAL bring the same completion goal into single-cell multi-omics, but with paired-reference, disentangled mosaic-block, mask-conditioned mosaic, and feature-link-guided supervision respectively.
+- scMVP, totalVI, MultiVI, MIDAS, scVAEIT, and scMODAL bring the same completion goal into single-cell multi-omics, but with paired denoising, assay-background-aware protein prediction, paired-reference, disentangled mosaic-block, mask-conditioned mosaic, and feature-link-guided supervision respectively.
+- StabMap adds reference-coordinate and feature transfer through a connected overlap graph rather than a learned generative decoder.
 - The important boundary is that reconstructed RNA, accessibility, protein, or phenotype values are model estimates rather than newly observed measurements.
 - [Post-Imputation Inference](../concepts/post-imputation-inference.md) adds a second boundary: accurate-looking reconstruction does not guarantee calibrated downstream p-values or false-discovery rates.
 
@@ -84,8 +87,8 @@
 ## What The Collection Supports Right Now
 
 - The collection clearly supports the claim that `multimodal` is being used at different abstraction levels.
-- MIDAS, GLUE, MultiVI, and scMODAL provide concrete but differently supervised implementations of single-cell multimodal integration.
-- AURORA, MIDAS, MultiVI, and scMODAL make missing-modality completion operational at different biological scales and under different pairing assumptions.
+- scMVP, totalVI, MIDAS, GLUE, MultiVI, scVAEIT, StabMap, and scMODAL provide concrete but differently supervised implementations of single-cell multimodal integration.
+- AURORA, scMVP, totalVI, MIDAS, MultiVI, scVAEIT, StabMap, and scMODAL make denoising, missing-modality completion, or feature transfer operational under different pairing and bridge assumptions.
 - GLUE, scMultiMap, and scooby show three distinct routes from multimodal data toward regulatory hypotheses: graph-linked embedding similarity, paired count association, and sequence perturbation.
 - Baião 2025 makes the lexical boundary explicit: `multi-omics` combines molecular layers, whereas broader `multimodal` systems may also fuse imaging, clinical, phenotypic, and wearable data.
 - Cui 2025 and Khan 2025 are the strongest explicit roadmaps for multimodal foundation-model design.
@@ -102,6 +105,7 @@
 
 - In this collection, `multimodal` is best read as a family resemblance term rather than a single architecture label.
 - Sometimes it means `align cells despite missing pairings`.
+- Sometimes it means `chain pairwise feature overlaps through bridge datasets`.
 - Sometimes it means `infer the missing modality`.
 - Sometimes it means `infer cross-modal regulatory relationships`.
 - Sometimes it means `predict multiple profiles from sequence`.
@@ -126,6 +130,8 @@
 - [Multi-Omics Integration Method Taxonomy](../concepts/multi-omics-integration-method-taxonomy.md)
 - [Masked Conditional Multimodal Imputation](../concepts/masked-conditional-multimodal-imputation.md)
 - [Post-Imputation Inference](../concepts/post-imputation-inference.md)
+- [Protein Background Modeling](../concepts/protein-background-modeling.md)
+- [Multi-Hop Mosaic Integration](../concepts/multi-hop-mosaic-integration.md)
 - [AURORA](../entities/AURORA.md)
 - [AIVC](../entities/AIVC.md)
 - [MIDAS](../sources/he_2024_midas_mosaic_integration_knowledge_transfer.md)
@@ -137,3 +143,6 @@
 - [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md)
 - [scVAEIT](../sources/du_2022_scvaeit_mosaic_integration_imputation.md)
 - [Augmented Doubly Robust Post-Imputation Inference for Proteomic Data](../sources/moon_2025_augmented_doubly_robust_post-imputation_proteomics.md)
+- [scMVP](../sources/li_2022_scmvp_multi-view_rna_atac.md)
+- [totalVI](../sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md)
+- [StabMap](../sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md)

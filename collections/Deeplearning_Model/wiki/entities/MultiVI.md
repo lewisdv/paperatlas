@@ -11,7 +11,7 @@
 
 ## Core Architecture
 
-- Modality-specific encoders and likelihood-matched decoders inherited from scVI, PeakVI, and totalVI.
+- Modality-specific encoders and likelihood-matched decoders inherited from scVI, PeakVI, and [totalVI](totalVI.md).
 - Symmetric-KL alignment and averaging of paired-cell latent distributions.
 - Adversarial domain adaptation for batch correction.
 - Posterior sampling for imputation uncertainty and Bayesian differential analysis.
@@ -35,4 +35,7 @@
 - [Cross-modality Generation](../concepts/cross-modality-generation.md)
 - [MIDAS](MIDAS.md)
 - [scVAEIT](scVAEIT.md)
+- [scMVP](scMVP.md)
+- [StabMap](StabMap.md)
+- [totalVI](totalVI.md)
 - [Source: MultiVI: deep generative model for the integration of multimodal data](../sources/ashuach_2023_multivi_deep_generative_multimodal_integration.md)

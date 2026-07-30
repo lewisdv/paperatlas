@@ -44,4 +44,6 @@
 - [Post-Imputation Inference](../concepts/post-imputation-inference.md)
 - [MIDAS](MIDAS.md)
 - [MultiVI](MultiVI.md)
+- [totalVI](totalVI.md)
+- [StabMap](StabMap.md)
 - [Source: Robust probabilistic modeling for single-cell multimodal mosaic integration and imputation via scVAEIT](../sources/du_2022_scvaeit_mosaic_integration_imputation.md)

@@ -35,4 +35,5 @@
 - [Cross-modality Generation](../concepts/cross-modality-generation.md)
 - [MultiVI](MultiVI.md)
 - [scVAEIT](scVAEIT.md)
+- [StabMap](StabMap.md)
 - [Source: Mosaic integration and knowledge transfer of single-cell multimodal data with MIDAS](../sources/he_2024_midas_mosaic_integration_knowledge_transfer.md)

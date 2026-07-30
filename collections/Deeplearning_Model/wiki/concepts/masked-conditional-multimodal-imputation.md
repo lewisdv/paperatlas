@@ -19,6 +19,12 @@
 - Zero-filling without explicit masking can confuse structural absence with real zero abundance.
 - A mask-conditioned model can reuse one trained reference across several incomplete query designs.
 
+## Contrast With Other Missing-Panel Strategies
+
+- [totalVI](../entities/totalVI.md) substitutes zeros for absent protein inputs, omits their likelihood terms during training, and predicts them through a batch-integrated latent space.
+- [scVAEIT](../entities/scVAEIT.md) instead encodes the missingness pattern itself and adds random training masks.
+- These strategies are not interchangeable: omission prevents an absent target from contributing to the likelihood, whereas explicit mask conditioning also tells the model which measurements are structurally absent.
+
 ## Design Choices
 
 - Mask distribution: independent feature dropout, complete modality dropout, authentic structural masks, or prior-informed masks.
@@ -36,3 +42,4 @@
 ## Sources
 
 - [Robust probabilistic modeling for single-cell multimodal mosaic integration and imputation via scVAEIT](../sources/du_2022_scvaeit_mosaic_integration_imputation.md)
+- [Joint probabilistic modeling of single-cell multi-omic data with totalVI](../sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md)

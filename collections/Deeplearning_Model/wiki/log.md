@@ -667,3 +667,28 @@
 - Replaced both queued stubs with deep source pages covering statistical or model setup, architecture, reported evidence, limitations, interpretation boundaries, and open questions.
 - Created an entity page for scVAEIT and concepts for masked conditional multimodal imputation and post-imputation inference.
 - Updated multimodal integration, cross-modality generation, method taxonomy, the collection-wide multimodal query, related entity links, `wiki/overview.md`, and `wiki/index.md`.
+
+## [2026-07-30 16:44 KST] ingest queued | A deep generative model for multi-view profiling of single-cell RNA-seq and ATAC-seq data
+
+- Registered raw source raw/sources/li_2022_cobolt_multi-view_rna_atac.pdf.
+- Created source page wiki/sources/li_2022_cobolt_multi-view_rna_atac.md.
+
+## [2026-07-30 16:44 KST] ingest queued | Joint probabilistic modeling of single-cell multi-omic data with totalVI
+
+- Registered raw source raw/sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.pdf.
+- Created source page wiki/sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md.
+
+## [2026-07-30 16:44 KST] ingest queued | Stabilized mosaic single-cell data integration using unshared features
+
+- Registered raw source raw/sources/ghazanfar_2024_stabmap_mosaic_unshared_features.pdf.
+- Created source page wiki/sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md.
+
+## [2026-07-30 17:03 KST] deep ingest | scMVP, totalVI, and StabMap
+
+- Preserved all three supplied PDFs as immutable raw sources and verified their byte-for-byte copies: scMVP SHA-256 `922c160fd678ab8015f81bf3b8b644c54038e7bcec2fc1f81cf12d3b2e797548`; totalVI SHA-256 `4aeffa58aba81e495e8bae4f1af6a65acdfa9e5e01769fd6577ea6e2a4d0cf88`; StabMap SHA-256 `d59a26361ef4233730ed8c4f63fd4878b1799859cc2226582658b536ef5cb1c0`.
+- Normalized the first raw and wiki identifiers from the temporary `cobolt` label to `scmvp` after confirming that scMVP is the paper's model and Cobolt is only a comparison method.
+- Parsed the papers sequentially with OpenDataLoader under the existing Java 21 runtime and saved independent Poppler layout-text helpers and extraction manifests under `raw/derived/`.
+- Rendered and visually checked all 78 pages across the three PDFs; no blank, corrupt, clipped, or missing pages were found.
+- Replaced the three queued stubs with deep source pages covering data regime, model or projection algorithm, reported evidence, interpretation boundaries, limitations, and open questions.
+- Created entity pages for scMVP, totalVI, and StabMap, plus concepts for protein-background modeling and multi-hop mosaic integration.
+- Updated multimodal integration regimes, method taxonomy, cross-modality generation, masked imputation, post-imputation inference, the collection-wide multimodal query, related source and entity links, `wiki/overview.md`, and `wiki/index.md`.

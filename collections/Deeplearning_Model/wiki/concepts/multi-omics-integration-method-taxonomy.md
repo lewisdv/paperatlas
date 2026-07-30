@@ -24,21 +24,24 @@
 | Probabilistic or Bayesian | Distributions over shared latent factors | Uncertainty, flexible likelihoods, missing-data handling | Model assumptions, tuning, and computation |
 | Multiple-kernel learning | Combined sample-similarity kernels | Nonlinear integration across heterogeneous feature spaces | Kernel and hyperparameter sensitivity |
 | Network-based | Fused sample or feature graphs | Topological relations and robustness to some missingness | Similarity metric and graph-construction dependence |
+| Reference projection | Low-dimensional reference coordinates predicted from shared features | Fast query mapping and pairwise-overlap chains | Reference dependence, linearity, and accumulated path error |
 | Deep generative | Nonlinear latent distributions and decoders | Joint embeddings, denoising, generation, and imputation | Data and compute demand, optimization, interpretability |
 
 ## VAE Design Levers
 
-- `Observation model`: Gaussian or reconstruction losses are not universally appropriate; sparse single-cell counts often need count-aware likelihoods.
+- `Observation model`: Gaussian or reconstruction losses are not universally appropriate; sparse single-cell counts often need count-aware likelihoods. [scMVP](../entities/scMVP.md) uses separate RNA and ATAC likelihoods, while [totalVI](../entities/totalVI.md) adds a foreground/background mixture for protein counts.
 - `Latent fusion`: concatenation, mixture of experts, product of experts, or mixtures of products of experts impose different rules for combining modality evidence.
 - `Distribution alignment`: KL divergence, maximum mean discrepancy, or adversarial discriminators can align posteriors, conditions, modalities, or batches.
 - `Semantic supervision`: task losses, contrastive pairs, cycle consistency, and disentanglement terms shape what the latent space preserves.
-- `Missingness`: masking, conditional inference, overlapping reference blocks, or omission of absent experts determine how a model handles missing features or modalities. [scVAEIT](../entities/scVAEIT.md) makes the authentic and randomly generated masks explicit model inputs.
+- `Missingness`: masking, conditional inference, overlapping reference blocks, omission of absent experts, or omission of unobserved likelihood terms determine how a model handles missing features or modalities. [scVAEIT](../entities/scVAEIT.md) makes masks explicit, whereas totalVI handles absent protein panels through its likelihood and integrated latent space.
 
 ## Method-Selection Questions
 
 - Are samples paired, batch-matched, fully unpaired, or connected through overlapping modality blocks?
+- Is there one global feature intersection, only a connected chain of pairwise overlaps, or no feature-level bridge at all?
 - Is the main output a joint embedding, batch correction, clustering, missing-modality imputation, outcome prediction, or regulatory inference?
 - Must uncertainty be explicit?
+- Does an assay-specific nuisance process, such as antibody background, need its own probabilistic component?
 - How much modality-specific variation must remain visible?
 - Is the sample size sufficient for a nonlinear generative model?
 - Is an interpretable factor or association more useful than a flexible decoder?
@@ -51,8 +54,12 @@
 - Valid inference after imputation is a separate problem from integration or reconstruction; see [Post-Imputation Inference](post-imputation-inference.md).
 - Regulatory links inferred from embeddings or cross-modal associations are not automatically causal.
 - The review provides a technical taxonomy and qualitative inventory, not a unified head-to-head benchmark.
+- A connected dataset topology is not sufficient by itself: bridge size and feature informativeness determine whether multi-hop transfer remains reliable.
 
 ## Sources
 
 - [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md)
 - [Robust probabilistic modeling for single-cell multimodal mosaic integration and imputation via scVAEIT](../sources/du_2022_scvaeit_mosaic_integration_imputation.md)
+- [A deep generative model for multi-view profiling of single-cell RNA-seq and ATAC-seq data](../sources/li_2022_scmvp_multi-view_rna_atac.md)
+- [Joint probabilistic modeling of single-cell multi-omic data with totalVI](../sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md)
+- [Stabilized mosaic single-cell data integration using unshared features](../sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md)

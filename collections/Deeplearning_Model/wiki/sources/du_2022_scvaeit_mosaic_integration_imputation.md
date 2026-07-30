@@ -51,7 +51,7 @@ raw_source: raw/sources/du_2022_scvaeit_mosaic_integration_imputation.pdf
 
 - The primary CITE-seq PBMC training dataset contains 161,764 cells, 4,686 retained genes, and 227 proteins.
 - Monocytes (`n = 49,010`) and CD4 T cells (`n = 41,001`) are separately held out to test whether the model can translate modalities for unseen cell types.
-- The paper reports higher correlations and lower RMSE than Seurat WNN and totalVI in almost all tested gene-to-protein or protein-to-gene cases.
+- The paper reports higher correlations and lower RMSE than Seurat WNN and [totalVI](../entities/totalVI.md) in almost all tested gene-to-protein or protein-to-gene cases.
 - On an external CITE-seq cord-blood dataset, scVAEIT reports median Pearson correlation 0.73, median Spearman correlation 0.69, and RMSE 1.70 for protein imputation without fine-tuning.
 - A second external REAP-seq dataset tests protocol transfer; the paper reports scVAEIT as more accurate and stable than Seurat and totalVI.
 

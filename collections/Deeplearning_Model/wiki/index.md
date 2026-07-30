@@ -80,6 +80,10 @@
 - [Augmented Doubly Robust Post-Imputation Inference for Proteomic Data](sources/moon_2025_augmented_doubly_robust_post-imputation_proteomics.md) - 2025 preprint on augmented doubly robust regression after peptide imputation, with separate outcome and observation-propensity models for FDR-calibrated discovery.
 - [Robust probabilistic modeling for single-cell multimodal mosaic integration and imputation via scVAEIT](sources/du_2022_scvaeit_mosaic_integration_imputation.md) - PNAS 2022 paper on mask-conditioned variational integration, denoising, imputation, and transfer across mosaic RNA, protein, and ATAC datasets.
 
+- [A deep generative model for multi-view profiling of single-cell RNA-seq and ATAC-seq data](sources/li_2022_scmvp_multi-view_rna_atac.md) - Genome Biology 2022 paper on scMVP, an asymmetric attention-based VAE for paired RNA-ATAC embedding, imputation, clustering, CRE analysis, and trajectory inference.
+- [Joint probabilistic modeling of single-cell multi-omic data with totalVI](sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md) - Nature Methods 2021 paper on joint RNA-protein modeling with cell-specific antibody-background correction, panel integration, imputation, and Bayesian differential analysis.
+- [Stabilized mosaic single-cell data integration using unshared features](sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md) - Nature Biotechnology paper on StabMap, a reference-projection method for connected multi-hop mosaic integration without a global shared feature set.
+
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -104,6 +108,9 @@
 - [HNOCA](entities/HNOCA.md) - Integrated Human Neural Organoid Cell Atlas used for reference mapping, protocol comparison, and disease-model projection.
 - [MIDAS](entities/MIDAS.md) - Deep generative framework for mosaic RNA/ATAC/ADT integration, imputation, batch correction, and model transfer.
 - [scVAEIT](entities/scVAEIT.md) - Conditional variational autoencoder that models explicit missingness masks for multimodal mosaic integration and imputation.
+- [scMVP](entities/scMVP.md) - Non-symmetric multimodal VAE for paired single-cell RNA and ATAC profiling.
+- [totalVI](entities/totalVI.md) - Probabilistic CITE-seq model with explicit protein foreground/background decomposition.
+- [StabMap](entities/StabMap.md) - Reference-projection method for multi-hop mosaic integration through pairwise feature overlap.
 - [GLUE](entities/GLUE.md) - Graph-guided framework for unpaired single-cell multi-omics integration and regulatory inference.
 - [MultiVI](entities/MultiVI.md) - Probabilistic model for paired, unpaired, and mosaic multimodal integration with uncertainty-aware imputation.
 - [scMODAL](entities/scMODAL.md) - Feature-link-guided adversarial framework for aligning unpaired single-cell modalities.
@@ -148,6 +155,8 @@
 - [Multi-Omics Integration Method Taxonomy](concepts/multi-omics-integration-method-taxonomy.md) - Separating vertical, horizontal, diagonal, and mosaic data geometry from statistical, factorization, probabilistic, kernel, network, and deep-generative algorithm families.
 - [Masked Conditional Multimodal Imputation](concepts/masked-conditional-multimodal-imputation.md) - Learning conditional distributions of structurally absent features or modalities while distinguishing missingness from measured biological zeros.
 - [Post-Imputation Inference](concepts/post-imputation-inference.md) - Calibrating coefficients, uncertainty, p-values, and discoveries after missing molecular values have been predicted.
+- [Protein Background Modeling](concepts/protein-background-modeling.md) - Separating target-specific antibody signal from ambient or nonspecific protein counts.
+- [Multi-Hop Mosaic Integration](concepts/multi-hop-mosaic-integration.md) - Connecting datasets through chains of pairwise feature overlaps without requiring one global feature intersection.
 
 ## Queries
 

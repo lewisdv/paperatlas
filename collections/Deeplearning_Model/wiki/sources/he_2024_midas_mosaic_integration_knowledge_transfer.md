@@ -39,7 +39,7 @@ MIDAS is a variational deep generative framework for `mosaic` single-cell multi-
 ## Evidence
 
 - In complete trimodal DOGMA-seq and TEA-seq benchmarks, MIDAS has the highest reported scIB batch-correction, biological-conservation, and overall scores; raw versus corrected cell-type fold changes remain strongly correlated across modalities (`Pearson r > 0.8`).
-- Across constructed mosaic tasks, MIDAS outperforms scVAEIT, scMoMaT, Multigrate, and StabMap in the paper's scIB/scMIB comparisons.
+- Across constructed mosaic tasks, MIDAS outperforms scVAEIT, scMoMaT, Multigrate, and [StabMap](../entities/StabMap.md) in the paper's scIB/scMIB comparisons.
 - Cell labels inferred from incomplete DOGMA tasks have micro-F1 above `0.885` relative to full-data labels, except in the fully diagonal case.
 - The PBMC atlas integrates `185,518` cells from `27` batches, `10` platforms, and RNA/ATAC/ADT combinations.
 - In cross-tissue transfer, model transfer takes `1.28 h` versus `2.61 h` for de novo integration while giving comparable performance; reciprocal mapping identifies a progenitor population absent from the PBMC reference.
