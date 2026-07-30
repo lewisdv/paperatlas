@@ -32,7 +32,7 @@
 - `Latent fusion`: concatenation, mixture of experts, product of experts, or mixtures of products of experts impose different rules for combining modality evidence.
 - `Distribution alignment`: KL divergence, maximum mean discrepancy, or adversarial discriminators can align posteriors, conditions, modalities, or batches.
 - `Semantic supervision`: task losses, contrastive pairs, cycle consistency, and disentanglement terms shape what the latent space preserves.
-- `Missingness`: masking, conditional inference, overlapping reference blocks, or omission of absent experts determine how a model handles missing features or modalities.
+- `Missingness`: masking, conditional inference, overlapping reference blocks, or omission of absent experts determine how a model handles missing features or modalities. [scVAEIT](../entities/scVAEIT.md) makes the authentic and randomly generated masks explicit model inputs.
 
 ## Method-Selection Questions
 
@@ -48,9 +48,11 @@
 
 - Latent-space mixing, reconstruction, downstream classification, and biological interpretation are different success criteria.
 - Imputed features remain model estimates.
+- Valid inference after imputation is a separate problem from integration or reconstruction; see [Post-Imputation Inference](post-imputation-inference.md).
 - Regulatory links inferred from embeddings or cross-modal associations are not automatically causal.
 - The review provides a technical taxonomy and qualitative inventory, not a unified head-to-head benchmark.
 
 ## Sources
 
 - [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md)
+- [Robust probabilistic modeling for single-cell multimodal mosaic integration and imputation via scVAEIT](../sources/du_2022_scvaeit_mosaic_integration_imputation.md)

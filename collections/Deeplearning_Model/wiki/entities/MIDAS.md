@@ -34,4 +34,5 @@
 - [Single-Cell Multimodal Integration Regimes](../concepts/single-cell-multimodal-integration-regimes.md)
 - [Cross-modality Generation](../concepts/cross-modality-generation.md)
 - [MultiVI](MultiVI.md)
+- [scVAEIT](scVAEIT.md)
 - [Source: Mosaic integration and knowledge transfer of single-cell multimodal data with MIDAS](../sources/he_2024_midas_mosaic_integration_knowledge_transfer.md)

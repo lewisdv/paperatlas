@@ -648,3 +648,22 @@
 - Created the Multi-Omics Integration Method Taxonomy concept, separating vertical, horizontal, diagonal, and mosaic data geometry from correlation, factorization, probabilistic, kernel, network, and deep-generative algorithm families.
 - Updated single-cell multimodal integration regimes, multimodal foundation models, and the collection-wide multimodal query to incorporate the review's terminology and beyond-omics distinction.
 - Refreshed `wiki/overview.md` and `wiki/index.md`.
+
+## [2026-07-30 13:39 KST] ingest queued | Augmented Doubly Robust Post-Imputation Inference for Proteomic Data
+
+- Registered raw source raw/sources/moon_2025_augmented_doubly_robust_post-imputation_proteomics.pdf.
+- Created source page wiki/sources/moon_2025_augmented_doubly_robust_post-imputation_proteomics.md.
+
+## [2026-07-30 13:39 KST] ingest queued | Robust probabilistic modeling for single-cell multimodal mosaic integration and imputation via scVAEIT
+
+- Registered raw source raw/sources/du_2022_scvaeit_mosaic_integration_imputation.pdf.
+- Created source page wiki/sources/du_2022_scvaeit_mosaic_integration_imputation.md.
+
+## [2026-07-30 13:47 KST] deep ingest | ADR post-imputation inference and scVAEIT
+
+- Preserved both supplied PDFs as immutable raw sources and verified their byte-for-byte copies: Moon et al. SHA-256 `d5238f3193ee84698ade0f437cc344c5e26e08c40c9437d9f2b3860fbc280ea3`; Du et al. SHA-256 `b7c5a5f2d99ad6a9cc7a3d911d37a0dc8bd95509cc9d7996ed0e84866e31b9b9`.
+- Parsed both papers with OpenDataLoader under the existing Java 21 runtime and saved independent Poppler layout-text helpers and extraction manifests under `raw/derived/`.
+- Rendered and visually checked all 49 pages across the two PDFs; no blank, corrupt, clipped, or missing pages were found.
+- Replaced both queued stubs with deep source pages covering statistical or model setup, architecture, reported evidence, limitations, interpretation boundaries, and open questions.
+- Created an entity page for scVAEIT and concepts for masked conditional multimodal imputation and post-imputation inference.
+- Updated multimodal integration, cross-modality generation, method taxonomy, the collection-wide multimodal query, related entity links, `wiki/overview.md`, and `wiki/index.md`.

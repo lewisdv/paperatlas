@@ -61,7 +61,7 @@ raw_source: raw/sources/baiao_2025_technical_review_multi-omics_integration_meth
 
 - Table 1 supplies a qualitative comparison of six broad method categories by strengths, limitations, and typical applications.
 - Table 2 inventories deep generative methods, their omics demonstrations, integration setting, method design, and intended applications.
-- The review connects classical methods to recent single-cell systems including MultiVI, GLUE, MIDAS, Cobolt, Multigrate, scVAEIT, and related VAE or adversarial models.
+- The review connects classical methods to recent single-cell systems including MultiVI, GLUE, MIDAS, Cobolt, Multigrate, [scVAEIT](../entities/scVAEIT.md), and related VAE or adversarial models.
 - The authors describe this as the first systematic review centered specifically on VAE architectures, loss functions, and regularization for multi-omics integration. This is an author claim, not independently tested in the paper.
 - The evidence is a technical synthesis of prior publications rather than a new benchmark, dataset, or experimental validation study.
 

@@ -34,4 +34,5 @@
 - [Single-Cell Multimodal Integration Regimes](../concepts/single-cell-multimodal-integration-regimes.md)
 - [Cross-modality Generation](../concepts/cross-modality-generation.md)
 - [MIDAS](MIDAS.md)
+- [scVAEIT](scVAEIT.md)
 - [Source: MultiVI: deep generative model for the integration of multimodal data](../sources/ashuach_2023_multivi_deep_generative_multimodal_integration.md)

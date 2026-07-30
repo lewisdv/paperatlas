@@ -77,6 +77,9 @@
 - [scMultiMap: Cell-type-specific mapping of enhancers and target genes from single-cell multimodal data](sources/su_2025_scmultimap_enhancer_target_gene_mapping.md) - Nature Communications 2025 paper on analytic enhancer-gene association testing from paired RNA and ATAC counts.
 - [scooby: Modeling multi-modal genomic profiles from DNA sequence at single-cell resolution](sources/hingerl_2024_scooby_multimodal_genomic_profiles.md) - 2024 preprint on Borzoi-based DNA-to-single-cell RNA and ATAC profile prediction.
 - [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](sources/baiao_2025_technical_review_multi-omics_integration_methods.md) - Briefings in Bioinformatics 2025 review of integration geometries, classical method families, VAE architectures and regularizers, and emerging multimodal foundation-model directions.
+- [Augmented Doubly Robust Post-Imputation Inference for Proteomic Data](sources/moon_2025_augmented_doubly_robust_post-imputation_proteomics.md) - 2025 preprint on augmented doubly robust regression after peptide imputation, with separate outcome and observation-propensity models for FDR-calibrated discovery.
+- [Robust probabilistic modeling for single-cell multimodal mosaic integration and imputation via scVAEIT](sources/du_2022_scvaeit_mosaic_integration_imputation.md) - PNAS 2022 paper on mask-conditioned variational integration, denoising, imputation, and transfer across mosaic RNA, protein, and ATAC datasets.
+
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -100,6 +103,7 @@
 - [Orthrus](entities/Orthrus.md) - Mature RNA foundation model pretrained with biologically motivated contrastive objectives over isoforms and orthologs.
 - [HNOCA](entities/HNOCA.md) - Integrated Human Neural Organoid Cell Atlas used for reference mapping, protocol comparison, and disease-model projection.
 - [MIDAS](entities/MIDAS.md) - Deep generative framework for mosaic RNA/ATAC/ADT integration, imputation, batch correction, and model transfer.
+- [scVAEIT](entities/scVAEIT.md) - Conditional variational autoencoder that models explicit missingness masks for multimodal mosaic integration and imputation.
 - [GLUE](entities/GLUE.md) - Graph-guided framework for unpaired single-cell multi-omics integration and regulatory inference.
 - [MultiVI](entities/MultiVI.md) - Probabilistic model for paired, unpaired, and mosaic multimodal integration with uncertainty-aware imputation.
 - [scMODAL](entities/scMODAL.md) - Feature-link-guided adversarial framework for aligning unpaired single-cell modalities.
@@ -142,6 +146,8 @@
 - [Cell-Type-Specific Enhancer-Gene Mapping](concepts/cell-type-specific-enhancer-gene-mapping.md) - Linking accessible noncoding regions to target-gene expression within specific cell types or states.
 - [Sequence-to-Single-Cell Profile Modeling](concepts/sequence-to-single-cell-profile-modeling.md) - Predicting cell-specific molecular profiles from genomic sequence and a continuous cell representation.
 - [Multi-Omics Integration Method Taxonomy](concepts/multi-omics-integration-method-taxonomy.md) - Separating vertical, horizontal, diagonal, and mosaic data geometry from statistical, factorization, probabilistic, kernel, network, and deep-generative algorithm families.
+- [Masked Conditional Multimodal Imputation](concepts/masked-conditional-multimodal-imputation.md) - Learning conditional distributions of structurally absent features or modalities while distinguishing missingness from measured biological zeros.
+- [Post-Imputation Inference](concepts/post-imputation-inference.md) - Calibrating coefficients, uncertainty, p-values, and discoveries after missing molecular values have been predicted.
 
 ## Queries
 

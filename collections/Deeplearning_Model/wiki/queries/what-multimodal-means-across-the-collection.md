@@ -19,6 +19,7 @@
 - [Single-Cell Multimodal Integration Regimes](../concepts/single-cell-multimodal-integration-regimes.md) separates `vertical` paired measurements, `horizontal` same-modality alignment across groups, `diagonal` unpaired datasets with distinct feature spaces, and `mosaic` mixtures of paired and single-modality blocks.
 - [MultiVI](../entities/MultiVI.md) is anchored by paired cells and extends that latent representation to single-modality cells.
 - [MIDAS](../entities/MIDAS.md) targets flexible RNA/ATAC/ADT mosaic blocks.
+- [scVAEIT](../entities/scVAEIT.md) learns arbitrary mosaic missingness through explicit masks and conditional variational prediction.
 - [GLUE](../entities/GLUE.md) and [scMODAL](../entities/scMODAL.md) align fully unpaired modalities, but GLUE uses a signed regulatory guidance graph whereas scMODAL constructs cross-modal cell anchors from linked features.
 - Here `multimodal` is first a statement about which correspondences were measured and which assumptions must replace the missing correspondences.
 - [Multi-Omics Integration Method Taxonomy](../concepts/multi-omics-integration-method-taxonomy.md) keeps this data geometry separate from the choice of correlation, factorization, probabilistic, kernel, network, or deep-generative machinery.
@@ -27,8 +28,9 @@
 
 - [Cross-modality Generation](../concepts/cross-modality-generation.md) is the clearest direct example through [AURORA](../entities/AURORA.md).
 - Here multimodality means aligning several assay or phenotype types into one latent space so an observed modality can stand in for an unmeasured one.
-- MultiVI, MIDAS, and scMODAL bring the same completion goal into single-cell multi-omics, but with paired-reference, mosaic-block, and feature-link-guided supervision respectively.
+- MultiVI, MIDAS, scVAEIT, and scMODAL bring the same completion goal into single-cell multi-omics, but with paired-reference, disentangled mosaic-block, mask-conditioned mosaic, and feature-link-guided supervision respectively.
 - The important boundary is that reconstructed RNA, accessibility, protein, or phenotype values are model estimates rather than newly observed measurements.
+- [Post-Imputation Inference](../concepts/post-imputation-inference.md) adds a second boundary: accurate-looking reconstruction does not guarantee calibrated downstream p-values or false-discovery rates.
 
 ## 3. Multimodal As Alignment Plus Regulatory Inference
 
@@ -122,6 +124,8 @@
 - [Cell-Type-Specific Enhancer-Gene Mapping](../concepts/cell-type-specific-enhancer-gene-mapping.md)
 - [Sequence-to-Single-Cell Profile Modeling](../concepts/sequence-to-single-cell-profile-modeling.md)
 - [Multi-Omics Integration Method Taxonomy](../concepts/multi-omics-integration-method-taxonomy.md)
+- [Masked Conditional Multimodal Imputation](../concepts/masked-conditional-multimodal-imputation.md)
+- [Post-Imputation Inference](../concepts/post-imputation-inference.md)
 - [AURORA](../entities/AURORA.md)
 - [AIVC](../entities/AIVC.md)
 - [MIDAS](../sources/he_2024_midas_mosaic_integration_knowledge_transfer.md)
@@ -131,3 +135,5 @@
 - [scMultiMap](../sources/su_2025_scmultimap_enhancer_target_gene_mapping.md)
 - [scooby](../sources/hingerl_2024_scooby_multimodal_genomic_profiles.md)
 - [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md)
+- [scVAEIT](../sources/du_2022_scvaeit_mosaic_integration_imputation.md)
+- [Augmented Doubly Robust Post-Imputation Inference for Proteomic Data](../sources/moon_2025_augmented_doubly_robust_post-imputation_proteomics.md)
