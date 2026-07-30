@@ -633,3 +633,18 @@
 - Created concepts for single-cell multimodal integration regimes, cell-type-specific enhancer-gene mapping, and sequence-to-single-cell profile modeling.
 - Expanded cross-modality generation, multimodal foundation models, and the collection-wide multimodal query to distinguish paired, unpaired, and mosaic integration; imputation; regulatory inference; paired feature association; and sequence-conditioned profile generation.
 - Refreshed `wiki/overview.md` and `wiki/index.md`.
+
+## [2026-07-30 11:20 KST] ingest queued | A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches
+
+- Registered raw source raw/sources/baiao_2025_technical_review_multi-omics_integration_methods.pdf.
+- Created source page wiki/sources/baiao_2025_technical_review_multi-omics_integration_methods.md.
+
+## [2026-07-30 11:28 KST] deep ingest | Baião 2025 multi-omics integration methods review
+
+- Preserved the supplied 18-page PDF as immutable `raw/sources/baiao_2025_technical_review_multi-omics_integration_methods.pdf`; SHA-256: `8d3a9cd0ef1c2553ce6361297ce2ffd0e7b43cee54d66228914476e073401ec2`.
+- OpenDataLoader's default and structure-tree modes aborted in the list processor; rerunning with reading-order inference disabled produced a 13,521-word Markdown extraction. A Poppler layout-text helper was saved under `raw/derived/pdftext/`.
+- Rendered and visually checked all 18 pages. No blank, corrupt, clipped, or missing pages were found; page 7 is intentionally rotated in the source to accommodate a large method table.
+- Replaced the queued stub with a deep source page covering integration geometry, classical and deep method families, VAE likelihood and regularization choices, evidence boundaries, limitations, and open questions.
+- Created the Multi-Omics Integration Method Taxonomy concept, separating vertical, horizontal, diagonal, and mosaic data geometry from correlation, factorization, probabilistic, kernel, network, and deep-generative algorithm families.
+- Updated single-cell multimodal integration regimes, multimodal foundation models, and the collection-wide multimodal query to incorporate the review's terminology and beyond-omics distinction.
+- Refreshed `wiki/overview.md` and `wiki/index.md`.

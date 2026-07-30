@@ -3,23 +3,25 @@
 ## Short Answer
 
 - `Multimodal` does not mean one single thing in this collection.
-- It now appears in at least eight operationally different senses:
+- It now appears in at least nine operationally different senses:
   - integration under paired, unpaired, or mosaic measurement regimes
   - missing-modality generation from partial inputs
   - guidance-graph or feature-link-based alignment and regulatory inference
   - paired feature-feature association testing
   - DNA-sequence-conditioned prediction of several cell-specific profiles
+  - fusion of molecular omics with images, clinical records, phenotypes, or wearable signals
   - shared pretrained foundation-model paradigms across assay types
   - multi-omic or spatial atlas resources used as reference substrates
   - multi-scale virtual-cell roadmaps that extend beyond omics alone
 
 ## 1. Multimodal As A Data-Integration Regime
 
-- [Single-Cell Multimodal Integration Regimes](../concepts/single-cell-multimodal-integration-regimes.md) separates `vertical` paired measurements, `diagonal` unpaired datasets with distinct feature spaces, and `mosaic` mixtures of paired and single-modality blocks.
+- [Single-Cell Multimodal Integration Regimes](../concepts/single-cell-multimodal-integration-regimes.md) separates `vertical` paired measurements, `horizontal` same-modality alignment across groups, `diagonal` unpaired datasets with distinct feature spaces, and `mosaic` mixtures of paired and single-modality blocks.
 - [MultiVI](../entities/MultiVI.md) is anchored by paired cells and extends that latent representation to single-modality cells.
 - [MIDAS](../entities/MIDAS.md) targets flexible RNA/ATAC/ADT mosaic blocks.
 - [GLUE](../entities/GLUE.md) and [scMODAL](../entities/scMODAL.md) align fully unpaired modalities, but GLUE uses a signed regulatory guidance graph whereas scMODAL constructs cross-modal cell anchors from linked features.
 - Here `multimodal` is first a statement about which correspondences were measured and which assumptions must replace the missing correspondences.
+- [Multi-Omics Integration Method Taxonomy](../concepts/multi-omics-integration-method-taxonomy.md) keeps this data geometry separate from the choice of correlation, factorization, probabilistic, kernel, network, or deep-generative machinery.
 
 ## 2. Multimodal As Missing-Modality Completion
 
@@ -49,21 +51,28 @@
 - Its motif deletion and variant-effect predictions connect sequence, accessibility, and expression, but remain in silico hypotheses.
 - See [Sequence-to-Single-Cell Profile Modeling](../concepts/sequence-to-single-cell-profile-modeling.md).
 
-## 6. Multimodal As A Foundation-Model Paradigm
+## 6. Multimodal As Beyond-Omics Precision-Medicine Fusion
+
+- [A technical review of multi-omics data integration methods](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md) explicitly separates molecular multi-omics from a wider multimodal setting.
+- In the wider setting, molecular profiles are combined with phenotypes, medical imaging, electronic health records, clinical measurements, or wearable biosignals.
+- These inputs differ not only in feature identity but also in scale, structure, spatial organization, and whether they are tabular or unstructured.
+- Here multimodality means patient-level fusion for tasks such as prognosis, treatment-response prediction, and biomarker discovery rather than only aligning molecular assays.
+
+## 7. Multimodal As A Foundation-Model Paradigm
 
 - [Multimodal Foundation Models](../concepts/multimodal-foundation-models.md) captures a broader meaning.
 - In [Towards multimodal foundation models in molecular cell biology](../sources/cui_2025_towards_multimodal_foundation_models_in.md) and [Multimodal foundation transformer models for multiscale genomics](../sources/khan_2025_multimodal_foundation_transformer_models_for.md), multimodality is not one decoder trick but a whole pretraining and architecture agenda.
 - The emphasis is on unified tokenization, hybrid intramodal and intermodal attention, promptable cross-modal generation, and one shared representation layer across assay types.
 - This meaning is broader than the six concrete methods above because it treats integration, generation, annotation, perturbation modeling, and cross-scale reasoning as parts of one pretraining agenda.
 
-## 7. Multimodal As A Reference Substrate
+## 8. Multimodal As A Reference Substrate
 
 - [Multi-Omic Developmental Atlases](../concepts/multi-omic-developmental-atlases.md) shows a third meaning.
 - In [A multi-omic atlas of human embryonic skeletal development](../sources/to_2024_a_multi-omic_atlas_of_human.md), multimodality means paired transcriptional, epigenetic, and spatial measurements used to reconstruct developmental programs and disease-relevant structure.
 - This is not mainly a generative system and not yet a reusable pretrained model family.
 - Instead multimodality acts as a high-information biological scaffold that later predictive systems could train against, benchmark against, or use for interpretation.
 
-## 8. Multimodal As Multi-Scale Virtual-Cell Ambition
+## 9. Multimodal As Multi-Scale Virtual-Cell Ambition
 
 - [How to build the virtual cell with artificial intelligence: Priorities and opportunities](../sources/bunne_2024_how_to_build_the_virtual.md) extends the meaning further.
 - In the [AIVC](../entities/AIVC.md) roadmap, multimodality is only one layer inside a bigger multi-scale representation problem spanning molecular, cellular, and multicellular states.
@@ -76,6 +85,7 @@
 - MIDAS, GLUE, MultiVI, and scMODAL provide concrete but differently supervised implementations of single-cell multimodal integration.
 - AURORA, MIDAS, MultiVI, and scMODAL make missing-modality completion operational at different biological scales and under different pairing assumptions.
 - GLUE, scMultiMap, and scooby show three distinct routes from multimodal data toward regulatory hypotheses: graph-linked embedding similarity, paired count association, and sequence perturbation.
+- Baião 2025 makes the lexical boundary explicit: `multi-omics` combines molecular layers, whereas broader `multimodal` systems may also fuse imaging, clinical, phenotypic, and wearable data.
 - Cui 2025 and Khan 2025 are the strongest explicit roadmaps for multimodal foundation-model design.
 - To 2024 is the clearest multimodal reference-substrate paper.
 - AIVC is the clearest extension from multimodal molecular modeling into a broader virtual-cell agenda.
@@ -93,6 +103,7 @@
 - Sometimes it means `infer the missing modality`.
 - Sometimes it means `infer cross-modal regulatory relationships`.
 - Sometimes it means `predict multiple profiles from sequence`.
+- Sometimes it means `combine molecular, clinical, image, and biosignal evidence for one patient-level task`.
 - Sometimes it means `pretrain one model across many modalities`.
 - Sometimes it means `measure several modalities to build a stronger reference`.
 - Sometimes it means `move toward a multi-scale virtual cell`.
@@ -110,6 +121,7 @@
 - [Single-Cell Multimodal Integration Regimes](../concepts/single-cell-multimodal-integration-regimes.md)
 - [Cell-Type-Specific Enhancer-Gene Mapping](../concepts/cell-type-specific-enhancer-gene-mapping.md)
 - [Sequence-to-Single-Cell Profile Modeling](../concepts/sequence-to-single-cell-profile-modeling.md)
+- [Multi-Omics Integration Method Taxonomy](../concepts/multi-omics-integration-method-taxonomy.md)
 - [AURORA](../entities/AURORA.md)
 - [AIVC](../entities/AIVC.md)
 - [MIDAS](../sources/he_2024_midas_mosaic_integration_knowledge_transfer.md)
@@ -118,3 +130,4 @@
 - [scMODAL](../sources/wang_2025_scmodal_alignment_with_feature_links.md)
 - [scMultiMap](../sources/su_2025_scmultimap_enhancer_target_gene_mapping.md)
 - [scooby](../sources/hingerl_2024_scooby_multimodal_genomic_profiles.md)
+- [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md)

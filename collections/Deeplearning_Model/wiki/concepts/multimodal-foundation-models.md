@@ -14,6 +14,7 @@
 - [Multi-Omic Developmental Atlases](multi-omic-developmental-atlases.md) are adjacent but distinct: they supply multimodal biological reference structure even when they are not themselves pretrained foundation models.
 - [MIDAS](../entities/MIDAS.md), [GLUE](../entities/GLUE.md), [MultiVI](../entities/MultiVI.md), and [scMODAL](../entities/scMODAL.md) are concrete multimodal integration systems rather than broad foundation models. Together they expose the paired, unpaired, and mosaic data constraints that a future MFM would need to absorb.
 - [scMultiMap](../entities/scMultiMap.md) and [scooby](../entities/scooby.md) cover two additional MFM ambitions without unifying the whole agenda: cross-modal regulatory inference and cell-conditioned sequence-to-profile prediction.
+- [Baião et al. 2025](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md) places foundation models after a long continuum of classical, probabilistic, network, and deep-generative integration methods. In that review, foundation models are an emerging direction rather than an established default.
 
 ## Claimed Benefits
 
@@ -33,6 +34,7 @@
 - The collection currently contains more partial implementations and roadmaps than fully validated end-to-end MFMs.
 - Paired multimodal data remain scarce relative to the scale envisioned by the paradigm.
 - Unpaired and mosaic methods can reduce the need for cell-level pairing, but they replace it with guidance graphs, feature links, reference datasets, or model assumptions rather than eliminating supervision requirements.
+- The review literature still questions where foundation models outperform strong task-specific statistical or machine-learning approaches after accounting for data and compute.
 - Interpretability, hallucination control, uncertainty reporting, benchmarking, privacy, and compute access remain central open problems.
 
 ## Sources
@@ -46,3 +48,4 @@
 - [scMODAL: a general deep learning framework for comprehensive single-cell multi-omics data alignment with feature links](../sources/wang_2025_scmodal_alignment_with_feature_links.md)
 - [scMultiMap: Cell-type-specific mapping of enhancers and target genes from single-cell multimodal data](../sources/su_2025_scmultimap_enhancer_target_gene_mapping.md)
 - [scooby: Modeling multi-modal genomic profiles from DNA sequence at single-cell resolution](../sources/hingerl_2024_scooby_multimodal_genomic_profiles.md)
+- [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](../sources/baiao_2025_technical_review_multi-omics_integration_methods.md)

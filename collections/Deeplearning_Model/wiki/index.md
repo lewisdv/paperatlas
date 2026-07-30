@@ -76,6 +76,7 @@
 - [scMODAL: a general deep learning framework for comprehensive single-cell multi-omics data alignment with feature links](sources/wang_2025_scmodal_alignment_with_feature_links.md) - Nature Communications 2025 paper on feature-link-guided adversarial alignment of unpaired single-cell modalities.
 - [scMultiMap: Cell-type-specific mapping of enhancers and target genes from single-cell multimodal data](sources/su_2025_scmultimap_enhancer_target_gene_mapping.md) - Nature Communications 2025 paper on analytic enhancer-gene association testing from paired RNA and ATAC counts.
 - [scooby: Modeling multi-modal genomic profiles from DNA sequence at single-cell resolution](sources/hingerl_2024_scooby_multimodal_genomic_profiles.md) - 2024 preprint on Borzoi-based DNA-to-single-cell RNA and ATAC profile prediction.
+- [A technical review of multi-omics data integration methods: from classical statistical to deep generative approaches](sources/baiao_2025_technical_review_multi-omics_integration_methods.md) - Briefings in Bioinformatics 2025 review of integration geometries, classical method families, VAE architectures and regularizers, and emerging multimodal foundation-model directions.
 ## Entities
 
 - [SAVE](entities/SAVE.md) - Single-cell Gene Block Attention-based Variational gEnerative framework for conditional scRNA-seq modeling.
@@ -140,6 +141,7 @@
 - [Single-Cell Multimodal Integration Regimes](concepts/single-cell-multimodal-integration-regimes.md) - Distinguishing paired, unpaired, and mosaic integration by the correspondence available across modalities.
 - [Cell-Type-Specific Enhancer-Gene Mapping](concepts/cell-type-specific-enhancer-gene-mapping.md) - Linking accessible noncoding regions to target-gene expression within specific cell types or states.
 - [Sequence-to-Single-Cell Profile Modeling](concepts/sequence-to-single-cell-profile-modeling.md) - Predicting cell-specific molecular profiles from genomic sequence and a continuous cell representation.
+- [Multi-Omics Integration Method Taxonomy](concepts/multi-omics-integration-method-taxonomy.md) - Separating vertical, horizontal, diagonal, and mosaic data geometry from statistical, factorization, probabilistic, kernel, network, and deep-generative algorithm families.
 
 ## Queries
 
@@ -147,7 +149,7 @@
 - [How does this collection handle uncertainty, weak reference coverage, and low-confidence biological state assignment?](queries/uncertainty-coverage-and-low-confidence-state-assignment.md) - Comparison of fallback labels, retrieval confidence, and fidelity benchmarking as three different responses to weakly supported biological state assignment.
 - [How do the main single-cell foundation-model papers in this collection differ in their basic representation units?](queries/representation-units-in-single-cell-foundation-models.md) - Comparison of gene blocks, gene tokens with expression/context, ranked cell sentences, read-depth-aware expression modeling, external semantic feature embeddings, and retrieval embeddings.
 - [How does reinforcement learning appear at different scales in this collection?](queries/reinforcement-learning-at-different-scales.md) - Comparison of RL as developmental trajectory scoring in scRL versus patient-level dynamic treatment optimization in the clinical review literature.
-- [What does `multimodal` actually mean across this collection?](queries/what-multimodal-means-across-the-collection.md) - Comparison of integration regimes, missing-modality completion, regulatory inference, sequence-to-profile prediction, foundation-model roadmaps, atlas substrates, and virtual-cell ambitions.
+- [What does `multimodal` actually mean across this collection?](queries/what-multimodal-means-across-the-collection.md) - Comparison of integration regimes, missing-modality completion, regulatory inference, sequence-to-profile prediction, beyond-omics clinical fusion, foundation-model roadmaps, atlas substrates, and virtual-cell ambitions.
 - [How do virtual-cell roadmaps differ from multimodal foundation-model roadmaps in this collection?](queries/virtual-cell-vs-multimodal-foundation-roadmaps.md) - Comparison of AIVC-style universal-representation plus virtual-instrument roadmaps against Super Transformer and multimodal foundation-model architecture agendas.
 - [Which heterogeneity axes do the reference papers in this collection make hard to ignore?](queries/which-heterogeneity-axes-do-the-reference-papers-make-hard-to-ignore.md) - Comparison of sex-stratified burden, region-specific development, atlas fidelity, and multi-omic reference structure as evaluation constraints for later models.
 - [What does `similarity` mean across this collection?](queries/what-similarity-means-across-the-collection.md) - Comparison of retrieval similarity, contrastive RNA similarity, cross-modal latent equivalence, transport geometry, and reference fidelity.
