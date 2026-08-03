@@ -15,6 +15,14 @@
 - `Mosaic`: partially overlapping modality blocks connect otherwise incomplete datasets.
 - See [Single-Cell Multimodal Integration Regimes](single-cell-multimodal-integration-regimes.md) for method-level examples in this collection.
 
+## Temporal Update Strategy
+
+- `Offline reintegration` retrains on all data observed so far and serves as a retention upper benchmark, but cumulative cost rises with atlas size.
+- `Fixed-model generalization` maps new data through an unchanged reference model, making updates cheap but limiting adaptation to unseen variation.
+- `Sequential fine-tuning` adapts parameters on new data but can catastrophically forget earlier batches.
+- `Rehearsal-based continual learning` retains a bounded, representative sample of historical data during updates to balance adaptation and retention; [MIRACLE](../entities/MIRACLE.md) is the example in this collection.
+- This axis is independent of vertical, horizontal, diagonal, and mosaic geometry. See [Continual Single-Cell Atlas Integration](continual-single-cell-atlas-integration.md).
+
 ## Algorithm Families
 
 | Family | Main representation | Typical strengths | Main pressure points |
@@ -26,6 +34,7 @@
 | Network-based | Fused sample or feature graphs | Topological relations and robustness to some missingness | Similarity metric and graph-construction dependence |
 | Reference projection | Low-dimensional reference coordinates predicted from shared features | Fast query mapping and pairwise-overlap chains | Reference dependence, linearity, and accumulated path error |
 | Deep generative | Nonlinear latent distributions and decoders | Joint embeddings, denoising, generation, and imputation | Data and compute demand, optimization, interpretability |
+| Continual-learning wrapper | An existing integration model plus sequential updating and rehearsal memory | Incremental atlas updates without full reintegration | Forgetting, memory representativeness, update order, and provenance |
 
 ## VAE Design Levers
 
@@ -46,6 +55,7 @@
 - Is the sample size sufficient for a nonlinear generative model?
 - Is an interpretable factor or association more useful than a flexible decoder?
 - Are comparisons being made under the same preprocessing, data split, and task-specific metric?
+- Will new batches, tissues, features, or modalities arrive over time, and must the resulting atlas retain reproducible representations of its historical data?
 
 ## Evidence Boundaries
 
@@ -55,6 +65,7 @@
 - Regulatory links inferred from embeddings or cross-modal associations are not automatically causal.
 - The review provides a technical taxonomy and qualitative inventory, not a unified head-to-head benchmark.
 - A connected dataset topology is not sufficient by itself: bridge size and feature informativeness determine whether multi-hop transfer remains reliable.
+- A strong offline score does not establish continual-integration quality: historical retention, memory sampling, and update order must be evaluated separately.
 
 ## Sources
 
@@ -63,3 +74,4 @@
 - [A deep generative model for multi-view profiling of single-cell RNA-seq and ATAC-seq data](../sources/li_2022_scmvp_multi-view_rna_atac.md)
 - [Joint probabilistic modeling of single-cell multi-omic data with totalVI](../sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md)
 - [Stabilized mosaic single-cell data integration using unshared features](../sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md)
+- [Continual integration of single-cell multimodal data with MIRACLE](../sources/zhou_2026_miracle_continual_multimodal_integration.md)

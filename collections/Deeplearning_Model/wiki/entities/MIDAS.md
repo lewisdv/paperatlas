@@ -22,6 +22,7 @@
 - Multimodal PBMC atlas construction.
 - Missing-modality imputation, cell typing, and pseudotime analysis.
 - Cross-tissue and reference-to-query knowledge transfer.
+- Static mosaic base model for [MIRACLE](MIRACLE.md), which adds continual learning, bounded rehearsal, and dynamic architecture adaptation for online atlas updates.
 
 ## Caveats
 
@@ -36,4 +37,6 @@
 - [MultiVI](MultiVI.md)
 - [scVAEIT](scVAEIT.md)
 - [StabMap](StabMap.md)
+- [MIRACLE](MIRACLE.md)
 - [Source: Mosaic integration and knowledge transfer of single-cell multimodal data with MIDAS](../sources/he_2024_midas_mosaic_integration_knowledge_transfer.md)
+- [Source: Continual integration of single-cell multimodal data with MIRACLE](../sources/zhou_2026_miracle_continual_multimodal_integration.md)

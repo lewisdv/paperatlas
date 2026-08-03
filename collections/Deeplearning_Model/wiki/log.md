@@ -692,3 +692,12 @@
 - Replaced the three queued stubs with deep source pages covering data regime, model or projection algorithm, reported evidence, interpretation boundaries, limitations, and open questions.
 - Created entity pages for scMVP, totalVI, and StabMap, plus concepts for protein-background modeling and multi-hop mosaic integration.
 - Updated multimodal integration regimes, method taxonomy, cross-modality generation, masked imputation, post-imputation inference, the collection-wide multimodal query, related source and entity links, `wiki/overview.md`, and `wiki/index.md`.
+
+## [2026-08-03 12:54 KST] deep ingest | MIRACLE continual multimodal integration
+
+- Preserved the supplied 21-page PDF as immutable `raw/sources/zhou_2026_miracle_continual_multimodal_integration.pdf` and verified the copied file against the supplied original; SHA-256: `4203d9ff002a1aea69c816ed73410cd6aa39d82430e605933928d631c9ab3282`.
+- Parsed the paper with OpenDataLoader under the installed OpenJDK 21.0.12 runtime and saved the Markdown extraction, a Poppler layout-text helper, and an extraction manifest under `raw/derived/`.
+- Rendered and visually checked all 21 pages, including figures, tables, references, and reporting-summary pages; no blank, corrupt, clipped, or missing pages were found.
+- Created a deep source page covering the MIDAS-based continual-learning design, dynamic architecture adaptation, DPRS/BTS rehearsal memory, benchmark evidence, interpretation boundaries, limitations, and open questions.
+- Created pages for MIRACLE and continual single-cell atlas integration, and linked them to MIDAS, StabMap, scVAEIT, multimodal integration regimes, and the integration-method taxonomy.
+- Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 41 deeply ingested raw sources.

@@ -17,6 +17,7 @@
 - [MIDAS](../entities/MIDAS.md) targets flexible RNA/ATAC/ADT mosaic blocks and explicitly separates biological state from technical noise.
 - [scVAEIT](../entities/scVAEIT.md) targets mosaic feature panels and modality blocks by conditioning a VAE on authentic and randomly generated missingness masks.
 - [StabMap](../entities/StabMap.md) constructs a connected graph of pairwise feature overlap and projects reference coordinates through intermediate datasets, so no feature must occur in every dataset.
+- [MIRACLE](../entities/MIRACLE.md) wraps MIDAS with continual learning so mosaic blocks can arrive serially; their arrival over time is a separate lifecycle condition, not a fifth integration geometry.
 - [GLUE](../entities/GLUE.md) handles fully unpaired, distinct feature spaces through a regulatory guidance graph.
 - [scMODAL](../entities/scMODAL.md) handles unpaired modalities using weakly linked feature pairs to construct cross-modal cell anchors.
 - Batch-correction components in MultiVI and MIDAS also address horizontal differences when the same modality is distributed across studies or batches.
@@ -29,6 +30,7 @@
 - Prior feature links can orient unpaired spaces, but wrong or missing links introduce dependency on external knowledge.
 - Flexible mosaic models can impute missing blocks, but generated modalities are less certain than observations.
 - Multi-hop projection weakens the global-overlap requirement, but bridge size, reference choice, and accumulated mapping error become central.
+- When data arrive over time, the integration method must additionally balance adaptation to new biology against retention of historical batches; see [Continual Single-Cell Atlas Integration](continual-single-cell-atlas-integration.md).
 - Good batch mixing is insufficient: methods must also preserve cell populations and avoid false cross-modal correspondences.
 - Integration geometry specifies the supervision available; it does not specify whether the method should use factorization, probabilistic inference, graphs, kernels, or deep generative learning. See [Multi-Omics Integration Method Taxonomy](multi-omics-integration-method-taxonomy.md).
 
@@ -45,3 +47,4 @@
 - [scMVP](../sources/li_2022_scmvp_multi-view_rna_atac.md)
 - [totalVI](../sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md)
 - [StabMap](../sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md)
+- [MIRACLE](../sources/zhou_2026_miracle_continual_multimodal_integration.md)

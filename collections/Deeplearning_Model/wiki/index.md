@@ -83,6 +83,7 @@
 - [A deep generative model for multi-view profiling of single-cell RNA-seq and ATAC-seq data](sources/li_2022_scmvp_multi-view_rna_atac.md) - Genome Biology 2022 paper on scMVP, an asymmetric attention-based VAE for paired RNA-ATAC embedding, imputation, clustering, CRE analysis, and trajectory inference.
 - [Joint probabilistic modeling of single-cell multi-omic data with totalVI](sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md) - Nature Methods 2021 paper on joint RNA-protein modeling with cell-specific antibody-background correction, panel integration, imputation, and Bayesian differential analysis.
 - [Stabilized mosaic single-cell data integration using unshared features](sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md) - Nature Biotechnology paper on StabMap, a reference-projection method for connected multi-hop mosaic integration without a global shared feature set.
+- [Continual integration of single-cell multimodal data with MIRACLE](sources/zhou_2026_miracle_continual_multimodal_integration.md) - Nature Computational Science article on rehearsal-based continual learning for online RNA/ATAC/ADT mosaic atlas updates.
 
 ## Entities
 
@@ -107,6 +108,7 @@
 - [Orthrus](entities/Orthrus.md) - Mature RNA foundation model pretrained with biologically motivated contrastive objectives over isoforms and orthologs.
 - [HNOCA](entities/HNOCA.md) - Integrated Human Neural Organoid Cell Atlas used for reference mapping, protocol comparison, and disease-model projection.
 - [MIDAS](entities/MIDAS.md) - Deep generative framework for mosaic RNA/ATAC/ADT integration, imputation, batch correction, and model transfer.
+- [MIRACLE](entities/MIRACLE.md) - Continual-learning wrapper around MIDAS for online, bounded-memory multimodal mosaic atlas integration.
 - [scVAEIT](entities/scVAEIT.md) - Conditional variational autoencoder that models explicit missingness masks for multimodal mosaic integration and imputation.
 - [scMVP](entities/scMVP.md) - Non-symmetric multimodal VAE for paired single-cell RNA and ATAC profiling.
 - [totalVI](entities/totalVI.md) - Probabilistic CITE-seq model with explicit protein foreground/background decomposition.
@@ -157,6 +159,7 @@
 - [Post-Imputation Inference](concepts/post-imputation-inference.md) - Calibrating coefficients, uncertainty, p-values, and discoveries after missing molecular values have been predicted.
 - [Protein Background Modeling](concepts/protein-background-modeling.md) - Separating target-specific antibody signal from ambient or nonspecific protein counts.
 - [Multi-Hop Mosaic Integration](concepts/multi-hop-mosaic-integration.md) - Connecting datasets through chains of pairwise feature overlaps without requiring one global feature intersection.
+- [Continual Single-Cell Atlas Integration](concepts/continual-single-cell-atlas-integration.md) - Updating a shared single-cell atlas as data arrive while preserving historical integration quality under bounded memory.
 
 ## Queries
 
