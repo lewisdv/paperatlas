@@ -71,9 +71,15 @@
 - [Karbalayghareh 2026 DoFormer causal transformer gene perturbation Degidiba](sources/Karbalayghareh_2026_DoFormer_causal_transformer_gene.md) - paper source queued for ingest.
 - [DeGroat 2026 MPRA enhancer gene modeling NDD regulatory variants Degidiba](sources/DeGroat_2026_MPRA_enhancer_gene_modeling_NDD_regulatory.md) - paper source queued for ingest.
 - [Boix 2020 EpiMap Degidiba regulatory circuit interpretation](sources/Boix_2020_EpiMap_Degidiba_regulatory_circuit_interpretation.md) - paper source queued for ingest.
+- [Anderson 2020 — Foxp1 mechanisms in striatal development](sources/20260718_234948_anderson-2020-single-cell-analysis-of-foxp1-driven-mechanisms.md) - deep ingest; cell-type-specific and non-cell-autonomous mouse striatal effects.
+- [Qian 2025 — spatial human fetal cortical atlas](sources/20260718_234948_qian-2025-spatial-transcriptomics-reveals-human-cortical.md) - deep ingest; layers, areal gradients, and sharp V1–V2 boundary.
+- [Eze 2021 — early human brain single-cell atlas](sources/20260718_234948_eze-2021-single-cell-atlas-of-early-human.md) - deep ingest; early progenitor heterogeneity and organoid-fidelity benchmark.
 ## Entities
 
 ## Concepts
+
+- [Human fetal brain reference atlases](concepts/human-fetal-brain-reference-atlases.md) - complementary dissociated and spatial references for developmental-stage and fidelity claims.
+- [NDD genes in cell-type and circuit context](concepts/ndd-genes-in-cell-type-and-circuit-context.md) - cell-type-specific, non-cell-autonomous, and species-aware interpretation of disease genes.
 
 ## Queries
 

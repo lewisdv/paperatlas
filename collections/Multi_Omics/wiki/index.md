@@ -24,6 +24,13 @@
 - [Ormond 2026 OCD multiplex WGS workflow BICEP PECAN samplot WGS entry](sources/Ormond_2026_OCD_multiplex_WGS_workflow_BICEP_PECAN_samplot.md) - paper source queued for ingest.
 - [Song 2026 CACNA1C tandem repeat long read repeat detection method WGS entry](sources/Song_2026_CACNA1C_tandem_repeat_long_read_repeat_detection.md) - paper source queued for ingest.
 - [Nguyen 2026 UKBB exome 8 mask baseline gene burden WGS entry](sources/Nguyen_2026_UKBB_exome_8_mask_baseline_gene_burden_WGS_entry.md) - paper source queued for ingest.
+- [Shimagami 2025 — systemic-sclerosis immune heterogeneity](sources/20260718_234516_shimagami-2025-single-cell-analysis-reveals-immune-cell.md) - deep ingest; complication-specific monocyte and CD8 T-cell states.
+- [Zhang 2024 — spatial soybean expression/accessibility atlas](sources/20260718_234516_zhang-2024-a-spatially-resolved-multiomic-single-cell.md) - deep ingest; 103 cell types and spatial regulatory programs.
+- [Franzen 2019 — PanglaoDB](sources/20260718_234516_franzen-2019-panglaodb-a-web-server-for.md) - deep ingest; unified public scRNA-seq reuse and marker compendium.
+- [Zhang 2021 — human single-cell chromatin accessibility atlas](sources/20260718_234516_zhang-2021-a-single-cell-atlas-of-chromatin.md) - deep ingest; 1.2 million cCREs across 222 cell types.
+- [Yang 2025 — Spotiphy](sources/20260718_234516_yang-2025-spotiphy-enables-single-cell-spatial-whole.md) - deep ingest; inferred single-cell whole-transcriptome spatial reconstruction.
+- [Zeng 2023 — RIBOmap spatial translatomics](sources/20260718_234516_zeng-2023-spatially-resolved-single-cell-translatomics-at.md) - deep ingest; ribosome-bound mRNA at spatial single-cell resolution.
+- [Binan 2025 — Perturb-FISH](sources/20260718_234517_binan-2025-simultaneous-crispr-screening-and-spatial.md) - deep ingest; CRISPR guide detection, spatial transcriptomics, and functional phenotypes.
 ## Entities
 
 ## Concepts
@@ -34,6 +41,10 @@
 - [Rare disease diagnostics](concepts/rare-disease-diagnostics.md) - clinical synthesis across targeted and unified long-read workflows.
 - [Population-scale SV atlases](concepts/population-scale-sv-atlases.md) - role of long-read cohort resources in discovery and filtering.
 - [Complex rearrangements and hard regions](concepts/complex-rearrangements-and-hard-regions.md) - where long reads most clearly improve interpretability.
+- [Single-cell atlas integration and reference reuse](concepts/single-cell-atlas-integration-and-reference-reuse.md) - how public references support annotation without erasing source-study uncertainty.
+- [Spatial transcriptomics and multiomic integration](concepts/spatial-transcriptomics-and-multiomic-integration.md) - evidence ladder from spatial mapping to regulatory, translational, and perturbational integration.
+- [Spatial translatomics and post-transcriptional regulation](concepts/spatial-translatomics-and-post-transcriptional-regulation.md) - interpretation of ribosome-bound mRNA maps beyond transcript abundance.
+- [Perturbation and spatial functional genomics](concepts/perturbation-and-spatial-functional-genomics.md) - linking genetic perturbations to spatial molecular and independent functional readouts.
 
 ## Queries
 

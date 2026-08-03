@@ -139,3 +139,47 @@
 - DOI: (none)
 - PDF: no_doi
 - Source page: wiki/sources/Nguyen_2026_UKBB_exome_8_mask_baseline_gene_burden_WGS_entry.md
+
+## [2026-07-18 23:45 KST] ingest queued | shimagami 2025 single cell analysis reveals immune cell
+
+- Registered raw source raw/sources/20260718_234516_shimagami-2025-single-cell-analysis-reveals-immune-cell.pdf.
+- Created source page wiki/sources/20260718_234516_shimagami-2025-single-cell-analysis-reveals-immune-cell.md.
+
+## [2026-07-18 23:45 KST] ingest queued | zhang 2024 a spatially resolved multiomic single cell
+
+- Registered raw source raw/sources/20260718_234516_zhang-2024-a-spatially-resolved-multiomic-single-cell.pdf.
+- Created source page wiki/sources/20260718_234516_zhang-2024-a-spatially-resolved-multiomic-single-cell.md.
+
+## [2026-07-18 23:45 KST] ingest queued | franzen 2019 panglaodb a web server for
+
+- Registered raw source raw/sources/20260718_234516_franzen-2019-panglaodb-a-web-server-for.pdf.
+- Created source page wiki/sources/20260718_234516_franzen-2019-panglaodb-a-web-server-for.md.
+
+## [2026-07-18 23:45 KST] ingest queued | zhang 2021 a single cell atlas of chromatin
+
+- Registered raw source raw/sources/20260718_234516_zhang-2021-a-single-cell-atlas-of-chromatin.pdf.
+- Created source page wiki/sources/20260718_234516_zhang-2021-a-single-cell-atlas-of-chromatin.md.
+
+## [2026-07-18 23:45 KST] ingest queued | yang 2025 spotiphy enables single cell spatial whole
+
+- Registered raw source raw/sources/20260718_234516_yang-2025-spotiphy-enables-single-cell-spatial-whole.pdf.
+- Created source page wiki/sources/20260718_234516_yang-2025-spotiphy-enables-single-cell-spatial-whole.md.
+
+## [2026-07-18 23:45 KST] ingest queued | zeng 2023 spatially resolved single cell translatomics at
+
+- Registered raw source raw/sources/20260718_234516_zeng-2023-spatially-resolved-single-cell-translatomics-at.pdf.
+- Created source page wiki/sources/20260718_234516_zeng-2023-spatially-resolved-single-cell-translatomics-at.md.
+
+## [2026-07-18 23:45 KST] ingest queued | binan 2025 simultaneous crispr screening and spatial
+
+- Registered raw source raw/sources/20260718_234517_binan-2025-simultaneous-crispr-screening-and-spatial.pdf.
+- Created source page wiki/sources/20260718_234517_binan-2025-simultaneous-crispr-screening-and-spatial.md.
+
+## [2026-07-18] deep ingest | 7 single-cell and spatial multi-omics papers
+
+- Added and deep-ingested 7 sources from the 30-paper recommendation batch: Shimagami 2025, Zhang 2024 soybean atlas, Franzen 2019 PanglaoDB, Zhang 2021 chromatin-accessibility atlas, Yang 2025 Spotiphy, Zeng 2023 RIBOmap, and Binan 2025 Perturb-FISH.
+- Preserved the existing long-read WGS branch and created a separate single-cell/spatial branch rather than blending claims across unrelated omics questions.
+- Added four concepts: single-cell atlas integration/reference reuse; spatial transcriptomics/multiomic integration; spatial translatomics/post-transcriptional regulation; perturbation/spatial functional genomics.
+- Updated `wiki/index.md` and rewrote `wiki/overview.md` to expose both branches and the evidence ladder from atlas to perturbation and functional validation.
+- OpenDataLoader was not retried after the reproducible native `-6` failure in the immediately preceding Organoid batch. Deep ingest used the immutable raw PDFs with temporary `/tmp` `pdftotext` helpers.
+- Lint: 7/7 new source pages ingested and indexed, 4/4 new concept pages linked, 0 queued among the new sources, and 0 broken internal links.

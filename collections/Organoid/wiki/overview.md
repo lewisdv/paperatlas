@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 96 active organoid-related source pages. All 96 are deep-ingested protocol pages, 0 remain at standard-ingest level, 0 remain queued, and 29 are pruned from the active corpus.
+This collection currently contains 112 active organoid-related source pages. All 112 are deep-ingested source pages, 0 remain at standard-ingest level, 0 remain queued, and 29 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -14,7 +14,7 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 ## Current source-page status
 
-- Deep ingested: 96
+- Deep ingested: 112
 - Standard ingested: 0
 - Queued: 0
 
@@ -29,11 +29,11 @@ This collection currently contains 96 active organoid-related source pages. All 
 
 ## Largest organ/system clusters
 
-- brain: 17
-- colon-intestine: 6
-- kidney: 5
+- brain: 28
+- colon-intestine: 8
+- kidney: 7
 - organoid-system: 5
-- liver: 4
+- liver: 5
 - pancreas: 4
 - breast: 3
 - heart: 3
@@ -55,3 +55,4 @@ This collection currently contains 96 active organoid-related source pages. All 
 - Entity back-links now cover the highest-value translational, assay, brain, kidney, imaging, vascularization, and access branches; follow-up cleanups also threaded atlas-benchmarking links into more brain baseline and midbrain-screening pages, donor-baseline links into the tonsil immune branch, and new developmental anchors into endodermal and sensory-ectoderm pages, so remaining gaps are increasingly concentrated in only a few niche baselines.
 - Pruned source pages remain in `wiki/sources/` with `status: pruned`, so older cross-links still resolve and pruning remains auditable.
 - Use `python3 scripts/wiki.py --collection Organoid resume` when context disappears or when you want the latest backlog, counts, and recent structural changes.
+- The 2026-07-18 recommendation batch adds 16 deep-ingested sources: continuous morphogen-gradient patterning, adherent multi-well cortical organoids, neuroimmune/vascular disease models, kidney single-cell model benchmarking, intestinal serosal and endothelial lineages, liver zonation, radial-glial scaffold metabolism, cerebellar/Purkinje maturation, network oscillations, disease assembloids, and host visual-system integration.

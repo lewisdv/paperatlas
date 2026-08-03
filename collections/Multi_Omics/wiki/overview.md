@@ -1,18 +1,31 @@
 # Overview
 
-As of 2026-04-07, this wiki contains 10 deeply ingested Long Read WGS papers spanning 2019-2025.
+As of 2026-07-18, this wiki has two deliberately separated omics branches: 10 deeply ingested long-read WGS papers and 7 deeply ingested single-cell/spatial multi-omics papers. Eight metadata-only Notion entries remain queued outside these deep-ingested source sets.
 
-## Current picture
+## Long-read WGS branch
 
-- Long-read WGS shows its clearest advantage in structural variation, insertions, repeat-rich loci, sequencing dead zones, complex rearrangements, phasing, and methylation-aware workflows.
-- Short-read WGS remains more competitive for many SNVs and some deletions outside repetitive regions, so the case for universal long-read first-line use is not fully settled.
-- HiFi currently looks strongest for general variant-calling accuracy in this corpus, while ONT is strongly represented in methylation-aware clinical workflows and scalable population studies.
-- Population-scale long-read SV resources are now valuable not just for discovery but for candidate filtering and ancestry-aware interpretation.
+- Long reads show their clearest advantages for structural variation, insertions, repeats, hard regions, complex rearrangements, phasing, and native-molecule methylation.
+- Short reads remain competitive for many SNVs and some nonrepetitive deletions; universal long-read-first deployment is not established by this corpus.
+- Start from [Long Read WGS Starter Corpus](syntheses/20260407_long-read-wgs-corpus.md).
+
+## Single-cell and spatial multi-omics branch
+
+- Broad references such as PanglaoDB and the human chromatin-accessibility atlas support reuse and annotation, but reference mapping is not independent validation.
+- Spatial integration is strongest when location changes interpretation: expression–accessibility coupling, regional translation, cell–cell effects, or functional response.
+- Measured and inferred resolution must remain distinct. Spotiphy reconstructs single-cell whole-transcriptome profiles computationally; RIBOmap and Perturb-FISH directly measure targeted molecular panels in situ.
+- The emerging evidence ladder is atlas → spatial integration → additional regulatory/translation modality → perturbation → independent functional readout.
+- Start from [Spatial transcriptomics and multiomic integration](concepts/spatial-transcriptomics-and-multiomic-integration.md).
 
 ## Main tensions
 
-- targeted long-read deployment for selected cases versus unified long-read clinical workflows
-- intermediate-coverage large-cohort resources versus deeper benchmark-style sequencing
-- platform accuracy advantages versus workflow flexibility and native-molecule advantages
+- reference reuse versus propagation of source-study batch and annotation uncertainty
+- whole-transcriptome coverage versus directly measured single-cell spatial resolution
+- descriptive cell-state maps versus causal perturbation and functional validation
+- targeted long-read deployment versus unified long-read clinical workflows
 
-The main entry point for this corpus is [20260407_long-read-wgs-corpus](syntheses/20260407_long-read-wgs-corpus.md).
+## Current status
+
+- Deep-ingested sources: 17
+- Queued metadata-only source pages: 8
+- New 2026-07-18 single-cell/spatial sources: 7
+- New 2026-07-18 concept pages: 4

@@ -1781,3 +1781,105 @@
 - Updated `wiki/index.md`: upgraded the Amiri 2018 / Pollen 2019 / Hevner 2019 manuscript-reference entries from "· " stubs to "📄 ... - deeply ingested; <quantitative descriptor>" (Hevner labeled REVIEW / secondary). All cross-links across the 3 new pages verified to resolve, **0 broken** (18 distinct targets: sources camp_2015, mariani_2015, pollen_2015, pollen_2019, hevner_2019, amiri_2018, bhaduri_2020, cheroni_2022, kanton_2019, sessa_2008, shimojo_2008, benitokwiecinski_2021, hansen_2010, andrews_2020, fiddes_2018, suzuki_2018; concept brain-organoid-fidelity-reproducibility-and-atlases; entity single-cell-atlas-benchmarking). No new entity/concept pages created; reused existing pages.
 
 - 2026-06-09: COMPLETED manuscript_brain_organoid_v6 reference ingest for this collection — all 53 cited references now deep-ingested (26 OA-fetched + 27 manually-supplied PDFs), status: ingested, full structured source pages.
+
+## [2026-07-01] deep ingest | 8 Pașca-lab assembloid/organoid technology-platform papers (author-supplied batch)
+
+- Source folder: `~/Downloads/2_assembloid-technology-platform` (9 PDFs). Duplicate check by DOI across all collections → **1 duplicate skipped**: Revah 2022 "Maturation and circuit integration of transplanted human cortical organoids" (doi:10.1038/s41586-022-05277-w; PMID 36224417) already deep-ingested at `revah_2022_maturation_circuit_integration_transplanted_human_cortical_organoids.md`. Remaining **8 new** copied to `raw/sources/` (firstauthor_year_title slugs; Downloads originals untouched) and deep-ingested from PDF full text (`pdftotext`) via 8 parallel agents. Each page: frontmatter (status: ingested, deep_ingested: 2026-07-01, doi, pmid, authors, journal, `source_ref: assembloid-technology-platform (Pașca lab batch)`, `raw_source`, `pdf_status: downloaded`) + Abstract / Key findings / Methods / Relevance to the brain-organoid ASD review / Open questions+limitations / Related.
+  - Gordon 2021 (Nat Neurosci; doi:10.1038/s41593-021-00802-y; PMID 33619405) — long-term hCS maturation reaches an intrinsic fetal→postnatal switch at ~250–300 days: DNA-methylation epigenetic clock (r=+0.76 with culture age), transcriptomic transition to BrainSpan, HDAC2→HDAC1/11 and GRIN2B→GRIN2A (NMDA-subunit) switches confirmed at protein + electrophysiology; 6 hiPSC lines/5 individuals, up to 694 days, 62 RNA-seq + 50 methylation samples/13 timepoints; GECO webtool. Activity-dependent programs + GABAergic/microglia/OPC/vasculature remain fidelity gaps. Maturation-window/fidelity anchor.
+  - Agoglia 2021 (Nature; doi:10.1038/s41586-021-03343-3; PMID 33731928) — human×chimp tetraploid fused (hybrid) iPSC + hybrid cortical spheroids decompose cortical expression divergence into cis vs trans (~39% cis; thousands of cis-divergent genes; 5 hybrid lines/2 parental pairs; ~2.8M phased variants); selected human astrocyte gene module (AQP4/HEPACAM/CLU) and human-biased SSTR2 → CYN-154806 calcium phenotype; 100 NDD ASE genes (GRIN2A chimp-biased, SCN1A human-biased). Human-specific gene-regulation tool. GEO GSE144825.
+  - Li 2022 (Biomaterials 290:121825; doi:10.1016/j.biomaterials.2022.121825; PMID 36326509) — Pașca/Cui/Bao-lab stretchable PEDOT:PSS/SEBS 16-channel mesh (5 µm thick, 50 µm electrodes, strain-invariant impedance to 50%, 1.67 A/cm² max) biointegrates into hCO for >3 months, intensity-dependent stimulation ~ bipolar stereotrode. Long-term functional-interface tech; addresses "electrophysiology poorly standardized" gap.
+  - Andersen 2023 (Nat Neurosci; doi:10.1038/s41593-023-01311-w; PMID 37095394) — primary in-vivo scRNA/snRNA atlas of GW17–18 human spinal cord (112,554 cells + 34,884 nuclei; integrated 950,215 over GW4–25); DV/RC glial patterning, white/gray-matter astrocyte subtypes, OPC→MOL trajectory, early (GW8–10) α/γ motor-neuron diversification. Primary fetal reference for spinal-cord organoid/assembloid fidelity (extends fidelity rubric beyond cortex).
+  - Yang 2024 (Nat Biotechnol; doi:10.1038/s41587-023-02081-3; PMID 38253880) — KiriE 32-electrode self-folding 3D "basket" MEA (0.06%/0.026% max strain, 30–140 µV spikes, ~0.3 MΩ) chronically records single-unit + network activity from intact hCO and corticostriatal assembloids in suspension for months; activity onset day 100±5; ~20× optogenetic increase; validated on DGCR8+/− 22q11.2 hyperexcitability (3× 4-AP); 25,546-cell scRNA-seq composition. Standardized longitudinal electrophysiology. Companion to Li 2022.
+  - Amin 2024 (Cell Stem Cell; doi:10.1016/j.stem.2024.10.016; PMID 39642864) — arrayed 14-morphogen / 46-condition screen (~1,500 organoids; 36,265 multiplexed-scRNA-seq cells mapping to 65.1% of primary fetal CNS clusters) decoding morphogen combinatorics + timing → prescribed CNS regional fates; new hCbO (cerebellar), hMPOCR, hSOTAC3 (TAC3+ striatal IN) organoid/assembloid types. Directly addresses the organoid arealization / regional-identity limitation.
+  - Peters 2025 (**bioRxiv preprint, not peer-reviewed**; doi:10.1101/2025.11.18.689148; PMID 41332624; Pașca + Carette labs) — hSpO–hSkM spinal-cord/muscle assembloids model 3 AFM-causing enteroviruses (PV, EV-A71, EV-D68): all abolish muscle contraction (rescued by rupintrivir) via divergent, quantitatively-mapped tropisms (PV/EV-D68 → motor neurons; EV-A71 → astroglia) and distinct death modes. Assembloid viral-neuropathogenesis platform (tangential to ASD genetics; platform exemplar). All quantitative claims flagged provisional.
+  - Narazaki 2025 (Nat Biomed Eng; doi:10.1038/s41551-025-01427-3; PMID 40579490) — xanthan gum as a cheap biocompatible anti-fusion medium additive enabling >2,000 parallel cortical organoids (298-drug / 2,400-organoid screen) with no change to patterning, transcriptome (R²=0.986), morphology, or calcium activity. Throughput/cost/reproducibility enabler for DBTL Build/Test.
+- Cross-links: **0 broken** across all 8 pages after cleanup. Fixed 4 parallel-execution link races (targets that did not yet exist at each agent's ingest time): Li↔Yang (mutual electrophysiology-tech links), Peters→Andersen 2023, Amin→Andersen 2023 — converted from pending-notes to live links once sibling pages existed. Updated `wiki/index.md`: added new section "## Assembloid technology platform ingest — Pașca lab (2026-07-01)" with the 8 entries. No new entity/concept pages created; reused existing pages. `raw/` immutable (PDF text extracted to /tmp scratch).
+
+## [2026-07-18 23:35 KST] ingest queued | jgamadze 2023 structural and functional integration of
+
+- Registered raw source raw/sources/20260718_233521_jgamadze-2023-structural-and-functional-integration-of.pdf.
+- Created source page wiki/sources/20260718_233521_jgamadze-2023-structural-and-functional-integration-of.md.
+
+## [2026-07-18 23:35 KST] ingest queued | yang 2026 distinct spatial patterning and transcriptomic
+
+- Registered raw source raw/sources/20260718_233521_yang-2026-distinct-spatial-patterning-and-transcriptomic.pdf.
+- Created source page wiki/sources/20260718_233521_yang-2026-distinct-spatial-patterning-and-transcriptomic.md.
+
+## [2026-07-18 23:35 KST] ingest queued | van der kroeg 2026 human adherent cortical organoids in
+
+- Registered raw source raw/sources/20260718_233521_van-der-kroeg-2026-human-adherent-cortical-organoids-in.pdf.
+- Created source page wiki/sources/20260718_233521_van-der-kroeg-2026-human-adherent-cortical-organoids-in.md.
+
+## [2026-07-18 23:35 KST] ingest queued | ji 2025 alzheimers disease patient brain extracts
+
+- Registered raw source raw/sources/20260718_233522_ji-2025-alzheimers-disease-patient-brain-extracts.pdf.
+- Created source page wiki/sources/20260718_233522_ji-2025-alzheimers-disease-patient-brain-extracts.md.
+
+## [2026-07-18 23:35 KST] ingest queued | ljubikj 2025 pu1 restores microglial dysfunction caused
+
+- Registered raw source raw/sources/20260718_233522_ljubikj-2025-pu1-restores-microglial-dysfunction-caused.pdf.
+- Created source page wiki/sources/20260718_233522_ljubikj-2025-pu1-restores-microglial-dysfunction-caused.md.
+
+## [2026-07-18 23:35 KST] ingest queued | bejoy 2022 tissue culture models of aki
+
+- Registered raw source raw/sources/20260718_233522_bejoy-2022-tissue-culture-models-of-aki.pdf.
+- Created source page wiki/sources/20260718_233522_bejoy-2022-tissue-culture-models-of-aki.md.
+
+## [2026-07-18 23:35 KST] ingest queued | al reza 2025 multi zonal liver organoids from human
+
+- Registered raw source raw/sources/20260718_233522_al-reza-2025-multi-zonal-liver-organoids-from-human.pdf.
+- Created source page wiki/sources/20260718_233522_al-reza-2025-multi-zonal-liver-organoids-from-human.md.
+
+## [2026-07-18 23:35 KST] ingest queued | wang 2024 morphological diversification and functional maturation
+
+- Registered raw source raw/sources/20260718_233522_wang-2024-morphological-diversification-and-functional-maturation.pdf.
+- Created source page wiki/sources/20260718_233522_wang-2024-morphological-diversification-and-functional-maturation.md.
+
+## [2026-07-18 23:35 KST] ingest queued | capeling 2022 suspension culture promotes serosal mesothelial
+
+- Registered raw source raw/sources/20260718_233522_capeling-2022-suspension-culture-promotes-serosal-mesothelial.pdf.
+- Created source page wiki/sources/20260718_233522_capeling-2022-suspension-culture-promotes-serosal-mesothelial.md.
+
+## [2026-07-18 23:35 KST] ingest queued | holloway 2020 differentiation of human intestinal organoids
+
+- Registered raw source raw/sources/20260718_233522_holloway-2020-differentiation-of-human-intestinal-organoids.pdf.
+- Created source page wiki/sources/20260718_233522_holloway-2020-differentiation-of-human-intestinal-organoids.md.
+
+## [2026-07-18 23:35 KST] ingest queued | pou casellas 2026 single cell transcriptomic comparison of tubular
+
+- Registered raw source raw/sources/20260718_233522_pou-casellas-2026-single-cell-transcriptomic-comparison-of-tubular.pdf.
+- Created source page wiki/sources/20260718_233522_pou-casellas-2026-single-cell-transcriptomic-comparison-of-tubular.md.
+
+## [2026-07-18 23:35 KST] ingest queued | wang 2026 fabp7 controls radial glial scaffold
+
+- Registered raw source raw/sources/20260718_233522_wang-2026-fabp7-controls-radial-glial-scaffold.pdf.
+- Created source page wiki/sources/20260718_233522_wang-2026-fabp7-controls-radial-glial-scaffold.md.
+
+## [2026-07-18 23:35 KST] ingest queued | atamian 2024 human cerebellar organoids with functional
+
+- Registered raw source raw/sources/20260718_233522_atamian-2024-human-cerebellar-organoids-with-functional.pdf.
+- Created source page wiki/sources/20260718_233522_atamian-2024-human-cerebellar-organoids-with-functional.md.
+
+## [2026-07-18 23:35 KST] ingest queued | trujillo 2019 complex oscillatory waves emerging from
+
+- Registered raw source raw/sources/20260718_233522_trujillo-2019-complex-oscillatory-waves-emerging-from.pdf.
+- Created source page wiki/sources/20260718_233522_trujillo-2019-complex-oscillatory-waves-emerging-from.md.
+
+## [2026-07-18 23:35 KST] ingest queued | nieto estevez 2025 dual developmental effects of arx
+
+- Registered raw source raw/sources/20260718_233522_nieto-estevez-2025-dual-developmental-effects-of-arx.pdf.
+- Created source page wiki/sources/20260718_233522_nieto-estevez-2025-dual-developmental-effects-of-arx.md.
+
+## [2026-07-18 23:35 KST] ingest queued | wu 2026 human microglia in brain assembloids
+
+- Registered raw source raw/sources/20260718_233522_wu-2026-human-microglia-in-brain-assembloids.pdf.
+- Created source page wiki/sources/20260718_233522_wu-2026-human-microglia-in-brain-assembloids.md.
+
+## [2026-07-18] deep ingest | 16 papers from the 30-paper recommendation batch
+
+- Classified the mixed 30-paper recommendation batch before ingest to preserve collection boundaries. Added **16 new Organoid sources**, skipped **4 DOI duplicates already deep-ingested** (Uzquiano 2022, Mansour 2018, Schafer 2023, Tenreiro 2025), and deferred 10 non-organoid single-cell/spatial papers to Multi_Omics or Neuro_Genomics.
+- Added the 16 PDFs to `raw/sources/` via `scripts/wiki.py add-source`; incoming originals were preserved and registered raw PDFs were not edited.
+- Deep-ingested Jgamadze 2023, Yang 2026, van der Kroeg 2026, Ji 2025, Ljubikj 2025, Bejoy 2022 (explicitly marked secondary review), Al Reza 2025, Wang 2024, Capeling 2022, Holloway 2020, Pou Casellas 2026, Wang 2026, Atamian 2024, Trujillo 2019, Nieto-Estevez 2025, and Wu 2026.
+- Updated `wiki/index.md`, `wiki/overview.md`, and four concept pages: brain-organoid patterning/assembloids, multi-lineage complexity, kidney differentiation routes, and functional assays/transplantation/coculture.
+- OpenDataLoader validation: both default and structure-tree parsing of Jgamadze 2023 recognized 24 pages and metadata but terminated with native return code `-6`. Per parser fallback rules, all 16 papers were read from the raw PDFs with temporary `/tmp` `pdftotext` helpers; no failed OpenDataLoader artifact was treated as source truth.
+- Lint: 16/16 pages ingested, 16/16 indexed, 0 queued, 0 missing raw source links, and 0 broken links after correcting one Narazaki slug.

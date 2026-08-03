@@ -18,6 +18,10 @@ A major trend across this collection is the move away from simple epithelial bal
 - [Protocol for generating liver organoids containing Kupffer cells using human iPSCs](../sources/y_2025_protocol-for-generating-liver-organoids-containing-kupffer-cells-using-human-ipscs.md)
 - [Protocol for generating human vascular organoids via orthogonal activation of ETV2 and NKX3.1](../sources/l_2026_protocol-for-generating-human-vascular-organoids-via-orthogonal-activation-of-etv2-and-nkx.md)
 - [Blood-brain-barrier organoids for investigating the permeability of CNS therapeutics](../sources/bergmann_2018_bloodbrain-barrier_organoids_for_investigating_the.md)
+- [Ji 2025 — vascularized neuroimmune Alzheimer organoids](../sources/20260718_233522_ji-2025-alzheimers-disease-patient-brain-extracts.md)
+- [Holloway 2020 — endogenous intestinal endothelial cells](../sources/20260718_233522_holloway-2020-differentiation-of-human-intestinal-organoids.md)
+- [Capeling 2022 — serosal mesothelium in suspension HIOs](../sources/20260718_233522_capeling-2022-suspension-culture-promotes-serosal-mesothelial.md)
+- [Al Reza 2025 — multi-zonal liver organoids](../sources/20260718_233522_al-reza-2025-multi-zonal-liver-organoids-from-human.md)
 
 ## Working synthesis
 
@@ -25,6 +29,8 @@ A major trend across this collection is the move away from simple epithelial bal
 - In this corpus, complexity is justified in several different ways: developmental boundary logic, immune-bearing architecture, barrier architecture, vascular modules, or disease mechanisms that only become visible once multiple partners coexist.
 - Koike, Kupffer-containing liver organoids, tonsil immune organoids, and cardiac immune-integrated models show that added lineages are useful only when they unlock a question that a simpler system would miss.
 - A useful rule for this page is therefore: **come here first when a project is tempted to add more tissue compartments and the real question is whether those compartments materially change the answer or only add noise**.
+- The new cohort separates three distinct complexity gains: preserving an endogenous lineage (intestinal endothelium), revealing an outer tissue boundary (serosal mesothelium), and combining independently derived progenitors to model coupled vascular–immune disease responses.
+- Multi-zonal liver organoids add spatial metabolic specialization as another complexity target: the value is not more cell labels alone, but division of labour across reproducible zones.
 
 ## Related syntheses
 

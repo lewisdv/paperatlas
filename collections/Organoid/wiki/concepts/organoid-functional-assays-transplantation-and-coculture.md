@@ -31,6 +31,10 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - [Clinically used drug arsenic trioxide targets XIAP and overcomes apoptosis resistance in an organoid-based preclinical cancer model](../sources/l_2024_clinically-used-drug-arsenic-trioxide-targets-xiap-and-overcomes-apoptosis-resistance-in-a.md)
 - [Th2 Cytokines Reshape the Transcriptome: Insights from a Canine Organoid Model of Atopic Dermatitis](../sources/b_2026_th2-cytokines-reshape-the-transcriptome-insights-from-a-canine-organoid-model-of-atopic-de.md)
 - [Modeling Atrial Fibrillation in a Human Heart Macrophage Assembloid](../sources/modeling_undated_modeling-atrial-fibrillation-in-a-human-heart-macrophage-assembloid.md)
+- [Jgamadze 2023 — visual-system integration after cortical injury](../sources/20260718_233521_jgamadze-2023-structural-and-functional-integration-of.md)
+- [Trujillo 2019 — longitudinal cortical-organoid oscillations](../sources/20260718_233522_trujillo-2019-complex-oscillatory-waves-emerging-from.md)
+- [Nieto-Estevez 2025 — ARX migration rescue and network hyperactivity](../sources/20260718_233522_nieto-estevez-2025-dual-developmental-effects-of-arx.md)
+- [Wu 2026 — circuit-conditioned microglial calcium and pruning](../sources/20260718_233522_wu-2026-human-microglia-in-brain-assembloids.md)
 
 ## Working synthesis
 
@@ -40,6 +44,7 @@ Several papers in this corpus are best understood as second-wave protocols: they
 - The newer cohort broadens this beyond classic microbe or T-cell coculture into retinal repair plus transplantation, liver antiviral assays, cervical lineage-plus-infection platforms, cerebral inflammasome assays, choroid-plexus viral access systems, and cardiac immune-triggered arrhythmia models.
 - Some assay layers intervene earlier than expected. Monocyte support in kidney organoids, for example, acts before the downstream readout by preserving competence during a vulnerable differentiation window.
 - A useful rule for this page is therefore: **come here first when the baseline tissue already exists and the real problem is what interaction, injury, exposure, or validation layer should be added next**.
+- The new brain cohort sharpens an evidence ladder: spontaneous network maturation (Trujillo), compartment-specific disease mechanisms and rescue (Nieto-Estevez; Wu), then host sensory integration after injury (Jgamadze). Each step answers a different question and should not be treated as interchangeable evidence of “function.”
 - The main tradeoff stays consistent across the branch: cleaner attribution and lower burden in vitro versus richer but noisier host-defined validation.
 
 ## Main tension

@@ -21,6 +21,11 @@ Brain-organoid protocols in this collection now split into broad cerebral self-o
 - [Atamian 2024](../sources/atamian_2024_generation_and_long-term_culture_of.md)
 - [Protocol for the establishment and morphological characterization of long-term cultivated murine cerebral organoids](../sources/i_2026_protocol-for-the-establishment-and-morphological-characterization-of-long-term-cultivated.md)
 - [Protocol for differentiating human pluripotent stem cells into midbrain organoids for targeted microinjection of viruses](../sources/m_2025_protocol-for-differentiating-human-pluripotent-stem-cells-into-midbrain-organoids-for-targ.md)
+- [Yang 2026 — localized morphogen gradients](../sources/20260718_233521_yang-2026-distinct-spatial-patterning-and-transcriptomic.md)
+- [van der Kroeg 2026 — adherent multi-well cortical organoids](../sources/20260718_233521_van-der-kroeg-2026-human-adherent-cortical-organoids-in.md)
+- [Atamian 2024 — functional cerebellar organoids](../sources/20260718_233522_atamian-2024-human-cerebellar-organoids-with-functional.md)
+- [Nieto-Estevez 2025 — ARX cortical–ganglionic-eminence assembloids](../sources/20260718_233522_nieto-estevez-2025-dual-developmental-effects-of-arx.md)
+- [Wu 2026 — region-specific microglia in brain assembloids](../sources/20260718_233522_wu-2026-human-microglia-in-brain-assembloids.md)
 
 ## Working synthesis
 
@@ -29,6 +34,8 @@ Brain-organoid protocols in this collection now split into broad cerebral self-o
 - Eura, Zagare, Chen, Valiulahi, Pomeshchik, and Atamian extend the branch beyond cortex into brainstem, midbrain, hindbrain, hippocampal, and cerebellar routes, making it clear that brain-organoid choice in this corpus is often a subregion-choice problem.
 - A second split appears after region choice: stay with a single-region protocol, move to longer maturation and functional-readout branches, or escalate into fusion, perturbation, or host-facing validation.
 - A useful rule for this page is therefore: **come here first when the unresolved issue is regional identity or whether one compartment is enough before moving to assembloid or later assay layers**.
+- Yang 2026 adds a third patterning logic between uniform directed differentiation and fusion: continuous localized morphogen gradients can build dorsal–ventral and rostral–caudal axes inside one organoid.
+- Wu 2026 shows that regional identity also conditions added immune lineages: the same starting microglia acquire different states in cortical, striatal, and midbrain contexts.
 
 ## Main tension
 

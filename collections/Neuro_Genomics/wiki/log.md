@@ -549,3 +549,27 @@ Themes: ASD CNV/macrocephaly architecture; saturation mutagenesis & variant-effe
 - Beltran 2025 (Nature, s41586-024-08370-4) — Human Domainome 1; aPCA abundance for 563,534 variants / 522 domains (~5x prior); 60% of pathogenic missense destabilize (variable: 44% recessive vs 26% dominant fitness variance; MECP2/CRX TF domains stability-independent); family Boltzmann energy models extend to 4.1M variants / 7,271 domains; MaveDB-style reference. -> sources/Beltran_2025_Site_saturation_mutagenesis_500_human_protein_domains.md
 
 - 2026-06-09: COMPLETED manuscript_brain_organoid_v6 reference ingest for this collection — all 25 cited references now deep-ingested (17 OA-fetched + 8 manually-supplied PDFs), status: ingested, full structured source pages.
+
+## [2026-07-18 23:49 KST] ingest queued | anderson 2020 single cell analysis of foxp1 driven mechanisms
+
+- Registered raw source raw/sources/20260718_234948_anderson-2020-single-cell-analysis-of-foxp1-driven-mechanisms.pdf.
+- Created source page wiki/sources/20260718_234948_anderson-2020-single-cell-analysis-of-foxp1-driven-mechanisms.md.
+
+## [2026-07-18 23:49 KST] ingest queued | qian 2025 spatial transcriptomics reveals human cortical
+
+- Registered raw source raw/sources/20260718_234948_qian-2025-spatial-transcriptomics-reveals-human-cortical.pdf.
+- Created source page wiki/sources/20260718_234948_qian-2025-spatial-transcriptomics-reveals-human-cortical.md.
+
+## [2026-07-18 23:49 KST] ingest queued | eze 2021 single cell atlas of early human
+
+- Registered raw source raw/sources/20260718_234948_eze-2021-single-cell-atlas-of-early-human.pdf.
+- Created source page wiki/sources/20260718_234948_eze-2021-single-cell-atlas-of-early-human.md.
+
+## [2026-07-18] deep ingest | 3 neurodevelopmental single-cell/spatial reference papers
+
+- Added and deep-ingested Anderson 2020 (Foxp1-dependent mouse striatal development), Qian 2025 (human fetal cortical MERFISH/spatial atlas), and Eze 2021 (first-trimester human brain scRNA-seq atlas).
+- Classified these sources into Neuro_Genomics rather than mixing primary fetal/mouse neurodevelopmental references into Organoid or the method-focused Multi_Omics branch.
+- Added two concepts: `human-fetal-brain-reference-atlases.md` and `ndd-genes-in-cell-type-and-circuit-context.md`.
+- Updated `wiki/index.md` and replaced the placeholder `wiki/overview.md` with a scope, current anchors, and evidence-interpretation rules.
+- Deep ingest used immutable raw PDFs and temporary `/tmp` `pdftotext` helpers; OpenDataLoader was not retried after the reproducible native failure documented in the Organoid log.
+- Lint: 3/3 new source pages ingested and indexed, 2/2 new concept pages linked, 0 queued among the new sources, and 0 broken internal links. Cross-collection DOI audit found all 30 recommendation-list papers represented by a source page.
