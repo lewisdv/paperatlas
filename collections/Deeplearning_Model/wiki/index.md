@@ -84,6 +84,9 @@
 - [Joint probabilistic modeling of single-cell multi-omic data with totalVI](sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md) - Nature Methods 2021 paper on joint RNA-protein modeling with cell-specific antibody-background correction, panel integration, imputation, and Bayesian differential analysis.
 - [Stabilized mosaic single-cell data integration using unshared features](sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md) - Nature Biotechnology paper on StabMap, a reference-projection method for connected multi-hop mosaic integration without a global shared feature set.
 - [Continual integration of single-cell multimodal data with MIRACLE](sources/zhou_2026_miracle_continual_multimodal_integration.md) - Nature Computational Science article on rehearsal-based continual learning for online RNA/ATAC/ADT mosaic atlas updates.
+- [ARTEMIS integrates autoencoders and Schrödinger Bridges to predict continuous dynamics of gene expression, cell population, and perturbation from time-series single-cell data](sources/alatkar_2025_artemis_schrodinger_bridge_dynamics.md) - Bioinformatics 2025 paper on VAE-latent unbalanced Schrödinger bridges for time-series scRNA-seq trajectories.
+- [Conditional Monge Gap enables generalizable single-cell perturbation modelling](sources/driessen_2026_cmonge_generalizable_perturbation.md) - Nature Machine Intelligence 2026 paper on condition-parameterized neural transport for unpaired drug-response prediction.
+- [Foundations of Schrödinger Bridges for Generative Modeling](sources/tang_2026_foundations_schrodinger_bridges_generative_modeling.md) - 2026 arXiv tutorial on static and dynamic Schrödinger bridges, algorithms, generative-model connections, and biological extensions.
 
 ## Entities
 
@@ -97,7 +100,9 @@
 - [Geneformer](entities/Geneformer.md) - Rank-value-encoded Transformer for low-data, context-specific network biology and disease-target transfer.
 - [CellFM](entities/CellFM.md) - 800M-parameter continuous-value, retention-based model pretrained on 102.3M human cells.
 - [CellOT](entities/CellOT.md) - Neural optimal transport model for predicting perturbation responses from unpaired single-cell populations.
+- [CMonge](entities/CMonge.md) - Conditional Monge-Gap neural transport model that predicts unpaired single-cell drug responses across contexts.
 - [Cell2fate](entities/Cell2fate.md) - Fully Bayesian RNA-velocity model with interpretable dynamic modules and posterior uncertainty estimates.
+- [ARTEMIS](entities/ARTEMIS.md) - VAE plus unbalanced dynamic Schrödinger bridge for time-series single-cell trajectories, population mass, and perturbation prediction.
 - [AIVC](entities/AIVC.md) - Proposed AI virtual cell framework for multi-scale, multi-modal biological representation and simulation.
 - [Tahoe-x1](entities/Tahoe-x1.md) - Perturbation-trained single-cell foundation model family scaled to 3B parameters for oncology-focused functional genomics.
 - [scRL](entities/scRL.md) - Actor-critic reinforcement-learning framework for identifying early fate-decision states in single-cell trajectories.
@@ -132,6 +137,7 @@
 - [Retention-Based Single-Cell Modeling](concepts/retention-based-single-cell-modeling.md) - Efficient retention architectures for processing long gene-token inputs at atlas scale.
 - [Embedding-Space In Silico Perturbation](concepts/embedding-space-in-silico-perturbation.md) - Deleting or repositioning gene tokens and measuring movement in learned gene or cell representations.
 - [Neural Optimal Transport](concepts/neural-optimal-transport.md) - Learning perturbation maps between unpaired cell-state distributions by parameterizing optimal transport with neural networks.
+- [Schrödinger Bridge Generative Modeling](concepts/schrodinger-bridge-generative-modeling.md) - Stochastic path inference between distributions relative to a reference process, with links to entropy-regularized OT and diffusion modeling.
 - [RNA Velocity Modules](concepts/rna-velocity-modules.md) - Interpretable dynamic programs derived from RNA-velocity modeling over spliced and unspliced counts.
 - [Universal Representation](concepts/universal-representation.md) - Shared biological state embedding intended to align modalities, contexts, and physical scales.
 - [Virtual Instruments](concepts/virtual-instruments.md) - Decoder and manipulator networks that operate on universal biological representations.

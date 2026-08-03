@@ -9,6 +9,7 @@
 
 - [GEARS](../entities/GEARS.md) is the clearest example: it uses knowledge-graph priors to extrapolate to unseen multigene combinations.
 - [Squidiff](../entities/Squidiff.md) tackles a related compositional question through latent-vector arithmetic for gene and drug perturbations.
+- [CMonge](../entities/CMonge.md) supports multi-drug contexts through set pooling, but its demonstrated setting is conditional drug-response transport rather than the unseen multigene endpoint problem targeted by GEARS.
 - [Tahoe-x1](../entities/Tahoe-x1.md) approaches generalization differently, by scaling perturbation-rich pretraining rather than using explicit knowledge-graph structure.
 - [CellFM](../entities/CellFM.md) contributes pretrained gene embeddings to GEARS and uses a `20`-gene reverse-perturbation benchmark to rank which one- or two-gene intervention could have produced an observed state.
 - Compared with [Neural Optimal Transport](neural-optimal-transport.md), the emphasis here is unseen intervention composition, not learning a minimal-effort map between observed control and treated populations.

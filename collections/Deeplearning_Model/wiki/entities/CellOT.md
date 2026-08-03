@@ -32,4 +32,6 @@
 ## Related
 
 - [Neural Optimal Transport](../concepts/neural-optimal-transport.md)
+- [CMonge](CMonge.md) - a globally conditional Monge-Gap transport alternative, rather than one separately trained map for each perturbation.
+- [ARTEMIS](ARTEMIS.md) - a stochastic, time-indexed Schrödinger-bridge alternative for snapshot trajectories.
 - [Source: Learning single-cell perturbation responses using neural optimal transport](../sources/bunne_2023_learning_single-cell_perturbation_responses_using.md)

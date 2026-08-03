@@ -701,3 +701,12 @@
 - Created a deep source page covering the MIDAS-based continual-learning design, dynamic architecture adaptation, DPRS/BTS rehearsal memory, benchmark evidence, interpretation boundaries, limitations, and open questions.
 - Created pages for MIRACLE and continual single-cell atlas integration, and linked them to MIDAS, StabMap, scVAEIT, multimodal integration regimes, and the integration-method taxonomy.
 - Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 41 deeply ingested raw sources.
+
+## [2026-08-03 18:26 KST] deep ingest | ARTEMIS, CMonge, and Schrödinger-bridge foundations
+
+- Preserved all three supplied PDFs as immutable raw sources and verified byte-for-byte copies: Alatkar and Wang (ARTEMIS) SHA-256 `9793bf57fefccc652c3d00aa2a66183cdc805fea486e9b451afa7f28fd15d8d6`; Driessen et al. (CMonge) SHA-256 `31c68b21d4fe0d151d5fd9d97625f68a057f806cd824ef501fa4cbebcd20f6bb`; Tang (Schrödinger-bridge foundations) SHA-256 `5e707a69bd7ba57d90625e84bb3b3ffb54da5df485f6dd3a6503d7225f08ffd1`.
+- Parsed each source sequentially with OpenDataLoader under the existing OpenJDK 21.0.12 runtime, with two active Java processors. Saved Markdown extractions, independent Poppler layout text, and extraction manifests in `raw/derived/`.
+- Rendered and visually checked all 255 PDF pages, including the 220-page theoretical tutorial. No blank, corrupt, clipped, or missing pages were found.
+- Created deep source pages distinguishing ARTEMIS's VAE-latent unbalanced dynamic Schrödinger bridge, CMonge's global condition-parameterized Monge-Gap transport, and the foundation tutorial's static/dynamic path-space formulation.
+- Created entity pages for ARTEMIS and CMonge, plus a Schrödinger Bridge Generative Modeling concept page. Linked these to CellOT, Cell2fate, Squidiff, neural optimal transport, RNA-velocity modules, and combinatorial perturbation generalization.
+- Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 44 deeply ingested raw sources.
