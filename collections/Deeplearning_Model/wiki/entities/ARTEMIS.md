@@ -32,6 +32,7 @@
 
 - [Schrödinger Bridge Generative Modeling](../concepts/schrodinger-bridge-generative-modeling.md)
 - [Neural Optimal Transport](../concepts/neural-optimal-transport.md)
+- [PFM](PFM.md) - a Fokker–Planck probability-flow alternative that fits biophysical force and diffusion in curated TF gene space.
 - [Cell2fate](Cell2fate.md)
 - [Squidiff](Squidiff.md)
 - [Source: ARTEMIS integrates autoencoders and Schrödinger Bridges to predict continuous dynamics](../sources/alatkar_2025_artemis_schrodinger_bridge_dynamics.md)

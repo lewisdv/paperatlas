@@ -710,3 +710,12 @@
 - Created deep source pages distinguishing ARTEMIS's VAE-latent unbalanced dynamic Schrödinger bridge, CMonge's global condition-parameterized Monge-Gap transport, and the foundation tutorial's static/dynamic path-space formulation.
 - Created entity pages for ARTEMIS and CMonge, plus a Schrödinger Bridge Generative Modeling concept page. Linked these to CellOT, Cell2fate, Squidiff, neural optimal transport, RNA-velocity modules, and combinatorial perturbation generalization.
 - Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 44 deeply ingested raw sources.
+
+## [2026-08-11 11:15 KST] deep ingest | Probability Flow Matching for biophysical gene regulation
+
+- Preserved the supplied 26-page PDF as immutable `raw/sources/maddu_2026_learning_biophysical_models_probability_flow_matching.pdf` and verified its byte-for-byte copy; SHA-256: `acb74cdb435b0e8d19486a70639291c01c560389a84af31730104c83529eec04`.
+- Parsed the source with OpenDataLoader under OpenJDK 21.0.12, with two active Java processors, and saved Markdown extraction, Poppler layout text, and an extraction manifest under `raw/derived/`.
+- Rendered and visually checked all 26 pages, including the principal figures, supplement, tables, and references. No blank, corrupt, clipped, or missing pages were found.
+- Created a deep source page and entity for PFM, plus a biophysical stochastic gene-regulatory dynamics concept. The new pages distinguish simulation-free Fokker–Planck probability-flow fitting from Schrödinger bridges, RNA velocity, and endpoint transport.
+- Linked PFM with ARTEMIS, Cell2fate, Schrödinger-bridge theory, and RNA-velocity modules; recorded the paper's central distinction between interpolation success and regulatory/transfer/counterfactual/mass-dynamics evaluation.
+- Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 45 deeply ingested raw sources.

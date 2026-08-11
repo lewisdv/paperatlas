@@ -13,6 +13,7 @@
 - Compared with [Fate Decision Intensity](fate-decision-intensity.md), the aim here is to recover interpretable transcriptional dynamics rather than score where commitment pressure is highest on a manifold.
 - Compared with [Stimulus-Response Diffusion Modeling](stimulus-response-diffusion-modeling.md), this concept is tied to explicit splicing-based temporal structure rather than generative latent interpolation between conditions.
 - Compared with [Schrödinger Bridge Generative Modeling](schrodinger-bridge-generative-modeling.md), the time signal is spliced/unspliced kinetics rather than an inferred stochastic coupling of time-indexed snapshot distributions.
+- Compared with [Biophysical Stochastic Gene-Regulatory Dynamics](biophysical-stochastic-gene-regulatory-dynamics.md), RNA velocity models gene kinetics from spliced/unspliced counts, whereas PFM fits a Fokker–Planck probability flow to time-indexed snapshot distributions in a curated TF gene space.
 - Compared with [Gene-Level Perturbation Uncertainty](gene-level-perturbation-uncertainty.md), the uncertainty role here is posterior quality control over temporal dynamics, not confidence over intervention-effect presence or magnitude.
 
 ## Claimed Benefits

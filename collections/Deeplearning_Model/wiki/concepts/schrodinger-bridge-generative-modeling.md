@@ -21,6 +21,7 @@
 
 - [ARTEMIS](../entities/ARTEMIS.md) applies an unbalanced dynamic bridge in VAE latent space to time-series scRNA-seq distributions and augments it with a population-mass killing-rate function.
 - Multi-marginal bridges can constrain several observed time points; unbalanced variants can represent changing population mass. Both are modeling choices that require biological validation.
+- [PFM](../entities/PFM.md) is related through flow-matching and Fokker–Planck language, but it is not a Schrödinger-bridge formulation: it fits a probability flow with conditional flow matching and multi-marginal OT conditioning rather than constraining a path measure by KL divergence to a reference process.
 - This differs from [CMonge](../entities/CMonge.md), which uses a conditional Monge-Gap transport objective across treatment contexts, and from [CellOT](../entities/CellOT.md), which learns perturbation-specific deterministic transport maps.
 - It also differs from [RNA Velocity Modules](rna-velocity-modules.md), which obtain temporal information from spliced and unspliced transcription kinetics.
 
