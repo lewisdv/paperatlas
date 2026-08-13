@@ -728,3 +728,12 @@
 - Created a deep source page and a [BACH1](entities/BACH1.md) entity page. The pages distinguish paired RNA–ATAC evidence and phNPC recurrence from causal TF-target validation, and distinguish expression-based cell-cell communication from direct signaling measurement.
 - Expanded multi-omic developmental atlases, enhancer-gene mapping, and integration-regime pages to record this as a vertical disease-multiome application rather than a novel alignment algorithm.
 - Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 46 deeply ingested raw sources.
+
+## [2026-08-13 10:50 KST] deep ingest | Radial glia lineage progression in cortical organoids
+
+- Preserved the supplied 38-page PDF as immutable `raw/sources/stouffer_2026_temporal_uncoupling_radial_glia_cortical_organoids.pdf` and verified its byte-for-byte copy; SHA-256: `348e8b26957b7ab4baafddd21bb66365468685a54b199c00cc93bb52a4b114b3`.
+- Parsed the paper successfully with OpenDataLoader under OpenJDK 21.0.12 and saved Markdown, Poppler layout text, and a manifest in `raw/derived/`.
+- Rendered and visually checked all 38 pages, including main figures, methods, extended data, references, and reporting-summary pages. No blank, corrupt, clipped, or missing pages were found.
+- Created a deep source page and the [Clonal Lineage Fidelity](concepts/clonal-lineage-fidelity.md) concept. Recorded the paper's central boundary: broadly matched scRNA-seq states and a unitary trajectory do not establish faithful RGP clone timing or within-clone projection-neuron diversity.
+- Linked this boundary to HNOCA and transcriptomic fidelity benchmarking without conflating the mouse direct-lineage experiment with human organoid atlas results.
+- Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 47 deeply ingested raw sources.

@@ -9,6 +9,7 @@
 
 - [HNOCA](../entities/HNOCA.md) provides a concrete benchmarking framework by integrating neural organoid datasets and mapping them to primary brain references.
 - The source uses fidelity metrics to compare protocols, identify under-represented states, and separate core identity from common stress-related divergence.
+- [Stouffer et al. 2026](../sources/stouffer_2026_temporal_uncoupling_radial_glia_cortical_organoids.md) makes the boundary explicit: mouse cortical organoids can match major transcriptomic states and a unitary RGP-to-neuron trajectory while direct MADM tracing finds altered temporal clone architectures and reduced within-clone neuronal diversity.
 - Compared with [Cell-State Similarity Search](cell-state-similarity-search.md) and [Hierarchical Partial Rejection](hierarchical-partial-rejection.md), the emphasis here is not a per-cell confidence threshold but diagnosis of where an entire in vitro system falls outside strong primary-reference coverage.
 - Compared with [Region-Specific Developmental Trajectories](region-specific-developmental-trajectories.md), fidelity benchmarking is the system-level question of whether those trajectories and regional states are actually covered or developmentally matched.
 - Compared with [Sex-Stratified Transcriptomic Burden](sex-stratified-transcriptomic-burden.md), this concept tracks reference mismatch and missing-state coverage rather than subgroup-specific disease asymmetry.
@@ -23,9 +24,11 @@
 ## Caveats
 
 - Transcriptomic similarity is only one axis of fidelity and may miss functional differences.
+- It can also miss altered division timing, birth-order logic, and clone-level fate diversity; see [Clonal Lineage Fidelity](clonal-lineage-fidelity.md).
 - The benchmark depends on the choice and quality of primary references and integration pipeline.
 - In this collection, the concept is demonstrated mainly for neural organoids, not yet across many biological systems.
 
 ## Sources
 
 - [An integrated transcriptomic cell atlas of human neural organoids](../sources/he_2024_an_integrated_transcriptomic_cell_atlas.md)
+- [Temporal uncoupling of radial glia lineage progression in cortical organoids](../sources/stouffer_2026_temporal_uncoupling_radial_glia_cortical_organoids.md)

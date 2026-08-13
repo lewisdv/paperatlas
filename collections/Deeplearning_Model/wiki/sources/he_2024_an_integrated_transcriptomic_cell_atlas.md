@@ -54,6 +54,8 @@ This paper builds an integrated human neural organoid cell atlas by harmonizing 
 
 - [HNOCA](../entities/HNOCA.md)
 - [Transcriptomic Fidelity Benchmarking](../concepts/transcriptomic-fidelity-benchmarking.md)
+- [Clonal Lineage Fidelity](../concepts/clonal-lineage-fidelity.md)
+- [Temporal uncoupling of radial glia lineage progression in cortical organoids](stouffer_2026_temporal_uncoupling_radial_glia_cortical_organoids.md)
 - [Perturbation Cell Atlas](../concepts/perturbation-cell-atlas.md)
 
 ## Open Questions

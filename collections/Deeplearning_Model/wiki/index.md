@@ -89,6 +89,7 @@
 - [Foundations of Schrödinger Bridges for Generative Modeling](sources/tang_2026_foundations_schrodinger_bridges_generative_modeling.md) - 2026 arXiv tutorial on static and dynamic Schrödinger bridges, algorithms, generative-model connections, and biological extensions.
 - [Learning biophysical models of gene regulation with probability flow matching](sources/maddu_2026_learning_biophysical_models_probability_flow_matching.md) - 2026 arXiv preprint on simulation-free Fokker–Planck probability-flow fitting, biophysical TF dynamics, and unbalanced population growth.
 - [A single-cell multiomic analysis identifies molecular and gene-regulatory mechanisms dysregulated in developing Down syndrome neocortex](sources/vuong_2026_single-cell_multiomic_down_syndrome_neocortex.md) - *Science* 2026 paper on paired fetal-neocortex RNA–ATAC profiling in Ts21, altered neurogenic timing, and eRegulon inference.
+- [Temporal uncoupling of radial glia lineage progression in cortical organoids](sources/stouffer_2026_temporal_uncoupling_radial_glia_cortical_organoids.md) - *Nature* 2026 study pairing mouse cortical-organoid scRNA-seq with MADM lineage tracing to expose transcriptome–clone fidelity mismatch.
 
 ## Entities
 
@@ -158,6 +159,7 @@
 - [Hierarchical Partial Rejection](concepts/hierarchical-partial-rejection.md) - Returning an intermediate cell-type label under uncertainty instead of forcing either a leaf prediction or a full rejection.
 - [Evolutionary Contrastive RNA Pretraining](concepts/evolutionary-contrastive-rna-pretraining.md) - Learning RNA representations from splice-isoform and orthology-derived positive pairs instead of generic reconstruction alone.
 - [Transcriptomic Fidelity Benchmarking](concepts/transcriptomic-fidelity-benchmarking.md) - Assessing how closely generated or in vitro states match primary references using atlas-based transcriptomic comparisons.
+- [Clonal Lineage Fidelity](concepts/clonal-lineage-fidelity.md) - Testing whether an in vitro system preserves primary progenitor division timing, clonal output, birth-order logic, and within-clone cell-type diversity.
 - [Multi-Omic Developmental Atlases](concepts/multi-omic-developmental-atlases.md) - Integrated developmental references that combine multiple molecular layers and spatial context as benchmarking and inference substrates.
 - [Region-Specific Developmental Trajectories](concepts/region-specific-developmental-trajectories.md) - Developmental paths whose regulatory programs diverge by anatomical region and provide trajectory-aware reference structure.
 - [Clinical Reinforcement-Learning Translation](concepts/clinical-reinforcement-learning-translation.md) - Deploying RL for patient-level sequential decision support under reward-design, interpretability, and workflow constraints.
