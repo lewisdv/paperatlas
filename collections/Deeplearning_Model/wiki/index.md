@@ -88,6 +88,7 @@
 - [Conditional Monge Gap enables generalizable single-cell perturbation modelling](sources/driessen_2026_cmonge_generalizable_perturbation.md) - Nature Machine Intelligence 2026 paper on condition-parameterized neural transport for unpaired drug-response prediction.
 - [Foundations of Schrödinger Bridges for Generative Modeling](sources/tang_2026_foundations_schrodinger_bridges_generative_modeling.md) - 2026 arXiv tutorial on static and dynamic Schrödinger bridges, algorithms, generative-model connections, and biological extensions.
 - [Learning biophysical models of gene regulation with probability flow matching](sources/maddu_2026_learning_biophysical_models_probability_flow_matching.md) - 2026 arXiv preprint on simulation-free Fokker–Planck probability-flow fitting, biophysical TF dynamics, and unbalanced population growth.
+- [A single-cell multiomic analysis identifies molecular and gene-regulatory mechanisms dysregulated in developing Down syndrome neocortex](sources/vuong_2026_single-cell_multiomic_down_syndrome_neocortex.md) - *Science* 2026 paper on paired fetal-neocortex RNA–ATAC profiling in Ts21, altered neurogenic timing, and eRegulon inference.
 
 ## Entities
 
@@ -105,6 +106,7 @@
 - [Cell2fate](entities/Cell2fate.md) - Fully Bayesian RNA-velocity model with interpretable dynamic modules and posterior uncertainty estimates.
 - [ARTEMIS](entities/ARTEMIS.md) - VAE plus unbalanced dynamic Schrödinger bridge for time-series single-cell trajectories, population mass, and perturbation prediction.
 - [PFM](entities/PFM.md) - Probability Flow Matching framework for biophysical stochastic TF dynamics, counterfactual perturbation, and unbalanced cell populations.
+- [BACH1](entities/BACH1.md) - HSA21-encoded transcription factor computationally nominated as a pro-intratelencephalic regulator in the Ts21 neocortex multiome study.
 - [AIVC](entities/AIVC.md) - Proposed AI virtual cell framework for multi-scale, multi-modal biological representation and simulation.
 - [Tahoe-x1](entities/Tahoe-x1.md) - Perturbation-trained single-cell foundation model family scaled to 3B parameters for oncology-focused functional genomics.
 - [scRL](entities/scRL.md) - Actor-critic reinforcement-learning framework for identifying early fate-decision states in single-cell trajectories.

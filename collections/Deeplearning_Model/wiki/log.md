@@ -719,3 +719,12 @@
 - Created a deep source page and entity for PFM, plus a biophysical stochastic gene-regulatory dynamics concept. The new pages distinguish simulation-free Fokker–Planck probability-flow fitting from Schrödinger bridges, RNA velocity, and endpoint transport.
 - Linked PFM with ARTEMIS, Cell2fate, Schrödinger-bridge theory, and RNA-velocity modules; recorded the paper's central distinction between interpolation success and regulatory/transfer/counterfactual/mass-dynamics evaluation.
 - Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 45 deeply ingested raw sources.
+
+## [2026-08-13 10:40 KST] deep ingest | Developing Down syndrome neocortex multiome
+
+- Preserved the supplied 23-page PDF as immutable `raw/sources/vuong_2026_single-cell_multiomic_down_syndrome_neocortex.pdf` and verified its byte-for-byte copy; SHA-256: `91ccc14d4c621a4fa428783589f70d862fa2c92b2443036eac43c821f468713f`.
+- OpenDataLoader under the existing OpenJDK 21.0.12 runtime failed repeatedly before output, ultimately exposing an internal `Comparison method violates its general contract` page-content sort error. Recorded the failure in `raw/derived/opendataloader/`; retained the original source and used Poppler `pdftotext -layout` as the helper extraction.
+- Rendered and visually checked all 23 PDF pages, including the main figures, methods, references, and Science summary. No blank, corrupt, clipped, or missing pages were found.
+- Created a deep source page and a [BACH1](entities/BACH1.md) entity page. The pages distinguish paired RNA–ATAC evidence and phNPC recurrence from causal TF-target validation, and distinguish expression-based cell-cell communication from direct signaling measurement.
+- Expanded multi-omic developmental atlases, enhancer-gene mapping, and integration-regime pages to record this as a vertical disease-multiome application rather than a novel alignment algorithm.
+- Refreshed `wiki/index.md` and `wiki/overview.md`; the collection now has 46 deeply ingested raw sources.

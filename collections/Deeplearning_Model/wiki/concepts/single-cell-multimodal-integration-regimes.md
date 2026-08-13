@@ -23,6 +23,7 @@
 - Batch-correction components in MultiVI and MIDAS also address horizontal differences when the same modality is distributed across studies or batches.
 - [scMultiMap](../entities/scMultiMap.md) is not an alignment model: it requires paired RNA/ATAC cells to test feature-feature associations.
 - [scooby](../entities/scooby.md) is also not primarily an integration model: it consumes a multiomic cell embedding to condition DNA-sequence-to-profile prediction.
+- [Vuong et al. 2026](../sources/vuong_2026_single-cell_multiomic_down_syndrome_neocortex.md) is a vertical paired-RNA/ATAC application, not an integration algorithm. Its same-nucleus measurements support disease-versus-control regulatory inference and trajectory analysis; this use of a vertically paired assay should not be conflated with training an alignment or imputation model.
 
 ## Main Tradeoffs
 
@@ -48,3 +49,4 @@
 - [totalVI](../sources/gayoso_2021_totalvi_joint_probabilistic_multi-omic.md)
 - [StabMap](../sources/ghazanfar_2024_stabmap_mosaic_unshared_features.md)
 - [MIRACLE](../sources/zhou_2026_miracle_continual_multimodal_integration.md)
+- [A single-cell multiomic analysis identifies molecular and gene-regulatory mechanisms dysregulated in developing Down syndrome neocortex](../sources/vuong_2026_single-cell_multiomic_down_syndrome_neocortex.md)
