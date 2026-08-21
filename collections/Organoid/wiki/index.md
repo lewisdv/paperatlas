@@ -119,6 +119,7 @@
 - [Trujillo 2019 — oscillatory waves in cortical organoids](sources/20260718_233522_trujillo-2019-complex-oscillatory-waves-emerging-from.md) - deep ingest; longitudinal glutamatergic/GABAergic network maturation.
 - [Nieto-Estevez 2025 — ARX poly-alanine disease assembloids](sources/20260718_233522_nieto-estevez-2025-dual-developmental-effects-of-arx.md) - deep ingest; progenitor proliferation, interneuron migration rescue, hyperactivity.
 - [Wu 2026 — region-specific microglia in brain assembloids](sources/20260718_233522_wu-2026-human-microglia-in-brain-assembloids.md) - deep ingest; GABAB-dependent calcium signaling and SCN2A pruning rescue.
+- [Faravelli 2026 — Human brain organoids record the passage of time over multiple years](sources/faravelli_2026_human_brain_organoids_record_time_years.md) - deep ingest; five-year cortical-organoid temporal mapping, methylation-clock alignment, two-year APM-supported functional networks, and progenitor temporal-memory test.
 ## Entities
 
 Recommended first-stop entities:
@@ -179,6 +180,7 @@ System-specific branches:
 
 - [Brain organoid patterning and assembloids](concepts/brain-organoid-patterning-and-assembloids.md) - branch map for region choice, single-region baselines, and when fusion or later assay layers become necessary.
 - [Brain organoid fidelity, reproducibility, and atlas benchmarks](concepts/brain-organoid-fidelity-reproducibility-and-atlases.md) - branch map for judging whether a chosen brain protocol is stable and believable enough to trust.
+- [Long-horizon brain-organoid maturation and temporal memory](concepts/long-horizon-brain-organoid-maturation-and-temporal-memory.md) - framework for separating temporal correspondence, functional maintenance, and progenitor fate-memory evidence in long cultures.
 - [Brain subregion-specific organoid protocols](concepts/brain-subregion-specific-organoid-protocols.md) - subregion-oriented comparison page across forebrain, midbrain, brainstem, hindbrain, hippocampal, and cerebellar protocols.
 - [Gastrointestinal and endodermal organoid systems](concepts/gastrointestinal-and-endodermal-organoid-systems.md) - branch map for gut, gastric, liver, pancreas, access-control, repair, and endodermal complexity questions.
 - [Kidney organoid differentiation routes](concepts/kidney-organoid-differentiation-routes.md) - branch map for renal route choice, segment bias, and support-compartment rescue.

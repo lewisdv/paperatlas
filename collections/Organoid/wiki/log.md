@@ -1883,3 +1883,9 @@
 - Updated `wiki/index.md`, `wiki/overview.md`, and four concept pages: brain-organoid patterning/assembloids, multi-lineage complexity, kidney differentiation routes, and functional assays/transplantation/coculture.
 - OpenDataLoader validation: both default and structure-tree parsing of Jgamadze 2023 recognized 24 pages and metadata but terminated with native return code `-6`. Per parser fallback rules, all 16 papers were read from the raw PDFs with temporary `/tmp` `pdftotext` helpers; no failed OpenDataLoader artifact was treated as source truth.
 - Lint: 16/16 pages ingested, 16/16 indexed, 0 queued, 0 missing raw source links, and 0 broken links after correcting one Narazaki slug.
+
+## [2026-08-21 KST] deep ingest | Faravelli 2026 — Human brain organoids record the passage of time over multiple years
+
+- Registered raw source `raw/sources/faravelli_2026_human_brain_organoids_record_time_years.pdf` and deep-ingested the 47-page Nature paper using raw-PDF review, Poppler layout text extraction, and rendered-page visual validation.
+- Created source page `wiki/sources/faravelli_2026_human_brain_organoids_record_time_years.md` and concept page `wiki/concepts/long-horizon-brain-organoid-maturation-and-temporal-memory.md`.
+- OpenDataLoader PDF was attempted with OpenJDK 21 but did not generate output for this high-resolution file; no failed parser output was used as evidence.

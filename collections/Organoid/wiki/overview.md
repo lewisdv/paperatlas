@@ -1,6 +1,6 @@
 # Overview
 
-This collection currently contains 112 active organoid-related source pages. All 112 are deep-ingested source pages, 0 remain at standard-ingest level, 0 remain queued, and 29 are pruned from the active corpus.
+This collection currently contains 113 active organoid-related source pages. All 113 are deep-ingested source pages, 0 remain at standard-ingest level, 0 remain queued, and 29 are pruned from the active corpus.
 
 ## What this collection is good for
 
@@ -14,7 +14,7 @@ This collection currently contains 112 active organoid-related source pages. All
 
 ## Current source-page status
 
-- Deep ingested: 112
+- Deep ingested: 113
 - Standard ingested: 0
 - Queued: 0
 
